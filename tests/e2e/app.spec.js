@@ -8,7 +8,7 @@ function watchErrors(page) {
 }
 async function onboard(page, { name = "Alex", role = "An adult" } = {}) {
   await page.goto("/");
-  await page.getByRole("link", { name: "Get started" }).click();
+  await page.getByRole("link", { name: "Get your first word" }).first().click();
   await page.getByRole("button", { name: new RegExp(role) }).click();
   await page.getByLabel("Name").fill(name);
   await page.getByRole("button", { name: "Continue" }).click();

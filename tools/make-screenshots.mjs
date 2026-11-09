@@ -4,7 +4,7 @@ const base = process.env.BASE_URL || "http://127.0.0.1:8787";
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH });
 async function cap(ctxOpts, out) {
   const page = await (await browser.newContext(ctxOpts)).newPage();
-  await page.goto(base + "/"); await page.getByRole("link", { name: "Get started" }).click();
+  await page.goto(base + "/"); await page.getByRole("link", { name: "Get your first word" }).first().click();
   await page.getByLabel("Name").fill("Alex"); await page.getByRole("button", { name: "Continue" }).click();
   await page.getByRole("button", { name: "Continue" }).click(); await page.getByRole("button", { name: "Start learning" }).click();
   await page.evaluate(async () => { const m = await import("/js/model.js"); const s = await import("/js/store.js"); });

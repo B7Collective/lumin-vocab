@@ -16,8 +16,8 @@ const SOURCE = "https://github.com/B7Collective/lumin-vocab";
 const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[3];
 const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1, 5, 3];
 
-function footer() {
-  return h("footer", { class: "footer" }, h("p", {}, "100% free. No ads, no tracking, no accounts."),
+function footer({ short = false } = {}) {
+  return h("footer", { class: "footer" }, short ? null : h("p", {}, "100% free. No ads, no tracking, no accounts."),
     h("nav", { "aria-label": "About Lumin Vocab" },
       h("a", { href: "https://b7collective.com", rel: "noopener" }, "Made by B7 Collective"), h("a", { href: "/privacy.html" }, "Privacy"),
       h("a", { href: "#/about" }, "Credits"), h("a", { href: SOURCE, rel: "noopener" }, "Source code")));
@@ -54,23 +54,85 @@ const swatches = (selected, onpick) => h("div", { class: "chips", role: "group",
   h("button", { class: "swatch", "aria-label": `Color ${i + 1}`, "aria-pressed": String(selected === i), style: { background: c.bg, color: c.fg }, onclick: () => onpick(i) }, selected === i ? icon("check", 20) : null)));
 
 // ---- Welcome -------------------------------------------------------------
+// One word is the hero: it steps through the four levels on the golden underline from the logo.
+// Draws before the word list loads, so these samples are copied from it.
+const SAMPLES = [
+  { w: "gentle", p: "adjective", s: "JEHN-tuhl", d: "soft and careful, not rough", e: "Be gentle when you hold the baby bunny." },
+  { w: "luminous", p: "adjective", s: "LOO-muh-nuhs", d: "giving off light, or glowing in the dark", e: "The luminous stars on my ceiling glow at night." },
+  { w: "pristine", p: "adjective", s: "PRIH-steen", d: "immaculately clean and unused", e: "Handed her his pristine white handkerchief." },
+  { w: "ephemeral", p: "adjective", s: "ih-FEH-mur-uhl", d: "lasting a very short time", e: "The ephemeral joys of childhood." },
+];
 route("welcome", (main) => {
-  const preview = h("div", { class: "preview", "aria-hidden": "true" },
-    h("div", { class: "card-meta" }, topicChip("Describing"), h("span", { class: "pos" }, "adjective")),
-    h("span", { class: "word" }, "luminous"), h("span", { class: "muted" }, "LOO-muh-nuhs"),
-    h("p", { class: "def" }, "giving off light, or glowing in the dark"),
-    h("p", { class: "ex" }, "The luminous stars on my ceiling glow at night."));
-  main.append(h("section", { class: "hero" },
-    h("div", { class: "hero-copy" },
-      h("h1", {}, "A new word every day, for the whole family."),
-      h("p", { class: "lead" }, "One calm word at a time, review that makes words stick, and levels from early readers to grown-ups."),
-      h("ul", { class: "promises", "aria-label": "Our promises" }, [["check", "100% free"], ["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"]].map(([ic, t]) => h("li", {}, icon(ic, 18), t))),
-      h("div", { class: "actions" }, h("a", { class: "btn primary", href: "#/setup" }, "Get started"), h("a", { class: "textlink", href: "#/join" }, "Join your family on this device")),
-      h("div", { class: "features" },
-        [["sprout", "Levels for every age", "Kid-written words for young readers, up to grown-up vocabulary."], ["review", "Review that sticks", "Words come back right before you'd forget them."],
-         ["family", "The whole family", "A profile for everyone, synced privately across devices."]].map(([ic, t, d]) => h("div", { class: "feature" }, h("span", { class: "fi" }, icon(ic)), h("div", {}, h("strong", {}, t), h("span", { class: "muted" }, d)))))),
-    preview), footer());
-  requestAnimationFrame(() => fitWord(preview.querySelector(".word")));
+  let cur = 0, timer = null, auto = !reduced(), paused = false;
+  const tabs = h("div", { class: "w-levels", role: "group", "aria-label": "Levels" });
+  const word = h("span", { class: "w-word", lang: "en" });
+  const uline = h("span", { class: "w-uline", "aria-hidden": "true" });
+  const pos = h("span", { class: "pos" }), ages = h("span", { class: "muted small" });
+  const resp = h("span", { class: "resp" });
+  const def = h("p", { class: "w-def" }), ex = h("p", { class: "w-ex" });
+  const swap = h("div", { class: "w-swap" }, h("div", { class: "w-meta" }, pos, ages), h("div", { class: "w-wordrow" }, word), uline,
+    h("div", { class: "say" }, resp, canSpeak() ? h("button", { class: "iconbtn", "aria-label": "Hear this word", onclick: () => speak(SAMPLES[cur].w) }, icon("speak")) : null), def, ex);
+  const stage = h("div", { class: "w-stage", role: "region", "aria-label": "Sample words" }, tabs, swap);
+  const fill = (i) => {
+    const x = SAMPLES[i]; cur = i;
+    word.textContent = x.w; pos.textContent = x.p; ages.textContent = model.LEVELS[i].ages; resp.textContent = x.s; def.textContent = x.d; ex.textContent = x.e;
+    fitWord(word);
+    uline.style.width = Math.round(word.getBoundingClientRect().width) + "px";
+    tabs.querySelectorAll("button").forEach((b, j) => { b.setAttribute("aria-pressed", String(j === i)); b.classList.toggle("playing", auto && !paused && j === i); });
+  };
+  const show = (i) => {
+    if (reduced()) { fill(i); return; }
+    swap.classList.add("out");
+    setTimeout(() => { fill(i); swap.classList.remove("out"); }, 200);
+  };
+  model.LEVELS.forEach((L, i) => tabs.append(h("button", { "aria-pressed": "false", onclick: () => { stop(); swap.setAttribute("aria-live", "polite"); if (i !== cur) show(i); } }, h("span", {}, L.name))));
+  const tick = () => { if (!document.body.contains(stage)) return stop(); if (!paused && !document.hidden) show((cur + 1) % SAMPLES.length); };
+  const stop = () => { auto = false; clearInterval(timer); tabs.querySelectorAll("button").forEach((b) => b.classList.remove("playing")); };
+  const pause = (on) => { if (!auto) return; paused = on; const b = tabs.querySelectorAll("button")[cur]; b.classList.remove("playing"); if (!on) { void b.offsetWidth; b.classList.add("playing"); clearInterval(timer); timer = setInterval(tick, 5000); } };
+  stage.addEventListener("pointerenter", () => pause(true)); stage.addEventListener("pointerleave", () => pause(false));
+  stage.addEventListener("focusin", () => pause(true)); stage.addEventListener("focusout", () => pause(false));
+
+  const moment = (art, title, text, flip) => h("div", { class: "w-moment" + (flip ? " flip" : "") }, h("div", { class: "w-art", "aria-hidden": "true" }, art), h("div", { class: "w-text" }, h("h3", {}, title), h("p", {}, text)));
+  const miniCard = (cls) => h("div", { class: "mini-card " + cls }, h("span", { class: "pos" }, "adjective"), h("span", { class: "mini-word" }, "serene"), h("span", { class: "mini-def" }, "calm and peaceful"),
+    h("span", { class: "mini-row" }, h("span", { class: "mini-btn" }, "I know it"), h("span", { class: "mini-btn primary" }, "Learn this")));
+  const family = [["Mom", 0, 3], ["Dad", 4, 3], ["Ava", 1, 1], ["Sam", 2, 0]];
+
+  main.append(h("div", { class: "welcome" },
+    h("section", { class: "w-hero" },
+      h("div", { class: "w-copy" },
+        h("h1", {}, "A bigger vocabulary, one word a day."),
+        h("p", { class: "lead" }, "For everyone at home, from first readers to grown-ups."),
+        h("div", { class: "actions center-x" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"), h("a", { class: "textlink", href: "#/join" }, "I have a family code")),
+        h("p", { class: "w-free" }, icon("check", 18), "100% free. No ads, no tracking, no accounts.")),
+      stage,
+      h("div", { class: "w-hills", "aria-hidden": "true" })),
+    h("section", { class: "w-section", "aria-labelledby": "w-how" }, h("h2", { class: "sr", id: "w-how" }, "How it works"),
+      moment(h("div", { class: "art-stack" }, miniCard("back"), miniCard("front")), "One word at a time", "Swipe up for the next word. Tap Learn this to keep it."),
+      moment(h("div", { class: "art-quiz" }, h("span", { class: "q-kick" }, "Which word means calm and peaceful?"),
+        h("span", { class: "mini-opt" }, "brittle"), h("span", { class: "mini-opt right" }, "serene", icon("check", 20)), h("span", { class: "mini-opt" }, "hollow")),
+        "Reviews at the right moment", "Words come back just before you'd forget them, so they stick.", true),
+      moment(h("div", { class: "art-family" }, h("div", { class: "fam-grid" }, family.map(([n, c, l]) => h("div", { class: "fam" }, avatar({ name: n, color: c }, "md"), h("strong", {}, n), h("span", { class: "muted small" }, model.LEVELS[l].name)))),
+        h("span", { class: "status" }, icon("check"), "Synced on every device")),
+        "A profile for everyone", "Each person learns at their own level, synced privately across your phones, tablets and computers.")),
+    h("section", { class: "w-close" },
+      h("h2", {}, "Free for the whole family"),
+      h("ul", { class: "w-promises" }, [["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"], ["code", "Open source"]].map(([ic, t]) => h("li", {}, icon(ic, 20), t))),
+      h("div", { class: "actions center-x" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"))),
+    footer({ short: true })));
+
+  const settle = () => {
+    if (!document.body.contains(stage)) return;
+    swap.style.minHeight = "";
+    let tallest = 0, keep = cur;
+    for (let i = 0; i < SAMPLES.length; i++) { fill(i); tallest = Math.max(tallest, swap.offsetHeight); }
+    fill(keep); swap.style.minHeight = tallest + "px";
+  };
+  fill(0); settle();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(settle);
+  if (auto) timer = setInterval(tick, 5000);
+  let rt = 0; const onResize = () => { clearTimeout(rt); rt = setTimeout(() => document.body.contains(stage) ? settle() : removeEventListener("resize", onResize), 120); };
+  addEventListener("resize", onResize);
+  addEventListener("hashchange", () => { stop(); removeEventListener("resize", onResize); }, { once: true });
 });
 
 // ---- Join a family ---------------------------------------------------------

@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.2.0";
+export const VERSION = "1.3.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -120,6 +120,8 @@ async function boot() {
     if (["profile", "family", "collection", "custom"].includes(rec.type)) clearTimeout(boot.t), boot.t = setTimeout(() => { if (!document.querySelector(".sheet") && !document.querySelector(".review")) render(); }, 400);
   });
   await sync.init("");
+  // The two preloaded fonts usually arrive with the scripts; wait briefly so the first screen doesn't jump when they swap in
+  try { if (document.fonts) await Promise.race([Promise.all(["400 1em Literata", "400 1em \"Atkinson Hyperlegible\""].map((f) => document.fonts.load(f))), new Promise((r) => setTimeout(r, 700))]); } catch {}
   ready = true;
   render();
   await wordsReady;

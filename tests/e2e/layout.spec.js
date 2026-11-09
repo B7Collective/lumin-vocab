@@ -53,7 +53,7 @@ test("every screen keeps the layout standard", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   const errors = []; page.on("pageerror", (e) => errors.push(e.message));
   page.on("console", (m) => { if (m.type() === "error" && /Content Security Policy|Refused/.test(m.text())) errors.push(m.text()); });
-  for (const path of ["/#/welcome", "/#/setup", "/#/join"]) { await page.goto(path); await page.waitForTimeout(250); expect(await page.evaluate(check), path).toEqual([]); }
+  for (const path of ["/#/welcome", "/#/setup", "/#/join"]) { await page.goto(path); await page.waitForTimeout(400); expect(await page.evaluate(check), path).toEqual([]); }
   await seed(page);
   for (const s of SCREENS) {
     if (s === "who") await page.evaluate(async () => { const st = await import("/js/store.js"); await st.setMeta("activeProfile", ""); }), await page.goto("/#/who"), await page.reload();
@@ -88,4 +88,22 @@ test("a custom word with symbols works in review", async ({ page }) => {
   await page.locator(".prompt .big").waitFor();
   await page.evaluate(async () => { const m = await import("/js/model.js"); m.exercise({ level: 3, spelling: true }, { w: "c++ (lang)", srs: { reps: 3 } }, "blank"); });
   expect(errors).toEqual([]);
+});
+
+test("welcome hero switches levels and the underline fits each word", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/#/welcome");
+  const word = page.locator(".w-word"), line = page.locator(".w-uline");
+  await expect(word).toHaveText("gentle");
+  for (const [level, w] of [["Wordsmith", "ephemeral"], ["Scholar", "pristine"], ["Explorer", "luminous"]]) {
+    await page.locator(".w-levels button", { hasText: level }).click();
+    await expect(word).toHaveText(w);
+    await expect(page.locator(".w-levels button", { hasText: level })).toHaveAttribute("aria-pressed", "true");
+    await expect.poll(async () => Math.abs((await line.boundingBox()).width - (await word.boundingBox()).width)).toBeLessThan(2);
+  }
+  // With reduced motion the words never change on their own
+  await page.waitForTimeout(5600);
+  await expect(word).toHaveText("luminous");
+  await page.getByRole("link", { name: "Get your first word" }).first().click();
+  await expect(page.getByRole("heading", { name: /set up your profile/ })).toBeVisible();
 });
