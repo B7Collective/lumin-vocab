@@ -13,7 +13,8 @@
     { "binding": "DB", "database_name": "lumin-vocab", "database_id": "4b1576a8-e7ca-4229-83b8-05ba2282fdfb", "migrations_dir": "migrations" }
   ],
   "ratelimits": [
-    { "name": "SYNC_LIMIT", "namespace_id": "4211", "simple": { "limit": 60, "period": 60 } }
+    { "name": "SYNC_LIMIT", "namespace_id": "4211", "simple": { "limit": 60, "period": 60 } },
+    { "name": "IP_LIMIT", "namespace_id": "4212", "simple": { "limit": 240, "period": 60 } }
   ],
   "routes": [
     { "pattern": "lumin.b7collective.com", "custom_domain": true }

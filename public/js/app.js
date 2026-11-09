@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.1.1";
+export const VERSION = "1.2.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -59,7 +59,11 @@ function shell(active) {
   me.onclick = () => go("/settings");
 }
 
+let ready = false; // screens are loaded; a hash change during start-up waits for boot to render
+let wordsReady = null, wordsLoaded = false;
+const NO_WORDS = ["welcome", "join", "install", "about"]; // screens that can draw before the word list arrives
 export function render() {
+  if (!ready) return;
   closeSheet();
   document.querySelectorAll("#layer .toast.undo").forEach((t) => t.remove());
   app.device = device.current();
@@ -72,10 +76,12 @@ export function render() {
   else if (hasProfiles && (!app.profile && !["who", "setup", "join", "install", "about"].includes(name))) name = "who";
   else if (!name) name = "feed";
   if (!ROUTES[name]) name = hasProfiles ? "feed" : "welcome";
+  if (!wordsLoaded && !NO_WORDS.includes(name)) { wordsReady.then(render); return; }
   applyLook();
   shell(name);
   const main = document.getElementById("main");
   const swap = () => {
+    document.getElementById("app").dataset.route = name;
     main.replaceChildren();
     ROUTES[name](main, rest.map(decodeURIComponent));
     main.focus({ preventScroll: true });
@@ -101,7 +107,9 @@ addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); app.install
 addEventListener("appinstalled", () => { app.installPrompt = null; app.device = device.current(); toast("Installed. You can open Lumin Vocab from your apps."); });
 
 async function boot() {
-  await Promise.all([store.open(), model.loadWords()]);
+  // The word list is the largest file, so only screens that need it wait for it
+  wordsReady = model.loadWords().then(() => { wordsLoaded = true; });
+  await store.open();
   const saved = await store.getMeta("activeProfile");
   if (saved && model.profile(saved)) app.pid = saved;
   await import("./views.js");
@@ -112,7 +120,9 @@ async function boot() {
     if (["profile", "family", "collection", "custom"].includes(rec.type)) clearTimeout(boot.t), boot.t = setTimeout(() => { if (!document.querySelector(".sheet") && !document.querySelector(".review")) render(); }, 400);
   });
   await sync.init("");
+  ready = true;
   render();
+  await wordsReady;
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "127.0.0.1")) {
     const hadController = !!navigator.serviceWorker.controller;
     navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(() => {});

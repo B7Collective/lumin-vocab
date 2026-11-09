@@ -138,7 +138,7 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   await onboard(a, { name: "Robin" });
   for (let i = 0; i < 3; i++) { const w = await a.locator(".wordcard .word").textContent(); await a.getByRole("button", { name: "Learn this" }).click(); await expect(a.locator(".wordcard .word")).not.toHaveText(w); }
   await a.goto("/#/family");
-  await a.getByRole("button", { name: "Turn on family sync" }).click();
+  await a.getByRole("button", { name: "Turn on sync" }).click();
   await expect(a.locator(".status")).toContainText("Synced", { timeout: 20000 });
   await a.getByRole("button", { name: "Add a device" }).click();
   const code = (await a.locator(".code").textContent()).trim();
@@ -192,4 +192,20 @@ test("works offline after the first visit", async ({ page, context }, info) => {
   await page.goto("/#/categories");
   await expect(page.getByRole("heading", { name: "Categories" })).toBeVisible();
   await context.setOffline(false);
+});
+
+test("sync server rejects unsafe requests", async ({ request }, info) => {
+  test.skip(info.project.name !== "desktop", "server checks run once");
+  const fid = "a".repeat(64);
+  expect((await request.post("/api/sync", { headers: { "content-type": "text/plain" }, data: JSON.stringify({ fid, since: 0, changes: [] }) })).status()).toBe(415);
+  expect((await request.post("/api/sync", { headers: { "content-type": "application/json" }, data: "x".repeat(1_100_000) })).status()).toBe(413);
+  expect((await request.post("/api/sync", { data: { fid: "nope", since: 0, changes: [] } })).status()).toBe(400);
+  expect((await request.post("/api/sync", { data: { fid, since: 0, changes: [{ id: "a".repeat(32), u: 1, d: 0, c: "x".repeat(16_001) }] } })).status()).toBe(400);
+  expect((await request.get("/api/sync")).status()).toBe(405);
+  const ok = await request.post("/api/sync", { data: { fid: "b".repeat(64), since: 0, changes: [{ id: "c".repeat(32), u: 1, d: 0, c: "abc" }] } });
+  expect(ok.status()).toBe(200);
+  const body = await ok.json();
+  expect(body.changes).toEqual([{ id: "c".repeat(32), u: 1, d: 0, c: "abc" }]);
+  const page = await request.get("/");
+  expect(page.headers()["content-security-policy"]).toContain("style-src 'self';");
 });

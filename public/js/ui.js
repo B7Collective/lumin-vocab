@@ -17,7 +17,7 @@ export function h(tag, attrs = {}, ...kids) {
     if (v == null || v === false) continue;
     if (k === "class") el.setAttribute("class", v);
     else if (k.startsWith("on") && typeof v === "function") el.addEventListener(k.slice(2).toLowerCase(), v);
-    else if (k === "style" && typeof v === "object") Object.assign(el.style, v);
+    else if (k === "style" && typeof v === "object") for (const [prop, val] of Object.entries(v)) { if (prop.startsWith("--")) el.style.setProperty(prop, val); else el.style[prop] = val; }
     else if (k === "value") el.value = v;
     else if (k === "checked") el.checked = !!v;
     else el.setAttribute(k, v === true ? "" : v);
@@ -32,6 +32,18 @@ export const tint = (t) => `var(--c${TOPIC_TINT[t] || 1})`;
 export const topicIcon = (t, size = 18) => { const s = icon(TOPIC_ICON[t] || "t-describing", size); s.style.color = tint(t); return s; };
 export const topicChip = (t) => h("span", { class: "topic" }, topicIcon(t), t);
 export const badge = (name, color, cls = "") => h("span", { class: "badge " + cls, style: color ? { color } : null, "aria-hidden": "true" }, icon(name));
+// A line of facts separated by dots, where each fact stays on one line
+export const meta = (...parts) => h("span", { class: "meta" }, parts.flat().filter(Boolean).map((t) => h("span", {}, t)));
+export const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+// Shrink a single word until it fits its container, so it never breaks mid-word
+export function fitWord(el) {
+  if (!el || !el.isConnected) return;
+  el.style.fontSize = "";
+  const box = el.parentElement, cs = getComputedStyle(box);
+  const avail = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  const need = el.scrollWidth;
+  if (avail > 0 && need > avail) el.style.fontSize = Math.floor(parseFloat(getComputedStyle(el).fontSize) * (avail / need) * 0.97) + "px";
+}
 export const avatar = (p, cls = "") => { const c = COLORS[(p && p.color) || 0] || COLORS[0]; return h("span", { class: "avatar " + cls, style: { background: c.bg, color: c.fg }, "aria-hidden": "true" }, ((p && p.name) || "?").trim().charAt(0).toUpperCase() || "?"); };
 
 let toastEl = null, toastTimer = null;
@@ -52,7 +64,7 @@ export function sheet(title, build, { onClose } = {}) {
   const prevFocus = document.activeElement;
   const scrim = h("div", { class: "scrim", onclick: () => closeSheet() });
   const body = h("section", { class: "sheet", role: "dialog", "aria-modal": "true", "aria-label": title });
-  const close = h("button", { class: "iconbtn", "aria-label": "Close", onclick: () => closeSheet() }, icon("x", 20));
+  const close = h("button", { class: "iconbtn", "aria-label": "Close", onclick: () => closeSheet() }, icon("x"));
   body.append(h("div", { class: "sheet-head" }, h("h2", {}, title), close));
   build(body);
   layer.append(scrim, body);
@@ -79,7 +91,7 @@ export function ask(title, { label, type = "text", placeholder = "", confirm = "
       const input = h("input", { type, placeholder, inputmode, autocomplete, maxlength, id: "ask-input" });
       const form = h("form", { class: "field", onsubmit: (e) => { e.preventDefault(); done = true; const v = input.value; closeSheet(); resolve(v); } },
         label ? h("label", { for: "ask-input" }, label) : null, input,
-        h("div", { style: { display: "flex", gap: "12px", marginTop: "12px" } }, h("button", { class: "btn primary", type: "submit" }, confirm)));
+        h("div", { class: "actions", style: { marginTop: "var(--s2)" } }, h("button", { class: "btn primary", type: "submit" }, confirm)));
       b.append(form);
       setTimeout(() => input.focus(), 60);
     }, { onClose: () => { if (!done) resolve(null); } });
@@ -89,7 +101,7 @@ export function confirmBox(title, text, yes = "Yes", danger = false) {
   return new Promise((resolve) => {
     let done = false;
     sheet(title, (b) => {
-      b.append(h("p", { class: "lead" }, text), h("div", { style: { display: "flex", gap: "12px", flexWrap: "wrap" } },
+      b.append(h("p", { class: "lead" }, text), h("div", { class: "actions" },
         h("button", { class: "btn " + (danger ? "danger" : "primary"), onclick: () => { done = true; closeSheet(); resolve(true); } }, yes),
         h("button", { class: "btn quiet", onclick: () => closeSheet() }, "Cancel")));
     }, { onClose: () => { if (!done) resolve(false); } });

@@ -63,6 +63,19 @@ export async function hashPin(pin, salt) {
 }
 export async function setPin(pin) { const f = family(); store.put("family", "family", { ...f, pin: pin ? await hashPin(pin) : null }); }
 export async function checkPin(pin) { const f = family(); if (!f.pin) return true; return (await hashPin(pin, f.pin.salt)).hash === f.pin.hash; }
+// Slow down guessing: after 3 wrong tries, wait 30 seconds, doubling each time up to 15 minutes (kept on this device)
+const PIN_KEY = "lumin-pin-tries";
+export function pinWait() { try { const t = JSON.parse(localStorage.getItem(PIN_KEY) || "{}"); return Math.max(0, (t.until || 0) - Date.now()); } catch { return 0; } }
+export async function tryPin(pin) {
+  const wait = pinWait(); if (wait) return { ok: false, wait };
+  const ok = await checkPin(pin);
+  let t = {}; try { t = JSON.parse(localStorage.getItem(PIN_KEY) || "{}"); } catch {}
+  if (ok) { try { localStorage.removeItem(PIN_KEY); } catch {} return { ok: true }; }
+  t.fails = (t.fails || 0) + 1;
+  if (t.fails >= 3) t.until = Date.now() + Math.min(15 * 60000, 30000 * 2 ** (t.fails - 3));
+  try { localStorage.setItem(PIN_KEY, JSON.stringify(t)); } catch {}
+  return { ok: false, wait: t.until ? Math.max(0, t.until - Date.now()) : 0 };
+}
 
 // ---- Cards (one per profile and word) ---------------------------------------
 const cid = (pid, w) => `card:${pid}:${w}`;
@@ -151,11 +164,12 @@ function pickDistractors(word, n, field) {
   while (out.size < n && pool.length) out.add(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
   return [...out];
 }
+export const escapeRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 export function blankExample(word) {
   if (!word.e) return null;
-  const re = new RegExp(`\\b${word.w}\\b`, "i");
+  const re = new RegExp(`(^|[^\\w])${escapeRe(word.w)}(?![\\w])`, "i");
   if (!re.test(word.e)) return null;
-  return word.e.replace(re, "_____");
+  return word.e.replace(re, "$1_____");
 }
 export function exercise(p, c, forceType) {
   const word = lookup(c.w); if (!word) return null;

@@ -116,6 +116,7 @@ export async function syncNow() {
           body: JSON.stringify({ fid: keys.fid, since: cursor, changes }),
         });
         if (res.status === 429) throw new Error("Syncing too often. It will try again shortly.");
+        if (res.status === 507) throw new Error("Your family's sync space is full. Remove old profiles or lists to make room.");
         if (!res.ok) throw new Error("The sync server had a problem (" + res.status + ").");
         const body = await res.json();
         store.markClean(dirty.map(r => r.id), uById);

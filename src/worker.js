@@ -4,8 +4,10 @@
 
 const MAX_BODY = 1_000_000;      // bytes per request
 const MAX_CHANGES = 200;         // records per request
-const MAX_BLOB = 64_000;         // characters per encrypted record
+const MAX_BLOB = 16_000;         // characters per encrypted record (real records are well under 2,000)
 const MAX_RECORDS = 25_000;      // records per family
+const MAX_FAMILY_BYTES = 25_000_000; // stored characters per family
+const IN_CHUNK = 90;             // D1 allows 100 bound values per query
 const PAGE = 500;                // records returned per response
 
 const json = (body, status = 200, extra = {}) => new Response(JSON.stringify(body), {
@@ -31,12 +33,36 @@ export function validate(body) {
   return null;
 }
 
+// Read the body but stop as soon as it passes the limit, even if Content-Length is missing or wrong
+async function readCapped(request, max) {
+  if (!request.body) return "";
+  const reader = request.body.getReader(), parts = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > max) { try { await reader.cancel(); } catch {} return null; }
+    parts.push(value);
+  }
+  const all = new Uint8Array(size); let o = 0;
+  for (const p of parts) { all.set(p, o); o += p.byteLength; }
+  return new TextDecoder().decode(all);
+}
+
 export async function handleSync(request, env) {
   if (request.method !== "POST") return json({ error: "method not allowed" }, 405, { allow: "POST" });
+  // JSON only: this also stops other websites from sending simple cross-site form posts
+  if (!/^application\/json\b/i.test(request.headers.get("content-type") || "")) return json({ error: "use application/json" }, 415);
   const len = Number(request.headers.get("content-length") || 0);
   if (len > MAX_BODY) return json({ error: "too large" }, 413);
+  const ip = request.headers.get("cf-connecting-ip") || "local";
+  if (env.IP_LIMIT) {
+    const { success } = await env.IP_LIMIT.limit({ key: ip });
+    if (!success) return json({ error: "slow down" }, 429, { "retry-after": "30" });
+  }
   let body;
-  try { const text = await request.text(); if (text.length > MAX_BODY) return json({ error: "too large" }, 413); body = JSON.parse(text); }
+  try { const text = await readCapped(request, MAX_BODY); if (text == null) return json({ error: "too large" }, 413); body = JSON.parse(text); }
   catch { return json({ error: "invalid json" }, 400); }
   const problem = validate(body);
   if (problem) return json({ error: problem }, 400);
@@ -44,7 +70,6 @@ export async function handleSync(request, env) {
   const fam = await sha256hex("lumin-family/" + body.fid); // the stored key is a hash of the family id
 
   if (env.SYNC_LIMIT) {
-    const ip = request.headers.get("cf-connecting-ip") || "local";
     const { success } = await env.SYNC_LIMIT.limit({ key: fam.slice(0, 16) + ":" + ip });
     if (!success) return json({ error: "slow down" }, 429, { "retry-after": "30" });
   }
@@ -54,10 +79,21 @@ export async function handleSync(request, env) {
   await db.prepare("INSERT INTO families (fam, seq, created, touched) VALUES (?1, 0, ?2, ?2) ON CONFLICT(fam) DO UPDATE SET touched = ?2").bind(fam, now).run();
 
   if (body.changes.length) {
-    const count = await db.prepare("SELECT COUNT(*) AS n FROM records WHERE fam = ?1").bind(fam).first("n");
-    if (count + body.changes.length > MAX_RECORDS) return json({ error: "family storage is full" }, 507);
+    // Last change per id wins within one request
+    const latest = new Map();
+    for (const c of body.changes) latest.set(c.id, c);
+    const ids = [...latest.keys()], old = new Map();
+    for (let i = 0; i < ids.length; i += IN_CHUNK) {
+      const chunk = ids.slice(i, i + IN_CHUNK);
+      const { results } = await db.prepare(`SELECT id, length(c) AS len FROM records WHERE fam = ?1 AND id IN (${chunk.map((_, j) => "?" + (j + 2)).join(",")})`).bind(fam, ...chunk).all();
+      for (const r of results) old.set(r.id, r.len);
+    }
+    let added = 0, delta = 0;
+    for (const [id, c] of latest) { if (!old.has(id)) added++; delta += c.c.length - (old.get(id) || 0); }
+    const usage = await db.prepare("SELECT n, bytes FROM families WHERE fam = ?1").bind(fam).first();
+    if (usage.n + added > MAX_RECORDS || usage.bytes + delta > MAX_FAMILY_BYTES) return json({ error: "family storage is full" }, 507);
     const stmts = [];
-    for (const c of body.changes) {
+    for (const c of latest.values()) {
       stmts.push(db.prepare("UPDATE families SET seq = seq + 1 WHERE fam = ?1").bind(fam));
       stmts.push(db.prepare(
         `INSERT INTO records (fam, id, u, d, c, seq) VALUES (?1, ?2, ?3, ?4, ?5, (SELECT seq FROM families WHERE fam = ?1))
@@ -65,6 +101,7 @@ export async function handleSync(request, env) {
          WHERE excluded.u > records.u OR (excluded.u = records.u AND excluded.c > records.c)`
       ).bind(fam, c.id, c.u, c.d, c.c));
     }
+    stmts.push(db.prepare("UPDATE families SET n = n + ?2, bytes = MAX(0, bytes + ?3) WHERE fam = ?1").bind(fam, added, delta));
     await db.batch(stmts);
   }
 

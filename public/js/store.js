@@ -88,12 +88,18 @@ export async function wipe() {
 }
 
 export function exportAll() { return { app: "lumin-vocab", version: 1, exported: new Date().toISOString(), records: raw().map(({ dirty, ...r }) => r) }; }
+const TYPES = new Set(["profile", "card", "collection", "custom", "family"]);
 export function importAll(obj) {
   if (!obj || obj.app !== "lumin-vocab" || !Array.isArray(obj.records)) throw new Error("This file is not a Lumin Vocab backup.");
+  if (obj.records.length > 100000) throw new Error("This backup is larger than Lumin Vocab can restore.");
+  const now = Date.now();
   let n = 0;
   for (const r of obj.records) {
-    if (typeof r.id !== "string" || typeof r.type !== "string" || typeof r.u !== "number") continue;
-    if (applyRemote(r)) { const c = cache.get(r.id); c.dirty = 1; write(c); n++; }
+    if (!r || typeof r.id !== "string" || r.id.length > 200 || !TYPES.has(r.type) || !Number.isFinite(r.u)) continue;
+    if (!r.del && (!r.data || typeof r.data !== "object" || Array.isArray(r.data))) continue;
+    // A timestamp from the future would win every later edit, so cap it at now
+    const rec = { id: r.id, type: r.type, data: r.data, u: Math.min(r.u, now), dev: typeof r.dev === "string" ? r.dev.slice(0, 64) : "", del: r.del ? 1 : 0 };
+    if (applyRemote(rec)) { const c = cache.get(rec.id); c.dirty = 1; write(c); n++; }
   }
   return n;
 }

@@ -1,6 +1,6 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v1.1.1";
+const VERSION = "lumin-v1.2.0";
 const SHELL = [
   "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/404.html",
   "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/vendor/qrcode.mjs",
@@ -20,8 +20,12 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || url.origin !== location.origin || url.pathname.startsWith("/api/")) return;
   // Pages: network first, so a fresh visit always gets the latest page; the cached copy is the offline fallback
   if (e.request.mode === "navigate") {
-    e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(VERSION).then((c) => c.put("/index.html", copy)); return r; })
-      .catch(() => caches.match("/index.html")));
+    const isApp = url.pathname === "/" || url.pathname === "/index.html";
+    e.respondWith(fetch(e.request).then((r) => {
+      // Only a good copy of the app page itself becomes the offline copy (never the privacy page or a 404)
+      if (isApp && r.ok && r.type === "basic") { const copy = r.clone(); caches.open(VERSION).then((c) => c.put("/index.html", copy)); }
+      return r;
+    }).catch(() => caches.open(VERSION).then((c) => c.match(url.pathname, { ignoreSearch: true }).then((hit) => hit || c.match("/index.html")))));
     return;
   }
   // Files: served from this version's cache (all files of one version always match), filled from the network when missing
