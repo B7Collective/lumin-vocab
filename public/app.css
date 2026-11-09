@@ -43,6 +43,36 @@ main:focus, main:focus-visible { outline: none; }
 .serif { font-family: var(--serif); }
 [hidden] { display: none !important; }
 
+/* Theme scenes and topic colors */
+:root { --scene: url("/scenes/morning.svg"); --c1: #1F6F78; --c2: #A0446A; --c3: #8A5A00; --c4: #B4432C; --c5: #2F5D9E; --c6: #3D7A4F; }
+[data-theme="sunny"] { --scene: url("/scenes/sunny.svg"); } [data-theme="garden"] { --scene: url("/scenes/garden.svg"); }
+[data-theme="harbor"] { --scene: url("/scenes/harbor.svg"); } [data-theme="blossom"] { --scene: url("/scenes/blossom.svg"); }
+[data-theme="night"] { --scene: url("/scenes/night.svg"); } [data-theme="dusk"] { --scene: url("/scenes/dusk.svg"); } [data-theme="forest"] { --scene: url("/scenes/forest.svg"); }
+[data-theme="night"], [data-theme="dusk"], [data-theme="forest"] { --c1: #7CC6CE; --c2: #F0A6C4; --c3: #F2C46B; --c4: #F5A08C; --c5: #9DB9F0; --c6: #9FD9A8; }
+.app::before { content: ""; position: fixed; left: 0; right: 0; bottom: 0; height: min(38vh, 360px); background: var(--scene) no-repeat center bottom / cover; pointer-events: none; z-index: 0; transition: opacity .4s; }
+.app > * { position: relative; z-index: 1; }
+.badge { width: 40px; height: 40px; border-radius: 12px; background: var(--soft); display: inline-flex; align-items: center; justify-content: center; color: var(--tc, var(--link)); flex-shrink: 0; }
+.badge.lg { width: 72px; height: 72px; border-radius: 22px; }
+.badge.lg .icon { width: 36px; height: 36px; }
+.topic { display: inline-flex; gap: 6px; align-items: center; padding: 5px 12px 5px 8px; border-radius: 16px; background: var(--card); color: var(--ink); font-size: 14px; font-weight: 700; border: 1px solid var(--line); }
+.topic .icon { width: 18px; height: 18px; color: var(--tc, var(--link)); }
+.card-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+@media (max-width: 719px) { .card-meta { justify-content: flex-start; } }
+.sec-title { display: flex; align-items: center; gap: 12px; }
+.sec-title .badge { width: 36px; height: 36px; border-radius: 11px; }
+.sec-title .badge .icon { width: 20px; height: 20px; }
+.tile .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.tile .top .icon { width: 18px; height: 18px; color: var(--tc, var(--muted)); }
+.tile.stat { flex-direction: row; align-items: center; gap: 14px; }
+.stat .num { font-family: var(--serif); font-size: 30px; line-height: 1; }
+.empty { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: 28px 12px; color: var(--muted); }
+.opt .mark { display: inline-flex; }
+.features { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); max-width: 900px; width: 100%; text-align: left; }
+.feature { display: flex; gap: 12px; align-items: flex-start; background: var(--card); border-radius: 18px; padding: 16px; }
+.feature strong { display: block; }
+.preview { background: var(--card); border-radius: 26px; padding: 28px 32px; max-width: 520px; width: 100%; box-shadow: 0 18px 50px rgba(24, 33, 43, .08); display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; }
+.tabs button .icon { width: 18px; height: 18px; margin-right: 6px; vertical-align: -3px; }
+
 /* Shell */
 .app { min-height: 100dvh; display: flex; flex-direction: column; padding-top: var(--safe-top); }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px; max-width: 1180px; width: 100%; margin: 0 auto; }
@@ -213,7 +243,7 @@ input[type="range"] { width: 100%; accent-color: var(--link); min-height: 44px; 
 .theme-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
 .theme { border-radius: 18px; border: 1px solid var(--line); padding: 0; overflow: hidden; background: var(--card); text-align: left; color: var(--ink); }
 .theme[aria-pressed="true"] { border: 3px solid var(--ink); }
-.theme .sw { height: 92px; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 22px; }
+.theme .sw { height: 92px; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 22px; background-repeat: no-repeat; background-position: center bottom; background-size: cover; }
 .theme .nm { display: block; padding: 10px 12px; font-size: 15px; }
 
 /* Install */

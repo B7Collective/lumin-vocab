@@ -2,6 +2,15 @@
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
 import { COLORS } from "./model.js";
 
+// Optional pieces are often written as "cond ? el : null". Skip empty values everywhere
+// instead of printing "null" or "false" on screen.
+for (const proto of [Element.prototype, DocumentFragment.prototype]) {
+  for (const name of ["append", "prepend", "replaceChildren"]) {
+    const orig = proto[name];
+    proto[name] = function (...kids) { return orig.apply(this, kids.flat(Infinity).filter((k) => k != null && k !== false)); };
+  }
+}
+
 export function h(tag, attrs = {}, ...kids) {
   const el = document.createElementNS(tag === "svg" || tag === "use" ? "http://www.w3.org/2000/svg" : "http://www.w3.org/1999/xhtml", tag);
   for (const [k, v] of Object.entries(attrs || {})) {
@@ -17,6 +26,12 @@ export function h(tag, attrs = {}, ...kids) {
   return el;
 }
 export const icon = (name, size = 24) => { const s = h("svg", { class: "icon", width: size, height: size, "aria-hidden": "true" }); s.append(h("use", { href: "#i-" + name })); return s; };
+export const TOPIC_ICON = { Describing: "t-describing", Actions: "t-actions", "Words and talk": "t-words", People: "t-people", Feelings: "t-feelings", Mind: "t-mind", Senses: "t-senses", Nature: "t-nature", Arts: "t-arts", Food: "t-food", Body: "t-body", Money: "t-money", Animals: "t-animals", Science: "t-science", Places: "t-places", Time: "t-time", Things: "t-things", "My words": "t-mine" };
+const TOPIC_TINT = { Describing: 3, Actions: 4, "Words and talk": 5, People: 2, Feelings: 2, Mind: 5, Senses: 1, Nature: 6, Arts: 2, Food: 4, Body: 4, Money: 3, Animals: 6, Science: 1, Places: 5, Time: 1, Things: 3, "My words": 1 };
+export const tint = (t) => `var(--c${TOPIC_TINT[t] || 1})`;
+export const topicIcon = (t, size = 18) => { const s = icon(TOPIC_ICON[t] || "t-describing", size); s.style.color = tint(t); return s; };
+export const topicChip = (t) => h("span", { class: "topic" }, topicIcon(t), t);
+export const badge = (name, color, cls = "") => h("span", { class: "badge " + cls, style: color ? { color } : null, "aria-hidden": "true" }, icon(name));
 export const avatar = (p, cls = "") => { const c = COLORS[(p && p.color) || 0] || COLORS[0]; return h("span", { class: "avatar " + cls, style: { background: c.bg, color: c.fg }, "aria-hidden": "true" }, ((p && p.name) || "?").trim().charAt(0).toUpperCase() || "?"); };
 
 let toastEl = null, toastTimer = null;

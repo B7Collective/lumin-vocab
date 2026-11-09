@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as srs from "./srs.js";
 import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
-import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download } from "./ui.js";
+import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 
 const SITE = "https://lumin.b7collective.com";
@@ -44,6 +44,12 @@ route("welcome", (main) => {
     h("div", { style: { display: "flex", flexDirection: "column", gap: "14px", maxWidth: "560px" } },
       h("h1", { class: "serif", style: { margin: 0, fontWeight: 400, fontSize: "clamp(34px,6vw,52px)", lineHeight: 1.1 } }, "A new word every day, for the whole family."),
       h("p", { class: "lead" }, "One calm word at a time, real review that makes words stick, and levels for every age. No ads, no accounts, nothing to buy.")),
+    h("div", { class: "preview", "aria-hidden": "true" }, h("div", { class: "card-meta" }, topicChip("Describing"), h("span", { class: "pos" }, "adjective")),
+      h("span", { class: "word", style: { fontSize: "clamp(44px,8vw,64px)", margin: 0 } }, "luminous"), h("span", { class: "muted" }, "LOO-muh-nuhs"),
+      h("p", { style: { margin: "6px 0 0", fontSize: "19px" } }, "giving off light, or glowing in the dark")),
+    h("div", { class: "features" },
+      [["sprout", "Levels for every age", "Kid-friendly words and definitions up to grown-up vocabulary."], ["review", "Review that sticks", "Words come back right before you'd forget them."],
+       ["family", "The whole family", "Everyone gets their own profile, synced privately across devices."]].map(([ic, t, d]) => h("div", { class: "feature" }, badge(ic), h("div", {}, h("strong", {}, t), h("span", { class: "muted" }, d))))),
     h("div", { style: { display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" } },
       h("a", { class: "btn primary", href: "#/setup", style: { minWidth: "240px" } }, "Get started"),
       h("a", { class: "linkbtn", href: "#/join" }, "Already use it on another device? Join your family"))),
@@ -111,12 +117,12 @@ route("setup", (main) => {
     page.replaceChildren();
     if (s.step === 1) {
       const name = h("input", { type: "text", id: "pname", maxlength: 24, autocomplete: "off", value: s.name, placeholder: "First name or nickname", oninput: (e) => { s.name = e.target.value; } });
-      const roles = [["adult", "An adult", "Grown-up words, spelling practice"], ["teen", "A teen", "Challenging words for school"], ["kid", "A kid", "Simple definitions, bigger buttons, read aloud"]];
+      const roles = [["adult", "An adult", "Grown-up words, spelling practice", "t-mind"], ["teen", "A teen", "Challenging words for school", "target"], ["kid", "A kid", "Simple definitions, bigger buttons, read aloud", "sprout"]];
       page.append(h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } }, h("span", { class: "brand" }, "Lumin Vocab"), stepLabel(1)),
         h("h1", {}, first ? "Let's set up your profile" : "Add someone to your family"),
         first ? h("p", { class: "lead" }, "Start with yourself. You can add your family next, and everyone gets their own words and progress.") : null,
         h("div", { class: "field" }, h("span", { class: "flabel" }, "Who is this profile for?"),
-          h("div", { class: "choices" }, roles.map(([k, t, sub]) => h("button", { class: "choice", "aria-pressed": String(s.role === k), onclick: () => { s.role = k; s.level = k === "adult" ? 3 : k === "teen" ? 2 : 0; draw(); } }, h("strong", {}, t), h("span", { class: "muted" }, sub))))),
+          h("div", { class: "choices" }, roles.map(([k, t, sub, ic], i) => h("button", { class: "choice", "aria-pressed": String(s.role === k), onclick: () => { s.role = k; s.level = k === "adult" ? 3 : k === "teen" ? 2 : 0; draw(); } }, badge(ic, `var(--c${[5, 4, 6][i]})`), h("strong", {}, t), h("span", { class: "muted" }, sub))))),
         h("div", { class: "field" }, h("label", { for: "pname" }, "Name"), name, h("small", {}, "Only your family sees this. It's encrypted before it ever syncs.")),
         h("div", { class: "field" }, h("span", { class: "flabel" }, "Color"),
           h("div", { class: "chips" }, model.COLORS.map((c, i) => h("button", { class: "iconbtn", "aria-label": `Color ${i + 1}`, "aria-pressed": String(s.color === i), style: { background: c.bg, borderColor: s.color === i ? "var(--ink)" : c.bg, borderWidth: "3px", borderStyle: "solid" }, onclick: () => { s.color = i; draw(); } }, s.color === i ? h("span", { style: { color: c.fg, display: "flex" } }, icon("check", 20)) : null)))),
@@ -129,7 +135,7 @@ route("setup", (main) => {
       page.append(h("div", { style: { display: "flex", justifyContent: "space-between" } }, h("span", { class: "brand" }, "Lumin Vocab"), stepLabel(2)),
         h("h1", {}, `Pick a level for ${s.name.trim()}`),
         h("div", { class: "choices" }, allowed.map((l) => h("button", { class: "choice", "aria-pressed": String(s.level === l), onclick: () => { s.level = l; draw(); } },
-          h("strong", {}, model.LEVELS[l].name), h("span", { class: "muted" }, model.LEVELS[l].ages), h("span", { class: "s" }, model.LEVELS[l].sample)))),
+          badge(["sprout", "t-nature", "t-mind", "star"][l], `var(--c${[6, 1, 5, 3][l]})`), h("strong", {}, model.LEVELS[l].name), h("span", { class: "muted" }, model.LEVELS[l].ages), h("span", { class: "s" }, model.LEVELS[l].sample)))),
         h("button", { class: "linkbtn", style: { alignSelf: "flex-start" }, onclick: () => wordCheck(s.role, (l) => { s.level = l; draw(); toast(`${model.LEVELS[l].name} looks like a good fit`); }) }, "Not sure? Take a 2-minute word check"),
         h("p", { class: "muted", style: { margin: 0 } }, "You can change this any time in settings."),
         h("div", { style: { display: "flex", justifyContent: "space-between", gap: "12px" } }, h("button", { class: "btn quiet", onclick: () => { s.step = 1; draw(); } }, "Back"), h("button", { class: "btn primary", onclick: () => { s.step = 3; draw(); } }, "Continue")));
@@ -138,7 +144,7 @@ route("setup", (main) => {
       page.append(h("div", { style: { display: "flex", justifyContent: "space-between" } }, h("span", { class: "brand" }, "Lumin Vocab"), stepLabel(3)),
         h("h1", {}, kid ? "What does " + s.name.trim() + " like?" : "What are you into?"),
         h("p", { class: "lead" }, "Pick any topics to see more of them. Or skip, and you'll get a mix."),
-        h("div", { class: "chips" }, model.TOPICS.filter(t => t !== "My words").map((t) => h("button", { class: "chip", "aria-pressed": String(s.topics.includes(t)), onclick: (e) => { s.topics = s.topics.includes(t) ? s.topics.filter(x => x !== t) : [...s.topics, t]; e.currentTarget.setAttribute("aria-pressed", String(s.topics.includes(t))); } }, t))),
+        h("div", { class: "chips" }, model.TOPICS.filter(t => t !== "My words").map((t) => h("button", { class: "chip", style: { display: "inline-flex", alignItems: "center", gap: "8px" }, "aria-pressed": String(s.topics.includes(t)), onclick: (e) => { s.topics = s.topics.includes(t) ? s.topics.filter(x => x !== t) : [...s.topics, t]; e.currentTarget.setAttribute("aria-pressed", String(s.topics.includes(t))); } }, topicIcon(t), t))),
         h("div", { class: "field" }, h("span", { class: "flabel" }, "New words a day"),
           h("div", { class: "chips" }, [3, 5, 10, 15].map((g) => h("button", { class: "chip", "aria-pressed": String(s.goal === g), onclick: () => { s.goal = g; draw(); } }, String(g))))),
         kid && canSpeak() ? h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, "Read new words aloud"), h("small", {}, "Great for early readers")), h("input", { type: "checkbox", checked: s.readAloud, onchange: (e) => { s.readAloud = e.target.checked; } })) : null,
@@ -214,7 +220,7 @@ route("feed", (main) => {
     header();
     const w = word();
     if (!w) {
-      stage.replaceChildren(h("div", { class: "wordcard" }, h("p", { class: "word", style: { fontSize: "clamp(36px,6vw,56px)" } }, "That's every word at this level."),
+      stage.replaceChildren(h("div", { class: "wordcard" }, badge("medal", "var(--c3)", "lg"), h("p", { class: "word", style: { fontSize: "clamp(36px,6vw,56px)" } }, "That's every word at this level."),
         h("p", { class: "def" }, "Amazing work. Try the next level up, or review the words you're learning."),
         h("div", { style: { display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" } }, h("a", { class: "btn primary", href: "#/settings" }, "Change level"), h("a", { class: "btn", href: "#/review" }, "Review"))));
       actions.replaceChildren(); return;
@@ -225,7 +231,7 @@ route("feed", (main) => {
     const compact = app.device.layout !== "wide";
     const shareBtn = h("button", { class: "iconbtn", "aria-label": "Share this word", onclick: () => share(w) }, icon("share", 22));
     const card = h("article", { class: "wordcard enter-" + dir, "aria-live": "polite" },
-      h("span", { class: "pos" }, w.p),
+      h("div", { class: "card-meta" }, topicChip(w.t), h("span", { class: "pos" }, w.p)),
       h("h1", { class: "word", lang: "en" }, w.w),
       h("div", { class: "say" }, w.s ? h("span", { "aria-label": "Sounds like " + w.s.replace(/-/g, " ") }, w.s) : null,
         canSpeak() ? h("button", { class: "iconbtn", "aria-label": `Hear ${w.w}`, onclick: () => speak(w.w, p) }, icon("speak", 20)) : null,
@@ -237,8 +243,8 @@ route("feed", (main) => {
     const acted = c && (c.st === "learning" || c.st === "known");
     actions.replaceChildren(
       h("div", { class: "row" },
-        h("button", { class: "btn", onclick: () => act("know") }, acted && c.st === "known" ? "Known" : "I know it"),
-        h("button", { class: "btn primary", onclick: () => act("learn") }, acted && c.st === "learning" ? "Learning" : "Learn this"),
+        h("button", { class: "btn", onclick: () => act("know") }, icon("check", 20), acted && c.st === "known" ? "Known" : "I know it"),
+        h("button", { class: "btn primary", onclick: () => act("learn") }, icon(acted && c.st === "learning" ? "review" : "plus", 20), acted && c.st === "learning" ? "Learning" : "Learn this"),
         compact ? null : fav, compact ? null : shareBtn),
       h("span", { class: "hint" }, app.device.keyboard && app.device.layout === "wide"
         ? ["Next word: ", h("span", { class: "kbd" }, "↓"), " or scroll · Learn: ", h("span", { class: "kbd" }, "L"), " · Know it: ", h("span", { class: "kbd" }, "K")]
@@ -303,11 +309,11 @@ export function details(wordText) {
     b.append(
       h("div", { class: "say", style: { marginTop: 0 } }, h("span", { class: "pos" }, w.p), w.s ? h("span", {}, "· " + w.s) : null,
         canSpeak() ? h("button", { class: "iconbtn", "aria-label": `Hear ${w.w}`, onclick: () => speak(w.w, p) }, icon("speak", 20)) : null),
-      h("div", {}, h("h3", {}, "Meaning"), h("p", { style: { margin: 0, fontSize: "19px" } }, w.d)),
-      w.e ? h("div", {}, h("h3", {}, "Examples"), h("p", { class: "ex", style: { margin: 0, textAlign: "left" } }, w.e), w.e2 ? h("p", { class: "ex", style: { margin: "10px 0 0", textAlign: "left" } }, w.e2) : null) : null,
-      w.f && w.f.length ? h("div", {}, h("h3", {}, "Word family"), h("div", { class: "chips" }, w.f.map(f => model.BY.get(f) ? h("button", { class: "chip", onclick: () => details(f) }, f) : h("span", { class: "chip", style: { display: "inline-flex", alignItems: "center" } }, f)))) : null,
-      w.m && w.m.length ? h("div", {}, h("h3", {}, "Similar words"), h("p", { style: { margin: 0 } }, w.m.join(", "))) : null,
-      h("div", {}, h("h3", {}, "Level and topic"), h("p", { style: { margin: 0 } }, w.custom ? "Your own word" : `${LEVEL(w.l).name} · ${w.t}`)),
+      h("div", {}, h("h3", { class: "sec-title" }, icon("book", 18), "Meaning"), h("p", { style: { margin: 0, fontSize: "19px" } }, w.d)),
+      w.e ? h("div", {}, h("h3", { class: "sec-title" }, icon("quote", 18), "Examples"), h("p", { class: "ex", style: { margin: 0, textAlign: "left" } }, w.e), w.e2 ? h("p", { class: "ex", style: { margin: "10px 0 0", textAlign: "left" } }, w.e2) : null) : null,
+      w.f && w.f.length ? h("div", {}, h("h3", { class: "sec-title" }, icon("branch", 18), "Word family"), h("div", { class: "chips" }, w.f.map(f => model.BY.get(f) ? h("button", { class: "chip", onclick: () => details(f) }, f) : h("span", { class: "chip", style: { display: "inline-flex", alignItems: "center" } }, f)))) : null,
+      w.m && w.m.length ? h("div", {}, h("h3", { class: "sec-title" }, icon("equal", 18), "Similar words"), h("p", { style: { margin: 0 } }, w.m.join(", "))) : null,
+      h("div", {}, h("h3", { class: "sec-title" }, icon("sprout", 18), "Level and topic"), h("div", { class: "chips", style: { alignItems: "center" } }, w.custom ? topicChip("My words") : [h("span", { class: "topic" }, icon("sprout", 18), LEVEL(w.l).name), topicChip(w.t)])),
       h("div", { class: "chips" },
         h("button", { class: "btn small" + (c && c.st === "learning" ? "" : " primary"), onclick: () => { model.learn(p.id, w.w); toast(`Added "${w.w}" to your reviews`); closeSheet(); } }, c && c.st === "learning" ? "In your reviews" : "Learn this"),
         h("button", { class: "btn quiet", onclick: () => { const on = model.toggleFav(p.id, w.w); toast(on ? "Saved to favorites" : "Removed from favorites"); } }, icon("heart", 20), "Favorite"),
@@ -349,7 +355,7 @@ route("review", (main, args) => {
   main.append(wrap);
   if (!items.length) {
     const nd = model.nextDue(p.id), any = model.cards(p.id).some(c => c.st === "learning");
-    wrap.append(h("div", { class: "q" }, h("div", { class: "prompt" },
+    wrap.append(h("div", { class: "q" }, h("div", { class: "prompt" }, badge(any ? "check" : "sprout", "var(--c6)", "lg"),
       h("p", { class: "big" }, any ? "All caught up." : "Nothing to review yet."),
       h("p", { class: "kicker" }, any ? (nd ? `Your next review is ${untilText(nd)}. Reviewing at the right time is what makes words stick.` : "") : "Tap Learn this on a few words, and they'll show up here at just the right times.")),
       h("div", { style: { display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" } },
@@ -374,7 +380,8 @@ route("review", (main, args) => {
     if (ex.type === "blank") { const [a, b] = ex.prompt.split("_____"); big.append(a, h("span", { class: "blank", "aria-label": "blank" }), b); }
     else big.append(ex.type === "meaning" ? h("span", { lang: "en" }, ex.prompt) : ex.prompt);
     const readOut = () => speak(ex.type === "meaning" ? ex.word.w : `${kickers[ex.type]}: ${ex.prompt.replace("_____", "blank")}`, p);
-    const promptEl = h("div", { class: "prompt" }, h("span", { class: "kicker" }, kickers[ex.type]), big,
+    const kIcon = { meaning: "book", word: "search", blank: "quote", spell: "t-mine" }[ex.type];
+    const promptEl = h("div", { class: "prompt" }, badge(kIcon, tint(ex.word.t)), h("span", { class: "kicker" }, kickers[ex.type]), big,
       canSpeak() ? h("button", { class: "iconbtn", "aria-label": "Read it aloud", onclick: readOut }, icon("speak", 20)) : null);
     function finish(correct) {
       if (answered) return; answered = true;
@@ -409,7 +416,8 @@ route("review", (main, args) => {
       ex.options.forEach((o, i) => body.append(h("button", { class: "opt" + (ex.type === "meaning" ? " def-opt" : ""), "data-right": o.right ? "1" : "0", onclick: (e) => {
         if (answered) return;
         e.currentTarget.classList.add(o.right ? "right" : "wrong");
-        if (!o.right) body.querySelector('[data-right="1"]').classList.add("right");
+        e.currentTarget.prepend(h("span", { class: "mark" }, icon(o.right ? "check" : "x", 22)));
+        if (!o.right) { const r = body.querySelector('[data-right="1"]'); r.classList.add("right"); r.prepend(h("span", { class: "mark" }, icon("check", 22))); }
         [...body.children].forEach(b => b.setAttribute("aria-disabled", "true"));
         finish(o.right);
       } }, app.device.keyboard && app.device.layout === "wide" ? h("span", { class: "kbd", "aria-hidden": "true" }, String(i + 1)) : null, o.text)));
@@ -420,7 +428,7 @@ route("review", (main, args) => {
   function summary() {
     removeEventListener("keydown", keys);
     bar.style.width = "100%";
-    q.replaceChildren(h("div", { class: "prompt" },
+    q.replaceChildren(h("div", { class: "prompt" }, badge("medal", "var(--c3)", "lg"),
       h("p", { class: "big" }, kid ? "You did it!" : "Nice work."),
       h("p", { class: "kicker" }, `${right} correct out of ${total + queue.length}. ${stronger} word${stronger === 1 ? "" : "s"} got stronger${mastered ? `, and ${mastered} ${mastered === 1 ? "is" : "are"} now mastered` : ""}.`)),
       h("div", { style: { display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" } }, h("a", { class: "btn primary", href: "#/feed" }, "Back to words"), h("a", { class: "btn", href: "#/saved" }, "See my words")));
@@ -449,37 +457,40 @@ route("saved", (main, args) => {
   const search = h("input", { type: "search", id: "saved-search", placeholder: "Search every word in Lumin Vocab", "aria-label": "Search words" });
   const out = h("div", { style: { display: "flex", flexDirection: "column", gap: "16px" } });
   const tabs = h("div", { class: "tabs", role: "tablist", "aria-label": "Saved words" });
-  const tile = (w, meta) => h("button", { class: "tile", onclick: () => details(w) }, h("span", { class: "w" }, w), h("span", { class: "m" }, meta));
+  const tile = (w, meta) => { const word = model.lookup(w); const t = word ? (word.custom ? "My words" : word.t) : "Describing";
+    return h("button", { class: "tile", onclick: () => details(w) }, h("span", { class: "top" }, h("span", { class: "w" }, w), topicIcon(t)), h("span", { class: "m" }, meta)); };
+  const empty = (ic, text) => h("div", { class: "empty" }, badge(ic, null, "lg"), h("p", { style: { margin: 0, maxWidth: "36ch" } }, text));
   const stateLabel = (c) => c.st === "learning" ? (srs.isMastered(c.srs) ? "Mastered" : "Learning") : c.st === "known" ? "Known" : "Seen";
   function drawTab() {
-    tabs.replaceChildren(...[["favorites", "Favorites"], ["collections", "Collections"], ["history", "History"], ["mine", "My words"]].map(([k, l]) =>
-      h("button", { role: "tab", "aria-selected": String(tab === k), onclick: () => { tab = k; limit = 60; drawTab(); } }, l)));
+    const add = (...k) => out.append(...k.flat().filter(Boolean));
+    tabs.replaceChildren(...[["favorites", "Favorites", "heart"], ["collections", "Collections", "folder"], ["history", "History", "history"], ["mine", "My words", "t-mine"]].map(([k, l, ic]) =>
+      h("button", { role: "tab", "aria-selected": String(tab === k), onclick: () => { tab = k; limit = 60; drawTab(); } }, icon(ic, 18), l)));
     out.replaceChildren();
     const q = search.value.trim().toLowerCase();
     if (q) {
       const hits = model.WORDS.filter(w => w.w.startsWith(q)).concat(model.WORDS.filter(w => !w.w.startsWith(q) && w.w.includes(q))).slice(0, 48);
       const mine = model.customWords(p.id).filter(c => c.w.toLowerCase().includes(q));
-      out.append(h("p", { class: "muted", style: { margin: 0 } }, hits.length + mine.length ? `${hits.length + mine.length} words found` : "No words found. You can add it as your own word."),
+      add(h("p", { class: "muted", style: { margin: 0 } }, hits.length + mine.length ? `${hits.length + mine.length} words found` : "No words found. You can add it as your own word."),
         h("div", { class: "grid" }, mine.map(c => tile(c.w, "Your word")), hits.map(w => tile(w.w, `${LEVEL(w.l).name} · ${w.p}`))),
         !hits.find(w => w.w === q) ? h("button", { class: "btn quiet", style: { alignSelf: "flex-start" }, onclick: () => addWord(q) }, icon("plus", 20), `Add "${q}" as your own word`) : null);
       return;
     }
     if (tab === "favorites") {
       const favs = model.cards(p.id).filter(c => c.fav).sort((a, b) => (b.seenAt || 0) - (a.seenAt || 0));
-      out.append(favs.length ? h("div", { class: "grid" }, favs.map(c => tile(c.w, stateLabel(c)))) : h("p", { class: "muted" }, "Tap the heart on any word to keep it here."));
+      add(favs.length ? h("div", { class: "grid" }, favs.map(c => tile(c.w, stateLabel(c)))) : empty("heart", "Tap the heart on any word to keep it here."));
     } else if (tab === "collections") {
       const cols = model.collections(p.id);
-      out.append(...cols.map(col => h("div", { class: "panel", style: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } },
+      add(...cols.map(col => h("div", { class: "panel", style: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } },
         h("button", { class: "tile", style: { flex: 1, padding: 0, background: "none", minWidth: "160px" }, onclick: () => openCollection(col.id) }, h("strong", { style: { fontSize: "18px" } }, col.name), h("span", { class: "m" }, `${col.words.length} words${col.shared ? ", shared with family" : ""}`)),
         col.words.length ? h("a", { class: "btn small quiet", href: `#/review/col/${col.id}` }, "Quiz me") : null)),
         h("button", { class: "btn quiet", style: { alignSelf: "flex-start" }, onclick: async () => { const name = await ask("New collection", { label: "Name", confirm: "Create", maxlength: 40 }); if (name && name.trim()) { model.newCollection(p.id, name.trim()); drawTab(); } } }, icon("plus", 20), "New collection"));
     } else if (tab === "history") {
       const hist = model.cards(p.id).sort((a, b) => (b.seenAt || 0) - (a.seenAt || 0));
-      out.append(hist.length ? h("div", { class: "grid" }, hist.slice(0, limit).map(c => tile(c.w, `${stateLabel(c)} · ${relTime(c.seenAt)}`))) : h("p", { class: "muted" }, "Words you see will be listed here, with no limit."),
+      add(hist.length ? h("div", { class: "grid" }, hist.slice(0, limit).map(c => tile(c.w, `${stateLabel(c)} · ${relTime(c.seenAt)}`))) : empty("history", "Words you see will be listed here, with no limit."),
         hist.length > limit ? h("button", { class: "btn quiet", onclick: () => { limit += 120; drawTab(); } }, `Show more (${hist.length - limit})`) : null);
     } else {
       const mine = model.customWords(p.id);
-      out.append(mine.length ? h("div", { class: "grid" }, mine.map(c => tile(c.w, c.d.slice(0, 60)))) : h("p", { class: "muted" }, "Found a great word while reading? Add it, and it joins your reviews."),
+      add(mine.length ? h("div", { class: "grid" }, mine.map(c => tile(c.w, c.d.slice(0, 60)))) : empty("t-mine", "Found a great word while reading? Add it, and it joins your reviews."),
         h("button", { class: "btn primary", style: { alignSelf: "flex-start" }, onclick: () => addWord("") }, icon("plus", 20), "Add your own word"));
     }
   }
@@ -487,9 +498,8 @@ route("saved", (main, args) => {
   main.append(h("div", { class: "page" },
     h("h1", {}, "Saved"),
     h("div", { class: "grid", style: { gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))" } },
-      h("div", { class: "tile" }, h("span", { class: "w" }, String(st.learning)), h("span", { class: "m" }, "Learning")),
-      h("div", { class: "tile" }, h("span", { class: "w" }, String(st.mastered)), h("span", { class: "m" }, "Mastered")),
-      h("div", { class: "tile" }, h("span", { class: "w" }, String(st.known)), h("span", { class: "m" }, "Already known"))),
+      [[st.learning, "Learning", "sprout", "var(--c6)"], [st.mastered, "Mastered", "medal", "var(--c3)"], [st.known, "Already known", "check", "var(--c1)"]].map(([n, l, ic, col]) =>
+        h("div", { class: "tile stat" }, badge(ic, col), h("span", {}, h("span", { class: "num" }, String(n)), h("br"), h("span", { class: "m" }, l))))),
     search, tabs, out));
   drawTab();
 });
@@ -548,11 +558,11 @@ route("family", (main) => {
       h("button", { class: "btn small quiet", onclick: async () => { if (p.id === app.pid || await guard("Editing a profile needs a grown-up")) editProfile(p.id); } }, "Edit")));
     list.append(h("div", { class: "row-item" }, h("button", { class: "btn quiet", onclick: async () => { if (await guard("Adding a profile needs a grown-up")) go("/setup"); } }, icon("plus", 20), "Add profile"),
       h("a", { href: "#/who", style: { marginLeft: "auto" } }, "Switch profile")));
-    page.append(h("h2", {}, "Profiles"), list);
+    page.append(h("h2", { class: "sec-title" }, badge("t-people", "var(--c2)"), "Profiles"), list);
 
     // Sync
     const syncPanel = h("div", { class: "panel" });
-    page.append(h("h2", {}, "Your devices"), syncPanel);
+    page.append(h("h2", { class: "sec-title" }, badge("sync", "var(--c5)"), "Your devices"), syncPanel);
     if (!st.enabled) {
       syncPanel.append(h("p", { style: { margin: 0 } }, "Right now everything lives on this device only. Turn on family sync to use Lumin Vocab on phones, tablets and computers, with everyone's progress kept in step."),
         h("p", { class: "muted", style: { margin: 0 } }, "Everything is encrypted on this device with your family code before it's sent. Our server can't read names, words or progress."),
@@ -586,7 +596,7 @@ route("family", (main) => {
     }
 
     // Backup
-    page.append(h("h2", {}, "Backup"), h("div", { class: "panel" },
+    page.append(h("h2", { class: "sec-title" }, badge("down", "var(--c3)"), "Backup"), h("div", { class: "panel" },
       h("p", { style: { margin: 0 } }, "Save a file with every profile, word and setting. Keep it somewhere safe, or use it to move to a new device."),
       h("div", { class: "chips" },
         h("button", { class: "btn quiet", onclick: () => download(`lumin-vocab-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(store.exportAll())) }, icon("down", 20), "Download backup"),
@@ -644,7 +654,9 @@ route("settings", (main) => {
   const save = (patch) => { model.saveProfile({ ...model.profile(p.id), ...patch }); Object.assign(p, patch); applyLook(); };
   const page = h("div", { class: "page narrow" });
   main.append(page);
-  const sec = (title, ...kids) => h("section", { style: { display: "flex", flexDirection: "column", gap: "12px" } }, h("h2", {}, title), h("div", { class: "panel" }, ...kids));
+  const SEC = { "My look": ["palette", 2], Look: ["palette", 2], "Reading help": ["speak", 5], Sound: ["speak", 5], Learning: ["target", 6], Profile: ["t-people", 1], "Family controls": ["shield", 4], "This device": [app.device.form === "desktop" ? "desktop" : "phone", 5], "Keyboard shortcuts": ["keyboard", 1], "Your data": ["lock", 3], About: ["info", 1] };
+  const sec = (title, ...kids) => { const [ic, c] = SEC[title] || ["info", 1];
+    return h("section", { style: { display: "flex", flexDirection: "column", gap: "12px" } }, h("h2", { class: "sec-title" }, badge(ic, `var(--c${c})`), title), h("div", { class: "panel" }, ...kids)); };
   const sw = (title, sub, checked, onchange, id) => h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, title), sub ? h("small", {}, sub) : null), h("input", { type: "checkbox", id, checked, onchange: (e) => onchange(e.target.checked) }));
   const seg = (label, opts, value, onpick) => h("div", { class: "field" }, h("span", { class: "flabel" }, label), h("div", { class: "chips", role: "group", "aria-label": label },
     opts.map(([v, l]) => h("button", { class: "chip", "aria-pressed": String(value === v), onclick: (e) => { onpick(v); e.currentTarget.parentNode.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", "false")); e.currentTarget.setAttribute("aria-pressed", "true"); } }, l))));
@@ -657,7 +669,7 @@ route("settings", (main) => {
 
   // Look (everyone, kids first)
   const themes = h("div", { class: "theme-grid" }, model.THEMES.map(([k, name, bg, ink]) => h("button", { class: "theme", "aria-pressed": String(p.theme === k), onclick: (e) => { save({ theme: k }); page.querySelectorAll(".theme").forEach(t => t.setAttribute("aria-pressed", "false")); e.currentTarget.setAttribute("aria-pressed", "true"); } },
-    h("span", { class: "sw", style: { background: bg, color: ink } }, "luminous"), h("span", { class: "nm" }, name))));
+    h("span", { class: "sw", style: { backgroundColor: bg, backgroundImage: `url(/scenes/${k}.svg)`, color: ink } }, "luminous"), h("span", { class: "nm" }, name))));
   const scale = h("input", { type: "range", id: "set-scale", min: "0.9", max: "1.3", step: "0.05", value: String(p.scale || (model.isKid(p) ? 1.08 : 1)), oninput: (e) => save({ scale: parseFloat(e.target.value) }) });
   const avatarPick = h("div", { class: "chips" }, model.COLORS.map((c, i) => h("button", { class: "iconbtn", "aria-label": `Color ${i + 1}`, "aria-pressed": String(p.color === i), style: { background: c.bg, border: `3px solid ${p.color === i ? "var(--ink)" : c.bg}` }, onclick: () => { save({ color: i }); render(); } })));
   page.append(sec(kid ? "My look" : "Look",
@@ -688,7 +700,7 @@ route("settings", (main) => {
   const learnSec = sec("Learning",
     seg("Level", model.LEVELS.map((L, i) => [i, `${L.name}`]), p.level, (v) => save({ level: v })),
     h("p", { class: "muted", style: { margin: "-6px 0 0" } }, model.LEVELS.map(L => `${L.name}: ${L.ages.toLowerCase()}`).join(" · ")),
-    h("div", { class: "field" }, h("span", { class: "flabel" }, "Favorite topics"), h("div", { class: "chips" }, model.TOPICS.map(t => h("button", { class: "chip", "aria-pressed": String((p.topics || []).includes(t)), onclick: (e) => { const cur = model.profile(p.id).topics || []; const next = cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]; save({ topics: next }); e.currentTarget.setAttribute("aria-pressed", String(next.includes(t))); } }, t)))),
+    h("div", { class: "field" }, h("span", { class: "flabel" }, "Favorite topics"), h("div", { class: "chips" }, model.TOPICS.map(t => h("button", { class: "chip", style: { display: "inline-flex", alignItems: "center", gap: "8px" }, "aria-pressed": String((p.topics || []).includes(t)), onclick: (e) => { const cur = model.profile(p.id).topics || []; const next = cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]; save({ topics: next }); e.currentTarget.setAttribute("aria-pressed", String(next.includes(t))); } }, topicIcon(t), t)))),
     seg("New words a day", [[3, "3"], [5, "5"], [10, "10"], [15, "15"]], p.goal, (v) => save({ goal: v })),
     seg("Words per review", [[10, "10"], [20, "20"], [30, "30"]], p.reviewSize || 20, (v) => save({ reviewSize: v })),
     kid ? null : sw("Spelling practice", "Some reviews ask you to type the word", p.spelling !== false, (v) => save({ spelling: v })),
