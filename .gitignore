@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.log
+test-results/
+playwright-report/
+tools/wordbank/*.pkl
+tools/wordbank/data-src/

@@ -1,0 +1,19 @@
+{
+  "name": "lumin-vocab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A calm, free, open source vocabulary app for families. Made by B7 Collective.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:local": "wrangler d1 migrations apply lumin-vocab --local",
+    "test": "node --test tests/unit/*.test.js",
+    "test:e2e": "playwright test",
+    "deploy": "wrangler d1 migrations apply lumin-vocab --remote && wrangler deploy"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "wrangler": "^4.159.0"
+  }
+}

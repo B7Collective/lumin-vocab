@@ -1,0 +1,256 @@
+brave|adjective|ready to do something even when it feels scary|The brave firefighter climbed the tall ladder.|Feelings
+cheerful|adjective|happy and full of good feelings|Our cheerful neighbor waves at everyone.|Feelings
+grumpy|adjective|in a bad mood and easily annoyed|I feel grumpy when I wake up too early.|Feelings
+proud|adjective|feeling good about something you did well|She was proud of the tower she built.|Feelings
+nervous|adjective|a little worried or scared about what will happen|He felt nervous before his first swim lesson.|Feelings
+calm|adjective|quiet and peaceful, not upset|The lake was calm and smooth this morning.|Feelings
+gentle|adjective|soft and careful, not rough|Be gentle when you hold the baby bunny.|Feelings
+curious|adjective|wanting to know or learn about something|The curious kitten looked inside every box.|Feelings
+lonely|adjective|sad because you are by yourself|The puppy felt lonely without its brothers.|Feelings
+grateful|adjective|thankful for something someone gave or did|We are grateful for the warm soup.|Feelings
+embarrassed|adjective|feeling shy or silly because others noticed something|I was embarrassed when I tripped on stage.|Feelings
+excited|adjective|very happy and eager about something|The kids were excited for the snow day.|Feelings
+patient|adjective|able to wait calmly without getting upset|Be patient while the cookies bake.|Feelings
+shy|adjective|quiet and nervous around new people|The shy boy hid behind his mom.|Feelings
+delighted|adjective|very pleased and happy|Grandma was delighted with her card.|Feelings
+worried|adjective|thinking something bad might happen|She was worried she lost her lunch box.|Feelings
+eager|adjective|wanting to do something very much|The eager students raised their hands.|Feelings
+frustrated|adjective|upset because something is not working|He felt frustrated when the puzzle piece did not fit.|Feelings
+relieved|adjective|happy that something hard or scary is over|I was relieved when I found my shoe.|Feelings
+thrilled|adjective|very, very excited and happy|We were thrilled to see the fireworks.|Feelings
+gloomy|adjective|dark and sad|The gloomy sky made everyone stay inside.|Feelings
+polite|adjective|having good manners, like saying please and thank you|It is polite to wait your turn.|Feelings
+honest|adjective|telling the truth|Being honest helps people trust you.|Feelings
+fair|adjective|treating everyone the same way|The game is fair when everyone follows the rules.|Feelings
+generous|adjective|happy to share and give to others|My generous friend shared her crayons.|Feelings
+silly|adjective|funny in a goofy way|Dad made a silly face at dinner.|Feelings
+cozy|adjective|warm, soft, and comfortable|The cozy blanket kept me warm.|Feelings
+kind|adjective|caring and nice to others|It was kind of you to help him up.|Feelings
+jolly|adjective|happy and full of fun|The jolly baker laughed all day.|Feelings
+content|adjective|happy with what you have|The cat was content to nap in the sun.|Feelings
+enormous|adjective|very, very big|An enormous whale swam past the boat.|Describing
+tiny|adjective|very small|A tiny ant carried a crumb.|Describing
+gigantic|adjective|huge, like a giant|We built a gigantic snowman.|Describing
+smooth|adjective|flat and even, with no bumps|The stone felt smooth in my hand.|Describing
+rough|adjective|bumpy and not smooth|The tree bark is rough.|Describing
+fuzzy|adjective|covered with soft little hairs|The peach has fuzzy skin.|Describing
+sticky|adjective|easily sticks to things|My fingers were sticky from the honey.|Describing
+slippery|adjective|smooth or wet so things slide|The ice on the path was slippery.|Describing
+soggy|adjective|very wet and soft|The cereal got soggy in the milk.|Describing
+crispy|adjective|hard and makes a crunch when you bite it|I love crispy apple slices.|Food
+fragile|adjective|easy to break|Carry the fragile glass with two hands.|Describing
+sturdy|adjective|strong and not easy to break|We need a sturdy table for the fish tank.|Describing
+ancient|adjective|very, very old|We saw ancient pots at the museum.|Time
+rapid|adjective|very fast|The river made rapid little waves.|Describing
+hollow|adjective|empty inside|The owl lives in a hollow tree.|Describing
+narrow|adjective|thin and not wide|We walked along a narrow path.|Describing
+gleaming|adjective|shining brightly|Her new bike was gleaming in the sun.|Describing
+dim|adjective|not bright|The room was dim after the sun went down.|Describing
+damp|adjective|a little bit wet|Hang the damp towel outside.|Describing
+chilly|adjective|cold enough to need a jacket|It was a chilly fall morning.|Nature
+scorching|adjective|very, very hot|The sand was scorching at noon.|Nature
+fierce|adjective|strong, wild, and a little scary|The fierce wind shook the windows.|Describing
+clever|adjective|quick to learn and think of good ideas|The clever crow used a stick to get food.|Mind
+tidy|adjective|neat, with everything in its place|My room is tidy today.|Describing
+messy|adjective|not neat, with things everywhere|Painting can be messy and fun.|Describing
+noisy|adjective|full of loud sounds|The lunchroom is noisy.|Senses
+silent|adjective|with no sound at all|The library was silent.|Senses
+plump|adjective|nicely round and full|We picked plump red berries.|Describing
+brilliant|adjective|very bright, or very smart|The stars were brilliant last night.|Describing
+rare|adjective|not found or seen very often|A white tiger is very rare.|Describing
+wobbly|adjective|shaky and moving from side to side|My tooth is wobbly.|Describing
+crooked|adjective|bent or not straight|The picture on the wall is crooked.|Describing
+vast|adjective|very wide and big|The ocean is vast.|Describing
+steep|adjective|going up or down very sharply|The hill was too steep to ride up.|Places
+shallow|adjective|not deep|Little kids swim in the shallow end.|Describing
+delicious|adjective|tasting very good|This soup is delicious.|Food
+sour|adjective|having a sharp taste like a lemon|The green apple was sour.|Food
+spicy|adjective|having a hot taste that tingles your mouth|The salsa is too spicy for me.|Food
+juicy|adjective|full of juice|The juicy orange dripped on my shirt.|Food
+ripe|adjective|ready to eat|The bananas are ripe and yellow.|Food
+fragrant|adjective|having a sweet, nice smell|The fragrant flowers filled the room.|Senses
+sparkling|adjective|shining with little flashes of light|The sparkling snow looked like glitter.|Describing
+dusty|adjective|covered with dust|The old box in the attic was dusty.|Describing
+fluffy|adjective|soft, light, and puffy|The pillow is fluffy.|Describing
+whisper|verb|to talk very softly|Please whisper in the library.|Words and talk
+giggle|verb|to laugh in a light, silly way|The babies giggled at the puppy.|Actions
+gallop|verb|to run fast, like a horse|The horses galloped across the field.|Animals
+scurry|verb|to move quickly with small steps|The mouse scurried under the couch.|Actions
+tumble|verb|to fall and roll over|The ball tumbled down the stairs.|Actions
+wander|verb|to walk around without a plan|We wandered through the park.|Actions
+explore|verb|to look around a new place to learn about it|Let's explore the backyard.|Actions
+gather|verb|to bring things together into one group|We gathered leaves into a pile.|Actions
+sprinkle|verb|to scatter tiny bits of something|Sprinkle cheese on the pasta.|Food
+squeeze|verb|to press something hard|Squeeze the lemon into the cup.|Actions
+stretch|verb|to make something longer by pulling, or to reach your body out|The cat stretched after its nap.|Actions
+balance|verb|to stay steady without falling|Can you balance on one foot?|Actions
+crumble|verb|to break into small pieces|The cookie crumbled in my hand.|Food
+dash|verb|to run somewhere very quickly|We dashed inside when it rained.|Actions
+peek|verb|to take a quick, secret look|No peeking at your present!|Senses
+shiver|verb|to shake because you are cold or scared|We shivered at the bus stop.|Body
+soar|verb|to fly high in the air|The eagle soared over the hills.|Actions
+splash|verb|to hit water so it flies around|The kids splashed in the pool.|Actions
+stomp|verb|to walk with loud, heavy steps|He stomped through the puddles.|Actions
+sway|verb|to move slowly from side to side|The trees swayed in the wind.|Actions
+twirl|verb|to spin around and around|She twirled in her new dress.|Actions
+wiggle|verb|to move in small, quick twists|Wiggle your toes in the sand.|Actions
+munch|verb|to chew food noisily|The rabbit munched a carrot.|Food
+nibble|verb|to eat with small bites|The mouse nibbled the cheese.|Food
+sip|verb|to drink a little at a time|Sip the hot cocoa slowly.|Food
+gulp|verb|to swallow quickly and in big amounts|He gulped his water after the race.|Food
+chuckle|verb|to laugh quietly|Grandpa chuckled at the joke.|Actions
+yawn|verb|to open your mouth wide when you are tired|I yawned all through the movie.|Body
+stumble|verb|to trip and almost fall|I stumbled over my backpack.|Actions
+cling|verb|to hold on tightly|The baby koala clings to its mother.|Actions
+creep|verb|to move slowly and quietly|We crept down the stairs.|Actions
+dart|verb|to move suddenly and quickly|The fish darted under a rock.|Actions
+drift|verb|to be carried slowly by water or air|The leaf drifted down the stream.|Actions
+glide|verb|to move smoothly and easily|The skater glided across the ice.|Actions
+hover|verb|to stay in one place in the air|The hummingbird hovered by the flower.|Animals
+leap|verb|to jump high or far|The frog leaped onto the lily pad.|Actions
+perch|verb|to sit on something high, like a bird on a branch|A robin perched on the fence.|Animals
+scramble|verb|to move quickly using your hands and feet|We scrambled up the rocks.|Actions
+slither|verb|to slide along like a snake|The snake slithered through the grass.|Animals
+collect|verb|to gather things and keep them|I collect shells at the beach.|Actions
+discover|verb|to find or learn something for the first time|We discovered a nest in the tree.|Mind
+imagine|verb|to make a picture of something in your mind|Imagine you can fly.|Mind
+invent|verb|to make something new that never existed before|She wants to invent a robot that cleans.|Mind
+protect|verb|to keep someone or something safe|A helmet protects your head.|Actions
+rescue|verb|to save someone from danger|The team rescued the kitten from the tree.|Actions
+share|verb|to give part of what you have to others|Let's share the popcorn.|People
+solve|verb|to find the answer|We solved the riddle together.|Mind
+borrow|verb|to take something you will give back later|Can I borrow your pencil?|People
+compare|verb|to look at how things are the same and different|Compare the two leaves.|Mind
+decide|verb|to make up your mind|I can't decide which book to read.|Mind
+describe|verb|to tell what something is like|Describe your favorite toy.|Words and talk
+exclaim|verb|to say something loudly and suddenly|"Look, a rainbow!" she exclaimed.|Words and talk
+mumble|verb|to speak quietly and unclearly|He mumbled his answer.|Words and talk
+wonder|verb|to think about something you want to know|I wonder how birds know where to fly.|Mind
+admire|verb|to look at something and like it very much|We admired the tall sandcastle.|Feelings
+fetch|verb|to go and bring something back|The dog fetched the ball.|Animals
+flutter|verb|to move wings quickly and lightly|The butterfly fluttered by.|Animals
+hum|verb|to sing with your mouth closed|Mom hums while she cooks.|Arts
+observe|verb|to watch carefully|We observed the ants carrying food.|Science
+plunge|verb|to jump or fall quickly into something|The duck plunged into the pond.|Actions
+pounce|verb|to jump on something suddenly to catch it|The cat pounced on the toy.|Animals
+sprint|verb|to run as fast as you can|We sprinted to the finish line.|Actions
+toss|verb|to throw lightly|Toss me the ball.|Actions
+trace|verb|to draw over the lines of a picture|Trace the letters on the page.|Arts
+vanish|verb|to disappear suddenly|The bubble vanished with a pop.|Actions
+waddle|verb|to walk with short steps while rocking side to side|The penguins waddled to the water.|Animals
+blossom|noun|a flower on a tree or bush|Pink blossoms covered the cherry tree.|Nature
+burrow|noun|a hole in the ground where an animal lives|The rabbit hid in its burrow.|Animals
+canyon|noun|a deep valley with steep rock walls|A river runs through the canyon.|Nature
+cocoon|noun|a soft case a caterpillar makes before it changes|The caterpillar spun a cocoon.|Animals
+dew|noun|tiny drops of water on grass in the morning|The grass was wet with dew.|Nature
+drizzle|noun|a light, gentle rain|We walked home in the drizzle.|Nature
+echo|noun|a sound that bounces back so you hear it again|We heard an echo in the cave.|Senses
+fossil|noun|the shape of an ancient plant or animal left in rock|We found a shell fossil.|Science
+galaxy|noun|a huge group of stars in space|We live in the Milky Way galaxy.|Science
+glacier|noun|a giant, slow river of ice|The glacier moves a tiny bit each year.|Nature
+harvest|noun|the time when crops are picked|The farm is busy at harvest.|Nature
+horizon|noun|the line where the sky seems to meet the land or sea|The sun sank below the horizon.|Nature
+meadow|noun|a field of grass and wildflowers|Deer ate in the meadow.|Nature
+moss|noun|a soft green plant that grows on rocks and trees|The rock was covered in moss.|Nature
+nest|noun|a home that birds build for their eggs|The robin's nest had three blue eggs.|Animals
+orbit|noun|the path one object takes around another in space|The moon's orbit goes around the Earth.|Science
+pebble|noun|a small, smooth stone|I skipped a pebble on the lake.|Nature
+planet|noun|a large, round object that circles a star|Earth is the planet we live on.|Science
+puddle|noun|a small pool of water on the ground|Jump in the puddle!|Nature
+shadow|noun|a dark shape made when something blocks the light|My shadow is long in the evening.|Science
+stream|noun|a small river|We crossed the stream on stones.|Nature
+thunder|noun|the loud boom you hear during a storm|The thunder made the dog hide.|Nature
+volcano|noun|a mountain that can send out hot melted rock|The volcano puffed out smoke.|Nature
+breeze|noun|a soft, gentle wind|A cool breeze came through the window.|Nature
+cavern|noun|a large cave|Bats sleep in the dark cavern.|Nature
+creature|noun|any living animal|The ocean is full of strange creatures.|Animals
+flock|noun|a group of birds or sheep|A flock of geese flew south.|Animals
+herd|noun|a large group of animals that live together|A herd of elephants walked to the river.|Animals
+hive|noun|a home where bees live|The bees flew back to the hive.|Animals
+insect|noun|a small animal with six legs|A ladybug is an insect.|Animals
+mammal|noun|an animal with hair or fur that feeds milk to its babies|A dolphin is a mammal.|Animals
+reptile|noun|a cold-blooded animal with scales, like a lizard or turtle|The turtle is a reptile.|Animals
+seedling|noun|a very young plant|We planted seedlings in the garden.|Nature
+soil|noun|the dirt that plants grow in|Plants need good soil.|Nature
+swamp|noun|wet, muddy land with plants growing in water|Frogs croaked in the swamp.|Nature
+tide|noun|the rising and falling of the sea each day|The tide washed our sandcastle away.|Nature
+twig|noun|a small, thin branch|The bird carried a twig to its nest.|Nature
+waterfall|noun|water falling from a high place|We heard the waterfall before we saw it.|Nature
+pollen|noun|yellow dust made by flowers|Bees carry pollen on their legs.|Nature
+nectar|noun|a sweet juice inside flowers|Butterflies drink nectar.|Nature
+gust|noun|a sudden, strong rush of wind|A gust of wind took my hat.|Nature
+frost|noun|thin white ice on cold surfaces|Frost covered the car window.|Nature
+magnet|noun|a piece of metal that pulls iron toward it|The magnet held my drawing on the fridge.|Science
+gravity|noun|the force that pulls things toward the ground|Gravity makes the ball fall down.|Science
+telescope|noun|a tool that makes faraway things look closer|We looked at the moon through a telescope.|Science
+compass|noun|a tool with a needle that points north|The hikers used a compass.|Science
+liquid|noun|something that flows, like water or milk|Juice is a liquid.|Science
+cottage|noun|a small, cozy house|They stayed in a cottage by the lake.|Places
+harbor|noun|a safe place where boats stay|The boats rocked in the harbor.|Places
+lantern|noun|a light you can carry, with a cover around it|We took a lantern on our camping trip.|Things
+attic|noun|the room just under the roof of a house|Old toys are stored in the attic.|Places
+canoe|noun|a long, narrow boat you move with paddles|We paddled the canoe across the lake.|Things
+palace|noun|a very large, fancy home for a king or queen|The palace had a hundred rooms.|Places
+treasure|noun|gold, jewels, or other very special things|The pirates buried their treasure.|Things
+tunnel|noun|a long passage under the ground|The train went through a tunnel.|Places
+village|noun|a small town in the country|The village had one little school.|Places
+voyage|noun|a long trip, often across the sea|The ship began its voyage.|Places
+journey|noun|a trip from one place to another|It was a long journey to the mountains.|Places
+adventure|noun|an exciting trip or experience|Camping in the woods was an adventure.|Actions
+celebration|noun|a happy party for a special day|We had a celebration for the new baby.|People
+invitation|noun|a note asking you to come to something|I got an invitation to the party.|Words and talk
+mystery|noun|something that is hard to explain or understand|Where my sock went is a mystery.|Mind
+gadget|noun|a small, clever tool or machine|This gadget peels apples.|Things
+feast|noun|a big, special meal|We had a feast on the holiday.|Food
+recipe|noun|directions for making food|Follow the recipe to bake the bread.|Food
+flavor|noun|the taste of something|Strawberry is my favorite flavor.|Food
+aroma|noun|a nice smell|The aroma of bread filled the kitchen.|Senses
+texture|noun|how something feels when you touch it|The rug has a soft texture.|Senses
+glimpse|noun|a very quick look|I caught a glimpse of the deer.|Senses
+dawn|noun|the time when the sun first comes up|Roosters crow at dawn.|Time
+dusk|noun|the time when the sky gets dark in the evening|Bats come out at dusk.|Time
+midnight|noun|twelve o'clock at night|We stayed up until midnight on New Year's Eve.|Time
+season|noun|one of the four parts of the year|Fall is my favorite season.|Time
+audience|noun|the people watching a show|The audience clapped loudly.|People
+champion|noun|the winner of a contest|She is the spelling bee champion.|People
+crew|noun|a group of people working together|The crew sailed the ship.|People
+guest|noun|someone who visits your home|We set the table for our guests.|People
+hero|noun|someone admired for being brave or good|The lifeguard was a hero.|People
+neighbor|noun|someone who lives near you|Our neighbor has a big garden.|People
+author|noun|a person who writes books|The author signed my book.|People
+inventor|noun|a person who makes new things|The inventor built a flying bike.|People
+captain|noun|the leader of a ship or team|The captain steered the boat.|People
+chef|noun|a person who cooks as a job|The chef made pancakes shaped like stars.|People
+crowd|noun|a lot of people together|A crowd came to watch the parade.|People
+rhyme|noun|words that end with the same sound, like cat and hat|Can you think of a rhyme for moon?|Words and talk
+riddle|noun|a question that is a fun puzzle|Tell me a riddle!|Words and talk
+poem|noun|writing with rhythm that often rhymes|She wrote a poem about the rain.|Arts
+chapter|noun|one part of a book|We read a chapter every night.|Words and talk
+fable|noun|a short story that teaches a lesson, often with animals|The fable was about a slow turtle.|Words and talk
+promise|verb|to say you will surely do something|I promise to feed the fish.|Words and talk
+apologize|verb|to say you are sorry|He apologized for bumping into her.|Words and talk
+announce|verb|to tell many people something|The teacher announced a field trip.|Words and talk
+explain|verb|to make something clear so others understand|Can you explain the game rules?|Words and talk
+memory|noun|something you remember|My favorite memory is our beach trip.|Mind
+clue|noun|something that helps you solve a puzzle|The muddy paw print was a clue.|Mind
+habit|noun|something you do so often you do it without thinking|Brushing my teeth is a good habit.|Mind
+notice|verb|to see or become aware of something|Did you notice the new painting?|Senses
+sniff|verb|to smell by breathing in quickly|The dog sniffed the bag.|Senses
+muscle|noun|a part of your body that helps you move|Exercise makes your muscles stronger.|Body
+skeleton|noun|all the bones in a body|Your skeleton holds you up.|Body
+nocturnal|adjective|awake and active at night|Owls are nocturnal birds.|Animals
+hatch|verb|to break out of an egg|The chicks hatched this morning.|Animals
+migrate|verb|to move to another place when the season changes|Many birds migrate south for winter.|Animals
+hibernate|verb|to sleep through the winter|Bears hibernate in their dens.|Animals
+sprout|verb|to start to grow|The beans sprouted in three days.|Nature
+build|verb|to make something by putting parts together|Let's build a fort with pillows.|Actions
+sculpture|noun|art made by shaping clay, stone, or other things|The museum has a sculpture of a horse.|Arts
+puzzle|noun|a game or problem you solve by thinking|I finished a hundred-piece puzzle.|Mind
+ribbon|noun|a thin strip of cloth for tying or decorating|She tied a ribbon on the gift.|Things
+explorer|noun|a person who travels to discover new places|The explorer climbed the tallest mountain.|People
+artist|noun|a person who makes art|The artist painted the sunset.|Arts
+tornado|noun|a spinning wind storm shaped like a funnel|The tornado stayed far from our town.|Nature
+island|noun|land with water all around it|We took a boat to the island.|Places
+pond|noun|a small body of still water|Ducks swim in the pond.|Nature
+den|noun|a home for a wild animal|The fox slept in its den.|Animals
+predator|noun|an animal that hunts other animals for food|The hawk is a predator.|Animals
