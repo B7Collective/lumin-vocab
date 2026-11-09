@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lumin Vocab: a new word every day, for the whole family</title>
-<meta name="description" content="A calm, free vocabulary app for families. One word at a time, real spaced review, kid-friendly levels, private family sync. Made by B7 Collective.">
+<meta name="description" content="A bigger vocabulary, one beautiful word at a time. Immersive words, a Journey of short games and real spaced review, for kids and adults. Free, private, open source. Made by B7 Collective.">
 <meta name="theme-color" content="#EEF2F4">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
@@ -16,11 +16,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lumin Vocab">
-<meta property="og:title" content="Lumin Vocab: a new word every day, for the whole family">
-<meta property="og:description" content="One word at a time, real spaced review, kid-friendly levels, private family sync. Free and open source.">
+<meta property="og:title" content="Lumin Vocab: a bigger vocabulary, one beautiful word at a time">
+<meta property="og:description" content="Immersive words, a Journey of short games and real spaced review, for kids and adults. Free and open source.">
 <meta property="og:url" content="https://lumin.b7collective.com/">
-<meta property="og:image" content="https://lumin.b7collective.com/icons/og-image.png">
-<meta property="og:image:alt" content="The Lumin Vocab logo, a letter l on a golden underline, next to the word luminous">
+<meta property="og:image" content="https://lumin.b7collective.com/icons/og-image.jpg">
+<meta property="og:image:alt" content="The Lumin Vocab welcome screen: the word gentle over a lavender field at sunset">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lumin.b7collective.com/">
 <link rel="preload" href="/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -35,6 +35,17 @@
 <link rel="modulepreload" href="/js/srs.js">
 <link rel="modulepreload" href="/js/device.js">
 <link rel="modulepreload" href="/js/vendor/qrcode.mjs">
+<link rel="modulepreload" href="/js/art.js">
+<link rel="modulepreload" href="/js/sound.js">
+<link rel="modulepreload" href="/js/motion.js">
+<link rel="modulepreload" href="/js/wordsheet.js">
+<link rel="modulepreload" href="/js/words.js">
+<link rel="modulepreload" href="/js/journey.js">
+<link rel="modulepreload" href="/js/practice.js">
+<link rel="modulepreload" href="/js/games.js">
+<link rel="modulepreload" href="/js/library.js">
+<link rel="modulepreload" href="/js/you.js">
+<link rel="modulepreload" href="/js/scan.js">
 </head>
 <body>
 <svg class="sprite" width="0" height="0" aria-hidden="true">
@@ -92,11 +103,19 @@
   <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 9 6 3h4l2 4 2-4h4l-2.5 6"/><path d="M12 11.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z"/></symbol>
   <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></symbol>
   <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2.5 9.5 12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4.2c0 1.2 2.5 2.8 5.5 2.8s5.5-1.6 5.5-2.8v-4.2M21.5 9.5v5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20c.8-3.8 3.8-6 7.5-6s6.7 2.2 7.5 6"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.2-6.5 4.2v-16a1 1 0 0 1 1-1z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.2 2.3-5.4 3.6-8.6.4 2 1.5 3.2 2.6 3.7C11.9 7 13 4.6 15.2 3c-.3 3 3.3 5.3 3.3 10.4 0 4.6-2.6 7.6-6.5 7.6z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M10 2.5h4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+  <symbol id="i-books" viewBox="0 0 24 24"><rect x="3.5" y="4" width="4.5" height="16" rx="1"/><rect x="8" y="6" width="4.5" height="14" rx="1"/><path d="m14 6.6 4.3-1.2 3.2 13.3-4.3 1.1z"/></symbol>
   <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></symbol>
 </svg>
 <div class="app" id="app">
   <header class="topbar" id="topbar">
-    <a class="brand" href="#/feed" aria-label="Lumin Vocab home"><img src="/icons/logo.svg" alt="" width="32" height="32"><span>Lumin Vocab</span></a>
+    <a class="brand" href="#/words" aria-label="Lumin Vocab home"><img src="/icons/logo.svg" alt="" width="32" height="32"><span>Lumin Vocab</span></a>
     <nav class="topnav" id="topnav" aria-label="Main"></nav>
     <button class="btn small quiet getapp" id="getapp" type="button" hidden><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-down"/></svg><span>Install<span class="wide-only"> app</span></span></button>
     <button class="me" id="me" aria-label="Switch profile" hidden></button>

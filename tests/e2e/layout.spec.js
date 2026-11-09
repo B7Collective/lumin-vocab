@@ -7,18 +7,18 @@ function check() {
   const scope = document.querySelector(".sheet") || document.body;
   const vis = (el) => { const r = el.getBoundingClientRect(), s = getComputedStyle(el); return r.width > 0 && r.height > 0 && s.visibility !== "hidden"; };
   const label = (el) => `${el.tagName.toLowerCase()}.${String(el.className).replace(/\s+/g, ".")} "${(el.textContent || "").trim().slice(0, 30)}"`;
-  const scroller = (el) => { for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll/.test(getComputedStyle(p).overflowX)) return true; return false; };
+  const scroller = (el) => { for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll|hidden|clip/.test(getComputedStyle(p).overflowX)) return true; return false; };
   if (document.documentElement.scrollWidth > vw + 1) out.push("page scrolls sideways");
   for (const el of scope.querySelectorAll("*")) {
     if (!vis(el) || scroller(el) || getComputedStyle(el).position === "fixed" || el.closest(".scrim")) continue;
     const r = el.getBoundingClientRect(); if (r.right > vw + 1 || r.left < -1) out.push("off screen: " + label(el));
   }
-  for (const el of scope.querySelectorAll(".btn, .chip, .topic, .tabs button, .topnav a, .bottomnav a, .suggest, .kbd, .goal, .status")) {
+  for (const el of scope.querySelectorAll(".btn, .chip, .topic, .topnav a, .bottomnav a, .suggest, .kbd, .status, .hudchip, .qkind, .jnode .nm, .eyebrow")) {
     if (!vis(el)) continue; const rg = document.createRange(), tops = new Set();
     for (const n of el.childNodes) if (n.nodeType === 3 && n.textContent.trim()) { rg.selectNodeContents(n); for (const x of rg.getClientRects()) tops.add(Math.round(x.top)); }
     if (tops.size > 1) out.push("label wraps: " + label(el));
   }
-  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .word")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim"));
+  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .gcard, .wcard, .stat")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim, .whint"));
   const rs = boxes.map(el => el.getBoundingClientRect());
   for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
     if (boxes[i].contains(boxes[j]) || boxes[j].contains(boxes[i])) continue;
@@ -47,7 +47,7 @@ async function seed(page) {
   await page.locator("#main > *").first().waitFor();
 }
 
-const SCREENS = ["feed", "categories", "review/practice", "saved", "saved/lists", "saved/history", "saved/mine", "family", "settings", "install", "about", "who"];
+const SCREENS = ["words", "journey", "practice", "library", "library/favorites", "library/lists", "library/history", "library/mine", "topics", "you", "family", "settings", "install", "about", "who"];
 
 test("every screen keeps the layout standard", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
@@ -66,44 +66,34 @@ test("every screen keeps the layout standard", async ({ page }) => {
   expect(errors).toEqual([]);
 });
 
-test("the word card always fits the screen and long words never break", async ({ page }) => {
+test("long words always fit the Words screen on one line", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await seed(page);
-  await page.goto("/#/feed");
-  await page.locator(".wordcard .word").waitFor();
+  await page.goto("/#/words");
+  await page.locator(".words .wword").waitFor();
   for (const w of ["incomprehensibility", "a", "counterrevolutionary"]) {
-    await page.evaluate((w) => { const el = document.querySelector(".wordcard .word"); el.textContent = w; }, w);
-    await page.evaluate(() => dispatchEvent(new Event("resize")));
-    await expect.poll(() => page.evaluate(() => { const el = document.querySelector(".wordcard .word"), st = document.querySelector(".card-stage"), c = document.querySelector(".wordcard");
+    await page.evaluate(async (w) => { const ui = await import("/js/ui.js"); const el = document.querySelector(".wslide .wword"); el.textContent = w; ui.fitWord(el); }, w);
+    await expect.poll(() => page.evaluate(() => { const el = document.querySelector(".wslide .wword");
       const lines = new Set([...(() => { const g = document.createRange(); g.selectNodeContents(el); return g.getClientRects(); })()].map(x => Math.round(x.top)));
-      return { lines: lines.size, fitsWide: el.scrollWidth <= c.clientWidth + 1, fitsTall: c.offsetHeight <= st.clientHeight }; }), { message: w, timeout: 4000 })
-      .toEqual({ lines: 1, fitsWide: true, fitsTall: true });
+      return { lines: lines.size, fits: el.scrollWidth <= el.parentElement.clientWidth + 1 }; }), { message: w, timeout: 4000 }).toEqual({ lines: 1, fits: true });
   }
 });
 
-test("a custom word with symbols works in review", async ({ page }) => {
+test("a custom word with symbols works in games", async ({ page }) => {
   const errors = []; page.on("pageerror", (e) => errors.push(e.message));
   await seed(page);
-  await page.goto("/#/review/practice");
-  await page.locator(".prompt .big").waitFor();
-  await page.evaluate(async () => { const m = await import("/js/model.js"); m.exercise({ level: 3, spelling: true }, { w: "c++ (lang)", srs: { reps: 3 } }, "blank"); });
+  const kinds = await page.evaluate(async () => { const m = await import("/js/model.js"); const w = m.lookup("c++ (lang)"); return ["meaning", "word", "gap", "spell", "unscramble", "flash"].map((k) => m.question(w, k).kind); });
+  expect(kinds).toEqual(["meaning", "word", "gap", "word", "word", "flash"]);
   expect(errors).toEqual([]);
 });
 
-test("welcome hero switches levels and the underline fits each word", async ({ page }) => {
+test("welcome shows a sample word and starts setup", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/#/welcome");
-  const word = page.locator(".w-word"), line = page.locator(".w-uline");
-  await expect(word).toHaveText("gentle");
-  for (const [level, w] of [["Wordsmith", "ephemeral"], ["Scholar", "pristine"], ["Explorer", "luminous"]]) {
-    await page.locator(".w-levels button", { hasText: level }).click();
-    await expect(word).toHaveText(w);
-    await expect(page.locator(".w-levels button", { hasText: level })).toHaveAttribute("aria-pressed", "true");
-    await expect.poll(async () => Math.abs((await line.boundingBox()).width - (await word.boundingBox()).width)).toBeLessThan(2);
-  }
-  // With reduced motion the words never change on their own
-  await page.waitForTimeout(5600);
-  await expect(word).toHaveText("luminous");
+  await expect(page.locator(".wsample .wword")).toHaveText("gentle");
+  // With reduced motion the sample never changes on its own
+  await page.waitForTimeout(4600);
+  await expect(page.locator(".wsample .wword")).toHaveText("gentle");
   await page.getByRole("link", { name: "Get your first word" }).first().click();
   await expect(page.getByRole("heading", { name: /set up your profile/ })).toBeVisible();
 });

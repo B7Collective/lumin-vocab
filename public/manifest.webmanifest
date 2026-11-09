@@ -2,7 +2,7 @@
   "id": "/",
   "name": "Lumin Vocab",
   "short_name": "Lumin Vocab",
-  "description": "A new word every day, for the whole family. Free, private, and open source. Made by B7 Collective.",
+  "description": "A bigger vocabulary, one beautiful word at a time, for the whole family. Free, private, and open source. Made by B7 Collective.",
   "start_url": "/?source=app",
   "scope": "/",
   "display": "standalone",
@@ -78,16 +78,16 @@
   ],
   "screenshots": [
     {
-      "src": "/icons/screenshot-wide.png",
+      "src": "/icons/screenshot-wide.jpg",
       "sizes": "1280x800",
-      "type": "image/png",
+      "type": "image/jpeg",
       "form_factor": "wide",
       "label": "The word feed on a computer"
     },
     {
-      "src": "/icons/screenshot-phone.png",
+      "src": "/icons/screenshot-phone.jpg",
       "sizes": "390x844",
-      "type": "image/png",
+      "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "The word feed on a phone"
     }

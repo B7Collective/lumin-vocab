@@ -5,8 +5,10 @@ import * as model from "./model.js";
 import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
+import * as sound from "./sound.js";
+import * as motion from "./motion.js";
 
-export const VERSION = "1.3.2";
+export const VERSION = "2.0.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -23,23 +25,20 @@ export function go(path) { if (location.hash !== "#" + path) location.hash = pat
 export function applyLook() {
   const p = app.profile;
   const root = document.documentElement;
-  let theme = (p && p.theme) || "morning";
-  const dark = p ? p.dark : "device";
-  const hour = new Date().getHours();
-  if (!model.DARK.has(theme)) {
-    if (dark === "device" && matchMedia("(prefers-color-scheme: dark)").matches) theme = "night";
-    if (dark === "sunset" && (hour >= 19 || hour < 7)) theme = "night";
-  }
-  root.dataset.theme = theme;
+  // Appearance: light paper or dark ink, or follow the device
+  const pref = (p && p.dark) || "device";
+  const dark = pref === "dark" || (pref !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+  root.dataset.theme = dark ? "dark" : "light";
+  sound.setEnabled(!p || p.sound !== false);
   root.style.setProperty("--scale", String((p && p.scale) || (p && model.isKid(p) ? 1.08 : 1)));
   root.classList.toggle("calm", !!(p && p.calm));
-  const bg = getComputedStyle(root).getPropertyValue("--bg").trim() || "#EEF2F4";
+  const bg = getComputedStyle(root).getPropertyValue("--bg").trim() || "#E8E5E0";
   document.querySelector('meta[name="theme-color"]').setAttribute("content", bg);
 }
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyLook);
 
 // ---- Shell ---------------------------------------------------------------
-const NAV = [["feed", "Words", "book"], ["review", "Review", "review"], ["saved", "Saved", "heart"], ["family", "Family", "family"]];
+const NAV = [["words", "Words", "book"], ["journey", "Journey", "map"], ["practice", "Practice", "cap"], ["library", "Library", "books"], ["you", "You", "user"]];
 function shell(active) {
   const p = app.profile;
   const topnav = document.getElementById("topnav"), bottom = document.getElementById("bottomnav"), me = document.getElementById("me");
@@ -48,19 +47,21 @@ function shell(active) {
   const getapp = document.getElementById("getapp");
   getapp.hidden = !(active === "welcome" && app.canInstall && app.canInstall());
   getapp.onclick = () => app.installFlow && app.installFlow();
-  const show = !!p && active !== "setup" && active !== "welcome";
+  const show = !!p && !["setup", "welcome", "play", "who", "join"].includes(active);
+  document.getElementById("app").classList.toggle("has-nav", show);
   bottom.hidden = !show; me.hidden = !show; topnav.hidden = !show;
   if (!show) return;
   const dueN = model.due(p.id).length;
   for (const [key, label, ic] of NAV) {
     const cur = active === key ? "page" : null;
-    const badge = key === "review" && dueN ? dueN : null;
+    const badge = key === "practice" && dueN ? dueN : null;
     topnav.append(h("a", { href: "#/" + key, "aria-current": cur }, label, badge ? h("span", { class: "count", "aria-label": `${badge} due` }, String(badge)) : null));
     bottom.append(h("a", { href: "#/" + key, "aria-current": cur }, icon(ic), label, badge ? h("span", { class: "dot", "aria-label": `${badge} due` }, String(badge)) : null));
   }
+  motion.glide(topnav, active); motion.glide(bottom, active);
   me.replaceChildren(avatar(p), h("span", { class: "me-name" }, p.name));
   me.setAttribute("aria-label", `${p.name}. Open your settings or switch profile`);
-  me.onclick = () => go("/settings");
+  me.onclick = () => go("/you");
 }
 
 let ready = false; // screens are loaded; a hash change during start-up waits for boot to render
@@ -80,9 +81,10 @@ export function render(opts) {
   const hasProfiles = model.profiles().length > 0;
   if (!hasProfiles && !["setup", "join", "install", "about"].includes(name)) name = "welcome";
   else if (hasProfiles && (!app.profile && !["who", "setup", "join", "install", "about"].includes(name))) name = "who";
-  else if (!name) name = "feed";
-  if (!ROUTES[name]) name = hasProfiles ? "feed" : "welcome";
-  if (!wordsLoaded && !NO_WORDS.includes(name)) { wordsReady.then(render); return; }
+  else if (!name) name = "words";
+  name = ({ feed: "words", review: "practice", saved: "library", categories: "topics" })[name] || name; // addresses from version 1
+  if (!ROUTES[name]) name = hasProfiles ? "words" : "welcome";
+  if (!wordsLoaded && !NO_WORDS.includes(name)) { app.needWords && app.needWords(); wordsReady.then(render); return; }
   applyLook();
   shell(name);
   const main = document.getElementById("main");
@@ -92,12 +94,13 @@ export function render(opts) {
     main.replaceChildren();
     ROUTES[name](main, rest.map(decodeURIComponent));
     if (refresh) { scrollTo(0, y); return; }
+    if (!["words", "play", "welcome"].includes(name)) motion.enter(main.firstElementChild);
     main.focus({ preventScroll: true });
     scrollTo(0, 0);
   };
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("calm");
   // Soft crossfade between screens where the browser supports it; instant otherwise
-  if (!refresh && document.startViewTransition && !calm && lastRoute && lastRoute !== name) document.startViewTransition(swap); else swap();
+  if (!refresh && document.startViewTransition && !calm && lastRoute && lastRoute !== name) { const vt = document.startViewTransition(swap); vt.ready.catch(() => {}); vt.finished.catch(() => {}); } else swap();
   lastRoute = name;
 }
 let lastRoute = null;
@@ -109,7 +112,7 @@ addEventListener("resize", () => { const d = device.current(); if (d.layout !== 
 // the word screen updates its counts and skips words already handled elsewhere, but never pulls away the word
 // you're reading; a review in progress is left alone. Nothing redraws while you're typing or a panel is open.
 let remoteTypes = new Set(), remoteTimer = null;
-const REDRAW = ["saved", "family", "who", "categories", "settings"];
+const REDRAW = ["library", "journey", "practice", "you", "family", "who", "topics", "settings"];
 function remoteRefresh() {
   const busy = document.querySelector(".sheet") || /INPUT|TEXTAREA|SELECT/.test((document.activeElement || {}).tagName || "");
   if (busy) { remoteTimer = setTimeout(remoteRefresh, 2000); return; }
@@ -118,13 +121,13 @@ function remoteRefresh() {
   if (types.has("profile") || types.has("family")) applyLook();
   if (REDRAW.includes(route)) { render({ refresh: true }); return; }
   if (app.profile && route) shell(route);
-  if (route === "feed") document.dispatchEvent(new CustomEvent("lumin-remote", { detail: { types: [...types] } }));
+  if (route === "words") document.dispatchEvent(new CustomEvent("lumin-remote", { detail: { types: [...types] } }));
 }
 
 export async function selectProfile(id) {
   app.pid = id; app.unlocked = false;
   await store.setMeta("activeProfile", id);
-  go("/feed");
+  go("/words");
 }
 
 // ---- Boot ----------------------------------------------------------------
@@ -132,9 +135,13 @@ addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); app.install
 addEventListener("appinstalled", () => { app.installPrompt = null; app.device = device.current(); document.getElementById("getapp").hidden = true; toast("Installed. You can open Lumin Vocab from your apps."); });
 
 async function boot() {
-  // The word list is the largest file, so only screens that need it wait for it
-  wordsReady = model.loadWords().then(() => { wordsLoaded = true; });
+  // The word list is the largest file, so only screens that need it wait for it. A first visit
+  // (the welcome page) fetches it a moment after the page appears, so the page itself arrives first.
+  let startWords; wordsReady = new Promise((r) => { startWords = r; }).then(() => model.loadWords()).then(() => { wordsLoaded = true; });
+  app.needWords = () => startWords();
   await store.open();
+  if (model.profiles().length || !NO_WORDS.includes((location.hash.slice(2) || "welcome").split(/[/=]/)[0])) startWords();
+  else setTimeout(startWords, 1500);
   const saved = await store.getMeta("activeProfile");
   if (saved && model.profile(saved)) app.pid = saved;
   await import("./views.js");

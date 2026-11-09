@@ -36,7 +36,7 @@ test("the landing page offers to install the app", async ({ page }, info) => {
   if (["iphone", "ipad"].includes(info.project.name)) await expect(sheet).toContainText("Add to Home Screen");
   else await expect(sheet.locator(".steps li").first()).toBeVisible();
   await page.keyboard.press("Escape");
-  await expect(page.locator(".w-close").getByRole("button", { name: "Install the app" })).toBeVisible();
+  await expect(page.locator(".wclose").getByRole("button", { name: "Install the app" })).toBeVisible();
 });
 
 test("QR codes are drawn, not blank", async ({ page }, info) => {
@@ -71,7 +71,7 @@ test("a second device joins by scanning the code inside the app", async ({ brows
   await a.getByRole("button", { name: "Continue" }).click();
   await a.getByRole("button", { name: "Continue" }).click();
   await a.getByRole("button", { name: "Start learning" }).click();
-  await expect(a.locator(".wordcard .word")).toBeVisible();
+  await expect(a.locator(".words .wword")).toBeVisible();
   await a.goto("/#/family");
   await a.getByRole("button", { name: "Turn on sync" }).click();
   await expect(a.locator(".status")).toContainText("Synced", { timeout: 20000 });

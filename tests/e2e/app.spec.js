@@ -14,72 +14,153 @@ async function onboard(page, { name = "Alex", role = "An adult" } = {}) {
   await page.getByRole("button", { name: "Continue" }).click();
   await page.getByRole("button", { name: "Continue" }).click();
   await page.getByRole("button", { name: "Start learning" }).click();
-  await expect(page.locator(".wordcard .word")).toBeVisible();
+  await expect(page.locator(".words .wword")).toBeVisible();
 }
 
-test("first run, feed, details, favorites and undo", async ({ page }, info) => {
-  const errors = watchErrors(page);
-  await onboard(page);
-  const first = await page.locator(".wordcard .word").textContent();
-  await page.getByRole("button", { name: "Learn this" }).click();
-  await expect(page.locator(".toast")).toContainText(first);
-  await page.locator(".toast button", { hasText: "Undo" }).click();
-  await expect(page.locator(".wordcard .word")).toHaveText(first);
-  await page.getByRole("button", { name: "Learn this" }).click();
-  await expect(page.locator(".wordcard .word")).not.toHaveText(first);
-  const second = await page.locator(".wordcard .word").textContent();
-  await page.getByRole("button", { name: "More about this word" }).click();
-  await expect(page.getByRole("dialog")).toBeVisible();
-  await page.getByRole("dialog").getByRole("button", { name: "Favorite" }).click();
-  await page.getByRole("button", { name: "Close" }).click();
-  await page.locator(".bottomnav a, .topnav a").filter({ hasText: "Saved" }).filter({ visible: true }).first().click();
-  await expect(page.locator(".tile .w", { hasText: second })).toBeVisible();
-  await page.getByRole("tab", { name: "History" }).click();
-  await expect(page.locator(".tile .w", { hasText: first })).toBeVisible();
-  await page.screenshot({ path: `test-results/shots/${info.project.name}-saved.png` });
-  expect(errors).toEqual([]);
-});
-
-test("next word by swipe or keyboard, and the hint fits the device", async ({ page }, info) => {
-  await onboard(page);
-  const first = await page.locator(".wordcard .word").textContent();
-  const hint = await page.locator(".hint").textContent();
-  if (info.project.name === "desktop") {
-    expect(hint).toMatch(/Learn/);
-    await page.locator("#main").focus();
-    await page.keyboard.press("ArrowDown");
-  } else {
-    expect(hint).toMatch(/Swipe up/);
-    const box = await page.locator(".feed").boundingBox();
-    const x = box.x + box.width / 2, y = box.y + box.height * 0.7;
-    await page.locator(".feed").dispatchEvent("pointerdown", { pointerType: "touch", clientX: x, clientY: y, isPrimary: true });
-    await page.locator(".feed").dispatchEvent("pointerup", { pointerType: "touch", clientX: x, clientY: y - 200, isPrimary: true });
-  }
-  await expect(page.locator(".wordcard .word")).not.toHaveText(first);
-  await page.waitForTimeout(700);
-  await page.screenshot({ path: `test-results/shots/${info.project.name}-feed.png` });
-});
-
-test("review session runs to the end", async ({ page }, info) => {
-  const errors = watchErrors(page);
-  await onboard(page);
-  for (let i = 0; i < 4; i++) { const w = await page.locator(".wordcard .word").textContent(); await page.getByRole("button", { name: "Learn this" }).click(); await expect(page.locator(".wordcard .word")).not.toHaveText(w); }
-  await page.goto("/#/review/practice");
-  let rounds = 0;
-  while (rounds++ < 20) {
-    if (await page.locator(".prompt .big", { hasText: "Nice work." }).count()) break;
-    const typed = page.locator(".typed input");
-    if (await typed.count()) { await page.locator(".linkbtn", { hasText: "Hint" }).click(); await typed.fill("zzz"); await page.getByRole("button", { name: "Check" }).click(); }
-    else {
-      if (rounds === 2) await page.locator('.opt[data-right="0"]').first().click();
-      else await page.locator('.opt[data-right="1"]').click();
+const word = (page) => page.locator(".wslide").first().getAttribute("data-word");
+// Play through a session, answering every option question right (or wrong when asked)
+async function playThrough(page, { wrongAt = -1 } = {}) {
+  for (let n = 0; n < 40; n++) {
+    await page.locator(".endcard, .flash:not(.flipped), .ltile, .spellin, .opts:not(.answered)").first().waitFor();
+    if (await page.locator(".endcard").count()) return;
+    const flash = page.locator(".flash");
+    if (await flash.count()) { await flash.click(); await page.getByRole("button", { name: "I knew it" }).click(); await page.waitForTimeout(350); continue; }
+    if (await page.locator(".ltile").count()) {
+      const target = await page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent; return m.WORDS.find((w) => w.d === d).w; });
+      for (const ch of target) await page.locator(".ltile:not(.used)", { hasText: new RegExp(`^${ch}$`) }).first().click();
+    } else if (await page.locator(".spellin").count()) {
+      const target = await page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent; return m.WORDS.find((w) => w.d === d).w; });
+      await page.locator(".spellin").fill(target); await page.getByRole("button", { name: "Check" }).click();
+    } else {
+      await page.locator(".opt").first().waitFor();
+      await page.locator(n === wrongAt ? '.opt[data-right="0"]' : '.opt[data-right="1"]').first().click();
     }
-    if (rounds === 1) await page.screenshot({ path: `test-results/shots/${info.project.name}-review.png` });
-    await page.locator(".feedback").filter({ hasText: /./ }).waitFor();
-    await page.getByRole("button", { name: /Next|Finish/ }).click();
+    const cont = page.getByRole("button", { name: /Continue|See results/ });
+    await Promise.race([cont.waitFor({ timeout: 2500 }).then(() => cont.click()).catch(() => {}), page.waitForTimeout(1100)]);
   }
-  await expect(page.locator(".prompt .big")).toHaveText("Nice work.");
+}
+
+test("first run: the word screen, heart, save, details and library", async ({ page }, info) => {
+  const errors = watchErrors(page);
+  await onboard(page);
+  const first = await word(page);
+  expect(first).toBeTruthy();
+  const fav = page.locator(".wslide .fav").first();
+  await fav.click();
+  await expect(fav).toHaveAttribute("aria-pressed", "true");
+  await page.locator(".wslide .save").first().click();
+  await expect(page.locator(".toast")).toContainText(first);
+  await page.getByRole("button", { name: "More about this word" }).click();
+  await expect(page.getByRole("dialog")).toContainText("Meaning");
+  await page.getByRole("button", { name: "Close" }).click();
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-words.png` });
+  await page.goto("/#/library/favorites");
+  await expect(page.locator(".wcard .w", { hasText: first })).toBeVisible();
+  await page.goto("/#/you");
+  await expect(page.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("1");
+  await expect(page.locator(".streak .n")).toHaveText("1");
   expect(errors).toEqual([]);
+});
+
+test("next word by swipe or keyboard, and back again", async ({ page }, info) => {
+  await onboard(page);
+  const first = await word(page);
+  if (info.project.name === "desktop") await page.keyboard.press("ArrowDown");
+  else {
+    const box = await page.locator(".words").boundingBox();
+    const x = box.x + box.width / 2, y = box.y + box.height * 0.45;
+    await page.locator(".words").dispatchEvent("pointerdown", { pointerType: "touch", clientX: x, clientY: y, isPrimary: true, pointerId: 1 });
+    await page.locator(".words").dispatchEvent("pointermove", { pointerType: "touch", clientX: x, clientY: y - 220, isPrimary: true, pointerId: 1 });
+    await page.locator(".words").dispatchEvent("pointerup", { pointerType: "touch", clientX: x, clientY: y - 220, isPrimary: true, pointerId: 1 });
+  }
+  await expect.poll(() => word(page)).not.toBe(first);
+  await page.waitForTimeout(700);
+  await page.keyboard.press("ArrowUp");
+  await expect.poll(() => word(page)).toBe(first);
+});
+
+test("a Journey chapter moves forward step by step", async ({ page }, info) => {
+  const errors = watchErrors(page);
+  await onboard(page);
+  await page.goto("/#/journey");
+  await expect(page.locator(".jnode.current .nm")).toHaveText("Meet the words");
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-journey.png` });
+  await page.locator(".jnode.current").click();
+  await playThrough(page);
+  await expect(page.locator(".endcard")).toBeVisible();
+  await page.getByRole("button", { name: "Back to the map" }).click();
+  await expect(page.locator(".jnode.current .nm")).toHaveText("What it means");
+  await expect(page.locator(".jnode.done")).toHaveCount(1);
+  // locked steps say so instead of opening
+  await page.locator(".jnode.locked").first().click();
+  await expect(page.locator(".toast")).toContainText("Finish the step");
+  await page.locator(".jnode.current").click();
+  await playThrough(page);
+  await page.getByRole("button", { name: "Back to the map" }).click();
+  await expect(page.locator(".jnode.done")).toHaveCount(2);
+  expect(errors).toEqual([]);
+});
+
+test("the Journey is paced: one chapter a day, regions and lookouts", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  const errors = watchErrors(page);
+  await onboard(page);
+  const shape = await page.evaluate(async () => { const m = await import("/js/model.js"); const ch = m.chapterWords(3); return { total: ch.length, lookouts: ch.map((c, i) => c.lookout ? i : -1).filter((i) => i >= 0).slice(0, 3), region10: m.regionOf(10)[1] }; });
+  expect(shape.total).toBeGreaterThan(120);
+  expect(shape.lookouts).toEqual([4, 9, 14]);
+  expect(shape.region10).toBe("The Misty Forest");
+  // Jump to the chapter check, pass it, and make camp
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; m.saveProfile({ ...p, journey: { 3: { ch: 0, step: 5, stars: {}, log: [], started: Date.now() } } }); });
+  await page.goto("/#/journey");
+  await expect(page.locator(".jregion")).toContainText("The Lavender Fields");
+  await page.locator(".jnode.current").click();
+  await playThrough(page);
+  await page.getByRole("button", { name: "Back to the map" }).click();
+  await expect(page.getByRole("dialog")).toContainText("Chapter complete");
+  await page.getByRole("button", { name: "Make camp" }).click();
+  await expect(page.locator(".camp h2")).toHaveText("Camp for tonight");
+  await expect(page.locator(".camp")).toContainText("tomorrow");
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-camp.png` });
+  // The log keeps the stop, and tomorrow the road opens again
+  await page.getByRole("button", { name: "Travel log" }).click();
+  await expect(page.locator(".tlog li")).toHaveCount(1);
+  await page.keyboard.press("Escape");
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; const j = p.journey[3]; m.saveProfile({ ...p, journey: { 3: { ...j, openOn: "2000-01-01" } } }); });
+  await page.goto("/#/practice"); await page.goto("/#/journey");
+  await expect(page.locator(".jnode.current .nm")).toHaveText("Meet the words");
+  expect(errors).toEqual([]);
+});
+
+test("practice games score answers and challenges keep their rules", async ({ page }, info) => {
+  const errors = watchErrors(page);
+  await onboard(page);
+  await page.goto("/#/practice");
+  await page.getByRole("button", { name: /Fill the gap/ }).click();
+  await expect(page.locator(".qkind").first()).toBeVisible();
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-game.png` });
+  await playThrough(page, { wrongAt: 1 });
+  await expect(page.locator(".endcard h1")).toHaveText(/Well done|Keep going|Perfect/);
+  await expect(page.locator(".score")).toContainText("Accuracy");
+  await page.getByRole("button", { name: "Done" }).click();
+  await page.getByRole("button", { name: /Rush/ }).click();
+  await expect(page.locator(".pstat .icon")).toHaveCount(3);
+  for (let k = 0; k < 3; k++) { await page.locator('.opt[data-right="0"]').first().click(); const c = page.getByRole("button", { name: /Continue|See results/ }); await c.click(); }
+  await expect(page.locator(".endcard")).toBeVisible();
+  await page.getByRole("button", { name: "Done" }).click();
+  await page.getByRole("button", { name: /Sprint/ }).click();
+  await expect(page.locator(".pstat")).toContainText(/\d+/);
+  expect(errors).toEqual([]);
+});
+
+test("the level check suggests a level", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  await onboard(page);
+  await page.goto("/#/practice");
+  await page.getByRole("button", { name: "Take the level check" }).click();
+  for (let k = 0; k < 12; k++) { await page.locator(k < 6 ? '.opt[data-right="1"]' : '.opt[data-right="0"]').first().click(); await page.waitForTimeout(150); const c = page.getByRole("button", { name: /Continue|See results/ }); if (await c.count()) await c.click(); await page.waitForTimeout(700); }
+  await expect(page.locator(".endcard h1")).toHaveText("You're an Explorer");
+  await page.getByRole("button", { name: "Switch to Explorer" }).click();
+  await expect(page.locator(".jtop .eyebrow")).toContainText("Explorer");
 });
 
 test("install guidance matches the device", async ({ page }, info) => {
@@ -113,7 +194,8 @@ test("settings adapt to kids and parents, with a PIN", async ({ page }, info) =>
   await page.getByRole("button", { name: "Continue" }).click();
   await page.getByRole("button", { name: "Continue" }).click();
   await page.getByRole("button", { name: "Start learning" }).click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "sunny");
+  await expect(page.locator(".words .wword")).toBeVisible();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
   await page.goto("/#/settings");
   await expect(page.getByRole("heading", { name: "My look" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Learning" })).toHaveCount(0);
@@ -136,7 +218,7 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   const b = await (await browser.newContext({ ...info.project.use, viewport: { width: 393, height: 852 }, isMobile: true, hasTouch: true })).newPage();
   const errors = [...watchErrors(a)];
   await onboard(a, { name: "Robin" });
-  for (let i = 0; i < 3; i++) { const w = await a.locator(".wordcard .word").textContent(); await a.getByRole("button", { name: "Learn this" }).click(); await expect(a.locator(".wordcard .word")).not.toHaveText(w); }
+  for (let i = 0; i < 3; i++) { const w = await word(a); await a.locator(".wslide .save").first().click(); await a.keyboard.press("ArrowDown"); await expect.poll(() => word(a)).not.toBe(w); await a.waitForTimeout(600); }
   await a.goto("/#/family");
   await a.getByRole("button", { name: "Turn on sync" }).click();
   await expect(a.locator(".status")).toContainText("Synced", { timeout: 20000 });
@@ -148,10 +230,9 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   await expect(b.getByRole("button", { name: /Robin/ })).toBeVisible({ timeout: 30000 });
   await b.waitForTimeout(800);
   await b.getByRole("button", { name: /Robin/ }).click();
-  await expect(b.locator(".wordcard .word")).toBeVisible();
-  await b.goto("/#/saved/history");
-  await b.getByRole("tab", { name: "History" }).click();
-  await expect(b.locator(".tile .m", { hasText: "Learning ·" })).toHaveCount(3);
+  await expect(b.locator(".words .wword")).toBeVisible();
+  await b.goto("/#/you");
+  await expect(b.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("3");
   // change on B reaches A
   await b.goto("/#/settings");
   await b.getByLabel("Name").fill("Robin B"); await b.getByLabel("Name").blur();
@@ -161,16 +242,15 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   // Live progress: B sits on History. A learns a word and is put away right after (phone locked).
   // B is switched back to, and its open screen shows the new word without a reload or a Sync button.
   const switchTo = (pg, hidden) => pg.evaluate((h) => { Object.defineProperty(document, "hidden", { value: h, configurable: true }); document.dispatchEvent(new Event("visibilitychange")); }, hidden);
-  await b.goto("/#/saved/history");
-  await expect(b.locator(".tile .m", { hasText: "Learning ·" })).toHaveCount(3);
-  await a.goto("/#/feed");
-  const fresh = await a.locator(".wordcard .word").textContent();
-  await a.getByRole("button", { name: "Learn this" }).click();
+  await b.goto("/#/you");
+  await expect(b.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("3");
+  await a.goto("/#/words");
+  await a.locator(".words .wword").waitFor();
+  await a.locator(".wslide .save").first().click();
   await switchTo(a, true);
   await a.waitForTimeout(400); // shorter than the normal 1 second delay, so only the send-on-hide can deliver it in time
   await switchTo(b, false);
-  await expect(b.locator(".tile .w", { hasText: fresh })).toBeVisible({ timeout: 10000 });
-  await expect(b.locator(".tile .m", { hasText: "Learning ·" })).toHaveCount(4);
+  await expect(b.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("4", { timeout: 10000 });
   // An empty check is read-only: nothing new means nothing written
   const fid = "e".repeat(64);
   const empty = await a.request.post("/api/sync", { data: { fid, since: 0, changes: [] } });
@@ -181,20 +261,17 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   expect(errors).toEqual([]);
 });
 
-test("categories filter the feed and stay age appropriate", async ({ page }, info) => {
+test("topics filter the words and stay age appropriate", async ({ page }, info) => {
   const errors = watchErrors(page);
   await onboard(page, { name: "Kim", role: "A kid" });
-  await page.getByRole("link", { name: "Choose a category" }).click();
-  await expect(page.getByRole("heading", { name: "Categories" })).toBeVisible();
-  await page.locator(".catcard", { hasText: "Animals" }).click();
-  await expect(page.locator(".wordcard .topic")).toContainText("Animals");
-  const words = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.queue(p).map(w => w.l); });
-  expect(words.length).toBeGreaterThan(10);
-  expect(Math.max(...words)).toBeLessThanOrEqual(1);
-  await page.waitForTimeout(600);
-  await page.screenshot({ path: `test-results/shots/${info.project.name}-category-feed.png` });
-  await page.goto("/#/categories");
-  await page.screenshot({ path: `test-results/shots/${info.project.name}-categories.png`, fullPage: true });
+  await page.getByRole("link", { name: "All words" }).click();
+  await expect(page.getByRole("heading", { name: "Topics" })).toBeVisible();
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-topics.png`, fullPage: true });
+  await page.locator(".gcard", { hasText: "Animals" }).click();
+  await expect(page.locator(".hudchip", { hasText: "Animals" })).toBeVisible();
+  const levels = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.queue(p).map((w) => w.l); });
+  expect(levels.length).toBeGreaterThan(10);
+  expect(Math.max(...levels)).toBeLessThanOrEqual(1);
   expect(errors).toEqual([]);
 });
 
@@ -205,9 +282,9 @@ test("works offline after the first visit", async ({ page, context }, info) => {
   await page.reload(); await page.evaluate(() => navigator.serviceWorker.ready);
   await context.setOffline(true);
   await page.reload();
-  await expect(page.locator(".wordcard .word")).toBeVisible();
-  await page.goto("/#/categories");
-  await expect(page.getByRole("heading", { name: "Categories" })).toBeVisible();
+  await expect(page.locator(".words .wword")).toBeVisible();
+  await page.goto("/#/journey");
+  await expect(page.locator(".jnode.current")).toBeVisible();
   await context.setOffline(false);
 });
 

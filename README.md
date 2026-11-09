@@ -1,20 +1,21 @@
 # Lumin Vocab
 
-**A new word every day, for the whole family.** One calm word at a time, real spaced review that makes words stick, and levels from early readers to adults. Free, private, and open source.
+**A bigger vocabulary, one beautiful word at a time, for the whole family.** Immersive words, a Journey of short games, and real spaced review that makes words stick, with levels from early readers to adults. Free, private, and open source.
 
 Live at **[lumin.b7collective.com](https://lumin.b7collective.com)**. Made by [B7 Collective](https://b7collective.com).
 
-![Lumin Vocab on a computer](public/icons/screenshot-wide.png)
+![Lumin Vocab on a computer](public/icons/screenshot-wide.jpg)
 
 ## What it does
 
-- **The word feed.** One word per screen with pronunciation, read aloud, a clear definition and an example. Swipe, scroll or use the arrow keys. Every action can be undone.
-- **Review that works.** Words you choose to learn come back on a schedule set by an FSRS-based spaced repetition scheduler, through several kinds of practice: pick the meaning, pick the word, fill the blank, and spell it.
-- **Four levels.** Sprout (ages 5 to 8) and Explorer (8 to 11) use definitions and examples written for kids. Scholar and Wordsmith draw on Open English WordNet. About 4,500 words in all, browsable by 17 categories such as Animals, Feelings, Nature and Science.
-- **Family profiles.** Everyone gets their own level, words, theme and settings. Kids get simpler wording, bigger buttons and read aloud. An optional family PIN keeps grown-up settings and parent profiles locked.
-- **Private family sync.** Turn it on, then add phones, tablets and computers with a QR code or a six-word family code. Everything is encrypted on the device before upload, so the server only ever stores ciphertext.
-- **Unlimited history, favorites, collections, your own words, search, backups.**
-- **Installs like an app** on iPhone, iPad, Android, Windows, Mac, Linux and ChromeOS, with install steps tailored to the exact device and browser. Works offline.
+- **Words.** One word at a time over a full-screen scene: the word, its pronunciation (tap to hear it), a clear definition and a natural example. Swipe up, scroll or use the arrow keys for the next one. Heart a word to keep it, bookmark it to practice it.
+- **Journey.** Chapters of six words, ordered from words everyone should know to rare ones. Each chapter is a short path of games (meet the words, what it means, fill the gap, build the word, mixed practice, chapter check) leading to a landmark.
+- **Practice.** Today's review first, scheduled by an FSRS-based spaced repetition scheduler so words come back just before you'd forget them. Then six games (flash cards, what it means, fill the gap, spelling, unscramble, game shuffle), three challenges (Perfection, Rush, Sprint) and a level check.
+- **Four levels, all hand-written.** Sprout (ages 5 to 8) and Explorer (8 to 11) for kids, Scholar (11 to 14) and Wordsmith (teens and adults, words like perspicacious and ineffable). About 2,150 words, each with a definition and example written for Lumin Vocab, plus Beautiful words and Funny words collections and 19 topics.
+- **Library and You.** Favorites, lists, history and your own words; a streak, the week at a glance and progress stats.
+- **Family profiles.** Everyone gets their own level, words and settings. Kids get simple respellings instead of IPA, gentler words and read aloud. An optional family PIN keeps grown-up settings and parent profiles locked.
+- **Private family sync.** Add phones, tablets and computers by scanning a QR code inside the app or typing a six-word family code. Everything is encrypted on the device before upload, so the server only ever stores ciphertext.
+- **Installs like an app** on iPhone, iPad, Android, Windows, Mac, Linux and ChromeOS, straight from the landing page. Works offline.
 - No ads, no trackers, no accounts, no third-party scripts.
 
 ## How it's built
@@ -22,12 +23,12 @@ Live at **[lumin.b7collective.com](https://lumin.b7collective.com)**. Made by [B
 Plain HTML, CSS and JavaScript modules with no build step, served by a Cloudflare Worker with static assets. Sync uses a small API on the same Worker with a D1 database.
 
 ```
-public/            the app (index.html, app.css, js/, data/words.json, fonts, icons, service worker)
+public/            the app (index.html, app.css, js/, data/words.json, art/, fonts, icons, service worker)
 src/worker.js      sync API: validation, rate limiting, stores encrypted blobs only
 migrations/        D1 schema
 tests/unit/        device detection, scheduler, encryption, server validation, word bank checks
 tests/e2e/         Playwright tests on iPhone, Android, iPad and desktop, including two-device sync and the layout standard
-tools/wordbank/    the scripts and kid word lists used to build words.json
+tools/wordbank/    the hand-written word lists (kids lists and advanced/) and the scripts that build words.json
 tools/icons/       the app icon sources; `sh tools/icons/make.sh` rebuilds every size
 ```
 

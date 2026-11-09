@@ -37,3 +37,6 @@
 /manifest.webmanifest
   ! Cross-Origin-Resource-Policy
   Cross-Origin-Resource-Policy: cross-origin
+
+/art/*
+  Cache-Control: public, max-age=604800
