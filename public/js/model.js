@@ -102,9 +102,21 @@ export function stats(pid) {
 
 // Deterministic shuffle so each person gets their own order, stable across devices.
 function seeded(str) { let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; } return () => { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; }; }
+// Which levels a category can draw from, so kids never see grown-up words
+export function levelsFor(p) { return p.level <= 1 ? [0, 1] : p.level === 2 ? [1, 2, 3] : [2, 3]; }
+export function topicCounts(p) {
+  const allowed = levelsFor(p), out = {};
+  for (const w of WORDS) if (allowed.includes(w.l)) out[w.t] = (out[w.t] || 0) + 1;
+  return out;
+}
 export function queue(p) {
   const done = new Set(cards(p.id).map(c => c.w));
   const rnd = seeded(p.id);
+  if (p.feedTopic) {
+    const allowed = levelsFor(p);
+    return WORDS.filter(w => w.t === p.feedTopic && allowed.includes(w.l) && !done.has(w.w))
+      .map(w => [Math.abs(w.l - p.level) + rnd() * 0.9, w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  }
   const at = WORDS.filter(w => w.l === p.level && !done.has(w.w));
   const below = p.level > 0 ? WORDS.filter(w => w.l === p.level - 1 && !done.has(w.w)) : [];
   const keyed = (arr) => arr.map(w => [rnd(), w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);

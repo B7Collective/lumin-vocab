@@ -26,8 +26,8 @@ test("first run, feed, details, favorites and undo", async ({ page }, info) => {
   await page.locator(".toast button", { hasText: "Undo" }).click();
   await expect(page.locator(".wordcard .word")).toHaveText(first);
   await page.getByRole("button", { name: "Learn this" }).click();
+  await expect(page.locator(".wordcard .word")).not.toHaveText(first);
   const second = await page.locator(".wordcard .word").textContent();
-  expect(second).not.toBe(first);
   await page.getByRole("button", { name: "More about this word" }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("dialog").getByRole("button", { name: "Favorite" }).click();
@@ -63,7 +63,7 @@ test("next word by swipe or keyboard, and the hint fits the device", async ({ pa
 test("review session runs to the end", async ({ page }, info) => {
   const errors = watchErrors(page);
   await onboard(page);
-  for (let i = 0; i < 4; i++) await page.getByRole("button", { name: "Learn this" }).click();
+  for (let i = 0; i < 4; i++) { const w = await page.locator(".wordcard .word").textContent(); await page.getByRole("button", { name: "Learn this" }).click(); await expect(page.locator(".wordcard .word")).not.toHaveText(w); }
   await page.goto("/#/review/practice");
   let rounds = 0;
   while (rounds++ < 20) {
@@ -85,6 +85,7 @@ test("review session runs to the end", async ({ page }, info) => {
 test("install guidance matches the device", async ({ page }, info) => {
   await onboard(page);
   await page.goto("/#/install");
+  await expect(page.locator("main h1")).toContainText("Install");
   const text = await page.locator("main").textContent();
   if (info.project.name === "iphone") { expect(text).toMatch(/Install Lumin Vocab on your iPhone/); expect(text).toMatch(/Add to Home Screen/); expect(text).toMatch(/bottom of the screen/); }
   if (info.project.name === "ipad") { expect(text).toMatch(/iPad/); expect(text).toMatch(/top of the screen/); }
@@ -135,7 +136,7 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   const b = await (await browser.newContext({ ...info.project.use, viewport: { width: 393, height: 852 }, isMobile: true, hasTouch: true })).newPage();
   const errors = [...watchErrors(a)];
   await onboard(a, { name: "Robin" });
-  for (let i = 0; i < 3; i++) await a.getByRole("button", { name: "Learn this" }).click();
+  for (let i = 0; i < 3; i++) { const w = await a.locator(".wordcard .word").textContent(); await a.getByRole("button", { name: "Learn this" }).click(); await expect(a.locator(".wordcard .word")).not.toHaveText(w); }
   await a.goto("/#/family");
   await a.getByRole("button", { name: "Turn on family sync" }).click();
   await expect(a.locator(".status")).toContainText("Synced", { timeout: 20000 });
@@ -160,5 +161,22 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   // the server only stores ciphertext
   const res = await a.request.post("/api/sync", { data: { fid: "0".repeat(64), since: 0, changes: [] } });
   expect(res.ok()).toBeTruthy();
+  expect(errors).toEqual([]);
+});
+
+test("categories filter the feed and stay age appropriate", async ({ page }, info) => {
+  const errors = watchErrors(page);
+  await onboard(page, { name: "Kim", role: "A kid" });
+  await page.getByRole("link", { name: "Choose a category" }).click();
+  await expect(page.getByRole("heading", { name: "Categories" })).toBeVisible();
+  await page.locator(".catcard", { hasText: "Animals" }).click();
+  await expect(page.locator(".wordcard .topic")).toContainText("Animals");
+  const words = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.queue(p).map(w => w.l); });
+  expect(words.length).toBeGreaterThan(10);
+  expect(Math.max(...words)).toBeLessThanOrEqual(1);
+  await page.waitForTimeout(600);
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-category-feed.png` });
+  await page.goto("/#/categories");
+  await page.screenshot({ path: `test-results/shots/${info.project.name}-categories.png`, fullPage: true });
   expect(errors).toEqual([]);
 });

@@ -56,6 +56,13 @@ export function sheet(title, build, { onClose } = {}) {
   body.append(h("div", { class: "sheet-head" }, h("h2", {}, title), close));
   build(body);
   layer.append(scrim, body);
+  // Phones: drag the sheet down from its top edge to close it
+  let sy = null;
+  body.addEventListener("pointerdown", (e) => { if (innerWidth >= 720 || e.clientY - body.getBoundingClientRect().top > 56 || e.target.closest("button, a, input, select, textarea")) return; sy = e.clientY; body.classList.add("dragging"); body.setPointerCapture(e.pointerId); });
+  body.addEventListener("pointermove", (e) => { if (sy == null) return; const dy = Math.max(0, e.clientY - sy); body.style.transform = `translateY(${dy}px)`; });
+  const end = (e) => { if (sy == null) return; const dy = e.clientY - sy; sy = null; body.classList.remove("dragging"); body.classList.add("release");
+    if (dy > 110) { body.style.transform = "translateY(100%)"; setTimeout(() => closeSheet(), 200); } else body.style.transform = ""; };
+  body.addEventListener("pointerup", end); body.addEventListener("pointercancel", end);
   const keyer = (e) => { if (e.key === "Escape") closeSheet(); };
   addEventListener("keydown", keyer);
   sheetClose = () => { scrim.remove(); body.remove(); removeEventListener("keydown", keyer); sheetClose = null; onClose && onClose(); prevFocus && prevFocus.focus && prevFocus.focus(); };
@@ -90,6 +97,10 @@ export function confirmBox(title, text, yes = "Yes", danger = false) {
 }
 
 // ---- Speech --------------------------------------------------------------
+export const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("calm");
+// A light tap on devices that support it (most Android phones). iPhones ignore it.
+export function haptic(pattern = 8) { try { if (navigator.vibrate && !reduced()) navigator.vibrate(pattern); } catch {} }
+
 export const canSpeak = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
 export function voices() { if (!canSpeak()) return []; return speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang)); }
 export function speak(text, p) {

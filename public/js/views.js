@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as srs from "./srs.js";
 import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
-import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge } from "./ui.js";
+import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 
 const SITE = "https://lumin.b7collective.com";
@@ -14,7 +14,7 @@ const SOURCE = "https://github.com/B7Collective/lumin-vocab";
 const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[3];
 
 function footer() {
-  return h("footer", { class: "footer" }, "Made by ", h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), " · ",
+  return h("footer", { class: "footer" }, "100% free. No ads, no tracking, no accounts. Made by ", h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), " · ",
     h("a", { href: "/privacy.html" }, "Privacy"), " · ", h("a", { href: "#/about" }, "Credits"), " · ", h("a", { href: SOURCE, rel: "noopener" }, "Source code"));
 }
 function qr(text) {
@@ -39,20 +39,20 @@ async function guard(reason = "This needs a grown-up") {
 
 // ---- Welcome -------------------------------------------------------------
 route("welcome", (main) => {
-  main.append(h("div", { class: "center" },
-    h("img", { src: "/icons/logo.svg", alt: "", width: 88, height: 88, style: { borderRadius: "20px" } }),
-    h("div", { style: { display: "flex", flexDirection: "column", gap: "14px", maxWidth: "560px" } },
-      h("h1", { class: "serif", style: { margin: 0, fontWeight: 400, fontSize: "clamp(34px,6vw,52px)", lineHeight: 1.1 } }, "A new word every day, for the whole family."),
-      h("p", { class: "lead" }, "One calm word at a time, real review that makes words stick, and levels for every age. No ads, no accounts, nothing to buy.")),
+  const promise = h("ul", { class: "promises", "aria-label": "Our promises" }, [["check", "100% free"], ["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"]].map(([ic, t]) => h("li", {}, icon(ic, 18), t)));
+  main.append(h("section", { class: "hero" },
+    h("div", {},
+      h("h1", {}, "A new word every day, for the whole family."),
+      h("p", { class: "lead" }, "One calm word at a time, review that makes words stick, and levels from early readers to grown-ups."),
+      promise,
+      h("div", { class: "cta" }, h("a", { class: "btn primary", href: "#/setup" }, "Get started"), h("a", { class: "linkbtn", href: "#/join" }, "Join your family on this device")),
+      h("div", { class: "features" },
+        [["sprout", "Levels for every age", "Kid-written words for young readers, up to grown-up vocabulary."], ["review", "Review that sticks", "Words come back right before you'd forget them."],
+         ["family", "The whole family", "A profile for everyone, synced privately across devices."]].map(([ic, t, d]) => h("div", { class: "feature" }, h("span", { class: "fi" }, icon(ic, 20)), h("div", {}, h("strong", {}, t), h("span", { class: "muted" }, d)))))),
     h("div", { class: "preview", "aria-hidden": "true" }, h("div", { class: "card-meta" }, topicChip("Describing"), h("span", { class: "pos" }, "adjective")),
-      h("span", { class: "word", style: { fontSize: "clamp(44px,8vw,64px)", margin: 0 } }, "luminous"), h("span", { class: "muted" }, "LOO-muh-nuhs"),
-      h("p", { style: { margin: "6px 0 0", fontSize: "19px" } }, "giving off light, or glowing in the dark")),
-    h("div", { class: "features" },
-      [["sprout", "Levels for every age", "Kid-friendly words and definitions up to grown-up vocabulary."], ["review", "Review that sticks", "Words come back right before you'd forget them."],
-       ["family", "The whole family", "Everyone gets their own profile, synced privately across devices."]].map(([ic, t, d]) => h("div", { class: "feature" }, badge(ic), h("div", {}, h("strong", {}, t), h("span", { class: "muted" }, d))))),
-    h("div", { style: { display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" } },
-      h("a", { class: "btn primary", href: "#/setup", style: { minWidth: "240px" } }, "Get started"),
-      h("a", { class: "linkbtn", href: "#/join" }, "Already use it on another device? Join your family"))),
+      h("span", { class: "word", style: { fontSize: "clamp(48px,7vw,72px)", margin: 0 } }, "luminous"), h("span", { class: "muted" }, "LOO-muh-nuhs"),
+      h("p", { style: { margin: "8px 0 0", fontSize: "20px" } }, "giving off light, or glowing in the dark"),
+      h("p", { class: "ex", style: { margin: "4px 0 0" } }, "The luminous stars on my ceiling glow at night."))),
     footer());
 });
 
@@ -131,11 +131,13 @@ route("setup", (main) => {
           h("button", { class: "btn primary", onclick: () => { if (!s.name.trim()) { name.focus(); toast("Add a name first"); return; } s.step = 2; draw(); } }, "Continue")));
       setTimeout(() => name.focus(), 50);
     } else if (s.step === 2) {
-      const allowed = s.role === "kid" ? [0, 1, 2] : s.role === "teen" ? [1, 2, 3] : [2, 3];
+      const allowed = [0, 1, 2, 3];
+      const suggested = s.role === "kid" ? [0, 1] : s.role === "teen" ? [2] : [3];
       page.append(h("div", { style: { display: "flex", justifyContent: "space-between" } }, h("span", { class: "brand" }, "Lumin Vocab"), stepLabel(2)),
         h("h1", {}, `Pick a level for ${s.name.trim()}`),
         h("div", { class: "choices" }, allowed.map((l) => h("button", { class: "choice", "aria-pressed": String(s.level === l), onclick: () => { s.level = l; draw(); } },
-          badge(["sprout", "t-nature", "t-mind", "star"][l], `var(--c${[6, 1, 5, 3][l]})`), h("strong", {}, model.LEVELS[l].name), h("span", { class: "muted" }, model.LEVELS[l].ages), h("span", { class: "s" }, model.LEVELS[l].sample)))),
+          h("span", { class: "choice-top" }, badge(["sprout", "t-nature", "t-mind", "star"][l], `var(--c${[6, 1, 5, 3][l]})`), suggested.includes(l) ? h("span", { class: "suggest" }, "Suggested") : null),
+          h("strong", {}, model.LEVELS[l].name), h("span", { class: "muted" }, model.LEVELS[l].ages), h("span", { class: "s" }, model.LEVELS[l].sample)))),
         h("button", { class: "linkbtn", style: { alignSelf: "flex-start" }, onclick: () => wordCheck(s.role, (l) => { s.level = l; draw(); toast(`${model.LEVELS[l].name} looks like a good fit`); }) }, "Not sure? Take a 2-minute word check"),
         h("p", { class: "muted", style: { margin: 0 } }, "You can change this any time in settings."),
         h("div", { style: { display: "flex", justifyContent: "space-between", gap: "12px" } }, h("button", { class: "btn quiet", onclick: () => { s.step = 1; draw(); } }, "Back"), h("button", { class: "btn primary", onclick: () => { s.step = 3; draw(); } }, "Continue")));
@@ -162,7 +164,7 @@ route("setup", (main) => {
 
 function wordCheck(role, done) {
   const fake = ["plorpish", "vantrous", "glimber", "brindlest", "quorbish", "snevilate"];
-  const allowed = role === "kid" ? [0, 1, 2] : role === "teen" ? [1, 2, 3] : [1, 2, 3];
+  const allowed = role === "kid" ? [0, 1, 2] : [0, 1, 2, 3];
   const items = [];
   for (const l of allowed) { const pool = model.WORDS.filter(w => w.l === l); for (let i = 0; i < 5; i++) items.push({ w: pool[Math.floor(Math.random() * pool.length)].w, l }); }
   fake.sort(() => Math.random() - .5).slice(0, 3).forEach(w => items.push({ w, l: -1 }));
@@ -210,8 +212,11 @@ route("feed", (main) => {
 
   function header() {
     const n = model.todayCount(p.id), dueN = model.due(p.id).length;
+    const cat = p.feedTopic;
     top.replaceChildren(
-      h("div", { style: { display: "flex", alignItems: "center", gap: "12px" } }, h("span", { class: "goal" }, `${Math.min(n, p.goal)} of ${p.goal} today`),
+      h("div", { style: { display: "flex", alignItems: "center", gap: "12px", minWidth: 0 } },
+        h("a", { class: "topic catbtn", href: "#/categories", "aria-label": cat ? `Category: ${cat}. Change category` : "Choose a category" }, cat ? topicIcon(cat) : icon("grid", 18), cat || "All categories"),
+        h("span", { class: "goal" }, `${Math.min(n, p.goal)} of ${p.goal} today`),
         h("span", { class: "progress", "aria-hidden": "true" }, h("span", { style: { width: Math.min(100, n / p.goal * 100) + "%" } }))),
       dueN ? h("a", { href: "#/review", class: "goal" }, `${dueN} to review`) : h("span"));
   }
@@ -219,8 +224,14 @@ route("feed", (main) => {
   function show() {
     header();
     const w = word();
+    if (!w && p.feedTopic) {
+      stage.replaceChildren(h("div", { class: "wordcard" }, h("p", { class: "word", style: { fontSize: "clamp(36px,6vw,56px)" } }, `That's every ${p.feedTopic.toLowerCase()} word for now.`),
+        h("div", { style: { display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" } }, h("a", { class: "btn primary", href: "#/categories" }, "Pick another category"),
+          h("button", { class: "btn", onclick: () => { model.saveProfile({ ...model.profile(p.id), feedTopic: null }); render(); } }, "Back to all words"))));
+      actions.replaceChildren(); return;
+    }
     if (!w) {
-      stage.replaceChildren(h("div", { class: "wordcard" }, badge("medal", "var(--c3)", "lg"), h("p", { class: "word", style: { fontSize: "clamp(36px,6vw,56px)" } }, "That's every word at this level."),
+      stage.replaceChildren(h("div", { class: "wordcard" }, h("p", { class: "word", style: { fontSize: "clamp(36px,6vw,56px)" } }, "That's every word at this level."),
         h("p", { class: "def" }, "Amazing work. Try the next level up, or review the words you're learning."),
         h("div", { style: { display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" } }, h("a", { class: "btn primary", href: "#/settings" }, "Change level"), h("a", { class: "btn", href: "#/review" }, "Review"))));
       actions.replaceChildren(); return;
@@ -263,25 +274,53 @@ route("feed", (main) => {
     const prev = model.card(p.id, w.w);
     const before = model.todayCount(p.id);
     if (kind === "learn") model.learn(p.id, w.w); else model.know(p.id, w.w);
+    haptic(); pulseReview();
     const after = model.todayCount(p.id);
     if (before < p.goal && after >= p.goal) setTimeout(() => toast(model.isKid(p) ? "You did it! Daily goal reached." : "Daily goal reached. Keep going, or come back tomorrow."), 500);
     else toast(kind === "learn" ? `Added "${w.w}" to your reviews` : `Marked "${w.w}" as known`, { label: "Undo", fn: () => { model.restoreCard(p.id, w.w, prev); idx = Math.max(0, idx - 1); dir = "down"; show(); } });
     next(true);
   }
-  function next(already) {
-    const w = word(); if (!w) return;
-    if (!already) model.seen(p.id, w.w);
-    back.push(idx); idx++; dir = "up"; show();
+  let moving = false;
+  function leave(d, then) {
+    const card = stage.querySelector(".wordcard");
+    if (!card || reduced()) { then(); return; }
+    moving = true; card.classList.remove("settle"); card.classList.add("leave-" + d);
+    setTimeout(() => { moving = false; then(); }, 200);
   }
-  function prev() { if (!back.length) return; idx = back.pop(); dir = "down"; show(); }
+  function next(already) {
+    const w = word(); if (!w || moving) return;
+    if (!already) model.seen(p.id, w.w);
+    leave("up", () => { back.push(idx); idx++; dir = "up"; show(); });
+  }
+  function prev() { if (!back.length || moving) return; leave("down", () => { idx = back.pop(); dir = "down"; show(); }); }
 
-  // Swipe, wheel and keys
+  function pulseReview() {
+    const n = model.due(p.id).length + model.cards(p.id).filter(c => c.st === "learning" && c.srs && c.srs.reps === 0).length;
+    document.querySelectorAll('.topnav a[href="#/review"], .bottomnav a[href="#/review"]').forEach((a) => {
+      let b = a.querySelector(".count, .dot");
+      if (!b) { b = h("span", { class: a.closest(".topnav") ? "count" : "dot" }); a.append(b); }
+      b.textContent = String(n || ""); if (!n) { b.remove(); return; }
+      b.classList.remove("pulse"); void b.offsetWidth; b.classList.add("pulse");
+    });
+  }
+  // Swipe (the card follows your finger), wheel and keys
   let y0 = null, t0 = 0;
-  feed.addEventListener("pointerdown", (e) => { if (e.pointerType === "mouse") return; y0 = e.clientY; t0 = Date.now(); });
-  feed.addEventListener("pointerup", (e) => {
-    if (y0 == null) return; const dy = e.clientY - y0; const v = Math.abs(dy) / Math.max(1, Date.now() - t0); y0 = null;
-    if (dy < -60 || (dy < -24 && v > .5)) next(); else if (dy > 60 || (dy > 24 && v > .5)) prev();
+  const cardEl = () => stage.querySelector(".wordcard");
+  feed.addEventListener("pointerdown", (e) => { if (e.pointerType === "mouse" || e.target.closest("button, a")) return; y0 = e.clientY; t0 = Date.now(); const c = cardEl(); c && c.classList.remove("settle"); });
+  feed.addEventListener("pointermove", (e) => {
+    if (y0 == null || reduced()) return; const c = cardEl(); if (!c) return;
+    const dy = e.clientY - y0, eased = dy * 0.55;
+    c.style.transform = `translateY(${eased}px)`; c.style.opacity = String(Math.max(0.35, 1 - Math.abs(dy) / 500));
   });
+  const release = (e) => {
+    if (y0 == null) return; const dy = e.clientY - y0; const v = Math.abs(dy) / Math.max(1, Date.now() - t0); y0 = null;
+    const c = cardEl();
+    if (dy < -60 || (dy < -24 && v > .5)) next();
+    else if (dy > 60 || (dy > 24 && v > .5)) { if (back.length) prev(); else if (c) { c.classList.add("settle"); c.style.transform = ""; c.style.opacity = ""; } }
+    else if (c) { c.classList.add("settle"); c.style.transform = ""; c.style.opacity = ""; }
+  };
+  feed.addEventListener("pointerup", release);
+  feed.addEventListener("pointercancel", release);
   feed.addEventListener("touchmove", (e) => { if (e.cancelable) e.preventDefault(); }, { passive: false });
   let wheelAt = 0;
   feed.addEventListener("wheel", (e) => { if (Math.abs(e.deltaY) < 25 || Date.now() - wheelAt < 550) return; wheelAt = Date.now(); e.deltaY > 0 ? next() : prev(); }, { passive: true });
@@ -298,6 +337,23 @@ route("feed", (main) => {
   addEventListener("keydown", keys);
   addEventListener("hashchange", () => removeEventListener("keydown", keys), { once: true });
   show();
+});
+
+// ---- Categories ------------------------------------------------------------
+route("categories", (main) => {
+  const p = app.profile, counts = model.topicCounts(p);
+  const pick = (t) => { model.saveProfile({ ...model.profile(p.id), feedTopic: t }); go("/feed"); toast(t ? `Showing ${t.toLowerCase()} words` : "Showing all categories"); };
+  const topics = Object.keys(counts).filter(t => counts[t] >= 5).sort((a, b) => counts[b] - counts[a]);
+  const allowed = model.levelsFor(p);
+  const sample = (t) => { const pool = model.WORDS.filter(w => (!t || w.t === t) && allowed.includes(w.l)); return pool.slice(0, 3).map(w => w.w).join(", "); };
+  const card = (t, label, sub, ic, col) => h("button", { class: "catcard", "aria-pressed": String((p.feedTopic || null) === t), onclick: () => pick(t) },
+    h("span", { class: "badge", style: { color: col } }, ic), h("span", { class: "cat-name" }, label), h("span", { class: "m" }, sub), h("span", { class: "eg" }, sample(t)));
+  main.append(h("div", { class: "page" },
+    h("div", {}, h("h1", {}, "Categories"), h("p", { class: "lead", style: { marginTop: "8px" } }, `Pick what you're in the mood for. Words stay at ${model.isKid(p) ? "kid-friendly levels" : "your level"}.`)),
+    h("div", { class: "catgrid" },
+      card(null, "All categories", "A mix of everything", icon("grid"), "var(--ink)"),
+      topics.map(t => card(t, t, `${counts[t]} words`, topicIcon(t, 24), tint(t)))),
+    footer()));
 });
 
 // ---- Word details --------------------------------------------------------
@@ -355,7 +411,7 @@ route("review", (main, args) => {
   main.append(wrap);
   if (!items.length) {
     const nd = model.nextDue(p.id), any = model.cards(p.id).some(c => c.st === "learning");
-    wrap.append(h("div", { class: "q" }, h("div", { class: "prompt" }, badge(any ? "check" : "sprout", "var(--c6)", "lg"),
+    wrap.append(h("div", { class: "q" }, h("div", { class: "prompt" },
       h("p", { class: "big" }, any ? "All caught up." : "Nothing to review yet."),
       h("p", { class: "kicker" }, any ? (nd ? `Your next review is ${untilText(nd)}. Reviewing at the right time is what makes words stick.` : "") : "Tap Learn this on a few words, and they'll show up here at just the right times.")),
       h("div", { style: { display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" } },
@@ -365,6 +421,7 @@ route("review", (main, args) => {
   const queue = items.map(c => ({ c, retry: false }));
   const total = queue.length;
   let done = 0, right = 0, stronger = 0, mastered = 0;
+  const results = [];
   const graded = new Set();
   function step() {
     const it = queue.shift();
@@ -381,12 +438,14 @@ route("review", (main, args) => {
     else big.append(ex.type === "meaning" ? h("span", { lang: "en" }, ex.prompt) : ex.prompt);
     const readOut = () => speak(ex.type === "meaning" ? ex.word.w : `${kickers[ex.type]}: ${ex.prompt.replace("_____", "blank")}`, p);
     const kIcon = { meaning: "book", word: "search", blank: "quote", spell: "t-mine" }[ex.type];
-    const promptEl = h("div", { class: "prompt" }, badge(kIcon, tint(ex.word.t)), h("span", { class: "kicker" }, kickers[ex.type]), big,
+    const promptEl = h("div", { class: "prompt" }, h("span", { class: "kicker" }, icon(kIcon, 20), kickers[ex.type]), big,
       canSpeak() ? h("button", { class: "iconbtn", "aria-label": "Read it aloud", onclick: readOut }, icon("speak", 20)) : null);
     function finish(correct) {
       if (answered) return; answered = true;
       const ms = Date.now() - start;
       if (correct) right++;
+      if (!it.retry) results.push({ w: ex.word.w, ok: correct });
+      haptic(correct ? 8 : [12, 60, 12]);
       if (!graded.has(ex.word.w)) {
         graded.add(ex.word.w);
         const before = c.srs ? c.srs.s : 0;
@@ -428,9 +487,10 @@ route("review", (main, args) => {
   function summary() {
     removeEventListener("keydown", keys);
     bar.style.width = "100%";
-    q.replaceChildren(h("div", { class: "prompt" }, badge("medal", "var(--c3)", "lg"),
+    q.replaceChildren(h("div", { class: "prompt" },
       h("p", { class: "big" }, kid ? "You did it!" : "Nice work."),
       h("p", { class: "kicker" }, `${right} correct out of ${total + queue.length}. ${stronger} word${stronger === 1 ? "" : "s"} got stronger${mastered ? `, and ${mastered} ${mastered === 1 ? "is" : "are"} now mastered` : ""}.`)),
+      h("div", { class: "results", "aria-label": "Your answers" }, results.map(r => h("button", { class: "chip " + (r.ok ? "ok" : "no"), onclick: () => details(r.w) }, icon(r.ok ? "check" : "review", 18), r.w))),
       h("div", { style: { display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" } }, h("a", { class: "btn primary", href: "#/feed" }, "Back to words"), h("a", { class: "btn", href: "#/saved" }, "See my words")));
   }
   const bar = h("span", { style: { width: "0%" } });
@@ -459,7 +519,7 @@ route("saved", (main, args) => {
   const tabs = h("div", { class: "tabs", role: "tablist", "aria-label": "Saved words" });
   const tile = (w, meta) => { const word = model.lookup(w); const t = word ? (word.custom ? "My words" : word.t) : "Describing";
     return h("button", { class: "tile", onclick: () => details(w) }, h("span", { class: "top" }, h("span", { class: "w" }, w), topicIcon(t)), h("span", { class: "m" }, meta)); };
-  const empty = (ic, text) => h("div", { class: "empty" }, badge(ic, null, "lg"), h("p", { style: { margin: 0, maxWidth: "36ch" } }, text));
+  const empty = (ic, text) => h("div", { class: "empty" }, icon(ic, 22), h("p", { style: { margin: 0, maxWidth: "36ch" } }, text));
   const stateLabel = (c) => c.st === "learning" ? (srs.isMastered(c.srs) ? "Mastered" : "Learning") : c.st === "known" ? "Known" : "Seen";
   function drawTab() {
     const add = (...k) => out.append(...k.flat().filter(Boolean));
@@ -497,9 +557,9 @@ route("saved", (main, args) => {
   search.addEventListener("input", drawTab);
   main.append(h("div", { class: "page" },
     h("h1", {}, "Saved"),
-    h("div", { class: "grid", style: { gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))" } },
-      [[st.learning, "Learning", "sprout", "var(--c6)"], [st.mastered, "Mastered", "medal", "var(--c3)"], [st.known, "Already known", "check", "var(--c1)"]].map(([n, l, ic, col]) =>
-        h("div", { class: "tile stat" }, badge(ic, col), h("span", {}, h("span", { class: "num" }, String(n)), h("br"), h("span", { class: "m" }, l))))),
+    (() => { const tot = Math.max(1, st.learning + st.mastered + st.known), parts = [[st.mastered, "mastered", "var(--c6)"], [st.learning, "learning", "var(--accent)"], [st.known, "already known", "var(--c5)"]];
+      return h("div", { class: "summary" }, h("div", { class: "summary-line" }, parts.map(([n, l, col]) => h("span", {}, h("span", { class: "dotkey", style: { background: col } }), h("b", {}, String(n)), l))),
+        h("div", { class: "segbar", role: "img", "aria-label": `${st.mastered} mastered, ${st.learning} learning, ${st.known} already known` }, parts.map(([n, , col]) => h("span", { style: { width: (n / tot * 100) + "%", background: col } })))); })(),
     search, tabs, out));
   drawTab();
 });
@@ -744,7 +804,7 @@ route("settings", (main) => {
 
   // Data
   page.append(sec("Your data",
-    h("p", { style: { margin: 0 } }, "Everything is stored on your devices. With family sync on, it's encrypted before it leaves this device. There are no ads, trackers or accounts."),
+    h("p", { style: { margin: 0 } }, h("strong", {}, "100% free, with no ads, no tracking and no accounts. "), "Everything is stored on your devices. With family sync on, it's encrypted before it leaves this device."),
     h("div", { class: "chips" },
       h("button", { class: "btn small quiet", onclick: () => download(`lumin-vocab-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(store.exportAll())) }, icon("down", 20), "Download backup"),
       h("a", { class: "btn small quiet", href: "/privacy.html" }, "Privacy")),

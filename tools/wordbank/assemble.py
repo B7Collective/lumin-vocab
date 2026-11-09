@@ -14,7 +14,7 @@ def entry_extras(w, kid):
     return fam[:3]
 
 out, seen = [], set()
-for level, fname in ((0, "kids_sprout.txt"), (1, "kids_explorer.txt")):
+for level, fname in ((0, "kids_sprout.txt"), (0, "kids_sprout_2.txt"), (1, "kids_explorer.txt"), (1, "kids_explorer_2.txt")):
     for line in open(fname):
         line = line.strip()
         if not line: continue
@@ -26,8 +26,8 @@ for level, fname in ((0, "kids_sprout.txt"), (1, "kids_explorer.txt")):
                     "t": topic, "f": entry_extras(w, True), "m": []})
 
 GOOD_LEX = {"noun.attribute","noun.cognition","noun.communication","noun.feeling","noun.state","noun.act","noun.event","noun.phenomenon","noun.person","noun.motive","noun.relation","noun.time","noun.shape","noun.group","noun.process","noun.possession"}
-def pick(lo, hi, n, level):
-    pool = [c for c in cands if lo <= c["z"] < hi and c["w"] not in seen
+def pick(lo, hi, n, level, kidsafe=False):
+    pool = [c for c in cands if lo <= c["z"] < hi and c["w"] not in seen and (c["kidsafe"] or not kidsafe)
             and (c["pos"] in ("adjective", "verb", "adverb") or c["lexfile"] in GOOD_LEX)
             and len(c["def"].split()) <= 16 and c["say"] and c["lexfile"] != "adj.pert"
             and not re.match(r"(provide with|of or |relating to|of a |in a .* manner)", c["def"])
@@ -43,8 +43,8 @@ def pick(lo, hi, n, level):
                     "s": c["say"], "t": c["topic"], "f": c["family"][:3], "m": c["similar"]})
     return len(chosen)
 
-print("scholar", pick(3.2, 4.2, 800, 2))
-print("wordsmith", pick(2.2, 3.2, 900, 3))
+print("scholar", pick(3.2, 4.4, 1600, 2, kidsafe=True))
+print("wordsmith", pick(2.0, 3.2, 1930, 3))
 def nodash(t):
     return re.sub(r"\s*\u2014\s*", ", ", t).replace("\u2013", "-") if isinstance(t, str) else t
 for o in out:

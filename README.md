@@ -10,7 +10,7 @@ Live at **[lumin.b7collective.com](https://lumin.b7collective.com)**. Made by [B
 
 - **The word feed.** One word per screen with pronunciation, read aloud, a clear definition and an example. Swipe, scroll or use the arrow keys. Every action can be undone.
 - **Review that works.** Words you choose to learn come back on a schedule set by an FSRS-based spaced repetition scheduler, through several kinds of practice: pick the meaning, pick the word, fill the blank, and spell it.
-- **Four levels.** Sprout (ages 5 to 8) and Explorer (8 to 11) use definitions and examples written for kids. Scholar and Wordsmith draw on Open English WordNet. About 2,270 words in all.
+- **Four levels.** Sprout (ages 5 to 8) and Explorer (8 to 11) use definitions and examples written for kids. Scholar and Wordsmith draw on Open English WordNet. About 4,500 words in all, browsable by 17 categories such as Animals, Feelings, Nature and Science.
 - **Family profiles.** Everyone gets their own level, words, theme and settings. Kids get simpler wording, bigger buttons and read aloud. An optional family PIN keeps grown-up settings and parent profiles locked.
 - **Private family sync.** Turn it on, then add phones, tablets and computers with a QR code or a six-word family code. Everything is encrypted on the device before upload, so the server only ever stores ciphertext.
 - **Unlimited history, favorites, collections, your own words, search, backups.**

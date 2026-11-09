@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.0.0";
+export const VERSION = "1.1.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -75,11 +75,18 @@ export function render() {
   applyLook();
   shell(name);
   const main = document.getElementById("main");
-  main.replaceChildren();
-  ROUTES[name](main, rest.map(decodeURIComponent));
-  main.focus({ preventScroll: true });
-  scrollTo(0, 0);
+  const swap = () => {
+    main.replaceChildren();
+    ROUTES[name](main, rest.map(decodeURIComponent));
+    main.focus({ preventScroll: true });
+    scrollTo(0, 0);
+  };
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("calm");
+  // Soft crossfade between screens where the browser supports it; instant otherwise
+  if (document.startViewTransition && !calm && lastRoute && lastRoute !== name) document.startViewTransition(swap); else swap();
+  lastRoute = name;
 }
+let lastRoute = null;
 addEventListener("hashchange", render);
 addEventListener("resize", () => { const d = device.current(); if (d.layout !== app.device.layout || d.installed !== app.device.installed) { app.device = d; } });
 
