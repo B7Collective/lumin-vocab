@@ -158,6 +158,23 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   await b.waitForTimeout(3500);
   await a.goto("/#/family"); await a.getByRole("button", { name: "Sync now" }).click();
   await expect(a.locator(".row-item strong", { hasText: "Robin B" })).toBeVisible({ timeout: 15000 });
+  // Live progress: B sits on History. A learns a word and is put away right after (phone locked).
+  // B is switched back to, and its open screen shows the new word without a reload or a Sync button.
+  const switchTo = (pg, hidden) => pg.evaluate((h) => { Object.defineProperty(document, "hidden", { value: h, configurable: true }); document.dispatchEvent(new Event("visibilitychange")); }, hidden);
+  await b.goto("/#/saved/history");
+  await expect(b.locator(".tile .m", { hasText: "Learning ·" })).toHaveCount(3);
+  await a.goto("/#/feed");
+  const fresh = await a.locator(".wordcard .word").textContent();
+  await a.getByRole("button", { name: "Learn this" }).click();
+  await switchTo(a, true);
+  await a.waitForTimeout(400); // shorter than the normal 1 second delay, so only the send-on-hide can deliver it in time
+  await switchTo(b, false);
+  await expect(b.locator(".tile .w", { hasText: fresh })).toBeVisible({ timeout: 10000 });
+  await expect(b.locator(".tile .m", { hasText: "Learning ·" })).toHaveCount(4);
+  // An empty check is read-only: nothing new means nothing written
+  const fid = "e".repeat(64);
+  const empty = await a.request.post("/api/sync", { data: { fid, since: 0, changes: [] } });
+  expect(await empty.json()).toEqual({ seq: 0, more: false, changes: [] });
   // the server only stores ciphertext
   const res = await a.request.post("/api/sync", { data: { fid: "0".repeat(64), since: 0, changes: [] } });
   expect(res.ok()).toBeTruthy();

@@ -53,7 +53,7 @@ export async function open(keys, blob) {
 }
 
 // ---- Sync engine -------------------------------------------------------
-let keys = null, timer = null, running = null, pending = false;
+let keys = null, timer = null, running = null, pending = false, lastPoll = 0, lastActivity = Date.now(), urgent = false;
 const state = { enabled: false, last: 0, error: "", busy: false };
 const subs = new Set();
 export const status = () => ({ ...state });
@@ -64,10 +64,21 @@ export async function init(apiBase = "") {
   const code = await store.getMeta("familyCode");
   state.last = (await store.getMeta("lastSync")) || 0;
   if (code) { keys = await deriveKeys(code); state.enabled = true; }
-  store.onChange((kind) => { if (kind === "local") schedule(2000); });
+  // Local changes go up about a second later. Remote changes come down when the app opens or comes back
+  // to the front, and with a regular check while it's on screen: every 30 seconds while someone is using it,
+  // every 2 minutes after 5 quiet minutes.
+  store.onChange((kind) => { lastActivity = Date.now(); if (kind === "local") schedule(1000); });
   addEventListener("online", () => schedule(0));
-  document.addEventListener("visibilitychange", () => { if (!document.hidden) schedule(0); });
-  setInterval(() => { if (!document.hidden) schedule(0); }, 30000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) { lastActivity = Date.now(); schedule(0); }
+    else if (store.dirty().length) flush(); // the app is going to the background: send now, before the device suspends it
+  });
+  addEventListener("pagehide", () => { if (store.dirty().length) flush(); });
+  setInterval(() => {
+    if (document.hidden || !state.enabled) return;
+    const every = Date.now() - lastActivity < 5 * 60000 ? 30000 : 120000;
+    if (Date.now() - lastPoll >= every) schedule(0);
+  }, 10000);
   syncBase = apiBase;
   emit();
   if (state.enabled) schedule(0);
@@ -90,6 +101,7 @@ export async function disable() {
 }
 export const familyCode = () => store.getMeta("familyCode");
 
+function flush() { clearTimeout(timer); urgent = true; syncNow().catch(() => {}); }
 function schedule(ms) {
   if (!state.enabled) return;
   clearTimeout(timer);
@@ -111,15 +123,19 @@ export async function syncNow() {
           changes.push({ id: oid, u: r.u, d: r.del ? 1 : 0, c: await seal(keys, r) });
           uById[r.id] = r.u; oidToId[oid] = r.id;
         }
+        const payload = JSON.stringify({ fid: keys.fid, since: cursor, changes });
+        lastPoll = Date.now();
+        // keepalive lets a small send finish even if the page is being closed or put to sleep
         const res = await fetch(syncBase + "/api/sync", {
-          method: "POST", headers: { "content-type": "application/json" },
-          body: JSON.stringify({ fid: keys.fid, since: cursor, changes }),
+          method: "POST", headers: { "content-type": "application/json" }, body: payload,
+          keepalive: urgent && payload.length < 60000,
         });
         if (res.status === 429) throw new Error("Syncing too often. It will try again shortly.");
         if (res.status === 507) throw new Error("Your family's sync space is full. Remove old profiles or lists to make room.");
         if (!res.ok) throw new Error("The sync server had a problem (" + res.status + ").");
         const body = await res.json();
         store.markClean(dirty.map(r => r.id), uById);
+        if ((body.changes || []).length) lastActivity = Date.now();
         for (const ch of body.changes || []) {
           try { const rec = await open(keys, ch.c); store.applyRemote(rec); }
           catch { /* not decryptable with this code: ignore */ }
@@ -133,7 +149,7 @@ export async function syncNow() {
     } catch (e) {
       state.error = navigator.onLine === false ? "You're offline. Changes are saved here and will sync later." : (e.message || "Sync failed.");
     } finally {
-      state.busy = false; running = null; emit();
+      state.busy = false; running = null; urgent = false; emit();
       if (pending) { pending = false; schedule(500); }
     }
   })();

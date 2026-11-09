@@ -38,6 +38,10 @@ Every screen is built from one set of tokens and layout classes at the top of `p
 
 The page runs under a strict Content Security Policy (no inline scripts or styles, same-origin only). The sync API accepts JSON only, reads at most 1 MB per request, rate limits by network and by family, and caps each family's record count and stored size. Backups are validated on restore, and restoring one needs the family PIN. Repeated wrong PINs make the app wait before the next try.
 
+### Staying in step across devices
+
+Each change is sent about a second after it's made, and right away when the app goes to the background (so locking a phone never strands a change). A device pulls new progress the moment it's opened or switched to, then checks every 30 seconds while in use and every 2 minutes after 5 quiet minutes. Open screens redraw in place when progress arrives; the word you're reading and a review in progress are never interrupted. An empty check is one small database read with no writes, which keeps the cost per family low.
+
 ### Sync and privacy design
 
 From the six-word family code, each device derives (PBKDF2-SHA256, 210,000 iterations) an AES-GCM key, an HMAC key and a family id. Records are encrypted with AES-GCM, record ids are replaced by HMAC values, and the server stores only a SHA-256 hash of the family id. Conflicts resolve by last writer wins per record, with device id as the tie breaker. Every record carries a UUID-based id, a change timestamp, its originating device and a soft-delete flag.

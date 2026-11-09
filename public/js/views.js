@@ -377,7 +377,8 @@ route("feed", (main) => {
   function next(already) {
     const w = word(); if (!w || moving) return;
     if (!already) model.seen(p.id, w.w);
-    leave("up", () => { back.push(idx); idx++; dir = "up"; show(); });
+    // Skip words someone already handled on another device of this profile
+    leave("up", () => { back.push(idx); idx++; while (q[idx] && model.card(p.id, q[idx].w)) idx++; dir = "up"; show(); });
   }
   function prev() { if (!back.length || moving) return; leave("down", () => { idx = back.pop(); dir = "down"; show(); }); }
 
@@ -425,9 +426,11 @@ route("feed", (main) => {
   };
   let resizeT = 0;
   const onResize = () => { clearTimeout(resizeT); resizeT = setTimeout(fit, 120); };
+  const onRemote = () => { if (document.body.contains(stage)) { Object.assign(p, model.profile(p.id) || {}); header(); } };
   addEventListener("keydown", keys);
   addEventListener("resize", onResize);
-  addEventListener("hashchange", () => { removeEventListener("keydown", keys); removeEventListener("resize", onResize); }, { once: true });
+  document.addEventListener("lumin-remote", onRemote);
+  addEventListener("hashchange", () => { removeEventListener("keydown", keys); removeEventListener("resize", onResize); document.removeEventListener("lumin-remote", onRemote); }, { once: true });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (document.body.contains(stage)) fit(); });
   show();
 });

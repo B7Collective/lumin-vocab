@@ -76,9 +76,15 @@ export async function handleSync(request, env) {
 
   const db = env.DB;
   const now = Date.now();
-  await db.prepare("INSERT INTO families (fam, seq, created, touched) VALUES (?1, 0, ?2, ?2) ON CONFLICT(fam) DO UPDATE SET touched = ?2").bind(fam, now).run();
+
+  // Most requests are a device asking "anything new?". Answer those with one small read and no writes.
+  if (!body.changes.length) {
+    const fam0 = await db.prepare("SELECT seq FROM families WHERE fam = ?1").bind(fam).first();
+    if (!fam0 || fam0.seq <= body.since) return json({ seq: body.since, more: false, changes: [] });
+  }
 
   if (body.changes.length) {
+    await db.prepare("INSERT INTO families (fam, seq, created, touched) VALUES (?1, 0, ?2, ?2) ON CONFLICT(fam) DO UPDATE SET touched = ?2").bind(fam, now).run();
     // Last change per id wins within one request
     const latest = new Map();
     for (const c of body.changes) latest.set(c.id, c);

@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.3.0";
+export const VERSION = "1.3.1";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -62,10 +62,12 @@ function shell(active) {
 let ready = false; // screens are loaded; a hash change during start-up waits for boot to render
 let wordsReady = null, wordsLoaded = false;
 const NO_WORDS = ["welcome", "join", "install", "about"]; // screens that can draw before the word list arrives
-export function render() {
+// render({ refresh: true }) redraws the current screen in place (keeps the scroll position, no transition),
+// used when another device changes something
+export function render(opts) {
   if (!ready) return;
-  closeSheet();
-  document.querySelectorAll("#layer .toast.undo").forEach((t) => t.remove());
+  const refresh = !!(opts && opts.refresh === true);
+  if (!refresh) { closeSheet(); document.querySelectorAll("#layer .toast.undo").forEach((t) => t.remove()); }
   app.device = device.current();
   const hash = location.hash.slice(1);
   if (hash.startsWith("join=")) { sessionStorage.setItem("lumin-join", hash.slice(5)); history.replaceState(null, "", "#/join"); }
@@ -80,21 +82,40 @@ export function render() {
   applyLook();
   shell(name);
   const main = document.getElementById("main");
+  const y = scrollY;
   const swap = () => {
     document.getElementById("app").dataset.route = name;
     main.replaceChildren();
     ROUTES[name](main, rest.map(decodeURIComponent));
+    if (refresh) { scrollTo(0, y); return; }
     main.focus({ preventScroll: true });
     scrollTo(0, 0);
   };
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("calm");
   // Soft crossfade between screens where the browser supports it; instant otherwise
-  if (document.startViewTransition && !calm && lastRoute && lastRoute !== name) document.startViewTransition(swap); else swap();
+  if (!refresh && document.startViewTransition && !calm && lastRoute && lastRoute !== name) document.startViewTransition(swap); else swap();
   lastRoute = name;
 }
 let lastRoute = null;
 addEventListener("hashchange", render);
 addEventListener("resize", () => { const d = device.current(); if (d.layout !== app.device.layout || d.installed !== app.device.installed) { app.device = d; } });
+
+// ---- Changes from other devices -------------------------------------------
+// Progress made on another device shows up here without anyone reloading. Lists and settings redraw in place;
+// the word screen updates its counts and skips words already handled elsewhere, but never pulls away the word
+// you're reading; a review in progress is left alone. Nothing redraws while you're typing or a panel is open.
+let remoteTypes = new Set(), remoteTimer = null;
+const REDRAW = ["saved", "family", "who", "categories", "settings"];
+function remoteRefresh() {
+  const busy = document.querySelector(".sheet") || /INPUT|TEXTAREA|SELECT/.test((document.activeElement || {}).tagName || "");
+  if (busy) { remoteTimer = setTimeout(remoteRefresh, 2000); return; }
+  const types = remoteTypes; remoteTypes = new Set();
+  const route = document.getElementById("app").dataset.route;
+  if (types.has("profile") || types.has("family")) applyLook();
+  if (REDRAW.includes(route)) { render({ refresh: true }); return; }
+  if (app.profile && route) shell(route);
+  if (route === "feed") document.dispatchEvent(new CustomEvent("lumin-remote", { detail: { types: [...types] } }));
+}
 
 export async function selectProfile(id) {
   app.pid = id; app.unlocked = false;
@@ -116,8 +137,8 @@ async function boot() {
   store.onChange((kind, rec) => {
     if (kind !== "remote") return;
     if (rec.type === "profile" && app.pid && !model.profile(app.pid)) { app.pid = null; render(); return; }
-    // refresh lightweight pieces when another device changes something
-    if (["profile", "family", "collection", "custom"].includes(rec.type)) clearTimeout(boot.t), boot.t = setTimeout(() => { if (!document.querySelector(".sheet") && !document.querySelector(".review")) render(); }, 400);
+    remoteTypes.add(rec.type);
+    clearTimeout(remoteTimer); remoteTimer = setTimeout(remoteRefresh, 400);
   });
   await sync.init("");
   // The two preloaded fonts usually arrive with the scripts; wait briefly so the first screen doesn't jump when they swap in
