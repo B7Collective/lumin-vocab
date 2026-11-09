@@ -180,3 +180,16 @@ test("categories filter the feed and stay age appropriate", async ({ page }, inf
   await page.screenshot({ path: `test-results/shots/${info.project.name}-categories.png`, fullPage: true });
   expect(errors).toEqual([]);
 });
+
+test("works offline after the first visit", async ({ page, context }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  await onboard(page, { name: "Lee" });
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload(); await page.evaluate(() => navigator.serviceWorker.ready);
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator(".wordcard .word")).toBeVisible();
+  await page.goto("/#/categories");
+  await expect(page.getByRole("heading", { name: "Categories" })).toBeVisible();
+  await context.setOffline(false);
+});

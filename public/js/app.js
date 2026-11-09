@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.1.0";
+export const VERSION = "1.1.1";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -113,15 +113,13 @@ async function boot() {
   });
   await sync.init("");
   render();
-  if ("serviceWorker" in navigator && location.protocol === "https:") {
-    navigator.serviceWorker.register("/sw.js").then((reg) => {
-      reg.addEventListener("updatefound", () => {
-        const nw = reg.installing;
-        nw && nw.addEventListener("statechange", () => {
-          if (nw.state === "installed" && navigator.serviceWorker.controller) toast("A new version is ready", { label: "Reload", fn: () => location.reload() });
-        });
-      });
-    }).catch(() => {});
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "127.0.0.1")) {
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(() => {});
+    // A new version took over: offer a quick reload so every screen uses it
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (hadController) toast("Lumin Vocab was updated", { label: "Reload", fn: () => location.reload() });
+    });
   }
 }
 boot().catch((e) => {
