@@ -11,8 +11,10 @@ for (const proto of [Element.prototype, DocumentFragment.prototype]) {
   }
 }
 
+// Drawing elements must be created as SVG, or the browser keeps them but never paints them
+const SVG_TAGS = new Set(["svg", "use", "path", "rect", "circle", "g", "line", "polyline", "polygon", "ellipse"]);
 export function h(tag, attrs = {}, ...kids) {
-  const el = document.createElementNS(tag === "svg" || tag === "use" ? "http://www.w3.org/2000/svg" : "http://www.w3.org/1999/xhtml", tag);
+  const el = document.createElementNS(SVG_TAGS.has(tag) ? "http://www.w3.org/2000/svg" : "http://www.w3.org/1999/xhtml", tag);
   for (const [k, v] of Object.entries(attrs || {})) {
     if (v == null || v === false) continue;
     if (k === "class") el.setAttribute("class", v);

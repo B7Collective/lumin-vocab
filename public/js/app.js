@@ -6,7 +6,7 @@ import * as sync from "./sync.js";
 import * as device from "./device.js";
 import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 
-export const VERSION = "1.3.1";
+export const VERSION = "1.3.2";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -44,6 +44,10 @@ function shell(active) {
   const p = app.profile;
   const topnav = document.getElementById("topnav"), bottom = document.getElementById("bottomnav"), me = document.getElementById("me");
   topnav.replaceChildren(); bottom.replaceChildren();
+  // The landing page offers the app straight away, so a family can install before setting anything up
+  const getapp = document.getElementById("getapp");
+  getapp.hidden = !(active === "welcome" && app.canInstall && app.canInstall());
+  getapp.onclick = () => app.installFlow && app.installFlow();
   const show = !!p && active !== "setup" && active !== "welcome";
   bottom.hidden = !show; me.hidden = !show; topnav.hidden = !show;
   if (!show) return;
@@ -125,7 +129,7 @@ export async function selectProfile(id) {
 
 // ---- Boot ----------------------------------------------------------------
 addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); app.installPrompt = e; document.dispatchEvent(new CustomEvent("lumin-install-ready")); });
-addEventListener("appinstalled", () => { app.installPrompt = null; app.device = device.current(); toast("Installed. You can open Lumin Vocab from your apps."); });
+addEventListener("appinstalled", () => { app.installPrompt = null; app.device = device.current(); document.getElementById("getapp").hidden = true; toast("Installed. You can open Lumin Vocab from your apps."); });
 
 async function boot() {
   // The word list is the largest file, so only screens that need it wait for it

@@ -15,6 +15,7 @@
 - **Review scheduling:** based on the FSRS algorithm and default parameters from the [open-spaced-repetition](https://github.com/open-spaced-repetition) project (MIT).
 - **Literata** font: SIL Open Font License 1.1 ([LICENSES/OFL-Literata.txt](LICENSES/OFL-Literata.txt)).
 - **Atkinson Hyperlegible** font by the Braille Institute: SIL Open Font License 1.1 ([LICENSES/OFL-Atkinson-Hyperlegible.txt](LICENSES/OFL-Atkinson-Hyperlegible.txt)).
+- **jsQR** by Cosmo Wolfe: Apache License 2.0 ([LICENSES/Apache-2.0-jsQR.txt](LICENSES/Apache-2.0-jsQR.txt)). Reads family codes with the camera; nothing leaves the device.
 - **qrcode-generator** by Kazuhiko Arase: MIT ([LICENSES/MIT-qrcode-generator.txt](LICENSES/MIT-qrcode-generator.txt)). QR Code is a registered trademark of DENSO WAVE INCORPORATED.
 
 The app's code is Copyright (C) 2026 B7 Collective LLC, licensed under the GNU AGPL v3.0 only.

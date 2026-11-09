@@ -10,6 +10,7 @@ import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
 import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
+import { canScan, scanCode } from "./scan.js";
 
 const SITE = "https://lumin.b7collective.com";
 const SOURCE = "https://github.com/B7Collective/lumin-vocab";
@@ -117,7 +118,8 @@ route("welcome", (main) => {
     h("section", { class: "w-close" },
       h("h2", {}, "Free for the whole family"),
       h("ul", { class: "w-promises" }, [["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"], ["code", "Open source"]].map(([ic, t]) => h("li", {}, icon(ic, 20), t))),
-      h("div", { class: "actions center-x" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"))),
+      h("div", { class: "actions center-x" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"),
+        canInstall() ? h("button", { class: "btn", onclick: () => installFlow() }, icon("down"), "Install the app") : null)),
     footer({ short: true })));
 
   const settle = () => {
@@ -141,10 +143,19 @@ route("join", (main) => {
   const input = h("input", { type: "text", id: "join-code", autocomplete: "off", autocapitalize: "none", spellcheck: "false", placeholder: "six words", value: pre.replace(/-/g, " ") });
   const msg = h("p", { class: "muted", role: "status" });
   const btn = h("button", { class: "btn primary", type: "submit" }, "Join");
+  let form;
   main.append(h("div", { class: "page narrow" },
     h("div", { class: "page-head" }, h("h1", {}, "Join your family"),
-      h("p", { class: "lead" }, "On a device that already has Lumin Vocab, open Family and choose Add a device. Scan the QR code with this device's camera, or type the six words here.")),
-    h("form", { class: "panel", onsubmit: async (e) => {
+      h("p", { class: "lead" }, app.device.form === "desktop"
+        ? "On a device that already has Lumin Vocab, open Family and choose Add a device. Then type its six words here, or scan its code with this computer's camera."
+        : "On a device that already has Lumin Vocab, open Family and tap Add a device. Then scan the code it shows, or type its six words.")),
+    canScan() ? h("div", { class: "actions" }, h("button", { class: "btn", type: "button", onclick: async () => {
+      // The QR code holds a join link; a code typed into a QR maker by hand works too
+      const code = await scanCode((t) => { const i = t.indexOf("#join="); const c = i >= 0 ? t.slice(i + 6) : t; return sync.validCode(c) ? sync.normalizeCode(c).replace(/-/g, " ") : null; });
+      if (!code) return;
+      input.value = code; form.requestSubmit();
+    } }, icon("scan"), "Scan the code")) : null,
+    form = h("form", { class: "panel", onsubmit: async (e) => {
       e.preventDefault();
       if (!sync.validCode(input.value)) { msg.textContent = "A family code is six words. Check for typos and try again."; return; }
       btn.disabled = true; msg.textContent = "Connecting and unlocking your family's words…";
@@ -752,7 +763,7 @@ route("family", (main) => {
       const reveal = h("button", { class: "btn quiet", onclick: async () => {
         if (!canManage && !(await guard("Showing the family code needs a grown-up"))) return;
         showCode.replaceChildren(qr(sync.joinLink(code)), h("div", { class: "stack tight grow", style: { minWidth: "220px" } },
-          h("strong", {}, "Add a device"), h("p", { class: "muted" }, app.device.form === "desktop" ? "Scan this with the phone or tablet's camera. Or open the site there, choose Join your family, and type the code." : "Scan this from another device's camera, or type the code there."),
+          h("strong", {}, "Add a device"), h("p", { class: "muted" }, "On the other device, open Lumin Vocab, tap I have a family code, and scan this. Or type the six words there."),
           h("span", { class: "code" }, code.replace(/-/g, " ")),
           h("p", { class: "muted small" }, "Keep this code private. Anyone with it can join your family.")));
       } }, icon("plusbox"), "Add a device");
@@ -932,13 +943,40 @@ route("settings", (main) => {
 });
 
 // ---- Install (tailored to the device) ----------------------------------------
+const STEP_IC = { share: "share", plus: "plusbox", menu: "menu", check: "check" };
+const stepsList = (steps) => h("ol", { class: "steps" }, steps.map(s => h("li", {}, h("span", { class: "ic" }, icon(STEP_IC[s.icon] || "check")), h("span", {}, s.text))));
+// Can this device install the app at all? (Already installed, or a browser with no install support: no.)
+export const canInstall = () => !["installed", "unsupported"].includes(app.device.install.kind);
+// One tap from anywhere: the browser's own install dialog where it exists (Chrome, Edge, Brave, Android),
+// otherwise a short sheet with the exact steps for this device (iPhone and iPad, Safari on Mac, Firefox on Android).
+export async function installFlow() {
+  const g = app.device.install;
+  if (app.installPrompt) {
+    const ev = app.installPrompt; app.installPrompt = null;
+    ev.prompt();
+    const r = await ev.userChoice.catch(() => null);
+    if (r && r.outcome === "accepted") toast("Installing Lumin Vocab");
+    return;
+  }
+  const apple = app.device.apple;
+  sheet("Install Lumin Vocab", (b) => {
+    b.append(h("p", { class: "lead" }, apple ? "On iPhone and iPad, apps from the web are added from the Share menu. It takes three taps." : "It installs like an app: its own icon, full screen, and it works offline."));
+    if (g.kind === "steps") b.append(stepsList(g.steps));
+    else if (g.kind === "prompt") b.append(stepsList(g.fallback));
+    else if (g.kind === "openInBrowser") b.append(h("p", {}, `You're inside another app's browser, which can't install web apps. Open this page in ${g.target}: tap the menu (often ••• or a compass icon) and choose Open in browser.`),
+      h("div", { class: "actions" }, h("button", { class: "btn small quiet", onclick: async () => { try { await navigator.clipboard.writeText(SITE); toast("Link copied"); } catch { toast(SITE); } } }, "Copy the link")));
+    if (app.device.form === "desktop") b.append(h("div", { class: "cluster", style: { "--gap": "var(--s4)" } }, qr(SITE + "/#/install"),
+      h("p", { class: "grow muted", style: { minWidth: "180px" } }, "To put it on a phone, point the phone's camera at this code.")));
+  });
+}
+app.installFlow = installFlow;
+app.canInstall = canInstall;
+
 route("install", (main) => {
   const d = app.device, g = d.install;
   const place = d.form === "desktop" ? "this computer" : `your ${LABELS.os[d.os] === "this device" ? "device" : LABELS.os[d.os]}`;
   const page = h("div", { class: "page narrow" });
   main.append(page);
-  const ic = { share: "share", plus: "plusbox", menu: "menu", check: "check" };
-  const stepsList = (steps) => h("ol", { class: "steps" }, steps.map(s => h("li", {}, h("span", { class: "ic" }, icon(ic[s.icon] || "check")), h("span", {}, s.text))));
   const draw = () => {
     const head = h("div", { class: "page-head" }, h("img", { src: "/icons/logo.svg", alt: "", width: 56, height: 56, style: { borderRadius: "14px", marginBottom: "var(--s3)" } }));
     page.replaceChildren(head);
@@ -986,6 +1024,6 @@ route("about", (main) => {
       h("ul", { class: "credits" },
         h("li", {}, "Review scheduling: based on the FSRS algorithm by the open-spaced-repetition project (MIT)."),
         h("li", {}, "Fonts: Literata (SIL Open Font License 1.1) and Atkinson Hyperlegible by the Braille Institute (SIL Open Font License 1.1)."),
-        h("li", {}, "QR codes: qrcode-generator by Kazuhiko Arase (MIT). QR Code is a registered trademark of DENSO WAVE INCORPORATED."))),
+        h("li", {}, "QR codes: qrcode-generator by Kazuhiko Arase (MIT) draws them, and jsQR by Cosmo Wolfe (Apache License 2.0) reads them. QR Code is a registered trademark of DENSO WAVE INCORPORATED."))),
     h("a", { class: "textlink start", href: app.profile ? "#/settings" : "#/welcome" }, "Back"), footer()));
 });

@@ -1,10 +1,10 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v1.3.1";
+const VERSION = "lumin-v1.3.2";
 const SHELL = [
   "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/404.html",
-  "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/vendor/qrcode.mjs",
-  "/icons/logo.svg", ...["morning", "sunny", "garden", "harbor", "blossom", "night", "dusk", "forest"].map((t) => `/scenes/${t}.svg`), "/icons/favicon.svg", "/icons/icon-192.png", "/icons/apple-touch-icon.png",
+  "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/scan.js", "/js/vendor/qrcode.mjs",
+  "/icons/logo.svg", ...["morning", "sunny", "garden", "harbor", "blossom", "night", "dusk", "forest"].map((t) => `/scenes/${t}.svg`), "/icons/favicon.svg", "/icons/app-192.png", "/icons/app-apple-180.png",
   "/fonts/literata-latin-400-normal.woff2", "/fonts/literata-latin-600-normal.woff2", "/fonts/literata-latin-400-italic.woff2",
   "/fonts/atkinson-hyperlegible-latin-400-normal.woff2", "/fonts/atkinson-hyperlegible-latin-700-normal.woff2",
 ];

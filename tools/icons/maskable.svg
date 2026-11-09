@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Android adaptive icon: full bleed, the mark kept well inside the round crop some phones use -->
+  <rect width="512" height="512" fill="#18212B"/>
+  <g transform="translate(256 256) scale(0.66) translate(-256 -256)">
+  <rect x="179" y="86" width="60" height="252" rx="30" fill="#F4F1EA"/>
+  <rect x="179" y="356" width="190" height="46" rx="23" fill="#F2B544"/>
+  </g>
+</svg>
