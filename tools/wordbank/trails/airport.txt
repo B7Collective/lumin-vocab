@@ -1,0 +1,27 @@
+# airport|At the Airport|Travel words, from the check-in desk to the hotel lobby|all|1|Places and travel
+itinerary
+layover|noun|A stop between flights on a trip|We had a three-hour layover in Denver.
+customs|noun|The place at a border where officials check bags and goods|We waited in line at customs.
+passport|noun|An official document for traveling to other countries|Don't forget your passport!||0
+terminal|noun|A building where passengers board planes, trains or buses|Our gate is in Terminal B.
+souvenir
+excursion
+destination
+departure|noun|The act of leaving, especially on a trip|Our departure is at noon.
+arrival|noun|The act of reaching a place|The arrival board showed our flight landed.
+concierge|noun|A hotel worker who helps guests with plans|The concierge booked our boat tour.||3
+hostel|noun|An inexpensive place to stay, often with shared rooms|They stayed in a hostel by the beach.||2
+currency
+landmark
+embassy|noun|The official office of one country in another country|She went to the embassy for a new passport.||2
+luggage|noun|Suitcases and bags for travel|Our luggage came off the belt last.||0
+turbulence|noun|Bumpy, uneven air that shakes a plane; disorder|The pilot warned of turbulence.||2
+carousel|noun|A turning belt where travelers pick up bags; a merry-go-round|Wait for your bag at carousel four.
+aisle|noun|A walkway between rows of seats|I asked for an aisle seat.||0
+runway|noun|A long strip where planes take off and land|The plane rolled down the runway.||0
+altitude|noun|Height above sea level|We're flying at an altitude of 35,000 feet.
+wanderlust
+expedition
+nomad
+visa|noun|Permission stamped in a passport to enter a country|She applied for a student visa.||2
+stopover|noun|A short stay in a place during a longer journey|We made a stopover in Iceland.

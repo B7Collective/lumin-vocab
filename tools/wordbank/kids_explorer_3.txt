@@ -1,0 +1,114 @@
+government|noun|the group of people who run a country, state or town|The government builds roads and schools.|Society and law
+election|noun|a time when people vote to choose a leader|The class election picked a new president.|Society and law
+justice|noun|fair treatment for everyone|The judge wanted justice for both sides.|Society and law
+council|noun|a group of people chosen to make decisions|The student council planned the dance.|Society and law
+ballot|noun|the paper or card used to vote|She folded her ballot and dropped it in the box.|Society and law
+democracy|noun|a system where people choose their leaders by voting|In a democracy, every vote counts.|Society and law
+rights|noun|the things every person is allowed to have or do|Everyone has the right to speak freely.|Society and law
+equality|noun|being treated the same as everyone else|The team believed in equality for every player.|Society and law
+ceremony|noun|a formal event to mark something special|The award ceremony was held in the gym.|Society and law
+custom|noun|something a group of people usually does|Taking off your shoes indoors is a custom in many homes.|Society and law
+culture|noun|the art, food, music and beliefs of a group of people|We learned about the culture of Japan.|Society and law
+majority|noun|more than half of a group|The majority of the class wanted pizza.|Society and law
+treaty|noun|a written agreement between countries|The two nations signed a peace treaty.|Society and law
+kingdom|noun|a country ruled by a king or queen|The kingdom stretched from the hills to the sea.|Society and law
+empire|noun|many lands ruled by one powerful leader|The Roman Empire built long, straight roads.|Society and law
+profit|noun|money left over after paying all the costs|The lemonade stand made a ten-dollar profit.|Money and work
+allowance|noun|money given regularly, often to a child|He saves half of his allowance.|Money and work
+career|noun|the work someone does for many years|She wants a career in science.|Money and work
+employee|noun|a person who works for someone else for pay|The store hired two new employees.|Money and work
+income|noun|money that someone earns|The farm's income depends on the weather.|Money and work
+loan|noun|money that is borrowed and must be paid back|They got a loan to fix the roof.|Money and work
+tax|noun|money people pay to the government|Taxes help pay for fire trucks.|Money and work
+wage|noun|money paid for work, often by the hour|His first job paid a small wage.|Money and work
+merchant|noun|a person who buys and sells goods|The merchant sold silk and spices.|Money and work
+economy|noun|the way a place makes, buys and sells things|Tourism is important to the island's economy.|Money and work
+purchase|verb|to buy something|We purchased tickets for the show.|Money and work
+afford|verb|to have enough money to pay for something|We can afford one new game this month.|Money and work
+valuable|adjective|worth a lot of money or very important|The old coin turned out to be valuable.|Money and work
+donate|verb|to give something to help others|We donated our old coats.|Money and work
+charity|noun|a group that helps people in need; kindness given freely|The bake sale raised money for charity.|Money and work
+digest|verb|to break down food in your body|Your stomach helps you digest lunch.|Body and health
+lungs|noun|the two organs in your chest you use to breathe|Deep breaths fill your lungs with air.|Body and health
+pulse|noun|the beat of blood moving through your body|The nurse checked my pulse at my wrist.|Body and health
+injury|noun|harm done to the body|He rested the injury for two weeks.|Body and health
+fever|noun|a body temperature that is higher than normal|She stayed home with a fever.|Body and health
+organ|noun|a body part with a special job, like the heart|The heart is an organ that pumps blood.|Body and health
+spine|noun|the row of bones down the middle of your back|Sit up straight to protect your spine.|Body and health
+nutrition|noun|the food your body needs to grow and stay healthy|Good nutrition helps athletes perform.|Body and health
+posture|noun|the way you hold your body when you sit or stand|Good posture keeps your back strong.|Body and health
+recover|verb|to get well again|It took a week to recover from the flu.|Body and health
+symptom|noun|a sign that you might be sick|A sore throat is a symptom of a cold.|Body and health
+beverage|noun|a drink|Lemonade is a cool summer beverage.|Food
+cuisine|noun|a style of cooking from a certain place|We tried Ethiopian cuisine for the first time.|Food
+savory|adjective|salty or spicy rather than sweet|She likes savory snacks more than candy.|Food
+portion|noun|the amount of food for one person|The portions at the diner were huge.|Food
+simmer|verb|to cook gently just below boiling|Let the soup simmer for an hour.|Food
+nutritious|adjective|full of what your body needs to be healthy|Beans are cheap and nutritious.|Food
+leftovers|noun|food that was not eaten at a meal|We had leftovers for lunch.|Food
+garnish|noun|a small bit of food added to make a dish look nice|A sprig of mint was the garnish.|Food
+tangy|adjective|having a sharp, pleasant taste|The tangy sauce made my lips pucker.|Food
+decade|noun|a period of ten years|The old tree grew for many decades.|Time and change
+era|noun|a long period of history|The dinosaur era lasted millions of years.|Time and change
+generation|noun|people born around the same time|Three generations live in their house.|Time and change
+annual|adjective|happening once every year|The town holds an annual pumpkin festival.|Time and change
+routine|noun|the usual way you do things each day|Brushing my teeth is part of my bedtime routine.|Time and change
+schedule|noun|a plan that shows when things will happen|The bus schedule is posted at the stop.|Time and change
+deadline|noun|the time by which something must be done|The deadline for the project is Friday.|Time and change
+previous|adjective|coming before|The previous owner left a bike in the garage.|Time and change
+permanent|adjective|lasting forever or for a very long time|Permanent markers don't wash off.|Time and change
+evolve|verb|to change slowly over a long time|Birds evolved from dinosaurs.|Time and change
+punctual|adjective|arriving exactly on time|Our teacher is always punctual.|Time and change
+overdue|adjective|late; past the time it was due|My library book is overdue.|Time and change
+device|noun|a tool or machine made for a special job|A thermometer is a device for measuring heat.|Things and tools
+utensil|noun|a tool used in the kitchen or for eating|Forks and spoons are utensils.|Things and tools
+appliance|noun|a machine used in the home, like a toaster|The fridge is the busiest appliance in our kitchen.|Things and tools
+lever|noun|a bar that helps lift something heavy|A seesaw is a kind of lever.|Things and tools
+pulley|noun|a wheel with a rope that helps lift things|The sailors used a pulley to raise the sail.|Things and tools
+fabric|noun|cloth|The curtains are made of soft fabric.|Things and tools
+equipment|noun|the tools or things needed for a job or sport|Bring your soccer equipment to practice.|Things and tools
+container|noun|something that holds things inside it|Put the leftovers in a container.|Things and tools
+blueprint|noun|a detailed drawing of a plan for a building or machine|The architect unrolled the blueprint.|Things and tools
+faint|adjective|hard to see or hear; weak|We heard a faint knock at the door.|Senses
+muffled|adjective|quiet and unclear because something is covering it|Muffled music came through the wall.|Senses
+deafening|adjective|so loud you can hardly hear anything else|The cheering was deafening.|Senses
+sensation|noun|a feeling in your body|Ice gives a tingling sensation on your skin.|Senses
+stench|noun|a very bad smell|The stench of rotten eggs filled the room.|Senses
+sensitive|adjective|easily affected by something|My teeth are sensitive to cold.|Senses
+amphibian|noun|an animal that lives both in water and on land|Frogs are amphibians.|Animals
+carnivore|noun|an animal that eats meat|Lions are carnivores.|Animals
+herbivore|noun|an animal that eats only plants|Cows are herbivores.|Animals
+omnivore|noun|an animal that eats both plants and meat|Bears are omnivores.|Animals
+species|noun|a group of living things that are alike|There are thousands of species of beetles.|Animals
+talon|noun|a sharp claw of a bird that hunts|The hawk grabbed the fish with its talons.|Animals
+tusk|noun|a long, pointed tooth that sticks out of an animal's mouth|The elephant's tusks are made of ivory.|Animals
+mane|noun|the long hair on the neck of a horse or lion|The lion shook its golden mane.|Animals
+venom|noun|poison made by some snakes, spiders and insects|The spider's venom is harmless to people.|Animals
+larva|noun|the young form of an insect before it changes|A caterpillar is the larva of a butterfly.|Animals
+flipper|noun|a flat limb used for swimming|The seal clapped its flippers.|Animals
+sketch|noun|a quick, rough drawing|She made a sketch of the barn.|Arts and stories
+canvas|noun|strong cloth that artists paint on|He stretched a canvas for his painting.|Arts and stories
+portrait|noun|a painting or photo of a person|The portrait of our great-grandma hangs in the hall.|Arts and stories
+chorus|noun|a group of singers; the part of a song that repeats|Everyone joined in on the chorus.|Arts and stories
+orchestra|noun|a large group of musicians playing together|The orchestra tuned their instruments.|Arts and stories
+plot|noun|the events that happen in a story|The plot had a surprise ending.|Arts and stories
+villain|noun|the bad character in a story|The villain tried to steal the crown.|Arts and stories
+comedy|noun|a funny play, movie or show|We watched a comedy and laughed all night.|Arts and stories
+coast|noun|the land next to the sea|We drove along the coast.|Places and travel
+plateau|noun|a high, flat area of land|The plateau rose above the desert.|Places and travel
+peninsula|noun|land with water on three sides|Florida is a peninsula.|Places and travel
+capital|noun|the city where a country's or state's government is|Paris is the capital of France.|Places and travel
+border|noun|the line where one place ends and another begins|We crossed the border into Canada.|Places and travel
+lagoon|noun|a shallow pool of seawater cut off by sand or reefs|Fish darted through the warm lagoon.|Places and travel
+marsh|noun|soft, wet land with tall grasses|Frogs croaked in the marsh.|Places and travel
+pronounce|verb|to say a word the right way|How do you pronounce this name?|Talk and writing
+paragraph|noun|a group of sentences about one idea|Write a paragraph about your summer.|Talk and writing
+dialogue|noun|a conversation, especially in a story or play|The dialogue in the comic is in speech bubbles.|Talk and writing
+gossip|noun|talk about other people's private lives|Don't spread gossip about your friends.|Talk and writing
+complain|verb|to say you are unhappy about something|He complained that the soup was cold.|Talk and writing
+vocabulary|noun|all the words a person knows|Reading builds your vocabulary.|Talk and writing
+nickname|noun|a short or funny name used instead of a real name|His nickname is "Speedy."|Talk and writing
+experiment|noun|a test to find out something|Our experiment showed that plants need light.|Science and tech
+circuit|noun|a path that electricity flows around|The bulb lit up when we closed the circuit.|Science and tech
+friction|noun|the force that slows things that rub together|Friction makes your hands warm when you rub them.|Science and tech
+mineral|noun|a natural solid found in the ground, like quartz|Salt is a mineral.|Science and tech

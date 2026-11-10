@@ -6,7 +6,7 @@ import { h, icon, toast, sheet, closeSheet, ask, speak, canSpeak, share, plural 
 import { play, buzz } from "./sound.js";
 
 export const POS_SHORT = { noun: "n.", verb: "v.", adjective: "adj.", adverb: "adv.", phrase: "phr." };
-const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[3];
+const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[4];
 
 // Pronunciation pill: IPA for older levels, a simple respelling for young readers. Tap to hear it.
 export function sayPill(w, p, cls = "dipa") {
@@ -55,9 +55,11 @@ export function details(wordText) {
       h("div", { class: "dhead" }, h("span", { class: "muted" }, w.p), sayPill(w, p)),
       sec("Meaning", h("p", { style: { fontSize: "var(--t-l)" } }, w.d)),
       w.e ? sec("Example", h("p", { class: "ex" }, w.e), w.e2 ? h("p", { class: "ex" }, w.e2) : null) : null,
+      w.cf && model.BY.get(w.cf) ? sec("Don't mix it up with", h("p", {}, h("button", { class: "chip", onclick: () => details(w.cf) }, w.cf), " ", model.BY.get(w.cf).d)) : null,
       w.m && w.m.length ? sec("Similar words", h("p", {}, w.m.join(", "))) : null,
       w.f && w.f.length ? sec("Word family", h("div", { class: "wordchips" }, w.f.map((f) => model.BY.get(f) ? h("button", { class: "chip", onclick: () => details(f) }, f) : h("span", { class: "chip" }, f)))) : null,
-      sec("Level and topic", h("p", {}, w.custom ? "Your own word" : `${LEVEL(w.l).name}, ${w.t}`)),
+      sec("Where it lives", h("p", {}, w.custom ? "Your own word" : w.c ? `Side trails, ${w.t}` : `${LEVEL(w.l).name}, ${w.t}`),
+        (() => { const ts = (w.x || []).map((k) => model.trail(k)).filter(Boolean); return ts.length ? h("div", { class: "wordchips" }, ts.map((t) => h("a", { class: "chip", href: `#/journey/trail/${t.key}`, onclick: () => closeSheet() }, t.name))) : null; })()),
       h("div", { class: "actions" },
         h("button", { class: "btn small" + (c && c.st === "learning" ? "" : " primary"), onclick: () => { model.learn(p.id, w.w); toast(`"${w.w}" will come back in Practice`); closeSheet(); } }, icon("bookmark"), c && c.st === "learning" ? "Saved to practice" : "Save to practice"),
         h("button", { class: "btn quiet", onclick: () => listPicker(w.w) }, icon("folder"), "Add to a list"),
@@ -122,5 +124,5 @@ export function wordCard(wordText, { when } = {}) {
     h("div", { class: "top" }, h("button", { class: "w", onclick: () => details(w.w) }, w.w), sayPill(w, p)),
     h("p", { class: "d" }, h("span", { class: "muted" }, `(${POS_SHORT[w.p] || w.p}) `), w.d),
     w.e ? h("p", { class: "e" }, w.e) : null,
-    h("div", { class: "bot" }, h("span", {}, when ? dateFmt.format(new Date(when)) : ""), h("div", { class: "acts" }, fav, save, h("button", { class: "iconbtn", "aria-label": `Share ${w.w}`, onclick: () => share(w) }, icon("share")))));
+    h("div", { class: "bot" }, h("span", {}, when ? dateFmt.format(new Date(when)) : ""), h("div", { class: "acts" }, fav, save, h("button", { class: "iconbtn", "aria-label": `Add ${w.w} to a list`, onclick: () => listPicker(w.w) }, icon("folder")), h("button", { class: "iconbtn", "aria-label": `Share ${w.w}`, onclick: () => share(w) }, icon("share")))));
 }

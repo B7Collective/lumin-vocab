@@ -1,0 +1,90 @@
+aviary|noun|A large enclosure for keeping birds|Finches flitted around the zoo's aviary.|Animals
+apiary|noun|A place where bees are kept|The apiary holds forty hives.|Animals
+menagerie|noun|A collection of wild or unusual animals; a varied group|Their house is a menagerie of cats, birds and lizards.|Animals
+vermin|noun|Small animals or insects that are pests|Sealed bins keep vermin out of the grain.|Animals
+pachyderm|noun|A large thick-skinned animal such as an elephant|The pachyderm sprayed water over its back.|Animals
+cetacean|noun|A marine mammal such as a whale or dolphin|Dolphins are the most playful cetaceans.|Animals
+raptor|noun|A bird of prey, such as a hawk or owl|A raptor circled above the field.|Animals
+carnivorous|adjective|Eating meat; of a plant, trapping insects|The Venus flytrap is a carnivorous plant.|Animals
+insectivore|noun|An animal that feeds on insects|Bats are skilled insectivores.|Animals
+chrysalis|noun|The hard case a caterpillar forms before becoming a butterfly|A green chrysalis hung from the leaf.|Animals
+chromosome|noun|A threadlike structure in cells that carries genes|Humans have 46 chromosomes.|Science and tech
+isotope|noun|A form of an element with a different number of neutrons|Carbon-14 is an isotope used to date fossils.|Science and tech
+theorem|noun|A statement in mathematics that can be proved|She proved the theorem on the whiteboard.|Science and tech
+osmosis|noun|Gradual absorption; the passing of water through a membrane|He learned French by osmosis, living in Paris.|Science and tech
+refraction|noun|The bending of light as it passes from one substance to another|Refraction makes a straw look bent in water.|Science and tech
+oxidize|verb|To combine with oxygen, as in rusting|Iron oxidizes in damp air.|Science and tech
+electrolyte|noun|A substance that conducts electricity when dissolved, important for the body|Sports drinks replace electrolytes.|Science and tech
+viscous|adjective|Thick and sticky, not flowing freely|Cold syrup is viscous.|Science and tech
+combustible|adjective|Able to catch fire and burn easily|Store combustible materials away from heat.|Science and tech
+inert|adjective|Not moving or reacting|Helium is an inert gas.|Science and tech
+paraphernalia|noun|The many items needed for an activity|Fishing paraphernalia filled the garage.|Things and tools
+regalia|noun|The special clothing and emblems of an office or event|Graduates wore full academic regalia.|Things and tools
+insignia|noun|A badge or mark showing rank or membership|The pilot's insignia gleamed on her jacket.|Things and tools
+emblem|noun|A symbol that represents an idea or group|The olive branch is an emblem of peace.|Things and tools
+gadgetry|noun|Gadgets considered together|The kitchen was full of shiny gadgetry.|Things and tools
+lattice|noun|A framework of crossed strips|Roses climbed the wooden lattice.|Things and tools
+trellis|noun|A frame that supports climbing plants|Beans twined up the trellis.|Things and tools
+parchment|noun|Writing material made from animal skin; stiff paper like it|The map was drawn on old parchment.|Things and tools
+quill|noun|A pen made from a large feather|He signed his name with a quill.|Things and tools
+ballast|noun|Heavy material that steadies a ship; anything that steadies|Sandbags served as ballast in the balloon.|Things and tools
+abode|noun|A home|Welcome to my humble abode.|Places and travel
+domicile|noun|The place where a person legally lives|Her domicile is in Ohio, though she works abroad.|Places and travel
+locale|noun|A place where something happens|The film's locale is a fishing village.|Places and travel
+environs|noun|The surrounding area|They explored the city and its environs.|Places and travel
+hinterland|noun|The remote areas beyond a coast or city|Trucks carry goods from the port to the hinterland.|Places and travel
+promontory|noun|A high point of land jutting into the sea|A lighthouse crowns the promontory.|Places and travel
+escarpment|noun|A long, steep slope or cliff|The road climbs the escarpment in sharp turns.|Places and travel
+chasm|noun|A deep crack in the earth; a wide difference|A rope bridge spans the chasm.|Places and travel
+grotto|noun|A small cave, often picturesque|The grotto glowed blue in the afternoon.|Places and travel
+vista|noun|A pleasing view, especially a long one|The vista from the ridge stretched for miles.|Places and travel
+ravenous|adjective|Extremely hungry|The swimmers were ravenous after practice.|Food
+gourmand|noun|A person who loves to eat, sometimes too much|A true gourmand, he planned trips around restaurants.|Food
+repast|noun|A meal|They shared a simple repast of bread and soup.|Food
+fare|noun|The food served; also, the price of a journey|The diner offers hearty country fare.|Food
+nourishment|noun|Food needed for growth and health|Seedlings draw nourishment from the soil.|Food
+gluttony|noun|Eating or drinking far too much|The holiday table invited gluttony.|Food
+bounty|noun|A generous amount, especially of food or crops|The garden's bounty filled three baskets.|Food
+lithe|adjective|Slim, supple and graceful|The lithe dancer bent like a reed.|Body and health
+sinewy|adjective|Lean and muscular|His sinewy arms pulled the oars.|Body and health
+brawny|adjective|Big and strong|A brawny mover lifted the piano.|Body and health
+gaunt|adjective|Thin and bony, as from hunger or illness|The hikers looked gaunt after the long trek.|Body and health
+frail|adjective|Weak and delicate|The frail old dog still wagged its tail.|Body and health
+haggard|adjective|Looking exhausted and worn|After the night shift she looked haggard.|Body and health
+ruddy|adjective|Having a healthy red color|The cold wind gave them ruddy cheeks.|Body and health
+sallow|adjective|Of a sickly yellowish color|His face was sallow after weeks indoors.|Body and health
+physique|noun|The form and size of a person's body|The swimmer has a powerful physique.|Body and health
+gait|noun|A way of walking|You can recognize him by his loping gait.|Body and health
+torrential|adjective|Falling rapidly and in large amounts|Torrential rain flooded the streets.|Nature and weather
+temperate|adjective|Mild in climate; showing self-control|The coast enjoys a temperate climate.|Nature and weather
+tempestuous|adjective|Stormy; full of strong emotion|The ferry crossed a tempestuous sea.|Nature and weather
+inclement|adjective|Of weather, cold, wet or stormy|The game was canceled due to inclement weather.|Nature and weather
+sultry|adjective|Hot and humid|A sultry afternoon kept everyone indoors.|Nature and weather
+balmy|adjective|Pleasantly warm|We ate outside on a balmy evening.|Nature and weather
+sweltering|adjective|Uncomfortably hot|The bus was sweltering in July.|Nature and weather
+desolate|adjective|Empty, bleak and lonely|The desolate plain stretched to the horizon.|Nature and weather
+lush|adjective|Growing thickly and richly|Lush ferns lined the creek.|Nature and weather
+pastoral|adjective|Relating to peaceful country life|The painting shows a pastoral scene of sheep and hills.|Nature and weather
+rendition|noun|A performance or interpretation of a piece|Her rendition of the anthem was stirring.|Arts and stories
+ode|noun|A poem praising someone or something|He wrote an ode to his old bicycle.|Arts and stories
+elegy|noun|A poem or song of mourning|The band played an elegy for the closed theater.|Arts and stories
+sonnet|noun|A fourteen-line poem with a set rhyme scheme|She wrote a sonnet about the sea.|Arts and stories
+saga|noun|A long story of heroic deeds; a long series of events|The saga of the broken dishwasher lasted all month.|Arts and stories
+opus|noun|A major work of art or music|The novel was her greatest opus.|Arts and stories
+prodigy|noun|A young person with exceptional talent|The ten-year-old chess prodigy beat the champion.|Arts and stories
+cameo|noun|A brief appearance by a well-known performer|The author made a cameo in the movie.|Arts and stories
+encore|noun|An extra performance requested by the audience|The crowd cheered for an encore.|Arts and stories
+ensemble|noun|A group of performers; things viewed as a whole|The jazz ensemble played until midnight.|Arts and stories
+muted|adjective|Quiet or soft; not bright|The room was painted in muted greens.|Senses
+plaintive|adjective|Sounding sad and mournful|A plaintive cry came from the woods.|Senses
+guttural|adjective|Produced deep in the throat|The dog gave a low, guttural growl.|Senses
+lilting|adjective|Rising and falling pleasantly in sound|She spoke with a lilting accent.|Senses
+musty|adjective|Smelling stale, damp or moldy|The cellar had a musty smell.|Senses
+mercenary|adjective|Interested only in money|His mercenary attitude cost him friends.|Money and work
+pecuniary|adjective|Relating to money|The prize has no pecuniary value, only honor.|Money and work
+solvent|adjective|Able to pay all debts|The shop stayed solvent through the slow winter.|Money and work
+destitute|adjective|Without money or the basic needs of life|The charity helps destitute families.|Money and work
+impoverished|adjective|Made poor; lacking richness|The drought left the region impoverished.|Money and work
+philanthropy|noun|Generous giving to help others|Her philanthropy built the new library.|Money and work
+prosperous|adjective|Successful and wealthy|The harbor made the town prosperous.|Money and work
+indebted|adjective|Owing money or gratitude|I'm indebted to you for your help.|Money and work

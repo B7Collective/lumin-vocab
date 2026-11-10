@@ -1,0 +1,321 @@
+abiotic|Temperature and rainfall are abiotic factors in any ecosystem.
+acuity|Mental acuity often sharpens with practice.
+aerobic|An aerobic class meets every morning at six.
+algorithm|A recipe is a kind of algorithm.
+allocation|The allocation of seats favored early sign-ups.
+amenity|A rooftop garden is the building's best amenity.
+analgesic|The cream contains a mild analgesic.
+anthropology|Anthropology helps explain why customs differ.
+antibody|Each antibody targets a specific germ.
+aquifer|Overpumping is draining the aquifer.
+arable|Terraces turned the hillside into arable land.
+archipelago|The ferry hops across the archipelago.
+archival|The film used archival footage from the 1950s.
+artisanal|Artisanal bakeries line the main street.
+assay|The lab will assay the water for lead.
+atrophy|Skills atrophy when you stop practicing.
+audit|The library did an audit of missing books.
+autonomic|The autonomic system controls your heartbeat.
+bandwidth|Streaming video uses a lot of bandwidth.
+benign|The weather was benign for the whole trip.
+biodiversity|Coral reefs hold enormous biodiversity.
+biome|The desert biome supports tough, thirsty plants.
+bourse|The bourse closed early for the holiday.
+brokerage|She opened a brokerage account.
+buoyancy|The boat's buoyancy comes from its hull shape.
+capitalization|The company's capitalization tops a billion dollars.
+cardiovascular|Cycling builds cardiovascular fitness.
+cartel|The cartel controlled the price of diamonds.
+census|The census showed the town growing.
+chronic|Chronic traffic delays frustrate commuters.
+chronology|The timeline lays out a clear chronology.
+circadian|Bright screens at night disturb circadian rhythms.
+clinical|The lab looked clean and clinical.
+coefficient|The coefficient of friction is low on ice.
+cognitive|Puzzles may help cognitive health.
+collateral|The car served as collateral for the loan.
+commerce|The river was once a highway of commerce.
+compliance|The factory is in compliance with safety rules.
+concession|The stadium has a new concession stand.
+conduit|The pipe is a conduit for rainwater.
+congenital|The puppy had a congenital heart defect.
+connotation|"Cheap" has a negative connotation.
+consortium|A consortium of universities funded the telescope.
+contagion|Financial contagion spread from one bank to the next.
+contour|Contour lines show the steep slope on the map.
+corporeal|The ghost in the play has no corporeal form.
+cosmopolitan|She has cosmopolitan tastes in food.
+credential|A teaching credential is required for the job.
+curator|The curator chose the paintings for the show.
+curriculum|The curriculum now includes coding.
+deciduous|Deciduous forests blaze with color in fall.
+deficit|The team overcame a ten-point deficit.
+deflation|Deflation can make people delay purchases.
+degenerative|Arthritis is a degenerative condition.
+demography|Changing demography shapes school planning.
+dermatology|She was referred to dermatology for the rash.
+diagnostic|The diagnostic tool found the engine fault.
+dialect|Each valley has its own dialect.
+dietary|The menu notes dietary options.
+diffusion|Perfume spreads by diffusion.
+digitize|The museum plans to digitize its photo archive.
+diplomacy|Diplomacy prevented a trade war.
+dividend|Good sleep pays a dividend in focus.
+dormancy|Seeds can survive years of dormancy.
+elasticity|Rubber's elasticity lets it snap back.
+electorate|The electorate is younger than last time.
+emission|New buses have lower emission levels.
+encryption|Encryption keeps your messages private.
+endowment|The museum's endowment pays for free entry.
+entrepreneur|The entrepreneur started her business in a garage.
+enzyme|An enzyme in saliva breaks down starch.
+epidemic|Loneliness has been called an epidemic.
+equity|Home equity rises as you pay down a mortgage.
+erosion|Planting grass slows soil erosion.
+estuary|Salmon pass through the estuary to the sea.
+ethnography|Her ethnography documents life on a fishing boat.
+evaporation|Evaporation cools your skin when you sweat.
+excise|There is an excise on fuel.
+expenditure|Rent is our biggest monthly expenditure.
+expropriate|The state may expropriate land for a road.
+fiscal|The city faces a fiscal crunch.
+flora|Alpine flora bloom briefly in summer.
+forensic|Forensic accountants traced the missing money.
+fossilize|Old habits can fossilize over time.
+franchise|The pizza franchise has fifty locations.
+frugality|Frugality helped them save for the trip.
+genome|The rice genome has been fully mapped.
+geopolitics|Oil shapes the geopolitics of the region.
+gerontology|Gerontology research focuses on healthy aging.
+glossary|The textbook has a helpful glossary.
+gratis|Coffee is gratis for volunteers.
+hemisphere|The northern hemisphere has more land.
+heredity|Heredity explains why siblings resemble each other.
+homeostasis|Shivering helps maintain homeostasis in the cold.
+hydraulic|Hydraulic brakes stop the truck.
+hygiene|Hand hygiene prevents the spread of germs.
+immunity|Diplomats have legal immunity in some cases.
+inflation|Inflation raised the price of groceries.
+infrastructure|The city invested in bike infrastructure.
+insolvent|The insolvent company sold its buildings.
+insulin|Insulin helps cells use sugar.
+invertebrate|The octopus is a clever invertebrate.
+latitude|The teacher gave us latitude to choose topics.
+ledger|Every sale goes in the ledger.
+legislature|The state legislature meets in January.
+levy|A levy on plastic bags cut their use.
+liability|Wet floors are a liability for stores.
+liquidity|The bank kept enough liquidity for withdrawals.
+longevity|The brand's longevity is impressive.
+lucrative|Selling lemonade at the parade proved lucrative.
+lunar|The lunar surface is covered in dust.
+malady|Homesickness is a common malady at camp.
+mercantile|The old mercantile district is now shops and cafes.
+metabolism|Cold weather can raise your metabolism.
+metropolis|The metropolis never seems to sleep.
+migratory|Migratory birds stop at the marsh each fall.
+monetary|The prize has little monetary value.
+monopoly|The town's only grocer had a monopoly.
+municipal|The municipal library opens at nine.
+mutation|A mutation gave the flower white petals.
+neurology|Neurology studies the brain and nerves.
+nomadic|Nomadic herders move with the seasons.
+nutrient|Each nutrient plays a role in growth.
+orbital|The space station's orbital period is ninety minutes.
+organic|The farm grows organic lettuce.
+overhead|Low overhead lets the shop keep prices down.
+pathogen|The water was tested for any pathogen.
+pathology|The pathology lab processes samples overnight.
+pharmaceutical|The pharmaceutical plant employs hundreds.
+photosynthesis|Photosynthesis makes oxygen as a by-product.
+physiology|Altitude changes your physiology.
+portfolio|The artist brought her portfolio to the interview.
+precipitation|Annual precipitation here is low.
+premium|Customers pay a premium for fast shipping.
+prototype|The first prototype was made of cardboard.
+psychology|Color psychology shapes store design.
+quarantine|The new fish went into quarantine before joining the tank.
+recession|Many families tightened budgets during the recession.
+referendum|The school bond went to a referendum.
+regimen|Her skin-care regimen has five steps.
+remission|The farm's tax debt was granted remission after the flood.
+renewable|Solar power is renewable.
+revenue|Ticket revenue covered the costs.
+salary|The job offers a modest salary and great benefits.
+sanitation|Good sanitation transformed city health.
+satellite|A weather satellite tracked the storm.
+sediment|Sediment builds up behind the dam.
+semiconductor|Semiconductor shortages slowed car production.
+solvency|The fund's solvency depends on new members.
+spectrum|The rainbow shows the visible spectrum.
+stakeholder|Every stakeholder got a vote.
+statute|The statute of limitations has expired.
+stimulus|A loud noise is a strong stimulus.
+subsidy|A subsidy lowered the cost of solar panels.
+suburban|Suburban streets are quiet at noon.
+synthesis|The report is a synthesis of many surveys.
+tariff|The tariff made imported cheese expensive.
+terrestrial|Terrestrial plants evolved from algae.
+therapeutic|Walking the dog is therapeutic.
+topography|The rugged topography made road building hard.
+toxicology|Toxicology tests take several weeks.
+tributary|A small tributary joins the river near town.
+tundra|Arctic foxes hunt across the tundra.
+urban|Urban farms grow food on rooftops.
+vaccine|The flu vaccine changes every year.
+velocity|The ball's velocity was clocked at ninety miles per hour.
+vertebrate|A frog is a vertebrate.
+viscosity|Motor oil's viscosity changes with temperature.
+wholesale|The bakery buys flour wholesale.
+apprehension|There was some apprehension about the long drive.
+contrition|His letter expressed deep contrition.
+dejection|Dejection showed on every face after the loss.
+despondent|The despondent fans filed out silently.
+disillusioned|He grew disillusioned with the band's new sound.
+elation|She felt pure elation crossing the finish line.
+exasperation|"Again?" she said, in exasperation.
+nonplussed|He seemed nonplussed by the sudden applause.
+vexation|The slow line was a source of vexation.
+rapture|The child listened in rapture to the story.
+resignation|He handed in his resignation on Friday.
+solace|She took solace in her garden.
+angst|The songs are full of teenage angst.
+pique|In a fit of pique, he left the game.
+rue|You'll rue skipping breakfast by noon.
+dismay|Much to our dismay, the shop was closed.
+sentiment|Public sentiment turned against the plan.
+altruism|Blood donation is quiet altruism.
+egotism|His egotism made teamwork hard.
+narcissism|The film satirizes celebrity narcissism.
+introvert|The introvert enjoyed a quiet night with a book.
+extrovert|The extrovert organized the whole reunion.
+idealist|The young idealist wanted to end hunger.
+authoritarian|The authoritarian regime banned protests.
+temperance|Temperance at the buffet is hard.
+discretion|Tipping is at your discretion.
+humility|True experts often show humility.
+reticence|Her reticence hid a sharp wit.
+magnanimity|The champion's magnanimity impressed the fans.
+pragmatist|As a pragmatist, she bought the used car.
+perfectionism|Perfectionism can make small tasks take forever.
+conformist|The conformist never wore anything bright.
+symmetrical|The garden is perfectly symmetrical.
+concave|The concave mirror magnified her face.
+convex|A convex lens bends light inward.
+cylindrical|The cylindrical tank holds rainwater.
+elliptical|The comet follows an elliptical path.
+oblong|An oblong rug fills the hallway.
+perpendicular|Draw a line perpendicular to the base.
+iridescent|The beetle's shell was iridescent green.
+monochrome|The photo looks striking in monochrome.
+gradient|The road's gradient made cyclists sweat.
+tessellation|The bathroom floor is a tessellation of hexagons.
+fractal|Coastlines have a fractal shape.
+spherical|Bubbles are spherical.
+conical|The tent has a conical roof.
+angular|The building has bold, angular lines.
+ornamental|The ornamental pond holds koi.
+facet|Patience is one facet of good teaching.
+silhouette|The skyline's silhouette glowed at dusk.
+vertex|A cube has eight vertices, and each vertex joins three edges.
+careen|The shopping cart began to careen across the lot.
+gyrate|The washing machine started to gyrate wildly.
+locomotion|Kangaroos use hopping for locomotion.
+propulsion|Squid move by jet propulsion.
+ricochet|The puck will ricochet off the boards.
+traverse|Hikers traverse the ridge in single file.
+circumnavigate|Ships once took years to circumnavigate the globe.
+evacuate|Residents had to evacuate before the fire.
+dislodge|A cough can dislodge a stuck crumb.
+displace|The new mall will displace a dozen small shops.
+revolve|Conversation tends to revolve around food.
+levitate|In the dream, I could levitate over the city.
+parasite|The parasite lives inside the fish's gills.
+invasive|Invasive carp threaten native fish.
+amphibious|Amphibious planes can land on lakes.
+ruminant|A giraffe is a ruminant.
+metamorphosis|The old warehouse underwent a metamorphosis into apartments.
+genus|Roses belong to the genus Rosa.
+avian|The avian exhibit has hundreds of birds.
+feline|She has a feline way of curling up in chairs.
+canine|The canine teeth are the pointed ones.
+bovine|He stared with a bovine lack of interest.
+equine|The equine clinic treats injured racehorses.
+ornithology|The ornithology club meets at dawn.
+entomology|Entomology students raised butterflies.
+fauna|The desert's fauna comes out at night.
+ungulate|The moose is the largest ungulate in the forest.
+echolocation|Dolphins also navigate by echolocation.
+plankton|Plankton blooms turn the sea green.
+auditory|The concert was an auditory feast.
+olfactory|The bakery is an olfactory delight.
+gustatory|The festival offered gustatory adventures.
+perceptible|There was a perceptible shift in the wind.
+imperceptible|The plant's growth was imperceptible day to day.
+acoustics|Engineers improved the gym's acoustics.
+decibel|Each decibel step up is a big jump in loudness.
+synesthesia|With synesthesia, some people see numbers in color.
+umami|Parmesan adds umami to pasta.
+sensory|The museum has a sensory room for young kids.
+culinary|The town is a culinary destination.
+gastronomy|Lyon is famous for its gastronomy.
+provisions|The cabin was stocked with provisions.
+sustenance|The soup gave sustenance to the tired hikers.
+satiate|Nothing could satiate his curiosity.
+confection|The cake was a towering confection of cream.
+emulsion|Vinaigrette is a temporary emulsion.
+caramelize|Sugar will caramelize at high heat.
+leaven|A little humor can leaven a long meeting.
+vintage|She collects vintage postcards.
+infuse|Infuse the oil with garlic.
+terroir|Coffee growers talk about terroir like winemakers.
+ergonomic|The ergonomic chair eased his back pain.
+interface|The new interface is easier to use.
+modular|Modular homes are built in a factory.
+component|Each component was made in a different country.
+sensor|A rain sensor closes the skylight.
+transistor|The first transistor was the size of a thumb.
+caliper|The machinist checked the part with a caliper.
+fulcrum|The kitchen is the fulcrum of family life.
+gyroscope|A gyroscope keeps the drone level.
+turbine|Water spins the turbine in the dam.
+sextant|Sailors still learn the sextant as a backup.
+piston|Each piston moves up and down thousands of times a minute.
+gasket|Replace the gasket to stop the leak.
+tectonic|A tectonic shift in fashion swept the industry.
+sedimentary|Fossils are often found in sedimentary rock.
+igneous|Basalt is a dark igneous rock.
+stratosphere|Prices rose into the stratosphere.
+permafrost|Thawing permafrost releases carbon.
+aurora|The aurora shimmered over the cabin.
+alluvial|Alluvial fans spread out at the canyon mouth.
+watershed|The forest protects the city's watershed.
+deforestation|Deforestation causes landslides on steep slopes.
+glacial|The line moved at a glacial pace.
+ecology|The pond's ecology changed after the drought.
+conservation|Water conservation matters in dry summers.
+baroque|The baroque music was full of ornaments.
+modernism|Modernism prized clean lines and function.
+composition|The pianist played her own composition.
+cinematography|The cinematography captures the desert's vastness.
+choreography|The dancers learned the new choreography in a week.
+libretto|The libretto tells a story of lost love.
+repertoire|The cook's repertoire includes forty soups.
+anthology|The poetry anthology spans three centuries.
+manuscript|The monk's manuscript is decorated in gold.
+allusion|The title is an allusion to an old myth.
+narrative|The company changed its narrative after the scandal.
+typography|The poster's typography is bold and clean.
+calligraphy|She studied Chinese calligraphy for years.
+contemporaneous|Contemporaneous accounts describe the flood vividly.
+concurrent|The two festivals are concurrent this year.
+perpetuity|The prize will be awarded in perpetuity.
+sequential|Take the courses in sequential order.
+transitory|The pain was sharp but transitory.
+periodic|The periodic table organizes the elements.
+cyclical|Fashion trends are cyclical.
+temporal|The story jumps between temporal settings.
+synchronous|The synchronous class meets online at noon.
+archaic|The law's archaic language confused readers.
+retroactive|The tax change is retroactive to last year.
+protracted|The protracted negotiations lasted months.

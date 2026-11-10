@@ -1,0 +1,33 @@
+# weather|Weather Watcher|Every kind of sky, from a drizzle to a blizzard|all|0|Nature and weather
+drizzle
+squall
+gale|noun|A very strong wind|A gale knocked down the fence.||1
+monsoon
+humidity|noun|The amount of water vapor in the air|The humidity made my hair frizzy.||1
+forecast
+barometer|noun|An instrument that measures air pressure to predict weather|The barometer is falling; a storm is coming.||2
+cyclone|noun|A large storm with winds spinning around a center|The cyclone hit the coast.||1
+hurricane|noun|A powerful tropical storm with very strong winds|The hurricane brought heavy rain.
+tornado
+blizzard
+hail|noun|Small balls of ice that fall like rain|Hail bounced off the car.
+sleet
+fog|noun|A thick cloud near the ground|Fog hid the bridge.
+mist|noun|A thin cloud of tiny water drops|Mist rose from the lake.
+dew
+frost
+thaw|verb|To melt after being frozen|The snow began to thaw.
+drought
+heatwave|noun|A long stretch of unusually hot weather|The heatwave lasted a week.||1
+overcast
+cumulus|noun|Puffy white clouds with flat bottoms|Cumulus clouds look like cotton balls.||1
+cirrus|noun|Thin, wispy clouds high in the sky|Cirrus clouds streaked the blue sky.||1
+thunderhead|noun|A tall, dark cloud that brings a thunderstorm|A thunderhead towered over the hills.||1
+lightning
+rainbow
+petrichor
+virga
+graupel
+breeze
+gust
+precipitation

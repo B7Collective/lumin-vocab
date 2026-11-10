@@ -11,7 +11,8 @@ import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app
 import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 import { canScan, scanCode } from "./scan.js";
-import { SCENES, sceneUrl, topicArt } from "./art.js";
+import { SCENES, SCENE_GROUPS, sceneUrl, wallpaperUrl, topicArt, keeperArt } from "./art.js";
+import { play } from "./sound.js";
 import "./words.js";
 import "./journey.js";
 import "./practice.js";
@@ -21,7 +22,7 @@ import "./you.js";
 
 const SITE = "https://lumin.b7collective.com";
 const SOURCE = "https://github.com/B7Collective/lumin-vocab";
-const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[3];
+const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[4];
 const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1, 5, 3]; // used by the word check
 
 function footer({ short = false } = {}) {
@@ -59,7 +60,48 @@ async function pinPrompt(title, confirm, onOk) {
 const section = (title, ic, color, ...kids) => h("section", { class: "section" }, h("h2", { class: "sec-title" }, title), ...kids);
 // Small paper illustration used in chips and choices
 const thumb = (src, size = 26) => h("img", { class: "thumb", src, alt: "", width: size, height: size, loading: "lazy" });
-const ROLE_ART = { adult: "character", teen: "talk", kid: "animals" }, LEVEL_ART = ["nature", "places", "science", "mywords"];
+const ROLE_ART = { adult: "character", teen: "talk", kid: "animals" };
+const ROLE_LEVEL = { kid: 0, teen: 2, adult: 4 };
+
+// ---- The difficulty slider ---------------------------------------------------
+// Three bands (Kids, Teens, Adults), two stops in each. Drag, tap a stop or a band, or use the arrow keys.
+export function levelSlider(value, onchange, { suggested = [] } = {}) {
+  const G = model.GROUPS, L = model.LEVELS, max = L.length - 1;
+  let v = Math.max(0, Math.min(max, value | 0));
+  const stops = L.map((x, i) => h("button", { class: "lstop", type: "button", tabindex: "-1", "aria-hidden": "true", onclick: () => set(i) }, h("i"), h("span", {}, x.name)));
+  const bands = G.map((g, gi) => h("button", { class: `lband b${gi}`, type: "button", tabindex: "-1", "aria-hidden": "true",
+    onclick: () => set(g.levels.includes(v) ? g.levels[(g.levels.indexOf(v) + 1) % g.levels.length] : g.levels[0]) }, h("strong", {}, g.name), h("small", {}, g.ages)));
+  const thumb = h("span", { class: "lthumb" }, h("i"));
+  const track = h("div", { class: "ltrack" }, h("span", { class: "lrail" }, G.map((g, gi) => h("i", { class: `b${gi}` }))), h("span", { class: "lfill" }), ...stops, thumb);
+  const name = h("strong", { class: "lname" }), sug = h("span", { class: "suggest" }, "Suggested"), about = h("span", { class: "labout" }), sample = h("span", { class: "lsample" });
+  const readout = h("div", { class: "lread", "aria-hidden": "true" }, h("div", { class: "lnamerow" }, name, sug), about, sample);
+  const el = h("div", { class: "lslider", role: "slider", tabindex: "0", "aria-label": "Difficulty", "aria-valuemin": "0", "aria-valuemax": String(max) },
+    h("div", { class: "lbands" }, bands), track, readout);
+  const paint = (animate) => {
+    const x = L[v];
+    el.style.setProperty("--v", String(v)); el.dataset.group = String(x.group);
+    el.setAttribute("aria-valuenow", String(v)); el.setAttribute("aria-valuetext", `${x.name}, for ${G[x.group].name.toLowerCase()}. ${x.about}`);
+    bands.forEach((b, gi) => b.classList.toggle("on", x.group === gi));
+    stops.forEach((st, i) => { st.classList.toggle("on", i <= v); st.classList.toggle("cur", i === v); });
+    name.textContent = x.name; about.textContent = x.about; sug.hidden = !suggested.includes(v);
+    sample.replaceChildren(...[...x.sample].map((c, i) => h("span", { class: "ch", style: { "--i": i } }, c)));
+    if (animate && !reduced()) { readout.animate([{ opacity: 0.2, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 360, easing: "cubic-bezier(.2,.8,.2,1)" });
+      thumb.animate([{ scale: "1" }, { scale: "1.25 0.85" }, { scale: "1" }], { duration: 420, easing: "cubic-bezier(.34,1.56,.64,1)" }); }
+  };
+  function set(i) { i = Math.max(0, Math.min(max, i)); if (i === v) return; v = i; paint(true); play("tap"); haptic(8); onchange(v); }
+  const at = (e) => { const r = track.getBoundingClientRect(); return Math.round(((e.clientX - r.left) / r.width) * L.length - 0.5); };
+  let dragging = false;
+  track.addEventListener("pointerdown", (e) => { dragging = true; track.setPointerCapture(e.pointerId); el.classList.add("drag"); set(at(e)); });
+  track.addEventListener("pointermove", (e) => { if (dragging) set(at(e)); });
+  const end = () => { dragging = false; el.classList.remove("drag"); };
+  track.addEventListener("pointerup", end); track.addEventListener("pointercancel", end);
+  el.addEventListener("keydown", (e) => {
+    const k = { ArrowRight: 1, ArrowUp: 1, ArrowLeft: -1, ArrowDown: -1 }[e.key];
+    if (k) { e.preventDefault(); set(v + k); } else if (e.key === "Home") { e.preventDefault(); set(0); } else if (e.key === "End") { e.preventDefault(); set(max); }
+  });
+  paint(false);
+  return el;
+}
 const backup = () => download(`lumin-vocab-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(store.exportAll()));
 const swatches = (selected, onpick) => h("div", { class: "chips", role: "group", "aria-label": "Color" }, model.COLORS.map((c, i) =>
   h("button", { class: "swatch", "aria-label": `Color ${i + 1}`, "aria-pressed": String(selected === i), style: { background: c.bg, color: c.fg }, onclick: () => onpick(i) }, selected === i ? icon("check", 20) : null)));
@@ -69,8 +111,10 @@ const swatches = (selected, onpick) => h("div", { class: "chips", role: "group",
 // Draws before the word list loads, so these samples are copied from it.
 const SAMPLES = [
   { w: "gentle", p: "adj.", i: "JEHN-tuhl", d: "Soft and careful, not rough", scene: "lavender", x: 54 },
-  { w: "curious", p: "adj.", i: "/ˈkjʊriəs/", d: "Eager to know or learn something", scene: "forest", x: 50 },
+  { w: "majestic", p: "adj.", i: "muh-JEH-stihk", d: "Grand and beautiful in a powerful way", scene: "aurora", x: 50 },
+  { w: "ambiguous", p: "adj.", i: "/æmˈbɪɡjuəs/", d: "Having more than one possible meaning; unclear", scene: "forest", x: 50 },
   { w: "meticulous", p: "adj.", i: "/məˈtɪkjələs/", d: "Showing great attention to detail; very careful", scene: "attic", x: 46 },
+  { w: "ubiquitous", p: "adj.", i: "/juˈbɪkwɪtəs/", d: "Present everywhere", scene: "harbor", x: 52 },
   { w: "ineffable", p: "adj.", i: "/ɪˈnɛfəbəl/", d: "Too great or extreme to be expressed in words", scene: "library", x: 56 },
 ];
 route("welcome", (main) => {
@@ -84,7 +128,8 @@ route("welcome", (main) => {
     const x = SAMPLES[k]; cur = k;
     bgs.forEach((b, j) => { b.style.opacity = j === k ? "1" : "0"; });
     const word = h("div", { class: "wword", lang: "en" }, [...x.w].map((ch, i) => h("span", { class: "ch", style: { "--i": i } }, ch)));
-    sample.replaceChildren(h("span", { class: "wpos" }, model.LEVELS[k].name + ", " + model.LEVELS[k].ages.toLowerCase()), word, h("span", { class: "wipa glass" }, x.i), h("p", { class: "wdef" }, `(${x.p}) ${x.d}`));
+    const L = model.LEVELS[k];
+    sample.replaceChildren(h("span", { class: "wpos" }, `${L.name}, for ${model.GROUPS[L.group].name.toLowerCase()}`), word, h("span", { class: "wipa glass" }, x.i), h("p", { class: "wdef" }, `(${x.p}) ${x.d}`));
     sample.classList.remove("out");
     requestAnimationFrame(() => fitWord(word));
   };
@@ -100,7 +145,8 @@ route("welcome", (main) => {
     h("section", { class: "wsec", "aria-labelledby": "w-how" }, h("h2", { id: "w-how" }, "Made for the whole family"),
       h("div", { class: "wfeat" },
         feat("/art/icons/flashcards.webp", "One word at a time", "Swipe through words in a calm, beautiful space. Tap to hear them said."),
-        feat("/art/journey/lighthouse.webp", "A Journey to follow", "Short chapters with games, from words everyone should know to rare ones."),
+        feat("/art/journey/lighthouse.webp", "The Lantern Road", "A journey of hundreds of stops, one a day. Every word you learn lights your lantern."),
+        feat("/art/journey/clocktower.webp", "Side trails", "Themed walks: words people misspell, slang through the decades, words from myths, and more."),
         feat("/art/icons/review.webp", "Practice that sticks", "Words come back just before you'd forget them, as quick games."),
         feat("/art/icons/society.webp", "A profile for everyone", "Each person learns at their own level, synced privately across devices."))),
     h("section", { class: "wsec wclose" },
@@ -173,7 +219,7 @@ route("who", (main) => {
 // ---- Setup (new profile) ---------------------------------------------------
 route("setup", (main) => {
   const first = model.profiles().length === 0;
-  const s = { step: 1, role: first ? "adult" : "kid", name: "", color: model.profiles().length % model.COLORS.length, level: first ? 3 : 0, topics: [], goal: 5, readAloud: true };
+  const s = { step: 1, role: first ? "adult" : "kid", name: "", color: model.profiles().length % model.COLORS.length, level: first ? 4 : 0, topics: [], goal: 5, readAloud: true };
   const page = h("div", { class: "page narrow" });
   main.append(page);
   const head = (n, title, lead) => h("div", { class: "page-head" },
@@ -186,7 +232,7 @@ route("setup", (main) => {
       const roles = [["adult", "An adult", "Rich, rare words like perspicacious", "t-mind", 5], ["teen", "A teen", "Words that matter at school", "target", 4], ["kid", "A kid", "Friendly words, simple sounds, read aloud", "sprout", 6]];
       page.append(head(1, first ? "Let's set up your profile" : "Add someone to your family", first ? "Start with yourself. You can add your family next, and everyone gets their own words and progress." : null),
         h("div", { class: "field" }, h("span", { class: "flabel" }, "Who is this profile for?"),
-          h("div", { class: "choices" }, roles.map(([k, t, sub, ic, c]) => h("button", { class: "choice", "aria-pressed": String(s.role === k), onclick: () => { s.role = k; s.level = k === "adult" ? 3 : k === "teen" ? 2 : 0; draw(); } },
+          h("div", { class: "choices" }, roles.map(([k, t, sub, ic, c]) => h("button", { class: "choice", "aria-pressed": String(s.role === k), onclick: () => { s.role = k; s.level = ROLE_LEVEL[k]; draw(); } },
             h("img", { class: "art-badge", src: `/art/icons/${ROLE_ART[k]}.webp`, alt: "", width: 64, height: 64 }), h("span", { class: "ttl" }, t), h("span", { class: "sub" }, sub))))),
         h("div", { class: "field" }, h("label", { for: "pname" }, "Name"), name, h("small", {}, "Only your family sees this. It's encrypted before it ever syncs.")),
         h("div", { class: "field" }, h("span", { class: "flabel" }, "Color"), swatches(s.color, (i) => { s.color = i; draw(); })),
@@ -195,12 +241,9 @@ route("setup", (main) => {
           h("button", { class: "btn primary", onclick: () => { if (!s.name.trim()) { name.focus(); toast("Add a name first"); return; } s.step = 2; draw(); } }, "Continue")));
       setTimeout(() => name.focus(), 50);
     } else if (s.step === 2) {
-      const suggested = s.role === "kid" ? [0, 1] : s.role === "teen" ? [2] : [3];
-      page.append(head(2, `Pick a level for ${s.name.trim()}`, "Any level works for anyone. The suggestion is just a starting point."),
-        h("div", { class: "choices" }, [0, 1, 2, 3].map((l) => h("button", { class: "choice", "aria-pressed": String(s.level === l), onclick: () => { s.level = l; draw(); } },
-          h("img", { class: "art-badge", src: `/art/icons/${LEVEL_ART[l]}.webp`, alt: "", width: 64, height: 64 }),
-          h("span", { class: "ttl" }, model.LEVELS[l].name, suggested.includes(l) ? h("span", { class: "suggest" }, "Suggested") : null),
-          h("span", { class: "sub" }, model.LEVELS[l].ages), h("span", { class: "s" }, model.LEVELS[l].sample)))),
+      const suggested = s.role === "kid" ? [0, 1] : s.role === "teen" ? [2, 3] : [4, 5];
+      page.append(head(2, `How challenging for ${s.name.trim()}?`, "Slide to choose. Any level works for anyone; the suggestion is just a starting point."),
+        levelSlider(s.level, (l) => { s.level = l; }, { suggested }),
         h("div", { class: "stack tight" },
           h("button", { class: "linkbtn start", onclick: () => wordCheck(s.role, (l) => { s.level = l; draw(); toast(`${model.LEVELS[l].name} looks like a good fit`); }) }, "Not sure? Take the word check"),
           h("p", { class: "muted" }, "You can change this any time in settings.")),
@@ -224,9 +267,9 @@ route("setup", (main) => {
 
 function wordCheck(role, done) {
   const fake = ["plorpish", "vantrous", "glimber", "brindlest", "quorbish", "snevilate"];
-  const allowed = role === "kid" ? [0, 1, 2] : [0, 1, 2, 3];
+  const allowed = role === "kid" ? [0, 1, 2] : [0, 1, 2, 3, 4, 5];
   const items = [];
-  for (const l of allowed) { const pool = model.WORDS.filter(w => w.l === l); for (let i = 0; i < 5; i++) items.push({ w: pool[Math.floor(Math.random() * pool.length)].w, l }); }
+  for (const l of allowed) { const pool = model.MAIN.filter(w => w.l === l); for (let i = 0; i < 4; i++) items.push({ w: pool[Math.floor(Math.random() * pool.length)].w, l }); }
   fake.sort(() => Math.random() - .5).slice(0, 3).forEach(w => items.push({ w, l: -1 }));
   items.sort(() => Math.random() - .5);
   const yes = {}; let fakesYes = 0, i = 0;
@@ -236,7 +279,7 @@ function wordCheck(role, done) {
     const next = () => {
       if (i >= items.length) {
         let level = allowed[0];
-        for (const l of allowed) if ((yes[l] || 0) >= 4) level = l;
+        for (const l of allowed) if ((yes[l] || 0) >= 3) level = l;
         if (fakesYes >= 2 && level > allowed[0]) level = allowed[allowed.indexOf(level) - 1];
         closeSheet(); done(level); return;
       }
@@ -326,10 +369,10 @@ function editProfile(id) {
   sheet(`Edit ${p.name}`, (b) => {
     const name = h("input", { type: "text", id: "ep-name", value: p.name, maxlength: 24 });
     let role = p.role, level = p.level, color = p.color;
-    const rolesBox = h("div", { class: "chips" }), levelBox = h("div", { class: "choices compact" }), colorBox = h("div");
+    const rolesBox = h("div", { class: "chips" }), levelBox = h("div"), colorBox = h("div");
     const draw = () => {
       rolesBox.replaceChildren(...Object.entries(model.ROLES).map(([k, l]) => h("button", { class: "chip", "aria-pressed": String(role === k), onclick: () => { role = k; draw(); } }, l)));
-      levelBox.replaceChildren(...model.LEVELS.map((L, i) => h("button", { class: "choice", "aria-pressed": String(level === i), onclick: () => { level = i; draw(); } }, h("span", { class: "ttl" }, L.name), h("span", { class: "sub" }, L.ages))));
+      if (!levelBox.firstChild) levelBox.append(levelSlider(level, (i) => { level = i; }));
       colorBox.replaceChildren(swatches(color, (i) => { color = i; draw(); }));
     };
     draw();
@@ -362,43 +405,93 @@ route("settings", (main) => {
   const save = (patch) => { model.saveProfile({ ...model.profile(p.id), ...patch }); Object.assign(p, patch); applyLook(); };
   const page = h("div", { class: "page narrow" });
   main.append(page);
-  const SEC = { "My look": ["palette", 2], Look: ["palette", 2], "Reading help": ["speak", 5], Sound: ["speak", 5], Learning: ["target", 6], Profile: ["t-people", 1], "Family controls": ["shield", 4], "This device": [app.device.form === "desktop" ? "desktop" : "phone", 5], "Keyboard shortcuts": ["keyboard", 1], "Your data": ["lock", 3], About: ["info", 1] };
-  const sec = (title, ...kids) => { const [ic, c] = SEC[title] || ["info", 1]; return section(title, ic, `var(--c${c})`, h("div", { class: "panel" }, ...kids)); };
+  // Each section wears a small paper illustration
+  const SEC_ART = { "My look": "arts", Look: "arts", "Reading help": "senses", Sound: "senses", Learning: "leveltest", Profile: "character", "Family controls": "society", "This device": "things", "Keyboard shortcuts": "spelling", "Your data": "lists", About: "mywords" };
+  const sec = (title, ...kids) => h("section", { class: "section sset" }, h("h2", { class: "sec-title" }, h("img", { class: "secart", src: `/art/icons/${SEC_ART[title] || "mywords"}.webp`, alt: "", width: 44, height: 44, loading: "lazy" }), title), h("div", { class: "panel" }, ...kids));
   const sw = (title, sub, checked, onchange, id) => h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, title), sub ? h("small", {}, sub) : null), h("input", { type: "checkbox", id, checked, onchange: (e) => onchange(e.target.checked) }));
   const pressOne = (e, sel) => { e.currentTarget.parentNode.querySelectorAll(sel).forEach(c => c.setAttribute("aria-pressed", "false")); e.currentTarget.setAttribute("aria-pressed", "true"); };
   const seg = (label, opts, value, onpick) => h("div", { class: "field" }, h("span", { class: "flabel" }, label), h("div", { class: "chips", role: "group", "aria-label": label },
     opts.map(([v, l]) => h("button", { class: "chip", "aria-pressed": String(value === v), onclick: (e) => { onpick(v); pressOne(e, ".chip"); } }, l))));
 
-  page.append(h("a", { class: "back", href: "#/you" }, icon("left"), "You"), h("div", { class: "phead" }, h("div", {}, h("h1", {}, "Settings"), h("p", {}, `For ${p.name}. Changes save as you go.`))));
+  page.append(h("a", { class: "back", href: "#/you" }, icon("left"), "You"));
 
-  // Look (everyone, kids first)
-  const cur = p.scene || "auto";
-  const themes = h("div", { class: "scenes", role: "group", "aria-label": "Scene" },
-    h("button", { class: "scene auto", "aria-pressed": String(cur === "auto"), onclick: (e) => { save({ scene: "auto" }); pressOne(e, ".scene"); } }, icon("sync"), "Changes with each word"),
-    SCENES.map((sc) => h("button", { class: "scene", "aria-pressed": String(cur === sc.id), onclick: (e) => { save({ scene: sc.id }); pressOne(e, ".scene"); } },
-      h("img", { src: sceneUrl(sc.id), alt: "", loading: "lazy", width: 160, height: 120 }), h("span", {}, sc.name))));
-  const scale = h("input", { type: "range", id: "set-scale", min: "0.9", max: "1.3", step: "0.05", value: String(p.scale || (model.isKid(p) ? 1.08 : 1)), oninput: (e) => save({ scale: parseFloat(e.target.value) }) });
+  // Hero: a live window onto your Words screen that answers every change below
+  const L = model.LEVELS[p.level] || model.LEVELS[4];
+  const pvA = h("img", { class: "pv-bg on", alt: "", decoding: "async" }), pvB = h("img", { class: "pv-bg", alt: "", decoding: "async" });
+  const pvWord = h("div", { class: "pv-word" }, [...L.sample].map((ch, i) => h("span", { class: "ch", style: { "--i": i } }, ch)));
+  const preview = h("div", { class: "pv", "aria-hidden": "true" }, pvA, pvB, h("div", { class: "pv-shade" }),
+    h("div", { class: "pv-body" }, pvWord, h("span", { class: "pv-pill" }, "Tap to hear"), h("p", { class: "pv-def" }, "Your words, over the scene you choose.")),
+    h("div", { class: "pv-acts" }, h("i"), h("i"), h("i"), h("i")));
+  let shown = null, cycle = null;
+  const showScene = (id) => {
+    if (id === shown) return; shown = id;
+    const sc = SCENES.find((x) => x.id === id) || SCENES[0];
+    const [cur, next] = pvA.classList.contains("on") ? [pvA, pvB] : [pvB, pvA];
+    next.src = sceneUrl(sc.id); next.style.setProperty("--fx", sc.x + "%");
+    const swap = () => { next.classList.add("on"); cur.classList.remove("on"); preview.classList.toggle("light", !!sc.light); };
+    next.complete ? swap() : (next.onload = swap);
+  };
+  const paintPreview = () => {
+    const cur = model.profile(p.id) || p;
+    clearInterval(cycle);
+    if (!cur.scene || cur.scene === "auto") { let k = 0; showScene(SCENES[0].id); if (!reduced()) cycle = setInterval(() => { if (!document.body.contains(preview)) { clearInterval(cycle); return; } showScene(SCENES[++k % SCENES.length].id); }, 2600); }
+    else showScene(cur.scene);
+    preview.style.setProperty("--pvscale", String(cur.scale || 1));
+  };
+  page.append(h("section", { class: "shero" },
+    h("div", { class: "shero-text" }, avatar(p, "lg"), h("h1", {}, "Settings"), h("p", {}, `For ${p.name}. Every change saves as you go.`),
+      h("div", { class: "shero-tags" }, h("span", {}, L.name), h("span", {}, (p.scene && p.scene !== "auto" && (SCENES.find((x) => x.id === p.scene) || {}).name) || "Shuffled scenes"))),
+    preview));
+  paintPreview();
+
+  // Scene: a gallery of wallpapers, each one yours to keep
+  const picker = h("div", { class: "wallpicker" });
+  const drawPicker = () => {
+    const cur = model.profile(p.id).scene || "auto";
+    const pick = (id) => { save({ scene: id }); haptic(8); play("tap"); paintPreview(); drawPicker(); const tag = page.querySelector(".shero-tags span:last-child"); if (tag) tag.textContent = id === "auto" ? "Shuffled scenes" : SCENES.find((x) => x.id === id).name; };
+    const tile = (sc) => h("div", { class: "wall" + (sc.light ? " light" : ""), "aria-pressed": String(cur === sc.id) },
+      h("button", { class: "wpick", "aria-label": `Use ${sc.name}`, "aria-pressed": String(cur === sc.id), onclick: () => pick(sc.id) },
+        h("img", { src: sceneUrl(sc.id), alt: "", loading: "lazy", width: 320, height: 180, style: { objectPosition: `${sc.x}% 50%` } }),
+        h("span", { class: "wname" }, sc.name), h("span", { class: "wcheck" }, icon("check", 16))),
+      h("button", { class: "wdl", "aria-label": `Save ${sc.name} as a wallpaper`, title: "Save as a wallpaper", onclick: (e) => saveWallpaper(sc, e.currentTarget) }, icon("down", 18)));
+    picker.replaceChildren(
+      h("button", { class: "wall auto", "aria-pressed": String(cur === "auto"), onclick: () => pick("auto") },
+        h("span", { class: "mosaic" }, SCENES.filter((_, k) => k % 4 === 0).slice(0, 4).map((sc) => h("img", { src: sceneUrl(sc.id), alt: "", loading: "lazy" }))),
+        h("span", { class: "wname" }, icon("sync", 16), "Shuffle: a new scene with every word"), h("span", { class: "wcheck" }, icon("check", 16))),
+      ...SCENE_GROUPS.map(([g, label]) => h("div", { class: "wgroup" }, h("h3", {}, label), h("div", { class: "wrow" }, SCENES.filter((sc) => sc.group === g).map(tile)))));
+  };
+  drawPicker();
+  const sceneSec = sec(kid ? "My look" : "Look", h("div", { class: "field" }, h("span", { class: "flabel" }, "Scene behind your words"), picker,
+    h("small", {}, "Like one? Tap the arrow on any scene to save it as a wallpaper.")));
+
+  // Appearance, as three little windows of light
+  const looks = [["device", "Auto", "contrast"], ["light", "Light", "sun"], ["dark", "Dark", "moon"]];
+  const curLook = ["light", "dark"].includes(p.dark) ? p.dark : "device";
+  const lookRow = h("div", { class: "looks", role: "group", "aria-label": "Appearance" }, looks.map(([v, label, ic]) => h("button", { class: `look ${v}`, "aria-pressed": String(curLook === v), onclick: (e) => { save({ dark: v }); pressOne(e, ".look"); play("tap"); } },
+    h("span", { class: "lk-win" }, h("i"), h("i"), h("i")), h("span", { class: "lk-name" }, icon(ic, 18), label))));
+  const scale = h("input", { type: "range", id: "set-scale", min: "0.9", max: "1.3", step: "0.05", value: String(p.scale || (model.isKid(p) ? 1.08 : 1)), oninput: (e) => { save({ scale: parseFloat(e.target.value) }); paintPreview(); } });
   const avatarPick = swatches(p.color, (i) => { save({ color: i }); render(); });
-  page.append(sec(kid ? "My look" : "Look",
-    h("div", { class: "field" }, h("span", { class: "flabel" }, "Scene behind words"), themes),
-    h("div", { class: "field" }, h("label", { for: "set-scale" }, "Text size"), h("div", { class: "range-row" }, h("span", { "aria-hidden": "true", class: "small muted" }, "A"), scale, h("span", { "aria-hidden": "true", style: { fontSize: "22px" }, class: "muted" }, "A"))),
+  sceneSec.querySelector(".panel").append(
+    h("div", { class: "field" }, h("label", { for: "set-scale" }, "Text size"), h("div", { class: "range-row" }, h("span", { "aria-hidden": "true", class: "small muted" }, "A"), scale, h("span", { "aria-hidden": "true", class: "muted big-a" }, "A"))),
     kid ? h("div", { class: "field" }, h("span", { class: "flabel" }, "My color"), avatarPick) : null,
-    lockedKid ? null : seg("Appearance", [["device", "Match device"], ["light", "Light"], ["dark", "Dark"]], ["light", "dark"].includes(p.dark) ? p.dark : "device", (v) => save({ dark: v })),
+    lockedKid ? null : h("div", { class: "field" }, h("span", { class: "flabel" }, "Appearance"), lookRow),
     lockedKid ? null : (() => { const sys = matchMedia("(prefers-reduced-motion: reduce)").matches;
       const el = sw("Calmer motion", sys ? "On, because this device asks for less motion" : "Fewer animations when moving between words", sys || !!p.calm, (v) => save({ calm: v }));
-      if (sys) el.querySelector("input").disabled = true; return el; })()));
+      if (sys) el.querySelector("input").disabled = true; return el; })());
+  page.append(sceneSec);
 
   // Sound
-  page.append(sec(kid ? "Reading help" : "Sound", sw("Sound effects", "Soft chimes when you answer and finish", p.sound !== false, (v) => save({ sound: v }))));
+  const soundSec = sec(kid ? "Reading help" : "Sound", sw("Sound effects", "Soft chimes when you answer and finish", p.sound !== false, (v) => { save({ sound: v }); if (v) play("right"); }));
+  page.append(soundSec);
   if (canSpeak()) {
     const vs = voices();
-    page.append(sec(kid ? "Reading help" : "Sound",
+    soundSec.querySelector(".panel").append(
       sw("Read words aloud", kid ? "Hear each new word and review question" : "Hear each new word as it appears", !!p.readAloud, (v) => save({ readAloud: v })),
       lockedKid || !vs.length ? null : h("div", { class: "field" }, h("label", { for: "set-voice" }, "Voice"),
         h("select", { id: "set-voice", onchange: (e) => { save({ voice: e.target.value }); speak("luminous", p); } }, h("option", { value: "" }, "Automatic"), vs.map(v => h("option", { value: v.name, selected: p.voice === v.name }, `${v.name} (${v.lang})`))),
         h("small", {}, `Voices come from this ${LABELS.os[app.device.os]}, so they can differ between devices.`)),
       lockedKid ? null : h("div", { class: "field" }, h("label", { for: "set-rate" }, "Speaking speed"), h("input", { type: "range", id: "set-rate", min: "0.6", max: "1.2", step: "0.05", value: String(p.rate || 0.9), onchange: (e) => { save({ rate: parseFloat(e.target.value) }); speak("luminous", p); } })),
-      h("button", { class: "btn small quiet start", onclick: () => speak("Lumin Vocab. Luminous.", p) }, icon("speak"), "Test")));
+      h("button", { class: "btn small quiet start", onclick: () => speak("Lumin Vocab. Luminous.", p) }, icon("speak"), "Test"));
   }
 
   if (lockedKid) {
@@ -408,8 +501,7 @@ route("settings", (main) => {
 
   // Learning (first for teens and adults, after the fun stuff for kids)
   const learnSec = sec("Learning",
-    h("div", { class: "field" }, h("span", { class: "flabel" }, "Level"), h("div", { class: "choices compact", role: "group", "aria-label": "Level" }, model.LEVELS.map((L, i) =>
-      h("button", { class: "choice", "aria-pressed": String(p.level === i), onclick: (e) => { save({ level: i }); pressOne(e, ".choice"); } }, h("span", { class: "ttl" }, L.name), h("span", { class: "sub" }, L.ages))))),
+    h("div", { class: "field" }, h("span", { class: "flabel" }, "Difficulty"), levelSlider(p.level, (i) => save({ level: i })), h("small", {}, "Each level keeps its own Journey progress, so you can switch and come back.")),
     h("div", { class: "field" }, h("span", { class: "flabel" }, "Favorite topics"), h("div", { class: "chips" }, model.TOPICS.map(t => h("button", { class: "chip", "aria-pressed": String((p.topics || []).includes(t)), onclick: (e) => { const cur = model.profile(p.id).topics || []; const next = cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]; save({ topics: next }); e.currentTarget.setAttribute("aria-pressed", String(next.includes(t))); } }, thumb(topicArt(t)), t)))),
     seg("Words per review", [[10, "10"], [20, "20"], [30, "30"]], p.reviewSize || 20, (v) => save({ reviewSize: v })),
     h("a", { class: "linkbtn start", href: "#/practice" }, "Not sure? Take the level check in Practice"));
@@ -470,6 +562,23 @@ route("settings", (main) => {
     h("p", {}, `Lumin Vocab ${VERSION}. Free and open source under the AGPL-3.0 license. Made by `, h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), "."),
     h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))), footer());
 });
+
+// Save a scene as a wallpaper: the share sheet on phones (so it can go straight to Photos), a download elsewhere
+async function saveWallpaper(sc, btn) {
+  const name = `Lumin Vocab - ${sc.name}.jpg`;
+  btn && btn.classList.add("busy");
+  try {
+    const blob = await (await fetch(wallpaperUrl(sc.id))).blob();
+    const file = new File([blob], name, { type: "image/jpeg" });
+    if (app.device.form !== "desktop" && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: sc.name }); }
+    else {
+      const a = h("a", { href: URL.createObjectURL(blob), download: name }); document.body.append(a); a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+      toast(`Saved ${sc.name}`);
+    }
+  } catch (e) { if (!e || e.name !== "AbortError") toast("That picture couldn't be saved. Try again in a moment."); }
+  finally { btn && btn.classList.remove("busy"); }
+}
 
 // ---- Install (tailored to the device) ----------------------------------------
 const STEP_IC = { share: "share", plus: "plusbox", menu: "menu", check: "check" };

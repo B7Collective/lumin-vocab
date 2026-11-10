@@ -1,0 +1,32 @@
+# doctor|At the Doctor's|Words you'll hear in a checkup, a pharmacy or a waiting room|teen|3|Body and health
+symptom
+diagnosis|noun|Identifying an illness from its signs|The doctor made a quick diagnosis.
+prescription|noun|A doctor's written order for medicine|Take the prescription to the pharmacy.
+chronic
+acute|adjective|Severe and sudden; also, sharp or keen|She felt an acute pain in her side.
+benign
+dosage|noun|The amount of medicine to take and how often|Check the dosage on the label.
+immunity
+vaccine
+inflammation|noun|Redness, heat and swelling as the body responds to injury|Ice reduces inflammation.
+allergy|noun|A reaction of the body to something usually harmless|Her pollen allergy flares in spring.
+referral|noun|Sending someone to a specialist or another service|She got a referral to a skin doctor.
+prognosis
+pharmacist|noun|A person trained to prepare and give out medicines|Ask the pharmacist about side effects.
+physician|noun|A medical doctor|Our family physician knows us well.
+pediatrician|noun|A doctor for children|The pediatrician checked the baby's ears.
+specialist|noun|An expert in one area, such as a heart doctor|He saw a specialist for his knee.
+triage|noun|Sorting patients by how urgently they need care|Triage nurses decide who's seen first.
+outpatient|adjective|Treated without staying overnight in a hospital|It was a quick outpatient visit.
+contagious
+sterile|adjective|Free from germs|The nurse opened a sterile bandage.
+pulse
+fracture
+sprain
+checkup|noun|A routine medical examination|Her yearly checkup is in March.
+stethoscope|noun|An instrument for listening to the heart and lungs|The stethoscope felt cold on my chest.
+thermometer
+antibiotic|noun|A medicine that kills bacteria|Antibiotics don't work on colds.
+ultrasound|noun|A scan that uses sound waves to see inside the body|The ultrasound showed a healthy heart.
+anesthesia|noun|Medicine that stops you from feeling pain|He was under anesthesia during surgery.
+recuperate|verb|To recover health or strength|She recuperated at home for a week.

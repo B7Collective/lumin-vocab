@@ -1,0 +1,334 @@
+magnanimous|In a magnanimous gesture, the winner shared the prize.
+malaise|An economic malaise settled over the town.
+malevolent|The malevolent wizard cursed the kingdom.
+malfeasance|The audit uncovered malfeasance in the budget office.
+malign|Don't malign a teammate behind his back.
+malleable|Gold is soft and malleable.
+maudlin|The movie's ending was maudlin.
+maverick|The maverick designer ignored every trend.
+mawkish|The mawkish card made her roll her eyes.
+melancholy|A melancholy song played on the radio.
+mendacious|The mendacious ad promised instant results.
+mercurial|Her mercurial moods were hard to predict.
+meticulous|He kept meticulous records of every bird he saw.
+mien|The judge had a serious mien.
+misanthrope|The old misanthrope lived alone in the woods.
+miscreant|The miscreant who stole the gnome was caught.
+modicum|Show a modicum of patience.
+mollify|A free coffee helped mollify the customer.
+moribund|The moribund mall had only three open shops.
+morose|He was morose after the loss.
+mundane|Even mundane chores go faster with music.
+myopic|It's myopic to plan only for this week.
+myriad|The reef holds myriad fish.
+nadir|The team hit its nadir in October.
+nascent|The nascent company had five employees.
+nefarious|The villain's nefarious plan failed.
+neophyte|As a neophyte cook, he burned the rice.
+nettle|Small delays nettle him.
+nonchalant|She was nonchalant about her perfect score.
+nostalgia|Old cartoons fill me with nostalgia.
+notorious|The intersection is notorious for traffic jams.
+noxious|Noxious fumes rose from the drain.
+nuance|The translation lost every nuance of the joke.
+obdurate|The obdurate mule refused to budge.
+oblique|He made an oblique reference to the mistake.
+oblivious|He was oblivious to the paint on his nose.
+obstinate|The obstinate stain wouldn't come out.
+obtuse|Don't be obtuse; you know what I mean.
+obviate|A good map will obviate the need for directions.
+odious|Cleaning the grease trap is an odious job.
+onerous|The paperwork was onerous.
+opulent|The opulent hotel had gold faucets.
+ornate|The ornate frame was covered in carved leaves.
+orthodox|She took an orthodox approach to the problem.
+ostentatious|The ostentatious car had gold rims.
+ostracize|Kids should never ostracize someone for being different.
+palatable|The compromise was palatable to both sides.
+pallid|The pallid moon hung over the field.
+panacea|There's no panacea for traffic.
+panache|She wore the bright hat with panache.
+paragon|He's a paragon of patience.
+pariah|After the scandal, he became a pariah.
+parochial|The town's parochial views worried newcomers.
+parsimonious|The parsimonious landlord never fixed anything.
+partisan|The debate turned partisan quickly.
+pastiche|The movie is a pastiche of old westerns.
+paucity|There's a paucity of good pizza in this town.
+pedantic|The pedantic tutor corrected every comma.
+pedestrian|The plot was pedestrian and predictable.
+pejorative|"Nerd" was once purely pejorative.
+penchant|She has a penchant for old maps.
+penitent|The penitent boy returned the stolen candy.
+pensive|He sat in pensive silence.
+perfidious|The perfidious ally switched sides.
+perfunctory|He gave a perfunctory wave.
+peripatetic|The peripatetic photographer moved every few months.
+perennial|Tulips are perennial flowers.
+pervasive|The smell of smoke was pervasive.
+petulant|The petulant child stomped off.
+philanthropic|The philanthropic couple funded a new library.
+phlegmatic|The phlegmatic goalkeeper never panicked.
+pithy|She gave a pithy summary of the book.
+placate|The manager tried to placate the angry crowd.
+placid|The placid lake reflected the hills.
+platitude|"Everything happens for a reason" is a platitude.
+plethora|The store has a plethora of cereals.
+poignant|The reunion was a poignant moment.
+polemic|Her essay is a polemic against plastic straws.
+portent|The red sky felt like a portent of storms.
+pragmatic|Let's take a pragmatic approach.
+precarious|The vase sat in a precarious spot.
+precipitate|The news could precipitate a crisis.
+precocious|The precocious six-year-old read chapter books.
+predilection|He has a predilection for spicy food.
+preponderance|The preponderance of evidence pointed to the cat.
+presumptuous|It was presumptuous to assume she'd say yes.
+primordial|Life may have begun in a primordial sea.
+pristine|The beach was pristine at dawn.
+probity|The judge was known for her probity.
+proclivity|He has a proclivity for napping.
+prodigal|The prodigal son returned home.
+prodigious|She has a prodigious memory.
+profligate|His profligate spending emptied his savings.
+profound|The book had a profound effect on me.
+profuse|She gave profuse thanks.
+proliferate|Weeds proliferate in warm weather.
+prolific|The prolific author wrote two books a year.
+propensity|Toddlers have a propensity to climb.
+propitious|The calm sea was a propitious sign for sailing.
+prosaic|The real reason was prosaic: he overslept.
+protean|The actor's protean talent fits any role.
+provincial|Her views seemed provincial to the city folks.
+prudent|It's prudent to save for emergencies.
+puerile|The prank was puerile.
+pugnacious|The pugnacious terrier challenged every dog.
+pungent|The pungent cheese filled the fridge.
+quagmire|The project became a quagmire of delays.
+qualm|He had no qualm about asking for help.
+quandary|I'm in a quandary about which college to choose.
+quell|Police worked to quell the panic.
+quiescent|The volcano has been quiescent for centuries.
+quintessential|Apple pie is the quintessential fall dessert.
+quixotic|His quixotic dream was to swim the ocean.
+raconteur|Grandpa is a born raconteur.
+rancor|The debate ended without rancor.
+rapacious|The rapacious landlord raised rents again.
+rapport|The teacher quickly built rapport with the class.
+rarefied|The rarefied air made climbing hard.
+raucous|The raucous crowd chanted for hours.
+recalcitrant|The recalcitrant printer refused to work.
+recant|The witness refused to recant her story.
+recluse|The recluse rarely left his cabin.
+redolent|The kitchen was redolent of cinnamon.
+redoubtable|She was a redoubtable opponent at chess.
+refute|The data refute his claim.
+relegate|They relegate old toys to the attic.
+renege|Don't renege on your promise.
+renounce|He chose to renounce his title.
+repartee|Their quick repartee entertained the room.
+replete|The book is replete with jokes.
+reprehensible|Cheating is reprehensible.
+reprobate|The old reprobate never paid his bills.
+repudiate|The company was quick to repudiate the rumor.
+requisite|She has the requisite skills for the job.
+rescind|The school may rescind the offer.
+resolute|She was resolute in her decision.
+resplendent|The bride looked resplendent.
+reticent|He's reticent about his past.
+reverent|A reverent hush fell over the hall.
+reverie|A car horn broke her reverie.
+rife|The essay was rife with errors.
+rudimentary|I have a rudimentary grasp of Spanish.
+ruminate|Cows ruminate as they lie in the field.
+rustic|They stayed in a rustic cabin.
+sacrosanct|Sunday dinner is sacrosanct in our family.
+salubrious|The mountain air is salubrious.
+sanctimonious|His sanctimonious lecture annoyed everyone.
+sanguine|She's sanguine about the team's chances.
+sardonic|He gave a sardonic smile.
+scintilla|There's not a scintilla of proof.
+scintillating|The conversation was scintillating.
+scrupulous|She is scrupulous about giving credit.
+semblance|We restored some semblance of order.
+serendipity|Finding the café was pure serendipity.
+servile|The servile assistant agreed with everything.
+sinecure|His job was a sinecure with little work.
+sinuous|The sinuous river wound through the valley.
+skulduggery|The game was decided without skulduggery.
+slake|Nothing could slake his thirst for adventure.
+sobriquet|"The Iron Lady" was a famous sobriquet.
+solicitous|The solicitous nurse checked on us often.
+solipsism|His solipsism made him a poor listener.
+sonorous|The sonorous bell rang across the valley.
+soporific|The lecture was soporific.
+sordid|The novel exposes a sordid scheme.
+squalid|The shelter rescued dogs from squalid conditions.
+staid|The staid bank surprised everyone with a funny ad.
+stalwart|She's a stalwart of the volunteer team.
+stoic|He remained stoic through the long wait.
+stolid|The stolid farmer showed no emotion.
+strident|Her strident voice cut through the noise.
+stringent|The lab has stringent safety rules.
+suave|The suave host charmed the guests.
+sublime|The view from the ridge was sublime.
+subterfuge|They used subterfuge to keep the party a secret.
+succinct|Her answer was succinct.
+sumptuous|The sumptuous feast lasted hours.
+supercilious|The supercilious waiter sneered at our order.
+superfluous|Cut the superfluous words from your essay.
+supplant|Electric cars may supplant gas cars.
+surfeit|There's a surfeit of zucchini every August.
+surreptitious|He sneaked a surreptitious look at his phone.
+svelte|The svelte greyhound raced past.
+sycophant|The king was surrounded by a sycophant or two.
+taciturn|The taciturn fisherman nodded instead of speaking.
+tangential|His point was only tangential to the debate.
+tantamount|Silence was tantamount to agreement.
+temerity|He had the temerity to argue with the referee.
+tenacious|The tenacious terrier wouldn't let go of the rope.
+terse|She sent a terse reply.
+tortuous|The tortuous mountain road made us carsick.
+tractable|The pony was tractable and calm.
+transient|The town has a transient population of students.
+transmute|Alchemists tried to transmute lead into gold.
+travesty|The canceled concert was a travesty.
+trenchant|Her trenchant criticism hit home.
+trepidation|He opened the envelope with trepidation.
+truculent|The truculent goose hissed at passersby.
+tumultuous|The team had a tumultuous season.
+turbid|The river was turbid after the storm.
+turgid|The turgid speech dragged on.
+umbrage|She took umbrage at the remark.
+unctuous|The unctuous salesman flattered everyone.
+unequivocal|Her answer was an unequivocal yes.
+unfathomable|The depth of the trench is unfathomable.
+unflappable|The unflappable teacher handled the fire alarm calmly.
+unimpeachable|Her honesty is unimpeachable.
+unkempt|His unkempt hair stuck out everywhere.
+unwieldy|The unwieldy couch wouldn't fit through the door.
+urbane|The urbane diplomat spoke five languages.
+usurp|The prince plotted to usurp the throne.
+vacuous|The vacuous show had no plot.
+vapid|The song's lyrics were vapid.
+variegated|Variegated leaves have stripes of green and white.
+venal|The venal official took bribes.
+venerable|The venerable oak shades the square.
+veracity|Reporters checked the veracity of the claim.
+verbose|The verbose manual was hard to follow.
+verdant|Verdant hills rolled to the sea.
+vernacular|The book is written in the local vernacular.
+vestige|A stone wall is the only vestige of the old farm.
+vex|Slow internet will vex anyone.
+vicarious|I get vicarious joy from my friends' travels.
+vilify|Don't vilify people you disagree with.
+vindicate|The test results will vindicate her.
+vindictive|The vindictive villain sought revenge.
+virtuoso|The violin virtuoso played without music.
+visceral|The movie gave me a visceral thrill.
+vitriolic|The vitriolic comments were removed.
+vivacious|The vivacious host danced with everyone.
+vociferous|Vociferous fans booed the call.
+volatile|Gas prices are volatile.
+voluble|The voluble guide never stopped talking.
+voracious|She's a voracious reader.
+welter|A welter of emails greeted him after vacation.
+wistful|She gave a wistful look at the beach photos.
+wizened|A wizened apple sat in the bowl.
+wraith|A wraith of mist drifted over the lake.
+wrangle|The cousins wrangle over the last pancake.
+wry|He gave a wry grin.
+xenophobia|The museum exhibit examines xenophobia in history.
+zealot|He's a fitness zealot who runs every morning.
+zenith|The sun reached its zenith at noon.
+zephyr|A gentle zephyr cooled the porch.
+kinetic|The sculpture is kinetic, turning in the wind.
+prattle|The toddler's happy prattle filled the car.
+aviary|The zoo's aviary has free-flying parrots.
+apiary|Honey from the apiary sells out every summer.
+menagerie|The pet shop held a menagerie of reptiles.
+vermin|The barn cat keeps vermin away.
+cetacean|The museum hall is full of cetacean skeletons.
+raptor|A raptor perched on the light pole.
+carnivorous|Pitcher plants are carnivorous.
+chrysalis|The butterfly emerged from its chrysalis.
+chromosome|Each chromosome carries thousands of genes.
+isotope|Doctors use a radioactive isotope in some scans.
+theorem|Students proved the theorem step by step.
+osmosis|Plants take in water partly by osmosis.
+refraction|Refraction bends sunlight into a rainbow.
+oxidize|Cut apples oxidize and turn brown.
+electrolyte|Sodium is an important electrolyte.
+viscous|The paint was too viscous to spray.
+combustible|Gasoline is highly combustible.
+inert|The lizard lay inert on the warm rock.
+paraphernalia|Art paraphernalia covered the table.
+regalia|The queen's regalia sparkled in the case.
+insignia|The insignia on her sleeve showed her rank.
+emblem|The eagle is an emblem of strength.
+gadgetry|The car is packed with gadgetry.
+lattice|The pie had a lattice crust.
+trellis|Grapes climbed the trellis.
+parchment|Bake the cookies on parchment.
+quill|The scribe dipped his quill in ink.
+ballast|Her calm humor was the ballast of the group.
+abode|The fox's abode was under the shed.
+domicile|The form asks for your country of domicile.
+locale|The movie's locale shifts from Paris to Cairo.
+environs|The hotel and its environs are lovely in May.
+hinterland|Farms dot the hinterland behind the coast.
+promontory|We watched whales from the promontory.
+escarpment|Waterfalls spill over the escarpment.
+chasm|A chasm opened between the two friends.
+grotto|The garden has a mossy grotto.
+vista|Every bend revealed a new vista.
+ravenous|The ravenous seagulls swarmed the fries.
+gourmand|The gourmand ordered three desserts.
+repast|After the hike, they enjoyed a hearty repast.
+fare|The ferry fare is five dollars.
+nourishment|Babies get nourishment from milk.
+gluttony|The pie-eating contest celebrated gluttony.
+bounty|The sea offered a bounty of fish.
+lithe|The lithe cat slipped through the fence.
+sinewy|The sinewy vines strangled the oak.
+brawny|The brawny lumberjack split the logs.
+gaunt|The old house looked gaunt in winter.
+frail|Her frail grandmother walked with a cane.
+haggard|The new parents looked haggard but happy.
+ruddy|The fisherman had a ruddy face.
+sallow|The sallow light of the hallway made everyone look tired.
+physique|The statue shows an athlete's physique.
+gait|The horse has a smooth gait.
+torrential|Torrential rain closed the highway.
+temperate|Maples grow in temperate forests.
+tempestuous|They had a tempestuous friendship.
+inclement|Bring a coat in case of inclement weather.
+sultry|A sultry breeze drifted through the window.
+balmy|The balmy night was perfect for stargazing.
+sweltering|The attic was sweltering in July.
+desolate|The desolate beach was empty in winter.
+lush|The lush lawn was soft underfoot.
+pastoral|The pastoral painting shows sheep by a stream.
+rendition|The band's rendition of the anthem was slow and moving.
+ode|Keats wrote an ode to a nightingale.
+elegy|The poet wrote an elegy for her teacher.
+sonnet|Shakespeare wrote over a hundred and fifty sonnets; this sonnet is my favorite.
+saga|The fantasy saga spans seven books.
+opus|The composer called it his final opus.
+prodigy|The chess prodigy won the adult tournament.
+cameo|The coach made a cameo in the school play.
+encore|The pianist played Chopin as an encore.
+ensemble|Her outfit was a stylish ensemble of blue and gray.
+muted|The muted trumpet sounded soft and dreamy.
+plaintive|The violin played a plaintive tune.
+guttural|The language has many guttural sounds.
+lilting|The lilting song rocked the baby to sleep.
+musty|Musty books filled the attic.
+mercenary|The army hired a mercenary force.
+pecuniary|He had no pecuniary interest in the deal.
+solvent|Water is a common solvent.
+destitute|The storm left many families destitute.
+impoverished|The drought left farmers impoverished.
+philanthropy|Her philanthropy supports music schools.
+prosperous|The prosperous town built a new library.
+indebted|We are indebted to the volunteers.

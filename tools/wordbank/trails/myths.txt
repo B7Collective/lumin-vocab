@@ -1,0 +1,35 @@
+# myths|Words from Myths|Words that started as gods, heroes and monsters in old stories|all|2|Arts and stories
+panic|noun|Sudden, overwhelming fear. From Pan, the Greek god of the wild, whose shouts scared travelers|Stay calm; don't panic.||1
+echo
+atlas|noun|A book of maps. Named for Atlas, the Titan who held up the sky|Find Peru in the atlas.||1
+cereal|noun|A grain, or a breakfast food made from it. From Ceres, Roman goddess of grain|I had cereal with bananas.||0
+museum
+music|noun|Sounds arranged in a pleasing way. From the Muses, Greek goddesses of the arts|Music filled the kitchen.||0
+tantalize|verb|To tempt with something just out of reach. From Tantalus, whose fruit always pulled away|The smell of cookies tantalized us.
+herculean|adjective|Needing great strength or effort. From Hercules and his twelve labors|Cleaning the garage was a herculean task.
+mentor|noun|A wise, trusted guide. From Mentor, a teacher in the Odyssey|Her coach became her mentor.||1
+odyssey|noun|A long, adventurous journey. From the Odyssey, the tale of a hero's ten-year voyage home|Moving across the country was an odyssey.
+nemesis
+narcissism
+jovial
+mercurial
+volcano
+chaos
+titanic|adjective|Enormous in size or strength. From the Titans, giants of Greek myth|They faced a titanic challenge.
+siren|noun|A loud warning sound; in myths, sea creatures whose songs lured sailors|The fire truck's siren wailed.||1
+helium|noun|A light gas that makes balloons float. From Helios, the Greek sun god|The balloon was filled with helium.|Science and tech|1
+phobia|noun|An extreme fear of something. From Phobos, the Greek spirit of fear|He has a phobia of spiders.
+hypnosis|noun|A sleeplike state where someone responds to suggestions. From Hypnos, the god of sleep|The magician pretended to use hypnosis.
+iridescent
+nectar
+ambrosia|noun|Something delicious; in myths, the food of the gods|The peach pie was pure ambrosia.
+martial|adjective|Relating to fighting or war. From Mars, the Roman god of war|She practices martial arts.
+python|noun|A large snake that squeezes its prey. From Python, a serpent in Greek myth|The python coiled around a branch.|Animals|1
+arachnid|noun|A spider or related creature. From Arachne, a weaver turned into a spider|Scorpions are arachnids too.|Animals|2
+aegis
+labyrinth
+flora
+fauna
+hygiene
+halcyon
+zephyr

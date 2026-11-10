@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "2.0.0";
+export const VERSION = "3.0.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -85,6 +85,7 @@ export function render(opts) {
   name = ({ feed: "words", review: "practice", saved: "library", categories: "topics" })[name] || name; // addresses from version 1
   if (!ROUTES[name]) name = hasProfiles ? "words" : "welcome";
   if (!wordsLoaded && !NO_WORDS.includes(name)) { app.needWords && app.needWords(); wordsReady.then(render); return; }
+  if (app.profile && !app.profile.v3) model.migrate(app.profile);
   applyLook();
   shell(name);
   const main = document.getElementById("main");
@@ -139,6 +140,8 @@ async function boot() {
   // (the welcome page) fetches it a moment after the page appears, so the page itself arrives first.
   let startWords; wordsReady = new Promise((r) => { startWords = r; }).then(() => model.loadWords()).then(() => { wordsLoaded = true; });
   app.needWords = () => startWords();
+  // Soft drifting light behind the app's pages (hidden behind full-screen scenes)
+  document.body.prepend(h("div", { class: "ambient", "aria-hidden": "true" }, h("i"), h("i"), h("i"), h("b", { class: "grain" })));
   await store.open();
   if (model.profiles().length || !NO_WORDS.includes((location.hash.slice(2) || "welcome").split(/[/=]/)[0])) startWords();
   else setTimeout(startWords, 1500);

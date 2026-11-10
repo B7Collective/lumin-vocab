@@ -1,8 +1,8 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v2.0.0";
+const VERSION = "lumin-v3.0.0";
 const SHELL = [
-  "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/404.html",
+  "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/data/trails.json", "/404.html", "/art/grain.png",
   "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/scan.js", "/js/vendor/qrcode.mjs",
   "/js/art.js", "/js/sound.js", "/js/wordsheet.js", "/js/words.js", "/js/journey.js", "/js/practice.js", "/js/games.js", "/js/library.js", "/js/you.js", "/js/motion.js",
   "/icons/logo.svg", "/icons/favicon.svg", "/icons/app-192.png", "/icons/app-apple-180.png",

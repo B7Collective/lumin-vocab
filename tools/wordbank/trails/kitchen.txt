@@ -1,0 +1,28 @@
+# kitchen|In the Kitchen|What recipes are really asking you to do|all|1|Food
+simmer
+braise
+whisk|verb|To beat quickly with a wire tool to add air|Whisk the eggs until frothy.||0
+knead|verb|To press and fold dough with your hands|Knead the dough for ten minutes.
+fold|verb|To gently mix by lifting and turning|Fold the berries into the batter.||0
+julienne|verb|To cut into thin matchstick strips|Julienne the carrots for the salad.||3
+mince|verb|To chop into very tiny pieces|Mince the garlic.
+dice|verb|To cut into small cubes|Dice the onion.||0
+zest|noun|The outer colored skin of citrus, grated for flavor; also, eagerness|Add lemon zest to the frosting.
+marinate|verb|To soak food in a flavored liquid before cooking|Marinate the chicken overnight.
+baste|verb|To spoon juices over food while it cooks|Baste the turkey every half hour.
+blanch|verb|To boil briefly and then cool in ice water; to turn pale|Blanch the green beans so they stay bright.||2
+caramelize
+deglaze|verb|To loosen browned bits from a pan with liquid|Deglaze the pan with broth.||3
+emulsion
+garnish
+glaze|noun|A shiny coating on food|The donuts had a sugar glaze.
+poach|verb|To cook gently in simmering liquid|Poach the eggs for three minutes.
+sear|verb|To brown the surface quickly over high heat|Sear the steak on both sides.
+sift|verb|To shake through a sieve to remove lumps|Sift the flour and cocoa together.
+temper|verb|To bring to the right temperature slowly; to soften|Temper the chocolate so it shines.||3
+roux|noun|Flour cooked in fat, used to thicken sauces|Start the gravy with a roux.||3
+ferment
+brine
+puree|verb|To blend food until smooth|Puree the soup in the blender.
+dollop|noun|A spoonful of something soft|Add a dollop of whipped cream.||0
+drizzle

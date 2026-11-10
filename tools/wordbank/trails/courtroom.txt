@@ -1,0 +1,29 @@
+# courtroom|In the Courtroom|The language of judges, juries and lawyers|teen|3|Society and law
+verdict
+testimony
+jury|noun|A group of citizens who decide the facts of a case|The jury listened closely.
+defendant|noun|The person accused or sued in court|The defendant stood as the judge entered.
+plaintiff|noun|The person who brings a case to court|The plaintiff asked for repairs to be paid.
+prosecutor|noun|A lawyer who brings a criminal case for the government|The prosecutor called her first witness.
+witness|noun|A person who saw something and tells what happened|The witness described the car.
+evidence
+objection|noun|A formal protest during a trial|"Objection!" the lawyer called out.
+acquit|verb|To declare someone not guilty|The jury acquitted him.
+appeal|noun|A request for a higher court to review a decision|They filed an appeal.
+bail|noun|Money paid so an accused person can leave jail until trial|The judge set bail.
+subpoena|noun|An order requiring someone to appear in court|She received a subpoena to testify.
+alibi|noun|Proof that someone was elsewhere at the time|His alibi checked out.
+affidavit|noun|A written statement sworn to be true|He signed an affidavit.
+perjury|noun|Lying under oath|Perjury is a serious offense.
+precedent
+statute
+plea|noun|A formal answer to a charge in court; an urgent request|He entered a plea of not guilty.
+gavel|noun|A small wooden hammer a judge uses|The judge banged the gavel.
+docket|noun|A list of cases to be heard by a court|The docket is full this week.
+counsel
+hearsay|noun|Information heard from others, not known firsthand|The judge ruled it was hearsay.
+adjourn|verb|To pause a meeting or court session until later|Court is adjourned until Monday.
+exonerate
+litigate|verb|To take a dispute to court|They chose to settle instead of litigate.
+bailiff|noun|An officer who keeps order in a courtroom|The bailiff asked everyone to rise.
+recess|noun|A short break in a court session; a break at school|The judge called a recess.

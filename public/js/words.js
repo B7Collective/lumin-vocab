@@ -19,7 +19,7 @@ route("words", (main) => {
   const before = model.streak(model.profile(p.id));
   if (queue[idx]) model.markActive(p.id); // seeing a word counts toward the streak
   const n = model.streak(model.profile(p.id));
-  const filter = p.feedSet ? (p.feedSet === "beautiful" ? "Beautiful words" : "Funny words") : p.feedTopic || "All words";
+  const filter = p.feedSet ? (p.feedSet === "beautiful" ? "Beautiful words" : p.feedSet === "funny" ? "Funny words" : (model.trail(p.feedSet) || {}).name || "Collection") : p.feedTopic || "All words";
   const hud = h("div", { class: "whud" },
     h("a", { class: "hudchip glass", href: "#/you", "aria-label": n ? `${n} day streak` : "Start a streak" }, icon("flame", 18), n ? String(n) : "0"),
     h("a", { class: "hudchip glass", href: "#/topics" }, icon("grid", 18), filter));
@@ -44,7 +44,7 @@ route("words", (main) => {
     const wordEl = h("h1", { class: "wword", lang: "en" }, [...word.w].map((ch, i) => h("span", { class: "ch", style: { "--i": i } }, ch === " " ? " " : ch)));
     const fav = h("button", { class: "wbtn glass fav", "aria-label": "Favorite", "aria-pressed": String(!!c.fav), onclick: () => toggleFav(fav, word.w) }, icon("heart"));
     const save = h("button", { class: "wbtn glass save", "aria-label": "Save to practice", "aria-pressed": String(c.st === "learning"), onclick: () => toggleSave(save, word.w) }, icon("bookmark"));
-    const el = h("div", { class: "wslide", "data-word": word.w },
+    const el = h("div", { class: "wslide" + (sc.light ? " light" : ""), "data-word": word.w },
       h("img", { class: "wbg", src: sceneUrl(sc.id), alt: "", style: { "--fx": sc.x + "%" }, decoding: "async" }),
       h("div", { class: "wshade" }),
       h("div", { class: "motes", "aria-hidden": "true" }, Array.from({ length: 7 }, (_, k) => h("i", { style: { "--x": `${8 + ((k * 37 + word.w.length * 11) % 84)}%`, "--d": `${14 + (k * 5) % 11}s`, "--delay": `${-k * 2.7}s`, "--s": `${2 + (k % 3)}px` } }))),
@@ -52,7 +52,8 @@ route("words", (main) => {
         wordEl,
         sayPill(word, p, "wipa glass"),
         h("p", { class: "wdef" }, `(${POS_SHORT[word.p] || word.p}) `, word.d),
-        word.e ? h("p", { class: "wex" }, word.e) : null),
+        word.e ? h("p", { class: "wex" }, word.e) : null,
+        word.cf && model.BY.get(word.cf) ? h("p", { class: "wcf glass" }, "Not to be confused with ", h("strong", {}, word.cf)) : null),
       h("div", { class: "wactions" },
         h("button", { class: "wbtn glass", "aria-label": "More about this word", onclick: () => details(word.w) }, icon("info")),
         h("button", { class: "wbtn glass", "aria-label": "Share", onclick: () => share(word) }, icon("share")),

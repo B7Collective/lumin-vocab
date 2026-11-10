@@ -5,11 +5,38 @@ import * as srs from "./srs.js";
 import { app, route, go } from "./app.js";
 import { h, icon, speak, canSpeak, fitWord, reduced, plural } from "./ui.js";
 import { play, buzz } from "./sound.js";
-import { icon as artIcon, art } from "./art.js";
-import { sayPill } from "./wordsheet.js";
+import { icon as artIcon, art, keeperArt } from "./art.js";
+import { sayPill, toggleFav, toggleSave, details, burst } from "./wordsheet.js";
+import { sceneFor, sceneUrl } from "./art.js";
 import { countUp, enter } from "./motion.js";
 
-export const KIND_NAME = { meaning: "What does it mean?", word: "Which word fits?", gap: "Fill the gap", listen: "Which word did you hear?", spell: "Spell it", unscramble: "Unscramble", flash: "Flash card" };
+// Several ways to ask each kind of question, so games don't read the same every time
+const ASK = {
+  meaning: ["What does it mean?", "Pick the meaning", "Which definition fits?", "What's this word saying?", "Know this one?"],
+  word: ["Which word fits?", "Name that word", "Which word means this?", "Find the word", "What's the word?"],
+  gap: ["Fill the gap", "Finish the sentence", "Which word belongs here?", "Complete it", "Something's missing"],
+  listen: ["Which word did you hear?", "Listen closely", "Ears on"],
+  spell: ["Spell it", "Type it out", "From memory"],
+  unscramble: ["Unscramble", "Put it back together", "Letters in a tangle"],
+  flash: ["Flash card", "Meet the word", "Say it, then flip"],
+  truefalse: ["True or false?", "Right or wrong?", "Is this right?"],
+  synonym: ["Closest in meaning?", "Find its twin", "Which word is most like it?"],
+  usage: ["Which sentence gets it right?", "Spot the right use", "Only one sounds right"],
+  mixup: ["Which one fits?", "Don't mix them up", "Look-alikes"],
+};
+export const KIND_NAME = Object.fromEntries(Object.entries(ASK).map(([k, v]) => [k, v[0]]));
+const oneOf = (a) => a[Math.floor(Math.random() * a.length)];
+const PRAISE = ["Nice.", "Exactly.", "Spot on.", "Well done.", "That's it.", "Yes!", "Nailed it.", "Bright work.", "Sharp.", "Right on.", "Lovely.", "Got it.", "Brilliant.", "Perfect."];
+const KID_PRAISE = ["Yes!", "You got it!", "Super!", "Woohoo!", "Great job!", "Amazing!", "High five!", "Brilliant!", "Way to go!"];
+const OOPS = ["Not quite.", "Almost.", "Close one.", "Not this time.", "Tricky one."];
+const STREAK = { 3: "Three in a row", 5: "Five in a row. On fire.", 8: "Eight straight", 10: "Ten in a row!", 15: "Fifteen. Unstoppable.", 20: "Twenty in a row!" };
+// Show a sentence with the word picked out
+function marked(text, w) {
+  const re = new RegExp(`(^|[^\\w])(${model.escapeRe(w)})(?![\\w])`, "i"), m = text.match(re);
+  if (!m) return [text];
+  const at = m.index + m[1].length;
+  return [text.slice(0, at), h("mark", {}, text.slice(at, at + m[2].length)), text.slice(at + m[2].length)];
+}
 export const MODES = {
   perfection: { name: "Perfection", art: "perfect", about: "Keep going until your first mistake." },
   rush: { name: "Rush", art: "rush", about: "Three lives. How far can you get?" },
@@ -37,6 +64,9 @@ route("play", (main) => {
   const t0 = Date.now();
 
   const page = h("div", { class: "play" });
+  // A soft layer of scenery behind the cards
+  const sc = sceneFor(p, (s.words[0] && s.words[0].w) || s.title);
+  main.append(h("div", { class: "playbg", "aria-hidden": "true" }, h("img", { src: sceneUrl(sc.id), alt: "", decoding: "async" }), h("div", { class: "motes" }, Array.from({ length: 6 }, (_, k) => h("i", { style: { "--x": `${10 + k * 15}%`, "--d": `${16 + k * 3}s`, "--delay": `${-k * 3.1}s`, "--s": `${2 + (k % 3)}px` } })))));
   main.append(page);
   const bar = h("i", {}), stat = h("span", { class: "pstat", "aria-live": "polite" });
   const hud = h("div", { class: "phud" },
@@ -77,14 +107,14 @@ route("play", (main) => {
       ? { ...model.question(w, "word", kid), kind: "listen" }
       : model.question(w, kind === "listen" ? "meaning" : kind, kid);
     const asked = Date.now();
-    const card = h("div", { class: "qcard" }, h("span", { class: "qkind" }, s.mode === "placement" ? "Do you know this word?" : KIND_NAME[q.kind]));
+    const card = h("div", { class: "qcard" }, h("span", { class: "qkind" }, s.mode === "placement" ? "Do you know this word?" : oneOf(ASK[q.kind] || [KIND_NAME[q.kind]])));
     body.replaceChildren(card);
 
     const answer = (ok, chosenText) => {
       if (done) return;
       const ms = Date.now() - asked;
       results.push({ w: w.w, ok });
-      if (ok) { right++; run++; best = Math.max(best, run); play("right"); buzz(12); }
+      if (ok) { right++; run++; best = Math.max(best, run); play("right"); buzz(12); if (STREAK[run] && q.kind !== "flash") streakCall(run); }
       else { wrongs++; run = 0; play("wrong"); buzz([20, 40, 20]); if (s.mode === "rush") lives--; }
       if (s.grade && s.mode !== "placement") model.grade(p.id, w.w, srs.gradeFor(ok, ms));
       model.markActive(p.id);
@@ -94,11 +124,11 @@ route("play", (main) => {
       const fast = endless || s.mode === "placement";
       if (q.kind === "flash") { setTimeout(() => out ? finish() : ask(), 260); return; } // you graded yourself: no verdict needed
       if (ok) {
-        foot.replaceChildren(verdict(true, w));
+        foot.replaceChildren(verdict(true, w, q));
         setTimeout(() => out ? finish() : ask(), fast ? 650 : 900);
       } else {
         const go2 = h("button", { class: "btn primary wide", onclick: () => out ? finish() : ask() }, out ? "See results" : "Continue");
-        foot.replaceChildren(verdict(ok, w), go2);
+        foot.replaceChildren(verdict(ok, w, q), go2);
         setTimeout(() => go2.focus(), 60);
       }
     };
@@ -120,22 +150,26 @@ route("play", (main) => {
     }
 
     const prompt = h("div", { class: "qprompt" });
-    if (q.kind === "meaning") { const el = h("div", { class: "qw" }, w.w); prompt.append(el, sayPill(w, p)); requestAnimationFrame(() => fitWord(el)); }
-    else if (q.kind === "gap") { const [a, b] = q.prompt.split("_____"); prompt.append(h("p", { class: "qs" }, a, h("span", { class: "gap" }), b)); }
+    const bigWord = () => { const el = h("div", { class: "qw" }, w.w); prompt.append(el, sayPill(w, p)); requestAnimationFrame(() => fitWord(el)); };
+    if (q.kind === "meaning" || q.kind === "synonym" || q.kind === "usage") bigWord();
+    else if (q.kind === "truefalse") { bigWord(); prompt.append(h("p", { class: "qd tf" }, h("span", { class: "muted" }, "means "), q.prompt)); }
+    else if (q.kind === "gap" || q.kind === "mixup") { const [a, b] = q.prompt.split("_____"); prompt.append(h("p", { class: "qs" }, a, h("span", { class: "gap" }), b)); }
     else if (q.kind === "listen") { const again = h("button", { class: "btn", onclick: () => speak(w.w, p) }, icon("speak"), "Play again"); prompt.append(h("p", { class: "qd muted" }, "Listen, then pick the word."), again); setTimeout(() => speak(w.w, p), 350); }
     else prompt.append(h("p", { class: "qd" }, q.prompt));
     card.append(prompt);
 
     if (q.options) {
-      const opts = h("div", { class: "opts", role: "group", "aria-label": "Answers" });
+      const look = q.kind === "truefalse" ? " tfopt" : q.kind === "usage" ? " sent" : q.kind === "meaning" || q.kind === "listen" ? "" : " word";
+      const opts = h("div", { class: "opts" + (q.kind === "truefalse" || q.kind === "mixup" ? " two" : ""), role: "group", "aria-label": "Answers" });
       q.options.forEach((o, k) => {
-        const b = h("button", { class: "opt" + (q.kind === "meaning" ? "" : " word"), style: { "--i": k }, "data-right": o.right ? "1" : "0", onclick: () => {
+        const b = h("button", { class: "opt" + look, style: { "--i": k }, "data-right": o.right ? "1" : "0", onclick: () => {
           if (opts.classList.contains("answered")) return;
           opts.classList.add("answered");
           b.classList.add(o.right ? "right" : "wrong");
+          if (o.right) burst(b, ["#F2B544", "#7CC6CE", "#FFFFFF"]);
           if (!o.right) opts.querySelectorAll(".opt").forEach((x, j) => { if (q.options[j].right) x.classList.add("right"); });
           answer(o.right);
-        } }, o.text);
+        } }, q.kind === "usage" ? marked(o.text, w.w) : o.text);
         opts.append(b);
       });
       card.append(opts);
@@ -185,10 +219,18 @@ route("play", (main) => {
     }
   }
 
-  function verdict(ok, w) {
-    const praise = ["Nice.", "Exactly.", "Spot on.", "Well done.", "That's it."];
+  function verdict(ok, w, q) {
+    const other = q && q.kind === "mixup" ? model.lookup(w.cf) : null;
+    const note = other ? `${w.w}: ${w.d} ${other.w}: ${other.d}` : q && q.kind === "truefalse" && !q.truth ? `${w.w} means: ${w.d}` : w.d;
+    const head = ok ? oneOf(kid ? KID_PRAISE : PRAISE) : q && q.kind === "truefalse" ? `${oneOf(OOPS)} It's ${q.truth ? "true" : "false"}.`
+      : q && q.kind === "usage" ? `${oneOf(OOPS)} The green one uses "${w.w}" right.` : q && q.kind === "synonym" ? `${oneOf(OOPS)} The closest is the green one.` : `${oneOf(OOPS)} It's "${w.w}"`;
     return h("div", { class: "verdict " + (ok ? "good" : "bad"), role: "status" }, icon(ok ? "check" : "x"),
-      h("div", {}, h("strong", {}, ok ? praise[Math.floor(Math.random() * praise.length)] : `The answer is "${w.w}"`), ok ? null : h("span", {}, w.d)));
+      h("div", {}, h("strong", {}, head), ok && !other ? null : h("span", {}, note)));
+  }
+  function streakCall(n) {
+    if (reduced()) return;
+    const el = h("div", { class: "streakcall", "aria-hidden": "true" }, icon("flame", 22), STREAK[n]);
+    page.append(el); play("unlock"); setTimeout(() => el.remove(), 1700);
   }
 
   function finish(stopped = false) {
@@ -205,13 +247,17 @@ route("play", (main) => {
       : acc === 100 ? "Perfect" : acc >= 70 ? "Well done" : "Keep going";
     const tiles = [[String(right), "Right"], [acc + "%", "Accuracy"], s.mode === "sprint" ? [String(answered), "Answered"] : [String(best), "Best streak"]];
     body.replaceChildren(h("div", { class: "endcard" },
-      art(artIcon(s.art), "", 160),
+      art(String(s.art).startsWith("keeper:") ? keeperArt(s.art.slice(7)) : artIcon(s.art), "", 160),
       h("h1", {}, head),
       s.endNote ? h("p", { class: "lead" }, s.endNote(result)) : null,
       h("div", { class: "score" }, tiles.map(([b, t]) => h("div", {}, h("b", {}, b), h("span", {}, t)))),
-      results.length ? h("div", { class: "reviewlist" }, [...new Map(results.map((r) => [r.w, r])).values()].slice(0, 12).map((r) => {
+      results.length ? h("div", { class: "reviewlist" }, [...new Map(results.map((r) => [r.w, r])).values()].slice(0, 16).map((r) => {
         const w = model.lookup(r.w);
-        return h("div", { class: "row-item" }, h("span", { style: { color: r.ok ? "var(--good)" : "var(--bad)" } }, icon(r.ok ? "check" : "x", 20)), h("div", { class: "grow" }, h("strong", { class: "serif" }, r.w), h("span", { class: "muted small" }, w ? w.d : "")));
+        const c = model.card(p.id, r.w) || {};
+        const fav = h("button", { class: "iconbtn fav", "aria-label": `Favorite ${r.w}`, "aria-pressed": String(!!c.fav), onclick: () => toggleFav(fav, r.w) }, icon("heart", 20));
+        const sv = h("button", { class: "iconbtn save", "aria-label": `Save ${r.w} to practice`, "aria-pressed": String(c.st === "learning"), onclick: () => toggleSave(sv, r.w) }, icon("bookmark", 20));
+        return h("div", { class: "row-item" }, h("span", { class: r.ok ? "rk good" : "rk bad" }, icon(r.ok ? "check" : "x", 20)),
+          h("button", { class: "grow rw", onclick: () => details(r.w) }, h("strong", { class: "serif" }, r.w), h("span", { class: "muted small" }, w ? w.d : "")), fav, sv);
       })) : null));
     stat.textContent = ""; bar.style.setProperty("--p", "100%");
     body.querySelectorAll(".score b").forEach((b) => { const m = b.textContent.match(/^(\d+)(%?)$/); if (m) { const span = h("span", {}); b.replaceChildren(span, m[2]); countUp(span, +m[1], 1100); } });

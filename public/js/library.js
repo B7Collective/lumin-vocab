@@ -4,7 +4,7 @@ import * as model from "./model.js";
 import * as store from "./store.js";
 import { app, route, go, render } from "./app.js";
 import { h, icon, toast, ask, confirmBox, plural } from "./ui.js";
-import { art, icon as artIcon, topicArt } from "./art.js";
+import { art, icon as artIcon, topicArt, trailArt } from "./art.js";
 import { wordCard, addWord } from "./wordsheet.js";
 import { start } from "./games.js";
 
@@ -85,19 +85,25 @@ function listPage(page, p, id) {
 
 // ---- Topics -----------------------------------------------------------------
 route("topics", (main) => {
-  const p = app.profile, counts = model.topicCounts(p);
+  const p = app.profile, counts = model.topicCounts(p), allowed = model.levelsFor(p);
   const page = h("div", { class: "hub" });
   main.append(page);
   const pickTopic = (t, set) => { model.saveProfile({ ...model.profile(p.id), feedTopic: t || null, feedSet: set || null }); go("/words"); };
   const current = p.feedSet || p.feedTopic || "";
-  const card = (label, sub, src, on, onclick) => h("button", { class: "gcard", "aria-pressed": String(on), onclick }, art(src, "", 240), h("strong", {}, label, on ? h("span", { class: "sr" }, " (showing now)") : null), h("small", {}, sub));
-  page.append(h("div", { class: "phead" }, h("div", {}, h("h1", {}, "Topics"), h("p", {}, "Pick what the Words screen shows. Your level still decides how hard."))),
-    h("div", { class: "actions" }, h("button", { class: "btn" + (current ? "" : " primary"), onclick: () => pickTopic(null) }, current ? "Show all words" : "Showing all words")));
-  const setCount = (set) => model.WORDS.filter((w) => w.x && w.x.includes(set) && (set === "funny" || model.levelsFor(p).includes(w.l))).length;
-  page.append(h("section", { class: "sec" }, h("h2", {}, "Collections"),
-    h("div", { class: "cards" }, [["beautiful", "Beautiful words"], ["funny", "Funny words"]].filter(([k]) => setCount(k) >= 4)
-      .map(([k, label]) => card(label, plural(setCount(k), "word"), artIcon(k), current === k, () => pickTopic(null, k))))));
-  const topics = Object.entries(counts).filter(([, n]) => n >= 4).sort((a, b) => b[1] - a[1]);
+  const peek = (ws) => [...ws].sort(() => Math.random() - 0.5).slice(0, 3).map((w) => w.w).join(", ");
+  const card = (label, sub, src, on, onclick, sample) => h("button", { class: "tcard", "aria-pressed": String(on), onclick },
+    art(src, "", 160), h("span", { class: "tbody" }, h("strong", {}, label, on ? h("span", { class: "sr" }, " (showing now)") : null), h("small", {}, sub), sample ? h("span", { class: "tsample" }, sample) : null),
+    on ? h("span", { class: "tnow" }, "Showing") : null);
+  page.append(h("div", { class: "phead" }, h("div", {}, h("h1", {}, "Topics"), h("p", {}, "Choose what the Words screen shows. Your difficulty still decides how hard."))),
+    h("div", { class: "actions" }, h("button", { class: "btn" + (current ? "" : " primary"), onclick: () => pickTopic(null) }, current ? "Show all words" : "Showing all words at your level")));
+  const setWords = (set) => model.MAIN.filter((w) => w.x && w.x.includes(set) && (set === "funny" || allowed.includes(w.l)));
+  const sets = [["beautiful", "Beautiful words"], ["funny", "Funny words"]].filter(([k]) => setWords(k).length >= 4);
+  if (sets.length) page.append(h("section", { class: "sec" }, h("h2", {}, "Collections"),
+    h("div", { class: "tcards" }, sets.map(([k, label]) => card(label, plural(setWords(k).length, "word"), artIcon(k), current === k, () => pickTopic(null, k), peek(setWords(k)))))));
+  const trails = model.trailsFor(p);
+  if (trails.length) page.append(h("section", { class: "sec" }, h("h2", {}, "Side trails"), h("p", {}, "Themed sets. You can also walk each one as a short journey."),
+    h("div", { class: "tcards" }, trails.map((t) => { const ws = model.trailWords(t, p); return card(t.name, plural(ws.length, "word"), trailArt(t.key), current === t.key, () => pickTopic(null, t.key), peek(ws)); }))));
+  const topics = Object.entries(counts).filter(([, n]) => n >= 4).sort((a, b) => a[0].localeCompare(b[0]));
   page.append(h("section", { class: "sec" }, h("h2", {}, "By topic"),
-    h("div", { class: "cards" }, topics.map(([t, n]) => card(t, plural(n, "word"), topicArt(t), current === t, () => pickTopic(t))))));
+    h("div", { class: "tcards" }, topics.map(([t, n]) => card(t, plural(n, "word"), topicArt(t), current === t, () => pickTopic(t), peek(model.MAIN.filter((w) => w.t === t && allowed.includes(w.l))))))));
 });

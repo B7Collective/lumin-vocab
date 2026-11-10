@@ -1,0 +1,130 @@
+rule|Our house rule is shoes off at the door.
+vote|Let's vote on which movie to watch.
+team|Our team made a giant sandcastle.
+leader|The leader of the hike carried the map.
+mayor|The mayor visited our school.
+law|There is a law about stopping at red lights.
+community|The community garden grows food for everyone.
+citizen|A good citizen helps keep the town clean.
+librarian|Ask the librarian for a book about space.
+firefighter|The firefighter showed us the fire truck.
+manners|Good manners make dinner nicer.
+permission|You need permission to go on the trip.
+safety|We learned about safety near the pool.
+contest|I entered the pie-eating contest.
+holiday|The holiday starts on Friday.
+club|The book club meets on Tuesdays.
+coin|Flip a coin to decide.
+bank|My piggy bank is almost full.
+price|The price of the toy went down.
+save|I want to save money for a bike.
+spend|Don't spend all your money at once.
+earn|You can earn stickers for reading.
+cashier|The cashier counted my coins.
+farmer|The farmer milked the cows.
+job|My job is to feed the fish.
+baker|The baker made a giant cake.
+wallet|I keep my library card in my wallet.
+expensive|Diamonds are very expensive.
+cheap|The pencils were cheap.
+trade|Want to trade sandwiches?
+customer|The customer asked for a dozen eggs.
+morning|I eat breakfast every morning.
+evening|We read together in the evening.
+tomorrow|We will go swimming tomorrow.
+yesterday|Yesterday we baked cookies.
+minute|I'll be ready in a minute.
+weekend|We visit Grandma on the weekend.
+bedtime|At bedtime I brush my teeth.
+early|Birds wake up early.
+late|We stayed up late on New Year's Eve.
+soon|Spring will come soon.
+grow|Sunflowers grow very tall.
+elbow|I bumped my elbow on the door.
+ankle|She wore a bracelet on her ankle.
+wrist|My watch is on my wrist.
+heartbeat|The doctor listened to my heartbeat.
+healthy|Vegetables help you stay healthy.
+sore|My throat is sore.
+bandage|I need a bandage for my finger.
+heal|The scratch will heal in a few days.
+chew|Dogs love to chew bones.
+freckle|She has a freckle on her nose.
+ticklish|My feet are very ticklish.
+shout|Don't shout inside the house.
+spell|Can you spell your name?
+sentence|Read the sentence out loud.
+letter|"A" is the first letter of the alphabet.
+title|What's the title of your story?
+label|Put a label on your lunch box.
+message|I sent Grandpa a message.
+reply|Please reply to the invitation.
+tale|The tale was about a brave mouse.
+remember|Remember to bring your hat.
+forget|Don't forget to water the plants.
+guess|Guess what I have in my hand.
+pretend|Let's pretend we are astronauts.
+plan|We made a plan for the picnic.
+learn|I want to learn to swim.
+choose|Choose a book for bedtime.
+understand|I understand the game now.
+puppet|The puppet sang a silly song.
+dragon|The dragon guarded its gold.
+knight|The knight wore shiny armor.
+giant|The giant lived in the clouds.
+castle|We built a castle out of boxes.
+drum|Tap the drum softly.
+dance|Let's dance to the music.
+stage|The actors walked onto the stage.
+tune|Hum a happy tune.
+salty|The sea water tastes salty.
+crunchy|I like crunchy peanut butter.
+bitter|Dark chocolate can taste bitter.
+squeaky|My new shoes are squeaky.
+loud|The drums were very loud.
+taste|Taste the soup before you add salt.
+hammer|Hit the nail with the hammer.
+scissors|Cut the paper with scissors.
+shovel|Use the shovel to clear the snow.
+bucket|Fill the bucket with sand.
+broom|Sweep the floor with the broom.
+rope|We played tug of war with a rope.
+glue|Glue the googly eyes on the sock.
+ruler|Draw a straight line with a ruler.
+zipper|Pull the zipper all the way up.
+basket|The picnic basket is full of sandwiches.
+wheel|The wheel on my bike is flat.
+friendly|The new kid is very friendly.
+caring|The caring nurse held my hand.
+selfish|Don't be selfish with the toys.
+bossy|Nobody likes a bossy player.
+sneaky|The sneaky raccoon opened the cooler.
+fussy|My little sister is a fussy eater.
+beach|We played in the waves at the beach.
+desert|It is very hot in the desert.
+jungle|Tigers live in the jungle.
+farm|The farm has pigs and goats.
+bridge|We crossed the bridge over the river.
+cave|We explored a dark cave.
+market|We bought flowers at the market.
+hospital|My baby brother was born in this hospital.
+scared|The kitten was scared of the vacuum.
+glad|I'm glad it stopped raining.
+upset|She was upset about her broken toy.
+jealous|He felt jealous of his friend's new bike.
+hopeful|We are hopeful the puppy will come home.
+breakfast|Eggs are my favorite breakfast.
+snack|Grapes make a good snack.
+noodle|One noodle fell on the floor.
+dessert|We had ice cream for dessert.
+berry|A blueberry is a small, sweet berry.
+sauce|The pasta needs more sauce.
+crumb|There's a crumb on your chin.
+turtle|The turtle swam to the rock.
+rabbit|A rabbit hopped across the trail.
+beaver|The beaver built a dam.
+raccoon|A raccoon has a black mask on its face.
+eagle|The eagle built a giant nest.
+shark|The shark swam in circles.
+snail|The snail carried its house on its back.
+crab|A crab pinched my toe!

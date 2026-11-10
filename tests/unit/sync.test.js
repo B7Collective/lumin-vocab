@@ -47,6 +47,25 @@ test("word bank is clean", () => {
   const text = JSON.stringify(all);
   assert.ok(!text.includes("\u2014"), "no em dashes");
   assert.ok(all.length > 2000);
-  for (const w of all) { assert.ok(w.w && w.d && w.p, "has word, definition and part of speech"); assert.ok([0, 1, 2, 3].includes(w.l)); }
+  for (const w of all) {
+    assert.ok(w.w && w.d && w.p, "has word, definition and part of speech");
+    assert.ok([0, 1, 2, 3, 4, 5].includes(w.l), "one of the six levels");
+    assert.ok(w.e2 && new RegExp(`(^|[^\\w])${w.w.replace(/[-]/g, "\\-")}(?![\\w])`, "i").test(w.e2), `second sentence uses the word: ${w.w}`);
+    assert.notEqual(w.e2, w.e, "second sentence differs from the first");
+  }
   assert.equal(new Set(all.map(w => w.w)).size, all.length, "no duplicates");
+  // Every level on the main road has 600 to 800 words
+  for (let l = 0; l < 6; l++) { const n = all.filter((w) => w.l === l && !w.c).length; assert.ok(n >= 600 && n <= 800, `level ${l} has ${n} words`); }
+});
+test("side trails point at real words", () => {
+  const all = JSON.parse(readFileSync(new URL("../../public/data/words.json", import.meta.url)));
+  const trails = JSON.parse(readFileSync(new URL("../../public/data/trails.json", import.meta.url)));
+  const by = new Map(all.map((w) => [w.w, w]));
+  assert.ok(trails.length >= 15);
+  for (const t of trails) {
+    assert.ok(t.key && t.name && t.blurb && ["all", "teen", "adult"].includes(t.aud));
+    assert.ok(t.words.length >= 20, `${t.key} has enough words`);
+    for (const w of t.words) { assert.ok(by.has(w), `${t.key}: ${w}`); assert.ok(by.get(w).x.includes(t.key)); }
+  }
+  for (const w of all) if (w.cf) assert.ok(by.has(w.cf), `mix-up partner of ${w.w}`);
 });

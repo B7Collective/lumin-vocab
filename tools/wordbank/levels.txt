@@ -1,0 +1,2 @@
+# Hand moves between levels. Familiar words that landed too high step down a level.
+3: talisman, juggernaut, nemesis, pandemonium, wanderlust, wayfarer, hermitage, cornucopia, maelstrom, ostracize, burgeon, schadenfreude, bombast, obsequious, sangfroid, histrionic, macerate, troglodyte, wunderkind, hagiography, philistine, simulacrum, sophomoric

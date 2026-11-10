@@ -1,0 +1,26 @@
+# tech|Internet and Tech|The words behind your screen|all|1|Science and tech
+algorithm
+bandwidth
+browser|noun|An app for viewing websites|Open the link in your browser.||0
+cache|noun|A store of saved data for quick access; a hidden supply|Clearing the cache fixed the page.||2
+cursor|noun|The moving marker on a screen|Move the cursor to the top.||0
+encryption
+firewall|noun|A security system that blocks unwanted network traffic|The firewall stopped the attack.||2
+hashtag|noun|A word or phrase after a # sign used to group posts|The event's hashtag trended.
+hyperlink|noun|Text or an image you click to go to another page|Tap the hyperlink to read more.
+malware|noun|Software designed to harm a computer|Don't open attachments that might be malware.||2
+pixel|noun|One tiny dot of color on a screen|Zoom in and you'll see the pixels.||0
+router|noun|A device that sends internet signals around a home or network|Restart the router if the Wi-Fi drops.
+server|noun|A computer that stores and sends data to other computers|The game's server was down.
+spam|noun|Unwanted messages sent in bulk|My inbox is full of spam.||0
+upload|verb|To send a file from your device to the internet|Upload the photo to the album.||0
+download|verb|To copy a file from the internet to your device|Download the map before the trip.||0
+username|noun|The name you use to log in|Pick a username you'll remember.||0
+phishing|noun|Tricking people online into giving away private information|That fake bank email is phishing.||2
+streaming|noun|Watching or listening online without downloading first|They watched the game by streaming.
+glitch|noun|A sudden small problem in how something works|A glitch froze the screen.||0
+meme|noun|An idea, image or joke that spreads widely online|That cat meme is everywhere.
+avatar|noun|A picture or character that represents you online|She chose a fox as her avatar.||0
+debug|verb|To find and fix errors in code|It took an hour to debug the game.
+backup|noun|A copy of data kept in case the original is lost|Make a backup of your photos.||0
+privacy|noun|Being free from being watched or shared without permission|Check your privacy settings.

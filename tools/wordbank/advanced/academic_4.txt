@@ -1,0 +1,152 @@
+apprehension|noun|Anxious expectation that something bad may happen; also, understanding|She signed the lease with some apprehension.|Feelings
+contrition|noun|Sincere regret for having done wrong|His apology showed real contrition.|Feelings
+dejection|noun|A sad, discouraged state|Dejection settled over the team after the loss.|Feelings
+despondent|adjective|In low spirits from loss of hope|He grew despondent as the job search dragged on.|Feelings
+disillusioned|adjective|Disappointed after discovering something is not as good as believed|She became disillusioned with the club's leadership.|Feelings
+elation|noun|Great happiness and pride|Elation swept the room when the results came in.|Feelings
+exasperation|noun|Intense irritation|He sighed in exasperation at the slow printer.|Feelings
+nonplussed|adjective|So surprised and confused that you are unsure how to react|The clerk was nonplussed by the odd request.|Feelings
+vexation|noun|Annoyance or frustration; a cause of it|The leaky faucet was a constant vexation.|Feelings
+rapture|noun|Intense delight|The audience listened in rapture.|Feelings
+resignation|noun|Calm acceptance of something unwelcome; quitting a job|She accepted the delay with resignation.|Feelings
+solace|noun|Comfort in a time of distress|He found solace in long walks.|Feelings
+angst|noun|A deep feeling of anxiety or dread|The novel captures teenage angst.|Feelings
+pique|noun|A brief fit of irritation from wounded pride|She left the meeting in a fit of pique.|Feelings
+rue|verb|To bitterly regret|He will rue the day he skipped the inspection.|Feelings
+dismay|noun|Distress caused by something unexpected|To our dismay, the trail was closed.|Feelings
+sentiment|noun|A view or feeling; tender emotion|The card's sentiment moved her.|Feelings
+altruism|noun|Selfless concern for the well-being of others|Volunteering is an act of altruism.|Character
+egotism|noun|Excessive talk about or focus on oneself|His egotism wore on his coworkers.|Character
+narcissism|noun|Excessive admiration of oneself|The character's narcissism blinds him to others.|Character
+introvert|noun|A person energized by time alone|As an introvert, he recharges with a book.|Character
+extrovert|noun|A person energized by being with others|The extrovert knew everyone at the party.|Character
+idealist|noun|A person guided by high ideals, sometimes impractically|She is an idealist who believes the town can change.|Character
+authoritarian|adjective|Demanding strict obedience to authority|The coach had an authoritarian style.|Character
+temperance|noun|Moderation and self-restraint|Temperance in spending kept them out of debt.|Character
+discretion|noun|The ability to act wisely and keep confidences; freedom to decide|Use your discretion with private information.|Character
+humility|noun|A modest view of one's own importance|Despite her success, she spoke with humility.|Character
+reticence|noun|Reluctance to share thoughts or feelings|His reticence made him hard to read.|Character
+magnanimity|noun|Generosity of spirit, especially toward a rival|She showed magnanimity in victory.|Character
+pragmatist|noun|A person who deals with things practically|A pragmatist, he chose the cheaper repair.|Character
+perfectionism|noun|Refusing to accept anything less than flawless|Perfectionism kept her from finishing drafts.|Character
+conformist|noun|A person who follows accepted norms|The conformist never questioned the dress code.|Character
+symmetrical|adjective|Having matching halves|A butterfly's wings are symmetrical.|Look and shape
+concave|adjective|Curving inward like the inside of a bowl|A spoon's bowl is concave.|Look and shape
+convex|adjective|Curving outward like the outside of a ball|The mirror is slightly convex.|Look and shape
+cylindrical|adjective|Shaped like a tube with circular ends|The tower is cylindrical.|Look and shape
+elliptical|adjective|Shaped like an oval; also, leaving words out|Planets move in elliptical orbits.|Look and shape
+oblong|adjective|Longer than it is wide|They bought an oblong dining table.|Look and shape
+perpendicular|adjective|At a right angle to a line or surface|The streets run perpendicular to the river.|Look and shape
+iridescent|adjective|Showing shifting rainbow colors|Soap bubbles have an iridescent sheen.|Look and shape
+monochrome|adjective|In shades of a single color|The room was decorated in monochrome gray.|Look and shape
+gradient|noun|A gradual change in color, slope or value|The sky showed a gradient from orange to violet.|Look and shape
+tessellation|noun|A pattern of shapes that fit together with no gaps|Honeycomb is a natural tessellation.|Look and shape
+fractal|noun|A pattern that repeats at every scale|A fern leaf resembles a fractal.|Look and shape
+spherical|adjective|Shaped like a ball|Raindrops are nearly spherical.|Look and shape
+conical|adjective|Shaped like a cone|The volcano has a conical peak.|Look and shape
+angular|adjective|Having sharp angles; lean and bony|The building's angular roof catches the light.|Look and shape
+ornamental|adjective|Serving as decoration|They planted ornamental grasses by the path.|Look and shape
+facet|noun|One side of a cut gem; one aspect of something|Each facet of the diamond sparkled.|Look and shape
+silhouette|noun|The dark outline of something against a lighter background|The tree's silhouette stood against the sunset.|Look and shape
+vertex|noun|The point where two or more lines meet|A triangle has three vertices.|Look and shape
+careen|verb|To move swiftly and out of control|The cart careened down the hill.|Movement and action
+gyrate|verb|To move rapidly in a circle or spiral|The dancers gyrated across the stage.|Movement and action
+locomotion|noun|Movement from one place to another|Snakes use a wavelike locomotion.|Movement and action
+propulsion|noun|The force that drives something forward|Jet propulsion lifts the plane.|Movement and action
+ricochet|verb|To rebound off a surface|The ball ricocheted off the wall.|Movement and action
+traverse|verb|To travel across|The trail traverses three ridges.|Movement and action
+circumnavigate|verb|To travel all the way around|They hope to circumnavigate the globe by sailboat.|Movement and action
+evacuate|verb|To leave or remove people from a dangerous place|The town was evacuated before the hurricane.|Movement and action
+dislodge|verb|To knock or force out of position|The wind dislodged a shingle.|Movement and action
+displace|verb|To move something from its usual place; to replace|The flood displaced hundreds of families.|Movement and action
+revolve|verb|To move in a circle around a center|The moon revolves around the earth.|Movement and action
+levitate|verb|To rise or float in the air|The magician seemed to levitate.|Movement and action
+parasite|noun|An organism that lives on or in another and takes from it|Ticks are parasites.|Animals
+invasive|adjective|Spreading into a new area and harming it; entering the body|Invasive vines choked the native trees.|Animals
+amphibious|adjective|Able to live or operate on land and in water|The amphibious vehicle drove into the lake.|Animals
+ruminant|noun|A grazing animal that chews cud, such as a cow|Ruminants have stomachs with several chambers.|Animals
+metamorphosis|noun|A complete change of form, as from caterpillar to butterfly|Frogs undergo metamorphosis.|Animals
+genus|noun|A biological group of closely related species|Lions and tigers share a genus.|Animals
+avian|adjective|Relating to birds|Avian flu spread through the flock.|Animals
+feline|adjective|Relating to cats; catlike|She moved with feline grace.|Animals
+canine|adjective|Relating to dogs|The canine unit searched the field.|Animals
+bovine|adjective|Relating to cattle; slow and dull|Bovine herds dotted the plain.|Animals
+equine|adjective|Relating to horses|An equine vet treated the mare.|Animals
+ornithology|noun|The scientific study of birds|Her love of ornithology began with a feeder.|Animals
+entomology|noun|The scientific study of insects|Entomology students collected beetles.|Animals
+fauna|noun|The animals of a region|The island's fauna includes rare lizards.|Animals
+ungulate|noun|A hoofed mammal|Deer, horses and giraffes are ungulates.|Animals
+echolocation|noun|Locating objects by bouncing sounds off them|Bats hunt by echolocation.|Animals
+plankton|noun|Tiny organisms that drift in water|Whales eat enormous amounts of plankton.|Animals
+auditory|adjective|Relating to hearing|The auditory nerve carries sound to the brain.|Senses
+olfactory|adjective|Relating to the sense of smell|Dogs have a powerful olfactory sense.|Senses
+gustatory|adjective|Relating to taste|The meal was a gustatory delight.|Senses
+perceptible|adjective|Able to be noticed|There was a perceptible chill in the air.|Senses
+imperceptible|adjective|Too slight to be noticed|The change was almost imperceptible.|Senses
+acoustics|noun|The way sound travels in a space; the science of sound|The hall has superb acoustics.|Senses
+decibel|noun|A unit for measuring loudness|The concert reached 110 decibels.|Senses
+synesthesia|noun|When one sense triggers another, like seeing colors in music|With synesthesia, she tastes words.|Senses
+umami|noun|A savory taste, one of the five basic tastes|Mushrooms and broth are rich in umami.|Senses
+sensory|adjective|Relating to the senses|The garden offers a sensory experience.|Senses
+culinary|adjective|Relating to cooking|He went to culinary school.|Food
+gastronomy|noun|The art and science of good eating|The city is famous for its gastronomy.|Food
+provisions|noun|Supplies of food and drink|They packed provisions for a week.|Food
+sustenance|noun|Food and drink that keep you alive|The stew gave sustenance on cold nights.|Food
+satiate|verb|To satisfy fully|A big lunch satiated their hunger.|Food
+confection|noun|A sweet treat; something elaborately made|The bakery's window was full of confections.|Food
+emulsion|noun|A mixture of two liquids that normally don't blend|Mayonnaise is an emulsion of oil and egg.|Food
+caramelize|verb|To turn sugar brown and sweet by heating|Caramelize the onions slowly.|Food
+leaven|verb|To make dough rise; to lighten|Yeast leavens the bread.|Food
+vintage|noun|The year a wine was made; something of high quality from the past|They opened a bottle of an older vintage.|Food
+infuse|verb|To soak to extract flavor; to fill with a quality|Infuse the tea for five minutes.|Food
+terroir|noun|How soil and climate shape the taste of a food|The coffee's flavor comes from its terroir.|Food
+ergonomic|adjective|Designed for comfort and efficient use|She bought an ergonomic keyboard.|Things and tools
+interface|noun|The point where two systems meet; the controls a user sees|The app's interface is simple.|Things and tools
+modular|adjective|Made of standard parts that fit together|The shelves are modular.|Things and tools
+component|noun|A part of a larger whole|Each component was tested separately.|Things and tools
+sensor|noun|A device that detects light, heat, motion or other changes|A motion sensor turns on the porch light.|Things and tools
+transistor|noun|A tiny device that controls electric current in circuits|Modern chips hold billions of transistors.|Things and tools
+caliper|noun|A tool for measuring thickness or distance precisely|The machinist checked the bolt with calipers.|Things and tools
+fulcrum|noun|The point on which a lever turns; a central support|The seesaw balances on a fulcrum.|Things and tools
+gyroscope|noun|A spinning wheel that keeps steady orientation|Phones use tiny gyroscopes to sense tilting.|Things and tools
+turbine|noun|A machine turned by moving water, steam or air|Wind turbines line the ridge.|Things and tools
+sextant|noun|An instrument sailors use to find position by the stars|The navigator took a reading with a sextant.|Things and tools
+piston|noun|A part that slides inside a cylinder to transfer force|The engine's pistons pumped steadily.|Things and tools
+gasket|noun|A seal placed between two surfaces to prevent leaks|A worn gasket caused the leak.|Things and tools
+tectonic|adjective|Relating to the movement of the earth's crust|Tectonic plates shift a few inches a year.|Nature and weather
+sedimentary|adjective|Formed from layers of settled material|Sandstone is a sedimentary rock.|Nature and weather
+igneous|adjective|Formed from cooled lava or magma|Granite is an igneous rock.|Nature and weather
+stratosphere|noun|The layer of the atmosphere above the weather|The balloon rose into the stratosphere.|Nature and weather
+permafrost|noun|Ground that stays frozen all year|Permafrost covers much of the Arctic.|Nature and weather
+aurora|noun|Colored lights in the night sky near the poles|We watched the aurora ripple green.|Nature and weather
+alluvial|adjective|Made of soil left by flowing water|The valley's alluvial soil is fertile.|Nature and weather
+watershed|noun|An area draining into one river; a turning point|The vote was a watershed for the town.|Nature and weather
+deforestation|noun|The clearing of forests|Deforestation threatens many species.|Nature and weather
+glacial|adjective|Relating to glaciers; extremely slow or cold|Progress was glacial.|Nature and weather
+ecology|noun|The study of how living things relate to their environment|She studies the ecology of wetlands.|Nature and weather
+conservation|noun|Protecting natural resources and wildlife|Conservation efforts saved the wolves.|Nature and weather
+baroque|adjective|Highly ornate; relating to a 17th-century art style|The church has a baroque ceiling.|Arts and stories
+modernism|noun|An early 20th-century movement that broke with tradition in art|Modernism changed architecture.|Arts and stories
+composition|noun|The arrangement of parts in a work; a piece of music|The photo's composition draws the eye to the door.|Arts and stories
+cinematography|noun|The art of filming for movies|The film's cinematography is stunning.|Arts and stories
+choreography|noun|The design of a dance's steps|The choreography was fast and precise.|Arts and stories
+libretto|noun|The words of an opera|The libretto was written in Italian.|Arts and stories
+repertoire|noun|All the pieces a performer is ready to perform|The pianist's repertoire is huge.|Arts and stories
+anthology|noun|A collection of writings by various authors|The anthology gathers stories about the sea.|Arts and stories
+manuscript|noun|A handwritten or unpublished text|She sent the manuscript to a publisher.|Arts and stories
+allusion|noun|An indirect reference to something|The title is an allusion to an old fairy tale.|Arts and stories
+narrative|noun|A story or account of events|The museum tells a clear narrative of the war.|Arts and stories
+typography|noun|The style and arrangement of printed letters|Good typography makes a page easy to read.|Arts and stories
+calligraphy|noun|Decorative handwriting|The invitations were written in calligraphy.|Arts and stories
+contemporaneous|adjective|Existing or happening at the same period|The two empires were contemporaneous.|Time and change
+concurrent|adjective|Happening at the same time|She handled three concurrent projects.|Time and change
+perpetuity|noun|The state of lasting forever|The land is protected in perpetuity.|Time and change
+sequential|adjective|Following in order|The steps must be done in sequential order.|Time and change
+transitory|adjective|Not lasting long|Fame can be transitory.|Time and change
+periodic|adjective|Happening at regular intervals|The car needs periodic maintenance.|Time and change
+cyclical|adjective|Occurring in cycles|The fashion industry is cyclical.|Time and change
+temporal|adjective|Relating to time; worldly rather than spiritual|The story jumps across temporal lines.|Time and change
+synchronous|adjective|Happening at the same time and rate|The swimmers' strokes were synchronous.|Time and change
+archaic|adjective|Very old or old-fashioned|"Thou" is an archaic word.|Time and change
+retroactive|adjective|Taking effect from a date in the past|The raise was retroactive to January.|Time and change
+protracted|adjective|Lasting longer than expected|After protracted talks, they agreed.|Time and change

@@ -1,0 +1,130 @@
+rule|noun|something everyone agrees to follow|The rule is to walk, not run, in the hall.|Society and law
+vote|verb|to choose something by raising your hand or marking a paper|We voted to name the class fish Bubbles.|Society and law
+team|noun|a group of people working or playing together|Our team cheered after the game.|Society and law
+leader|noun|the person who guides a group|The leader held the map and showed the way.|Society and law
+mayor|noun|the person in charge of a town or city|The mayor cut the ribbon at the new park.|Society and law
+law|noun|a rule that a whole country or town must follow|It is the law to wear a seat belt.|Society and law
+community|noun|the people who live and work in one place|Our community planted trees along the road.|Society and law
+citizen|noun|a person who belongs to a town or country|Every citizen can help keep the park clean.|Society and law
+librarian|noun|a person who takes care of a library|The librarian helped me find a book about sharks.|Society and law
+firefighter|noun|a person whose job is to put out fires|The firefighter climbed the tall ladder.|Society and law
+manners|noun|polite ways of acting|Saying thank you is good manners.|Society and law
+permission|noun|being told that you are allowed to do something|I asked permission to use the paint.|Society and law
+safety|noun|being kept away from danger|We wear helmets for safety.|Society and law
+contest|noun|a game or event where people try to win|She won the coloring contest.|Society and law
+holiday|noun|a special day when people celebrate or rest|Our favorite holiday has a big family dinner.|Society and law
+club|noun|a group of people who meet to share an interest|He joined the chess club.|Society and law
+coin|noun|a small round piece of metal money|I found a shiny coin under the couch.|Money and work
+bank|noun|a safe place where people keep their money|We took our savings to the bank.|Money and work
+price|noun|how much money something costs|The price of the toy is five dollars.|Money and work
+save|verb|to keep money or things to use later|I save my coins in a jar.|Money and work
+spend|verb|to use money to buy things|She spent her allowance on stickers.|Money and work
+earn|verb|to get money or a reward for work|He earned a dollar for raking leaves.|Money and work
+cashier|noun|a person who takes the money in a store|The cashier gave us our change.|Money and work
+farmer|noun|a person who grows food or raises animals|The farmer feeds the chickens at dawn.|Money and work
+job|noun|work that someone does, often for pay|My aunt's job is fixing cars.|Money and work
+baker|noun|a person who makes bread and cakes|The baker frosted a giant cake.|Money and work
+wallet|noun|a small flat case for carrying money|Dad keeps his wallet in his pocket.|Money and work
+expensive|adjective|costing a lot of money|That bike is too expensive for us.|Money and work
+cheap|adjective|costing very little money|The pencils were cheap at the sale.|Money and work
+trade|verb|to give something and get something back|We traded stickers at lunch.|Money and work
+customer|noun|a person who buys something from a store|The first customer bought a loaf of bread.|Money and work
+morning|noun|the early part of the day|I eat cereal every morning.|Time and change
+evening|noun|the end of the day before night|We walk the dog in the evening.|Time and change
+tomorrow|noun|the day after today|Tomorrow is the class trip.|Time and change
+yesterday|noun|the day before today|Yesterday it snowed all day.|Time and change
+minute|noun|a short amount of time, sixty seconds|Wait one minute while I tie my shoe.|Time and change
+weekend|noun|Saturday and Sunday|We go to the lake on the weekend.|Time and change
+bedtime|noun|the time when you go to bed|At bedtime we read one story.|Time and change
+early|adjective|before the usual time|We got to school early.|Time and change
+late|adjective|after the usual or expected time|The bus was late because of the snow.|Time and change
+soon|adverb|in a short time from now|Dinner will be ready soon.|Time and change
+grow|verb|to get bigger over time|Puppies grow very fast.|Time and change
+elbow|noun|the joint in the middle of your arm|She bumped her elbow on the table.|Body and health
+ankle|noun|the joint between your foot and your leg|He twisted his ankle playing soccer.|Body and health
+wrist|noun|the joint between your hand and your arm|She wears a watch on her wrist.|Body and health
+heartbeat|noun|the steady thump of your heart|I could feel my heartbeat after the race.|Body and health
+healthy|adjective|well and strong, not sick|Fruit helps keep you healthy.|Body and health
+sore|adjective|hurting a little|My legs were sore after the long hike.|Body and health
+bandage|noun|a strip of cloth or plastic that covers a cut|Mom put a bandage on my knee.|Body and health
+heal|verb|to get better after being hurt|The scrape healed in a week.|Body and health
+chew|verb|to crush food with your teeth|Chew your food slowly.|Body and health
+freckle|noun|a small brown spot on the skin|She has freckles across her nose.|Body and health
+ticklish|adjective|laughing easily when touched lightly|My little brother is very ticklish.|Body and health
+shout|verb|to say something very loudly|We shouted "Surprise!" when he came in.|Talk and writing
+spell|verb|to say or write the letters of a word in order|Can you spell "elephant"?|Talk and writing
+sentence|noun|a group of words that tells a complete thought|Start every sentence with a capital letter.|Talk and writing
+letter|noun|a written message; one of the signs in the alphabet|I wrote a letter to my grandma.|Talk and writing
+title|noun|the name of a book, song or movie|The title of the book is on the cover.|Talk and writing
+label|noun|a small tag that tells what something is|The jar has a label that says "Jam."|Talk and writing
+message|noun|words sent from one person to another|I left a message on the fridge.|Talk and writing
+reply|verb|to answer someone|She replied to my note with a drawing.|Talk and writing
+tale|noun|a story, often made up|Grandpa told a tale about a talking fox.|Talk and writing
+remember|verb|to keep something in your mind|I remember my first day of school.|Mind and ideas
+forget|verb|to not remember something|Don't forget your lunch!|Mind and ideas
+guess|verb|to give an answer when you are not sure|Guess how many jelly beans are in the jar.|Mind and ideas
+pretend|verb|to act as if something is true when it is not|Let's pretend the couch is a pirate ship.|Mind and ideas
+plan|noun|an idea of what you will do and how|Our plan is to build a fort after lunch.|Mind and ideas
+learn|verb|to find out something new or get a new skill|I learned to ride a bike this summer.|Mind and ideas
+choose|verb|to pick one thing from many|You can choose one treat.|Mind and ideas
+understand|verb|to know what something means|Now I understand how magnets work.|Mind and ideas
+puppet|noun|a toy figure you move with your hand or strings|The puppet waved and told a joke.|Arts and stories
+dragon|noun|a make-believe creature with wings that may breathe fire|The dragon in the story guarded a cave.|Arts and stories
+knight|noun|a soldier long ago who wore armor|The knight rode a white horse.|Arts and stories
+giant|noun|a huge make-believe person|The giant's boots were as big as boats.|Arts and stories
+castle|noun|a large stone building with towers|We built a sand castle with four towers.|Arts and stories
+drum|noun|an instrument you hit to make a beat|He played the drum in the parade.|Arts and stories
+dance|verb|to move your body to music|We danced in the kitchen.|Arts and stories
+stage|noun|the raised floor where people perform|The actors bowed on the stage.|Arts and stories
+tune|noun|a simple song or melody|She hummed a happy tune.|Arts and stories
+salty|adjective|tasting of salt|The popcorn was very salty.|Senses
+crunchy|adjective|making a loud sound when you bite it|Carrots are crunchy.|Senses
+bitter|adjective|having a sharp taste that is not sweet|Lemon peel tastes bitter.|Senses
+squeaky|adjective|making a high, small sound|The squeaky door woke the cat.|Senses
+loud|adjective|making a lot of sound|The fireworks were loud.|Senses
+taste|verb|to find out the flavor of something with your tongue|Taste the soup to see if it is warm.|Senses
+hammer|noun|a tool for hitting nails|Dad used a hammer to fix the fence.|Things and tools
+scissors|noun|a tool with two blades for cutting|Use the scissors to cut out the star.|Things and tools
+shovel|noun|a tool for digging|We used a shovel to dig a hole for the tree.|Things and tools
+bucket|noun|an open container with a handle|Fill the bucket with water.|Things and tools
+broom|noun|a brush with a long handle for sweeping|She swept the porch with a broom.|Things and tools
+rope|noun|a thick, strong string|We tied the boat with a rope.|Things and tools
+glue|noun|a sticky liquid that holds things together|I used glue to stick the leaves on paper.|Things and tools
+ruler|noun|a straight strip used for measuring|The ruler shows the pencil is six inches long.|Things and tools
+zipper|noun|a fastener with two rows of teeth that lock together|The zipper on my coat is stuck.|Things and tools
+basket|noun|a container woven from thin strips|We carried apples in a basket.|Things and tools
+wheel|noun|a round part that turns so things can roll|My wagon lost a wheel.|Things and tools
+friendly|adjective|kind and happy to be with others|The friendly dog wagged its tail.|Character
+caring|adjective|showing that you care about others|She is a caring big sister.|Character
+selfish|adjective|thinking only about yourself|It was selfish to eat all the cookies.|Character
+bossy|adjective|always telling others what to do|My cousin gets bossy when we play.|Character
+sneaky|adjective|doing things in a secret, tricky way|The sneaky cat stole a sock.|Character
+fussy|adjective|hard to please|The baby was fussy before her nap.|Character
+beach|noun|land covered with sand next to the sea|We built castles at the beach.|Places and travel
+desert|noun|a dry place with very little rain|Cactuses grow in the desert.|Places and travel
+jungle|noun|a thick, hot forest full of plants and animals|Monkeys swing through the jungle.|Places and travel
+farm|noun|land where crops are grown and animals are raised|We picked strawberries at the farm.|Places and travel
+bridge|noun|something built to cross over water or a road|We walked across the wooden bridge.|Places and travel
+cave|noun|a large hole in the side of a hill or under the ground|Bats sleep in the cave.|Places and travel
+market|noun|a place where people buy and sell things|We bought peaches at the market.|Places and travel
+hospital|noun|a place where sick or hurt people get care|My baby sister was born at the hospital.|Places and travel
+scared|adjective|feeling afraid|I was scared of the thunder.|Feelings
+glad|adjective|pleased and happy|I'm glad you came to my party.|Feelings
+upset|adjective|unhappy or worried|He was upset when his tower fell.|Feelings
+jealous|adjective|wanting what someone else has|She felt jealous of her friend's new bike.|Feelings
+hopeful|adjective|feeling that something good will happen|We are hopeful the sun will come out.|Feelings
+breakfast|noun|the first meal of the day|We had pancakes for breakfast.|Food
+snack|noun|a small amount of food between meals|An apple makes a good snack.|Food
+noodle|noun|a long, thin strip of dough you cook|I slurped a long noodle.|Food
+dessert|noun|sweet food eaten after a meal|We had pie for dessert.|Food
+berry|noun|a small, juicy fruit|Blueberries are my favorite berry.|Food
+sauce|noun|a thick liquid served on food|Pour the sauce on the pasta.|Food
+crumb|noun|a tiny piece of bread or cake|The bird pecked at the crumbs.|Food
+turtle|noun|a reptile with a hard shell|The turtle hid inside its shell.|Animals
+rabbit|noun|a small animal with long ears that hops|The rabbit nibbled a carrot.|Animals
+beaver|noun|an animal with a flat tail that builds dams|The beaver chewed through a log.|Animals
+raccoon|noun|an animal with a striped tail and a black mask|A raccoon knocked over our trash can.|Animals
+eagle|noun|a large bird with strong wings and sharp eyes|The eagle soared over the lake.|Animals
+shark|noun|a big fish with sharp teeth|The shark swam past the glass.|Animals
+snail|noun|a small, slow creature with a shell on its back|The snail left a shiny trail.|Animals
+crab|noun|a sea animal with a hard shell and claws|The crab walked sideways.|Animals

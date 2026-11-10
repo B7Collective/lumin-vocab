@@ -1,0 +1,37 @@
+# sounds|Sounds Like It Means|Words that make the noise they name|all|0|Senses
+buzz
+sizzle|verb|To make a hissing sound, as frying food does|The bacon sizzled in the pan.
+hiss|verb|To make a long "sss" sound|The snake hissed at the mouse.
+murmur|verb|To speak or sound softly and low|The brook murmured over the stones.||1
+rustle
+crackle|verb|To make small, sharp snapping sounds|The campfire crackled.
+splash
+thud|noun|A dull, heavy sound|The book fell with a thud.
+clang|noun|A loud ringing sound of metal|The gate shut with a clang.
+whoosh|noun|A rushing sound of something moving fast|The train went by with a whoosh.
+zoom|verb|To move very fast with a humming sound|Race cars zoomed around the track.
+kerplunk|noun|The sound of something heavy dropping into water|The rock went kerplunk into the pond.
+plop|noun|A soft sound like a drop falling into water|The frog jumped in with a plop.
+squelch|verb|To make a wet, sucking sound|Our boots squelched through the mud.||1
+swish|verb|To move with a soft, rushing sound|The horse swished its tail.
+clatter|noun|A loud rattling noise of hard things banging|The pans fell with a clatter.||1
+babble|verb|To talk quickly in a way that is hard to understand; to make a gentle bubbling sound|The baby babbled happily.
+gurgle
+hum
+chirp
+cuckoo|noun|A bird whose call sounds like its name|We heard a cuckoo in the woods.
+purr
+whir|verb|To spin with a soft buzzing sound|The fan whirred all night.||1
+twang|noun|A sharp, vibrating sound, like a plucked string|The guitar string gave a twang.||1
+fizz|verb|To make a hissing sound with bubbles|The soda fizzed in the glass.
+clink|noun|A short, light ringing sound|Glasses clinked at the table.
+thwack|noun|A sharp hitting sound|The bat hit the ball with a thwack.
+ping|noun|A short, high ringing sound|The microwave gave a ping.
+boom|noun|A deep, loud sound|The fireworks went boom.
+crunch|noun|A loud sound of crushing something crisp|Leaves crunched under our feet.
+squeak
+splat|noun|The sound of something wet hitting a surface|The tomato landed with a splat.
+honk|noun|The loud sound of a goose or a car horn|Geese honked overhead.
+tintinnabulation
+susurrus
+bombinate

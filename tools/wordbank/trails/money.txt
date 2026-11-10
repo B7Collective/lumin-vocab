@@ -1,0 +1,26 @@
+# money|Money Smarts|Words for saving, spending and growing money wisely|all|1|Money and work
+budget
+interest|noun|Extra money paid for borrowing or earned on savings|The savings account pays interest.
+savings|noun|Money set aside for later|She used her savings to buy a bike.||0
+invest
+inflation
+credit|noun|Trust that lets you buy now and pay later; praise for something done|Use credit carefully.
+debt
+dividend
+asset|noun|Something valuable that you own|A house is a big asset.||2
+liability
+income
+expense|noun|Money spent on something|Food is our biggest expense.
+frugal
+receipt|noun|A paper showing what you paid|Keep the receipt in case it breaks.||0
+refund|noun|Money given back|The store gave me a refund.||0
+warranty|noun|A promise to repair or replace a product|The laptop has a two-year warranty.||2
+deposit|noun|Money put into a bank account; a partial payment in advance|He made a deposit at the bank.
+withdraw|verb|To take money out of an account; to pull back|She withdrew twenty dollars.
+balance|noun|The amount of money in an account|Check your balance before you shop.
+allowance
+profit
+loan
+tax
+wage
+donate

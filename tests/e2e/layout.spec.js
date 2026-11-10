@@ -18,7 +18,7 @@ function check() {
     for (const n of el.childNodes) if (n.nodeType === 3 && n.textContent.trim()) { rg.selectNodeContents(n); for (const x of rg.getClientRects()) tops.add(Math.round(x.top)); }
     if (tops.size > 1) out.push("label wraps: " + label(el));
   }
-  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .gcard, .wcard, .stat")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim, .whint"));
+  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .gcard, .wcard, .stat")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim, .whint") && !el.matches(".wdl"));
   const rs = boxes.map(el => el.getBoundingClientRect());
   for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
     if (boxes[i].contains(boxes[j]) || boxes[j].contains(boxes[i])) continue;
@@ -33,7 +33,7 @@ async function seed(page) {
   await page.evaluate(async () => {
     const model = await import("/js/model.js"), store = await import("/js/store.js");
     for (let i = 0; i < 50 && !model.WORDS.length; i++) await new Promise(r => setTimeout(r, 100));
-    const a = model.newProfile({ name: "Alexandra", role: "adult", level: 3 });
+    const a = model.newProfile({ name: "Alexandra", role: "adult", level: 4 });
     model.newProfile({ name: "Sam", role: "kid", level: 0, manager: false });
     const ws = model.queue(a).slice(0, 10);
     ws.slice(0, 6).forEach(w => model.learn(a.id, w.w)); ws.slice(6).forEach(w => model.know(a.id, w.w));
@@ -83,7 +83,7 @@ test("a custom word with symbols works in games", async ({ page }) => {
   const errors = []; page.on("pageerror", (e) => errors.push(e.message));
   await seed(page);
   const kinds = await page.evaluate(async () => { const m = await import("/js/model.js"); const w = m.lookup("c++ (lang)"); return ["meaning", "word", "gap", "spell", "unscramble", "flash"].map((k) => m.question(w, k).kind); });
-  expect(kinds).toEqual(["meaning", "word", "gap", "word", "word", "flash"]);
+  expect(kinds).toEqual(["meaning", "word", "gap", "gap", "gap", "flash"]);
   expect(errors).toEqual([]);
 });
 

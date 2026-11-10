@@ -1,0 +1,140 @@
+accrue|verb|To accumulate over time|Interest accrues daily on the balance.|Money and work
+adjunct|noun|Something added as a supplementary part|The garden is an adjunct to the museum.|Things and tools
+aggregate|noun|A whole formed by combining parts|In aggregate, the small gifts paid for the roof.|Science and tech
+amalgam|noun|A mixture or blend|The city's food is an amalgam of a dozen cuisines.|Food
+ambivalence|noun|Having mixed or conflicting feelings|She felt real ambivalence about the move.|Feelings
+anachronistic|adjective|Belonging to a period other than the one portrayed|The wristwatch in the film was anachronistic.|Time and change
+annotate|verb|To add explanatory notes to a text|She annotated every page in pencil.|Talk and writing
+anthropocentric|adjective|Regarding humans as the center of everything|The museum moved away from an anthropocentric view of nature.|Mind and ideas
+antinomy|noun|A contradiction between two equally reasonable beliefs|Freedom and security form an old antinomy.|Mind and ideas
+apologia|noun|A formal written defense of one's ideas or actions|His memoir reads as an apologia for his career.|Talk and writing
+apprise|verb|To inform or tell|Please apprise me of any changes.|Talk and writing
+arbiter|noun|A person who settles a dispute or judges matters of taste|She became the arbiter of style in her circle.|Society and law
+aspersion|noun|An attack on someone's reputation|He cast aspersions on his rival's honesty.|Talk and writing
+asymmetry|noun|Lack of equality or balance between parts|There is an asymmetry of information between buyer and seller.|Look and shape
+attest|verb|To provide clear evidence of|The worn steps attest to centuries of visitors.|Mind and ideas
+augur|verb|To be a sign of a future outcome|Early sales augur well for the book.|Time and change
+austerity|noun|Strict economy; severe simplicity|Years of austerity left the parks shabby.|Money and work
+bellwether|noun|Something that shows which way a trend is going|The state is a bellwether in elections.|Society and law
+calibrate|verb|To adjust precisely for a purpose|Calibrate the scale before weighing.|Science and tech
+cartography|noun|The science and art of making maps|Old cartography often left blank spaces.|Places and travel
+catalyze|verb|To cause or speed up a change|The report catalyzed reform.|Science and tech
+categorical|adjective|Absolute and unconditional|She gave a categorical denial.|Talk and writing
+causal|adjective|Relating to cause and effect|The study found no causal link.|Science and tech
+circuitous|adjective|Longer than the direct route; indirect|We took a circuitous road through the hills.|Places and travel
+cogent|adjective|Clear, logical and convincing|She made a cogent case for the change.|Mind and ideas
+collegial|adjective|Marked by shared responsibility among colleagues|The department is unusually collegial.|Money and work
+compendium|noun|A collection of detailed information on a subject|The book is a compendium of folk remedies.|Talk and writing
+complicit|adjective|Involved with others in wrongdoing|Staying silent made him complicit.|Society and law
+concordance|noun|An alphabetical index of words in a text; agreement|She used a concordance to trace every use of "light."|Talk and writing
+conjecture|noun|A conclusion formed without full evidence|The cause of the fire remains conjecture.|Mind and ideas
+constituent|noun|A component part; a voter in a district|Flour is the main constituent of bread.|Science and tech
+contiguous|adjective|Sharing a border; next to each other|The two parks are contiguous.|Places and travel
+contravene|verb|To violate a law or rule|The building contravenes the height limit.|Society and law
+convergence|noun|The process of coming together|The convergence of two rivers formed the bay.|Places and travel
+corroborate|verb|To confirm with further evidence|A second witness corroborated her account.|Mind and ideas
+cosmology|noun|The study of the origin and structure of the universe|Modern cosmology began with a redshift.|Science and tech
+covenant|noun|A formal and binding agreement|The neighbors signed a covenant to protect the trees.|Society and law
+deontology|noun|The ethical view that duty matters more than outcomes|Deontology holds that lying is wrong even when it helps.|Mind and ideas
+devolve|verb|To pass power or duties to a lower level|Decisions were devolved to local schools.|Society and law
+didactic|adjective|Intended to teach, often in a preachy way|The film is earnest but didactic.|Arts and stories
+disabuse|verb|To free someone from a mistaken belief|Let me disabuse you of that idea.|Talk and writing
+disinterested|adjective|Not influenced by personal advantage; impartial|We need a disinterested judge.|Society and law
+disparity|noun|A great difference|There is a disparity between the two reports.|Mind and ideas
+distill|verb|To extract the essential meaning|She distilled the report into one page.|Talk and writing
+divergent|adjective|Tending to be different or to move apart|They hold divergent views on the plan.|Mind and ideas
+dossier|noun|A collection of documents about a person or subject|The agent kept a dossier on every guest.|Talk and writing
+efficacy|noun|The ability to produce an intended result|Trials tested the drug's efficacy.|Body and health
+empirical|adjective|Based on observation or experiment|The claim needs empirical support.|Science and tech
+encumber|verb|To burden or hamper|Debt encumbered the young company.|Money and work
+endogenous|adjective|Arising from within a system|Endogenous factors drove the change.|Science and tech
+enfranchise|verb|To give someone the right to vote|The amendment enfranchised millions.|Society and law
+entail|verb|To involve as a necessary part|The job entails some travel.|Money and work
+enunciate|verb|To pronounce clearly; to state precisely|Enunciate each word when you read aloud.|Talk and writing
+epigraph|noun|A short quotation at the start of a book or chapter|The novel opens with an epigraph from a sea song.|Arts and stories
+epiphenomenon|noun|A secondary effect that accompanies something|Some called consciousness an epiphenomenon of the brain.|Mind and ideas
+equilibrium|noun|A state of balance|The market found a new equilibrium.|Science and tech
+equivocal|adjective|Open to more than one interpretation|The results were equivocal.|Talk and writing
+erudite|adjective|Having great knowledge from study|An erudite guide made the tour a pleasure.|Character
+esoteric|adjective|Understood only by a small, specialized group|The forum debates esoteric rules of chess.|Mind and ideas
+exculpatory|adjective|Tending to clear someone of blame|The video was exculpatory.|Society and law
+exogenous|adjective|Coming from outside a system|An exogenous shock hit the market.|Science and tech
+exponential|adjective|Increasing faster and faster|The app saw exponential growth.|Science and tech
+extant|adjective|Still in existence|Only two copies of the map are extant.|Time and change
+extraneous|adjective|Irrelevant or unrelated to the subject|Cut the extraneous details.|Talk and writing
+fallacious|adjective|Based on a mistaken belief or faulty logic|The argument is clever but fallacious.|Mind and ideas
+granular|adjective|Highly detailed|We need more granular data.|Science and tech
+hegemony|noun|Dominance of one group over others|The empire's hegemony lasted centuries.|Society and law
+hierarchical|adjective|Arranged in levels of rank|The firm is rigidly hierarchical.|Society and law
+iconoclastic|adjective|Attacking cherished beliefs or institutions|Her iconoclastic essays shook the field.|Mind and ideas
+ideology|noun|A system of ideas that forms a political or economic theory|The party's ideology shifted over time.|Society and law
+idiosyncratic|adjective|Peculiar to an individual|His filing system is idiosyncratic.|Character
+impute|verb|To attribute a fault or quality to someone|Don't impute bad motives to her.|Mind and ideas
+inalienable|adjective|Unable to be taken away|The charter names inalienable rights.|Society and law
+incommensurate|adjective|Out of keeping or proportion with|The fine was incommensurate with the offense.|Society and law
+indemnify|verb|To compensate for harm or loss|The contract indemnifies the builder.|Money and work
+indoctrinate|verb|To teach someone to accept beliefs uncritically|Cults indoctrinate new members.|Society and law
+inscrutable|adjective|Impossible to understand or interpret|Her expression was inscrutable.|Character
+iterative|adjective|Repeating a process to improve a result|Design is an iterative process.|Science and tech
+judicious|adjective|Having or showing good judgment|A judicious use of salt brings out the sweetness.|Mind and ideas
+jurisprudence|noun|The theory or philosophy of law|She lectures on jurisprudence.|Society and law
+legitimacy|noun|Conformity to law or accepted standards|The vote gave the council legitimacy.|Society and law
+longitudinal|adjective|Following the same subjects over a long time|A longitudinal study tracked them for decades.|Science and tech
+macrocosm|noun|The whole of a complex structure, seen as a world|The city is a macrocosm of the nation.|Mind and ideas
+manifesto|noun|A public declaration of aims or views|The artists published a manifesto.|Talk and writing
+meritocracy|noun|A system where advancement is based on ability|The school claims to be a meritocracy.|Society and law
+methodology|noun|A system of methods used in a field of study|The paper explains its methodology clearly.|Science and tech
+microcosm|noun|A small place or group that reflects a larger whole|The village is a microcosm of the country.|Society and law
+mnemonic|noun|A device that helps you remember something|"Every good boy does fine" is a musical mnemonic.|Mind and ideas
+morphology|noun|The study of forms and structures|The morphology of a word shows its parts.|Science and tech
+mutable|adjective|Liable to change|Fashion is endlessly mutable.|Time and change
+nebulous|adjective|Vague or ill-defined|The plan was still nebulous.|Mind and ideas
+neologism|noun|A newly coined word or expression|"Selfie" was once a neologism.|Talk and writing
+nihilism|noun|The rejection of all moral principles or meaning|The novel flirts with nihilism.|Mind and ideas
+nomenclature|noun|A system of names used in a field|Botanical nomenclature uses Latin.|Talk and writing
+obfuscate|verb|To make something deliberately unclear|The jargon obfuscates a simple idea.|Talk and writing
+obsolescence|noun|The process of becoming outdated|Planned obsolescence shortens a phone's life.|Time and change
+orthogonal|adjective|Unrelated or independent; at right angles|His point was orthogonal to the debate.|Mind and ideas
+palliative|adjective|Relieving symptoms without curing the cause|The treatment is palliative.|Body and health
+paradigm|noun|A typical model or pattern of thought|The discovery forced a paradigm shift.|Mind and ideas
+pernicious|adjective|Harmful in a gradual or subtle way|Rumors have a pernicious effect on trust.|Society and law
+perspicuous|adjective|Clearly expressed and easily understood|Her explanation was perspicuous.|Talk and writing
+plurality|noun|The largest number among several, short of a majority|She won with a plurality of votes.|Society and law
+polarize|verb|To divide into sharply opposing groups|The issue polarized the town.|Society and law
+posit|verb|To put forward as fact or a basis for argument|The theory posits a hidden ocean on the moon.|Mind and ideas
+posterity|noun|All future generations|The letters were saved for posterity.|Time and change
+precedent|noun|An earlier event used as an example or guide|The ruling set a precedent.|Society and law
+preeminent|adjective|Surpassing all others|She is the preeminent scholar of the period.|Character
+prescient|adjective|Knowing about events before they happen|His warning proved prescient.|Mind and ideas
+presuppose|verb|To require as an earlier condition|Your question presupposes that I agree.|Mind and ideas
+prognosis|noun|A forecast of the likely course of something|The prognosis is good.|Body and health
+proliferation|noun|Rapid increase in number|The proliferation of apps overwhelmed users.|Time and change
+proposition|noun|A statement expressing a judgment; a suggested plan|It's an attractive proposition.|Mind and ideas
+provisional|adjective|Arranged for now, possibly to change later|The schedule is provisional.|Time and change
+ramification|noun|A consequence, often unwelcome|The ramifications of the vote are still unclear.|Society and law
+recondite|adjective|Little known; obscure|The book is full of recondite facts.|Mind and ideas
+rectitude|noun|Morally correct behavior|He was admired for his rectitude.|Character
+regressive|adjective|Returning to a less advanced state; taking more from the poor|Critics called the tax regressive.|Money and work
+reiterate|verb|To say again for emphasis|Let me reiterate the deadline.|Talk and writing
+remunerate|verb|To pay for work or services|Volunteers are not remunerated.|Money and work
+reparation|noun|Making amends for a wrong|The town paid reparations to the families.|Society and law
+repository|noun|A place where things are stored|The library is a repository of local history.|Places and travel
+retrospective|noun|An exhibition or look back at past work|The museum held a retrospective of her paintings.|Arts and stories
+salient|adjective|Most noticeable or important|The salient point is the cost.|Mind and ideas
+secular|adjective|Not connected with religious matters|The holiday has secular traditions too.|Society and law
+sedentary|adjective|Involving much sitting and little activity|Office work is sedentary.|Body and health
+sequester|verb|To isolate or hide away|The jury was sequestered during the trial.|Society and law
+sophistry|noun|Clever but false reasoning|His case was pure sophistry.|Mind and ideas
+specious|adjective|Seemingly plausible but actually wrong|The ad made a specious claim.|Mind and ideas
+spurious|adjective|False or fake; not genuine|The link turned out to be spurious.|Mind and ideas
+stochastic|adjective|Having a random pattern that can be analyzed statistically|Weather has stochastic elements.|Science and tech
+subjective|adjective|Based on personal feelings or opinions|Taste in music is subjective.|Mind and ideas
+subversive|adjective|Seeking to undermine an established system|The comic was quietly subversive.|Society and law
+surrogate|noun|A substitute|The mentor became a surrogate parent.|Society and law
+tautology|noun|Saying the same thing twice in different words|"Free gift" is a tautology.|Talk and writing
+tenuous|adjective|Very weak or slight|The connection is tenuous at best.|Mind and ideas
+trajectory|noun|The path followed by a moving object; a course of development|Her career followed a steep trajectory.|Movement and action
+ubiquitous|adjective|Present everywhere|Smartphones are ubiquitous.|Things and tools
+verisimilitude|noun|The appearance of being true or real|The film's verisimilitude made it gripping.|Arts and stories
+volatility|noun|Liability to change rapidly and unpredictably|Market volatility rattled investors.|Money and work
+wherewithal|noun|The money or means needed for a purpose|They lacked the wherewithal to rebuild.|Money and work

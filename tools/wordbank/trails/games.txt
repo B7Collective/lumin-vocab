@@ -1,0 +1,27 @@
+# games|Game Night|Words for winning, losing and playing fair|all|1|Movement and action
+strategy|noun|A careful plan to reach a goal|Our strategy was to guard the corners.
+tactic|noun|A move or method used to reach a goal|Faking left is a sneaky tactic.
+gambit|noun|An opening move that risks something for an advantage|Her opening gambit surprised everyone.||3
+checkmate|noun|A chess position where the king can't escape; the win|"Checkmate!" she announced.
+stalemate|noun|A situation where no one can win or move forward|The game ended in a stalemate.||2
+bluff|verb|To pretend to be stronger or more sure than you are|He bluffed that he had the winning card.
+underdog|noun|The one expected to lose|Everyone cheered for the underdog.
+rally|noun|A comeback or recovery; a long exchange of shots|The team's late rally won the game.
+tiebreaker|noun|An extra round to decide a tied game|We won the tiebreaker by one point.
+sportsmanship|noun|Fair, generous behavior when playing|Shaking hands shows good sportsmanship.
+victory
+opponent
+rival
+champion
+tournament|noun|A series of games to find a winner|The chess tournament lasted all weekend.
+referee|noun|An official who enforces the rules of a game|The referee blew the whistle.||0
+penalty|noun|A punishment for breaking a rule|The penalty gave them a free kick.
+forfeit
+comeback|noun|A return to winning after falling behind|What a comeback in the last minute!
+momentum
+rookie|noun|A first-year player or beginner|The rookie scored her first goal.
+veteran|noun|A person with long experience|The veteran coached the younger players.
+clutch|adjective|Done well under pressure at a key moment|He made a clutch shot at the buzzer.
+triumph
+rematch|noun|A second game between the same players|They asked for a rematch.||0
+teammate|noun|A member of the same team|My teammate passed me the ball.||0

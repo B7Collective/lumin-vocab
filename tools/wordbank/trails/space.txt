@@ -1,0 +1,29 @@
+# space|Space and Stars|Words for looking up at night|all|0|Science and tech
+orbit
+galaxy
+nebula|noun|A giant cloud of gas and dust in space|Stars are born inside a nebula.||1
+constellation
+asteroid|noun|A rocky object orbiting the sun|An asteroid passed far from Earth.
+comet
+meteor|noun|A streak of light from space rock burning in the air; a shooting star|We made a wish on a meteor.
+meteorite|noun|A space rock that lands on Earth|The museum has a meteorite you can touch.||1
+eclipse
+equinox|noun|One of two days each year when day and night are equal|The spring equinox is in March.||2
+solstice|noun|The longest or shortest day of the year|The summer solstice has the most daylight.||2
+supernova|noun|The huge, bright explosion of a dying star|The supernova outshone a whole galaxy.||1
+astronaut|noun|A person trained to travel in space|The astronaut floated in the station.
+cosmos|noun|The universe seen as an orderly whole|She dreams of exploring the cosmos.||1
+crater|noun|A bowl-shaped hole made by an impact or volcano|The moon is covered in craters.
+gravity
+telescope
+satellite
+lunar
+solar
+celestial|adjective|Relating to the sky or outer space|Stars and planets are celestial bodies.||2
+zenith
+aurora
+exoplanet|noun|A planet that orbits a star other than our sun|Astronomers found a new exoplanet.||2
+rover|noun|A vehicle that explores the surface of a planet or moon|The rover took pictures of Mars.
+universe
+astronomer
+planet

@@ -1,0 +1,43 @@
+# borrowed|Borrowed Words|Everyday English words that traveled here from other languages|all|1|Places and travel
+tycoon|noun|A rich, powerful businessperson. From Japanese taikun, "great lord"|The shipping tycoon owned forty boats.||3
+kayak|noun|A narrow boat moved with a double paddle. From Inuit qajaq|We paddled a kayak across the bay.||0
+robot|noun|A machine that does tasks on its own. From Czech robota, "forced work," first used in a 1920 play|The robot swept the floor.||0
+ketchup|noun|A thick tomato sauce. Likely from a Chinese word for fish sauce|Pass the ketchup, please.||0
+shampoo|noun|Soap for washing hair. From Hindi champo, "press" or "knead"|The shampoo smells like apples.||0
+pajamas|noun|Loose clothes for sleeping. From Hindi and Persian words for "leg clothing"|She wore striped pajamas.||0
+bungalow|noun|A small one-story house. From Hindi bangla, "in the style of Bengal"|They live in a white bungalow.||1
+jungle|noun|A thick tropical forest. From Hindi jangal, "wild land"|Parrots chattered in the jungle.||0
+tsunami|noun|A huge sea wave caused by an earthquake. From Japanese, "harbor wave"|A tsunami warning sounded along the coast.||1
+karaoke|noun|Singing along to recorded music. From Japanese, "empty orchestra"|We sang karaoke at the party.||1
+emoji|noun|A small digital picture used in messages. From Japanese e, "picture," plus moji, "character"|She replied with a heart emoji.||0
+origami|noun|The art of folding paper into shapes. From Japanese, "folding paper"|He folded an origami crane.||0
+algebra|noun|Math that uses letters for unknown numbers. From Arabic al-jabr, "joining broken parts"|We solved for x in algebra.||1
+safari|noun|A trip to see wild animals. From Swahili, "journey"|They saw lions on safari.||0
+avocado|noun|A green, creamy fruit. From the Nahuatl word ahuacatl|Mash the avocado for the dip.||0
+chocolate|noun|A sweet food made from cacao. From Nahuatl, by way of Spanish|Hot chocolate warms you up.||0
+tomato|noun|A red, juicy fruit used as a vegetable. From Nahuatl tomatl|Slice the tomato thin.||0
+cookie|noun|A small sweet baked treat. From Dutch koekje, "little cake"|She dunked her cookie in milk.||0
+boss|noun|The person in charge. From Dutch baas, "master"|My boss let us leave early.||0
+yacht|noun|A fancy boat for pleasure trips. From Dutch jacht, "hunting ship"|A white yacht sailed into the harbor.||1
+kindergarten|noun|A class before first grade. From German, "children's garden"|My little brother started kindergarten.||0
+doppelganger|noun|Someone who looks exactly like another person. From German, "double-goer"|I met my doppelganger at the airport!||3
+smorgasbord|noun|A buffet of many dishes; a wide variety. From Swedish|The festival was a smorgasbord of music.||3
+sauna|noun|A small room heated for sweating. From Finnish|After skiing, they relaxed in the sauna.||1
+ombudsman|noun|An official who handles public complaints. From Swedish, "representative"|She took her complaint to the ombudsman.||4
+igloo
+moccasin|noun|A soft leather shoe. From an Algonquian language|He wore fringed moccasins.||1
+raccoon
+ballet|noun|A graceful dance that tells a story. From French, via Italian balletto|She takes ballet on Saturdays.||0
+rendezvous|noun|A planned meeting. From French, "present yourselves"|We set a rendezvous at the fountain.||3
+chauffeur|noun|A person paid to drive a car. From French, "stoker," the person who fed early steam engines|The chauffeur opened the door.||2
+zero|noun|The number 0. From Arabic sifr, "empty," by way of Italian|Zero degrees is freezing.||0
+loot|noun|Stolen or collected goods. From Hindi lut|The pirates buried their loot.||1
+mosquito|noun|A small biting insect. From Spanish, "little fly"|A mosquito buzzed by my ear.||0
+ukulele|noun|A small four-stringed guitar. From Hawaiian, often translated "jumping flea"|He strummed a ukulele on the porch.||0
+boomerang|noun|A curved stick that returns when thrown. From Dharug, a language of Australia|The boomerang spun back to her hand.||0
+kangaroo|noun|An Australian animal that hops. From Guugu Yimithirr gangurru|The kangaroo bounded away.||0
+wanderlust
+schadenfreude
+zeitgeist
+angst
+canyon|noun|A deep valley with steep sides. From Spanish cañón, "tube"|The canyon glowed red at sunset.||0

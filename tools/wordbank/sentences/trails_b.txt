@@ -1,0 +1,223 @@
+whisk|Use a whisk to beat the cream.
+knead|Bakers knead dough until it's smooth and stretchy.
+julienne|Julienne the peppers into thin strips.
+mince|Mince the parsley for the sauce.
+dice|Dice the tomatoes for the salsa.
+zest|He tackled the project with zest.
+marinate|Marinate the tofu in soy sauce.
+baste|Baste the chicken with its juices.
+blanch|Blanch the almonds to loosen their skins.
+deglaze|Deglaze the pan with a splash of broth.
+glaze|Brush a honey glaze on the carrots.
+poach|Poach the pears in spiced juice.
+sear|Sear the scallops for one minute per side.
+sift|Sift the powdered sugar over the cake.
+temper|Temper the eggs with a little hot milk.
+roux|A dark roux gives gumbo its color.
+puree|Puree the berries for a smoothie.
+dollop|A dollop of yogurt topped the soup.
+affect|Lack of sleep can affect your grades.
+effect|The new rule had a big effect on lunch lines.
+accept|Do you accept credit cards?
+except|I like all vegetables except beets.
+advice|My best advice: start early.
+advise|The guide will advise you on which trail to take.
+principal|The principal reason for the delay was the snow.
+stationary|Stay stationary while the photo is taken.
+stationery|The shop sells fancy stationery and pens.
+elude|The answer continued to elude me.
+capitol|Tourists climbed the capitol steps.
+ensure|Lock the door to ensure the cat stays in.
+insure|They insure the house against floods.
+farther|The lake is farther than it looks.
+further|Further practice will help.
+lose|Don't lose hope.
+loose|The dog got loose and ran to the park.
+peak|Traffic is worst at peak hours.
+pore|He would pore over maps for hours.
+proceed|Proceed to the next question.
+illicit|The illicit fireworks were seized.
+cite|Cite the page number in your essay.
+site|The site of the old mill is now a park.
+aural|Bird-watching is partly an aural skill.
+oral|The oral exam made her nervous.
+counsel|She sought counsel from her coach.
+breath|Hold your breath underwater.
+averse|He's not averse to trying new foods.
+adverse|Adverse winds slowed the sailboat.
+flout|Some drivers flout the no-parking signs.
+flaunt|Don't flaunt your new phone at school.
+imply|Did you mean to imply I was late?
+emigrate|Many families emigrate in search of work.
+immigrate|They chose to immigrate to Australia.
+interest|The savings account earns a little interest.
+savings|Her savings paid for summer camp.
+credit|She gave her sister credit for the idea.
+asset|Her calm voice is an asset in emergencies.
+expense|Gas is a big travel expense.
+receipt|Keep the receipt in case it doesn't fit.
+refund|The store gave a full refund.
+warranty|The warranty covers repairs for a year.
+deposit|We paid a deposit to hold the campsite.
+withdraw|The runner had to withdraw from the race.
+panic|Don't panic; we have a spare key.
+atlas|The road atlas lives in the glove box.
+cereal|Oats are a hardy cereal crop.
+tantalize|The smell of popcorn will tantalize you in the lobby.
+herculean|Moving the piano was a herculean task.
+odyssey|Finding a parking space became an odyssey.
+titanic|The two teams fought a titanic battle.
+siren|An ambulance siren wailed down the street.
+helium|Helium makes your voice squeaky.
+phobia|Her phobia of heights made the bridge hard.
+hypnosis|The show's hypnosis act was just for laughs.
+ambrosia|Fresh strawberries taste like ambrosia.
+martial|Martial music played during the parade.
+python|The python slept curled around a log.
+arachnid|A tick is a tiny arachnid.
+agenda|What's on the agenda for today?
+deliverable|The first deliverable is due Monday.
+leverage|Use the long handle for leverage.
+benchmark|Her time set a new benchmark for the team.
+metric|Customer smiles are our favorite metric.
+milestone|Walking was a big milestone for the baby.
+onboarding|The app's onboarding takes two minutes.
+liaison|She acts as liaison between parents and coaches.
+delegate|Each school sent a delegate to the meeting.
+initiative|The new recycling initiative started Monday.
+iterate|Designers iterate until the app feels right.
+logistics|The logistics of feeding fifty campers were tricky.
+memo|Did you see the memo about parking?
+prioritize|Prioritize the tasks due today.
+quarterly|The quarterly newsletter came out today.
+roadmap|The roadmap shows the new features for spring.
+workflow|A shared calendar improved our workflow.
+scalable|The bakery needs a scalable recipe.
+proactive|Be proactive and pack the night before.
+brainstorm|We had a brainstorm session for the fundraiser.
+takeaway|My takeaway from the book: be kind.
+pivot|The basketball player made a quick pivot.
+streamline|Labels helped streamline the kitchen.
+sizzle|Fajitas sizzle as they arrive at the table.
+hiss|The kettle began to hiss.
+murmur|A murmur ran through the crowd.
+crackle|Wrapping paper will crackle as you open it.
+thud|A pinecone landed with a thud.
+clang|The pot hit the floor with a clang.
+whoosh|The water slide ended in a whoosh.
+zoom|Watch the race cars zoom past.
+kerplunk|Kerplunk! The ball landed in the pool.
+plop|A raindrop landed with a plop.
+squelch|Our boots squelch in the marsh.
+swish|The basketball went in with a swish.
+clatter|The clatter of dishes came from the kitchen.
+babble|The brook began to babble over the stones.
+cuckoo|The cuckoo clock chimed noon.
+whir|The whir of the fan put me to sleep.
+twang|He played the banjo with a twang.
+fizz|The bath bomb began to fizz.
+clink|The coins hit the jar with a clink.
+thwack|The tennis ball hit the racket with a thwack.
+ping|My phone gave a ping.
+boom|The cannon went boom.
+crunch|The crunch of snow under boots is my favorite sound.
+splat|The water balloon hit the wall with a splat.
+honk|The car gave a friendly honk.
+nebula|The nebula glows pink in the telescope.
+asteroid|An asteroid belt circles between Mars and Jupiter.
+meteor|A bright meteor streaked across the sky.
+meteorite|The meteorite was mostly iron.
+equinox|At the equinox, the sun rises due east.
+solstice|We celebrated the winter solstice with candles.
+supernova|A supernova can outshine a galaxy.
+astronaut|The astronaut waved from the space station.
+cosmos|Our planet is a speck in the cosmos.
+crater|The meteor left a giant crater.
+celestial|The planetarium shows celestial movements.
+exoplanet|The exoplanet may have water.
+rover|The rover drilled into Martian rock.
+necessary|Is it necessary to bring a jacket?
+separate|Keep the colors separate in the wash.
+definitely|I'm definitely coming to your party.
+embarrass|Don't embarrass your brother in front of his friends.
+conscience|His conscience kept him awake.
+conscious|She was conscious of the time.
+occurrence|Thunder in winter is a rare occurrence.
+receive|You'll receive a reply soon.
+believe|I believe in you.
+weird|What a weird dream!
+privilege|Voting is a privilege and a duty.
+maintenance|The pool is closed for maintenance.
+questionnaire|Fill out the questionnaire at the front desk.
+recommend|Can you recommend a good book?
+restaurant|The restaurant is famous for its soup.
+cemetery|The old cemetery has stones from the 1700s.
+colleague|My colleague covered my shift.
+committee|The committee chose the theme for prom.
+guarantee|I can't guarantee it won't rain.
+knowledge|Her knowledge of birds amazed us.
+library|The library has free museum passes.
+lightning|Lightning struck the old oak.
+noticeable|There's a noticeable chill in the air.
+pastime|Puzzles are her favorite pastime.
+playwright|The playwright watched opening night from the back.
+possession|The old watch is his prized possession.
+threshold|She paused at the threshold of the classroom.
+until|Wait until the paint dries.
+vacuum|Please vacuum the stairs.
+foreign|We tried foreign snacks from the market.
+height|Measure the height of the doorway.
+fluorescent|Fluorescent lights hummed in the hall.
+acquaintance|He's an acquaintance from the gym.
+broccoli|Steam the broccoli until bright green.
+cinnamon|Cinnamon rolls baked in the oven.
+souvenir|We brought home a shell as a souvenir.
+beginning|The beginning of the movie was slow.
+business|The business opened last spring.
+address|What's your address?
+sincerely|I sincerely apologize.
+flaky|The pie crust was buttery and flaky.
+tender|The stew meat was tender.
+chewy|The bagel was chewy.
+buttery|Buttery popcorn filled the room with its smell.
+smoky|The chili had a smoky flavor.
+earthy|The mushrooms tasted earthy.
+briny|The oysters were briny.
+tart|The cherries were tart.
+decadent|The decadent brownie had three kinds of chocolate.
+mellow|The mellow cheese melted nicely.
+browser|Clear your browser history.
+cache|Squirrels keep a cache of nuts.
+cursor|The cursor blinked on the empty page.
+firewall|The school firewall blocks game sites.
+hashtag|The club created a hashtag for the event.
+hyperlink|Click the hyperlink to watch the video.
+malware|Antivirus software scans for malware.
+pixel|Each pixel can show millions of colors.
+router|Put the router in the middle of the house.
+server|The game server crashed on launch day.
+spam|Mark that email as spam.
+upload|Upload your homework before midnight.
+download|Download the podcast for the road trip.
+username|My username is a mix of my pets' names.
+phishing|The phishing email looked like it came from our bank.
+streaming|The concert is streaming live tonight.
+glitch|A glitch made my character walk through walls.
+meme|The cat meme made everyone laugh.
+avatar|His avatar is a cartoon fox.
+debug|Let's debug the robot's code together.
+backup|Keep a backup of your photos.
+privacy|Close the door for some privacy.
+gale|The gale tore the sail.
+humidity|Humidity makes the heat feel worse.
+barometer|A falling barometer means rain is likely.
+cyclone|The cyclone weakened over land.
+hurricane|We boarded up the windows before the hurricane.
+hail|Hail the size of peas hit the car.
+fog|Fog rolled in from the bay.
+mist|A fine mist rose over the waterfall.
+thaw|Let the turkey thaw overnight.
+heatwave|The heatwave melted the crayons in the car.
+cumulus|Fluffy cumulus clouds drifted overhead.
+cirrus|Wispy cirrus clouds can mean weather is changing.
+thunderhead|A thunderhead built over the mountains.

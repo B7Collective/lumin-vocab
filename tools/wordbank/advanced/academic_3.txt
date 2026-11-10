@@ -1,0 +1,175 @@
+abiotic|adjective|Not living; relating to the physical parts of an environment|Sunlight and soil are abiotic factors.|Nature and weather
+acuity|noun|Sharpness of thought, vision or hearing|Her visual acuity was tested yearly.|Body and health
+aerobic|adjective|Using oxygen; relating to exercise that raises breathing|Swimming is good aerobic exercise.|Body and health
+algorithm|noun|A set of step-by-step rules for solving a problem|The algorithm sorts the mail by zip code.|Science and tech
+allocation|noun|The act of distributing resources for a purpose|The budget allocation for parks rose.|Money and work
+amenity|noun|A useful or pleasant feature of a place|The hotel's amenities include a pool.|Places and travel
+analgesic|noun|A medicine that relieves pain|Take a mild analgesic for the headache.|Body and health
+anthropology|noun|The study of human societies and cultures|She studied anthropology in Peru.|Society and law
+antibody|noun|A protein the body makes to fight infection|Vaccines teach the body to make antibodies.|Body and health
+aquifer|noun|An underground layer of rock that holds water|The town draws water from an aquifer.|Nature and weather
+arable|adjective|Suitable for growing crops|Only a tenth of the land is arable.|Nature and weather
+archipelago|noun|A group of islands|The archipelago stretches for miles.|Places and travel
+archival|adjective|Relating to archives; made to last|Use archival paper for old photographs.|Things and tools
+artisanal|adjective|Made by hand in a traditional way|The market sells artisanal cheese.|Food
+assay|noun|A test of a substance's quality or makeup|The assay found traces of gold.|Science and tech
+atrophy|verb|To waste away from lack of use|Muscles atrophy without exercise.|Body and health
+audit|noun|An official inspection of accounts|The annual audit found no errors.|Money and work
+autonomic|adjective|Working automatically, without conscious control|Breathing is controlled by the autonomic nervous system.|Body and health
+bandwidth|noun|The capacity to transmit data; also, mental capacity|I don't have the bandwidth for another project.|Science and tech
+benign|adjective|Not harmful, especially of a growth|The doctor said the lump was benign.|Body and health
+biodiversity|noun|The variety of life in an area|Rainforests have enormous biodiversity.|Nature and weather
+biome|noun|A large community of plants and animals in one climate|The tundra is a cold, treeless biome.|Nature and weather
+bourse|noun|A stock exchange, especially in Europe|Shares rose on the Paris bourse.|Money and work
+brokerage|noun|A firm that buys and sells for clients; its fee|The brokerage charged a small commission.|Money and work
+buoyancy|noun|The ability to float; cheerful resilience|Salt water increases buoyancy.|Science and tech
+capitalization|noun|The total value of a company's shares|The firm's capitalization doubled.|Money and work
+cardiovascular|adjective|Relating to the heart and blood vessels|Running builds cardiovascular health.|Body and health
+cartel|noun|A group of businesses that agree to fix prices|The oil cartel cut production.|Money and work
+census|noun|An official count of a population|The census is taken every ten years.|Society and law
+chronic|adjective|Lasting a long time or recurring|She manages a chronic back problem.|Body and health
+chronology|noun|The order in which events happened|The museum lays out a clear chronology.|Time and change
+circadian|adjective|Following a roughly 24-hour cycle|Jet lag disrupts circadian rhythms.|Body and health
+clinical|adjective|Relating to medical treatment; coldly efficient|The trial moved to clinical testing.|Body and health
+coefficient|noun|A number that multiplies a variable; a measure of a property|Ice has a low friction coefficient.|Science and tech
+cognitive|adjective|Relating to thinking and understanding|Puzzles exercise cognitive skills.|Mind and ideas
+collateral|noun|Property pledged as security for a loan|They used the house as collateral.|Money and work
+commerce|noun|The buying and selling of goods on a large scale|The port was a center of commerce.|Money and work
+compliance|noun|Acting according to rules or requests|The factory passed its compliance check.|Society and law
+concession|noun|Something granted in an agreement; a business allowed on a site|The union won several concessions.|Money and work
+conduit|noun|A channel for water, cables or ideas|The library was a conduit for new ideas.|Things and tools
+congenital|adjective|Present from birth|He has a congenital heart murmur.|Body and health
+connotation|noun|An idea or feeling a word suggests beyond its meaning|"Home" has warm connotations.|Talk and writing
+consortium|noun|An association of companies or groups working together|A consortium built the bridge.|Money and work
+contagion|noun|The spread of disease or of a harmful idea|Panic spread like contagion.|Body and health
+contour|noun|An outline; a line on a map joining points of equal height|The contours of the hills were soft in the fog.|Look and shape
+corporeal|adjective|Relating to the body; physical|Ghosts lack a corporeal form.|Body and health
+cosmopolitan|adjective|Including people from many countries; worldly|The city has a cosmopolitan feel.|Places and travel
+credential|noun|A qualification or document proving identity or ability|She has strong teaching credentials.|Money and work
+curator|noun|A keeper of a museum or collection|The curator chose every painting.|Arts and stories
+curriculum|noun|The subjects in a course of study|Music is part of the curriculum.|Mind and ideas
+deciduous|adjective|Shedding leaves every year|Maples are deciduous trees.|Nature and weather
+deficit|noun|An amount by which spending exceeds income|The city ran a deficit last year.|Money and work
+deflation|noun|A general fall in prices|Deflation can slow an economy.|Money and work
+degenerative|adjective|Getting steadily worse over time|It is a degenerative disease of the joints.|Body and health
+demography|noun|The study of population statistics|Demography shows the town is aging.|Society and law
+dermatology|noun|The branch of medicine dealing with skin|She works in dermatology.|Body and health
+diagnostic|adjective|Used to identify a problem|The mechanic ran a diagnostic test.|Science and tech
+dialect|noun|A regional form of a language|The village has its own dialect.|Talk and writing
+dietary|adjective|Relating to diet|She has dietary restrictions.|Food
+diffusion|noun|The spreading of something more widely|The diffusion of the printing press changed Europe.|Science and tech
+digitize|verb|To convert into digital form|The library digitized its old maps.|Science and tech
+diplomacy|noun|The managing of relations between countries; tact|It took diplomacy to settle the feud.|Society and law
+dividend|noun|A share of profits paid to shareholders|The company pays a quarterly dividend.|Money and work
+dormancy|noun|A period of rest or inactivity|Seeds survive winter in dormancy.|Nature and weather
+ecosystem|noun|A community of living things and their environment|The pond is a small ecosystem.|Nature and weather
+elasticity|noun|The ability to stretch and return; responsiveness to change|Demand for bread has low price elasticity.|Science and tech
+electorate|noun|All the people entitled to vote|The electorate turned out in record numbers.|Society and law
+emission|noun|Something released into the air, such as gas|Cars produce carbon emissions.|Nature and weather
+encryption|noun|Converting data into a code to keep it private|Encryption protects your messages.|Science and tech
+endowment|noun|Money given to support an institution; a natural talent|The university's endowment funds scholarships.|Money and work
+entrepreneur|noun|A person who starts and runs a business|The entrepreneur opened three bakeries.|Money and work
+enzyme|noun|A protein that speeds up chemical reactions in the body|Enzymes help digest food.|Body and health
+epidemic|noun|A rapid spread of disease in a community|The epidemic closed schools for a month.|Body and health
+equity|noun|Fairness; the value of ownership in something|They built equity in their home.|Money and work
+erosion|noun|The gradual wearing away of something|Coastal erosion threatens the road.|Nature and weather
+estuary|noun|The wide mouth of a river where it meets the sea|Herons feed in the estuary.|Places and travel
+ethnography|noun|The study and description of peoples and cultures|Her ethnography followed a fishing village.|Society and law
+evaporation|noun|Turning from liquid into vapor|Evaporation leaves salt behind.|Science and tech
+excise|noun|A tax on goods produced within a country|Fuel carries a heavy excise.|Money and work
+expenditure|noun|The spending of money; an amount spent|Expenditure on roads doubled.|Money and work
+expropriate|verb|To take property from its owner, especially by the state|The land was expropriated for a highway.|Society and law
+fiscal|adjective|Relating to government revenue and spending|The fiscal year ends in June.|Money and work
+flora|noun|The plants of a particular region|The island's flora includes rare orchids.|Nature and weather
+forensic|adjective|Relating to scientific methods for solving crimes|Forensic tests identified the paint.|Science and tech
+fossilize|verb|To turn into a fossil; to become rigid and outdated|The rules had fossilized over decades.|Time and change
+franchise|noun|A license to run a business under a brand; the right to vote|She bought a coffee franchise.|Money and work
+frugality|noun|Careful economy with money and resources|Their frugality paid for the trip.|Money and work
+genome|noun|The complete set of genes in an organism|Scientists mapped the wheat genome.|Science and tech
+geopolitics|noun|Politics shaped by geography|Rivers often drive geopolitics.|Society and law
+gerontology|noun|The study of aging|Gerontology looks at health in later life.|Body and health
+glossary|noun|A list of terms with their meanings|Check the glossary at the back.|Talk and writing
+gratis|adverb|Free of charge|The concert was offered gratis.|Money and work
+habitat|noun|The natural home of an animal or plant|Wetlands are a vital habitat for birds.|Animals
+hemisphere|noun|Half of a sphere, especially of the earth|Seasons are reversed in the southern hemisphere.|Places and travel
+herbivore|noun|An animal that eats only plants|Deer are herbivores.|Animals
+heredity|noun|The passing of traits from parents to offspring|Eye color is shaped by heredity.|Science and tech
+homeostasis|noun|The body's tendency to keep a stable internal state|Sweating helps maintain homeostasis.|Body and health
+hydraulic|adjective|Operated by liquid under pressure|The truck has a hydraulic lift.|Things and tools
+hygiene|noun|Practices that keep you clean and healthy|Good hygiene prevents illness.|Body and health
+immunity|noun|Protection from disease; exemption|Measles gives lifelong immunity.|Body and health
+inflation|noun|A general rise in prices|Inflation ate into their savings.|Money and work
+infrastructure|noun|The basic systems a society needs, like roads and power|The storm damaged the town's infrastructure.|Society and law
+insolvent|adjective|Unable to pay debts|The firm was declared insolvent.|Money and work
+insulin|noun|A hormone that controls blood sugar|The pancreas makes insulin.|Body and health
+invertebrate|noun|An animal without a backbone|Snails are invertebrates.|Animals
+latitude|noun|Distance north or south of the equator; freedom of action|The city lies at a high latitude.|Places and travel
+ledger|noun|A book of financial accounts|The clerk updated the ledger daily.|Money and work
+legislature|noun|A body that makes laws|The legislature passed the bill.|Society and law
+levy|noun|A tax or fee imposed by authority|A small levy pays for the parks.|Money and work
+liability|noun|A legal responsibility; a disadvantage|The loose railing is a liability.|Money and work
+liquidity|noun|How easily assets can be turned into cash|Cash gives a business liquidity.|Money and work
+longevity|noun|Long life|Tortoises are famous for their longevity.|Body and health
+lucrative|adjective|Producing a great deal of profit|The patent proved lucrative.|Money and work
+lunar|adjective|Relating to the moon|A lunar eclipse turned the moon red.|Science and tech
+malady|noun|A disease or ailment|A strange malady swept the village.|Body and health
+mercantile|adjective|Relating to trade or merchants|The city grew rich on mercantile trade.|Money and work
+metabolism|noun|The chemical processes that keep a body alive|Exercise speeds up metabolism.|Body and health
+metropolis|noun|A large, busy city|The village grew into a metropolis.|Places and travel
+migratory|adjective|Moving seasonally from one region to another|Migratory birds rest at the lake.|Animals
+monetary|adjective|Relating to money or currency|Monetary policy affects interest rates.|Money and work
+monopoly|noun|Exclusive control of a market|The railroad held a monopoly on freight.|Money and work
+municipal|adjective|Relating to a town or city government|The municipal pool opens in June.|Society and law
+mutation|noun|A change in genetic material; any change|A mutation gave the moth dark wings.|Science and tech
+neurology|noun|The branch of medicine dealing with the nervous system|She specializes in neurology.|Body and health
+nomadic|adjective|Moving from place to place without a fixed home|Nomadic herders follow the grass.|Places and travel
+nutrient|noun|A substance that provides nourishment|Leafy greens are rich in nutrients.|Food
+orbital|adjective|Relating to an orbit|The satellite's orbital speed is enormous.|Science and tech
+organic|adjective|Relating to living things; grown without synthetic chemicals|They buy organic vegetables.|Food
+overhead|noun|Regular business costs such as rent and power|Working from home cut their overhead.|Money and work
+pathogen|noun|A bacterium, virus or other cause of disease|Boiling water kills most pathogens.|Body and health
+pathology|noun|The study of disease|The pathology report came back clear.|Body and health
+peninsula|noun|Land almost surrounded by water|The town sits on a narrow peninsula.|Places and travel
+pharmaceutical|adjective|Relating to medicines|She works for a pharmaceutical company.|Body and health
+photosynthesis|noun|How plants turn sunlight into food|Leaves are built for photosynthesis.|Nature and weather
+physiology|noun|The study of how living bodies work|Athletes study their own physiology.|Body and health
+portfolio|noun|A collection of investments or work samples|Her portfolio includes stocks and bonds.|Money and work
+precipitation|noun|Rain, snow, sleet or hail|Precipitation is heavy in spring.|Nature and weather
+predator|noun|An animal that hunts others for food|Owls are silent predators.|Animals
+premium|noun|An amount paid for insurance; a higher value|Their insurance premium went up.|Money and work
+prototype|noun|A first model of something, used for testing|The engineers tested the prototype.|Science and tech
+psychology|noun|The scientific study of the mind and behavior|She studied the psychology of habits.|Mind and ideas
+quarantine|noun|A period of isolation to prevent disease spreading|The ship was held in quarantine.|Body and health
+recession|noun|A period of economic decline|Many shops closed in the recession.|Money and work
+referendum|noun|A vote by the public on a single question|The town held a referendum on the park.|Society and law
+regimen|noun|A prescribed plan of diet, exercise or treatment|Her training regimen starts at dawn.|Body and health
+remission|noun|A period when a disease's symptoms ease|The patient is in remission.|Body and health
+renewable|adjective|Able to be naturally replaced, like solar or wind power|Wind is a renewable energy source.|Nature and weather
+revenue|noun|Income, especially of a business or government|Ticket sales are the main revenue.|Money and work
+rural|adjective|Relating to the countryside|They moved to a rural village.|Places and travel
+salary|noun|A fixed regular payment for work|Her salary rose after the promotion.|Money and work
+sanitation|noun|Systems for clean water and waste removal|Good sanitation prevents disease.|Body and health
+satellite|noun|An object that orbits a planet|The satellite sends weather images.|Science and tech
+sediment|noun|Material that settles at the bottom of a liquid|Sediment clouded the river after the storm.|Nature and weather
+semiconductor|noun|A material used to make computer chips|Silicon is the classic semiconductor.|Science and tech
+solvency|noun|The ability to pay one's debts|The bank's solvency was never in doubt.|Money and work
+spectrum|noun|A range of colors or of positions between extremes|Opinions covered the whole spectrum.|Science and tech
+stakeholder|noun|A person with an interest in an enterprise|Every stakeholder was invited to the meeting.|Money and work
+statute|noun|A written law|The statute limits building heights.|Society and law
+stimulus|noun|Something that causes a reaction or activity|The tax cut was a stimulus to spending.|Science and tech
+subsidy|noun|Money given to support a business or activity|Farmers receive a subsidy for wheat.|Money and work
+suburban|adjective|Relating to the residential areas outside a city|They live on a quiet suburban street.|Places and travel
+synthesis|noun|Combining parts into a whole|The essay is a synthesis of three studies.|Mind and ideas
+tariff|noun|A tax on imported goods|New tariffs raised the price of steel.|Money and work
+terrestrial|adjective|Relating to the earth or land|Terrestrial animals cannot breathe underwater.|Nature and weather
+therapeutic|adjective|Having a healing effect|Gardening can be therapeutic.|Body and health
+topography|noun|The physical features of an area|The topography is hilly and wooded.|Places and travel
+toxicology|noun|The study of poisons and their effects|The toxicology report found nothing unusual.|Science and tech
+tributary|noun|A river that flows into a larger one|Dozens of tributaries feed the river.|Places and travel
+tundra|noun|A vast, treeless arctic plain|Caribou cross the tundra each spring.|Places and travel
+urban|adjective|Relating to a city|Urban gardens are spreading.|Places and travel
+vaccine|noun|A substance that trains the body to resist disease|The vaccine prevents measles.|Body and health
+velocity|noun|Speed in a given direction|The ball left the bat at high velocity.|Science and tech
+vertebrate|noun|An animal with a backbone|Fish, birds and mammals are vertebrates.|Animals
+viscosity|noun|How thick and sticky a fluid is|Honey has high viscosity.|Science and tech
+wholesale|adjective|Selling goods in large quantities to retailers|They buy flour at wholesale prices.|Money and work

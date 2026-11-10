@@ -1,0 +1,119 @@
+anomie|noun|A sense that a society's shared values have broken down|The novel captures the anomie of a fast-changing city.|Society and law
+saudade|noun|A deep, wistful longing for something absent or lost|The old songs are full of saudade.|Feelings
+sehnsucht|noun|An intense longing for something far off or indefinable|Autumn always stirred a strange sehnsucht in her.|Feelings
+choleric|adjective|Easily angered; bad-tempered|The choleric referee shouted at both teams.|Character
+contumely|noun|Insulting language or treatment|He bore the critics' contumely with grace.|Talk and writing
+hubristic|adjective|Showing excessive pride or self-confidence|The hubristic plan ignored every warning.|Character
+pharisaical|adjective|Self-righteous and hypocritical|His pharisaical lectures fooled no one.|Character
+ataraxia|noun|A state of calm, untroubled serenity|The ancient philosophers sought ataraxia.|Feelings
+akrasia|noun|Acting against your better judgment through weakness of will|Eating the third slice of cake was pure akrasia.|Mind and ideas
+eidetic|adjective|Able to recall images in vivid, exact detail|She seemed to have an eidetic memory for maps.|Mind and ideas
+sprezzatura|noun|Effortless grace that hides the effort behind it|The pianist played with real sprezzatura.|Character
+ressentiment|noun|Lasting resentment that shapes a person's values|The essay traces how ressentiment poisons a community.|Feelings
+weltanschauung|noun|A comprehensive view of the world and life|Travel reshaped his whole weltanschauung.|Mind and ideas
+duende|noun|A mysterious power of art to move people deeply|The singer's voice had duende.|Arts and stories
+nimbus|noun|A luminous cloud or halo; a rain cloud|A nimbus of light ringed the streetlamp.|Nature and weather
+hibernal|adjective|Relating to winter|The hibernal stillness of the lake was perfect.|Nature and weather
+boreal|adjective|Of the north or the northern forests|The boreal forest stretches across Canada.|Nature and weather
+riparian|adjective|Relating to the banks of a river|Willows thrive in riparian zones.|Nature and weather
+lacustrine|adjective|Relating to lakes|Lacustrine plants filled the shallows.|Nature and weather
+nemoral|adjective|Relating to a grove or woods|They wandered through a nemoral glade.|Nature and weather
+paludal|adjective|Relating to marshes|The paludal air was thick with insects.|Nature and weather
+benthic|adjective|Relating to the bottom of a sea or lake|Benthic creatures crawl across the seafloor.|Nature and weather
+abyssal|adjective|Relating to the deepest parts of the ocean|Abyssal fish glow in total darkness.|Nature and weather
+alpenglow|noun|The rosy light on mountaintops near sunrise or sunset|Alpenglow turned the peaks pink.|Nature and weather
+virga|noun|Rain that evaporates before reaching the ground|Gray streaks of virga hung below the clouds.|Nature and weather
+graupel|noun|Soft, small pellets of snow|Graupel bounced off the windshield.|Nature and weather
+sough|verb|To make a soft rushing or sighing sound, as wind|The wind soughed through the pines.|Senses
+mephitic|adjective|Foul-smelling; noxious|A mephitic smell rose from the drain.|Senses
+nidorous|adjective|Smelling of cooked or burnt meat|The nidorous air of the barbecue drifted over the fence.|Senses
+stridulate|verb|To make a shrill sound by rubbing body parts, as crickets do|Crickets stridulate through the summer night.|Senses
+euphonious|adjective|Pleasing to the ear|The poem's euphonious lines read like music.|Senses
+glaucous|adjective|Of a pale gray-green or blue-green|The cabbage leaves had a glaucous bloom.|Look and shape
+smaragdine|adjective|Emerald green|The smaragdine sea glittered below the cliffs.|Look and shape
+fulvous|adjective|Reddish yellow; tawny|A fulvous fox crossed the road.|Look and shape
+viridescent|adjective|Slightly green; turning green|The viridescent copper roof gleamed after rain.|Look and shape
+chatoyant|adjective|Having a shifting, cat's-eye luster|The chatoyant stone flashed as it turned.|Look and shape
+umbral|adjective|Relating to shadow|The umbral corners of the hall hid old portraits.|Look and shape
+vulpine|adjective|Like a fox; crafty|He gave a vulpine smile.|Animals
+ursine|adjective|Like a bear|His ursine hug lifted me off the ground.|Animals
+corvine|adjective|Relating to crows and ravens|Corvine intelligence rivals that of apes.|Animals
+leonine|adjective|Like a lion|He had a leonine mane of white hair.|Animals
+ophidian|adjective|Relating to snakes; snakelike|The road wound in ophidian curves.|Animals
+piscine|adjective|Relating to fish|The aquarium's piscine residents ignored us.|Animals
+apian|adjective|Relating to bees|The garden hummed with apian activity.|Animals
+cervine|adjective|Relating to deer|The fawn's cervine grace was a joy to watch.|Animals
+hircine|adjective|Relating to goats; goatlike|A hircine odor hung over the barn.|Animals
+litotes|noun|Understatement made by denying the opposite, like "not bad"|Calling the storm "not a drizzle" is litotes.|Talk and writing
+anaphora|noun|Repeating a word at the start of successive lines|"We shall fight... we shall fight" uses anaphora.|Talk and writing
+chiasmus|noun|A reversal of words in parallel phrases|"Work to live, don't live to work" is a chiasmus.|Talk and writing
+aposiopesis|noun|Breaking off in the middle of a sentence for effect|"Why, you little..." is an aposiopesis.|Talk and writing
+hendiadys|noun|Expressing one idea with two nouns joined by "and"|"Nice and warm" is a hendiadys.|Talk and writing
+bildungsroman|noun|A novel about a young person's growth into adulthood|The book is a classic bildungsroman.|Arts and stories
+ekphrasis|noun|A vivid literary description of a work of art|The poem is an ekphrasis of a painted harbor.|Arts and stories
+kenning|noun|A poetic compound phrase, like "whale-road" for the sea|Old English poems are rich in kennings.|Talk and writing
+euphuism|noun|An elaborate, artificial style of writing|The speech drowned in euphuism.|Talk and writing
+macaronic|adjective|Mixing words from two or more languages, often playfully|The song's macaronic chorus mixes Latin and English.|Talk and writing
+screed|noun|A long, ranting piece of writing|He posted a screed about parking rules.|Talk and writing
+lexiphanic|adjective|Using pretentious words to show off|His lexiphanic emails needed a dictionary.|Talk and writing
+apophenia|noun|The tendency to see meaningful patterns in random things|Apophenia makes us find faces in clouds.|Mind and ideas
+pareidolia|noun|Seeing faces or shapes in random patterns|Pareidolia turned the outlet into a surprised face.|Mind and ideas
+casuistry|noun|Clever but misleading reasoning about right and wrong|His casuistry could justify anything.|Mind and ideas
+apodictic|adjective|Clearly and undeniably true|The proof was apodictic.|Mind and ideas
+aporia|noun|A puzzle or contradiction that leaves you at a loss|The dialogue ends in aporia.|Mind and ideas
+gnosis|noun|Knowledge, especially deep or intuitive insight|She spoke of gardening as a kind of gnosis.|Mind and ideas
+ratiocination|noun|Careful, methodical reasoning|The detective's ratiocination cracked the case.|Mind and ideas
+syncretism|noun|The blending of different beliefs or styles|The city's food is a delicious syncretism.|Mind and ideas
+entelechy|noun|The full realization of a thing's potential|The oak is the entelechy of the acorn.|Mind and ideas
+haecceity|noun|The quality that makes a thing uniquely itself|Each snowflake has its own haecceity.|Mind and ideas
+qualia|noun|The felt qualities of experience, like the redness of red|No description captures the qualia of tasting a peach.|Mind and ideas
+telos|noun|The ultimate aim or purpose|The telos of a lighthouse is to guide ships home.|Mind and ideas
+kairos|noun|The right or opportune moment|She waited for the kairos to ask.|Time and change
+gerontocracy|noun|Government by old people|The club had become a gerontocracy.|Society and law
+kleptocracy|noun|Government by leaders who steal from the public|The revolution toppled a kleptocracy.|Society and law
+plutocracy|noun|Government by the wealthy|Critics called the system a plutocracy.|Society and law
+ochlocracy|noun|Rule by a mob|The meeting descended into ochlocracy.|Society and law
+irredentism|noun|A movement to reclaim territory once held|Irredentism fueled the border dispute.|Society and law
+suzerainty|noun|Control by one state over another's foreign affairs|The kingdom lived under foreign suzerainty.|Society and law
+primogeniture|noun|The right of the firstborn to inherit|Primogeniture left the farm to the eldest son.|Society and law
+diurnal|adjective|Active in the daytime; daily|Squirrels are diurnal animals.|Time and change
+senescence|noun|The process of growing old|Leaves turn gold in their senescence.|Time and change
+quondam|adjective|That once was; former|The quondam mill is now a bookshop.|Time and change
+heretofore|adverb|Before now|The path was heretofore unknown.|Time and change
+yore|noun|Long ago|In days of yore, knights rode these hills.|Time and change
+betimes|adverb|Early; in good time|We rose betimes to catch the tide.|Time and change
+aeonian|adjective|Lasting for an immeasurably long time|The aeonian silence of the desert humbled them.|Time and change
+nostrum|noun|A favorite but unproven remedy or scheme|Every candidate had a nostrum for traffic.|Mind and ideas
+panoply|noun|An impressive, complete array|The festival offered a panoply of music.|Things and tools
+accoutrements|noun|Additional items of dress or equipment|She packed the accoutrements of a camping trip.|Things and tools
+impedimenta|noun|Baggage and equipment that slows travel|They hauled their impedimenta up the trail.|Things and tools
+reliquary|noun|A container for holy relics or treasured objects|The silver reliquary sat behind glass.|Things and tools
+orrery|noun|A clockwork model of the solar system|Brass planets circled the orrery.|Things and tools
+astrolabe|noun|An old instrument for measuring the stars' positions|The navigator lifted his astrolabe to the sky.|Things and tools
+clepsydra|noun|An ancient water clock|The clepsydra dripped away the hours.|Things and tools
+tchotchke|noun|A small decorative trinket|Her shelves are crowded with tchotchkes.|Things and tools
+esculent|adjective|Fit to be eaten|Foragers learn which mushrooms are esculent.|Food
+potable|adjective|Safe to drink|The spring water is potable.|Food
+viand|noun|An item of food, especially a choice one|The table groaned with rich viands.|Food
+victuals|noun|Food and provisions|The cook loaded victuals for the voyage.|Food
+refection|noun|Refreshment with food and drink; a light meal|After the hike we took our refection by the stream.|Food
+collation|noun|A light meal; also, careful comparison of texts|A cold collation was served at noon.|Food
+sinistral|adjective|Left-handed; on the left side|The sinistral pitcher baffled the hitters.|Body and health
+dextral|adjective|Right-handed; on the right side|Most snail shells spiral in a dextral direction.|Body and health
+proprioception|noun|The body's sense of its own position and movement|Proprioception lets you touch your nose with closed eyes.|Body and health
+sternutation|noun|The act of sneezing|Pepper set off a fit of sternutation.|Body and health
+oscitation|noun|The act of yawning|His oscitation spread around the room.|Body and health
+singultus|noun|A hiccup|A loud singultus interrupted the toast.|Body and health
+horripilation|noun|Goosebumps; hair standing on end|The eerie music caused horripilation.|Body and health
+perambulate|verb|To walk through or around in a leisurely way|They perambulated the gardens after dinner.|Movement and action
+divagate|verb|To wander or stray, especially from a subject|The speaker divagated into stories about her cat.|Movement and action
+errant|adjective|Wandering; straying from the proper course|An errant golf ball cracked the window.|Movement and action
+caracole|verb|Of a horse, to make a half turn to the left or right|The horse caracoled across the arena.|Movement and action
+gambol|verb|To run or jump playfully|Lambs gamboled in the meadow.|Movement and action
+lollop|verb|To move in an ungainly, bounding way|The puppy lolloped toward us.|Movement and action
+saltation|noun|Leaping or jumping; a sudden change|The kangaroo's saltation covers great distances.|Movement and action
+demesne|noun|Land attached to a manor; a realm|The estate's demesne stretched to the river.|Places and travel
+purlieu|noun|The outskirts or surroundings of a place|They lived in the quiet purlieus of the city.|Places and travel
+bourn|noun|A boundary; a small stream|The bourn marked the edge of the farm.|Places and travel
+fastness|noun|A secure place well protected by nature|The rebels retreated to their mountain fastness.|Places and travel
+eyrie|noun|An eagle's nest built high up; a lofty home|Their apartment is an eyrie above the city.|Places and travel

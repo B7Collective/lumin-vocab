@@ -1,0 +1,317 @@
+aberrant|Engineers traced the aberrant reading to a loose wire.
+abstraction|"Freedom" is an abstraction that each generation defines anew.
+acculturation|Immigrant families often go through acculturation over a generation.
+adjudicate|A neutral panel will adjudicate the dispute.
+aegis|The festival runs under the aegis of the city arts council.
+agnostic|The software is platform agnostic and runs anywhere.
+allegory|The fable is an allegory about greed.
+ambit|Zoning falls within the ambit of the planning board.
+amortize|They chose to amortize the equipment cost over five years.
+analogous|A cell membrane is analogous to a city wall.
+anomaly|The warm January was a statistical anomaly.
+antecedent|In "she lost her keys," the antecedent of "her" is "she."
+antithesis|Rushing is the antithesis of good baking.
+apposite|She found an apposite quote for her toast.
+arbitrage|Traders profit from arbitrage between two markets.
+ascribe|Historians ascribe the bridge's design to an unknown engineer.
+attenuate|Thick walls attenuate traffic noise.
+attrition|Staff attrition rose after the move.
+autarky|The isolated nation pursued a policy of autarky.
+axiom|"Measure twice, cut once" is a carpenter's axiom.
+bifurcate|The trail will bifurcate at the old pine.
+bricolage|Her apartment is a bricolage of thrift-store finds.
+canonical|The canonical version of the story ends differently.
+caveat|One caveat: the offer ends Friday.
+chauvinism|The essay criticizes national chauvinism in sports coverage.
+circumscribe|The rules circumscribe what volunteers can do.
+codify|The club decided to codify its unwritten rules.
+cognition|Sleep affects cognition and memory.
+cognizant|We are cognizant of the risks.
+commensurable|The two test scales are not directly commensurable.
+commodify|Critics argue apps commodify our attention.
+conflate|Don't conflate weather with climate.
+confound|Missing data can confound the results.
+construe|How you construe her silence matters.
+contingent|The picnic is contingent on the weather.
+corollary|A corollary of more cars is more traffic.
+corpus|The researchers built a corpus of children's books.
+correlate|Hours of practice correlate with skill.
+credence|The new evidence lends credence to her theory.
+debunk|The museum exhibit aims to debunk common myths.
+decouple|Engineers worked to decouple the two systems.
+demarcate|Painted lines demarcate each parking space.
+denotation|The denotation of "home" is simple; its connotations are not.
+deprecate|The company will deprecate the old app next year.
+desideratum|Speed was the chief desideratum for the new system.
+determinism|The novel wrestles with determinism and free will.
+diachronic|A diachronic study tracks a word across centuries.
+dialectic|The seminar moved through a dialectic of argument and reply.
+diaspora|The city's diaspora communities keep old recipes alive.
+diffuse|Frosted glass helps diffuse harsh light.
+discourse|Public discourse has grown louder online.
+discrete|The course is split into discrete units.
+dogma|The scientist questioned every dogma in her field.
+egalitarian|The co-op runs on egalitarian principles.
+elide|Casual speech tends to elide sounds, as in "gonna."
+emergent|Flocking is an emergent behavior of simple rules.
+encapsulate|The photo seems to encapsulate the whole summer.
+entropy|Left alone, a teenager's room tends toward entropy.
+epistemology|Epistemology asks how we know what we know.
+epitomize|The tiny cafe seems to epitomize the neighborhood.
+erudition|His erudition showed in every footnote.
+eschew|Many cooks eschew shortcuts on holidays.
+ethos|The startup's ethos values speed over polish.
+etiology|Doctors are still studying the etiology of the condition.
+etymology|The etymology of "salary" may trace back to salt.
+exegesis|The pastor's exegesis focused on a single verse.
+exemplar|The building is an exemplar of green design.
+exigency|The exigency of the storm forced quick decisions.
+explicate|The professor will explicate the poem line by line.
+extrapolate|We can't extrapolate from just two data points.
+falsifiable|A good scientific claim is falsifiable.
+fiduciary|Trustees have a fiduciary duty to beneficiaries.
+fungible|Cash is fungible; a family heirloom is not.
+gestalt|The gestalt of the city mattered more than any single building.
+hermeneutics|The course on hermeneutics covers how to read old texts.
+heterogeneous|The class is heterogeneous in age and background.
+heuristic|A simple heuristic: if in doubt, leave it out.
+historiography|The historiography of the war has changed greatly.
+holistic|The school takes a holistic view of each student.
+homogeneous|Stir until the batter is homogeneous.
+iconography|The iconography of the old maps includes sea monsters.
+idiom|"Break a leg" is a theater idiom.
+immanent|Some philosophers see meaning as immanent in everyday life.
+impetus|The flood provided the impetus for new drains.
+imprimatur|The study carries the imprimatur of the national academy.
+incipient|Doctors caught the incipient infection early.
+incremental|The changes were incremental but added up.
+indeterminate|The puppy is of indeterminate breed.
+induction|Induction moves from examples to a general rule.
+inference|My inference from the wet streets is that it rained.
+instantiate|The program will instantiate a new window.
+interdisciplinary|The lab is interdisciplinary, mixing biology and computing.
+interlocutor|She was a sharp interlocutor in the debate.
+interpolate|We can interpolate the missing values from the trend.
+intrinsic|Curiosity has intrinsic value.
+juxtaposition|The juxtaposition of old and new buildings is striking.
+lacuna|The archive has a lacuna for the war years.
+lexicon|"Selfie" entered the lexicon in the 2010s.
+liminal|Airports are liminal spaces between places.
+locus|The kitchen is the locus of family life.
+magnitude|Nobody grasped the magnitude of the problem at first.
+mandate|The voters gave her a clear mandate.
+marginalia|Her marginalia filled every page of the novel.
+metonymy|Calling a business "the suits" is metonymy.
+milieu|He thrived in the milieu of jazz clubs.
+modality|The course is offered in an online modality.
+monolithic|The company is not as monolithic as it looks.
+motif|Birds are a recurring motif in her paintings.
+nexus|The station is the nexus of three rail lines.
+normative|Etiquette guides are normative; they say what should happen.
+oligarchy|A few families ran the town like an oligarchy.
+ontology|The ontology of a database defines its categories.
+orthodoxy|She challenged the orthodoxy of the old school.
+oscillate|Moods can oscillate wildly during exams.
+parameter|Set the budget as the main parameter.
+parity|The league wants competitive parity.
+parse|It took a minute to parse the long sentence.
+pedagogy|Her pedagogy relies on questions, not lectures.
+periphery|Small farms lie on the periphery of the city.
+permeate|The smell of coffee began to permeate the office.
+peruse|Peruse the menu while I find parking.
+phenomenology|Phenomenology studies experience as it is lived.
+polymath|The polymath painted, built bridges and wrote music.
+postulate|Scientists postulate a ninth planet.
+pragmatism|Pragmatism guided their choice of car.
+precept|"Do no harm" is a medical precept.
+preclude|Rain does not preclude the parade.
+predicate|In grammar, the predicate tells what the subject does.
+prescriptive|Style guides tend to be prescriptive.
+primacy|The study shows the primacy of sleep for learning.
+promulgate|The agency will promulgate new safety rules.
+propagate|Gardeners propagate roses from cuttings.
+proponent|She is a proponent of four-day weeks.
+provenance|The painting's provenance is well documented.
+proviso|He agreed, with the proviso that he'd leave early.
+proxy|Test scores are a rough proxy for learning.
+purview|Hiring falls outside my purview.
+qualitative|The survey gathered qualitative feedback.
+quantify|It's hard to quantify happiness.
+rationale|Explain the rationale behind your choice.
+recapitulate|Let me recapitulate the key points.
+reciprocity|Friendship depends on reciprocity.
+redress|The new law aims to redress old wrongs.
+reductive|It's reductive to call the novel just a romance.
+reify|Statistics can reify categories that are really fuzzy.
+relativism|Moral relativism was the topic of the seminar.
+replicate|Other labs failed to replicate the results.
+rhetoric|The campaign was heavy on rhetoric, light on plans.
+rubric|The teacher shared the grading rubric.
+schema|Children build a schema for "dog" from many examples.
+semantic|The debate was really a semantic one.
+semiotics|Semiotics studies how signs carry meaning.
+skepticism|Treat miracle diets with healthy skepticism.
+sovereignty|The island nation guards its sovereignty.
+stipulate|The lease does stipulate no pets.
+stratify|Water in deep lakes can stratify by temperature.
+subsume|The new department will subsume two old ones.
+substantiate|Can you substantiate that claim?
+supersede|Version three will supersede version two.
+syllogism|A syllogism draws a conclusion from two premises.
+symbiosis|Clownfish and anemones live in symbiosis.
+synchronic|A synchronic study looks at language at one moment.
+synecdoche|Calling a car "wheels" is synecdoche.
+synergy|The two teams found real synergy.
+systemic|The delays point to a systemic problem.
+tacit|There was a tacit understanding not to mention it.
+taxonomy|The library uses a taxonomy of subjects.
+teleology|The essay argues against teleology in evolution.
+tenable|Her position was no longer tenable.
+tenet|Honesty is a core tenet of the club.
+thesis|State your thesis in the first paragraph.
+transcend|Great music can transcend language.
+trope|The "chosen one" is a familiar fantasy trope.
+unilateral|The unilateral decision angered the partners.
+untenable|The crowded schedule became untenable.
+utilitarian|The building's design is purely utilitarian.
+zeitgeist|The novel captured the zeitgeist of the nineties.
+accrue|Interest will accrue monthly.
+adjunct|She works as an adjunct at two colleges.
+aggregate|The aggregate score decides the winner.
+amalgam|The city's food is an amalgam of cultures.
+ambivalence|She felt ambivalence about the promotion.
+anachronistic|The castle's satellite dish looked anachronistic.
+annotate|Annotate the article with your questions.
+anthropocentric|The essay critiques an anthropocentric view of nature.
+antinomy|The paradox presents a classic antinomy.
+apologia|The memoir reads as an apologia for his choices.
+apprise|Please apprise me of any changes.
+arbiter|She is the final arbiter of the menu.
+aspersion|He cast aspersion on the results without evidence.
+asymmetry|The asymmetry of the design gives it energy.
+attest|Many travelers can attest to the hotel's charm.
+augur|Early ticket sales augur well for the show.
+austerity|Austerity measures cut the city budget.
+bellwether|The state is a bellwether in national elections.
+calibrate|Calibrate the scale before weighing.
+cartography|Satellites changed cartography forever.
+catalyze|One small donation helped catalyze the campaign.
+categorical|She issued a categorical denial.
+causal|The study found no causal link.
+circuitous|We took a circuitous route to avoid traffic.
+cogent|She made a cogent case for the new park.
+collegial|The office has a collegial atmosphere.
+compendium|The book is a compendium of folk remedies.
+complicit|By staying silent, he became complicit.
+concordance|A concordance lists every word in a text.
+conjecture|The final chapter is pure conjecture.
+constituent|Flour is the main constituent of the dough.
+contiguous|The contiguous United States excludes Alaska and Hawaii.
+contravene|The plan would contravene safety codes.
+convergence|There's a convergence of opinion on the issue.
+corroborate|A second witness could corroborate her story.
+cosmology|Modern cosmology began with the discovery of expanding galaxies.
+covenant|The neighborhood covenant bans purple houses.
+deontology|Deontology judges actions by duties, not outcomes.
+devolve|Power will devolve to local councils.
+didactic|The children's show is too didactic.
+disabuse|Let me disabuse you of that idea.
+disinterested|A disinterested judge has nothing to gain.
+disparity|There's a wide disparity in prices.
+distill|Distill your argument into one sentence.
+divergent|The siblings chose divergent careers.
+dossier|The reporter kept a dossier on the company.
+efficacy|The study tested the efficacy of the new vaccine.
+empirical|We need empirical evidence, not opinions.
+encumber|Too many rules encumber small businesses.
+endogenous|The model treats prices as endogenous.
+enfranchise|The amendment would enfranchise younger voters.
+entail|What does the job entail?
+enunciate|Actors learn to enunciate every syllable.
+epigraph|The novel opens with an epigraph from a poem.
+epiphenomenon|Some argue consciousness is an epiphenomenon of the brain.
+equilibrium|The market eventually found equilibrium.
+equivocal|The test results were equivocal.
+erudite|The erudite lecture covered three languages.
+esoteric|The forum discusses esoteric coffee techniques.
+exculpatory|New exculpatory evidence emerged.
+exogenous|The crash was caused by an exogenous shock.
+exponential|The app saw exponential growth.
+extant|Only two copies of the map are extant.
+extraneous|Remove extraneous details from your summary.
+fallacious|The argument rests on a fallacious premise.
+granular|The report gives granular data by zip code.
+hegemony|The empire's hegemony lasted two centuries.
+hierarchical|Libraries use a hierarchical system of categories.
+iconoclastic|Her iconoclastic designs broke every rule.
+ideology|The candidates differ in ideology.
+idiosyncratic|His idiosyncratic spelling puzzled readers.
+impute|Don't impute bad motives without evidence.
+inalienable|Some rights are considered inalienable.
+incommensurate|The punishment was incommensurate with the offense.
+indemnify|The contract will indemnify the venue against damage.
+indoctrinate|Good schools teach thinking, not indoctrinate.
+inscrutable|Her expression was inscrutable.
+iterative|Design is an iterative process.
+judicious|A judicious use of salt improves any dish.
+jurisprudence|The case reshaped privacy jurisprudence.
+legitimacy|The election's legitimacy was never in doubt.
+longitudinal|A longitudinal study followed the twins for decades.
+macrocosm|The city is a macrocosm of the neighborhood's problems.
+manifesto|The artists published a bold manifesto.
+meritocracy|The school claims to be a meritocracy.
+methodology|Explain your methodology in section two.
+microcosm|The classroom is a microcosm of society.
+mnemonic|"Every Good Boy Does Fine" is a mnemonic for music notes.
+morphology|The morphology of the leaves helps identify the tree.
+mutable|Fashion is endlessly mutable.
+nebulous|The plan was nebulous at best.
+neologism|"Podcast" was once a neologism.
+nihilism|The play flirts with nihilism but ends hopefully.
+nomenclature|Chemical nomenclature follows strict rules.
+obfuscate|Jargon can obfuscate a simple idea.
+obsolescence|Planned obsolescence shortens the life of gadgets.
+orthogonal|That issue is orthogonal to our discussion.
+palliative|Palliative care focuses on comfort.
+paradigm|The internet created a new paradigm for shopping.
+pernicious|Gossip can have a pernicious effect on teams.
+perspicuous|Her perspicuous explanation cleared up the confusion.
+plurality|She won a plurality but not a majority.
+polarize|The issue tends to polarize voters.
+posit|Some scientists posit that the moon formed from a collision.
+posterity|Save the letters for posterity.
+precedent|The ruling set a precedent.
+preeminent|She is the preeminent expert on bees.
+prescient|His warnings proved prescient.
+presuppose|The question seems to presuppose an answer.
+prognosis|The vet's prognosis was hopeful.
+proliferation|The proliferation of scooters changed downtown.
+proposition|Moving abroad is a big proposition.
+provisional|The schedule is provisional.
+ramification|Consider every ramification before you sign.
+recondite|The book explores recondite corners of history.
+rectitude|The judge was known for moral rectitude.
+regressive|Critics call the sales tax regressive.
+reiterate|Let me reiterate: no phones during the test.
+remunerate|The company will remunerate travel costs.
+reparation|The town paid reparation for the damage.
+repository|The library is a repository of local history.
+retrospective|The museum held a retrospective of her work.
+salient|The salient point is the cost.
+secular|The holiday has both religious and secular traditions.
+sedentary|A sedentary job calls for regular walks.
+sequester|Forests sequester carbon in their wood.
+sophistry|His argument was clever sophistry.
+specious|The ad made a specious claim about health.
+spurious|The link turned out to be spurious.
+stochastic|Weather models are stochastic.
+subjective|Taste in music is subjective.
+subversive|The comic strip was quietly subversive.
+surrogate|The aunt acted as a surrogate parent.
+tautology|"Free gift" is a tautology.
+tenuous|The connection between the events is tenuous.
+trajectory|Her career trajectory has been steady.
+ubiquitous|Coffee shops are ubiquitous downtown.
+verisimilitude|The set's verisimilitude fooled visitors.
+volatility|Market volatility made investors nervous.
+wherewithal|They lacked the wherewithal to fix the roof.

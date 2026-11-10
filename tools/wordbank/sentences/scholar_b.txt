@@ -1,0 +1,210 @@
+anguish|The lost dog's owner was in anguish all night.
+despair|The team refused to give in to despair.
+giddy|Winning the raffle left her giddy.
+indignation|The unfair call stirred indignation in the stands.
+perturbed|He seemed perturbed by the silence.
+smug|The smug cat sat in the warm laundry basket.
+sullen|He gave a sullen shrug and said nothing.
+ecstatic|The crowd was ecstatic at the final whistle.
+dread|I felt a sense of dread before the dentist.
+disgruntled|Disgruntled fans booed the late kickoff.
+aghast|She stared aghast at the flooded basement.
+torrent|A torrent of questions followed the announcement.
+deluge|We got a deluge of emails after the post.
+drought|Crops withered during the long drought.
+monsoon|Streets flood during monsoon season.
+foliage|Thick foliage hid the trail.
+canopy|A striped canopy shaded the market stall.
+crevice|Moss grew in every crevice of the wall.
+ravine|A rope bridge crossed the ravine.
+overcast|An overcast sky is best for photos of faces.
+sleet|Sleet stung our faces on the walk home.
+thicket|A rabbit darted into a bramble thicket.
+geyser|A geyser of water burst from the broken pipe.
+lichen|Orange lichen covered the gravestones.
+squall|The squall passed as quickly as it came.
+eclipse|The new phone may eclipse last year's model.
+ember|One glowing ember drifted up from the fire.
+plumage|The parrot's plumage was bright green.
+marsupial|The opossum is North America's only marsupial.
+rodent|A beaver is a large rodent.
+primate|The lemur is a small primate from Madagascar.
+crustacean|A shrimp is a tiny crustacean.
+mollusk|A clam is a mollusk with two shells.
+livestock|The fair had a livestock show.
+forage|Deer forage in the orchard at dusk.
+graze|Horses graze in the meadow.
+molt|Chickens molt in the fall and look scruffy.
+spawn|Frogs spawn in shallow ponds.
+roost|Pigeons roost under the bridge.
+domesticate|People began to domesticate goats long ago.
+pollinate|Bats pollinate some desert plants.
+acrid|The acrid smell of burnt toast filled the kitchen.
+aromatic|Aromatic spices simmered in the pot.
+raspy|A raspy cough kept him home.
+resonant|The singer's resonant voice filled the hall.
+piercing|She gave him a piercing stare.
+putrid|The putrid trash can attracted flies.
+rancid|Rancid oil ruined the batch of cookies.
+savor|Savor the last day of summer.
+timbre|Each voice in the choir has its own timbre.
+tactile|Clay is a tactile way to learn shapes.
+palpable|The tension before the final was palpable.
+audible|There was an audible sigh from the audience.
+inaudible|His whisper was inaudible from the back row.
+tepid|The tea had gone tepid.
+grating|The grating noise of chalk made us cringe.
+protagonist|The protagonist is a girl who can talk to trees.
+antagonist|In the film, the antagonist is a jealous robot.
+narrator|The narrator speaks directly to the reader.
+stanza|Read the second stanza aloud.
+satire|The show is a satire of reality TV.
+parody|Their parody of the commercial went viral.
+genre|Fantasy is her favorite genre.
+mosaic|The pool floor had a mosaic of sea turtles.
+crescendo|The cheering rose to a crescendo.
+tempo|The drummer sped up the tempo.
+ballad|He sang a slow ballad on the guitar.
+memoir|The chef's memoir is full of recipes.
+prologue|The prologue takes place a hundred years earlier.
+epilogue|In the epilogue, the twins are grown up.
+climax|The storm scene is the climax of the book.
+foreshadow|Dark clouds foreshadow trouble in the story.
+metaphor|"The classroom was a zoo" is a metaphor.
+simile|"Quiet as a mouse" is a simile.
+alliteration|"Peter Piper picked peppers" is full of alliteration.
+personification|Saying the sun smiled is personification.
+molecule|A sugar molecule is made of many atoms.
+compound|Water is a compound of hydrogen and oxygen.
+density|Lead has a high density.
+combustion|Combustion releases heat and light.
+condensation|Condensation fogged up the bathroom mirror.
+conductor|Metal spoons are good heat conductors; one conductor can get hot fast.
+insulator|Foam is a good insulator.
+particle|A particle of dust floated in the light.
+nucleus|The nucleus holds most of an atom's mass.
+wavelength|Radio waves have a long wavelength.
+inertia|Inertia keeps a rolling ball moving.
+momentum|The campaign gained momentum.
+specimen|The rock specimen had shiny crystals.
+organism|A single-celled organism is too small to see.
+microbe|A microbe can live in boiling springs.
+filament|A spider's filament is stronger than it looks.
+alloy|Brass is an alloy of copper and zinc.
+cartilage|Sharks have skeletons of cartilage.
+tendon|The Achilles tendon is at the back of your ankle.
+ligament|Stretching protects each ligament.
+marrow|Soup bones are full of marrow.
+artery|The main artery from the heart is the aorta.
+respiration|Plants also use respiration.
+reflex|The doctor tapped my knee to test a reflex.
+adrenaline|A rush of adrenaline helped him lift the log.
+dehydrated|The hikers were dehydrated by noon.
+sprain|An ankle sprain kept her off the court.
+fracture|The fall caused a small fracture in his wrist.
+contagious|Her laugh was contagious.
+abdomen|A spider's abdomen is behind its legs.
+cranium|The cranium protects the brain.
+condiment|Ketchup is the most popular condiment here.
+morsel|The bird snatched every morsel of bread.
+ration|Hikers had to ration their water.
+famished|By dinner, the kids were famished.
+glutton|He's a glutton for punishment, running in the heat.
+palate|Spicy food burned the roof of my palate.
+entree|She chose the fish as her entree.
+delectable|The bakery window was full of delectable tarts.
+succulent|The succulent peaches dripped juice.
+gourmet|They opened a gourmet popcorn shop.
+braise|Braise the carrots in butter and broth.
+ferment|Grapes ferment into vinegar if left out.
+perishable|Pack perishable food with ice.
+staple|Bread is a staple in many homes.
+delicacy|In some places, fried crickets are a delicacy.
+brine|Soak the chicken in brine overnight.
+merchandise|The band sold merchandise after the show.
+inventory|The store's inventory ran low before the holiday.
+retail|The retail price is higher than the wholesale cost.
+invest|It pays to invest time in good habits.
+thrifty|Thrifty shoppers love yard sales.
+bankrupt|The airline went bankrupt last year.
+debt|They worked hard to get out of debt.
+apprentice|The baker's apprentice shaped the rolls.
+vocation|Nursing felt like her vocation.
+livelihood|The storm threatened the farmers' livelihood.
+barter|Kids barter snacks at lunch.
+commodity|Oil is a valuable commodity.
+currency|The yen is Japan's currency.
+auction|The old guitar sold at auction.
+salvage|Divers tried to salvage the ship's bell.
+quota|Each picker has a daily quota.
+hamlet|A tiny hamlet sat at the foot of the hills.
+outskirts|The farm lies on the outskirts of town.
+province|The province is famous for maple syrup.
+frontier|The frontier town had one dusty street.
+fjord|Cliffs rise straight up from the fjord.
+isthmus|A narrow isthmus links the two islands.
+savanna|Lions rest in the shade on the savanna.
+steppe|The steppe stretched flat for miles.
+cove|Pirates once hid in this cove.
+inlet|Kayakers paddled into a quiet inlet.
+vicinity|Is there a pharmacy in the vicinity?
+citadel|The citadel overlooks the old harbor.
+haven|The library is a haven for readers.
+bazaar|The bazaar was crowded with shoppers.
+itinerary|The itinerary includes a boat tour.
+excursion|We took an excursion to the glacier.
+pilgrimage|Fans make a pilgrimage to the author's home.
+nomad|A nomad carries home on his back.
+apparatus|The diver checked her breathing apparatus.
+mechanism|The lock's mechanism was rusty.
+gauge|The tire gauge showed low pressure.
+chisel|He used a chisel to carve the wood.
+anvil|The blacksmith hammered on the anvil.
+winch|A winch pulled the car from the ditch.
+vessel|The cargo vessel docked at noon.
+receptacle|Toss the bottle in the recycling receptacle.
+relic|The sword is a relic of the old kingdom.
+trinket|She bought a trinket at the fair.
+heirloom|The ring is a family heirloom.
+memento|She kept a shell as a memento of the trip.
+sieve|Strain the pasta through a sieve.
+tripod|Set the telescope on a tripod.
+kiln|The pottery class fired their mugs in the kiln.
+loom|The rug was woven on a wooden loom.
+antiquity|The statue dates back to antiquity.
+chronicle|The film is a chronicle of one family.
+epoch|The ice age was a cold epoch.
+interval|Take a short break at each interval.
+prehistoric|Prehistoric people hunted mammoths.
+medieval|Knights in medieval times wore armor.
+millennium|The church is almost a millennium old.
+sporadic|We heard sporadic barking during the night.
+simultaneous|The two bells gave a simultaneous ring.
+belated|He sent a belated thank-you note.
+interim|The interim principal ran the school until spring.
+aftermath|In the aftermath of the storm, neighbors cleaned up together.
+tyranny|The story is about a village escaping tyranny.
+monarchy|Britain is a monarchy with a parliament.
+verdict|My verdict: the pizza is excellent.
+testimony|The witness gave testimony for an hour.
+alliance|The two clubs formed an alliance for the fair.
+propaganda|Old propaganda posters hang in the museum.
+civic|Picking up litter is a civic act.
+curfew|Campers have a ten o'clock curfew.
+heritage|The festival celebrates Irish heritage.
+arrogant|The arrogant player refused to pass the ball.
+meek|The meek lamb followed the flock.
+earnest|She gave an earnest apology.
+conceited|He's talented but not conceited.
+cynical|She grew cynical about free prizes.
+pompous|The pompous critic used big words to sound smart.
+malicious|A malicious virus deleted the files.
+assertive|An assertive goalie directs the defense.
+reserved|He's reserved but very funny once you know him.
+banter|Friendly banter filled the locker room.
+rebuke|The coach's rebuke was short and sharp.
+jargon|Computer jargon confused my grandpa.
+slang|Surfers have their own slang.
+verbatim|She copied the poem verbatim.
+paraphrase|Paraphrase the quote in your own words.
+euphemism|"Let go" is a euphemism for "fired."

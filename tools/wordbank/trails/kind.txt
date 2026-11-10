@@ -1,0 +1,30 @@
+# kind|Kind Words|Compliments worth knowing, and worth saying out loud|all|1|Character
+thoughtful
+gracious
+genuine
+radiant
+resilient
+considerate
+witty
+brilliant
+dependable
+generous
+courageous|adjective|Brave in the face of danger or difficulty|It was courageous to tell the truth.
+inspiring|adjective|Filling others with the urge to do something good|Her speech was inspiring.
+patient
+wise
+charming|adjective|Very pleasant and delightful|What a charming little garden.||0
+delightful|adjective|Giving great pleasure|We had a delightful afternoon.||0
+insightful|adjective|Showing a deep, clear understanding|That was an insightful question.||2
+magnanimous
+kindhearted|adjective|Having a kind and caring nature|The kindhearted neighbor shoveled our walk.||0
+steadfast
+empathetic|adjective|Able to understand and share others' feelings|An empathetic friend listens first.||2
+admirable
+sincere
+upbeat|adjective|Cheerful and hopeful|Her upbeat attitude lifted the team.
+warmhearted|adjective|Kind, friendly and generous|Our warmhearted host fed everyone twice.
+selfless|adjective|Caring more about others than yourself|The firefighter's selfless act saved the dog.
+trustworthy|adjective|Able to be relied on to be honest|A trustworthy friend keeps secrets.
+conscientious
+humble

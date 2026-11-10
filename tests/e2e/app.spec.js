@@ -17,6 +17,15 @@ async function onboard(page, { name = "Alex", role = "An adult" } = {}) {
   await expect(page.locator(".words .wword")).toBeVisible();
 }
 
+// Answer whatever question is showing, wrongly (tiles in their scrambled order are never the word)
+async function answerWrong(page) {
+  await page.locator(".flash:not(.flipped), .ltile, .spellin, .opts:not(.answered)").first().waitFor();
+  if (await page.locator(".flash").count()) { await page.locator(".flash").click(); await page.getByRole("button", { name: "Still learning" }).click(); return false; }
+  if (await page.locator(".ltile").count()) { for (const t of await page.locator(".ltile").all()) await t.click(); return true; }
+  if (await page.locator(".spellin").count()) { await page.locator(".spellin").fill("zzzz"); await page.getByRole("button", { name: "Check" }).click(); return true; }
+  await page.locator('.opt[data-right="0"]').first().click();
+  return true;
+}
 const word = (page) => page.locator(".wslide").first().getAttribute("data-word");
 // Play through a session, answering every option question right (or wrong when asked)
 async function playThrough(page, { wrongAt = -1 } = {}) {
@@ -88,15 +97,15 @@ test("a Journey chapter moves forward step by step", async ({ page }, info) => {
   await page.locator(".jnode.current").click();
   await playThrough(page);
   await expect(page.locator(".endcard")).toBeVisible();
-  await page.getByRole("button", { name: "Back to the map" }).click();
-  await expect(page.locator(".jnode.current .nm")).toHaveText("What it means");
+  await page.getByRole("button", { name: "Back to the road" }).click();
+  await expect(page.locator(".jnode.current .nm")).toHaveText("What they mean");
   await expect(page.locator(".jnode.done")).toHaveCount(1);
   // locked steps say so instead of opening
   await page.locator(".jnode.locked").first().click();
   await expect(page.locator(".toast")).toContainText("Finish the step");
   await page.locator(".jnode.current").click();
   await playThrough(page);
-  await page.getByRole("button", { name: "Back to the map" }).click();
+  await page.getByRole("button", { name: "Back to the road" }).click();
   await expect(page.locator(".jnode.done")).toHaveCount(2);
   expect(errors).toEqual([]);
 });
@@ -105,27 +114,33 @@ test("the Journey is paced: one chapter a day, regions and lookouts", async ({ p
   test.skip(info.project.name !== "desktop", "one run is enough");
   const errors = watchErrors(page);
   await onboard(page);
-  const shape = await page.evaluate(async () => { const m = await import("/js/model.js"); const ch = m.chapterWords(3); return { total: ch.length, lookouts: ch.map((c, i) => c.lookout ? i : -1).filter((i) => i >= 0).slice(0, 3), region10: m.regionOf(10)[1] }; });
+  const shape = await page.evaluate(async () => { const m = await import("/js/model.js"); const ch = m.chapterWords(4); return { total: ch.length, lookouts: ch.map((c, i) => c.lookout ? i : -1).filter((i) => i >= 0).slice(0, 3), region10: m.regionOf(10)[1] }; });
   expect(shape.total).toBeGreaterThan(120);
   expect(shape.lookouts).toEqual([4, 9, 14]);
   expect(shape.region10).toBe("The Misty Forest");
   // Jump to the chapter check, pass it, and make camp
-  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; m.saveProfile({ ...p, journey: { 3: { ch: 0, step: 5, stars: {}, log: [], started: Date.now() } } }); });
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; m.saveProfile({ ...p, journey: { 4: { ch: 0, step: 5, stars: {}, log: [], started: Date.now() } } }); });
   await page.goto("/#/journey");
   await expect(page.locator(".jregion")).toContainText("The Lavender Fields");
   await page.locator(".jnode.current").click();
   await playThrough(page);
-  await page.getByRole("button", { name: "Back to the map" }).click();
-  await expect(page.getByRole("dialog")).toContainText("Chapter complete");
+  await page.getByRole("button", { name: "Back to the road" }).click();
+  await expect(page.getByRole("dialog")).toContainText("Landmark reached");
   await page.getByRole("button", { name: "Make camp" }).click();
   await expect(page.locator(".camp h2")).toHaveText("Camp for tonight");
   await expect(page.locator(".camp")).toContainText("tomorrow");
   await page.screenshot({ path: `test-results/shots/${info.project.name}-camp.png` });
   // The log keeps the stop, and tomorrow the road opens again
-  await page.getByRole("button", { name: "Travel log" }).click();
-  await expect(page.locator(".tlog li")).toHaveCount(1);
+  await expect(page.locator(".pstrip .pstamp")).toHaveCount(1);
+  await page.getByRole("button", { name: "Open your passport" }).click();
+  await expect(page.locator(".passport .pstamp")).toHaveCount(1);
+  // a past stop can be looked back on and replayed, with save, favorite and list buttons for each word
+  await page.locator(".passport .pstamp").first().click();
+  await expect(page.locator(".keepsake")).toBeVisible();
+  await expect(page.locator(".sheet .wcard")).toHaveCount(6);
+  await expect(page.locator(".sheet .wcard").first().getByRole("button", { name: /Add .* to a list/ })).toBeVisible();
   await page.keyboard.press("Escape");
-  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; const j = p.journey[3]; m.saveProfile({ ...p, journey: { 3: { ...j, openOn: "2000-01-01" } } }); });
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; const j = p.journey[4]; m.saveProfile({ ...p, journey: { 4: { ...j, openOn: "2000-01-01" } } }); });
   await page.goto("/#/practice"); await page.goto("/#/journey");
   await expect(page.locator(".jnode.current .nm")).toHaveText("Meet the words");
   expect(errors).toEqual([]);
@@ -144,7 +159,7 @@ test("practice games score answers and challenges keep their rules", async ({ pa
   await page.getByRole("button", { name: "Done" }).click();
   await page.getByRole("button", { name: /Rush/ }).click();
   await expect(page.locator(".pstat .icon")).toHaveCount(3);
-  for (let k = 0; k < 3; k++) { await page.locator('.opt[data-right="0"]').first().click(); const c = page.getByRole("button", { name: /Continue|See results/ }); await c.click(); }
+  for (let k = 0; k < 3; k++) { if (await answerWrong(page)) await page.getByRole("button", { name: /Continue|See results/ }).click(); else await page.waitForTimeout(400); }
   await expect(page.locator(".endcard")).toBeVisible();
   await page.getByRole("button", { name: "Done" }).click();
   await page.getByRole("button", { name: /Sprint/ }).click();
@@ -158,9 +173,9 @@ test("the level check suggests a level", async ({ page }, info) => {
   await page.goto("/#/practice");
   await page.getByRole("button", { name: "Take the level check" }).click();
   for (let k = 0; k < 12; k++) { await page.locator(k < 6 ? '.opt[data-right="1"]' : '.opt[data-right="0"]').first().click(); await page.waitForTimeout(150); const c = page.getByRole("button", { name: /Continue|See results/ }); if (await c.count()) await c.click(); await page.waitForTimeout(700); }
-  await expect(page.locator(".endcard h1")).toHaveText("You're an Explorer");
-  await page.getByRole("button", { name: "Switch to Explorer" }).click();
-  await expect(page.locator(".jtop .eyebrow")).toContainText("Explorer");
+  await expect(page.locator(".endcard h1")).toHaveText("You're a Scholar");
+  await page.getByRole("button", { name: "Switch to Scholar" }).click();
+  await expect(page.locator(".jtop .eyebrow")).toContainText("Scholar");
 });
 
 test("install guidance matches the device", async ({ page }, info) => {
@@ -184,7 +199,7 @@ test("settings adapt to kids and parents, with a PIN", async ({ page }, info) =>
   else await expect(page.getByRole("heading", { name: "Keyboard shortcuts" })).toHaveCount(0);
   await page.getByRole("button", { name: "Set PIN" }).click();
   await page.getByLabel("4 to 8 digits").fill("2468"); await page.getByRole("button", { name: "Next" }).click();
-  await page.getByLabel("Family PIN").fill("2468"); await page.getByRole("button", { name: "Save" }).click();
+  await page.getByLabel("Family PIN").fill("2468"); await page.getByRole("button", { name: "Save", exact: true }).click();
   await expect(page.locator(".toast")).toContainText("PIN saved");
   await page.screenshot({ path: `test-results/shots/${info.project.name}-settings-parent.png`, fullPage: true });
   // add a kid
@@ -267,11 +282,39 @@ test("topics filter the words and stay age appropriate", async ({ page }, info) 
   await page.getByRole("link", { name: "All words" }).click();
   await expect(page.getByRole("heading", { name: "Topics" })).toBeVisible();
   await page.screenshot({ path: `test-results/shots/${info.project.name}-topics.png`, fullPage: true });
-  await page.locator(".gcard", { hasText: "Animals" }).click();
+  await page.locator(".tcard", { hasText: "Animals" }).click();
   await expect(page.locator(".hudchip", { hasText: "Animals" })).toBeVisible();
   const levels = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.queue(p).map((w) => w.l); });
   expect(levels.length).toBeGreaterThan(10);
   expect(Math.max(...levels)).toBeLessThanOrEqual(1);
+  expect(errors).toEqual([]);
+});
+
+test("side trails walk at their own pace, and the difficulty slider moves by keyboard", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  const errors = watchErrors(page);
+  await onboard(page);
+  await page.goto("/#/journey");
+  await expect(page.locator(".trails .gcard").first()).toBeVisible();
+  await page.getByRole("button", { name: /Show all \d+ trails/ }).click();
+  await page.locator(".trails .gcard", { hasText: "Mix-Ups" }).click();
+  await expect(page.getByRole("heading", { name: "Mix-Ups" })).toBeVisible();
+  await page.locator(".jnode.current").click();
+  await playThrough(page);
+  await page.getByRole("button", { name: "Back to the trail" }).click();
+  await expect(page.locator(".jnode.current .nm")).toHaveText("Which one?");
+  // mix-up questions offer the pair
+  await page.locator(".jnode.current").click();
+  await expect(page.locator(".opts.two .opt")).toHaveCount(2);
+  await page.goto("/#/settings");
+  const slider = page.getByRole("slider", { name: "Difficulty" });
+  await slider.focus();
+  await page.keyboard.press("ArrowLeft");
+  await expect(slider).toHaveAttribute("aria-valuetext", /Wordsmith/);
+  await page.keyboard.press("Home");
+  await expect(slider).toHaveAttribute("aria-valuetext", /Sprout/);
+  const lv = await page.evaluate(async () => { const m = await import("/js/model.js"); return m.profiles()[0].level; });
+  expect(lv).toBe(0);
   expect(errors).toEqual([]);
 });
 

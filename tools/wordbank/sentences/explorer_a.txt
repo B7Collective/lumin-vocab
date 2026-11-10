@@ -1,0 +1,313 @@
+abundant|Berries are abundant in the woods in July.
+accurate|A good map is accurate down to the smallest path.
+adapt|Animals adapt to the cold by growing thick fur.
+anticipate|We anticipate a big crowd at the game.
+appreciate|I appreciate your help with the dishes.
+approximate|The approximate time to the lake is an hour.
+ascend|The hikers began to ascend the rocky trail.
+astonish|The magician's trick will astonish you.
+attentive|An attentive listener asks good questions.
+bewildered|The bewildered tourist turned the map upside down.
+boisterous|The boisterous puppies knocked over the bowl.
+brittle|Old leaves become brittle and crunchy.
+cautious|Be cautious when you cross the icy bridge.
+coax|She tried to coax the cat out from under the bed.
+collaborate|The two classes will collaborate on a mural.
+colossal|A colossal wave crashed against the pier.
+compassion|The nurse showed great compassion.
+conclude|We will conclude the show with a song.
+confident|She felt confident after all her practice.
+contraption|His contraption feeds the cat automatically.
+cooperate|The team had to cooperate to win.
+courteous|The courteous driver let us cross.
+cunning|The cunning fox tricked the crow.
+dazzling|The fireworks were dazzling.
+debate|The class held a debate about recess.
+delicate|Butterfly wings are delicate.
+demonstrate|Can you demonstrate how the volcano works?
+dependable|Our old car is slow but dependable.
+determined|The determined runner finished the race limping.
+devour|Hungry teens can devour a whole pizza.
+diligent|A diligent student checks her work twice.
+disguise|The spy wore a mustache as a disguise.
+dismal|The dismal weather kept us inside.
+distinct|Each bird has a distinct song.
+dormant|The bulbs lie dormant until spring.
+durable|These boots are durable enough for any hike.
+eavesdrop|It isn't polite to eavesdrop on your sister.
+elaborate|Grandma made an elaborate cake with three layers.
+emerge|Butterflies emerge from their chrysalis.
+encourage|Coaches encourage players to keep trying.
+endangered|The endangered turtles nest on this beach.
+enthusiastic|The enthusiastic crowd cheered for every goal.
+essential|Water is essential for life.
+evaporate|Puddles evaporate on a hot day.
+evidence|The crumbs were evidence of the cookie thief.
+exaggerate|Don't exaggerate; it wasn't a hundred spiders.
+exhausted|After the hike, we were exhausted.
+expand|The balloon will expand as you blow.
+expedition|The expedition set off for the North Pole.
+fascinate|Volcanoes fascinate my little brother.
+feeble|The feeble kitten needed warm milk.
+ferocious|The ferocious storm knocked down trees.
+flexible|Gymnasts are very flexible.
+flourish|Tomatoes flourish in full sun.
+forecast|The forecast says snow tomorrow.
+frantic|We made a frantic search for the tickets.
+frigid|The frigid water took our breath away.
+generate|Windmills generate electricity.
+genuine|The ring is made of genuine gold.
+glisten|Dewdrops glisten on the spider web.
+gracious|Our gracious host made us feel at home.
+habitat|The pond is a habitat for frogs.
+hasty|A hasty decision can lead to mistakes.
+hesitate|Don't hesitate to ask for help.
+humble|The champion stayed humble after winning.
+hypothesis|My hypothesis is that plants grow toward light.
+identical|The twins wore identical shirts.
+ignite|Dry leaves can ignite easily.
+illuminate|Candles illuminate the dark room.
+immense|The immense whale swam under the boat.
+impatient|The impatient driver honked twice.
+independent|My cat is very independent.
+ingredient|Flour is the main ingredient in bread.
+inquire|Let's inquire about the museum's hours.
+insist|I insist that you take the last cookie.
+inspect|The guard will inspect your bag.
+investigate|The detective came to investigate the noise.
+jagged|The broken glass had jagged edges.
+keen|Eagles have keen eyesight.
+landmark|The old water tower is a landmark in our town.
+linger|The smell of popcorn will linger for hours.
+loyal|Dogs are loyal to their families.
+luminous|The luminous watch glows in the dark.
+magnificent|The view from the top was magnificent.
+majestic|The majestic lion rested on the rock.
+marvel|We marvel at how tiny ants carry so much.
+massive|A massive tree fell in the storm.
+meander|The path will meander through the woods.
+mimic|Parrots can mimic people's voices.
+miniature|She built a miniature house for her dolls.
+mischief|The kittens got into mischief while we were out.
+modest|He was modest about winning the prize.
+moist|Keep the soil moist but not soggy.
+monotonous|The long drive felt monotonous.
+mysterious|A mysterious letter arrived with no name.
+navigate|Sailors once used stars to navigate.
+nimble|The nimble goat climbed the cliff.
+nourish|Good food will nourish your body.
+obstacle|The fallen tree was an obstacle on the path.
+opponent|She shook hands with her opponent.
+optimistic|We are optimistic about the weather.
+organize|Let's organize the books by color.
+outstanding|Her science project was outstanding.
+peculiar|The soup had a peculiar taste.
+perceive|Dogs can perceive sounds we cannot hear.
+persist|If you persist, you'll learn to whistle.
+persuade|Can you persuade Dad to get a dog?
+plentiful|Apples are plentiful in the fall.
+precise|The recipe needs precise measurements.
+predict|Can you predict what happens next?
+preserve|We preserve peaches in jars.
+prosper|The little shop began to prosper.
+puzzled|I was puzzled by the strange noise.
+radiant|Her smile was radiant.
+reluctant|The puppy was reluctant to get in the bath.
+remarkable|The boy has a remarkable memory.
+resemble|Clouds can resemble animals.
+resourceful|The resourceful camper made a spoon from a stick.
+responsible|You are responsible for feeding the fish.
+restless|The restless horses stamped their hooves.
+reveal|Lift the cup to reveal the coin.
+rigid|The frozen towel was rigid.
+route|We took the scenic route home.
+rumor|A rumor spread that school was closed.
+scarce|Water is scarce in the desert.
+scrumptious|The scrumptious pie disappeared fast.
+seldom|We seldom see snow here.
+sensible|Wearing a coat in winter is sensible.
+serene|The lake was serene at sunrise.
+shimmer|Heat can make the road shimmer.
+sincere|Her apology was sincere.
+sleek|The sleek seal slid into the water.
+soothe|A warm bath can soothe sore muscles.
+spacious|The new classroom is spacious.
+spectacular|The canyon had a spectacular view.
+splendid|We had a splendid time at the fair.
+spontaneous|We took a spontaneous trip to the beach.
+startle|Loud noises startle the baby.
+stubborn|The stubborn mule would not move.
+sufficient|We have sufficient snacks for the trip.
+summit|We ate lunch at the summit.
+superb|The chef made a superb soup.
+suspicious|The guard grew suspicious of the empty box.
+swift|A swift river runs through the canyon.
+sympathy|We sent a card to show our sympathy.
+symbol|A heart is a symbol of love.
+talent|She has a talent for drawing horses.
+tedious|Sorting buttons is tedious work.
+temporary|The cast on his arm is temporary.
+thrive|Cactuses thrive in dry places.
+timid|The timid deer ran away.
+tolerate|Some plants tolerate shade.
+towering|Towering trees blocked out the sun.
+tranquil|The garden was tranquil and quiet.
+transform|Caterpillars transform into butterflies.
+tremendous|The team made a tremendous effort.
+triumph|The science fair was a triumph for her.
+trivial|Don't worry about trivial mistakes.
+unique|Every snowflake is unique.
+urgent|The doctor got an urgent call.
+vacant|The lot next door is vacant.
+valiant|The valiant knight protected the village.
+vibrant|The market was full of vibrant colors.
+vivid|I had a vivid dream about flying.
+wary|Be wary of strange dogs.
+weary|The weary travelers rested by the road.
+wilderness|They camped deep in the wilderness.
+witty|Her witty answer made everyone laugh.
+ample|There is ample room in the van.
+analyze|Scientists analyze the water samples.
+anxious|I was anxious before my piano recital.
+appetite|Swimming gives me a big appetite.
+arid|Few plants grow in arid land.
+assemble|We need to assemble the new bookshelf.
+barren|The barren field had no grass.
+beckon|The warm lights beckon us inside.
+bellow|The coach had to bellow over the noise.
+blunder|Leaving the gate open was a blunder.
+bold|It was a bold move to try the jump.
+bountiful|We had a bountiful harvest of squash.
+brisk|We took a brisk walk in the cold.
+burden|The heavy backpack was a burden.
+capable|You are capable of more than you think.
+capture|The photo will capture the moment.
+chaos|The kitchen was chaos after the party.
+cherish|I cherish the letters from my grandma.
+clumsy|The clumsy puppy tripped over its ears.
+commotion|What's all the commotion outside?
+communicate|Bees communicate by dancing.
+conceal|The chameleon can conceal itself on a branch.
+conserve|Turn off lights to conserve energy.
+contrast|The black and white stripes make a sharp contrast.
+convince|She tried to convince me to join the choir.
+crave|On hot days I crave ice pops.
+crucial|Sleep is crucial for growing kids.
+culprit|The dog was the culprit who ate the shoe.
+dainty|She took dainty sips of tea.
+declare|The judge will declare the winner.
+dense|The fog was too dense to see through.
+descend|We had to descend the ladder carefully.
+detect|Dogs can detect smells we cannot.
+devoted|He is a devoted big brother.
+dilemma|Pizza or pasta: what a dilemma!
+distract|Don't let the TV distract you.
+diverse|The reef has a diverse mix of fish.
+drench|The sprinkler will drench anyone nearby.
+eerie|The empty house was eerie at night.
+endure|Camels can endure long walks without water.
+envy|I envy your neat handwriting.
+erupt|The crowd will erupt in cheers.
+estimate|Estimate how many beans are in the jar.
+examine|The vet will examine the puppy.
+exceptional|She is an exceptional goalie.
+extinct|Dinosaurs are extinct.
+fatigue|Fatigue set in after the long climb.
+fertile|The fertile soil grew huge pumpkins.
+fidget|Try not to fidget during the movie.
+flimsy|The flimsy umbrella broke in the wind.
+fond|I'm fond of rainy afternoons.
+fragment|We found a fragment of an old vase.
+frequent|We are frequent visitors to the library.
+furious|He was furious when his tower was knocked down.
+glare|The glare from the snow hurt my eyes.
+gleeful|The gleeful kids ran into the waves.
+graceful|The graceful dancer spun on one toe.
+grasp|Grasp the rope tightly.
+grimace|He made a grimace at the sour candy.
+hazard|Ice on the steps is a hazard.
+heed|Heed the warning signs on the trail.
+hoard|Squirrels hoard nuts for winter.
+humid|The air was hot and humid.
+hurl|Don't hurl rocks at the pond.
+idle|The idle bikes rusted in the shed.
+illustrate|She will illustrate the book with watercolors.
+imitate|My brother likes to imitate my voice.
+impressive|The tower of cards was impressive.
+improvise|We forgot the tent poles and had to improvise.
+inhabit|Many birds inhabit the island.
+intense|The heat was intense at noon.
+interrupt|Please don't interrupt while I'm talking.
+jovial|The jovial mailman always waves.
+knack|He has a knack for fixing bikes.
+lavish|The king held a lavish feast.
+legend|The legend tells of a dragon in the lake.
+lofty|The eagle's nest sat on a lofty cliff.
+magnify|A hand lens will magnify the bug.
+merge|Two streams merge to form the river.
+murky|The pond water was murky.
+mutter|I heard him mutter something about homework.
+neglect|Don't neglect your plants.
+numerous|We saw numerous deer on the drive.
+obvious|The answer was obvious once I saw it.
+omit|Don't omit any steps in the recipe.
+ominous|Ominous clouds rolled in.
+opaque|The opaque curtains block the sun.
+overwhelm|Too many choices can overwhelm you.
+plead|The kids plead for five more minutes.
+potential|This seed has the potential to grow into a giant tree.
+prance|Ponies prance in the show ring.
+precious|The old photos are precious to us.
+prey|The hawk spotted its prey.
+prominent|The tower is the most prominent building in town.
+prowl|Cats prowl at night.
+quarrel|My brothers quarrel over the remote.
+radiate|Warmth seemed to radiate from the stove.
+recall|Can you recall the name of the song?
+recite|She can recite the whole poem.
+rehearse|The band will rehearse after school.
+reliable|A reliable friend shows up when needed.
+remedy|Honey is an old remedy for a sore throat.
+resist|I can't resist fresh cookies.
+retreat|The crabs retreat into their shells.
+roam|Bison roam the open plains.
+robust|The robust plant survived the frost.
+rummage|I had to rummage through the drawer for tape.
+saunter|They saunter down the boardwalk.
+scamper|Chipmunks scamper across the trail.
+scold|Mom had to scold the dog for digging.
+scowl|He gave a scowl when he lost.
+seize|Seize the chance to try something new.
+severe|There is a severe storm warning.
+shabby|The shabby sofa still felt comfy.
+shrill|A shrill whistle ended the game.
+slender|The slender heron stood in the reeds.
+sluggish|I feel sluggish after a big lunch.
+snicker|The kids began to snicker at the joke.
+solitary|A solitary tree stood on the hill.
+sparse|The grass was sparse in the shade.
+squabble|The birds squabble over the seeds.
+stagger|The tired hikers began to stagger.
+stealthy|The stealthy cat crept toward the bird.
+stern|The principal gave a stern warning.
+strive|We strive to do our best.
+submerge|Submerge the eggs in cold water.
+subtle|There was a subtle hint of mint in the cake.
+sulk|Don't sulk just because you lost.
+summon|The bell will summon us to dinner.
+swarm|A swarm of bees buzzed past.
+tattered|The tattered flag flapped in the wind.
+tempt|The smell of pie will tempt anyone.
+toil|The farmers toil in the fields all day.
+trait|Kindness is her best trait.
+translucent|Tissue paper is translucent.
+unanimous|The vote for pizza was unanimous.
+uneasy|I felt uneasy in the dark hallway.
+vague|His directions were vague.
+venture|Let's venture into the cave.
+vertical|The cliff was nearly vertical.
+visible|The stars were visible after the clouds cleared.
+vital|Sunlight is vital for plants.
+wail|The baby began to wail.
+wither|Flowers wither without water.
+yearn|Sailors yearn for home.

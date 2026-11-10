@@ -1,0 +1,26 @@
+# tasting|Tasting Words|Words for exactly how food tastes, smells and feels|all|0|Food
+crispy
+flaky|adjective|Breaking easily into thin layers|The croissant was warm and flaky.
+tender|adjective|Soft and easy to cut or chew; gentle|The meat was tender.
+savory
+tangy
+zesty
+velvety
+succulent
+piquant
+umami
+gooey
+crunchy
+chewy|adjective|Needing lots of chewing|The caramel was chewy.
+fluffy
+buttery|adjective|Tasting rich, like butter|Buttery popcorn filled the theater.
+smoky|adjective|Tasting or smelling of smoke|The grill gave the corn a smoky flavor.
+earthy|adjective|Tasting or smelling like soil or mushrooms|Beets have an earthy taste.||1
+briny|adjective|Salty like the sea|The olives were briny.||2
+tart|adjective|Sharp and sour in a pleasant way|The green apple was tart.
+aromatic
+delectable
+scrumptious
+bland
+decadent|adjective|Rich and indulgent|The chocolate cake was decadent.||2
+mellow|adjective|Smooth and gentle, not harsh|The soup had a mellow flavor.||1

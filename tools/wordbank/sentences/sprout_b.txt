@@ -1,0 +1,255 @@
+adorable|The baby goat was adorable.
+awful|The milk smelled awful after a week.
+bashful|The bashful puppy hid under the chair.
+blissful|We spent a blissful day at the lake.
+bouncy|The bouncy ball flew over the fence.
+breezy|It was a breezy day for flying kites.
+bright|The room was bright and sunny.
+bumpy|The dirt road was bumpy.
+busy|The bakery is busy on Saturday mornings.
+careful|Be careful with the hot pan.
+cheeky|The cheeky squirrel stole a cracker.
+chubby|The chubby puppy waddled to its bowl.
+colorful|The parrot has colorful feathers.
+comfortable|These slippers are so comfortable.
+cranky|The baby gets cranky when she is tired.
+creaky|The creaky stairs gave us away.
+cuddly|My teddy bear is soft and cuddly.
+daring|The daring climber reached the top.
+dizzy|Spinning around made me dizzy.
+dreamy|The music was soft and dreamy.
+drowsy|The warm car made me drowsy.
+elegant|The swan looked elegant on the water.
+fearless|The fearless kitten chased the big dog.
+feathery|The fern has feathery leaves.
+fizzy|The fizzy drink tickled my nose.
+flat|The tire went flat on the way home.
+foggy|It was too foggy to see the bridge.
+frosty|We went for a walk on a frosty morning.
+glossy|The magazine has glossy pages.
+gooey|The cookies were warm and gooey.
+greedy|The greedy goose ate all the bread.
+grouchy|The grouchy old man smiled at last.
+handy|A flashlight is handy in a storm.
+happy-go-lucky|Our happy-go-lucky dog loves everyone.
+helpful|The map was very helpful.
+hilarious|The clown's tricks were hilarious.
+humongous|The elephant ate a humongous pile of hay.
+icy|The steps are icy, so hold the rail.
+itchy|My sweater is itchy.
+joyful|Bells rang on the joyful morning.
+lazy|We had a lazy Sunday in our pajamas.
+lively|The party was lively and loud.
+lucky|I found a lucky penny.
+magical|The snowy forest looked magical.
+mighty|The mighty oak stood for a hundred years.
+muddy|Leave your muddy boots by the door.
+nifty|That's a nifty trick with the yo-yo.
+odd|It's odd to see snow in May.
+playful|The playful otters slid down the bank.
+pointy|The witch costume has a pointy hat.
+prickly|A cactus is prickly.
+puffy|My winter coat is warm and puffy.
+quiet|Please be quiet in the library.
+roomy|The new tent is roomy enough for four.
+rosy|The cold gave her rosy cheeks.
+rusty|The old gate was rusty and squeaky.
+scruffy|A scruffy dog wagged at the door.
+shaggy|The shaggy sheepdog needs a haircut.
+shimmering|The lake was shimmering in the sun.
+sleepy|The sleepy kitten curled up in a ball.
+slimy|Slugs feel slimy.
+snug|The bunny was snug in its hutch.
+soaring|We watched a hawk soaring above the hills.
+speedy|The speedy rabbit won the race.
+spotless|The kitchen was spotless after we cleaned.
+spotted|The spotted dog sat by the fire truck.
+squishy|The new toy is soft and squishy.
+steady|Hold the ladder steady.
+stinky|Take your stinky socks to the laundry.
+stormy|It was a stormy night.
+striped|The zebra is striped black and white.
+strong|Ants are strong for their size.
+sunny|We played outside on a sunny day.
+sweet|The strawberries were sweet.
+terrific|You did a terrific job.
+thirsty|The plants look thirsty.
+thoughtful|What a thoughtful gift!
+toasty|My feet are toasty by the fire.
+tricky|This puzzle is tricky.
+twinkly|Twinkly lights hung on the porch.
+velvety|The petals felt velvety.
+warm|The soup is warm and tasty.
+wavy|She has long wavy hair.
+wild|Wild horses ran on the beach.
+wise|The wise owl knew the answer.
+wonderful|We had a wonderful time at the zoo.
+wooly|The lamb has a wooly coat.
+yummy|This pie is yummy.
+zesty|The lime gave the soup a zesty taste.
+bake|Let's bake banana bread.
+bloom|Tulips bloom in spring.
+blush|Compliments make him blush.
+bounce|Watch the ball bounce down the steps.
+breathe|Breathe in slowly through your nose.
+brush|Brush your teeth before bed.
+bubble|Blow a bubble with your gum.
+buzz|Bees buzz around the flowers.
+carry|Can you carry the groceries?
+chatter|The kids chatter on the bus.
+chirp|Baby birds chirp for food.
+clap|Clap along with the song.
+climb|Let's climb the jungle gym.
+cuddle|I like to cuddle with my cat.
+dangle|My legs dangle from the tall chair.
+dive|Ducks dive for food.
+doodle|I doodle in my notebook.
+drip|The faucet will drip all night.
+fling|Don't fling your shoes across the room.
+float|Leaves float on the pond.
+fold|Fold the towels in half.
+gaze|We gaze at the stars from the porch.
+glow|Fireflies glow in the dark.
+gobble|The goat will gobble anything.
+grin|A big grin spread across his face.
+growl|The bear let out a low growl.
+grumble|My tummy began to grumble.
+gurgle|The baby likes to gurgle and coo.
+hop|Bunnies hop across the yard.
+howl|Wolves howl at night.
+hug|Give Grandma a hug.
+juggle|Can you juggle three balls?
+knit|Grandpa likes to knit scarves.
+laugh|His jokes make me laugh.
+listen|Listen to the rain on the roof.
+melt|Snowmen melt in the sun.
+mix|Mix the flour and sugar.
+nap|The baby takes a nap after lunch.
+nuzzle|The horse likes to nuzzle my hand.
+paddle|We paddle the boat to shore.
+paint|Let's paint the birdhouse blue.
+pat|Pat the dog gently.
+peel|Peel the banana from the top.
+plant|We plant seeds in spring.
+pop|The balloon will pop if you squeeze it.
+pour|Pour the water into the cup.
+purr|Cats purr when they are happy.
+race|Let's race to the mailbox.
+rattle|The baby shook the rattle.
+roar|Lions roar loudly.
+roll|Roll the dough into a ball.
+rustle|Leaves rustle in the wind.
+scoop|Scoop out the pumpkin seeds.
+scratch|Don't scratch the bug bite.
+scribble|My little brother likes to scribble on paper.
+shake|Shake the jar of paint.
+shuffle|Shuffle the cards before we play.
+sing|Let's sing in the car.
+skip|We skip down the sidewalk.
+slide|Slide down the big blue slide.
+smile|Smile for the picture!
+sneeze|Pepper makes me sneeze.
+snooze|The cat likes to snooze in the sun.
+spin|The top will spin for a long time.
+splatter|Paint will splatter if you shake the brush.
+squeak|The mouse gave a tiny squeak.
+stack|Stack the blocks as high as you can.
+stir|Stir the soup so it doesn't burn.
+stroll|We stroll through the park after dinner.
+swing|Push me on the swing!
+tickle|Feathers tickle my nose.
+tiptoe|We tiptoe past the sleeping baby.
+trot|The pony began to trot.
+tug|Give the rope a tug.
+whistle|Can you whistle a tune?
+wink|He gave me a wink.
+wobble|Jelly will wobble on the plate.
+wrap|Wrap the present in shiny paper.
+acorn|The squirrel buried an acorn.
+alphabet|We sang the alphabet song.
+apron|Put on an apron before baking.
+backpack|My backpack is full of books.
+bakery|The bakery smells like cinnamon.
+balloon|A red balloon floated away.
+beehive|The beehive hangs from a branch.
+blizzard|The blizzard closed the schools.
+boulder|A huge boulder blocked the trail.
+butterfly|A butterfly landed on my hand.
+calendar|Mark the party on the calendar.
+campfire|We sang songs around the campfire.
+caterpillar|The caterpillar munched a leaf.
+cloud|That cloud looks like a dragon.
+comet|A comet has a long glowing tail.
+costume|My costume is a dinosaur.
+crayon|I need a purple crayon.
+dolphin|A dolphin jumped beside the boat.
+dragonfly|A dragonfly zipped over the pond.
+earthquake|The earthquake shook the dishes.
+feather|I found a blue feather.
+firefly|A firefly blinked in the jar.
+flashlight|Grab the flashlight for the tent.
+forest|We hiked through the forest.
+garden|We grow tomatoes in our garden.
+giraffe|The giraffe ate leaves from the treetop.
+hammock|Let's rest in the hammock.
+hedgehog|The hedgehog rolled into a ball.
+iceberg|The iceberg floated in the cold sea.
+igloo|They built an igloo out of snow blocks.
+jellyfish|A jellyfish drifted near the shore.
+kitten|The kitten chased its tail.
+ladder|Hold the ladder while I climb.
+lighthouse|The lighthouse blinked all night.
+map|The map shows the way to the beach.
+marble|My marble rolled under the couch.
+mitten|I lost one mitten in the snow.
+moon|The moon is full tonight.
+mountain|We climbed the mountain.
+museum|The museum has a giant whale model.
+music|Music played from the radio.
+octopus|An octopus has eight arms.
+orchard|We picked apples in the orchard.
+owl|An owl hooted in the dark.
+parade|The parade had a marching band.
+penguin|The penguin slid on its belly.
+picnic|We had a picnic by the river.
+pillow|Fluff your pillow before bed.
+pirate|The pirate wore a big hat.
+playground|We met at the playground.
+pumpkin|We carved a pumpkin.
+rainbow|A rainbow came out after the storm.
+robot|The robot rolled across the floor.
+rocket|The rocket blasted into space.
+sandcastle|The waves washed our sandcastle away.
+scarecrow|The scarecrow guarded the corn.
+seashell|Hold a seashell to your ear.
+snowflake|No two snowflakes look alike, and each snowflake is tiny.
+spider|A spider spun a web on the porch.
+squirrel|A squirrel ran up the tree.
+sunflower|The sunflower is taller than me.
+sunrise|We woke up early to watch the sunrise.
+sunset|The sunset turned the sky orange.
+tadpole|A tadpole will grow into a frog.
+teacher|My teacher reads us a story every day.
+tent|We set up the tent in the backyard.
+thermometer|The thermometer says it is hot outside.
+tortoise|The tortoise ate a strawberry.
+tractor|The farmer drove a green tractor.
+treehouse|We have a secret club in the treehouse.
+umbrella|Take an umbrella in case it rains.
+valley|A river runs through the valley.
+wagon|Pull the wagon to the garden.
+whale|We saw a whale spout water.
+wind|The wind blew the leaves around.
+zebra|A zebra has black and white stripes.
+zoo|We saw lions at the zoo.
+friendship|Their friendship began in kindergarten.
+kindness|A little kindness goes a long way.
+courage|It takes courage to try something new.
+patience|Fishing takes patience.
+surprise|We planned a surprise party for Mom.
+wish|Make a wish and blow out the candles.
+idea|I have an idea for a game.
+question|Raise your hand if you have a question.
+story|Tell me a story before bed.
+joke|Dad told a funny joke at dinner.
+secret|Can you keep a secret?

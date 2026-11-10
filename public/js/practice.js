@@ -2,7 +2,7 @@
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
-import { h, icon, untilText, plural, toast } from "./ui.js";
+import { h, icon, untilText, plural, toast, canSpeak } from "./ui.js";
 import { art, icon as artIcon } from "./art.js";
 import { start, MODES } from "./games.js";
 
@@ -12,6 +12,10 @@ const GAMES = [
   { kind: "gap", name: "Fill the gap", about: "Find the word that fits", art: "gap" },
   { kind: "spell", name: "Spelling", about: "Type the word from its meaning", art: "spelling" },
   { kind: "unscramble", name: "Unscramble", about: "Put the letters in order", art: "unscramble" },
+  { kind: "truefalse", name: "True or false", about: "Quick calls on what words mean", art: "perfect" },
+  { kind: "synonym", name: "Find its twin", about: "Pick the word closest in meaning", art: "senses", grown: true },
+  { kind: "usage", name: "Spot the right use", about: "Only one sentence gets it right", art: "talk", grown: true },
+  { kind: "listen", name: "Listen closely", about: "Hear it, then find it", art: "senses" },
   { kind: "mixed", name: "Game shuffle", about: "A bit of everything", art: "shuffle" },
 ];
 
@@ -39,8 +43,10 @@ route("practice", (main) => {
   page.append(h("section", { class: "feature" }, h("div", { class: "stack" }, ...feature), art(artIcon("review"), "", 132)));
 
   const pool = () => model.practicePool(p, 10);
+  // Single-kind games pick words that suit them (a twin to find, sentences to compare)
+  const poolFor = (kind) => () => ["synonym", "usage"].includes(kind) ? model.practicePool(p, 60).filter((w) => model.canAsk(w, kind, kid)).slice(0, 10) : pool();
   page.append(h("section", { class: "sec" }, h("h2", {}, "Games"), h("p", {}, "Uses the words you're learning, then your Journey words."),
-    h("div", { class: "cards" }, GAMES.map((g) => h("button", { class: "gcard", onclick: () => start({ title: g.name, words: pool(), refill: pool, kind: kid && g.kind === "spell" ? "unscramble" : g.kind, art: g.art }) },
+    h("div", { class: "cards" }, GAMES.filter((g) => !(g.grown && kid) && (g.kind !== "listen" || canSpeak())).map((g) => h("button", { class: "gcard", onclick: () => start({ title: g.name, words: poolFor(g.kind)(), refill: poolFor(g.kind), kind: kid && g.kind === "spell" ? "unscramble" : g.kind, art: g.art }) },
       art(artIcon(g.art), "", 240), h("strong", {}, g.name), h("small", {}, g.about))))));
 
   const big = () => model.practicePool(p, 40);
@@ -49,17 +55,18 @@ route("practice", (main) => {
       art(artIcon(m.art), "", 240), h("strong", {}, m.name), h("small", {}, m.about))))));
 
   page.append(h("section", { class: "feature" }, h("div", { class: "stack" },
-    h("h2", {}, "Find your level"), h("p", {}, "Twelve quick questions, from easy to hard. We'll suggest the level that fits."),
+    h("h2", {}, "Find your level"), h("p", {}, `${kid ? "Six" : "Twelve"} quick questions, from easy to hard. We'll suggest the level that fits.`),
     h("button", { class: "btn start", onclick: () => placement(p) }, "Take the level check")), art(artIcon("leveltest"), "", 132)));
 });
 
 function placement(p) {
-  const words = model.placementWords();
+  const kid = p.role === "kid", top = kid ? 2 : model.MAX_LEVEL; // grown-up words stay with teens and adults
+  const words = model.placementWords(top);
   const levelOf = (r) => {
-    const byLevel = [0, 0, 0, 0];
+    const byLevel = model.LEVELS.map(() => 0);
     r.results.forEach((x) => { const w = model.lookup(x.w); if (x.ok && w) byLevel[w.l]++; });
-    let lv = 0; for (let l = 0; l < 4; l++) { if (byLevel[l] >= 2) lv = l; else break; }
-    return p.role === "kid" ? Math.min(lv, 2) : lv; // grown-up words stay with teens and adults
+    let lv = 0; for (let l = 0; l <= top; l++) { if (byLevel[l] >= 2) lv = l; else break; }
+    return lv;
   };
   start({
     title: "Level check", words, kind: "meaning", mode: "placement", grade: false, art: "leveltest", again: false,

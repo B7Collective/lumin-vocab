@@ -1,0 +1,166 @@
+layover|We explored the airport shops during our layover.
+customs|Customs officers checked the fruit in our bags.
+passport|Her passport is full of colorful stamps.
+terminal|The bus terminal was crowded on Friday night.
+departure|The departure board flashed "Delayed."
+arrival|We cheered at the puppy's arrival.
+concierge|Ask the concierge for a dinner recommendation.
+hostel|The hostel had bunk beds and a shared kitchen.
+embassy|The embassy flag flew over the gate.
+luggage|Label your luggage with your phone number.
+turbulence|We spilled our juice during the turbulence.
+carousel|Our bags came around on the carousel.
+aisle|The bride walked down the aisle.
+runway|Lights lined the runway at night.
+altitude|Water boils at a lower temperature at high altitude.
+visa|Some countries require a visa for tourists.
+stopover|A stopover in Lisbon broke up the long trip.
+tycoon|The railroad tycoon built a mansion on the hill.
+kayak|She steered the kayak around the rocks.
+ketchup|He put ketchup on his eggs.
+shampoo|The dog hates his flea shampoo.
+pajamas|We watched cartoons in our pajamas.
+bungalow|Their beach bungalow had a hammock.
+tsunami|A tsunami of emails arrived after the announcement.
+karaoke|Dad sang karaoke at the party.
+emoji|She ended every text with a sun emoji.
+origami|Origami frogs can actually hop.
+algebra|Algebra helps you find the unknown number.
+safari|Our safari guide spotted a cheetah.
+avocado|Slice the avocado for the tacos.
+chocolate|The chocolate melted in the hot car.
+tomato|A ripe tomato is heavy for its size.
+cookie|Grandma's cookie jar is never empty.
+boss|The boss brought donuts on Friday.
+yacht|The yacht's sails were bright white.
+kindergarten|My kindergarten teacher taught me to tie my shoes.
+doppelganger|The actor's doppelganger works at our pizza shop.
+smorgasbord|The fair was a smorgasbord of rides and games.
+sauna|The sauna was too hot for me.
+ombudsman|The school ombudsman helped resolve the complaint.
+moccasin|Each moccasin was decorated with beads.
+ballet|The ballet told the story of a nutcracker.
+rendezvous|The spies' rendezvous was at the fountain.
+chauffeur|The chauffeur waited by the car.
+zero|The score was zero to zero at halftime.
+loot|We came home from the party with loads of loot.
+mosquito|A mosquito kept us awake all night.
+ukulele|She learned three songs on the ukulele.
+boomerang|My boomerang landed in the neighbor's yard.
+kangaroo|A baby kangaroo peeked from its mother's pouch.
+segue|He used the weather as a segue to vacation plans.
+gist|Give me the gist in two sentences.
+tangent|The lecture took a tangent about penguins.
+compromise|Bedtime at 8:30 was the compromise.
+constructive|Let's have a constructive conversation.
+diplomatic|She found a diplomatic way to say no.
+rhetorical|"Isn't that great?" was a rhetorical question.
+hypothetical|In a hypothetical zombie attack, I'd hide in the library.
+ironic|It's ironic that the spelling bee poster had a typo.
+literally|I literally ran all the way home.
+essentially|The new phone is essentially the old one in blue.
+arguably|She is arguably the best player on the team.
+context|Read the sentence in context.
+empathize|Good friends empathize when you're sad.
+moot|Since the store closed, the question of what to buy was moot.
+jury|The jury returned after two hours.
+defendant|The defendant pleaded not guilty.
+plaintiff|The plaintiff's lawyer spoke first.
+prosecutor|The prosecutor showed the security video.
+witness|A witness saw the car speed away.
+objection|The judge overruled the objection.
+acquit|The jury may acquit him for lack of evidence.
+appeal|The team will appeal the referee's decision.
+bail|He was released on bail.
+subpoena|The company got a subpoena for its records.
+alibi|His alibi was a movie ticket stub.
+affidavit|She signed an affidavit about the accident.
+perjury|Lying in court is perjury.
+plea|Her plea for more time was granted.
+gavel|The auctioneer banged the gavel: "Sold!"
+docket|Three cases are on today's docket.
+hearsay|The judge rejected the hearsay evidence.
+adjourn|Let's adjourn the meeting until next week.
+litigate|The neighbors decided to litigate over the fence.
+bailiff|The bailiff called the court to order.
+recess|Recess is the best part of the school day.
+swell|"What a swell party," Grandma said.
+baloney|"That's baloney!" Grandpa laughed at the tall tale.
+ritzy|They dined at a ritzy restaurant downtown.
+hooey|The fortune teller's predictions were hooey.
+jalopy|The old jalopy coughed up the hill.
+moxie|The kid showed real moxie asking for a tryout.
+gumshoe|The gumshoe in the movie wore a trench coat.
+ballyhoo|After all the ballyhoo, the movie was just okay.
+snazzy|She wore snazzy red sneakers.
+scram|"Scram!" the farmer shouted at the crows.
+jitterbug|Grandma still remembers how to jitterbug.
+hep|In the forties, being hep meant knowing the latest jazz.
+peachy|"Everything's peachy," he said with a grin.
+square|Only a square would skip the dance.
+groovy|The van was painted in groovy swirls.
+far-out|Her ideas were far-out but brilliant.
+fab|You look fab in that jacket.
+bummer|Losing my hat was a bummer.
+funky|The cafe has funky mismatched chairs.
+boogie|Let's boogie at the roller rink.
+dig|I really dig this song.
+rad|That's a rad skateboard.
+gnarly|The skate park has a gnarly ramp.
+tubular|"Tubular!" the surfer yelled.
+grody|Those old gym socks are totally grody.
+bodacious|They had a bodacious time at the beach.
+radical|The skateboarder pulled off a radical trick.
+bling|The rapper's bling sparkled under the lights.
+noob|Even pros were a noob once.
+glitzy|The glitzy show had sequins everywhere.
+diagnosis|The mechanic's diagnosis was a dead battery.
+prescription|Her new glasses need a prescription.
+acute|Dogs have an acute sense of smell.
+dosage|Read the dosage chart on the box.
+inflammation|Rest helps reduce inflammation.
+allergy|He has a cat allergy, so we visit outside.
+referral|The doctor wrote a referral to a specialist.
+pharmacist|The pharmacist explained when to take the pills.
+physician|The physician listened to my lungs.
+pediatrician|The pediatrician gave my brother a sticker.
+specialist|The eye specialist checked my vision.
+triage|Triage helps the busy clinic treat the sickest first.
+outpatient|The outpatient clinic opens at seven.
+sterile|The nurse used a sterile needle.
+checkup|The dog had his yearly checkup.
+stethoscope|The doctor warmed the stethoscope first.
+antibiotic|Finish every dose of an antibiotic.
+ultrasound|An ultrasound can check a sore shoulder.
+anesthesia|The dentist used anesthesia to numb my tooth.
+recuperate|After the flu, she stayed home to recuperate.
+strategy|Our strategy was to save the best player for the end.
+tactic|Stalling was their tactic in the final minute.
+gambit|Her gambit of sacrificing a pawn paid off.
+checkmate|He saw checkmate coming three moves ahead.
+stalemate|The talks reached a stalemate.
+bluff|Don't bluff when you have nothing.
+underdog|The underdog team won the championship.
+rally|The tennis rally lasted twenty shots.
+tiebreaker|A trivia question served as the tiebreaker.
+sportsmanship|The award honors good sportsmanship.
+tournament|The chess tournament drew players from five states.
+referee|The referee checked the video replay.
+penalty|The penalty kick sailed over the goal.
+comeback|The team staged a stunning comeback.
+rookie|The rookie scored in his first game.
+veteran|The veteran pitcher calmed the young players.
+clutch|She made a clutch save in overtime.
+rematch|They demanded a rematch at checkers.
+teammate|My teammate shared her water bottle.
+courageous|The courageous dog barked to warn the family.
+inspiring|Her comeback story is inspiring.
+charming|The village has charming cobblestone streets.
+delightful|What a delightful surprise!
+insightful|The coach gave insightful feedback.
+kindhearted|The kindhearted boy shared his lunch.
+empathetic|An empathetic nurse held my hand.
+upbeat|The music was upbeat and fun.
+warmhearted|Our warmhearted neighbor bakes for everyone.
+selfless|Volunteering is a selfless act.
+trustworthy|A trustworthy friend keeps your secrets.

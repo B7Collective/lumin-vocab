@@ -1,0 +1,177 @@
+aberrant|adjective|Departing from what is normal or accepted|The aberrant result was traced to a faulty sensor.|Science and tech
+abstraction|noun|An idea considered apart from any concrete example|Justice is an abstraction until a court applies it.|Mind and ideas
+acculturation|noun|The process of adopting the customs of another culture|Her acculturation was quickest at the dinner table.|Society and law
+adjudicate|verb|To make a formal judgment on a disputed matter|An independent panel will adjudicate the claim.|Society and law
+aegis|noun|Protection, backing or sponsorship|The study ran under the aegis of the university.|Society and law
+agnostic|adjective|Not committed to one side, method or belief|The software is platform agnostic.|Mind and ideas
+allegory|noun|A story whose characters and events stand for deeper meanings|The farm in the novel is an allegory for a revolution.|Arts and stories
+ambit|noun|The scope or extent of something|The question fell outside the ambit of the inquiry.|Society and law
+amortize|verb|To pay off a debt or spread a cost over time|They amortized the equipment over five years.|Money and work
+analogous|adjective|Comparable in certain respects|The heart is analogous to a pump.|Mind and ideas
+anomaly|noun|Something that deviates from what is expected|A warm week in January was an anomaly.|Science and tech
+antecedent|noun|Something that came before and led to something else|The telegraph was an antecedent of the internet.|Time and change
+antithesis|noun|The direct opposite|Her calm was the antithesis of his panic.|Mind and ideas
+apposite|adjective|Apt in the circumstances; well suited|She closed with an apposite quotation.|Talk and writing
+arbitrage|noun|Profiting from a price difference between markets|Currency arbitrage requires speed and scale.|Money and work
+ascribe|verb|To regard something as caused by or belonging to|Scholars ascribe the poem to an unknown monk.|Mind and ideas
+attenuate|verb|To reduce in force, effect or value|Thick walls attenuate the noise from the street.|Science and tech
+attrition|noun|Gradual reduction through wear or loss|Staff attrition rose after the move.|Money and work
+autarky|noun|Economic self-sufficiency|The island pursued autarky after the embargo.|Money and work
+axiom|noun|A statement accepted as true without proof|Geometry begins with a handful of axioms.|Mind and ideas
+bifurcate|verb|To divide into two branches|The path bifurcates at the old oak.|Look and shape
+bricolage|noun|Something made from whatever materials are at hand|Her studio was a bricolage of salvaged wood and glass.|Arts and stories
+canonical|adjective|Accepted as authoritative or standard|It is the canonical edition of the plays.|Arts and stories
+caveat|noun|A warning or condition attached to something|The offer came with one caveat: no refunds.|Talk and writing
+chauvinism|noun|Excessive, prejudiced loyalty to one's own group|The essay critiques national chauvinism.|Society and law
+circumscribe|verb|To restrict within limits|The role was tightly circumscribed by the contract.|Society and law
+codify|verb|To arrange rules or laws into a system|The custom was eventually codified into law.|Society and law
+cognition|noun|The mental processes of knowing and thinking|Sleep affects memory and cognition.|Mind and ideas
+cognizant|adjective|Aware or having knowledge of|We are cognizant of the risks.|Mind and ideas
+commensurable|adjective|Measurable by the same standard|The two scales are not commensurable.|Science and tech
+commodify|verb|To turn something into an item for sale|Critics say the festival commodified a tradition.|Money and work
+conflate|verb|To blend two distinct ideas into one, often mistakenly|Don't conflate correlation with causation.|Mind and ideas
+confound|verb|To mix up or disprove; to complicate a result|Diet may confound the link between sleep and mood.|Science and tech
+construe|verb|To interpret a word or action in a certain way|His silence was construed as agreement.|Talk and writing
+contingent|adjective|Dependent on something that may or may not happen|The offer is contingent on a background check.|Mind and ideas
+corollary|noun|A natural consequence or result|Higher prices were a corollary of the shortage.|Mind and ideas
+corpus|noun|A complete collection of writings or texts|She analyzed a corpus of ten thousand letters.|Talk and writing
+correlate|verb|To have a mutual relationship in which one changes with another|Income correlates with years of schooling.|Science and tech
+credence|noun|Belief in or acceptance of something as true|The new data lend credence to the theory.|Mind and ideas
+debunk|verb|To expose a claim as false|The article debunks several diet myths.|Mind and ideas
+decouple|verb|To separate things that were linked|The plan decouples growth from emissions.|Science and tech
+demarcate|verb|To set the boundaries of something|Stones demarcate the edge of the property.|Places and travel
+denotation|noun|The literal meaning of a word|The denotation of "home" is a dwelling; the feeling is something else.|Talk and writing
+deprecate|verb|To express disapproval of; to mark as outdated|The old function is deprecated and will be removed.|Science and tech
+desideratum|noun|Something needed or wanted|Quiet is the chief desideratum of a reading room.|Mind and ideas
+determinism|noun|The view that all events are caused by prior events|The novel wrestles with determinism and free will.|Mind and ideas
+diachronic|adjective|Concerned with how something changes over time|A diachronic study traces a word across centuries.|Time and change
+dialectic|noun|Reasoning through the exchange of opposing ideas|Their friendship was a lifelong dialectic.|Mind and ideas
+diaspora|noun|A people scattered from their original homeland|The diaspora kept the language alive abroad.|Society and law
+diffuse|adjective|Spread out; not concentrated|Diffuse light filtered through the clouds.|Senses
+discourse|noun|Serious written or spoken discussion of a subject|Public discourse grew more heated that year.|Talk and writing
+discrete|adjective|Separate and distinct|The process has four discrete stages.|Science and tech
+dogma|noun|Principles laid down as undeniably true|She questioned every dogma of her field.|Mind and ideas
+egalitarian|adjective|Believing that all people deserve equal rights|The club had an egalitarian spirit.|Society and law
+elide|verb|To omit or merge, often a sound or a fact|The summary elides several awkward details.|Talk and writing
+emergent|adjective|Arising as a new property of a complex system|Traffic jams are emergent behavior.|Science and tech
+encapsulate|verb|To express the essential features of something briefly|One photo encapsulated the whole season.|Talk and writing
+entropy|noun|A gradual decline into disorder|Without upkeep, the garden slid into entropy.|Science and tech
+epistemology|noun|The branch of philosophy concerned with knowledge|Epistemology asks how we know what we know.|Mind and ideas
+epitomize|verb|To be a perfect example of|The cabin epitomizes simple living.|Mind and ideas
+erudition|noun|Great knowledge gained through study|Her erudition showed in every footnote.|Mind and ideas
+eschew|verb|To deliberately avoid|The chef eschews shortcuts.|Movement and action
+ethos|noun|The characteristic spirit of a culture or group|The company's ethos is quiet competence.|Society and law
+etiology|noun|The cause or origin of a disease or condition|Researchers are still debating its etiology.|Body and health
+etymology|noun|The origin and history of a word|The etymology of "salary" goes back to salt.|Talk and writing
+exegesis|noun|Critical explanation of a text|The book is a close exegesis of one poem.|Talk and writing
+exemplar|noun|A person or thing serving as a typical or excellent model|The bridge is an exemplar of modern design.|Mind and ideas
+exigency|noun|An urgent need or demand|The exigencies of war reshaped the city.|Time and change
+explicate|verb|To analyze and explain in detail|The lecture explicated the poem line by line.|Talk and writing
+extrapolate|verb|To extend known data to estimate what is unknown|We can extrapolate next year's costs from this trend.|Science and tech
+falsifiable|adjective|Able to be proved false by evidence|A scientific theory must be falsifiable.|Science and tech
+fiduciary|adjective|Involving trust, especially in managing money for others|Trustees have a fiduciary duty to the fund.|Money and work
+fungible|adjective|Interchangeable with another of the same kind|Money is fungible; a dollar is a dollar.|Money and work
+gestalt|noun|A whole that is more than the sum of its parts|The gestalt of the city is its noise and light.|Mind and ideas
+hermeneutics|noun|The theory and method of interpretation|Legal hermeneutics asks what a law really means.|Talk and writing
+heterogeneous|adjective|Made of very different parts|The class was heterogeneous in age and background.|Science and tech
+heuristic|noun|A practical rule of thumb for solving problems|A useful heuristic: if in doubt, leave it out.|Mind and ideas
+historiography|noun|The study of how history is written|The course covers the historiography of the war.|Time and change
+holistic|adjective|Considering the whole rather than separate parts|The clinic takes a holistic approach to care.|Body and health
+homogeneous|adjective|Of the same kind throughout|Stir until the mixture is homogeneous.|Science and tech
+iconography|noun|The visual symbols associated with a subject|The iconography of saints includes halos and keys.|Arts and stories
+idiom|noun|A phrase whose meaning differs from its literal words|"Spill the beans" is an idiom.|Talk and writing
+immanent|adjective|Existing within; inherent|Beauty, she argued, is immanent in ordinary things.|Mind and ideas
+impetus|noun|A force that makes something happen|The storm gave impetus to the new flood plan.|Movement and action
+imprimatur|noun|Official approval or sanction|The project bore the museum's imprimatur.|Society and law
+incipient|adjective|In an early stage; beginning to develop|An incipient cold kept her home.|Time and change
+incremental|adjective|Increasing in small steps|The gains were incremental but steady.|Time and change
+indeterminate|adjective|Not exactly known or fixed|A man of indeterminate age sat by the door.|Mind and ideas
+induction|noun|Reasoning from particular cases to a general rule|Induction from many swans suggested all were white.|Mind and ideas
+inference|noun|A conclusion reached from evidence and reasoning|The inference was reasonable but untested.|Mind and ideas
+instantiate|verb|To represent by a concrete example|Each building instantiates the architect's ideals.|Mind and ideas
+interdisciplinary|adjective|Combining two or more fields of study|It is an interdisciplinary program in music and math.|Science and tech
+interlocutor|noun|A person who takes part in a conversation|Her interlocutor nodded but said nothing.|Talk and writing
+interpolate|verb|To insert something between other things; to estimate between known values|The editor interpolated a line of his own.|Talk and writing
+intrinsic|adjective|Belonging naturally; essential|Curiosity is intrinsic to good research.|Mind and ideas
+juxtaposition|noun|Placing things side by side for contrast|The juxtaposition of old and new gives the street its charm.|Arts and stories
+lacuna|noun|A gap or missing part|The archive has a lacuna of ten years.|Talk and writing
+lexicon|noun|The vocabulary of a language, person or field|Sailing has its own lexicon.|Talk and writing
+liminal|adjective|At a threshold; in between two states|Airports are liminal places.|Places and travel
+locus|noun|The central point or place where something happens|The kitchen was the locus of family life.|Places and travel
+magnitude|noun|Great size or importance|No one grasped the magnitude of the change.|Science and tech
+mandate|noun|An official order or authority to act|The council had a mandate to rebuild the bridge.|Society and law
+marginalia|noun|Notes written in the margins of a book|His marginalia were funnier than the book.|Talk and writing
+metonymy|noun|Using a related thing's name for the thing meant|"The crown" for the monarch is metonymy.|Talk and writing
+milieu|noun|A person's social environment|She thrived in the milieu of small theaters.|Society and law
+modality|noun|A particular mode in which something exists or is done|Online learning is a modality, not a method.|Mind and ideas
+monolithic|adjective|Large, uniform and unchanging|The company was no longer a monolithic block.|Look and shape
+motif|noun|A recurring idea or image in a work|Water is a motif throughout the novel.|Arts and stories
+nexus|noun|A connection or central link|The station is the nexus of the city's transit.|Places and travel
+normative|adjective|Relating to how things should be|Ethics is a normative discipline.|Mind and ideas
+oligarchy|noun|Government by a small group of powerful people|The city slid into oligarchy.|Society and law
+ontology|noun|The study of the nature of being|Ontology asks what kinds of things exist.|Mind and ideas
+orthodoxy|noun|Generally accepted beliefs|She challenged medical orthodoxy and was proved right.|Mind and ideas
+oscillate|verb|To swing back and forth|Prices oscillated all week.|Movement and action
+parameter|noun|A limit or factor that defines a system|Set the parameters before running the test.|Science and tech
+parity|noun|Equality in status or amount|The league aims for parity between teams.|Society and law
+parse|verb|To analyze something into its parts|It took a minute to parse the legal language.|Talk and writing
+pedagogy|noun|The method and practice of teaching|Her pedagogy relies on questions, not lectures.|Mind and ideas
+periphery|noun|The outer edge of an area|Warehouses ring the periphery of the city.|Places and travel
+permeate|verb|To spread throughout|The smell of rain permeated the house.|Senses
+peruse|verb|To read carefully; also, to look over casually|He perused the menu twice.|Talk and writing
+phenomenology|noun|The study of experience as it is lived|Phenomenology starts with how things appear to us.|Mind and ideas
+polymath|noun|A person with wide knowledge in many fields|A true polymath, she painted and built bridges.|Character
+postulate|verb|To suggest or assume as a basis for reasoning|Scientists postulated a ninth planet.|Science and tech
+pragmatism|noun|Dealing with problems in a practical way|Pragmatism won out over idealism.|Mind and ideas
+precept|noun|A general rule meant to guide behavior|Her precept: never send an angry email.|Mind and ideas
+preclude|verb|To prevent from happening|The injury precluded a return this season.|Movement and action
+predicate|verb|To base something on|The plan is predicated on steady funding.|Mind and ideas
+prescriptive|adjective|Telling people how things should be done|The style guide is strict and prescriptive.|Talk and writing
+primacy|noun|The state of being most important|The primacy of evidence is basic to science.|Mind and ideas
+promulgate|verb|To make widely known; to put a law into effect|The rules were promulgated last spring.|Society and law
+propagate|verb|To spread and promote widely; to breed plants|Gardeners propagate roses from cuttings.|Nature and weather
+proponent|noun|A person who argues for something|She is a proponent of later school start times.|Society and law
+provenance|noun|The origin and history of ownership of something|The painting's provenance is well documented.|Arts and stories
+proviso|noun|A condition attached to an agreement|They agreed, with the proviso that costs be shared.|Society and law
+proxy|noun|A person or thing that stands in for another|Tree rings are a proxy for ancient climate.|Science and tech
+purview|noun|The range of authority or concern|Zoning falls within the council's purview.|Society and law
+qualitative|adjective|Relating to quality rather than quantity|The study used qualitative interviews.|Science and tech
+quantify|verb|To express or measure as a number|It is hard to quantify kindness.|Science and tech
+rationale|noun|The reasons behind a decision|The memo explained the rationale for the change.|Mind and ideas
+recapitulate|verb|To summarize the main points again|Let me recapitulate before we vote.|Talk and writing
+reciprocity|noun|Mutual exchange of benefits|Good neighbors run on reciprocity.|Society and law
+redress|noun|Remedy or compensation for a wrong|The workers sought redress through the courts.|Society and law
+reductive|adjective|Oversimplifying something complex|It is reductive to call the book a romance.|Mind and ideas
+reify|verb|To treat an abstract idea as if it were concrete|The chart reifies a vague idea of "success."|Mind and ideas
+relativism|noun|The view that truth depends on perspective or culture|Moral relativism was the seminar's theme.|Mind and ideas
+replicate|verb|To repeat or reproduce exactly|Other labs could not replicate the result.|Science and tech
+rhetoric|noun|The art of persuasive speaking or writing|The speech was strong on rhetoric, thin on facts.|Talk and writing
+rubric|noun|A guide listing criteria for judging work|The teacher shared the grading rubric.|Mind and ideas
+schema|noun|An outline or model of a plan or theory|The database schema lists every field.|Science and tech
+semantic|adjective|Relating to meaning in language|Their argument was largely semantic.|Talk and writing
+semiotics|noun|The study of signs and symbols and how they make meaning|Traffic lights are a lesson in semiotics.|Talk and writing
+skepticism|noun|A doubting attitude toward claims|Good science welcomes skepticism.|Mind and ideas
+sovereignty|noun|Supreme authority over a territory|The treaty affirmed the island's sovereignty.|Society and law
+stipulate|verb|To demand or specify as part of an agreement|The lease stipulates no pets.|Society and law
+stratify|verb|To arrange in layers or classes|The rock is stratified in bands of red and gray.|Science and tech
+subsume|verb|To include within something larger|Small departments were subsumed into one office.|Mind and ideas
+substantiate|verb|To provide evidence to prove a claim|She could not substantiate the rumor.|Mind and ideas
+supersede|verb|To take the place of something older|The new rules supersede the old ones.|Time and change
+syllogism|noun|Reasoning from two premises to a conclusion|All birds have feathers; a robin is a bird; so a robin has feathers.|Mind and ideas
+symbiosis|noun|A close relationship that benefits both sides|Clownfish and anemones live in symbiosis.|Nature and weather
+synchronic|adjective|Concerned with something at one point in time|A synchronic study looks at a language as it is today.|Time and change
+synecdoche|noun|Using a part to stand for the whole|"All hands on deck" is synecdoche.|Talk and writing
+synergy|noun|Combined effort that achieves more than the parts alone|The two teams found real synergy.|Money and work
+systemic|adjective|Affecting a whole system|The problem was systemic, not personal.|Society and law
+tacit|adjective|Understood without being stated|They had a tacit agreement not to mention it.|Talk and writing
+taxonomy|noun|A system for classifying things|The museum uses its own taxonomy of insects.|Science and tech
+teleology|noun|Explaining things by their purpose or goal|Older biology was full of teleology.|Mind and ideas
+tenable|adjective|Able to be defended or maintained|The theory is no longer tenable.|Mind and ideas
+tenet|noun|A central principle or belief|Honesty is the first tenet of the club.|Mind and ideas
+thesis|noun|A statement put forward to be proved|Her thesis is that cities shape character.|Talk and writing
+transcend|verb|To go beyond the limits of|Great music transcends language.|Mind and ideas
+trope|noun|A common or overused theme or device|The lost heir is a familiar trope.|Arts and stories
+unilateral|adjective|Done by one side without agreement from others|The decision was unilateral.|Society and law
+untenable|adjective|Not able to be defended or kept up|The position became untenable.|Mind and ideas
+utilitarian|adjective|Designed to be useful rather than beautiful|The kitchen is plain and utilitarian.|Things and tools
+zeitgeist|noun|The defining spirit of a particular time|The song captured the zeitgeist of the decade.|Time and change

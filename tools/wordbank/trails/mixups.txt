@@ -1,0 +1,52 @@
+# mixups|Mix-Ups|Pairs of words people confuse, sorted out one at a time|all|2|Talk and writing
+affect|verb|To change or influence something. Usually the action (a verb)|The cold weather can affect your mood.|||~effect
+effect|noun|A result or change. Usually the thing (a noun)|The medicine had a quick effect.|||~affect
+accept|verb|To agree to take or receive|I accept your apology.||1|~except
+except|preposition|Not including|Everyone came except my cousin.||1|~accept
+advice|noun|A suggestion about what to do (the noun)|Take my advice and bring a coat.||1|~advise
+advise|verb|To give advice (the verb)|I advise you to bring a coat.||1|~advice
+complement ~ compliment
+compliment ~ complement
+principal|noun|The head of a school; also, main or most important|The principal greeted us at the door.||1|~principle
+principle ~ principal
+stationary|adjective|Not moving. Trick: stationAry stays in plAce|The bike stayed stationary at the light.|||~stationery
+stationery|noun|Writing paper and envelopes. Trick: stationEry is for lEtters|She wrote on blue stationery.|||~stationary
+discreet ~ discrete
+discrete ~ discreet
+allude ~ elude
+elude|verb|To escape or avoid, especially cleverly|The fox eluded the hounds.|||~allude
+desert ~ dessert
+dessert ~ desert
+capital ~ capitol
+capitol|noun|The building where lawmakers meet|We toured the state capitol.|||~capital
+ensure|verb|To make certain something happens|Double-check to ensure the door is locked.|||~insure
+insure|verb|To buy or provide insurance for|They insured the car against theft.|||~ensure
+farther|adverb|At a greater physical distance|We hiked farther than last week.||1|~further
+further|adverb|To a greater degree; more|Let's discuss this further tomorrow.||1|~farther
+lose|verb|To no longer have; to fail to win|Don't lose your keys.||0|~loose
+loose|adjective|Not tight|My tooth is loose!||0|~lose
+peek ~ peak
+peak|noun|The pointed top of a mountain; the highest point|They reached the peak by noon.||1|~peek
+pique|verb|To stir up interest or curiosity|The title piqued my curiosity.|||~peak
+pore|verb|To study something closely and carefully|She pored over the old maps.|||~pour
+pour|verb|To make a liquid flow from a container|Pour the milk into the bowl.||0|~pore
+precede ~ proceed
+proceed|verb|To go forward or continue|Please proceed to gate twelve.|||~precede
+elicit ~ illicit
+illicit|adjective|Not allowed by law or rules|Customs officers search for illicit goods.||3|~elicit
+cite|verb|To quote or mention as evidence|Cite your sources at the end.|||~site
+site|noun|The place where something is or happens|This is the site of the new library.||1|~cite
+aural|adjective|Relating to the ear or hearing|The concert was an aural treat.||3|~oral
+oral|adjective|Spoken; relating to the mouth|She gave an oral report.||1|~aural
+council ~ counsel
+counsel|noun|Advice; a lawyer who gives it|He asked his grandmother for counsel.|||~council
+breath|noun|The air you take in and let out (the noun)|Take a deep breath.||0|~breathe
+breathe ~ breath
+averse|adjective|Strongly disliking or opposed to|She's averse to early mornings.||3|~adverse
+adverse|adjective|Harmful or unfavorable|Adverse weather delayed the flight.||3|~averse
+flout|verb|To openly ignore a rule|He flouted the dress code with neon sneakers.||3|~flaunt
+flaunt|verb|To show off|She flaunted her new skates.|||~flout
+imply|verb|To suggest without saying directly. The speaker implies|Are you implying I'm late?|||~infer
+infer ~ imply
+emigrate|verb|To leave your country to live in another|Her great-grandparents emigrated from Italy.|||~immigrate
+immigrate|verb|To come into a new country to live|They immigrated to Canada in 1990.|||~emigrate

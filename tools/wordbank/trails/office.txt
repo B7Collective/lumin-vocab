@@ -1,0 +1,35 @@
+# office|Office and Meetings|The words that fill calendars, emails and conference rooms|adult|4|Money and work
+agenda|noun|A list of things to discuss at a meeting|The first item on the agenda is the budget.
+bandwidth
+deliverable|noun|A finished piece of work promised to a client or team|The report is our main deliverable this month.
+stakeholder
+deadline
+synergy
+leverage|verb|To use something to the greatest advantage|We can leverage our volunteers for the event.
+benchmark|noun|A standard used to compare or measure|Last year's sales are the benchmark.
+metric|noun|A measure used to track progress|Response time is our key metric.
+milestone|noun|An important point in a project's progress|Launching the website was a big milestone.
+onboarding|noun|Helping a new employee settle in and learn the job|Her onboarding lasted two weeks.
+liaison|noun|A person who connects two groups; a working link|He's the liaison between the school and parents.
+delegate|verb|To hand a task to someone else|Good leaders delegate.
+escalate
+initiative|noun|A new plan to solve a problem; the drive to act on your own|She took the initiative and fixed the printer.
+iterate|verb|To repeat a process, improving it each time|We'll iterate on the design after feedback.
+logistics|noun|The detailed planning of an event or operation|The logistics of the move took weeks.
+memo|noun|A short written message at work|Read the memo about the holiday schedule.
+prioritize|verb|To decide what is most important and do it first|Prioritize the urgent emails.
+quarterly|adjective|Happening every three months|The quarterly report is due Friday.
+roadmap|noun|A plan showing the steps toward a goal|The roadmap shows three launches next year.
+workflow|noun|The sequence of steps to get work done|The new app speeds up our workflow.
+feasible
+scalable|adjective|Able to grow or expand easily|The recipe is scalable from four to forty servings.
+proactive|adjective|Acting ahead of time to prevent problems|Be proactive and back up your files.
+collaborate
+brainstorm|verb|To come up with many ideas quickly in a group|Let's brainstorm names for the bake sale.
+takeaway|noun|A key point to remember from a meeting or lesson|The main takeaway: start earlier.
+pivot|verb|To change direction or strategy|The cafe pivoted to takeout.
+streamline|verb|To make something simpler and more efficient|They streamlined the sign-up form.
+mandate
+quota
+overhead
+audit

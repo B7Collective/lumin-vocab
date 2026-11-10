@@ -1,0 +1,210 @@
+anguish|noun|Severe pain or distress of mind|She waited in anguish for news of the storm.|Feelings
+despair|noun|The complete loss of hope|The lost hikers fought off despair.|Feelings
+giddy|adjective|Lightheaded with excitement or dizziness|The kids were giddy on the last day of school.|Feelings
+indignation|noun|Anger at something that seems unfair|He wrote a letter full of indignation.|Feelings
+perturbed|adjective|Anxious or unsettled|She was perturbed by the strange noise.|Feelings
+smug|adjective|Too pleased with yourself|He gave a smug grin after winning.|Feelings
+sullen|adjective|Silently bad-tempered and gloomy|A sullen teen slumped in the back seat.|Feelings
+ecstatic|adjective|Overwhelmed with joy|The fans were ecstatic when the team won.|Feelings
+dread|noun|Great fear of something about to happen|She felt dread before the dentist visit.|Feelings
+disgruntled|adjective|Annoyed and dissatisfied|Disgruntled customers waited in the long line.|Feelings
+aghast|adjective|Filled with shock and horror|We were aghast at the size of the bill.|Feelings
+torrent|noun|A fast, violent rush of water or words|The rain turned the creek into a torrent.|Nature and weather
+deluge|noun|A heavy flood or downpour|The deluge washed out the bridge.|Nature and weather
+drought|noun|A long period with little or no rain|The drought dried up the wells.|Nature and weather
+monsoon|noun|A seasonal wind that brings heavy rain|The monsoon arrives every June.|Nature and weather
+foliage|noun|The leaves of plants and trees|The autumn foliage was red and gold.|Nature and weather
+canopy|noun|The top layer of branches in a forest; a cloth cover|Monkeys travel through the forest canopy.|Nature and weather
+crevice|noun|A narrow crack in rock or a wall|A lizard slipped into a crevice.|Nature and weather
+ravine|noun|A deep, narrow valley made by running water|The trail dipped into a rocky ravine.|Nature and weather
+overcast|adjective|Covered with clouds; gray|The sky stayed overcast all afternoon.|Nature and weather
+sleet|noun|Rain that is partly frozen|Sleet coated the windshield.|Nature and weather
+thicket|noun|A dense group of bushes or small trees|A deer vanished into the thicket.|Nature and weather
+geyser|noun|A hot spring that shoots water and steam into the air|The geyser erupts every ninety minutes.|Nature and weather
+lichen|noun|A crusty growth of fungus and algae on rocks and trees|Gray lichen covered the old stone wall.|Nature and weather
+squall|noun|A sudden, short, violent storm|A squall tipped the little sailboat.|Nature and weather
+eclipse|noun|When one object in space blocks the light of another|We watched the eclipse through special glasses.|Nature and weather
+ember|noun|A small glowing piece of coal or wood in a dying fire|We roasted marshmallows over the embers.|Nature and weather
+plumage|noun|A bird's feathers|The peacock fanned out its brilliant plumage.|Animals
+marsupial|noun|A mammal that carries its young in a pouch|Kangaroos and koalas are marsupials.|Animals
+rodent|noun|A small mammal with sharp front teeth, like a mouse|Squirrels are rodents.|Animals
+primate|noun|A mammal group that includes monkeys, apes and humans|Chimpanzees are clever primates.|Animals
+crustacean|noun|A hard-shelled water animal such as a crab or shrimp|Lobsters are crustaceans.|Animals
+mollusk|noun|A soft-bodied animal often with a shell, like a snail|Octopuses are mollusks without shells.|Animals
+livestock|noun|Farm animals raised for food or work|The storm forced farmers to move their livestock.|Animals
+forage|verb|To search widely for food|Bears forage for berries in late summer.|Animals
+graze|verb|To eat grass in a field|Sheep grazed on the hillside.|Animals
+molt|verb|To shed feathers, skin or hair|Snakes molt their skin several times a year.|Animals
+spawn|verb|To lay eggs in water; to produce|Salmon swim upstream to spawn.|Animals
+roost|verb|To settle down to rest or sleep, as birds do|Hundreds of crows roost in the old oak.|Animals
+domesticate|verb|To tame an animal to live with or work for people|People domesticated dogs thousands of years ago.|Animals
+pollinate|verb|To carry pollen from flower to flower|Bees pollinate the apple trees.|Animals
+acrid|adjective|Sharp and bitter to smell or taste|Acrid smoke stung our eyes.|Senses
+aromatic|adjective|Having a strong, pleasant smell|Aromatic herbs grew by the kitchen door.|Senses
+raspy|adjective|Rough and harsh in sound|His voice was raspy after the concert.|Senses
+resonant|adjective|Deep, clear and continuing to sound|The cello has a warm, resonant tone.|Senses
+piercing|adjective|Sharp and high, as a sound; intense, as a look|A piercing whistle ended the game.|Senses
+putrid|adjective|Rotten and foul-smelling|The fridge had a putrid smell after the power cut.|Senses
+rancid|adjective|Smelling or tasting unpleasant because it has gone bad|The old butter had turned rancid.|Senses
+savor|verb|To taste and enjoy slowly|Savor each bite of the cake.|Senses
+timbre|noun|The quality of a sound that makes it distinct|A flute and a violin have different timbres.|Senses
+tactile|adjective|Relating to the sense of touch|Toddlers love tactile toys with bumps and ridges.|Senses
+palpable|adjective|So strong it can almost be touched|The excitement in the room was palpable.|Senses
+audible|adjective|Able to be heard|Her whisper was barely audible.|Senses
+inaudible|adjective|Too quiet to be heard|The answer was inaudible over the wind.|Senses
+tepid|adjective|Only slightly warm; lacking enthusiasm|The bath water had gone tepid.|Senses
+grating|adjective|Harsh and irritating to hear|The grating squeal of the brakes made us wince.|Senses
+protagonist|noun|The main character in a story|The protagonist sets off to find her brother.|Arts and stories
+antagonist|noun|The character who opposes the main character|The antagonist is a jealous wizard.|Arts and stories
+narrator|noun|The voice that tells a story|The narrator turns out to be a cat.|Arts and stories
+stanza|noun|A group of lines in a poem|Each stanza ends with the same line.|Arts and stories
+satire|noun|Humor that mocks foolishness or wrongdoing|The cartoon is a satire of school rules.|Arts and stories
+parody|noun|A funny imitation of a style or work|They wrote a parody of a famous song about homework.|Arts and stories
+genre|noun|A category of art, music or writing|Mystery is my favorite genre.|Arts and stories
+mosaic|noun|A picture made of small colored pieces|The floor had a mosaic of a dolphin.|Arts and stories
+crescendo|noun|A gradual increase in loudness|The music built to a thrilling crescendo.|Arts and stories
+tempo|noun|The speed of a piece of music|The song's tempo picked up near the end.|Arts and stories
+ballad|noun|A song or poem that tells a story|The ballad told of a sailor lost at sea.|Arts and stories
+memoir|noun|A written account of the author's own life|Her memoir describes growing up on a farm.|Arts and stories
+prologue|noun|An introduction to a story or play|The prologue sets the scene in a dark forest.|Arts and stories
+epilogue|noun|A section at the end of a story that wraps it up|The epilogue jumps ahead ten years.|Arts and stories
+climax|noun|The most exciting point of a story|At the climax, the bridge begins to fall.|Arts and stories
+foreshadow|verb|To hint at something that will happen later|The broken clock foreshadows trouble.|Arts and stories
+metaphor|noun|A comparison that says one thing is another|"Time is a thief" is a metaphor.|Arts and stories
+simile|noun|A comparison using "like" or "as"|"Brave as a lion" is a simile.|Arts and stories
+alliteration|noun|Repeating the same first sound in nearby words|"Sally sells seashells" uses alliteration.|Arts and stories
+personification|noun|Giving human qualities to things that are not human|"The wind howled" is personification.|Arts and stories
+molecule|noun|The smallest unit of a substance, made of atoms|A water molecule has three atoms.|Science and tech
+compound|noun|A substance made of two or more elements joined together|Salt is a compound of sodium and chlorine.|Science and tech
+density|noun|How much mass is packed into a space|Oil floats because of its lower density.|Science and tech
+combustion|noun|The process of burning|Combustion in the engine moves the car.|Science and tech
+condensation|noun|Water vapor turning into liquid|Condensation formed on the cold glass.|Science and tech
+conductor|noun|A material that lets heat or electricity pass through|Copper is a good conductor.|Science and tech
+insulator|noun|A material that blocks heat or electricity|Rubber is an insulator.|Science and tech
+particle|noun|A tiny piece of matter|Dust particles floated in the sunbeam.|Science and tech
+nucleus|noun|The central part of an atom or a cell|The nucleus holds the cell's instructions.|Science and tech
+wavelength|noun|The distance between the peaks of a wave|Red light has a longer wavelength than blue.|Science and tech
+inertia|noun|The tendency of things to keep doing what they are doing|Inertia pushes you forward when the bus stops.|Science and tech
+momentum|noun|The force of a moving object; growing speed of progress|The sled gained momentum down the hill.|Science and tech
+specimen|noun|A sample used for study|She pressed a leaf specimen in her notebook.|Science and tech
+organism|noun|A single living thing|Even tiny organisms need water.|Science and tech
+microbe|noun|A living thing too small to see without a microscope|Microbes in the soil break down leaves.|Science and tech
+filament|noun|A very thin thread or wire|The bulb's filament glowed orange.|Science and tech
+alloy|noun|A metal made by mixing two or more metals|Bronze is an alloy of copper and tin.|Science and tech
+cartilage|noun|Firm, flexible tissue in places like the nose and ears|Your ears are shaped by cartilage.|Body and health
+tendon|noun|A tough cord that connects muscle to bone|She strained a tendon in her heel.|Body and health
+ligament|noun|A band of tissue that holds bones together at a joint|He tore a ligament in his knee.|Body and health
+marrow|noun|The soft tissue inside bones that makes blood cells|Bone marrow makes new blood cells.|Body and health
+artery|noun|A blood vessel that carries blood away from the heart|The main artery runs down your leg.|Body and health
+respiration|noun|The process of breathing|Fish use gills for respiration.|Body and health
+reflex|noun|An automatic movement your body makes|Blinking is a reflex.|Body and health
+adrenaline|noun|A hormone that prepares the body for action|Adrenaline kicked in as the roller coaster dropped.|Body and health
+dehydrated|adjective|Lacking enough water|Drink water so you don't get dehydrated.|Body and health
+sprain|noun|An injury from twisting a joint too far|She wore a brace for her wrist sprain.|Body and health
+fracture|noun|A break, especially in a bone|The X-ray showed a small fracture.|Body and health
+contagious|adjective|Spreading easily from one person to another|Yawning is contagious.|Body and health
+abdomen|noun|The belly; the part of the body holding the stomach|The doctor pressed gently on his abdomen.|Body and health
+cranium|noun|The part of the skull that holds the brain|A helmet protects your cranium.|Body and health
+condiment|noun|A sauce or seasoning added to food|Mustard is his favorite condiment.|Food
+morsel|noun|A small piece of food|The dog gobbled every morsel.|Food
+ration|noun|A fixed amount of food allowed to each person|Each camper got a ration of trail mix.|Food
+famished|adjective|Extremely hungry|We were famished after the hike.|Food
+glutton|noun|A person who eats too much|I felt like a glutton after three slices.|Food
+palate|noun|The roof of the mouth; a sense of taste|The chef has a refined palate.|Food
+entree|noun|The main dish of a meal|The entree was roasted chicken.|Food
+delectable|adjective|Delicious|The bakery smelled delectable.|Food
+succulent|adjective|Juicy and tender|The peaches were ripe and succulent.|Food
+gourmet|adjective|High-quality and carefully prepared|They opened a gourmet sandwich shop.|Food
+braise|verb|To cook slowly in a covered pot with a little liquid|Braise the beef for three hours.|Food
+ferment|verb|To change chemically, as sugar turns into gas or acid|Cabbage ferments into sauerkraut.|Food
+perishable|adjective|Likely to spoil quickly|Milk is perishable, so keep it cold.|Food
+staple|noun|A basic food eaten regularly|Rice is a staple in many countries.|Food
+delicacy|noun|A rare or expensive food; delicateness|Snails are a delicacy in France.|Food
+brine|noun|Salty water used to preserve or flavor food|The pickles soaked in brine for a week.|Food
+merchandise|noun|Goods for sale|The store marked down its summer merchandise.|Money and work
+inventory|noun|A complete list of goods in stock|The shop counts its inventory every January.|Money and work
+retail|noun|The sale of goods to the public|She works in retail at the mall.|Money and work
+invest|verb|To put money into something to earn more later|They invested in a small bakery.|Money and work
+thrifty|adjective|Careful with money|My thrifty grandpa reuses everything.|Money and work
+bankrupt|adjective|Unable to pay debts|The video store went bankrupt.|Money and work
+debt|noun|Money that is owed|They paid off their debt in two years.|Money and work
+apprentice|noun|A person learning a trade from a skilled worker|The apprentice swept the workshop.|Money and work
+vocation|noun|A job someone feels strongly drawn to|Teaching is her true vocation.|Money and work
+livelihood|noun|The way a person earns a living|Fishing is the village's livelihood.|Money and work
+barter|verb|To trade goods without using money|They bartered eggs for flour.|Money and work
+commodity|noun|A basic product that can be bought and sold|Coffee is a valuable commodity.|Money and work
+currency|noun|The money used in a country|The euro is the currency of many European countries.|Money and work
+auction|noun|A sale where items go to the highest bidder|The painting sold at auction.|Money and work
+salvage|verb|To rescue something from loss or damage|They salvaged wood from the old barn.|Money and work
+quota|noun|A fixed share or amount that must be met|Each team member has a sales quota.|Money and work
+hamlet|noun|A very small village|The hamlet had one shop and a church.|Places and travel
+outskirts|noun|The outer edges of a town|They live on the outskirts of the city.|Places and travel
+province|noun|A region of a country with its own government|Quebec is a province of Canada.|Places and travel
+frontier|noun|A border region; the edge of what is known|Space is the next frontier.|Places and travel
+fjord|noun|A long, narrow inlet of the sea between steep cliffs|Ferries glide through Norway's fjords.|Places and travel
+isthmus|noun|A narrow strip of land connecting two larger areas|Panama sits on an isthmus.|Places and travel
+savanna|noun|A grassy plain with few trees|Zebras roam the savanna.|Places and travel
+steppe|noun|A large, dry, grassy plain without trees|Horses ran across the steppe.|Places and travel
+cove|noun|A small, sheltered bay|We anchored in a quiet cove.|Places and travel
+inlet|noun|A narrow strip of water reaching into land|Seals rested in the rocky inlet.|Places and travel
+vicinity|noun|The area near a place|There are three parks in the vicinity.|Places and travel
+citadel|noun|A fortress protecting a city|The citadel stood on the hilltop.|Places and travel
+haven|noun|A safe place|The library was a haven on rainy days.|Places and travel
+bazaar|noun|A market of many stalls|The bazaar sold rugs, spices and lamps.|Places and travel
+itinerary|noun|A plan of a journey|Our itinerary includes three cities.|Places and travel
+excursion|noun|A short trip, usually for fun|The class went on an excursion to the aquarium.|Places and travel
+pilgrimage|noun|A journey to a meaningful place|Fans make a pilgrimage to the old stadium.|Places and travel
+nomad|noun|A person who moves from place to place|Nomads moved their tents with the seasons.|Places and travel
+apparatus|noun|Equipment designed for a particular job|The climbers checked their breathing apparatus.|Things and tools
+mechanism|noun|A set of moving parts that work together|The clock's mechanism was full of tiny gears.|Things and tools
+gauge|noun|An instrument that measures an amount|The fuel gauge showed nearly empty.|Things and tools
+chisel|noun|A tool with a sharp edge for shaping wood or stone|The sculptor tapped the chisel gently.|Things and tools
+anvil|noun|A heavy iron block on which metal is hammered|Sparks flew from the anvil.|Things and tools
+winch|noun|A machine that winds a rope or cable to pull loads|A winch pulled the boat onto the trailer.|Things and tools
+vessel|noun|A container for liquid; a ship|The clay vessel held olive oil.|Things and tools
+receptacle|noun|Something that holds or contains things|Toss the wrappers in the receptacle.|Things and tools
+relic|noun|An object surviving from the past|The museum displays relics from ancient Egypt.|Things and tools
+trinket|noun|A small ornament of little value|She keeps trinkets from every trip.|Things and tools
+heirloom|noun|A valued object passed down in a family|The quilt is a family heirloom.|Things and tools
+memento|noun|An object kept as a reminder|He kept the ticket as a memento.|Things and tools
+sieve|noun|A mesh tool for separating fine from coarse|Sift the flour through a sieve.|Things and tools
+tripod|noun|A three-legged stand|The camera sat on a tripod.|Things and tools
+kiln|noun|An oven for baking pottery|The bowls were fired in a kiln.|Things and tools
+loom|noun|A machine for weaving thread into cloth|She wove a scarf on her loom.|Things and tools
+antiquity|noun|The distant past; an object from it|The coin dates from antiquity.|Time and change
+chronicle|noun|A record of events in the order they happened|Her diary is a chronicle of the trip.|Time and change
+epoch|noun|A distinct period of history|The invention began a new epoch.|Time and change
+interval|noun|A space of time between events|The bus comes at ten-minute intervals.|Time and change
+prehistoric|adjective|From the time before written records|Prehistoric people painted on cave walls.|Time and change
+medieval|adjective|From the Middle Ages, about 500 to 1500|They toured a medieval castle.|Time and change
+millennium|noun|A period of a thousand years|The tree has stood for nearly a millennium.|Time and change
+sporadic|adjective|Happening now and then, not regularly|Sporadic showers fell all day.|Time and change
+simultaneous|adjective|Happening at the same time|The two clocks gave a simultaneous chime.|Time and change
+belated|adjective|Coming late|She sent a belated birthday card.|Time and change
+interim|adjective|Temporary, for the time in between|An interim coach led the team.|Time and change
+aftermath|noun|The period after a bad event|Neighbors helped in the aftermath of the flood.|Time and change
+tyranny|noun|Cruel and unfair use of power|The people rose up against tyranny.|Society and law
+monarchy|noun|A country ruled by a king or queen|The country is a monarchy with a parliament.|Society and law
+verdict|noun|A decision in a court case|The jury reached a verdict after two days.|Society and law
+testimony|noun|A statement given as evidence|Her testimony helped solve the case.|Society and law
+alliance|noun|An agreement to work together|The two clubs formed an alliance.|Society and law
+propaganda|noun|Misleading information spread to push a cause|The poster was wartime propaganda.|Society and law
+civic|adjective|Relating to a city or to being a citizen|Voting is a civic duty.|Society and law
+curfew|noun|A rule requiring people to be home by a set time|Her curfew is nine o'clock.|Society and law
+heritage|noun|Traditions and history passed down|The festival celebrates the town's heritage.|Society and law
+arrogant|adjective|Acting as if you are better than others|The arrogant player ignored his coach.|Character
+meek|adjective|Quiet, gentle and easily pushed around|The meek kitten hid behind its mother.|Character
+earnest|adjective|Serious and sincere|He made an earnest promise to help.|Character
+conceited|adjective|Too proud of yourself|She was conceited about her test scores.|Character
+cynical|adjective|Believing people act only for selfish reasons|He was cynical about the free offer.|Character
+pompous|adjective|Acting grand and self-important|The pompous mayor gave a long speech.|Character
+malicious|adjective|Meaning to do harm|A malicious rumor spread through school.|Character
+assertive|adjective|Confident and direct in stating your views|Be assertive when you ask for help.|Character
+reserved|adjective|Slow to show feelings or opinions|The new student was reserved at first.|Character
+banter|noun|Playful, friendly teasing talk|The friends traded banter at lunch.|Talk and writing
+rebuke|verb|To express sharp disapproval|The coach rebuked them for being late.|Talk and writing
+jargon|noun|Special words used by a group that others may not understand|The doctor explained without jargon.|Talk and writing
+slang|noun|Very informal words, often used by a group|Every generation invents new slang.|Talk and writing
+verbatim|adverb|In exactly the same words|She repeated the instructions verbatim.|Talk and writing
+paraphrase|verb|To say something in different words|Paraphrase the paragraph in one sentence.|Talk and writing
+euphemism|noun|A mild word used in place of a harsh one|"Passed away" is a euphemism for "died."|Talk and writing

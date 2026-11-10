@@ -1,0 +1,332 @@
+absorb|Plants absorb water through their roots.
+accomplish|We can accomplish a lot in one afternoon.
+acquire|Museums acquire new paintings every year.
+admirable|Her patience with the puppy was admirable.
+advantage|Being tall is an advantage in basketball.
+agile|The agile cat leaped onto the shelf.
+alert|The guard dog stayed alert all night.
+amble|We amble through the park on Sundays.
+amiable|The amiable shopkeeper gave us a free sticker.
+ancestor|My ancestor sailed here long ago.
+applaud|Please applaud for our performers.
+aquatic|Otters are aquatic mammals.
+artifact|The arrowhead is an artifact from long ago.
+assist|Can you assist me with this box?
+astonished|We were astonished by the giant pumpkin.
+astronomer|The astronomer pointed out Saturn.
+atmosphere|The earth's atmosphere protects us.
+avalanche|An avalanche of laundry fell from the closet.
+awkward|There was an awkward silence after the joke.
+banquet|The team had a banquet at the end of the season.
+bargain|The bike was a bargain at the yard sale.
+benevolent|The benevolent king fed the hungry.
+blustery|It was a blustery day for a picnic.
+boast|He likes to boast about his high score.
+budget|We made a budget for the party.
+calculate|Calculate how much paint we need.
+camouflage|The moth's camouflage matched the bark.
+cascade|Water began to cascade down the rocks.
+celebrate|We celebrate birthdays with pancakes.
+century|The house is over a century old.
+challenge|The puzzle was a real challenge.
+characteristic|Long ears are a characteristic of rabbits.
+chore|Taking out the trash is my chore.
+circumference|Measure the circumference of the pumpkin.
+civilization|The ancient civilization built pyramids.
+clarify|Can you clarify the rules?
+classify|We classify animals by what they eat.
+cluster|A cluster of grapes hung from the vine.
+collapse|The sandcastle will collapse when the tide comes in.
+combine|Combine the eggs and milk.
+compliment|She gave me a nice compliment on my drawing.
+concentrate|It's hard to concentrate when it's noisy.
+conquer|She worked to conquer her fear of heights.
+consequence|Missing the bus was a consequence of sleeping in.
+considerate|It was considerate of you to save me a seat.
+constellation|The Big Dipper is part of a constellation.
+construct|Beavers construct dams from sticks.
+continent|Africa is a huge continent.
+creative|She found a creative way to use old jars.
+crisp|The air was crisp in the morning.
+curiosity|Curiosity led us down the path.
+current|The current pulled the raft downstream.
+decorate|Let's decorate the cookies with sprinkles.
+desperate|The desperate cat meowed at the door.
+destination|Our destination is the lake cabin.
+diagram|The diagram shows the parts of a flower.
+disappointed|I was disappointed when the show was canceled.
+dispute|The two teams had a dispute about the score.
+distant|We heard distant thunder.
+document|Keep the document in a safe place.
+ecosystem|A forest is a busy ecosystem.
+edible|Some flowers are edible.
+effort|It took effort to climb the hill.
+embark|We embark on our trip at dawn.
+emerald|The lake was a deep emerald green.
+encounter|We had an encounter with a moose.
+energetic|The energetic puppy ran in circles.
+entertain|The clown came to entertain the kids.
+enthusiasm|She sang with great enthusiasm.
+environment|We must protect the environment.
+erode|Waves erode the cliffs over time.
+expert|Ask an expert about the old coin.
+fascinating|The museum was fascinating.
+festival|The town held a kite festival.
+fiction|Dragons only live in fiction.
+focus|Focus on one step at a time.
+fortunate|We were fortunate to find a parking spot.
+fragrance|The fragrance of roses filled the yard.
+geography|In geography we learned about rivers.
+glimmer|A glimmer of light showed under the door.
+gorgeous|What a gorgeous sunset!
+gradual|The change in weather was gradual.
+gratitude|We wrote cards to show our gratitude.
+guardian|The dog was a loyal guardian of the house.
+harmony|The choir sang in perfect harmony.
+hesitant|She was hesitant to jump into the cold lake.
+historic|The historic bridge is two hundred years old.
+hospitable|Our hospitable hosts made breakfast for everyone.
+humorous|He wrote a humorous story about his cat.
+illustrator|The illustrator drew a silly moose.
+imaginative|The imaginative kids built a spaceship from boxes.
+immerse|Immerse the shirt in warm, soapy water.
+inherit|Puppies inherit their spots from their parents.
+inspire|Her story will inspire you to try.
+instinct|Birds build nests by instinct.
+instrument|The violin is a string instrument.
+intelligent|Dolphins are intelligent animals.
+invention|The light bulb was an amazing invention.
+journal|I write in my journal every night.
+jubilant|The jubilant fans danced in the street.
+kindle|Dry twigs help kindle a fire.
+labyrinth|The hedge maze was a real labyrinth.
+landscape|The snowy landscape looked like a painting.
+launch|They will launch the rocket at noon.
+legendary|The legendary pitcher threw a perfect game.
+liberty|The bird flew off to its liberty.
+mammoth|We had a mammoth pile of leaves to rake.
+marine|Marine animals live in the sea.
+mature|Mature trees give lots of shade.
+melody|She hummed a sweet melody.
+mention|Did he mention the party?
+merry|The merry band played all evening.
+microscope|We looked at a hair under the microscope.
+mischievous|The mischievous monkey stole a hat.
+moment|Wait a moment, please.
+monitor|The nurse will monitor your temperature.
+motivate|A sticker chart can motivate kids.
+multiply|Multiply three by four.
+mural|The kids painted a mural of the ocean.
+narrate|Grandpa will narrate the puppet show.
+negotiate|We had to negotiate who got the top bunk.
+noble|It was a noble act to return the money.
+nourishing|Soup is warm and nourishing.
+novel|She just finished a novel about pirates.
+oasis|The shady park is an oasis in the city.
+observant|An observant kid spotted the owl first.
+occasion|A birthday is a special occasion.
+ocean|The ocean is deep and blue.
+original|Is that painting an original or a copy?
+outdoors|We love to play outdoors.
+paradise|The island felt like paradise.
+participate|Everyone can participate in the game.
+passage|A secret passage led to the garden.
+peaceful|The forest was peaceful and still.
+perform|The band will perform at noon.
+persistent|The persistent woodpecker kept knocking.
+perspective|From the plane's perspective, cars look like ants.
+pioneer|The pioneer built a log cabin.
+pleasant|It was a pleasant day for a walk.
+plume|A plume of smoke rose from the chimney.
+ponder|I like to ponder big questions.
+prairie|Bison once covered the prairie.
+prepare|Prepare your bag the night before.
+pride|She took pride in her garden.
+procedure|Follow the fire drill procedure.
+quest|The knight went on a quest for the golden cup.
+recycle|We recycle cans and bottles.
+reflect|The still lake will reflect the mountains.
+region|This region gets lots of snow.
+reserve|We reserve a table for six.
+resilient|Grass is resilient and grows back after being stepped on.
+resolve|They worked to resolve the argument.
+respect|Treat others with respect.
+reward|The reward for finding the cat was ten dollars.
+rhythm|Tap your feet to the rhythm.
+rival|The two schools are old rivals, and each rival wants the trophy.
+rotate|The earth will rotate once each day.
+rural|They live on a rural road with no stoplights.
+sanctuary|The bird sanctuary protects herons.
+satisfy|A big sandwich will satisfy my hunger.
+scavenger|A raccoon is a scavenger.
+scenery|The train ride has beautiful scenery.
+scientist|The scientist studied the frogs.
+sculpt|Let's sculpt animals out of clay.
+shelter|We found shelter from the rain under a tree.
+signal|Wave the flag as a signal to start.
+similar|Your drawing is similar to mine.
+solar|Solar panels make power from sunlight.
+solution|We found a solution to the leaky roof.
+spectacle|The fireworks were quite a spectacle.
+stampede|The noise caused a stampede of cattle.
+statue|A bronze statue stands in the square.
+summarize|Summarize the story in three sentences.
+supply|We need to supply water for the hike.
+surface|Bubbles rose to the surface of the pond.
+survive|Cactuses survive with little water.
+talented|The talented boy plays three instruments.
+temperature|The temperature dropped at night.
+terrain|The rocky terrain was hard to walk on.
+thrilling|The roller coaster was thrilling.
+tradition|Making cookies is a family tradition.
+tremble|My legs began to tremble on the high dive.
+triumphant|The triumphant team lifted the trophy.
+tropical|Tropical fish have bright colors.
+universe|The universe is full of stars.
+unusual|It's unusual to see a deer in town.
+victory|The crowd cheered the victory.
+volume|Turn down the volume, please.
+volunteer|I volunteer at the animal shelter.
+whimsical|The shop sold whimsical hats.
+wildlife|We spotted wildlife on our hike.
+wisdom|Grandma is full of wisdom.
+wondrous|The cave was full of wondrous crystals.
+zoologist|The zoologist studies gorillas.
+government|The government builds new roads.
+election|We will have an election for class president.
+justice|The judge wanted justice for everyone.
+council|The town council voted on the new park.
+ballot|Each person gets one ballot.
+democracy|In a democracy, people choose their leaders.
+rights|Everyone has rights that should be protected.
+equality|The girls asked for equality in team time.
+ceremony|The award ceremony was in the gym.
+custom|It's a custom to bow in some countries.
+culture|Music is a big part of their culture.
+majority|The majority voted for a picnic.
+treaty|The treaty ended the long war.
+kingdom|The kingdom had a wise queen.
+empire|The empire stretched across many lands.
+profit|The bake sale made a nice profit.
+allowance|I spent my allowance on a book.
+career|He wants a career as a pilot.
+employee|The new employee stocked the shelves.
+income|Her income comes from selling paintings.
+loan|The bank gave them a loan for the house.
+tax|There is a tax on most things we buy.
+wage|His wage went up this year.
+merchant|The merchant sold silk and spices.
+economy|Tourism helps the town's economy.
+purchase|We will purchase tickets online.
+afford|We can't afford a pony.
+valuable|The old stamp is valuable.
+donate|We donate toys every December.
+charity|The race raised money for charity.
+digest|It takes hours to digest a big meal.
+lungs|Deep breaths fill your lungs.
+pulse|Find your pulse on your wrist.
+injury|He had a knee injury from soccer.
+fever|A fever means your body is fighting germs.
+organ|Your skin is your largest organ.
+spine|Your spine helps you stand tall.
+nutrition|Good nutrition helps you grow.
+posture|Sit up straight for good posture.
+recover|It takes time to recover from a cold.
+symptom|A cough is a symptom of a cold.
+beverage|Lemonade is my favorite beverage.
+cuisine|Mexican cuisine is my favorite.
+savory|Cheese crackers are a savory snack.
+portion|Each kid got a portion of cake.
+simmer|Let the sauce simmer slowly.
+nutritious|Beans are cheap and nutritious.
+leftovers|We had leftovers for lunch.
+garnish|Add a mint leaf as a garnish.
+tangy|The lemon bars were tangy.
+decade|A decade is ten years long.
+era|The dinosaur era ended long ago.
+generation|Each generation teaches the next.
+annual|The annual fair comes every August.
+routine|My morning routine starts with stretching.
+schedule|Check the schedule for the next bus.
+deadline|The deadline for the art contest is Friday.
+previous|The previous owner planted these roses.
+permanent|The marker is permanent, so be careful.
+evolve|Languages evolve over time.
+punctual|The punctual train arrived at nine sharp.
+overdue|My library book is overdue.
+device|This device measures wind speed.
+utensil|A spatula is a cooking utensil.
+appliance|The blender is a loud appliance.
+lever|Pull the lever to start the machine.
+pulley|A pulley lifts the bucket out of the well.
+fabric|This fabric is soft and stretchy.
+equipment|The camping equipment is in the garage.
+container|Put the leftovers in a container.
+blueprint|The blueprint shows where each room will go.
+faint|There was a faint smell of smoke.
+muffled|We heard muffled voices through the wall.
+deafening|The thunder was deafening.
+sensation|I felt a tingling sensation in my foot.
+stench|The stench of the swamp was awful.
+sensitive|My skin is sensitive to the sun.
+amphibian|A salamander is an amphibian.
+carnivore|A tiger is a carnivore.
+herbivore|A rabbit is a herbivore.
+omnivore|A raccoon is an omnivore.
+species|This species of frog is very rare.
+talon|The owl gripped the branch with a talon.
+tusk|The walrus has a long tusk.
+mane|The horse's mane blew in the wind.
+venom|Some snakes have venom.
+larva|A mosquito larva lives in water.
+flipper|The sea turtle waved a flipper.
+sketch|I made a quick sketch of the tree.
+canvas|She painted on a big canvas.
+portrait|The portrait shows my great-grandpa.
+chorus|Everyone sang the chorus together.
+orchestra|The orchestra tuned up before the show.
+plot|The plot of the movie was full of surprises.
+villain|The villain stole the magic crown.
+comedy|We watched a comedy and laughed a lot.
+coast|We drove along the rocky coast.
+plateau|The plateau was high and flat.
+peninsula|We camped on a sandy peninsula.
+capital|What is the capital of Japan?
+border|We crossed the border into Canada.
+lagoon|The lagoon was calm and blue.
+marsh|Ducks nest in the marsh.
+pronounce|How do you pronounce this word?
+paragraph|Write one paragraph about your pet.
+dialogue|The play has lots of funny dialogue.
+gossip|Don't listen to gossip.
+complain|He likes to complain about the weather.
+vocabulary|Reading builds your vocabulary.
+nickname|My nickname is Bean.
+experiment|Our experiment used vinegar and baking soda.
+circuit|The bulb lit when the circuit was complete.
+friction|Friction makes the brakes work.
+mineral|Quartz is a common mineral.
+bamboozle|Don't let him bamboozle you with that trick.
+brouhaha|There was a brouhaha over the missing cupcakes.
+cattywampus|The picture frame was hanging cattywampus.
+discombobulate|The spinning ride will discombobulate you.
+doohickey|Hand me that doohickey for opening jars.
+flabbergasted|I was flabbergasted by the giant hailstones.
+gobbledygook|The instructions were pure gobbledygook.
+hodgepodge|The drawer is a hodgepodge of old toys.
+hullabaloo|The puppy caused a hullabaloo at the party.
+kerfuffle|There was a kerfuffle over the last slice.
+lollygag|Don't lollygag; the bus is waiting.
+malarkey|That story about a flying cow is malarkey.
+nincompoop|Only a nincompoop would wear socks in the pool.
+persnickety|The persnickety cat only eats one brand.
+rambunctious|The rambunctious kids jumped on the bed.
+shenanigans|No shenanigans during the school play!
+skedaddle|We had to skedaddle before the rain.
+snollygoster|The snollygoster in the story sold fake maps.
+taradiddle|That's a taradiddle and you know it.
+wishy-washy|His answer was wishy-washy.
+whippersnapper|"Listen here, you young whippersnapper," Grandpa joked.
+widdershins|The dancers circled widdershins around the pole.
+codswallop|That excuse is pure codswallop.
+gallivant|They love to gallivant around town on weekends.

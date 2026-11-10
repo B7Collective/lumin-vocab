@@ -1,0 +1,256 @@
+brave|It was brave of you to try the high slide.
+cheerful|A cheerful song came from the kitchen.
+grumpy|The grumpy cat hissed at the new puppy.
+proud|Dad was proud of the bird feeder he built.
+nervous|I felt nervous before my first swim lesson.
+calm|The lake was calm and still in the morning.
+gentle|Be gentle when you hold the baby chick.
+curious|The curious kitten sniffed every box.
+lonely|The lonely duck swam to join the others.
+grateful|We are grateful for our warm house.
+embarrassed|He was embarrassed when he tripped on stage.
+excited|The kids were excited about the snow day.
+patient|Please be patient while the cookies cool.
+shy|The shy girl smiled from behind her book.
+delighted|Grandma was delighted with her handmade card.
+worried|Mom was worried when the storm got loud.
+eager|The puppy was eager to go outside.
+frustrated|I got frustrated when my kite would not fly.
+relieved|We were relieved to find the lost keys.
+thrilled|She was thrilled to see a real whale.
+gloomy|The sky looked gloomy all afternoon.
+polite|It is polite to say please and thank you.
+honest|An honest friend tells you the truth.
+fair|It is fair to take turns on the swing.
+generous|Our generous neighbor shared her tomatoes.
+silly|My brother made a silly face at the camera.
+cozy|The blanket fort was warm and cozy.
+kind|It was kind of you to help me up.
+jolly|The jolly baker sang while he worked.
+content|The cat looked content in the sunny window.
+enormous|An enormous truck rumbled down the street.
+tiny|A tiny ant carried a crumb across the table.
+gigantic|We saw a gigantic pumpkin at the fair.
+smooth|The river stone felt cool and smooth.
+rough|Tree bark feels rough under your hand.
+fuzzy|The peach had fuzzy skin.
+sticky|My fingers were sticky from the honey.
+slippery|The wet floor was slippery, so we walked slowly.
+soggy|My cereal got soggy while I talked.
+crispy|We ate crispy apple slices.
+fragile|The glass ornament is fragile, so hold it carefully.
+sturdy|We built a sturdy fort out of logs.
+ancient|The castle walls are ancient and covered in moss.
+rapid|The rabbit made a rapid escape into the bushes.
+hollow|An owl lives in the hollow tree.
+narrow|We squeezed through the narrow gap in the fence.
+gleaming|The new bike was gleaming in the sun.
+dim|The room grew dim as the sun went down.
+damp|My socks were damp after the puddle jump.
+chilly|Bring a jacket; the evening is chilly.
+scorching|The sand was scorching under our feet.
+fierce|A fierce wind blew the hats away.
+clever|The clever crow dropped nuts on the road to crack them.
+tidy|She keeps her desk tidy.
+messy|Painting can be messy, so wear an apron.
+noisy|The noisy geese honked all morning.
+silent|The library was silent except for turning pages.
+plump|A plump robin hopped across the lawn.
+brilliant|The fireworks were brilliant against the dark sky.
+rare|It is rare to see snow in April here.
+wobbly|The wobbly table needs a folded napkin under one leg.
+crooked|The picture on the wall is crooked.
+vast|The ocean looked vast from the boat.
+steep|The hill was too steep to ride up.
+shallow|Little kids play in the shallow end.
+delicious|Grandpa makes delicious pancakes.
+sour|The lemonade was too sour without sugar.
+spicy|The salsa was so spicy that my eyes watered.
+juicy|The juicy orange dripped down my chin.
+ripe|The bananas are ripe and spotty.
+fragrant|The garden smelled fragrant after the rain.
+sparkling|The snow was sparkling in the moonlight.
+dusty|We found a dusty box of old toys.
+fluffy|The clouds looked soft and fluffy.
+whisper|Let's whisper so we don't wake the baby.
+giggle|The joke made the whole class giggle.
+gallop|Watch the pony gallop across the field.
+scurry|Mice scurry when the lights come on.
+tumble|The puppies tumble over each other in the grass.
+wander|Don't wander off at the busy market.
+explore|Let's explore the trail behind the school.
+gather|We gather pinecones for the craft table.
+sprinkle|Sprinkle some cheese on the pasta.
+squeeze|Squeeze the lemon over the fish.
+stretch|Cats stretch after a long nap.
+balance|Can you balance a book on your head?
+crumble|The cookie began to crumble in my hand.
+dash|We had to dash to catch the bus.
+peek|Don't peek at your presents!
+shiver|The cold wind made us shiver.
+soar|Kites soar high on a windy day.
+splash|The ducks splash in the pond.
+stomp|The toddler likes to stomp in puddles.
+sway|Tall grass began to sway in the breeze.
+twirl|She loves to twirl in her new skirt.
+wiggle|Wiggle your toes in the sand.
+munch|Horses munch on hay all day.
+nibble|The mouse began to nibble the cheese.
+sip|Take a small sip; the cocoa is hot.
+gulp|He took a big gulp of water after the race.
+chuckle|Grandpa gave a quiet chuckle at the cartoon.
+yawn|A big yawn means it is almost bedtime.
+stumble|Be careful not to stumble on the roots.
+cling|Baby koalas cling to their mothers.
+creep|Fog began to creep over the hill.
+dart|Small fish dart under the rocks.
+drift|The leaf will drift down the stream.
+glide|Swans glide across the lake.
+hover|Hummingbirds hover in front of flowers.
+leap|Frogs leap from lily pad to lily pad.
+perch|A blue jay likes to perch on our fence.
+scramble|We had to scramble up the rocky path.
+slither|The snake will slither under the log.
+collect|I collect shells every summer.
+discover|You might discover a nest in that bush.
+imagine|Imagine a castle made of candy.
+invent|Let's invent a new board game.
+protect|Sunscreen helps protect your skin.
+rescue|The lifeguard swam out to rescue the swimmer.
+share|Please share the crayons with your sister.
+solve|Can you solve this maze?
+borrow|May I borrow your pencil?
+compare|Compare the two leaves and find the difference.
+decide|We need to decide what to name the fish.
+describe|Describe your dream treehouse.
+exclaim|Kids often exclaim with joy at the first snow.
+mumble|Speak up; don't mumble.
+wonder|I wonder what is inside the box.
+admire|We stopped to admire the sunset.
+fetch|My dog loves to fetch the ball.
+flutter|Moths flutter around the porch light.
+hum|I hum when I'm happy.
+observe|Observe how the ice melts in the sun.
+plunge|The otter took a plunge into the river.
+pounce|The kitten waited to pounce on the string.
+sprint|Let's sprint to the big oak tree.
+toss|Toss me the beach ball!
+trace|Trace your hand on the paper.
+vanish|The bubbles vanish when they pop.
+waddle|Penguins waddle across the ice.
+blossom|Each blossom on the tree turned into a cherry.
+burrow|Rabbits sleep in a burrow underground.
+canyon|Our voices echoed off the canyon walls.
+cocoon|The silkworm spun a soft cocoon.
+dew|The grass was wet with dew.
+drizzle|A light drizzle fell during the walk.
+echo|We shouted hello and heard an echo.
+fossil|She found a fossil shell in the rock.
+galaxy|Our planet is part of a huge galaxy.
+glacier|The glacier moves a tiny bit each year.
+harvest|In fall, farmers harvest their corn.
+horizon|A ship appeared on the horizon.
+meadow|Wildflowers covered the meadow.
+moss|Soft green moss grew on the rock.
+nest|A robin built a nest in our gutter.
+orbit|The moon is in orbit around the earth.
+pebble|I skipped a flat pebble across the pond.
+planet|Mars is the red planet.
+puddle|There is a giant puddle by the slide.
+shadow|My shadow is long in the evening.
+stream|We cooled our feet in the stream.
+thunder|The thunder made the windows rattle.
+volcano|The volcano puffed smoke into the sky.
+breeze|A cool breeze came through the window.
+cavern|Bats hang from the roof of the cavern.
+creature|A strange creature lived in the story's lake.
+flock|A flock of birds landed on the wire.
+herd|A herd of cows walked slowly to the barn.
+hive|The bees flew back to their hive.
+insect|An insect has six legs.
+mammal|A whale is a mammal, not a fish.
+reptile|A lizard is a reptile with dry, scaly skin.
+seedling|Water the seedling every morning.
+soil|Worms make the soil healthy.
+swamp|Frogs croaked all night in the swamp.
+tide|At low tide we found crabs in the rocks.
+twig|A bird carried a twig to its nest.
+waterfall|We heard the waterfall before we saw it.
+pollen|Bees carry pollen on their legs.
+nectar|Butterflies sip nectar from flowers.
+gust|A gust of wind took my hat.
+frost|Frost covered the car windows.
+magnet|The magnet picked up all the paper clips.
+gravity|Gravity makes the apple fall down.
+telescope|With a telescope we saw the moon's craters.
+compass|The compass needle points north.
+liquid|Water is a liquid until it freezes.
+cottage|A little cottage sat by the lake.
+harbor|Fishing boats rest in the harbor.
+lantern|Hang the lantern by the tent.
+attic|We found old photos in the attic.
+canoe|We paddled the canoe around the island.
+palace|The queen lived in a palace with a hundred rooms.
+treasure|The map led to buried treasure.
+tunnel|The train went through a dark tunnel.
+village|The village had one bakery and one school.
+voyage|The sailors planned a long voyage.
+journey|The journey to Grandma's takes two hours.
+adventure|Camping in the woods was a big adventure.
+celebration|There was cake at the celebration.
+invitation|I got an invitation to a pool party.
+mystery|Where the cookies went is a mystery.
+gadget|This gadget peels apples in one twist.
+feast|The family made a feast for the holiday.
+recipe|Follow the recipe step by step.
+flavor|Strawberry is my favorite flavor.
+aroma|The aroma of bread filled the house.
+texture|Sand has a gritty texture.
+glimpse|I caught a glimpse of a deer in the trees.
+dawn|Roosters crow at dawn.
+dusk|Bats come out at dusk.
+midnight|The clock struck midnight.
+season|Spring is the season of new flowers.
+audience|The audience clapped for the dancers.
+champion|She is the spelling champion of our school.
+crew|The ship's crew raised the sails.
+guest|Our guest stayed in the spare room.
+hero|The firefighter was a hero to the town.
+neighbor|Our neighbor waves every morning.
+author|The author signed my book.
+inventor|The inventor built a robot that folds towels.
+captain|The captain steered the boat.
+chef|The chef tossed the pizza dough.
+crowd|A crowd gathered to watch the parade.
+rhyme|Can you find a rhyme for "cat"?
+riddle|Can you answer this riddle?
+poem|I wrote a poem about the moon.
+chapter|Let's read one more chapter.
+fable|In the fable, the slow turtle wins.
+promise|I promise to feed the fish.
+apologize|I want to apologize for being late.
+announce|The coach will announce the team today.
+explain|Can you explain how a rainbow forms?
+memory|My favorite memory is the beach trip.
+clue|The muddy boot was a clue.
+habit|Reading at night is a good habit.
+notice|Did you notice the new painting?
+sniff|Dogs sniff everything on a walk.
+muscle|Your heart is a muscle.
+skeleton|The museum has a dinosaur skeleton.
+nocturnal|Owls are nocturnal and hunt at night.
+hatch|The chicks will hatch soon.
+migrate|Geese migrate south for the winter.
+hibernate|Bears hibernate in caves.
+sprout|The beans began to sprout in the cup.
+build|Let's build a snowman.
+sculpture|The sculpture in the park is shaped like a whale.
+puzzle|We finished the puzzle together.
+ribbon|She tied a red ribbon on the gift.
+explorer|The explorer crossed the icy land.
+artist|The artist painted the mural on the wall.
+tornado|The tornado spun across the empty field.
+island|We took a ferry to the island.
+pond|Ducks swim in the pond.
+den|The fox curled up in its den.
+predator|A hawk is a predator of mice.
