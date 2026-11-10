@@ -249,7 +249,7 @@ route("play", (main) => {
       : acc === 100 ? "Perfect" : acc >= 70 ? "Well done" : "Keep going";
     const tiles = [[String(right), "Right"], [acc + "%", "Accuracy"], s.mode === "sprint" ? [String(answered), "Answered"] : [String(best), "Best streak"]];
     body.replaceChildren(h("div", { class: "endcard" },
-      art(String(s.art).startsWith("keeper:") ? keeperArt(s.art.slice(7)) : artIcon(s.art), "", 160),
+      art(String(s.art).startsWith("src:") ? s.art.slice(4) : String(s.art).startsWith("keeper:") ? keeperArt(s.art.slice(7)) : artIcon(s.art), "", 160),
       h("h1", {}, head),
       s.endNote ? h("p", { class: "lead" }, s.endNote(result)) : null,
       h("div", { class: "score" }, tiles.map(([b, t]) => h("div", {}, h("b", {}, b), h("span", {}, t)))),

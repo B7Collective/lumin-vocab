@@ -35,8 +35,43 @@ const OWN_ART = new Set(["decades", "mixups", "myths", "borrowed", "sounds", "ki
 const BORROWED_ART = { spelling: "spelling", conversation: "talk", tech: "science", weather: "nature" };
 export const trailArt = (k) => OWN_ART.has(k) ? `/art/trails/${k}.webp` : `/art/icons/${BORROWED_ART[k] || "shuffle"}.webp`;
 export const keeperArt = (k) => `/art/keepers/${k}.webp`;
+// Regions without a keeper portrait show the thing their keeper is known by instead
+const KEEPER_STANDIN = { summit: "bellrope", bridge: "cattails", village: "streetlamp", cliffs: "seathrift" };
+export const keeperSrc = (region) => region[4] ? keeperArt(region[4]) : `/art/decor/${KEEPER_STANDIN[region[0]] || "lavender"}.webp`;
 export const icon = (name) => `/art/icons/${name}.webp`;
 export const landmark = (name) => `/art/journey/${name}.webp`;
+// ---- The land along the road -------------------------------------------------------------
+// Each region has its own ground and a few things growing or resting beside the path.
+// Decor sizes: big pieces stand taller, small ones sit low; plants sway, lights glow, boats bob.
+export const LANDS = {
+  lavender: { ground: "heather", decor: ["lavender", "beehive", "roses", "mossrock", "lavender", "wateringcan"] },
+  forest: { ground: "ferns", decor: ["fern", "mushrooms", "stumplantern", "pinecones", "mossrock", "fern"] },
+  harbor: { ground: "sand", decor: ["rowboat", "ropepost", "buoy", "shells", "netcrate", "bottle"] },
+  library: { ground: "cobbles", decor: ["books", "streetlamp", "openbook", "quill", "bench", "scroll"] },
+  summit: { ground: "alpine", decor: ["cairn", "edelweiss", "signpost", "tent", "bellrope", "edelweiss"] },
+  conservatory: { ground: "clover", decor: ["pottedfern", "wateringcan", "cloche", "roses", "birdbath", "beehive"] },
+  aurora: { ground: "shallows", decor: ["cattails", "waterlily", "docklantern", "canoe", "steppingstone", "cattails"] },
+  bridge: { ground: "autumn", decor: ["mapleleaves", "acorns", "bench", "apples", "mushrooms", "pinecones"] },
+  fireside: { ground: "snowpine", decor: ["firewood", "snowpine", "sled", "mittens", "cocoa", "stumplantern"] },
+  attic: { ground: "dusk", decor: ["telescope", "moonchest", "books", "scroll", "openbook", "quill"] },
+  village: { ground: "footprints", decor: ["snowman", "streetlamp", "snowpine", "sled", "mittens", "firewood"] },
+  cliffs: { ground: "goldgrass", decor: ["seathrift", "moorpost", "shells", "tidepool", "bottle", "ropepost"] },
+  garden: { ground: "meadow", decor: ["apples", "beehive", "wateringcan", "roses", "pottedfern", "birdbath"] },
+  study: { ground: "gravel", decor: ["books", "quill", "openbook", "bench", "scroll", "streetlamp"] },
+  heights: { ground: "scree", decor: ["cairn", "telescope", "signpost", "tent", "mossrock", "edelweiss"] },
+  wildwood: { ground: "moss", decor: ["mushrooms", "fern", "stumplantern", "mossrock", "pinecones", "fern"] },
+};
+const TRAIL_LAND = { kitchen: "garden", tasting: "garden", kind: "lavender", games: "bridge", doctor: "conservatory", space: "attic", weather: "aurora",
+  sounds: "forest", decades: "harbor", airport: "cliffs", borrowed: "harbor", spelling: "library", mixups: "study", conversation: "lavender",
+  courtroom: "library", office: "study", money: "study", myths: "wildwood", tech: "heights" };
+export const landFor = (regionOrTrail, isTrail) => LANDS[isTrail ? TRAIL_LAND[regionOrTrail] || "garden" : regionOrTrail] || LANDS.lavender;
+export const groundUrl = (name) => `/art/ground/${name}.webp`;
+export const decorUrl = (name) => `/art/decor/${name}.webp`;
+const DECOR_BIG = new Set(["rowboat", "canoe", "tent", "bench", "streetlamp", "snowman", "telescope", "snowpine", "signpost", "docklantern", "moorpost", "beehive", "birdbath", "cairn", "moonchest"]);
+const DECOR_SMALL = new Set(["shells", "acorns", "mittens", "cocoa", "bottle", "pinecones", "quill", "mushrooms", "steppingstone", "apples", "waterlily", "scroll"]);
+const DECOR_MOVE = { sway: ["lavender", "fern", "cattails", "edelweiss", "roses", "seathrift", "pottedfern", "mapleleaves"], glow: ["stumplantern", "docklantern", "streetlamp"], bob: ["rowboat", "buoy", "canoe", "waterlily"] };
+export const decorSize = (name) => (DECOR_BIG.has(name) ? 96 : DECOR_SMALL.has(name) ? 58 : 76);
+export const decorMove = (name) => Object.keys(DECOR_MOVE).find((k) => DECOR_MOVE[k].includes(name)) || "";
 // Picture element with size hints so nothing jumps while it loads
 export function art(src, alt = "", size = 160) {
   const img = document.createElement("img");

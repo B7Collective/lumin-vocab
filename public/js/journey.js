@@ -3,7 +3,7 @@
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
 import { h, icon, toast, sheet, closeSheet, plural } from "./ui.js";
-import { art, landmark, icon as artIcon, sceneUrl, SCENES, trailArt, keeperArt } from "./art.js";
+import { art, landmark, icon as artIcon, sceneUrl, SCENES, trailArt, keeperArt, keeperSrc, landFor, groundUrl, decorUrl, decorSize, decorMove } from "./art.js";
 import { play } from "./sound.js";
 import { start } from "./games.js";
 import { countUp } from "./motion.js";
@@ -42,7 +42,7 @@ function runStep(p, ch, stepIdx, trailKey) {
   const need = step.key === "test" ? Math.ceil(words.length * 0.8) : 0;
   const keeper = trailKey ? "trail marker" : model.regionOf(ch)[2];
   start({
-    title: step.name, words, kind: STEP_KIND[step.key], art: step.key === "test" && !trailKey ? "keeper:" + model.regionOf(ch)[4] : step.icon, back: back(trailKey), doneLabel: trailKey ? "Back to the trail" : "Back to the road", again: false,
+    title: step.name, words, kind: STEP_KIND[step.key], art: step.key === "test" && !trailKey ? "src:" + keeperSrc(model.regionOf(ch)) : step.icon, back: back(trailKey), doneLabel: trailKey ? "Back to the trail" : "Back to the road", again: false,
     endNote: (r) => step.key === "test" && r.right < need ? (trailKey ? `Get ${need} of ${words.length} right to pass the marker. Try again whenever you like.` : `${keeper[0].toUpperCase() + keeper.slice(1)} needs ${need} of ${words.length} right before you pass. Try again whenever you're ready.`)
       : step.key === "learn" ? "These words will come back in Practice, just before you'd forget them." : null,
     onFinish: (r) => {
@@ -75,7 +75,7 @@ function regionBanner(p, ch, total) {
     h("div", { class: "jregion-text" }, h("span", {}, `Region ${r + 1} of ${regions}`), h("strong", {}, name),
       h("p", { class: "keeper" }, inRegion === 1 ? greeting : `Keeper: ${keeper}`),
       h("span", { class: "jregion-steps", "aria-label": `Stop ${inRegion} of ${model.REGION_SIZE} in this region` }, Array.from({ length: model.REGION_SIZE }, (_, k) => h("i", { class: k < inRegion - 1 ? "on" : k === inRegion - 1 ? "here" : "" })))),
-    pic ? h("img", { class: "keeperpic", src: keeperArt(pic), alt: "", width: 112, height: 112 }) : null);
+    h("img", { class: "keeperpic" + (pic ? "" : " standin"), src: keeperSrc(model.regionOf(ch)), alt: "", width: 112, height: 112 }));
 }
 function lantern(n, days) {
   const glow = Math.min(1, 0.25 + n / 240);
@@ -87,10 +87,19 @@ function lantern(n, days) {
   return el;
 }
 // The path for one stop: its steps along a curve, ending at the landmark
+// The ground of a region, faded in behind its path
+function ground(land) { return h("div", { class: "ground", "aria-hidden": "true", style: { "--ground": `url(${groundUrl(land.ground)})` } }); }
+// One thing beside the path: a picture with a soft shadow, and its own small movement
+function decorPiece(name, k, flip) {
+  const move = decorMove(name);
+  return h("i", { class: "dc" + (move ? " " + move : ""), style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", class: flip ? "flip" : null }));
+}
 function stepMap(p, st, info, trailKey) {
-  const map = h("div", { class: "jmap" });
+  const land = landFor(trailKey || model.regionOf(st.ch)[0], !!trailKey);
+  const map = h("div", { class: "jmap land" }, ground(land));
+  const decor = h("div", { class: "decor", "aria-hidden": "true" });
   const trail = svgEl("svg"); trail.setAttribute("class", "trail"); trail.setAttribute("aria-hidden", "true");
-  map.append(trail);
+  map.append(decor, trail);
   const nodes = info.steps.map((step, k) => {
     const state = k < st.step ? "done" : k === st.step ? "current" : "locked";
     const b = h("button", { class: "jnode " + state, style: { "--i": k }, "aria-label": `${step.name}${state === "done" ? ", done, play again" : state === "locked" ? ", locked" : ", start"}`, onclick: () => {
@@ -98,7 +107,7 @@ function stepMap(p, st, info, trailKey) {
       play("tap"); runStep(p, st.ch, k, trailKey);
     } },
       state === "current" ? h("span", { class: "jstart" }, st.step === 0 && st.ch === 0 ? "Start here" : "Next") : null,
-      h("span", { class: "disc" }, h("img", { src: step.key === "test" && !trailKey && !info.lookout ? keeperArt(model.regionOf(st.ch)[4]) : artIcon(step.icon), alt: "", width: 96, height: 96 })),
+      h("span", { class: "disc" }, h("img", { src: step.key === "test" && !trailKey && !info.lookout ? keeperSrc(model.regionOf(st.ch)) : artIcon(step.icon), alt: "", width: 96, height: 96 })),
       state === "done" ? h("span", { class: "stamp" }, icon("check")) : null,
       h("span", { class: "nm" }, step.name), state === "current" ? h("span", { class: "nl" }, step.line) : null);
     map.append(b);
@@ -106,9 +115,13 @@ function stepMap(p, st, info, trailKey) {
   });
   const goalImg = trailKey ? trailArt(trailKey) : landmark(info.img);
   const goal = h("div", { class: "jland locked" }, h("img", { src: goalImg, alt: "", width: 220, height: 220 }),
-    h("strong", {}, trailKey ? `Marker ${st.ch + 1} of ${info.count}` : info.lookout ? "The campfire" : info.name),
-    h("span", { class: "muted" }, trailKey ? "Pass the marker to walk on. No waiting on trails." : info.lookout ? "Pass the lookout check to walk on" : `Answer the keeper's riddle to reach it. A keepsake waits there.`));
+    h("div", { class: "plaque" }, h("strong", {}, trailKey ? `Marker ${st.ch + 1} of ${info.count}` : info.lookout ? "The campfire" : info.name),
+      h("span", { class: "muted" }, trailKey ? "Pass the marker to walk on. No waiting on trails." : info.lookout ? "Pass the lookout check to walk on" : `Answer the keeper's riddle to reach it. A keepsake waits there.`)));
   map.append(goal);
+  // Things beside the path, chosen per stop so each stop looks a little different but stays the same on every visit
+  const pieces = land.decor, start = (st.ch * 5) % pieces.length;
+  const placed = [...nodes.map((_, k) => pieces[(start + k) % pieces.length]), pieces[(start + 2) % pieces.length], pieces[(start + 4) % pieces.length]]
+    .map((name, k) => { const d = decorPiece(name, k, (st.ch + k) % 3 === 1); decor.append(d); return d; });
   const layout = () => {
     if (!document.body.contains(map)) { removeEventListener("resize", layout); return; }
     const amp = Math.min(110, map.clientWidth * 0.24), wave = [0, 0.75, 1, 0.35, -0.55, -0.95];
@@ -118,7 +131,26 @@ function stepMap(p, st, info, trailKey) {
     const d = (list) => list.map((pt, k) => k ? `Q ${list[k - 1][0]} ${(list[k - 1][1] + pt[1]) / 2} ${(list[k - 1][0] + pt[0]) / 2} ${(list[k - 1][1] + pt[1]) / 2} T ${pt[0]} ${pt[1]}` : `M ${pt[0]} ${pt[1]}`).join(" ");
     trail.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
     trail.replaceChildren();
+    // a soft road under the dotted trail, coming in from above the first step
+    const road = [[box.width / 2, 34], ...pts];
+    for (const cls of ["roadedge", "road"]) { const r = svgEl("path"); r.setAttribute("d", d(road)); r.setAttribute("class", cls); trail.append(r); }
     const all = svgEl("path"); all.setAttribute("d", d(pts)); trail.append(all);
+    // decor sits on the side away from each step, inside the edges; two more flank the landmark
+    const W = box.width, small = W < 420 ? 0.82 : 1, reach = Math.min(W * 0.36, 190);
+    placed.forEach((el, k) => {
+      const sz = parseFloat(el.style.getPropertyValue("--sz")) * small;
+      let x, y;
+      if (k < nodes.length) {
+        const dx = pts[k][0] - W / 2, side = Math.abs(dx) < 20 ? (k % 2 ? 1 : -1) : -Math.sign(dx);
+        x = W / 2 + side * reach; y = pts[k][1] + 6 + ((k * 13) % 22);
+      } else {
+        const g = goal.querySelector("img").getBoundingClientRect(), side = k === nodes.length ? -1 : 1;
+        x = pts[pts.length - 1][0] + side * (g.width / 2 + sz * 0.15); y = pts[pts.length - 1][1] + g.height * 0.32;
+      }
+      x = Math.max(sz / 2 + 4, Math.min(W - sz / 2 - 4, x));
+      el.style.setProperty("--w", sz + "px");
+      el.style.left = Math.round(x - sz / 2) + "px"; el.style.top = Math.round(y - sz / 2) + "px";
+    });
     if (st.step > 0) { const w = svgEl("path"); w.setAttribute("d", d(pts.slice(0, st.step + 1))); w.setAttribute("class", "walked"); trail.append(w); }
     // the traveler stands at the current step
     const here = pts[Math.min(st.step, pts.length - 1)];
@@ -168,7 +200,7 @@ function celebrate(p, ch, trailKey) {
   const finished = trailKey && st.ch >= done.count;
   sheet(finished ? "Trail complete" : trailKey ? "Marker passed" : newRegion ? "A new region" : done.lookout ? "Campfire stories told" : "Landmark reached", (b) => {
     b.append(h("div", { class: "stack celebrate" },
-      art(trailKey ? trailArt(trailKey) : newRegion ? keeperArt(model.regionOf(st.ch)[4]) : landmark(done.img), "", 200),
+      art(trailKey ? trailArt(trailKey) : newRegion ? keeperSrc(model.regionOf(st.ch)) : landmark(done.img), "", 200),
       h("p", { class: "lead" }, finished ? `You walked all of ${done.trail.name}. Its words are in your practice now.`
         : trailKey ? `On to marker ${st.ch + 1}. Trails never make you wait, so keep going if you like.`
         : newRegion ? `You crossed into ${model.regionOf(st.ch)[1]}. ${model.regionOf(st.ch)[3]}`
@@ -225,7 +257,9 @@ route("journey", (main, args) => {
 
   if (!open) {
     const prev = chapterInfo(p, st.ch - 1), due = model.due(p.id).length;
-    page.append(h("section", { class: "camp" },
+    const land = landFor(model.regionOf(st.ch)[0]), dl = land.decor;
+    page.append(h("section", { class: "camp land" }, ground(land),
+      h("div", { class: "decor", "aria-hidden": "true" }, decorPiece(dl[st.ch % dl.length], 0), decorPiece(dl[(st.ch + 3) % dl.length], 1, true)),
       h("div", { class: "campfire", "aria-hidden": "true" }, h("i"), h("i"), h("i")),
       h("h2", {}, "Camp for tonight"),
       h("p", {}, `You reached ${prev.lookout ? "the campfire" : prev.name}. The road to ${info.lookout ? "the next campfire" : info.name} opens tomorrow.`),

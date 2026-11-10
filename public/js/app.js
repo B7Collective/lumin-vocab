@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "3.0.1";
+export const VERSION = "3.1.0";
 export const app = {
   device: device.current(),
   installPrompt: null,

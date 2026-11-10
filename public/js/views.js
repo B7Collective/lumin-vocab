@@ -145,10 +145,11 @@ route("welcome", (main) => {
     h("section", { class: "wsec", "aria-labelledby": "w-how" }, h("h2", { id: "w-how" }, "Made for the whole family"),
       h("div", { class: "wfeat" },
         feat("/art/icons/flashcards.webp", "One word at a time", "Swipe through words in a calm, beautiful space. Tap to hear them said."),
-        feat("/art/journey/lighthouse.webp", "The Lantern Road", "A journey of hundreds of stops, one a day. Every word you learn lights your lantern."),
-        feat("/art/journey/clocktower.webp", "Side trails", "Themed walks: words people misspell, slang through the decades, words from myths, and more."),
         feat("/art/icons/review.webp", "Practice that sticks", "Words come back just before you'd forget them, as quick games."),
-        feat("/art/icons/society.webp", "A profile for everyone", "Each person learns at their own level, synced privately across devices."))),
+        feat("/art/icons/society.webp", "A profile for everyone", "Six levels from first words to philosophy, each person at their own, synced privately."))),
+    welcomeRoad(),
+    welcomeTrails(),
+    welcomeScenes(),
     h("section", { class: "wsec wclose" },
       h("h2", {}, "Free for everyone at home"),
       h("ul", { class: "wpromises" }, [["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"], ["code", "Open source"]].map(([ic, t]) => h("li", {}, icon(ic, 20), t))),
@@ -159,6 +160,42 @@ route("welcome", (main) => {
   if (!reduced()) timer = setInterval(tick, 4200);
   addEventListener("hashchange", () => clearInterval(timer), { once: true });
 });
+
+// The Lantern Road in miniature: three regions' ground, the road winding through, and the keepers waiting at each stop
+const ROAD_STOPS = [["fox", "The Lavender Fields", 28, 17], ["owl", "The Misty Forest", 70, 49], ["gull", "The Quiet Harbor", 32, 81]];
+const ROAD_DECOR = [["roses", 80, 9, 70], ["beehive", 86, 27, 70], ["mossrock", 14, 42, 72], ["mushrooms", 28, 57, 56], ["stumplantern", 88, 64, 70], ["rowboat", 76, 86, 96], ["shells", 10, 95, 52]];
+function welcomeRoad() {
+  const svg = h("svg", { class: "wroadline", viewBox: "0 0 100 100", preserveAspectRatio: "none", "aria-hidden": "true" });
+  const pts = [[50, -6], ...ROAD_STOPS.map((s) => [s[2], s[3]]), [56, 106]];
+  const d = pts.map((pt, k) => k ? `Q ${pts[k - 1][0]} ${(pts[k - 1][1] + pt[1]) / 2} ${(pts[k - 1][0] + pt[0]) / 2} ${(pts[k - 1][1] + pt[1]) / 2} T ${pt[0]} ${pt[1]}` : `M ${pt[0]} ${pt[1]}`).join(" ");
+  for (const cls of ["roadedge", "road", "dots"]) svg.append(h("path", { class: cls, d, "vector-effect": "non-scaling-stroke" }));
+  const pos = (x, y) => ({ left: x + "%", top: y + "%" });
+  const map = h("div", { class: "wmap land", "aria-hidden": "true" },
+    ["heather", "ferns", "sand"].map((g, k) => h("div", { class: `ground g${k}`, style: { "--ground": `url(/art/ground/${g}.webp)` } })),
+    svg,
+    ROAD_DECOR.map(([n, x, y, sz], k) => h("i", { class: "dc wdc" + (n === "roses" ? " sway" : n === "stumplantern" ? " glow" : n === "rowboat" ? " bob" : ""), style: { ...pos(x, y), "--sz": sz + "px", "--i": k } }, h("img", { src: `/art/decor/${n}.webp`, alt: "", width: sz, height: sz, loading: "lazy", decoding: "async" }))),
+    ROAD_STOPS.map(([k, name, x, y], i) => h("div", { class: "wstop", style: { ...pos(x, y), "--i": i } }, h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 88, height: 88, loading: "lazy", decoding: "async" }), h("span", {}, name))));
+  return h("section", { class: "wsec wroad", "aria-labelledby": "w-road" },
+    h("div", { class: "wroadtext" }, h("h2", { id: "w-road" }, "The Lantern Road"),
+      h("p", { class: "lead" }, "A journey through twelve regions, from lavender fields to lighthouse cliffs. Each has its own ground, its own weather and its own keeper."),
+      h("p", {}, "One stop a day: meet six words, play with them, then answer the keeper's riddle to reach the next landmark. Every word you learn adds a light to your lantern, and every stop you pass leaves a stamp in your passport."),
+      h("div", { class: "wkeepers" }, ["hare", "mouse", "tortoise", "bear", "moth"].map((k) => h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 52, height: 52, loading: "lazy" })), h("span", { class: "muted" }, "and more keepers along the way"))),
+    map);
+}
+const WELCOME_TRAILS = [["spelling", "Often Misspelled", "/art/icons/spelling.webp"], ["decades", "Slang Through the Decades"], ["myths", "Words from Myths"], ["kitchen", "In the Kitchen"], ["space", "Space and Stars"], ["sounds", "Sounds Like It Means"]];
+function welcomeTrails() {
+  return h("section", { class: "wsec wtrails", "aria-labelledby": "w-trails" }, h("h2", { id: "w-trails" }, "Side trails"),
+    h("p", { class: "lead wlead" }, "Nineteen themed walks you can take any time, alongside the main road. No waiting, any order."),
+    h("ul", { class: "wtrailgrid" }, WELCOME_TRAILS.map(([k, name, src], i) => h("li", { style: { "--i": i } }, h("img", { src: src || `/art/trails/${k}.webp`, alt: "", width: 120, height: 120, loading: "lazy" }), h("span", {}, name)))));
+}
+function welcomeScenes() {
+  const cards = [["village", 50, -9], ["aurora", 50, 0], ["lavender", 54, 8]];
+  return h("section", { class: "wsec wscenes", "aria-labelledby": "w-scenes" },
+    h("div", { class: "wpostcards", "aria-hidden": "true" }, cards.map(([sc, x, r], i) => h("div", { class: "wpost", style: { "--r": r + "deg", "--i": i } }, h("img", { src: sceneUrl(sc), alt: "", width: 320, height: 180, loading: "lazy", decoding: "async", style: { objectPosition: `${x}% 50%` } })))),
+    h("div", { class: "wscenetext" }, h("h2", { id: "w-scenes" }, "Scenes worth keeping"),
+      h("p", { class: "lead" }, "Sixteen hand-painted places sit behind your words: harbors, libraries, snowy villages, northern lights. Pick a favorite, or let them shuffle."),
+      h("p", { class: "muted" }, "Like one? Save it to your phone as a wallpaper, straight from Settings.")));
+}
 
 // ---- Join a family ---------------------------------------------------------
 route("join", (main) => {
@@ -660,7 +697,7 @@ route("about", (main) => {
         h("li", {}, "Family-safe filtering: helped by the List of Dirty, Naughty, Obscene, and Otherwise Bad Words, CC BY 4.0."))),
     h("div", { class: "panel" }, h("h2", {}, "Pictures and sound"),
       h("ul", { class: "credits" },
-        h("li", {}, "Scenes and paper illustrations: made for Lumin Vocab by B7 Collective with Google Gemini image generation. They are AI-generated, not photographs, and are dedicated to the public domain (CC0 1.0)."),
+        h("li", {}, "Scenes, paper illustrations, the ground along the road and everything beside it: made for Lumin Vocab by B7 Collective with Google Gemini image generation. They are AI-generated, not photographs, and are dedicated to the public domain (CC0 1.0)."),
         h("li", {}, "Sounds: synthesized in your browser by the app's own code; there are no audio files."))),
     h("div", { class: "panel" }, h("h2", {}, "Other parts"),
       h("ul", { class: "credits" },

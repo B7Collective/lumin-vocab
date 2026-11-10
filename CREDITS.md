@@ -12,7 +12,7 @@
 
 ## Pictures and sound (CC0 1.0)
 
-The scenes in `public/art/scenes/` (and their wallpaper copies in `public/art/wallpapers/`) and the paper illustrations in `public/art/icons/`, `public/art/journey/`, `public/art/trails/` and `public/art/keepers/` were made for Lumin Vocab by B7 Collective LLC with Google Gemini image generation. They are AI-generated images, not photographs. To the extent B7 Collective holds any rights in them, they are dedicated to the public domain under CC0 1.0. Sounds are synthesized in the browser by `public/js/sound.js`; there are no audio files.
+The scenes in `public/art/scenes/` (and their wallpaper copies in `public/art/wallpapers/`) and the paper illustrations in `public/art/icons/`, `public/art/journey/`, `public/art/trails/`, `public/art/keepers/`, `public/art/decor/` (the things beside the road) and `public/art/ground/` (the region ground textures) were made for Lumin Vocab by B7 Collective LLC with Google Gemini image generation. They are AI-generated images, not photographs. To the extent B7 Collective holds any rights in them, they are dedicated to the public domain under CC0 1.0. Sounds are synthesized in the browser by `public/js/sound.js`; there are no audio files.
 
 ## Software and fonts
 

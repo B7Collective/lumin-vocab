@@ -332,7 +332,7 @@ input[type="range"] { width: 100%; accent-color: var(--link); min-height: var(--
 
 /* ---- Motion preferences and screen transitions --------------------------------------------- */
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; } }
-.calm *, .calm *::before, .calm *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+.calm *, .calm *::before, .calm *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
 .topbar { view-transition-name: topbar; } .bottomnav { view-transition-name: bottomnav; }
 ::view-transition-old(root) { animation: vtOut var(--d2) var(--ease) both; }
 ::view-transition-new(root) { animation: vtIn var(--d3) var(--ease) both; }
@@ -1000,3 +1000,102 @@ body:has(#app[data-route="words"]) .ambient, body:has(#app[data-route="welcome"]
 .jnode.current { margin-top: 48px; }
 .wcard .bot { flex-wrap: wrap; row-gap: var(--s1); }
 .wcard .bot > span { white-space: nowrap; }
+
+/* ---- 3.1: the land along the road ----------------------------------------------------------
+   Each region lays its own ground under the path (faded at the edges into the page), a soft road under
+   the dotted trail, and a few hand-made things resting beside it. Labels sit on paper so they read on any ground. */
+.jmap.land { margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); isolation: isolate; }
+.land { --road: #F3EDE1; --road-edge: rgba(92, 72, 40, .16); }
+[data-theme="dark"] .land { --road: #2C323B; --road-edge: rgba(0, 0, 0, .35); }
+.land > .ground { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--ground) 50% 0 / 300px 300px repeat; opacity: .58;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 110px, #000 calc(100% - 150px), transparent); mask-image: linear-gradient(to bottom, transparent, #000 110px, #000 calc(100% - 150px), transparent); }
+@media (min-width: 600px) { .jmap.land > .ground { -webkit-mask-image: linear-gradient(to bottom, transparent, #000 110px, #000 calc(100% - 150px), transparent), linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(to bottom, transparent, #000 110px, #000 calc(100% - 150px), transparent), linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); mask-composite: intersect; } }
+[data-theme="dark"] .land > .ground { opacity: .34; filter: saturate(.75) brightness(.8); }
+.jmap .trail path.road { stroke: var(--road); stroke-width: 58; stroke-dasharray: none; stroke-linecap: round; animation: none; }
+.jmap .trail path.roadedge { stroke: var(--road-edge); stroke-width: 66; stroke-dasharray: none; stroke-linecap: round; animation: none; }
+.land .decor { position: absolute; inset: 0; pointer-events: none; }
+.land .dc { position: absolute; width: var(--w, var(--sz)); height: var(--w, var(--sz)); display: block; animation: decorIn .7s var(--spring) both; animation-delay: calc(var(--i, 0) * 90ms + 450ms); }
+.land .dc::before { content: ""; position: absolute; left: 14%; right: 14%; bottom: 2%; height: 14%; border-radius: 50%; background: radial-gradient(closest-side, rgba(40, 30, 15, .32), transparent); }
+[data-theme="dark"] .land .dc::before { background: radial-gradient(closest-side, rgba(0, 0, 0, .55), transparent); }
+.land .dc img { position: relative; width: 100%; height: 100%; object-fit: contain; transform-origin: 50% 92%; }
+.land .dc img.flip { scale: -1 1; }
+.land .dc.sway img { animation: sway 5.5s ease-in-out infinite; animation-delay: calc(var(--i, 0) * -1.3s); }
+.land .dc.bob img { animation: bobble 4.2s ease-in-out infinite; animation-delay: calc(var(--i, 0) * -.9s); }
+.land .dc.glow::after { content: ""; position: absolute; left: 50%; top: 22%; width: 70%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 205, 110, .55), transparent); mix-blend-mode: screen; animation: lampGlow 3.6s ease-in-out infinite; pointer-events: none; }
+[data-theme="dark"] .land .dc img { filter: brightness(.88); }
+@keyframes decorIn { from { opacity: 0; transform: translateY(10px) scale(.85); } }
+@keyframes sway { 0%, 100% { rotate: 0deg; } 35% { rotate: 2.6deg; } 70% { rotate: -2deg; } }
+@keyframes bobble { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 0 -3px; rotate: -1.5deg; } }
+@keyframes lampGlow { 0%, 100% { opacity: .55; scale: .9; } 50% { opacity: 1; scale: 1.08; } }
+/* paper labels so the step names read on grass, snow or stone */
+.land .jnode .nm, .land .jnode .nl { background: color-mix(in srgb, var(--card) 90%, transparent); padding: 3px 10px; border-radius: 999px; box-shadow: 0 1px 0 var(--lip); }
+.land .jnode .nl { padding: 4px 10px; border-radius: 12px; }
+.land .jnode.locked .nm { color: var(--muted); }
+.jland .plaque { display: flex; flex-direction: column; align-items: center; gap: var(--s1); }
+.land .jland .plaque { background: color-mix(in srgb, var(--card) 92%, transparent); border-radius: var(--r-m, 16px); padding: var(--s3) var(--s4); box-shadow: var(--shadow); }
+.land .jland img { box-shadow: 0 0 0 6px color-mix(in srgb, var(--card) 85%, transparent), var(--shadow-lift); }
+/* the camp for tonight sits on the same ground, with two things from the region beside the fire */
+.camp.land { position: relative; overflow: hidden; isolation: isolate; }
+.camp.land > .ground { opacity: .38; -webkit-mask-image: linear-gradient(to top, #000, transparent 75%); mask-image: linear-gradient(to top, #000, transparent 75%); }
+[data-theme="dark"] .camp.land > .ground { opacity: .26; }
+.camp.land .dc { --w: calc(var(--sz) * .85); top: auto; bottom: var(--s4); }
+.camp.land .dc:first-child { left: var(--s4); }
+.camp.land .dc:last-child { right: var(--s4); }
+@media (max-width: 459px) { .camp.land .dc { --w: calc(var(--sz) * .62); bottom: var(--s3); } .camp.land .dc:first-child { left: var(--s2); } .camp.land .dc:last-child { right: var(--s2); } }
+.camp.land > :not(.ground):not(.decor) { position: relative; }
+.land .jnode.locked .disc { filter: grayscale(.75); opacity: .92; }
+.land .jland.locked img { filter: grayscale(.7) opacity(.85); }
+.jregion img.keeperpic.standin { object-fit: contain; padding: 8px; }
+.land .jland { width: min(330px, 92%); }
+.land .jland img { width: min(220px, 68%); }
+
+/* ---- 3.1: landing page showcases ------------------------------------------------------------ */
+.wroad { display: grid; gap: var(--s6); align-items: center; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 820px) { .wroad { grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: var(--s8); } }
+.wroadtext { display: flex; flex-direction: column; gap: var(--s4); }
+.wroadtext h2, .wscenetext h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: var(--t-2xl); line-height: 1.1; }
+.wroadtext p:not(.lead) { margin: 0; color: var(--muted); max-width: var(--measure); }
+.wkeepers { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s2); }
+.wkeepers img { width: 52px; height: 52px; border-radius: 50%; background: var(--tile); box-shadow: 0 0 0 3px var(--card), var(--shadow); margin-right: -14px; }
+.wkeepers .muted { margin-left: 22px; font-size: var(--t-s); }
+.wmap { position: relative; height: 540px; border-radius: var(--r-l); overflow: hidden; isolation: isolate; background: var(--card); box-shadow: var(--shadow-lift); }
+.wmap > .ground { opacity: .7; -webkit-mask-image: none; mask-image: none; }
+.wmap > .ground.g0 { bottom: 58%; -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
+.wmap > .ground.g1 { top: 30%; bottom: 26%; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); }
+.wmap > .ground.g2 { top: 66%; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%); mask-image: linear-gradient(to bottom, transparent, #000 30%); }
+[data-theme="dark"] .wmap > .ground { opacity: .42; filter: saturate(.8) brightness(.85); }
+.wroadline { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.wroadline path { fill: none; stroke-linecap: round; }
+.wroadline .roadedge { stroke: var(--road-edge); stroke-width: 54px; }
+.wroadline .road { stroke: var(--road); stroke-width: 46px; }
+.wroadline .dots { stroke: var(--accent); stroke-width: 5px; stroke-dasharray: 2 14; opacity: .8; }
+.wmap .wdc { width: var(--sz); height: var(--sz); translate: -50% -50%; }
+@media (max-width: 459px) { .wmap .wdc { width: calc(var(--sz) * .8); height: calc(var(--sz) * .8); } }
+.wstop { position: absolute; z-index: 1; translate: -50% -50%; display: flex; flex-direction: column; align-items: center; gap: 6px; animation: decorIn .7s var(--spring) both; animation-delay: calc(var(--i) * 160ms + 200ms); }
+.wstop img { width: 88px; height: 88px; border-radius: 50%; background: var(--tile); box-shadow: 0 0 0 5px var(--card), 0 6px 0 4px var(--lip), 0 20px 26px -14px rgba(24, 33, 43, .6); }
+.wstop span { font-size: var(--t-s); font-weight: 700; white-space: nowrap; background: color-mix(in srgb, var(--card) 92%, transparent); padding: 3px 10px; border-radius: 999px; box-shadow: 0 1px 0 var(--lip); }
+.wtrails { align-items: center; }
+.wtrails > h2 { margin-bottom: calc(var(--s3) * -1); }
+.wlead { text-align: center; }
+.wtrailgrid { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; gap: var(--s5) var(--s4); grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (min-width: 820px) { .wtrailgrid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.wtrailgrid li { display: flex; flex-direction: column; align-items: center; gap: var(--s2); text-align: center; font-weight: 700; font-size: var(--t-s); line-height: 1.25; }
+.wtrailgrid img { width: min(120px, 100%); height: auto; aspect-ratio: 1; border-radius: 50%; background: var(--tile); box-shadow: var(--shadow-lift); transition: transform var(--d2) var(--spring); }
+.wtrailgrid li:nth-child(odd) img { rotate: -3deg; }
+.wtrailgrid li:nth-child(even) img { rotate: 2deg; }
+.wscenes { display: grid; gap: var(--s7); align-items: center; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 820px) { .wscenes { grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: var(--s8); } }
+.wscenetext { display: flex; flex-direction: column; gap: var(--s4); }
+.wscenetext .muted { margin: 0; }
+.wpostcards { position: relative; height: clamp(210px, 52vw, 300px); }
+.wpost { position: absolute; left: 50%; top: 50%; width: min(68%, 340px); aspect-ratio: 16 / 10; translate: -50% -50%; rotate: var(--r); padding: 8px 8px 22px; background: #FBFAF7; border-radius: 6px; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset, 0 18px 30px -16px rgba(24, 33, 43, .55); }
+.wpost:nth-child(1) { margin-left: -12%; margin-top: -4%; }
+.wpost:nth-child(3) { margin-left: 12%; margin-top: 5%; }
+.wpost img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
+[data-theme="dark"] .wpost { background: #E9E4DA; }
+.roadcard.land { position: relative; overflow: hidden; isolation: isolate; }
+.roadcard.land > .ground { opacity: .5; background-size: 220px 220px; -webkit-mask-image: linear-gradient(to left, #000, transparent 65%); mask-image: linear-gradient(to left, #000, transparent 65%); }
+[data-theme="dark"] .roadcard.land > .ground { opacity: .3; }
+.roadcard.land .chev { position: relative; background: var(--card); border-radius: 50%; }
+.roadcard.land .chev { display: grid; place-items: center; width: 34px; height: 34px; flex-shrink: 0; box-shadow: var(--shadow); }
+@media (min-width: 900px) { .jmap.land > .ground { left: -180px; right: -180px; } }

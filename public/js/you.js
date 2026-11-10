@@ -3,7 +3,7 @@
 import * as model from "./model.js";
 import { app, route } from "./app.js";
 import { h, icon, avatar, plural } from "./ui.js";
-import { art, icon as artIcon, keeperArt } from "./art.js";
+import { art, icon as artIcon, keeperArt, landFor, groundUrl } from "./art.js";
 import { chapterInfo } from "./journey.js";
 import { countUp } from "./motion.js";
 
@@ -29,7 +29,7 @@ route("you", (main) => {
   const chs = model.chapterWords(p.level), lights = j.log.reduce((n, e) => n + (chs[e.ch] && !chs[e.ch].lookout ? chs[e.ch].words.length : 0), 0);
   const keepsakes = j.log.filter((e) => chs[e.ch] && !chs[e.ch].lookout).length;
   const trailsDone = Object.values(p.trails || {}).reduce((n, t) => n + ((t && t.log) || []).length, 0);
-  page.append(h("a", { class: "roadcard", href: "#/journey" }, h("img", { src: keeperArt("lantern"), alt: "", width: 84, height: 84 }),
+  page.append(h("a", { class: "roadcard land", href: "#/journey" }, h("div", { class: "ground", "aria-hidden": "true", style: { "--ground": `url(${groundUrl(landFor(model.regionOf(j.ch)[0]).ground)})` } }), h("img", { src: keeperArt("lantern"), alt: "", width: 84, height: 84 }),
     h("div", { class: "stack tight grow" }, h("strong", {}, "The road so far"),
       h("div", { class: "roadstats" }, h("span", {}, h("b", {}, String(lights)), lights === 1 ? " light" : " lights"), h("span", {}, h("b", {}, String(keepsakes)), keepsakes === 1 ? " keepsake" : " keepsakes"), h("span", {}, h("b", {}, String(trailsDone)), trailsDone === 1 ? " trail marker" : " trail markers"))),
     h("span", { class: "chev" }, icon("right"))));
