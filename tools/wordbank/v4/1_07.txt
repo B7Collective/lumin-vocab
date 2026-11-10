@@ -1,0 +1,51 @@
+# Explorer, batch 7 (money, community, body)
+account|noun|a record of money kept at a bank, or a description of what happened|I opened a savings account.|She gave an account of the field trip.|Money and work
+coupon|noun|a ticket that gives you money off something|Mom used a coupon for the cereal.|The coupon saved us two dollars.|Money and work
+discount|noun|money taken off the usual price|The shoes were on discount.|We got a discount for buying two.|Money and work
+earnings|noun|money you get for working|She saved her earnings from babysitting.|He counted his lemonade earnings.|Money and work
+employer|noun|a person or company that pays people to work|Her employer gave her a day off.|The bakery is a big employer in our town.|Money and work
+factory|noun|a building where things are made by machines and workers|The factory makes bicycles.|We toured a chocolate factory.|Money and work
+fee|noun|money paid to do something or join something|There's a small fee to enter the park.|The library fee is one dollar.|Money and work
+labor|noun|hard work|The farm needs a lot of labor at harvest.|Building the wall took weeks of labor.|Money and work
+manager|noun|a person in charge of workers or a business|The manager opened the store.|Ask the manager for help.|Money and work
+paycheck|noun|the money a worker gets for a period of work|Dad gets his paycheck on Fridays.|She saved part of every paycheck.|Money and work
+supplier|noun|a business that provides things to other businesses|The bakery's flour supplier is a local mill.|We need a new paper supplier.|Money and work
+tip|noun|extra money given for good service; also, a helpful hint|We left a tip for the waiter.|Here's a tip: water plants in the morning.|Money and work
+wealth|noun|a lot of money or valuable things|The king's wealth filled the castle.|Good health is a kind of wealth.|Money and work
+workshop|noun|a room where things are made or fixed; also, a class where you practice|Grandpa builds birdhouses in his workshop.|We went to a writing workshop.|Money and work
+ally|noun|a friend who helps and supports you|The fox found an ally in the owl.|She was my ally in the debate.|Society and law
+assembly|noun|a gathering of people, like at school|We sang at the school assembly.|The town assembly voted on the new park.|Society and law
+authority|noun|the power to make decisions or give orders|The principal has authority over the school.|Ask someone in authority for help.|Society and law
+duty|noun|something you must do because it is your job or it is right|It's my duty to feed the fish.|The guard's duty is to watch the gate.|Society and law
+flag|noun|a piece of cloth with colors and a design that stands for a country or group|The flag waved in the wind.|Each team carried a flag.|Society and law
+freedom|noun|the right to do, say or choose what you want|Freedom of speech lets people share ideas.|The bird flew off to freedom.|Society and law
+honor|noun|great respect, or a special privilege|It was an honor to carry the flag.|The hero was treated with honor.|Society and law
+independence|noun|freedom from being controlled by others|The country celebrated its independence.|Riding my bike gives me independence.|Society and law
+loyalty|noun|being faithful and true to someone|Dogs are known for their loyalty.|She showed loyalty to her team.|Society and law
+nation|noun|a country and its people|The whole nation watched the game.|Each nation sent athletes.|Society and law
+patriot|noun|a person who loves and supports their country|The patriot waved the flag proudly.|Every patriot in the story risked a lot.|Society and law
+pledge|noun|a serious promise|We made a pledge to recycle.|The class said the pledge.|Society and law
+republic|noun|a country where people elect their leaders|The republic held an election.|A republic has no king.|Society and law
+responsibility|noun|something you are in charge of|Feeding the dog is my responsibility.|With power comes responsibility.|Society and law
+tribe|noun|a group of families who share the same culture and history|The tribe had lived by the river for centuries.|Each tribe had its own songs.|Society and law
+unity|noun|being joined together as one|The team showed great unity.|Unity helped the town rebuild.|Society and law
+cavity|noun|a hole in a tooth caused by decay|The dentist filled my cavity.|Brush well to avoid a cavity.|Body and health
+digestion|noun|the way your body breaks down food|Fiber helps digestion.|A walk after dinner helps digestion.|Body and health
+fitness|noun|being healthy and strong|We do fitness games in gym class.|Swimming is great for fitness.|Body and health
+forearm|noun|the part of your arm between the wrist and the elbow|I got a scratch on my forearm.|Rest your forearm on the table.|Body and health
+gland|noun|a body part that makes something your body needs, like sweat or tears|A gland in your eye makes tears.|Sweat comes from a gland in your skin.|Body and health
+immune|adjective|protected from catching an illness|After the chickenpox, I was immune.|Vaccines help make you immune.|Body and health
+lung|noun|one of the two organs in your chest you breathe with|Each lung fills with air when you breathe.|Swimming makes your lungs strong; my left lung is a little smaller than my right lung.|Body and health
+nerve|noun|a thread in your body that carries messages to and from the brain; also, courage|A nerve sends pain signals to the brain.|It took nerve to sing alone.|Body and health
+rib|noun|one of the curved bones around your chest|I bumped my rib on the table.|Each rib protects your heart and lungs.|Body and health
+saliva|noun|the watery liquid in your mouth; spit|Saliva helps you swallow food.|The dog's saliva dripped on the floor.|Body and health
+shin|noun|the front of your leg below the knee|I bumped my shin on the bed.|Wear shin guards for soccer.|Body and health
+skull|noun|the bones of your head|The skull protects your brain.|We saw a dinosaur skull at the museum.|Body and health
+thigh|noun|the top part of your leg above the knee|Stretch your thigh before you run.|The chicken thigh was juicy.|Body and health
+tonsil|noun|one of two small lumps at the back of your throat|The doctor looked at my tonsil.|My tonsils were swollen, especially the left tonsil.|Body and health
+vein|noun|a thin tube in your body that carries fluid back to your heart|You can see a blue vein on your wrist.|A leaf has thin lines like a vein.|Body and health
+vitamin|noun|something in food your body needs to stay healthy|Oranges have lots of vitamin C.|I take a vitamin every morning.|Body and health
+wellness|noun|being healthy in body and mind|Our school has a wellness week.|Sleep is important for wellness.|Body and health
+cholesterol|noun|a fatty substance in the body; too much can be bad for your heart|Oatmeal can help lower cholesterol.|The doctor checked Grandpa's cholesterol.|Body and health
+minority|noun|the smaller part of a group|Only a minority of the class wanted tests.|A minority voted for blue.|Society and law
+shopkeeper|noun|a person who owns or runs a small store|The shopkeeper gave me a free sticker.|We waved to the shopkeeper.|Money and work

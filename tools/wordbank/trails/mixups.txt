@@ -76,3 +76,7 @@ proscribe ~ prescribe
 prescribe|verb|To order a medicine or treatment; to set down a rule|The doctor will prescribe rest and fluids.||2|~proscribe
 ingenuous ~ ingenious
 ingenious ~ ingenuous
+discomfit ~ discomfort
+discomfort|noun|Physical or mental unease. Not the same as discomfit, which means to embarrass or unsettle someone|The hard bench caused some discomfort.|Feelings|5|~discomfit
+enervate ~ energize
+energize|verb|To give energy and enthusiasm to. Enervate means the opposite: to drain energy|A morning swim can energize you.|Feelings|5|~enervate

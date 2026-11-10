@@ -1,0 +1,157 @@
+# Scholar, batch 4 (school science, math, arts + Octanove C1)
+median|noun|The middle value in a list of numbers arranged in order|The median of 2, 5 and 9 is 5.|The median home price rose this year.|Science and tech
+canon|noun|A collection of works accepted as the most important; also, a church rule|That novel is part of the literary canon.|The story is not part of the official canon.|Arts and stories
+electron|noun|A tiny particle with a negative charge that circles an atom's center|An electron is much smaller than a proton.|Electricity is the flow of electrons; each electron carries a charge.|Science and tech
+neutron|noun|A particle with no electric charge found in an atom's center|A neutron sits in the nucleus.|Each neutron adds mass to the atom.|Science and tech
+proton|noun|A particle with a positive charge found in an atom's center|Hydrogen has one proton.|The number of protons tells you the element; one proton means hydrogen.|Science and tech
+plasma|noun|A very hot gas made of charged particles, the fourth state of matter|Lightning is made of plasma.|The sun is a giant ball of plasma.|Science and tech
+integer|noun|A whole number, positive, negative or zero|Seven is an integer, but 7.5 is not.|Pick any integer from one to ten.|Science and tech
+calculus|noun|A branch of math that studies change and motion|She takes calculus in senior year.|Calculus helps engineers design bridges.|Science and tech
+octave|noun|The distance between one musical note and the next note with the same name|She sang an octave higher.|The piano spans more than seven octaves; each octave has twelve keys.|Arts and stories
+aria|noun|A song for one voice in an opera|The soprano sang a famous aria.|The aria brought the audience to tears.|Arts and stories
+refrain|noun|A line or verse repeated in a song or poem|Everyone sang along to the refrain.|The refrain comes after each verse.|Arts and stories
+pigment|noun|A substance that gives color|Ground stones made early paint pigment.|Melanin is the pigment in skin.|Arts and stories
+gothic|adjective|In the style of medieval churches with pointed arches; also, dark and mysterious|The cathedral is a gothic masterpiece.|She loves gothic novels with haunted castles.|Arts and stories
+porcelain|noun|Fine, white, glassy pottery|Grandma's teacups are porcelain.|The porcelain vase cracked.|Things and tools
+turret|noun|A small tower on a castle or building|A flag flew from the turret.|The princess waved from the turret.|Places and travel
+keystone|noun|The central stone at the top of an arch; also, the most important part|The keystone holds the arch together.|Trust is the keystone of friendship.|Things and tools
+gazebo|noun|An open garden shelter with a roof|We had lemonade in the gazebo.|The band played in the park's gazebo.|Places and travel
+foyer|noun|An entrance hall|Leave your boots in the foyer.|The theater foyer was crowded.|Places and travel
+spire|noun|A tall, pointed structure on top of a building|The church spire rose above the town.|A golden spire topped the tower.|Look and shape
+bibliography|noun|A list of sources used in writing something|Include a bibliography with your report.|The bibliography lists forty books.|Talk and writing
+exposition|noun|A detailed explanation; also, the opening of a story that sets the scene; also, a large exhibition|The first chapter is mostly exposition.|The city hosted a world exposition.|Arts and stories
+interlude|noun|A short break between parts of something|There was a musical interlude between acts.|The sunny interlude ended with rain.|Time and change
+overture|noun|A piece of music that opens an opera or show; also, a friendly first step|The orchestra played the overture.|She made an overture of friendship.|Arts and stories
+serenade|noun|A song sung or played for someone, often outdoors at night|He sang a serenade beneath her window.|The band played a serenade.|Arts and stories
+rhapsody|noun|A piece of music full of emotion and free in form; also, an outpouring of enthusiasm|The pianist played a rhapsody.|Her review was a rhapsody of praise.|Arts and stories
+nave|noun|The long central hall of a church|Light filled the nave.|They walked down the nave to the altar.|Places and travel
+atrium|noun|A large open space inside a building, often with a glass roof; also, a chamber of the heart|Plants fill the hotel's atrium.|The heart has a left and a right atrium.|Places and travel
+terracotta|noun|Brownish-red clay that has been baked|The pots are made of terracotta.|An army of terracotta warriors guards the tomb.|Things and tools
+exponent|noun|A small number showing how many times to multiply a number by itself; also, a supporter|In 2³, the exponent is 3.|She is a leading exponent of clean energy.|Science and tech
+folio|noun|A sheet of paper folded once; also, a large book or a page number|An early folio of the plays sold for millions.|Turn to folio twelve.|Talk and writing
+treasury|noun|A place or department where money is kept and managed|The treasury prints the money.|The museum is a treasury of art.|Money and work
+matrix|noun|A grid of numbers in rows and columns; also, a surrounding setting where something develops|We solved the matrix in algebra.|The fossil was trapped in a rock matrix.|Science and tech
+consulate|noun|The office of a country's representative in a foreign city|She got her visa at the consulate.|The consulate helps travelers in trouble.|Places and travel
+regent|noun|A person who rules while the true monarch is too young or away|Her uncle ruled as regent.|The regent made all the decisions.|Society and law
+guild|noun|An association of people with the same craft or trade|Medieval bakers belonged to a guild.|The writers guild met on Monday.|Money and work
+trustee|noun|A person who manages money or property for others|A trustee manages the scholarship fund.|The school board has seven trustees; each trustee votes.|Money and work
+corona|noun|The glowing outer layer of the sun's atmosphere|The corona is visible during an eclipse.|A pale corona circled the moon.|Science and tech
+shale|noun|A soft rock that splits into thin layers|The fossil was found in shale.|Shale breaks easily in your hand.|Nature and weather
+biomass|noun|The total amount of living material in an area; also, plant matter used for fuel|Krill have a huge biomass.|The plant burns biomass for power.|Science and tech
+dopamine|noun|A brain chemical linked to pleasure and reward|Finishing a task can release dopamine.|Games are designed to trigger dopamine.|Body and health
+impeach|verb|To formally charge a public official with misconduct|Congress may impeach a president.|They voted to impeach the governor.|Society and law
+notary|noun|An official who witnesses and certifies signatures|We signed the papers in front of a notary.|The notary stamped the form.|Society and law
+debtor|noun|A person who owes money|The debtor paid in monthly installments.|Each debtor got a reminder letter.|Money and work
+creditor|noun|A person or company that is owed money|The bank is our creditor.|Creditors lined up for payment; every creditor wanted cash.|Money and work
+basalt|noun|A dark rock formed from cooled lava|The cliffs are black basalt.|Basalt columns line the shore.|Nature and weather
+obsidian|noun|A shiny black glass formed when lava cools very quickly|Ancient tools were made of obsidian.|The obsidian glittered in the sun.|Nature and weather
+mica|noun|A mineral that splits into thin, shiny sheets|Mica made the rock sparkle.|Old stove windows used mica.|Nature and weather
+caldera|noun|A large crater formed when a volcano collapses|A lake fills the caldera.|Yellowstone sits on a huge caldera.|Nature and weather
+epicenter|noun|The point on Earth's surface directly above an earthquake's start; also, the center of activity|The epicenter was near the coast.|The city became the epicenter of fashion.|Nature and weather
+predation|noun|The hunting and eating of one animal by another|Predation keeps rabbit numbers in check.|Turtle eggs face heavy predation.|Animals
+phytoplankton|noun|Tiny plants and algae that drift in water|Phytoplankton make much of Earth's oxygen.|Whales eat animals that eat phytoplankton.|Nature and weather
+krill|noun|Small shrimplike animals eaten by whales|Blue whales eat tons of krill.|Krill swarm in cold oceans.|Animals
+oceanography|noun|The study of oceans|She studies oceanography in college.|Oceanography maps the sea floor.|Science and tech
+hydraulics|noun|The use of liquid under pressure to move things|The car lift works by hydraulics.|Hydraulics raise the drawbridge.|Science and tech
+aerodynamics|noun|The study of how air moves around objects|Cars are shaped for better aerodynamics.|Paper airplanes teach aerodynamics.|Science and tech
+antimatter|noun|Matter made of particles with the opposite charge of normal matter|Antimatter is rare and hard to store.|In the story, the ship runs on antimatter.|Science and tech
+neutrino|noun|A tiny particle with almost no mass that passes through almost everything|Trillions of neutrinos pass through you every second; each neutrino is nearly undetectable.|Scientists built a neutrino detector under ice.|Science and tech
+fission|noun|The splitting of an atom's center, releasing energy|Nuclear power plants use fission.|Fission splits uranium atoms.|Science and tech
+lipid|noun|A fat or oily substance in living things|Cell walls contain lipids; each lipid repels water.|Butter is mostly lipid.|Science and tech
+cellulose|noun|The tough material that makes up plant cell walls|Paper is made from cellulose.|Cows can digest cellulose.|Science and tech
+synapse|noun|The tiny gap where one nerve cell passes a signal to another|Signals jump across each synapse.|Learning strengthens each synapse.|Body and health
+femur|noun|The thigh bone, the longest bone in the body|The femur connects the hip and knee.|She broke her femur skiing.|Body and health
+tibia|noun|The shinbone|The tibia runs from knee to ankle.|He bruised his tibia on the table.|Body and health
+sternum|noun|The breastbone|Your ribs connect to the sternum.|The sternum protects the heart.|Body and health
+vertebra|noun|One of the small bones that make up the spine|Each vertebra protects the spinal cord.|The X-ray showed a cracked vertebra.|Body and health
+pelvis|noun|The basin-shaped set of bones at the base of the spine|The pelvis supports the hips.|Dinosaur pelvis shapes tell scientists a lot.|Body and health
+polynomial|noun|A math expression with several terms, like x² + 3x + 2|Factor the polynomial.|A polynomial can have many terms.|Science and tech
+quadratic|adjective|Involving a variable squared, like x²|Solve the quadratic equation.|The quadratic formula is worth memorizing.|Science and tech
+denominator|noun|The bottom number in a fraction|In 3/4, the denominator is 4.|Find a common denominator first.|Science and tech
+trigonometry|noun|The math of triangles and their angles|Surveyors use trigonometry.|We started trigonometry this week.|Science and tech
+ellipse|noun|An oval shape|Planets orbit in an ellipse.|Draw an ellipse with two pins and string.|Look and shape
+concentric|adjective|Sharing the same center|Ripples spread in concentric circles.|The target has concentric rings.|Look and shape
+pumice|noun|A light, holey volcanic rock that can float|Pumice floats on water.|She used pumice to smooth her heels.|Nature and weather
+stalactite|noun|An icicle-shaped rock hanging from a cave ceiling|A stalactite dripped above us.|Each stalactite grows a little every year.|Nature and weather
+stalagmite|noun|A pillar of rock rising from a cave floor|A stalagmite grew beneath the drip.|The stalagmite looked like a candle.|Nature and weather
+troposphere|noun|The lowest layer of the atmosphere, where weather happens|Clouds form in the troposphere.|The troposphere is about ten miles thick.|Nature and weather
+ionosphere|noun|A high layer of the atmosphere that reflects radio waves|Radio signals bounce off the ionosphere.|Auroras glow in the ionosphere.|Nature and weather
+aftershock|noun|A smaller earthquake that follows a larger one|An aftershock rattled the windows.|People braced for an aftershock.|Nature and weather
+seismograph|noun|An instrument that records earthquakes|The seismograph drew jagged lines.|Every seismograph in the region recorded the quake.|Science and tech
+chloroplast|noun|The part of a plant cell where photosynthesis happens|The chloroplast makes leaves green.|Each chloroplast captures sunlight.|Science and tech
+organelle|noun|A tiny structure inside a cell with a special job|The nucleus is an organelle.|Each organelle has its own role.|Science and tech
+vacuole|noun|A small sac inside a cell that stores water or waste|Plant cells have a large vacuole.|The vacuole swelled with water.|Science and tech
+cytoplasm|noun|The jellylike material inside a cell|Organelles float in the cytoplasm.|The cytoplasm is mostly water.|Science and tech
+prokaryote|noun|A simple cell with no nucleus, like a bacterium|A bacterium is a prokaryote.|Each prokaryote is a single cell.|Science and tech
+eukaryote|noun|An organism whose cells have a nucleus|Humans are eukaryotes; so is each mushroom, a eukaryote too.|A yeast cell is a eukaryote.|Science and tech
+mycelium|noun|The network of threads that forms the main body of a fungus|Mycelium spreads under the forest floor.|Mushrooms grow from the mycelium.|Nature and weather
+zooplankton|noun|Tiny animals that drift in water|Fish larvae feed on zooplankton.|Zooplankton rise to the surface at night.|Animals
+polyp|noun|A small sea animal with a tube body and tentacles, such as a coral|A coral reef is built by each tiny polyp.|The polyp waved its tentacles.|Animals
+cephalopod|noun|A sea animal with tentacles, such as an octopus or squid|An octopus is a clever cephalopod.|The cephalopod changed color.|Animals
+endorphin|noun|A natural chemical in the body that reduces pain and lifts mood|Running releases endorphins; each endorphin boosts mood.|Laughing can trigger an endorphin rush.|Body and health
+epidermis|noun|The outer layer of skin|Sunscreen protects the epidermis.|The epidermis renews itself often.|Body and health
+clavicle|noun|The collarbone|He broke his clavicle falling off his bike.|The clavicle connects shoulder and chest.|Body and health
+patella|noun|The kneecap|The patella protects the knee joint.|She bruised her patella.|Body and health
+numerator|noun|The top number in a fraction|In 3/4, the numerator is 3.|Double the numerator and the denominator.|Science and tech
+quadrilateral|noun|A shape with four straight sides|A square is a quadrilateral.|Draw a quadrilateral with no right angles.|Look and shape
+trapezoid|noun|A four-sided shape with one pair of parallel sides|The table is shaped like a trapezoid.|Find the area of the trapezoid.|Look and shape
+rhombus|noun|A four-sided shape with all sides equal, like a tilted square|A diamond on a playing card is a rhombus.|Each side of the rhombus is five inches.|Look and shape
+parallelogram|noun|A four-sided shape with two pairs of parallel sides|A rectangle is a kind of parallelogram.|Measure the parallelogram's base.|Look and shape
+isosceles|adjective|Having two sides of equal length|An isosceles triangle has two equal sides.|The roof forms an isosceles shape.|Look and shape
+equilateral|adjective|Having all sides equal|An equilateral triangle has three equal sides.|The sign is an equilateral triangle.|Look and shape
+hypotenuse|noun|The longest side of a right triangle|Find the hypotenuse with the Pythagorean theorem.|The ladder forms the hypotenuse.|Science and tech
+polyhedron|noun|A solid shape with flat faces, like a cube|A pyramid is a polyhedron.|A soccer ball is based on a polyhedron.|Look and shape
+sine|noun|In trigonometry, the ratio of the side opposite an angle to the hypotenuse|Find the sine of thirty degrees.|Sound waves follow a sine curve.|Science and tech
+cosine|noun|In trigonometry, the ratio of the side next to an angle to the hypotenuse|The cosine of zero is one.|Use cosine to find the missing side.|Science and tech
+serf|noun|A farm worker in the Middle Ages who was bound to a lord's land|The serf worked the lord's fields.|A serf could not leave the manor.|Society and law
+fief|noun|Land granted by a lord in return for loyalty and service|The knight ruled a small fief.|The king handed out each fief.|Society and law
+stratus|noun|A low, flat, gray cloud that covers the sky|Stratus clouds brought drizzle.|A gray stratus layer hid the sun.|Nature and weather
+cumulonimbus|noun|A huge, towering thundercloud|A cumulonimbus loomed over the field.|Cumulonimbus clouds bring lightning.|Nature and weather
+doldrums|noun|Calm ocean regions near the equator; also, a period of dullness|Sailing ships got stuck in the doldrums.|I'm in the doldrums this week.|Feelings
+climatology|noun|The study of climate over long periods|Climatology tracks long-term trends.|She chose climatology as her major.|Science and tech
+volcanology|noun|The study of volcanoes|Volcanology can be dangerous fieldwork.|He's fascinated by volcanology.|Science and tech
+craft|noun|An activity that takes skill with the hands; also, a boat or aircraft|Pottery is my favorite craft.|A small craft sailed past.|Arts and stories
+charter|noun|A formal document that creates an organization or grants rights|The club wrote a charter.|The city received its charter in 1820.|Society and law
+transit|noun|The carrying of people or goods from one place to another|Public transit is cheap here.|The package was lost in transit.|Places and travel
+bulk|noun|Large size or quantity; also, the main part|We buy rice in bulk.|The bulk of the work is done.|More and less
+magnetic|adjective|Able to attract iron; also, very attractive|The fridge door is magnetic.|She has a magnetic personality.|Science and tech
+linear|adjective|Arranged in a straight line; also, step by step|The story follows a linear plot.|Draw a linear graph.|Look and shape
+anchor|noun|A heavy object that keeps a boat in place; also, a news presenter|They dropped anchor in the bay.|The news anchor read the headlines.|Things and tools
+fusion|noun|Joining two things into one; also, the power source of stars|The restaurant serves Asian fusion food.|The sun runs on fusion.|Science and tech
+acoustic|adjective|Relating to sound; also, not electrically amplified|The hall has great acoustic design.|She plays an acoustic guitar.|Senses
+portable|adjective|Easy to carry|We packed a portable stove.|The speaker is small and portable.|Things and tools
+circulation|noun|Movement around a system; also, the number of copies sold|Exercise improves circulation.|The newspaper's circulation fell.|Body and health
+synthetic|adjective|Made by people, not found in nature|The jacket is made of synthetic fabric.|Synthetic dyes are bright.|Science and tech
+exterior|noun|The outside of something|They painted the exterior blue.|The exterior looked plain, but the inside was grand.|Look and shape
+elevation|noun|Height above sea level|The town sits at a high elevation.|Elevation makes water boil sooner.|Places and travel
+plague|noun|A serious disease that spreads widely; also, a large number of pests|The plague swept through Europe.|A plague of locusts ruined the crops.|Body and health
+atmospheric|adjective|Relating to the air around Earth; also, creating a mood|Atmospheric pressure dropped before the storm.|The film's music is atmospheric.|Nature and weather
+exhaust|noun|Gases that come out of an engine|Car exhaust pollutes the air.|The bus left a cloud of exhaust.|Things and tools
+buffer|noun|Something that protects by lessening an impact|Trees act as a buffer against wind.|Keep some money as a buffer.|Things and tools
+vegetation|noun|Plants in an area|Thick vegetation covered the island.|Desert vegetation needs little water.|Nature and weather
+bypass|noun|A road that goes around a town; also, a way around a problem|Take the bypass to avoid traffic.|They found a bypass for the bug.|Places and travel
+fixture|noun|Something fixed in place; also, a person or thing always present|The light fixture flickered.|The old man is a fixture at the cafe.|Things and tools
+resin|noun|A sticky substance from trees, or a similar plastic|Pine resin stuck to my hands.|The tabletop is coated in resin.|Nature and weather
+ventilation|noun|The flow of fresh air through a space|Open windows improve ventilation.|The attic needs better ventilation.|Science and tech
+elastic|adjective|Able to stretch and spring back|The waistband is elastic.|Rubber is elastic.|Things and tools
+orphan|noun|A child whose parents are gone|The novel's hero is an orphan.|The kitten was an orphan.|Society and law
+cloak|noun|A loose sleeveless coat|The wizard wore a velvet cloak.|Fog was a cloak over the town.|Things and tools
+screenplay|noun|The script of a movie|She wrote the screenplay in a month.|The screenplay won an award.|Arts and stories
+plaster|noun|A paste that hardens on walls and ceilings|The plaster cracked in the old house.|They patched the plaster.|Things and tools
+heroine|noun|A woman admired for courage, or the main female character in a story|The heroine saves the village.|She's a local heroine.|Arts and stories
+usher|noun|A person who shows people to their seats|The usher led us to row C.|She works as an usher at the theater.|Money and work
+bouquet|noun|A bunch of flowers arranged together|He brought her a bouquet.|The bride tossed her bouquet.|Nature and weather
+stimuli|noun|Things that cause a reaction, plural of stimulus|Babies respond to many stimuli.|Bright lights and loud sounds are strong stimuli.|Science and tech
+radiator|noun|A device that heats a room, or cools an engine|The radiator hissed in winter.|The car's radiator overheated.|Things and tools
+malfunction|noun|A failure to work properly|A malfunction stopped the ride.|The printer had a malfunction.|Things and tools
+tinker|verb|To make small repairs or experiments|He likes to tinker with old radios.|Don't tinker with the settings.|Things and tools
+unison|noun|Doing something together at the same time|The choir sang in unison.|We answered in unison.|Arts and stories
+pendulum|noun|A weight that swings back and forth|The clock's pendulum ticked steadily.|Opinion swung like a pendulum.|Science and tech
+flask|noun|A narrow-necked bottle used in labs or for carrying drinks|Pour the liquid into the flask.|He carried soup in a flask.|Things and tools
+tantrum|noun|A sudden childish fit of anger|The toddler threw a tantrum.|He had a tantrum over the remote.|Feelings
+hibernation|noun|A deep sleep that some animals go into for winter|Bears go into hibernation.|The frog wakes from hibernation in spring.|Animals
+blister|noun|A small bubble on the skin filled with liquid|New shoes gave me a blister.|The hike left a blister on her heel.|Body and health
+daydream|noun|A pleasant dream while awake|A daydream carried her to the beach.|Stop that daydream and focus.|Mind and ideas
+carpentry|noun|The skill of making things from wood|He learned carpentry from his grandpa.|Carpentry takes patience.|Money and work
+mountaineer|noun|A person who climbs mountains|The mountaineer reached the summit.|She trained as a mountaineer.|Places and travel
+clench|verb|To close or hold tightly|Clench your fist.|He tends to clench his jaw when nervous.|Body and health

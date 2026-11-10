@@ -1,0 +1,100 @@
+# Wordsmith, batch 5 (Octanove C1 + Open English WordNet)
+testament|noun|Something that serves as proof of a fact or quality|The bridge is a testament to good engineering.|Her recovery is a testament to her grit.|Mind and ideas
+faction|noun|A smaller group within a larger one, often in disagreement|A faction of the club wanted new rules.|Each faction blamed the other.|Society and law
+exodus|noun|A mass departure of people|There was an exodus from the city each summer.|The layoffs caused an exodus of talent.|Places and travel
+assertion|noun|A confident statement of belief|Her assertion was backed by data.|He made a bold assertion.|Talk and writing
+portrayal|noun|A depiction of someone or something in art, writing or acting|His portrayal of the king won awards.|The book offers a fair portrayal of the war.|Arts and stories
+ingenuity|noun|Cleverness and inventiveness|The escape showed great ingenuity.|With ingenuity, they fixed the radio.|Mind and ideas
+sentient|adjective|Able to feel and perceive|Dogs are sentient creatures.|The movie imagines a sentient robot.|Mind and ideas
+tact|noun|Skill in handling delicate situations without offending|She delivered the news with tact.|Tact helps in any argument.|Character
+sanctity|noun|The quality of being holy or deeply respected|They respected the sanctity of the temple.|He guards the sanctity of family dinner.|Society and law
+cynic|noun|A person who believes others act only out of self-interest|The cynic doubted every charity.|Don't be such a cynic.|Character
+dramatist|noun|A person who writes plays|The dramatist wrote twenty plays.|She studied an ancient Greek dramatist.|Arts and stories
+persecute|verb|To treat someone cruelly because of their beliefs or identity|Tyrants persecute people who disagree.|The story shows how villagers persecute outsiders.|Society and law
+envisage|verb|To imagine as a future possibility|I envisage a garden here.|They envisage a cleaner city.|Mind and ideas
+temperamental|adjective|Moody and unpredictable|The temperamental printer jams daily.|The temperamental chef shouted often.|Character
+rudiments|noun|The basic principles of a subject|She learned the rudiments of chess.|The course covers the rudiments of coding.|Mind and ideas
+tedium|noun|The state of being boring and repetitive|The tedium of the drive made us sleepy.|Music relieves the tedium of chores.|Feelings
+intuit|verb|To understand something without conscious reasoning|She seemed to intuit my worry.|Good coaches intuit what players need.|Mind and ideas
+neglectful|adjective|Failing to give proper care or attention|The neglectful owner left the garden to weeds.|Don't be neglectful of your health.|Character
+interject|verb|To say something suddenly as an interruption|May I interject a quick point?|He tends to interject jokes.|Talk and writing
+scornful|adjective|Showing contempt|She gave a scornful laugh.|He was scornful of shortcuts.|Feelings
+dither|verb|To be indecisive|Don't dither; choose a flavor.|They dither over every decision.|Character
+daunt|verb|To make someone feel nervous or discouraged|The steep climb did not daunt her.|Big crowds daunt some performers.|Feelings
+ceaseless|adjective|Never stopping|The ceaseless rain flooded the yard.|Her ceaseless energy amazed us.|Time and change
+inexhaustible|adjective|So large that it can never be used up|The internet seems an inexhaustible source of trivia.|Her patience was inexhaustible.|More and less
+disquieting|adjective|Causing worry or unease|The silence was disquieting.|He read a disquieting report.|Feelings
+fanatic|noun|A person with extreme enthusiasm for something|He's a baseball fanatic.|A fitness fanatic runs every dawn.|Character
+ploy|noun|A clever plan to gain an advantage|The free gift was a sales ploy.|Her ploy to stay up late failed.|Mind and ideas
+resonate|verb|To produce a deep sound; also, to strike a chord with someone|The bell began to resonate.|Her speech will resonate with voters.|Senses
+formality|noun|Something done only because rules require it; also, stiff politeness|Signing is just a formality.|The formality of the dinner made us nervous.|Society and law
+fissure|noun|A long, narrow crack|Steam rose from a fissure in the rock.|A fissure opened in the ice.|Nature and weather
+whimsy|noun|Playful or fanciful humor|The garden is full of whimsy.|Her drawings have a touch of whimsy.|Arts and stories
+disavow|verb|To deny any responsibility for or connection with something|The company chose to disavow the ad.|She would disavow the rumor publicly.|Talk and writing
+asunder|adverb|Apart or into pieces|The storm tore the sails asunder.|The wall was split asunder.|Movement and action
+pallor|noun|An unhealthy pale appearance|Her pallor worried the nurse.|A gray pallor hung over the city.|Body and health
+intricacy|noun|The quality of having many detailed parts|The intricacy of the lace amazed us.|She explained each intricacy of the plot.|Look and shape
+profusion|noun|A great quantity of something|The meadow had a profusion of wildflowers.|A profusion of colors filled the market.|More and less
+minutia|noun|A small or trivial detail|He loves every minutia of train schedules.|Don't get lost in the minutiae; each minutia matters less than the goal.|Mind and ideas
+forethought|noun|Careful planning for the future|With a little forethought, we packed snacks.|The trip showed great forethought.|Mind and ideas
+foretaste|noun|A small early sample of something to come|The warm day was a foretaste of summer.|The trailer gives a foretaste of the film.|Time and change
+blather|noun|Long-winded talk with no real meaning|I tuned out his blather.|The ad was full of blather.|Talk and writing
+byword|noun|A person or thing seen as a perfect example of a quality|The brand is a byword for quality.|Her name became a byword for courage.|Talk and writing
+digression|noun|A temporary departure from the main subject|After a digression about dogs, he returned to math.|The book is full of charming digressions; one digression lasts a chapter.|Talk and writing
+epigram|noun|A short, witty saying|"I can resist everything except temptation" is a famous epigram.|She ended her speech with an epigram.|Talk and writing
+expletive|noun|A swear word or exclamation|He muttered an expletive when he stubbed his toe.|The broadcast bleeped every expletive.|Talk and writing
+fracas|noun|A noisy disturbance or quarrel|A fracas broke out at the game.|Security ended the fracas.|Society and law
+missive|noun|A letter or message, especially a long or official one|She received a missive from the principal.|His missive ran three pages.|Talk and writing
+plaudits|noun|Praise and approval|The film won plaudits from critics.|Her design earned plaudits.|Talk and writing
+rejoinder|noun|A quick, sharp reply|She had a witty rejoinder ready.|His rejoinder silenced the room.|Talk and writing
+riposte|noun|A quick, clever reply to an insult or criticism|Her riposte drew laughs.|He had no riposte to that.|Talk and writing
+travail|noun|Painful or laborious effort|The book tells of the travail of the settlers.|After much travail, the bridge was finished.|Money and work
+poignancy|noun|The quality of evoking sadness or deep feeling|The song's poignancy moved the audience.|There was poignancy in their farewell.|Feelings
+accost|verb|To approach and speak to someone boldly or aggressively|A stranger tried to accost her on the street.|Reporters accost the star at the door.|Talk and writing
+begrudge|verb|To resent someone for having something; to give reluctantly|I don't begrudge her the prize.|He seemed to begrudge every penny he spent.|Feelings
+commiserate|verb|To express sympathy|Friends gathered to commiserate after the loss.|We commiserate over bad weather.|Feelings
+dishearten|verb|To make someone lose hope|One failure shouldn't dishearten you.|The long line seemed to dishearten the fans.|Feelings
+hearten|verb|To encourage and cheer|The good news will hearten the team.|Letters from home hearten soldiers.|Feelings
+slacken|verb|To loosen or become slower|Let the rope slacken a bit.|Traffic began to slacken after six.|Movement and action
+befuddle|verb|To confuse completely|Tricky questions befuddle the contestants.|The new remote seemed to befuddle Grandpa.|Mind and ideas
+misconstrue|verb|To interpret something wrongly|Don't misconstrue my silence as anger.|People often misconstrue sarcasm in texts.|Mind and ideas
+abashed|adjective|Embarrassed or ashamed|He looked abashed after tripping on stage.|The abashed puppy hid under the bed.|Feelings
+bemused|adjective|Puzzled or confused|She gave a bemused smile.|The bemused tourists studied the map.|Feelings
+bedraggled|adjective|Wet, dirty and messy|The bedraggled cat came in from the rain.|We arrived bedraggled after the hike.|Look and shape
+careworn|adjective|Tired and worried-looking from long stress|The careworn nurse finally sat down.|His careworn face softened.|Look and shape
+chivalrous|adjective|Courteous and kind, especially toward others in need|It was chivalrous of him to carry her bags.|The chivalrous knight protected travelers.|Character
+covetous|adjective|Strongly wanting something that belongs to someone else|He cast covetous eyes on his neighbor's car.|Covetous kings started many wars.|Feelings
+craggy|adjective|Rough and rocky; also, rugged with deep lines|Goats climbed the craggy cliffs.|The captain had a craggy face.|Look and shape
+crotchety|adjective|Grumpy and irritable|The crotchety neighbor yelled at the kids.|I'm crotchety before coffee.|Character
+deferential|adjective|Showing polite respect|The students were deferential to the guest.|He gave a deferential nod.|Character
+dispirited|adjective|Having lost enthusiasm and hope|The dispirited team trudged off the field.|She felt dispirited after the rejection.|Feelings
+doleful|adjective|Sorrowful|The puppy gave a doleful look.|A doleful tune played on the radio.|Feelings
+downcast|adjective|Sad; also, looking downward|He was downcast after the loss.|Her eyes were downcast.|Feelings
+fitful|adjective|Starting and stopping irregularly|I slept a fitful sleep.|Fitful winds stirred the leaves.|Time and change
+fretful|adjective|Anxious and restless|The fretful baby wouldn't nap.|He was fretful before the test.|Feelings
+frolicsome|adjective|Playful and full of fun|Frolicsome lambs leaped in the field.|The frolicsome puppy chased its tail.|Character
+ghoulish|adjective|Having an unhealthy interest in gruesome things|The ghoulish costume scared the toddlers.|He has a ghoulish sense of humor.|Good, bad and strange
+gnarled|adjective|Knobby and twisted|A gnarled oak grew by the gate.|The farmer's gnarled hands held the reins.|Look and shape
+grizzled|adjective|Having gray or graying hair|The grizzled sailor told sea stories.|His grizzled beard needed a trim.|Look and shape
+halfhearted|adjective|Without enthusiasm or energy|He made a halfhearted attempt to clean.|The applause was halfhearted.|Feelings
+harebrained|adjective|Foolish and poorly thought out|It was a harebrained scheme to dig to China.|His harebrained plan failed quickly.|Mind and ideas
+homespun|adjective|Simple and unsophisticated; also, made at home|She gave homespun advice.|They wore homespun wool.|Character
+humdrum|adjective|Dull and ordinary|Life felt humdrum in winter.|He wanted to escape his humdrum job.|Good, bad and strange
+impertinent|adjective|Rude and disrespectful|It was impertinent to ask his salary.|The impertinent student talked back.|Character
+jaunty|adjective|Lively and self-confident|He wore his cap at a jaunty angle.|She walked with a jaunty step.|Character
+meddlesome|adjective|Interfering in other people's business|A meddlesome neighbor read our mail.|Don't be meddlesome.|Character
+newfangled|adjective|New and unfamiliar, often in an unwelcome way|Grandpa distrusts newfangled gadgets.|They tried a newfangled diet.|Time and change
+noncommittal|adjective|Not showing which side you support|Her answer was noncommittal.|He gave a noncommittal shrug.|Talk and writing
+ornery|adjective|Bad-tempered and difficult|The ornery mule kicked the fence.|He gets ornery when he's hungry.|Character
+quizzical|adjective|Showing mild puzzlement or amusement|She gave a quizzical look.|His quizzical smile made me laugh.|Feelings
+ramshackle|adjective|Badly made and falling apart|A ramshackle shed stood behind the barn.|They drove a ramshackle old van.|Look and shape
+rueful|adjective|Expressing gentle regret, sometimes with humor|He gave a rueful grin.|She made a rueful joke about her mistake.|Feelings
+slapdash|adjective|Done too hastily and carelessly|The paint job was slapdash.|His slapdash homework had errors.|Good, bad and strange
+statuesque|adjective|Tall and dignified, like a statue|The statuesque dancer took the stage.|A statuesque heron stood in the shallows.|Look and shape
+threadbare|adjective|Thin and worn from use; also, overused|He wore a threadbare coat.|The excuse was threadbare.|Look and shape
+thunderstruck|adjective|Extremely surprised|She was thunderstruck by the news.|The crowd stood thunderstruck.|Feelings
+tousled|adjective|Messy, especially of hair|He woke with tousled hair.|The wind left her hair tousled.|Look and shape
+uncouth|adjective|Lacking good manners|It's uncouth to chew loudly.|The uncouth guest put his feet on the table.|Character
+windswept|adjective|Exposed to strong winds|They walked along the windswept beach.|Her windswept hair framed her face.|Nature and weather
+uproarious|adjective|Very noisy and funny|The comedy got uproarious laughter.|The party was uproarious.|Feelings
+zestful|adjective|Full of energy and enthusiasm|She took on the project in a zestful mood.|The zestful band got everyone dancing.|Character

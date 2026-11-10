@@ -691,6 +691,7 @@ route("about", (main) => {
       h("p", {}, "The word list is released under CC BY-SA 4.0 and built from:"),
       h("ul", { class: "credits" },
         h("li", {}, "Words, definitions and examples at every level: chosen and written for Lumin Vocab by B7 Collective."),
+        h("li", {}, "Which words to add: picked with help from the CEFR-J Wordlist Version 1.5, compiled by Yukio Tono, Tokyo University of Foreign Studies (Tono Laboratory, TUFS), and the Octanove Vocabulary Profile for C1/C2 levels by Octanove Labs, CC BY-SA 4.0, both via ", h("a", { href: "https://github.com/openlanguageprofiles/olp-en-cefrj", rel: "noopener" }, "Open Language Profiles"), "."),
         h("li", {}, "Similar words and word families: from ", h("a", { href: "https://en-word.net", rel: "noopener" }, "Open English WordNet"), " by the Open English WordNet Community, CC BY 4.0. WordNet 3.1 Copyright 2011 by Princeton University. All rights reserved. THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED."),
         h("li", {}, "Pronunciations (IPA and simple respellings): generated from the CMU Pronouncing Dictionary, Copyright (C) 1993-2015 Carnegie Mellon University, BSD 2-Clause License."),
         h("li", {}, "Journey order, from common to rare: ranked using word frequencies from wordfreq by Robyn Speer (data CC BY-SA 4.0), which includes data from Google Books Ngram, OpenSubtitles, SUBTLEX by Marc Brysbaert et al., and other sources."),

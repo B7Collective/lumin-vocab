@@ -66,7 +66,19 @@ for level, pat in ((0, "kids_sprout*.txt"), (1, "kids_explorer*.txt")):
 for level, pat in ((5, "advanced/philosopher_*.txt"), (4, "advanced/academic_*.txt"), (3, "advanced/wordsmith_*.txt"), (2, "advanced/scholar_*.txt")):
     for f in sorted(glob.glob(pat)):
         for w, pos, d, ex, t in read(f): add(w, pos, d, ex, t, level)
-for w, pos, d, ex, t in read("advanced/funny.txt"): add(w, pos, d, ex, t, 1, ("funny",))
+# Funny words: a side collection only (marked "fo", kept off the main road). An optional sixth field sets the level.
+for parts in read("advanced/funny.txt"):
+    w, pos, d, ex, t = parts[:5]
+    if add(w, pos, d, ex, t, int(parts[5]) if len(parts) > 5 else 1, ("funny",)): seen[w]["fo"] = 1
+# funny_tags.txt adds bank words to the Funny collection at every level, so the collection follows the level you pick
+FUNNY_TAGS = set(open("funny_tags.txt").read().split()) if __import__("os").path.exists("funny_tags.txt") else set()
+# Version 4 expansion (v4/<level>_<nn>.txt, "word|pos|definition|example|second example|topic"). Each file's
+# level is fixed: these words were written for that level and are never re-tiered. Sources: see CREDITS.md.
+V4 = {}
+for f in sorted(glob.glob("v4/[0-5]_*.txt")):
+    level = int(f.split("/")[-1][0])
+    for w, pos, d, ex, e2, t in read(f):
+        if add(w, pos, d, ex, t, level): V4[w] = e2
 
 # Side trails: themed collections. A bare word tags a word already in the bank; a full line adds a trail-only word.
 # Line: word|pos|definition|example|topic|level|~partner (topic and level default to the trail's). "word ~ partner" for bare lines.
@@ -108,6 +120,8 @@ for w, sent in E2.items():
     if not re.search(r"(^|[^\w])" + re.escape(w) + r"(?![\w])", sent, re.I): bad.append("noword " + w); continue
     if sent.lower() == seen[w]["e"].strip().lower(): bad.append("same " + w); continue
     seen[w]["e2"] = sent
+for w, sent in V4.items():
+    if "e2" not in seen[w]: seen[w]["e2"] = sent
 open("e2_problems.txt", "w").write("\n".join(bad))
 print("second sentences:", sum(1 for o in out if o.get("e2")), "of", len(out), "| problems:", len(bad))
 
@@ -115,24 +129,27 @@ for o in out: o["z"] = round(zipf_frequency(o["w"].replace("-", " "), "en"), 1)
 # Rebalance: the rarest teen words move up to Philosopher; Scholar's most everyday words step aside
 RARE_UP = float(sys.argv[1]) if len(sys.argv) > 1 else 1.9
 for o in out:
-    if o["l"] == 3 and o["z"] < RARE_UP: o["l"] = 5
+    if o["l"] == 3 and o["z"] < RARE_UP and o["w"] not in V4: o["l"] = 5
     if o["w"] in relevel: o["l"] = relevel[o["w"]]
     if o["w"] in override: o["t"] = override[o["w"]]
     if o["t"] not in TOPICS: o["t"] = "Good, bad and strange"
     if o["w"] in BEAUTIFUL: o.setdefault("x", []).append("beautiful")
-out = [o for o in out if not (o["l"] == 2 and o["z"] >= 4.6 and not o.get("x"))]
-# Re-tier the teen and adult-academic levels by how common each word is, so every step up is harder:
-# Scholar gets the most familiar third, Wordsmith the middle, Academic the least common. Each level keeps
-# its size. Hand-moved words stay put. Side trails pick their words by level band, so this is safe for them too.
+    if o["w"] in FUNNY_TAGS and "funny" not in o.get("x", []): o.setdefault("x", []).append("funny")
+out = [o for o in out if not (o["l"] == 2 and o["z"] >= 4.6 and not o.get("x") and o["w"] not in V4)]
+# Re-tier the older teen and adult words (Scholar to Philosopher) by how common each word is, so every step up
+# is harder: Scholar gets the most familiar, Philosopher the rarest. Hand-moved words (levels.txt) and the
+# version 4 words keep the level they were written for; the older words fill in around them so all four levels
+# end up about the same size. Side trails pick their words by level, so this is safe for them too.
 # (Without this, Academic's everyday "academic" words, like salary and urban, made it easier than Wordsmith.)
-movable = [o for o in out if o["l"] in (2, 3, 4) and not o.get("c") and o["w"] not in relevel]
-fixed = collections.Counter(o["l"] for o in out if o["l"] in (2, 3, 4) and not o.get("c") and o["w"] in relevel)
-total = len(movable) + sum(fixed.values())
-# each of the three levels ends up about the same size, counting the hand-moved words already there
-size = {2: total // 3 - fixed[2], 3: total // 3 - fixed[3]}; size[4] = len(movable) - size[2] - size[3]
+TIERS = (2, 3, 4, 5)
+pinned = lambda o: o["w"] in relevel or o["w"] in V4 or o.get("fo")
+movable = [o for o in out if o["l"] in TIERS and not o.get("c") and not pinned(o)]
+fixed = collections.Counter(o["l"] for o in out if o["l"] in TIERS and not o.get("c") and pinned(o))
+target = (len(movable) + sum(fixed[l] for l in TIERS)) // len(TIERS)
+size = {l: max(0, target - fixed[l]) for l in TIERS[:-1]}; size[5] = len(movable) - sum(size.values())
 movable.sort(key=lambda o: -(o["z"] - 0.05 * len(o["w"])))
 i = 0
-for l in (2, 3, 4):
+for l in TIERS:
     for o in movable[i:i + size[l]]: o["l"] = l
     i += size[l]
 text = json.dumps(out, ensure_ascii=False, separators=(",", ":"))

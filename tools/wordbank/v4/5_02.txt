@@ -1,0 +1,96 @@
+# Philosopher, batch 2
+aestival|adjective|Relating to summer|The aestival heat lingered into September.|Aestival storms rolled in each afternoon.|Time and change
+canicular|adjective|Relating to the hottest days of summer|The canicular weeks emptied the city.|We fled the canicular heat for the coast.|Nature and weather
+equinoctial|adjective|Relating to the equinox, when day and night are equal|Equinoctial gales battered the coast.|The equinoctial sun set due west.|Time and change
+opaline|adjective|Milky and iridescent, like an opal|The sky took on an opaline glow.|An opaline glass vase stood on the sill.|Look and shape
+rimy|adjective|Covered with frost|We walked across the rimy fields at dawn.|Rimy branches glittered in the sun.|Nature and weather
+pawky|adjective|Dryly, slyly humorous|He had a pawky way of telling jokes.|Her pawky reply made everyone grin.|Character
+vatic|adjective|Prophetic or oracular|The poet spoke in a vatic voice.|Her vatic warnings came true.|Mind and ideas
+agrestic|adjective|Rural, rustic and unpolished|The inn kept its agrestic charm.|Agrestic scenes filled the painter's sketchbook.|Places and travel
+anagoge|noun|A spiritual or mystical interpretation of a text|Medieval readers sought anagoge in every verse.|The professor explained anagoge with a parable.|Mind and ideas
+antiphon|noun|A short chant sung in alternating parts|The monks sang the antiphon at dusk.|Each antiphon answered the one before.|Arts and stories
+apotropaic|adjective|Intended to ward off bad luck or evil|The doorway bore an apotropaic charm.|Sailors painted apotropaic eyes on their boats.|Good, bad and strange
+billet|noun|Lodging for soldiers; also, a short note|The troops found billet in the village.|She sent a billet of thanks.|Places and travel
+bosky|adjective|Covered with bushes or trees; wooded|We strolled down a bosky lane.|The bosky hillside sheltered deer.|Nature and weather
+callithumpian|adjective|Noisy and boisterous, like a mock parade|A callithumpian band banged pots down the street.|The party turned callithumpian after midnight.|Senses
+cark|verb|To worry or burden (old-fashioned)|Don't let small troubles cark your mind.|Debts would cark him through the night.|Feelings
+catachresis|noun|The misuse of a word, or a strained metaphor|Saying "the leg of the journey" was once a catachresis.|Critics noted a catachresis in the poem.|Talk and writing
+catholicon|noun|A supposed remedy for all ills|There is no catholicon for heartbreak.|The tonic was sold as a catholicon.|Body and health
+chiliad|noun|A group of one thousand, or a thousand years|The monument has stood for nearly a chiliad.|A chiliad of stars filled the sky.|More and less
+cicerone|noun|A guide who explains sights to tourists|Our cicerone knew every fresco in the church.|She served as cicerone through the old town.|Places and travel
+clerisy|noun|Learned or literary people as a group|The clerisy debated the new translation.|Universities trained a new clerisy.|Society and law
+curvet|noun|A leap of a horse in which the forelegs rise and the hind legs follow|The stallion performed a perfect curvet.|Riders practiced the curvet in the arena.|Animals
+dactyl|noun|A metrical foot of one stressed syllable followed by two unstressed ones|"Merrily" is a dactyl.|The poem rolls along in dactyl after dactyl.|Talk and writing
+daedal|adjective|Skillful and intricate|The daedal clockwork amazed visitors.|Her daedal plot twists kept us guessing.|Look and shape
+deliquescent|adjective|Melting away or dissolving by absorbing moisture|The deliquescent salt turned to liquid in the damp air.|Snow went deliquescent under the noon sun.|Science and tech
+dendriform|adjective|Shaped like a tree, with branches|Frost made dendriform patterns on the glass.|The river's dendriform delta spread wide.|Look and shape
+diapason|noun|The full range of a voice or instrument; also, a swelling burst of harmony|The organ's diapason filled the cathedral.|Her voice covered a remarkable diapason.|Arts and stories
+disquietude|noun|A state of uneasiness|A strange disquietude settled over the house.|He tried to hide his disquietude.|Feelings
+doxology|noun|A short hymn of praise|The congregation sang the doxology.|Each service ended with a doxology.|Arts and stories
+enchiridion|noun|A handbook or manual|The old sailor kept an enchiridion of knots.|She wrote an enchiridion for new gardeners.|Talk and writing
+endogamy|noun|The custom of marrying within one's own group|Village endogamy kept the dialect alive.|Anthropologists studied the tribe's endogamy.|Society and law
+enfilade|noun|A suite of rooms with doorways aligned in a straight line|Sunlight poured through the palace enfilade.|From the enfilade you can see every room.|Places and travel
+exordium|noun|The opening part of a speech or essay|Her exordium caught the audience at once.|The lawyer's exordium was brief.|Talk and writing
+factitious|adjective|Artificial and contrived, not natural|The crisis was largely factitious.|The ad created factitious urgency.|Good, bad and strange
+fomentation|noun|The stirring up of trouble; also, a warm compress|The fomentation of unrest worried the council.|A warm fomentation eased the ache.|Society and law
+funambulist|noun|A tightrope walker|The funambulist crossed the gorge on a wire.|Crowds gasped at the funambulist.|Arts and stories
+gaucherie|noun|Awkward, tactless behavior|His gaucherie at dinner made everyone wince.|She forgave his youthful gaucherie.|Character
+hobbyhorse|noun|A favorite topic someone keeps returning to; also, a stick toy|Parking rules are his hobbyhorse.|The child galloped on a hobbyhorse.|Mind and ideas
+homiletic|adjective|Like a sermon; preachy|The essay's homiletic tone grew tiresome.|He gave a homiletic speech on thrift.|Talk and writing
+hortative|adjective|Encouraging or urging|The coach gave a hortative halftime talk.|Her letters were warm and hortative.|Talk and writing
+hypnagogic|adjective|Relating to the drowsy state just before sleep|Hypnagogic images flickered as she dozed.|He had his best ideas in a hypnagogic haze.|Mind and ideas
+iatrogenic|adjective|Caused unintentionally by medical treatment|The rash was an iatrogenic side effect.|Doctors work to avoid iatrogenic harm.|Body and health
+illation|noun|A conclusion drawn from evidence; an inference|The detective's illation surprised the room.|The illation followed from the clues.|Mind and ideas
+imbricated|adjective|Overlapping like roof tiles or fish scales|The pinecone's imbricated scales were tight.|Imbricated shingles shed the rain.|Look and shape
+inchoative|adjective|Just beginning; marking the start of an action|The plan was still inchoative.|"Grow dark" has an inchoative sense.|Time and change
+inspissate|verb|To thicken a liquid by evaporation|Slow simmering will inspissate the syrup.|Cooks inspissate juice into jelly.|Food
+jongleur|noun|A medieval traveling minstrel and entertainer|The jongleur sang tales at the fair.|A jongleur juggled and played the lute.|Arts and stories
+lenity|noun|Gentleness and mercy|The judge showed lenity to the young offender.|Lenity can do more than punishment.|Character
+leitmotiv|noun|A recurring theme in music or literature|A cello leitmotiv returns whenever she appears.|Loss is the leitmotiv of the memoir.|Arts and stories
+longueur|noun|A tedious passage or stretch of time|The novel has a few longueurs, and one longueur in the middle drags.|The film survives its longueur in act two.|Time and change
+magniloquence|noun|Lofty, grandiose speech|His magniloquence hid a thin argument.|The toast swelled into magniloquence.|Talk and writing
+meliorism|noun|The belief that the world can be improved by human effort|Her meliorism kept her volunteering.|Meliorism sits between optimism and pessimism.|Mind and ideas
+mimesis|noun|The imitation of reality in art|The painting is a triumph of mimesis.|Aristotle wrote about mimesis in drama.|Arts and stories
+nacre|noun|Mother-of-pearl, the iridescent lining of some shells|Buttons were carved from nacre.|The shell's nacre gleamed pink and silver.|Nature and weather
+nescient|adjective|Lacking knowledge; ignorant|We were nescient of the danger.|The nescient tourists wandered into the field.|Mind and ideas
+nidus|noun|A nest or breeding place; a place where something develops|The cafe became a nidus of new ideas.|The wetland is a nidus for insects.|Places and travel
+omphalos|noun|A central point or hub|The square was the omphalos of town life.|Delphi was called the omphalos of the ancient world.|Places and travel
+onomastic|adjective|Relating to the study of names|An onomastic study traced the town's street names.|Her onomastic research covered surnames.|Talk and writing
+oppugn|verb|To call into question; dispute|Few dared to oppugn his findings.|She would oppugn every weak claim.|Talk and writing
+palaestra|noun|A wrestling school or gymnasium in ancient Greece|Athletes trained in the palaestra.|The ruins of the palaestra still stand.|Places and travel
+panjandrum|noun|A self-important official|The panjandrum of the committee loved meetings.|Every panjandrum demanded a seat on stage.|Character
+paralogism|noun|A piece of faulty reasoning, especially unintentional|Her proof contained a subtle paralogism.|The debater exposed the paralogism.|Mind and ideas
+parapraxis|noun|A slip of the tongue or pen that may reveal a hidden thought|Calling the meeting "the beating" was a parapraxis.|The parapraxis drew nervous laughter.|Talk and writing
+paterfamilias|noun|The male head of a family or household|The paterfamilias carved the holiday roast.|As paterfamilias, he hosted every reunion.|Society and law
+peculation|noun|The theft of funds placed in one's trust|The treasurer was charged with peculation.|Audits uncovered years of peculation.|Money and work
+pleonastic|adjective|Using more words than necessary|"Free gift" is pleonastic.|The editor trimmed pleonastic phrases.|Talk and writing
+prebend|noun|A stipend for a cathedral official|The canon lived on a modest prebend.|The prebend came with a house.|Money and work
+prevenient|adjective|Coming before; anticipating|Her prevenient care stopped trouble early.|A prevenient warning saved the crew.|Time and change
+prolegomenon|noun|An introductory essay to a longer work|The prolegomenon sets out the book's method.|He wrote a prolegomenon to his history.|Talk and writing
+puissance|noun|Great power or influence|The empire's puissance faded slowly.|The horse leaped with puissance.|Society and law
+pullulate|verb|To breed or spread rapidly; to teem|Tadpoles pullulate in the spring ponds.|Ideas pullulate at the workshop.|More and less
+punctilio|noun|A fine point of etiquette|She observed every punctilio of the ceremony.|Ignore punctilio and just be kind.|Society and law
+quaggy|adjective|Soft and boggy|The quaggy meadow swallowed our boots.|Avoid the quaggy path after rain.|Nature and weather
+quodlibet|noun|A musical medley of tunes; also, a playful debate topic|The band ended with a quodlibet of folk songs.|Scholars argued a quodlibet for sport.|Arts and stories
+refulgence|noun|Radiant brightness|The refulgence of the sunrise woke us.|Gold leaf gave the altar refulgence.|Look and shape
+regnant|adjective|Reigning; prevailing|The regnant queen opened the session.|That theory is no longer regnant.|Society and law
+reprobation|noun|Severe disapproval|The decision met with general reprobation.|He ignored the reprobation of critics.|Talk and writing
+salmagundi|noun|A mixed salad, or any varied mixture|The buffet featured a colorful salmagundi.|The anthology is a salmagundi of styles.|Food
+sedulity|noun|Diligent, persistent care|She tended the garden with sedulity.|His sedulity earned the scholarship.|Character
+somnolence|noun|Sleepiness|A warm somnolence settled after lunch.|The medicine may cause somnolence.|Body and health
+stertor|noun|Heavy, snoring breathing|His stertor rattled the cabin walls.|The patient's stertor eased by morning.|Body and health
+subfusc|adjective|Dull and dark in color|The professors wore subfusc gowns.|A subfusc coat hid the stains.|Look and shape
+sudorific|adjective|Causing sweating|The sauna's sudorific heat was intense.|Old remedies relied on sudorific herbs.|Body and health
+supererogation|noun|Doing more than duty requires|Her extra tutoring was pure supererogation.|Acts of supererogation earn admiration.|Character
+susurration|noun|A soft whispering or rustling sound|The susurration of leaves lulled us.|A susurration ran through the crowd.|Senses
+tergiversation|noun|Evasion or changing of sides|The senator's tergiversation angered voters.|After years of tergiversation, he finally decided.|Talk and writing
+thaumaturgy|noun|The working of wonders or magic|The magician's thaumaturgy amazed the crowd.|Legends credit the saint with thaumaturgy.|Good, bad and strange
+ubiety|noun|The quality of being in a definite place|The question of the soul's ubiety puzzled philosophers.|GPS gives each phone a precise ubiety.|Places and travel
+vicegerent|noun|A person exercising authority on behalf of another|The governor acted as the king's vicegerent.|She was appointed vicegerent during his travels.|Society and law
+viscid|adjective|Thick and sticky|Viscid sap oozed from the pine.|The syrup grew viscid as it cooled.|Senses
+cerement|noun|A cloth used to wrap something carefully for preservation|The relic lay in an ancient cerement.|The scroll was bound in a waxed cerement.|Things and tools
+gnomon|noun|The part of a sundial that casts the shadow|The gnomon's shadow pointed to noon.|Brass weathered on the old gnomon.|Science and tech
+pinchbeck|adjective|Cheap and counterfeit, though appearing valuable|The pinchbeck jewelry tarnished quickly.|His pinchbeck charm didn't fool her.|Good, bad and strange
+satrap|noun|A provincial governor in ancient Persia; a subordinate ruler|Each satrap collected taxes for the king.|Each regional boss acted like a satrap of the company.|Society and law
+recherche|adjective|Rare, exotic or obscure|The menu was full of recherche dishes.|He collects recherche old maps.|Good, bad and strange
+phantasm|noun|An illusion or ghost-like image|A phantasm seemed to drift across the moor.|Fear conjures phantasm after phantasm.|Good, bad and strange

@@ -1,0 +1,189 @@
+# Philosopher, batch 3 (rare literary words from Open English WordNet)
+despondency|noun|Low spirits caused by loss of hope|A long winter brought on despondency.|She shook off her despondency and wrote again.|Feelings
+disaffection|noun|A loss of loyalty or affection, especially toward those in power|Disaffection spread through the ranks.|Voter disaffection grew each year.|Society and law
+inquietude|noun|Restlessness or uneasiness|An inquietude kept him pacing.|The letter left her with a vague inquietude.|Feelings
+presage|noun|A sign or warning of something to come|The dark clouds were a presage of storms.|She took the dream as a presage.|Time and change
+quietude|noun|A state of stillness and calm|The garden offered quietude.|He loved the quietude of early morning.|Feelings
+solicitude|noun|Care or concern for someone's welfare|She asked after my health with real solicitude.|His solicitude for the old dog was touching.|Feelings
+stupefaction|noun|Astonishment so great you can hardly think|He stared in stupefaction at the bill.|Stupefaction swept the room at the news.|Feelings
+dapple|verb|To mark with spots or patches of light or color|Sunlight seemed to dapple the forest floor.|Shadows dapple the old stone wall.|Look and shape
+dereliction|noun|Shameful failure to do your duty; also, the state of being abandoned|The guard was charged with dereliction of duty.|The mill fell into dereliction.|Society and law
+finitude|noun|The state of having limits, especially in time|Poets often reflect on human finitude.|The finitude of resources demands care.|Mind and ideas
+impiety|noun|A lack of respect, especially for religion or tradition|The play was attacked for impiety.|Skipping the ritual seemed an impiety.|Society and law
+metier|noun|A person's work or special area of skill|Comedy is her true metier.|Teaching turned out to be his metier.|Money and work
+nicety|noun|A fine detail or subtle distinction|He ignored the niceties of etiquette, and one nicety in particular.|The contract turned on a legal nicety.|Mind and ideas
+obduracy|noun|Stubborn refusal to change your mind|The council's obduracy stalled the plan.|Her obduracy surprised her friends.|Character
+plenitude|noun|An abundance; fullness|The orchard offered a plenitude of apples.|She felt a plenitude of joy.|More and less
+pretension|noun|A claim to importance or merit that may not be deserved|The cafe has no pretension; it simply serves good food.|His literary pretension annoyed his classmates.|Character
+profligacy|noun|Reckless wastefulness, especially with money|The heir's profligacy emptied the estate.|Critics blamed the city's profligacy.|Money and work
+prudery|noun|Excessive concern with being proper|The novel mocks Victorian prudery.|Her prudery amused her cousins.|Character
+sanctimony|noun|A show of being morally better than others|His sanctimony grated on the team.|The speech dripped with sanctimony.|Character
+similitude|noun|Likeness or resemblance|The portrait has a striking similitude.|There is a similitude between the two legends.|Mind and ideas
+apperception|noun|The mind's understanding of a new idea by linking it to past experience|Learning relies on apperception.|Philosophers debated the nature of apperception.|Mind and ideas
+axiology|noun|The branch of philosophy that studies values|Axiology asks what makes something good.|Her seminar covered ethics and axiology.|Mind and ideas
+cosmogony|noun|A theory or story of how the universe began|Every culture has its own cosmogony.|The poem retells an ancient cosmogony.|Mind and ideas
+episteme|noun|The body of ideas that shapes what an era counts as knowledge|Each age has its episteme.|The lecture traced the medieval episteme.|Mind and ideas
+fillip|noun|Something that adds a sudden boost or excitement|The new park gave the town a fillip.|A dash of lemon adds a fillip to the soup.|More and less
+heterodoxy|noun|A belief or opinion that differs from the accepted one|Her heterodoxy unsettled the professors.|In science, today's heterodoxy can become tomorrow's truth.|Mind and ideas
+noumenon|noun|In philosophy, a thing as it is in itself, apart from how we perceive it|Some philosophers hold that the noumenon cannot be known.|The essay contrasts the noumenon with the phenomenon.|Mind and ideas
+perdition|noun|Utter ruin, or eternal punishment in some religions|The preacher warned of perdition.|Debt led the company to perdition.|Good, bad and strange
+prevision|noun|Foreknowledge; the ability to see what is coming|With uncanny prevision, she sold before the crash.|No prevision could have predicted that storm.|Mind and ideas
+witchery|noun|Magic or a bewitching charm|The violinist's witchery held the hall.|Moonlight cast its witchery over the lake.|Arts and stories
+acrostic|noun|A poem in which the first letters of the lines spell a word|She wrote an acrostic spelling her friend's name.|The puzzle was a clever acrostic.|Arts and stories
+allocution|noun|A formal speech, especially one giving advice or a warning|The chancellor opened with a brief allocution.|His allocution urged patience.|Talk and writing
+arcanum|noun|A deep secret or mystery|The recipe was a family arcanum.|Alchemists guarded every arcanum.|Mind and ideas
+avowal|noun|An open statement of something|Her avowal of support surprised the board.|The letter was an avowal of love.|Talk and writing
+bestiary|noun|A medieval book describing real and imaginary animals|The bestiary shows a unicorn beside a whale.|Monks illuminated the bestiary in gold.|Arts and stories
+blarney|noun|Charming, flattering talk meant to persuade|Don't fall for his blarney.|The salesman's blarney worked on everyone.|Talk and writing
+canticle|noun|A hymn or chant, often with words from the Bible|The choir sang an evening canticle.|The canticle echoed in the abbey.|Arts and stories
+claptrap|noun|Nonsense, especially empty talk meant to win applause|The speech was pure claptrap.|Ignore the claptrap and read the data.|Talk and writing
+conspectus|noun|A general survey or summary of a subject|The book offers a conspectus of world history.|Her first chapter is a useful conspectus.|Talk and writing
+detraction|noun|Unfair criticism that lowers someone's reputation|He ignored every detraction.|Detraction is the weapon of the envious.|Talk and writing
+disavowal|noun|A denial of responsibility or knowledge|The firm issued a quick disavowal.|Her disavowal fooled no one.|Talk and writing
+esoterica|noun|Facts or items known only to a small group|The shop sells musical esoterica.|He collects railroad esoterica.|Mind and ideas
+grimoire|noun|A book of magic spells|The wizard opened a dusty grimoire.|The museum displays a medieval grimoire.|Arts and stories
+locution|noun|A particular word, phrase or way of speaking|"Y'all" is a Southern locution.|Her locution was precise and formal.|Talk and writing
+mummery|noun|A ridiculous or pretentious ceremony|The award dinner was empty mummery.|Old festivals mixed music with mummery.|Arts and stories
+plaint|noun|A complaint or lament|The song is a lover's plaint.|His plaint about the noise went unheard.|Feelings
+proffer|verb|To offer something for someone to accept|She chose to proffer her hand in greeting.|They proffer advice to anyone who asks.|Talk and writing
+roundelay|noun|A short simple song with a repeated refrain|Children sang a roundelay at the fair.|The shepherd's roundelay drifted down the hill.|Arts and stories
+strophe|noun|A section of a poem or ode|The chorus sang the first strophe.|Each strophe ends with the same line.|Arts and stories
+suasion|noun|Persuasion, as opposed to force|Moral suasion changed the law.|She relied on gentle suasion.|Talk and writing
+variorum|noun|An edition of a text that includes notes by many scholars|The library owns a variorum of the old poems.|The variorum compares every early printing.|Talk and writing
+abjection|noun|A state of misery and humiliation|The refugees lived in abjection.|His apology came in total abjection.|Feelings
+beatitude|noun|Supreme happiness or blessedness|The saint's face showed beatitude.|A beatitude settled over the quiet meadow.|Feelings
+disrepute|noun|The state of having a bad reputation|The scandal brought the club into disrepute.|The old theory fell into disrepute.|Society and law
+indisposition|noun|A slight illness; also, unwillingness|The singer canceled due to indisposition.|His indisposition to help was clear.|Body and health
+unreason|noun|A lack of reason or good sense|Panic is the reign of unreason.|The mob gave way to unreason.|Mind and ideas
+vagrancy|noun|The state of wandering with no settled home or job|Old laws punished vagrancy.|Years of vagrancy shaped his poems.|Society and law
+subjection|noun|The state of being under someone's control|The colony lived in subjection for a century.|She refused subjection to anyone's whims.|Society and law
+adjudge|verb|To declare or decide officially|The court will adjudge the claim valid.|Critics adjudge her the best of the year.|Society and law
+bespeak|verb|To suggest or be evidence of; also, to order in advance|His calm words bespeak great courage.|They bespeak a table weeks ahead.|Talk and writing
+bewail|verb|To express great sorrow about something|Fans bewail the closing of the theater.|The poem goes on to bewail lost youth.|Feelings
+chasten|verb|To make someone more modest or restrained, often through hardship|Defeat seemed to chasten the proud team.|The failure would chasten any founder.|Character
+derogate|verb|To detract from or belittle; also, to deviate from a rule|Nothing can derogate from her achievement.|States may not derogate from the treaty.|Talk and writing
+felicitate|verb|To congratulate|We felicitate you on your graduation.|Neighbors came to felicitate the couple.|Talk and writing
+forswear|verb|To give up something, or to solemnly renounce it|He chose to forswear sweets for a month.|They forswear violence completely.|Character
+hallow|verb|To make holy, or to honor greatly|They hallow the ground where the founders rest.|Traditions hallow the old harbor festival.|Society and law
+supplicate|verb|To ask humbly and earnestly|They came to supplicate the king for mercy.|He would supplicate no one for help.|Talk and writing
+condole|verb|To express sympathy to someone|Friends came to condole with the widow.|We condole with you on your loss.|Feelings
+despond|verb|To lose hope or confidence|Do not despond; help is coming.|She began to despond after the third rejection.|Feelings
+conduce|verb|To help bring about a particular result|Quiet surroundings conduce to sleep.|Exercise will conduce to good health.|Mind and ideas
+depute|verb|To appoint someone to act on your behalf|The mayor chose to depute her aide.|They depute a delegate to each meeting.|Society and law
+jubilate|verb|To show great joy|The fans began to jubilate in the streets.|We jubilate at every small victory.|Feelings
+superintend|verb|To manage and oversee|She will superintend the restoration.|Engineers superintend the dam's construction.|Money and work
+accrete|verb|To grow by gradual additions|Ice continued to accrete on the wings.|Myths accrete around famous people.|More and less
+betide|verb|To happen, or happen to someone; often used in old warnings|Whatever may betide, we stay together.|Woe betide anyone who wakes the baby.|Time and change
+illumine|verb|To light up, or to make clear|Lanterns illumine the garden path.|Her notes illumine the hardest chapter.|Look and shape
+inspirit|verb|To fill with courage or energy|The anthem seemed to inspirit the troops.|Her letters inspirit me.|Feelings
+metamorphose|verb|To change completely in form or nature|Caterpillars metamorphose into butterflies.|The village began to metamorphose into a city.|Time and change
+molder|verb|To slowly decay or crumble|Old letters molder in the attic.|Leaves molder into rich soil.|Time and change
+stanch|verb|To stop the flow of a liquid, or to stop something spreading|Use a towel to stanch the leak.|The bank tried to stanch its losses.|Movement and action
+anoint|verb|To put oil on someone in a ceremony; also, to choose formally|The priest will anoint the new king.|Critics seem to anoint her the next great novelist.|Society and law
+introspect|verb|To examine your own thoughts and feelings|Long walks help him introspect.|She paused to introspect before deciding.|Mind and ideas
+philosophize|verb|To think or talk about deep questions, sometimes at length|He likes to philosophize over coffee.|Don't philosophize; just fix the sink.|Mind and ideas
+acquiescent|adjective|Ready to accept something without protest|The acquiescent crowd waited quietly.|She was acquiescent but not convinced.|Character
+adventitious|adjective|Happening by chance rather than design|The discovery was adventitious.|An adventitious meeting led to the deal.|Good, bad and strange
+aleatory|adjective|Depending on chance|Some composers write aleatory music.|Card games have an aleatory element.|Arts and stories
+allusive|adjective|Full of indirect references|Her poetry is dense and allusive.|The allusive title hints at a myth.|Talk and writing
+asinine|adjective|Extremely foolish|It was an asinine rule.|He made an asinine remark.|Good, bad and strange
+baneful|adjective|Harmful or destructive|Gossip had a baneful effect on the team.|The weed is baneful to cattle.|Good, bad and strange
+barbarous|adjective|Savagely cruel; also, uncivilized|The barbarous treatment of prisoners shocked the world.|He mocked the barbarous spelling.|Good, bad and strange
+beauteous|adjective|Beautiful, in a poetic way|The beauteous dawn lit the hills.|Old ballads praise a beauteous maiden.|Look and shape
+becalmed|adjective|Unable to move because there is no wind|The sailboat lay becalmed for days.|The economy seemed becalmed.|Nature and weather
+bounteous|adjective|Generous; plentiful|The harvest was bounteous.|She is bounteous with praise.|More and less
+brutish|adjective|Coarse and cruel|The villain's brutish manner frightened the town.|Life in the old mines was brutish.|Character
+burnished|adjective|Polished until shiny|The burnished brass gleamed.|Her burnished hair caught the sun.|Look and shape
+crabbed|adjective|Bad-tempered; also, hard to read|The crabbed old man scowled.|His crabbed handwriting baffled us.|Character
+congruous|adjective|Fitting or in harmony with something|Her choices were congruous with her beliefs.|The modern wing is congruous with the old one.|Mind and ideas
+consolatory|adjective|Offering comfort|She wrote a consolatory note.|His consolatory words helped.|Feelings
+compendious|adjective|Containing a lot of information in a concise way|The guide is compendious.|He has a compendious knowledge of jazz.|Mind and ideas
+commodious|adjective|Roomy and comfortable|The cabin was surprisingly commodious.|They moved to a commodious apartment.|Places and travel
+convulsive|adjective|Sudden and violent, like a spasm|She burst into convulsive laughter.|The country went through convulsive change.|Movement and action
+declamatory|adjective|Spoken in a dramatic, rhetorical way|His declamatory style suits the stage.|The poem is loud and declamatory.|Talk and writing
+delusive|adjective|Giving a false impression|The calm was delusive.|Delusive hopes kept them waiting.|Mind and ideas
+desirous|adjective|Having a strong wish for something|She was desirous of peace.|He is desirous of learning more.|Feelings
+determinate|adjective|Having fixed limits; definite|The contract runs for a determinate period.|Tomatoes come in determinate and other varieties.|Mind and ideas
+digressive|adjective|Tending to wander from the main subject|His lectures are delightfully digressive.|The digressive novel loops back on itself.|Talk and writing
+dissolute|adjective|Living a wasteful life of indulgence|The dissolute prince squandered his inheritance.|The novel follows a dissolute poet.|Character
+effectual|adjective|Successful in producing a desired result|An effectual remedy was finally found.|Her plan proved effectual.|Good, bad and strange
+epigrammatic|adjective|Brief, clever and memorable|His epigrammatic wit is famous.|The essay ends on an epigrammatic note.|Talk and writing
+extempore|adverb|Without preparation|She spoke extempore for ten minutes.|The band played extempore.|Talk and writing
+factious|adjective|Prone to splitting into quarreling groups|The factious council got nothing done.|Factious debates slowed the reform.|Society and law
+illiberal|adjective|Opposed to free thought and expression; also, narrow-minded|Critics called the law illiberal.|His illiberal views shocked students.|Society and law
+immemorial|adjective|Going back beyond memory or records|The festival dates from time immemorial.|Immemorial oaks line the lane.|Time and change
+immoderate|adjective|Excessive; going beyond reasonable limits|He had an immoderate love of sweets.|Immoderate praise can spoil a child.|More and less
+impenitent|adjective|Showing no regret|The impenitent prankster grinned.|She remained impenitent about the joke.|Character
+impious|adjective|Showing a lack of respect, especially for religion|The rebels were called impious.|An impious joke offended the elders.|Society and law
+impolitic|adjective|Unwise, especially in public matters|It was impolitic to criticize the host.|His remark seemed impolitic.|Society and law
+incorporeal|adjective|Having no physical body|Ghosts are incorporeal.|The poem describes an incorporeal light.|Mind and ideas
+incurious|adjective|Showing no interest or curiosity|He was strangely incurious about the gift.|The incurious guard waved us through.|Character
+indecorous|adjective|Not in keeping with good taste or proper manners|Laughing at the ceremony was indecorous.|His indecorous haste surprised the hosts.|Society and law
+indissoluble|adjective|Unable to be broken or undone|They formed an indissoluble bond.|The two ideas are indissoluble.|Society and law
+inglorious|adjective|Shameful; also, not famous|The army made an inglorious retreat.|He lived an inglorious, quiet life.|Good, bad and strange
+iniquitous|adjective|Grossly unfair or wicked|The iniquitous tax hurt the poor.|They exposed an iniquitous scheme.|Good, bad and strange
+injurious|adjective|Causing harm|Smoking is injurious to health.|The rumor was injurious to her career.|Good, bad and strange
+inviolate|adjective|Free from injury or violation; untouched|The treaty remained inviolate.|She kept her promise inviolate.|Society and law
+jingoistic|adjective|Showing aggressive, extreme patriotism|The jingoistic speech alarmed allies.|Jingoistic slogans filled the posters.|Society and law
+leaden|adjective|Heavy, dull, or the gray color of lead|Leaden clouds hung over the sea.|He walked with leaden steps.|Look and shape
+lionhearted|adjective|Very brave|The lionhearted rescuer swam out again.|She was lionhearted in the face of danger.|Character
+loutish|adjective|Rude and clumsy|His loutish behavior embarrassed his friends.|Loutish fans spoiled the match.|Character
+lovelorn|adjective|Unhappy because of unreturned love|The lovelorn poet wrote all night.|A lovelorn swan circled the pond.|Feelings
+malcontent|noun|A person who is always dissatisfied and complaining|A few malcontents grumbled; one malcontent shouted.|The malcontent quit the club.|Character
+manful|adjective|Brave and determined|He made a manful effort to finish.|She gave a manful attempt at the climb.|Character
+mirthful|adjective|Full of laughter and fun|The party was mirthful.|Her mirthful eyes sparkled.|Feelings
+misanthropic|adjective|Disliking and distrusting other people|The misanthropic hermit lived alone.|His misanthropic jokes were too bitter.|Character
+misbegotten|adjective|Badly planned or conceived|The misbegotten scheme collapsed.|It was a misbegotten idea from the start.|Good, bad and strange
+multifarious|adjective|Many and varied|Her multifarious interests include chess and opera.|The city has multifarious charms.|More and less
+multitudinous|adjective|Very numerous|Multitudinous stars filled the sky.|The task had multitudinous parts.|More and less
+obtrusive|adjective|Noticeable in an unwelcome way|The obtrusive billboard spoiled the view.|Good waiters are never obtrusive.|Good, bad and strange
+odoriferous|adjective|Having a strong smell|The odoriferous cheese cleared the room.|Odoriferous lilies filled the hall.|Senses
+penitential|adjective|Showing sorrow for wrongdoing|He sent a penitential letter.|Lent is a penitential season.|Feelings
+peremptory|adjective|Insisting on immediate obedience; leaving no room for refusal|She gave a peremptory order.|His peremptory tone annoyed the staff.|Talk and writing
+periphrastic|adjective|Using more words than needed; roundabout|The periphrastic memo could be cut in half.|Avoid a periphrastic style.|Talk and writing
+pernickety|adjective|Fussy about small details|He is pernickety about grammar.|The pernickety chef weighed every grain.|Character
+pestilential|adjective|Harmful or very annoying, like a plague|Pestilential mosquitoes plagued the camp.|A pestilential rumor spread.|Good, bad and strange
+phantasmal|adjective|Ghostly or dreamlike|Phantasmal shapes drifted in the fog.|The film has a phantasmal beauty.|Good, bad and strange
+plenteous|adjective|Plentiful|The plenteous harvest filled the barns.|Rain was plenteous that spring.|More and less
+prayerful|adjective|Thoughtful and devout, as if praying|A prayerful silence fell.|She took a prayerful moment before speaking.|Feelings
+prefatory|adjective|Serving as an introduction|The editor added prefatory remarks.|After a prefatory joke, she began.|Talk and writing
+premonitory|adjective|Giving a warning in advance|Premonitory tremors came before the eruption.|He felt a premonitory chill.|Time and change
+preternatural|adjective|Beyond what is normal or natural|She had a preternatural calm.|The dog seemed to have preternatural hearing.|Good, bad and strange
+providential|adjective|Lucky, as if arranged by fate|Their meeting was providential.|A providential rain saved the crops.|Good, bad and strange
+recusant|adjective|Refusing to submit to authority|The recusant bishops were removed.|A recusant member skipped every vote.|Society and law
+repetitious|adjective|Repeating the same thing in a dull way|The lecture grew repetitious.|Repetitious tasks bore him.|Good, bad and strange
+retributive|adjective|Relating to punishment as payback|The court rejected retributive justice.|The fine felt more retributive than fair.|Society and law
+russet|adjective|Reddish brown|Russet leaves blew across the lawn.|She wore a russet coat.|Look and shape
+satiated|adjective|Fully satisfied, especially with food|The satiated guests leaned back.|Satiated, the cat fell asleep.|Food
+scattershot|adjective|Random and broad rather than targeted|The plan was scattershot.|Their scattershot ads missed the audience.|Good, bad and strange
+shopworn|adjective|Worn from being on display; also, overused|The shopworn coat was half price.|His jokes felt shopworn.|Good, bad and strange
+shrewish|adjective|Bad-tempered and scolding|The play features a shrewish heroine.|Her shrewish tone startled us.|Character
+sidelong|adjective|Directed to the side; sly|She gave him a sidelong glance.|A sidelong smile crossed his face.|Look and shape
+silvan|adjective|Relating to woods; wooded|They rested in a silvan glade.|The painting shows a silvan scene.|Nature and weather
+singsong|adjective|Rising and falling in a monotonous rhythm|She spoke in a singsong voice.|The singsong chant echoed in the yard.|Senses
+slavish|adjective|Copying without any originality|The film is a slavish remake.|Slavish devotion to rules can backfire.|Character
+spasmodic|adjective|Happening in sudden, irregular bursts|The applause was spasmodic.|Spasmodic gusts rattled the windows.|Movement and action
+splendiferous|adjective|Splendid, in a playful way|What a splendiferous cake!|The parade was splendiferous.|Good, bad and strange
+standoffish|adjective|Distant and unfriendly|The new neighbor seemed standoffish.|Don't be standoffish at the party.|Character
+suppliant|noun|A person who humbly asks for something|The suppliant knelt before the throne.|Each suppliant brought a petition.|Society and law
+supernal|adjective|Heavenly or divine|The choir's supernal voices filled the hall.|A supernal light bathed the hills.|Good, bad and strange
+superannuated|adjective|Too old to be useful; retired because of age|The superannuated computer still ran.|Superannuated rules confused new staff.|Time and change
+talismanic|adjective|Having magical or lucky power|The coin had talismanic value for him.|Her talismanic scarf came to every game.|Good, bad and strange
+tenderhearted|adjective|Kind and easily moved|The tenderhearted child cried at the film.|He's tenderhearted toward stray animals.|Character
+timeworn|adjective|Damaged or made old by long use; also, overused|Timeworn steps led to the chapel.|He repeated a timeworn joke.|Time and change
+tutelary|adjective|Serving as a guardian or protector|The village has a tutelary spirit.|Athena was the tutelary goddess of Athens.|Society and law
+unbowed|adjective|Not defeated or discouraged|She emerged from the trial unbowed.|The unbowed team fought back.|Character
+unfeigned|adjective|Genuine; sincere|Her delight was unfeigned.|He showed unfeigned interest.|Feelings
+unhallowed|adjective|Not made holy; also, wicked|The ruins stood on unhallowed ground.|An unhallowed deed haunted him.|Good, bad and strange
+unlettered|adjective|Unable to read or write; uneducated|The unlettered farmer was wise in other ways.|Ballads were sung by unlettered folk.|Mind and ideas
+unregenerate|adjective|Not reformed; stubbornly unchanged|He remains an unregenerate optimist.|The unregenerate rebel refused to apologize.|Character
+unsullied|adjective|Not spoiled or stained|Her record was unsullied.|Unsullied snow covered the field.|Good, bad and strange
+untutored|adjective|Not formally taught|Her untutored talent amazed the judges.|To the untutored eye, the painting looks simple.|Mind and ideas
+usurious|adjective|Charging extremely high interest|The lender's usurious rates were illegal.|They escaped a usurious loan.|Money and work
+vainglorious|adjective|Excessively proud and boastful|The vainglorious general built statues of himself.|His vainglorious speech annoyed everyone.|Character
+veracious|adjective|Truthful; accurate|She is a veracious witness.|The account proved veracious.|Talk and writing
+votive|adjective|Offered to fulfill a vow or in devotion|Votive candles flickered in the chapel.|Pilgrims left votive gifts.|Society and law
+wakeful|adjective|Unable to sleep; also, alert|She spent a wakeful night.|Wakeful guards watched the gate.|Body and health
+wonted|adjective|Usual; customary|He took his wonted seat by the window.|She greeted us with her wonted cheer.|Time and change
+workaday|adjective|Ordinary and practical, not special|They wore workaday clothes.|Her workaday routine rarely changed.|Money and work
+languorous|adjective|Pleasantly lazy and relaxed|We spent a languorous afternoon by the lake.|The song has a languorous rhythm.|Feelings

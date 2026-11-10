@@ -1,0 +1,105 @@
+# Sprout (ages 5 to 8), batch 1. word|pos|definition|example|second example|topic
+badger|noun|a furry animal with a black and white striped face that digs tunnels|A badger dug a cozy home under the old oak tree.|The badger came out to look for beetles at night.|Animals
+otter|noun|a playful animal that swims in rivers and floats on its back|The otter floated on its back and cracked a shell.|We watched an otter slide down the muddy bank.|Animals
+beetle|noun|a bug with a hard, shiny shell over its wings|A green beetle crawled across the leaf.|The beetle's shell shone like a tiny jewel.|Animals
+ladybug|noun|a small round beetle, usually red with black spots|A ladybug landed on my finger and tickled it.|Count the spots on the ladybug's back.|Animals
+moth|noun|an insect like a butterfly that usually flies at night|A moth fluttered around the porch light.|The moth had soft, dusty wings.|Animals
+flamingo|noun|a tall pink bird that often stands on one leg|The flamingo stood on one leg in the water.|A flamingo gets its pink color from what it eats.|Animals
+peacock|noun|a large bird with long, shiny tail feathers it spreads like a fan|The peacock spread its tail like a giant fan.|We heard a peacock call loudly at the zoo.|Animals
+parrot|noun|a bright, noisy bird that can copy sounds and words|The parrot said "hello" when we walked in.|Our neighbor's parrot loves sunflower seeds.|Animals
+koala|noun|a furry gray animal from Australia that sleeps in trees|A koala hugged the branch and took a nap.|The koala munched on eucalyptus leaves.|Animals
+walrus|noun|a big sea animal with long tusks and whiskers|The walrus rested on the ice in the sun.|A walrus uses its tusks to pull itself out of the water.|Animals
+starfish|noun|a sea animal shaped like a star that lives on the ocean floor|We found a starfish in a tide pool.|A starfish can grow back a lost arm.|Animals
+lobster|noun|a sea animal with a hard shell and two big claws|The lobster waved its claws slowly.|A lobster walks along the bottom of the sea.|Animals
+toad|noun|an animal like a frog with bumpy, dry skin|A toad hopped out from under the flowerpot.|The toad sat still and waited for a fly.|Animals
+pelican|noun|a big bird with a stretchy pouch under its beak for catching fish|The pelican scooped up a fish in its pouch.|A pelican glided low over the waves.|Animals
+porcupine|noun|an animal covered in sharp quills|The porcupine raised its quills to stay safe.|We spotted a porcupine high in a pine tree.|Animals
+chipmunk|noun|a small striped animal that stuffs food in its cheeks|The chipmunk stuffed its cheeks with seeds.|A chipmunk dashed across the trail.|Animals
+lizard|noun|a small reptile with scaly skin, four legs and a long tail|A lizard warmed itself on the sunny rock.|The lizard's tail twitched as it ran away.|Animals
+cheetah|noun|a spotted wild cat that is the fastest runner on land|The cheetah sprinted across the grass.|A cheetah has black lines like tears under its eyes.|Animals
+gorilla|noun|a very large, strong ape that lives in African forests|The gorilla beat its chest and then sat down to eat.|A baby gorilla rode on its mother's back.|Animals
+ostrich|noun|a huge bird that cannot fly but can run very fast|An ostrich lays the biggest eggs of any bird.|The ostrich ran faster than our car on the safari.|Animals
+swan|noun|a large white bird with a long, curved neck that swims on lakes|A swan glided across the pond.|The swan tucked its head under its wing.|Animals
+duckling|noun|a baby duck|The duckling followed its mother into the pond.|A fluffy yellow duckling peeped loudly.|Animals
+foal|noun|a baby horse|The foal wobbled on its long, thin legs.|A foal can stand up soon after it is born.|Animals
+piglet|noun|a baby pig|The piglet rolled happily in the mud.|Each piglet had a curly little tail.|Animals
+cub|noun|a baby bear, lion, fox or wolf|The lion cub pounced on its brother.|A bear cub climbed the tree after its mother.|Animals
+fawn|noun|a baby deer, often with white spots|A fawn hid quietly in the tall grass.|The fawn's spots helped it blend in.|Animals
+rooster|noun|a male chicken that crows in the morning|The rooster crowed at sunrise.|A red rooster strutted around the farmyard.|Animals
+snout|noun|the long nose and mouth of an animal like a pig|The pig pushed its snout into the mud.|An anteater has a very long snout.|Animals
+hoof|noun|the hard foot of an animal like a horse or a goat|The horse lifted one hoof so the farmer could clean it.|We heard each hoof clop on the road.|Animals
+whisker|noun|one of the long, stiff hairs near an animal's mouth|The cat's whisker twitched when it smelled the fish.|A mouse uses each whisker to feel its way in the dark.|Animals
+beak|noun|the hard, pointed mouth of a bird|The bird opened its beak wide for a worm.|A toucan has a big, colorful beak.|Animals
+claw|noun|a sharp, curved nail on an animal's foot|The crab snapped its claw at the stick.|The cat pulled in its claw when I petted it.|Animals
+antenna|noun|one of the two thin feelers on the head of an insect|The ant waved one antenna to say hello to its friend.|A butterfly smells with each antenna.|Animals
+paw|noun|the soft foot of an animal like a dog or cat|The puppy gave me its paw to shake.|There was mud on every paw.|Animals
+sparkly|adjective|shining with lots of little flashes of light|She wore sparkly shoes to the party.|The snow looked sparkly in the sunshine.|Look and shape
+glittery|adjective|covered in tiny bits that shine|We made glittery cards for Grandma.|The glittery paint got all over my hands.|Look and shape
+spotty|adjective|covered with spots|The puppy had a spotty white coat.|My banana got spotty after a few days.|Look and shape
+teeny|adjective|very, very small|A teeny ant carried a crumb.|The doll had teeny shoes.|Look and shape
+lumpy|adjective|full of bumps and lumps|The oatmeal was a little lumpy.|We slept on a lumpy old mattress at the cabin.|Look and shape
+curly|adjective|twisting into little rings or curves|Her curly hair bounced when she ran.|The pig had a short, curly tail.|Look and shape
+shiny|adjective|smooth and bright so it reflects light|He polished the shiny red apple.|Our new car is so shiny I can see myself in it.|Look and shape
+dotted|adjective|covered with small round marks|He drew a dotted line to show the path.|Her dress was dotted with tiny flowers.|Look and shape
+tangled|adjective|twisted together in a messy knot|My kite string got tangled in the tree.|Brush the tangled hair gently.|Look and shape
+cheery|adjective|bright and happy|A cheery yellow door made the house look friendly.|She gave us a cheery wave.|Feelings
+glum|adjective|quiet and sad|He looked glum when the picnic was canceled.|Don't be glum; we can play inside.|Feelings
+sulky|adjective|grumpy and quiet because you did not get your way|She was sulky after losing the game.|The sulky boy stayed in his room.|Feelings
+startled|adjective|suddenly surprised or a little frightened|The startled rabbit hopped away.|I was startled when the balloon popped.|Feelings
+squirm|verb|to wiggle and twist your body around|The baby began to squirm in my arms.|Try not to squirm while I tie your shoe.|Movement and action
+scoot|verb|to move quickly or slide over a little|Scoot over so I can sit down.|The kids scoot down the hall on their scooters.|Movement and action
+slurp|verb|to drink or eat noisily with a sucking sound|He likes to slurp his noodles.|Please don't slurp your soup.|Food
+sniffle|verb|to keep sniffing because your nose is runny|She began to sniffle when she caught a cold.|I heard him sniffle during the sad movie.|Body and health
+hiccup|verb|to make a sudden little "hic" sound you cannot stop|I always hiccup when I laugh too hard.|The baby started to hiccup after drinking milk.|Body and health
+gargle|verb|to bubble water in the back of your throat without swallowing|Gargle with warm water to soothe your throat.|He likes to gargle loudly after brushing.|Body and health
+scrub|verb|to rub something hard to clean it|Scrub your hands with soap.|We had to scrub the muddy boots.|Movement and action
+sweep|verb|to clean a floor with a broom|Please sweep the crumbs off the floor.|Dad likes to sweep the porch every morning.|Movement and action
+rinse|verb|to wash with clean water|Rinse the berries before you eat them.|Rinse the soap off your hands.|Movement and action
+soak|verb|to make something completely wet, or leave it in water|The rain will soak our clothes.|Let the dirty pan soak in the sink.|Movement and action
+heap|noun|a big, messy pile|There was a heap of laundry on the bed.|The leaves made a heap we could jump in.|More and less
+bundle|noun|a group of things tied or wrapped together|She carried a bundle of sticks for the fire.|The baby was a warm little bundle in a blanket.|More and less
+untie|verb|to undo a knot or a bow|Can you untie this knot for me?|The boat floated away when the rope came untied, so always untie it carefully.|Movement and action
+buckle|verb|to fasten a belt or strap with a clasp|Buckle your seat belt before we go.|He couldn't buckle his new sandals.|Things and tools
+button|verb|to close clothes by pushing buttons through holes|Button your coat; it's cold outside.|She learned to button her own shirt.|Things and tools
+skid|verb|to slide suddenly, especially on something slippery|Bikes can skid on wet leaves.|The car began to skid on the ice.|Movement and action
+nestle|verb|to settle into a warm, cozy spot|The kitten likes to nestle in my lap.|Little houses nestle between the hills.|Movement and action
+snuggle|verb|to get close and cozy with someone|Let's snuggle under the blanket and read.|The puppies snuggle together to keep warm.|Movement and action
+yank|verb|to pull something quickly and hard|Don't yank the dog's leash.|He had to yank the stuck door open.|Movement and action
+crawl|verb|to move on your hands and knees|The baby can crawl across the room now.|We had to crawl through the tunnel at the playground.|Movement and action
+pancake|noun|a flat, round cake cooked in a pan|We ate a tall stack of pancakes, and I saved the last pancake for Dad.|Flip the pancake when it bubbles.|Food
+muffin|noun|a small, round cake, often with fruit inside|I had a blueberry muffin for breakfast.|The muffin was warm from the oven.|Food
+waffle|noun|a crisp cake with a square pattern on it|Syrup filled every square of my waffle.|We made a waffle for each of us.|Food
+pretzel|noun|a salty, twisted snack|The pretzel was shaped like a knot.|He dipped his pretzel in mustard.|Food
+popsicle|noun|a frozen treat on a stick|My popsicle melted down my arm.|A cold popsicle is perfect on a hot day.|Food
+lemonade|noun|a sweet drink made with lemons, sugar and water|We sold lemonade at a stand on our street.|The lemonade was cold and tangy.|Food
+syrup|noun|a thick, sweet liquid poured on food|Pour some syrup on your pancakes.|The syrup made my fingers sticky.|Food
+crust|noun|the hard outside part of bread or a pie|He always leaves the crust of his sandwich.|The pie crust was golden and flaky.|Food
+yolk|noun|the yellow part inside an egg|I like to dip my toast in the yolk.|The yolk was bright orange.|Food
+sprinkles|noun|tiny bits of colored sugar for decorating sweets|We put rainbow sprinkles on the cupcakes.|Sprinkles fell all over the table.|Food
+pebbly|adjective|covered with small round stones|We walked along the pebbly beach.|The bottom of the stream was pebbly and cold.|Nature and weather
+muggy|adjective|warm and wet in a sticky way|The muggy air made my shirt stick to me.|It was a muggy summer night.|Nature and weather
+icicle|noun|a hanging spike of ice|A long icicle hung from the roof.|The icicle dripped in the sunshine.|Nature and weather
+snowdrift|noun|a deep pile of snow blown by the wind|The dog bounced through the snowdrift.|A snowdrift covered our front steps.|Nature and weather
+pinecone|noun|the hard, woody cone that holds a pine tree's seeds|We painted a pinecone for a craft.|A squirrel nibbled on a pinecone.|Nature and weather
+daisy|noun|a flower with white petals around a yellow middle|She tucked a daisy behind her ear.|The field was dotted with daisies, and I picked one daisy for you.|Nature and weather
+tulip|noun|a bright, cup-shaped spring flower|A red tulip bloomed by the mailbox.|Each tulip opens in the morning sun.|Nature and weather
+cactus|noun|a prickly desert plant that stores water|Don't touch the cactus; it's prickly!|A cactus can live without rain for a long time.|Nature and weather
+vine|noun|a plant with long stems that climb or crawl|A green vine climbed up the fence.|Grapes grow on a vine.|Nature and weather
+cliff|noun|a high, steep wall of rock|Birds nest on the side of the cliff.|We stayed far from the edge of the cliff.|Places and travel
+creek|noun|a small, narrow stream|We waded in the shallow creek.|Frogs croaked by the creek all night.|Places and travel
+hilltop|noun|the top of a hill|We had a picnic on the hilltop.|From the hilltop we could see the whole town.|Places and travel
+lane|noun|a narrow road, or one part of a road|We biked down a quiet country lane.|Stay in your own lane at the swimming pool.|Places and travel
+porch|noun|a covered area outside the door of a house|We sat on the porch and watched the rain.|A cat napped on the porch swing.|Places and travel
+barn|noun|a big farm building for animals, hay or tools|The cows went into the barn at night.|We played hide and seek in the hay barn.|Places and travel
+playhouse|noun|a small house for children to play in|We had a tea party in the playhouse.|The playhouse has a tiny window and a door.|Places and travel
+sandbox|noun|a box filled with sand for children to play in|We built a castle in the sandbox.|There was a lost shovel in the sandbox.|Places and travel
+mailbox|noun|a box where letters are delivered or sent|I ran to check the mailbox for my birthday card.|Put the letter in the blue mailbox.|Places and travel
+sled|noun|a small vehicle for sliding down snowy hills|We raced down the hill on our sled.|Pull the sled back up the hill.|Things and tools
+scooter|noun|a toy with a board, two wheels and a handle that you push with one foot|She zoomed down the sidewalk on her scooter.|Wear a helmet when you ride your scooter.|Things and tools
+helmet|noun|a hard hat that protects your head|Always wear a helmet when you ride a bike.|The firefighter's helmet was yellow.|Things and tools
+kite|noun|a light toy that flies in the wind on a long string|Our kite flew higher than the trees.|The kite dipped and twirled in the breeze.|Things and tools
+flashcard|noun|a card with a word or picture to help you learn|Mom held up a flashcard with a cat on it.|I learned each flashcard by heart.|Things and tools
+sticker|noun|a picture with glue on the back that sticks to things|She put a star sticker on my homework.|My water bottle is covered in stickers, and every sticker is a different animal.|Things and tools
+tissue|noun|a soft, thin paper for blowing your nose|Here's a tissue for your runny nose.|She tucked a tissue in her pocket.|Things and tools
+bandana|noun|a large square of cloth worn on the head or neck|The cowboy wore a red bandana.|Tie a bandana around your hair to keep it back.|Things and tools
+binoculars|noun|a tool you look through with both eyes to see far away|We used binoculars to watch the birds.|Pass me the binoculars; I see a deer!|Things and tools

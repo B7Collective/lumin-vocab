@@ -1,0 +1,180 @@
+# Scholar, batch 3
+bias|noun|An unfair preference for or against something|The referee showed bias toward the home team.|Try to read the news without bias.|Mind and ideas
+concept|noun|An idea or general notion|Gravity is a hard concept to explain.|The concept of the game is simple.|Mind and ideas
+considerable|adjective|Large in size or amount|It took considerable effort to finish.|A considerable crowd gathered.|More and less
+constitute|verb|To make up or form|Twelve months constitute a year.|Students constitute most of the audience.|More and less
+convene|verb|To gather for a meeting|The council will convene on Monday.|The club will convene after school.|Society and law
+domain|noun|An area of knowledge, control or activity|Cooking is Dad's domain.|The website's domain ends in ".org".|Mind and ideas
+equivalent|adjective|Equal in value, amount or meaning|One dollar is equivalent to a hundred cents.|Find the equivalent word in Spanish.|More and less
+ethic|noun|A belief about how to behave|She has a strong work ethic.|The team follows an ethic of fair play.|Mind and ideas
+finite|adjective|Having limits or an end|Earth's resources are finite.|There's a finite number of seats.|More and less
+framework|noun|A basic structure that supports something|The steel framework held up the roof.|We used a framework to plan the essay.|Things and tools
+incorporate|verb|To include as part of something|Incorporate your notes into the essay.|The recipe can incorporate any fruit.|More and less
+intervene|verb|To step in to change what happens|The teacher had to intervene in the argument.|Friends may intervene when you need help.|Society and law
+nonetheless|adverb|Even so; however|It was raining; nonetheless, we played.|The test was hard; nonetheless, she passed.|Talk and writing
+offset|verb|To balance out the effect of something|Planting trees can offset pollution.|Savings will offset the cost.|More and less
+orient|verb|To find your direction or position|Use the map to orient yourself.|The guide will orient new students.|Places and travel
+prior|adjective|Earlier; coming before|No prior experience is needed.|Prior to the game, we stretched.|Time and change
+protocol|noun|A set of official rules for how to do something|Follow the safety protocol.|The lab has a strict protocol.|Society and law
+random|adjective|Happening without a pattern or plan|The winner was chosen at random.|He asked a random question.|Mind and ideas
+ratio|noun|A comparison of two amounts|The ratio of cats to dogs is two to one.|Mix paint in a ratio of three to one.|Science and tech
+scope|noun|The range of something|The project's scope grew over time.|That question is outside the scope of the lesson.|More and less
+suspend|verb|To hang something, or pause or stop for a while|They suspend the lights from the ceiling.|The school will suspend classes for snow.|Time and change
+trigger|verb|To cause something to start|Dust can trigger a sneeze.|The alarm will trigger if the door opens.|Time and change
+undergo|verb|To go through an experience or change|The house will undergo repairs.|Caterpillars undergo a big change.|Time and change
+underlying|adjective|Basic, but not obvious|The underlying problem was a lack of sleep.|There's an underlying message in the poem.|Mind and ideas
+uniform|adjective|The same in every part|The bricks were uniform in size.|Keep the stitches uniform.|Look and shape
+voluntary|adjective|Done by choice, not required|The after-school club is voluntary.|Donations are voluntary.|Society and law
+whereas|conjunction|While on the other hand|She loves cats, whereas I prefer dogs.|Whereas summer is hot, winter is cold.|Talk and writing
+accessible|adjective|Easy to reach, enter or understand|The building is accessible by wheelchair.|The book is written in accessible language.|Places and travel
+accountable|adjective|Responsible for what you do|We hold ourselves accountable for our work.|Leaders should be accountable.|Society and law
+adolescent|noun|A young person between childhood and adulthood|Adolescents need lots of sleep, and every adolescent grows fast.|The book is about an adolescent who runs away.|Society and law
+affirm|verb|To state firmly or support|She affirms that she was home, and her brother will affirm it.|The coach tried to affirm the team's effort.|Talk and writing
+applicable|adjective|Relevant or able to be used|Write "none" if no answer is applicable.|The rule is applicable to everyone.|Society and law
+conservative|adjective|Cautious about change, or lower than likely|His estimate was conservative.|She dresses in a conservative style.|Society and law
+diversify|verb|To make more varied|Diversify your diet with new foods.|The farm decided to diversify its crops.|More and less
+fluent|adjective|Able to speak or write a language easily|She is fluent in three languages.|He became fluent after a year abroad.|Talk and writing
+frivolous|adjective|Silly and not important|Don't waste money on frivolous things.|It was a frivolous complaint.|Good, bad and strange
+implication|noun|Something suggested but not said directly, or a likely result|The implication was that we were late.|Think about the implication of your choice.|Mind and ideas
+incoherent|adjective|Confused and hard to understand|His sleepy answer was incoherent.|The essay was incoherent and rambling.|Talk and writing
+indulge|verb|To let yourself enjoy something special|On birthdays we indulge in cake.|Grandparents indulge their grandkids.|Feelings
+integral|adjective|Necessary to make something complete|Practice is integral to success.|The bridge is an integral part of the town.|More and less
+morale|noun|The confidence and spirit of a group|The win boosted team morale.|Morale was low after the loss.|Feelings
+optimal|adjective|Best or most effective|The optimal time to plant is spring.|Find the optimal route home.|Good, bad and strange
+relevant|adjective|Connected to what is being discussed|Make sure your example is relevant.|That fact isn't relevant to the question.|Mind and ideas
+stance|noun|An attitude or opinion, or the way you stand|What's your stance on homework?|The batter took a wide stance.|Mind and ideas
+validate|verb|To confirm that something is true or correct|The website will validate your password.|Her feelings deserve to be heard, so validate them.|Mind and ideas
+abbreviate|verb|To shorten a word or phrase|We abbreviate "street" as "St."|You can abbreviate your name on the form.|Talk and writing
+accessory|noun|An extra item, like a belt or phone case|A scarf is a nice accessory.|The camera came with a lens accessory.|Things and tools
+accomplice|noun|Someone who helps another do something wrong|The thief's accomplice drove the car.|My sister was my accomplice in the prank.|Society and law
+acronym|noun|A word made from the first letters of other words|NASA is an acronym.|Text messages are full of acronyms, and LOL is a famous acronym.|Talk and writing
+adhesive|noun|A sticky substance like glue|Use a strong adhesive for the wood.|The tape's adhesive wore off.|Things and tools
+admission|noun|Being allowed in, the price to enter, or admitting something|Admission to the museum is free.|His admission of the mistake was honest.|Society and law
+adversity|noun|Hard times and difficulty|She stayed hopeful through adversity.|Adversity can make you stronger.|Good, bad and strange
+aerial|adjective|In or from the air|We took aerial photos with a drone.|The aerial view showed the whole city.|Places and travel
+affiliate|noun|A person or group connected to a larger organization|The local station is an affiliate of a national network.|The club is an affiliate of the league.|Society and law
+agility|noun|Being able to move quickly and easily|Cats have amazing agility.|Soccer builds agility.|Body and health
+alias|noun|A false or extra name|The spy used an alias.|Her online alias is "StarGazer."|Society and law
+alternative|noun|Another choice|Is there an alternative to driving?|Water is a healthy alternative to soda.|Mind and ideas
+ambiance|noun|The mood or feeling of a place|The café had a cozy ambiance.|Candles add ambiance.|Senses
+amnesty|noun|An official pardon, or a time when people can return things without penalty|The library declared amnesty on late fees.|The government granted amnesty.|Society and law
+annex|noun|An extra building added to a main one|Science classes are in the annex.|The library annex holds old books.|Places and travel
+antidote|noun|A medicine that stops a poison, or a remedy for something bad|The doctor gave an antidote for the snakebite.|Laughter is the antidote to stress.|Body and health
+apprehend|verb|To catch and arrest; also, to understand|Police will apprehend the suspect.|It's hard to apprehend how big space is.|Society and law
+archive|noun|A collection of old records or documents|The newspaper archive goes back a century.|She found the photo in the town archive.|Things and tools
+arena|noun|A large building for sports or shows|The concert was in a huge arena.|The arena roared when the team scored.|Places and travel
+array|noun|A large group or display|The store has a wide array of shoes.|An array of stars filled the sky.|More and less
+artisan|noun|A skilled worker who makes things by hand|An artisan carved the wooden bowls.|The artisan bakery sells sourdough.|Money and work
+aspect|noun|One part or feature of something|Cost is one aspect to consider.|My favorite aspect of camp is the lake.|Mind and ideas
+backlash|noun|A strong negative reaction|The new rule caused a backlash.|There was backlash against the price increase.|Society and law
+banner|noun|A long sign of cloth or paper|We hung a banner that said "Welcome."|The banner flapped in the wind.|Things and tools
+baseline|noun|A starting point used for comparison; also, the back line on a court|Take your heart rate as a baseline.|She served from the baseline.|Science and tech
+beacon|noun|A light or signal that guides or warns|The lighthouse is a beacon for ships.|She's a beacon of hope for the team.|Places and travel
+bonus|noun|Something extra and good|The free dessert was a bonus.|Workers got a holiday bonus.|Money and work
+breach|noun|A break in something, like a wall or a rule|Water poured through the breach in the dam.|Sharing the secret was a breach of trust.|Society and law
+brochure|noun|A small booklet with information or ads|We picked up a brochure about the park.|The travel brochure had beautiful photos.|Talk and writing
+bulletin|noun|A short official news report|The weather bulletin warned of snow.|Check the school bulletin board.|Talk and writing
+bureau|noun|An office or agency, or a chest of drawers|The weather bureau issued a warning.|Socks go in the top drawer of the bureau.|Society and law
+cadet|noun|A student training to be an officer|The cadet marched in the parade.|Each cadet polished his boots.|Society and law
+calamity|noun|A sudden disaster|The flood was a calamity for the town.|Spilling paint on the rug was a small calamity.|Good, bad and strange
+caliber|noun|Quality or level of ability|She's a player of high caliber.|The school attracts teachers of great caliber.|Good, bad and strange
+campaign|noun|An organized effort to reach a goal|The campaign raised money for the shelter.|She ran a campaign for class president.|Society and law
+capsule|noun|A small sealed container, like a pill case or the cabin of a spacecraft|Take one capsule with water.|We buried a time capsule.|Things and tools
+civilian|noun|A person who is not in the military or police|The general spoke to a civilian who lived nearby.|Every civilian was moved to safety.|Society and law
+clan|noun|A group of families with a shared ancestor|The clan gathered for a reunion.|Each clan had its own tartan.|Society and law
+cliche|noun|A phrase or idea used so much it's boring|"Happily ever after" is a cliche.|Avoid each cliche in your essay.|Talk and writing
+clinic|noun|A place where people get medical care|We went to the clinic for a checkup.|The dental clinic opens at eight.|Body and health
+cockpit|noun|Where the pilot sits in a plane|The pilot waved from the cockpit.|Kids could tour the cockpit.|Places and travel
+collision|noun|A crash between two things|There was a collision at the corner.|Two asteroids had a collision.|Movement and action
+column|noun|A tall pillar, or a vertical list, or a regular newspaper article|A marble column held up each corner of the roof.|Add the numbers in each column.|Look and shape
+commentary|noun|Spoken or written remarks about an event|The game commentary was exciting.|Her commentary on the book was thoughtful.|Talk and writing
+commission|noun|A group given a task, or pay based on sales|The commission studied the problem.|The salesperson earns a commission.|Money and work
+commute|noun|The trip to and from work or school|My commute takes twenty minutes.|She reads on her commute.|Places and travel
+compartment|noun|A separate section inside something|The glove compartment holds the map.|My lunch box has three compartments, and each compartment has a lid.|Things and tools
+competitor|noun|A person or company you compete against|Every competitor shook hands.|The store's competitor lowered prices.|Money and work
+confederation|noun|A group of states or organizations joined together|The tribes formed a confederation.|The confederation shared a common army.|Society and law
+configuration|noun|The arrangement of parts|Change the configuration of the desks.|The phone's configuration is easy to set.|Look and shape
+congestion|noun|Overcrowding, or a stuffy nose|Traffic congestion made us late.|The cold caused nasal congestion.|Places and travel
+contribution|noun|Something given to help|Every contribution to the food drive counts.|Her contribution to the project was huge.|Money and work
+convoy|noun|A group of vehicles traveling together|A convoy of trucks drove through town.|The ships sailed in a convoy.|Places and travel
+coordinate|verb|To organize people or things to work together|We coordinate rides to practice.|Dancers coordinate their moves.|Society and law
+correlation|noun|A connection between two things|There's a correlation between sleep and mood.|Scientists found a correlation in the data.|Science and tech
+coverage|noun|How much something is covered, especially by news|The storm got lots of news coverage.|Check the phone coverage map.|Talk and writing
+criterion|noun|A standard for judging something|Taste was one criterion in the bake-off.|What's the main criterion for winning?|Mind and ideas
+decree|noun|An official order|The king issued a decree.|By decree, the market closed early.|Society and law
+defect|noun|A fault or flaw|The toy was returned because of a defect.|A defect in the glass made it crack.|Good, bad and strange
+demolition|noun|Tearing down a building|Demolition of the old mall began today.|The demolition crew used a wrecking ball.|Places and travel
+descendant|noun|A person related to someone who lived long ago|She is a descendant of sailors.|Each descendant inherited the family recipe.|Society and law
+dictator|noun|A ruler with total power, not elected|The country was ruled by a dictator.|In the story, the dictator banned music.|Society and law
+disclaimer|noun|A statement that limits responsibility|The ad had a tiny disclaimer.|Read the disclaimer before you sign.|Society and law
+dynasty|noun|A line of rulers from one family|The Ming dynasty lasted centuries.|The team built a winning dynasty.|Society and law
+edict|noun|An official order from someone in power|The queen's edict banned feasts.|By edict, all dogs must wear tags.|Society and law
+embargo|noun|An official ban on trade|The embargo stopped shipments of oil.|They lifted the embargo after talks.|Money and work
+encyclopedia|noun|A book or website with information on many subjects|Look it up in the encyclopedia.|The old encyclopedia filled a whole shelf.|Talk and writing
+estate|noun|A large property, or everything a person owns|The estate had gardens and a lake.|Her estate went to her children.|Money and work
+exemption|noun|Permission not to follow a rule|He got an exemption from gym class.|Seniors have an exemption from the fee.|Society and law
+expertise|noun|Special skill or knowledge|We need her expertise in coding.|His expertise is birds.|Mind and ideas
+exposure|noun|Being exposed to something, like weather or attention|Too much sun exposure causes burns.|The story got national exposure.|Nature and weather
+facility|noun|A building or place made for a purpose|The sports facility has a pool.|The new research facility opened today.|Places and travel
+federation|noun|A group of states or groups united under one government|The federation has six states.|A sports federation sets the rules.|Society and law
+fiasco|noun|A complete, embarrassing failure|The picnic was a fiasco in the rain.|The play turned into a fiasco when the set fell.|Good, bad and strange
+forum|noun|A place or event for discussion|The town held a forum on parks.|Post your question in the online forum.|Society and law
+foundation|noun|The base something is built on, or an organization that gives money|The house sits on a stone foundation.|A foundation paid for the new library.|Things and tools
+frequency|noun|How often something happens|The frequency of storms has increased.|Tune the radio to the right frequency.|Time and change
+gesture|noun|A movement that shows a feeling, or a kind act|She waved in a friendly gesture.|Bringing soup was a kind gesture.|Talk and writing
+grant|noun|Money given for a special purpose|The school got a grant for new computers.|She won a research grant.|Money and work
+hindsight|noun|Understanding something only after it happens|In hindsight, we should have brought umbrellas.|Hindsight makes everything look obvious.|Mind and ideas
+icon|noun|A small picture on a screen, or a famous symbol|Tap the camera icon.|The bridge is an icon of the city.|Arts and stories
+inquiry|noun|A question, or an official investigation|The store answered my inquiry.|The inquiry found no wrongdoing.|Mind and ideas
+inspection|noun|A careful look to check something|The car passed inspection.|The kitchen gets a health inspection.|Society and law
+insulation|noun|Material that keeps heat or sound in or out|Good insulation keeps the house warm.|The wires have plastic insulation.|Science and tech
+irrigation|noun|Supplying water to crops through pipes or channels|Irrigation turned the desert green.|The farm uses drip irrigation.|Nature and weather
+jurisdiction|noun|The official power to make legal decisions in an area|The case is outside this court's jurisdiction.|The park is under city jurisdiction.|Society and law
+keynote|noun|The main speech or idea at an event|The author gave the keynote at the conference.|Kindness was the keynote of her talk.|Talk and writing
+layer|noun|A sheet or level of something lying over or under another|The cake has three layers, and the top layer is chocolate.|Wear a warm layer under your coat.|Look and shape
+lineage|noun|A line of ancestors|She traced her lineage back to Ireland.|The horse has a famous lineage.|Society and law
+loophole|noun|A gap in a rule that lets people avoid it|He found a loophole in the game's rules.|They closed the loophole.|Society and law
+mainstream|adjective|Accepted or used by most people|The band became mainstream.|Electric cars are now mainstream.|Society and law
+makeshift|adjective|Used for now because nothing better is available|We built a makeshift tent from blankets.|A box served as a makeshift table.|Things and tools
+militia|noun|A group of ordinary citizens trained as soldiers|The town militia drilled on weekends.|The militia defended the fort.|Society and law
+niche|noun|A small space, or a role that suits someone|A statue stood in a niche in the wall.|She found her niche in drama club.|Places and travel
+norm|noun|What is usual or expected|Homework every night is the norm.|It's a norm to say thank you.|Society and law
+novelty|noun|Something new and unusual|The novelty of the new toy wore off.|Snow is a novelty in Florida.|Good, bad and strange
+ordeal|noun|A very difficult experience|The long flight was an ordeal.|After the ordeal, they rested.|Good, bad and strange
+ordinance|noun|A local law|A town ordinance bans fireworks.|The ordinance limits noise at night.|Society and law
+overhaul|noun|A complete repair or change|The car needed an engine overhaul.|The school's schedule got an overhaul.|Time and change
+oversight|noun|A mistake from not noticing, or supervision|Forgetting the cake was an oversight.|The project is under city oversight.|Mind and ideas
+panorama|noun|A wide view of an area|The hilltop gave a panorama of the valley.|She painted a panorama of the coast.|Places and travel
+participant|noun|A person who takes part in something|Each participant got a medal.|The study had fifty participants, and every participant filled out a survey.|Society and law
+patent|noun|A legal right to an invention|She got a patent for her design.|The patent protects the idea.|Science and tech
+phase|noun|A stage in a process|The moon is in its full phase.|The project's first phase is done.|Time and change
+platform|noun|A raised flat surface, or a place where trains stop|Wait on the platform for the train.|The singer stood on a platform.|Places and travel
+poll|noun|A survey of people's opinions|The poll showed most students like pizza.|We took a poll of the class.|Society and law
+precaution|noun|An action taken to prevent danger|Wear a helmet as a precaution.|We took every precaution.|Body and health
+prerequisite|noun|Something required before something else|Algebra is a prerequisite for this class.|Patience is a prerequisite for fishing.|Mind and ideas
+preview|noun|An early look at something|We watched a preview of the movie.|The app shows a preview of each photo.|Arts and stories
+rebate|noun|Money returned after you buy something|We got a rebate on the new fridge.|Mail in the form for your rebate.|Money and work
+rehabilitation|noun|Helping someone recover after illness or injury|After surgery, he began rehabilitation.|The bird needed rehabilitation before release.|Body and health
+reign|noun|The time a king or queen rules|The queen's reign lasted fifty years.|During his reign, the kingdom grew.|Society and law
+remnant|noun|A small part left over|A remnant of the old wall still stands.|She sewed a pillow from a fabric remnant.|More and less
+replica|noun|An exact copy|The museum has a replica of the ship.|He built a replica of the tower.|Things and tools
+residue|noun|A small amount left after something is gone|Sticky residue was left on the jar.|There's a white residue in the kettle.|Science and tech
+retrospect|noun|Looking back on past events|In retrospect, the trip was worth it.|In retrospect, I should have studied.|Time and change
+scholarship|noun|Money given to help a student pay for school|She won a scholarship to college.|The scholarship covers books too.|Money and work
+sector|noun|A part or area of something|The tech sector is growing.|Each sector of the map had a color.|Money and work
+simulation|noun|A model that imitates a real situation|Pilots train with a flight simulation.|The simulation showed how the storm would move.|Science and tech
+skeptic|noun|A person who doubts claims until shown proof|The skeptic asked for evidence.|Even the skeptic was impressed.|Mind and ideas
+stereotype|noun|An unfair, oversimplified idea about a group|It's a stereotype that all teens are lazy.|The movie avoided every stereotype.|Society and law
+successor|noun|A person or thing that comes after another|The coach chose her successor.|The new phone is a successor to the old one.|Time and change
+syndrome|noun|A group of symptoms that happen together|The doctor named the syndrome.|"Senior-itis" is a joking syndrome.|Body and health
+synopsis|noun|A short summary of a story|Read the synopsis on the back cover.|The synopsis left out the ending.|Talk and writing
+tenure|noun|The time someone holds a position|Her tenure as mayor lasted eight years.|During his tenure, the team improved.|Money and work
+transcript|noun|A written copy of what was said, or a record of grades|Read the transcript of the speech.|Colleges asked for her transcript.|Talk and writing
+trend|noun|A general direction of change, or something popular|There's a trend toward electric bikes.|That dance was a trend last year.|Time and change
+tribute|noun|Something done to show respect or thanks|The concert was a tribute to the teacher.|They paid tribute to the volunteers.|Society and law
+tribunal|noun|A court or group that judges a dispute|The tribunal heard both sides.|The case went before a tribunal.|Society and law
+trilogy|noun|A set of three related books or movies|I read the whole trilogy in a month.|The trilogy ends with a big battle.|Arts and stories
+ultimatum|noun|A final demand with a threat if not met|She gave him an ultimatum: clean up or no TV.|The ultimatum ended the argument.|Talk and writing
+utopia|noun|An imaginary perfect place|The book describes a utopia without hunger.|For my cat, a sunny window is utopia.|Mind and ideas
+vendor|noun|A person who sells things, often outdoors|The hot dog vendor waved at us.|Every vendor at the market sold fruit.|Money and work
+workforce|noun|All the people who work in a place or country|The factory's workforce is skilled.|More women joined the workforce.|Money and work

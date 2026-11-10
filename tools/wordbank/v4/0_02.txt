@@ -1,0 +1,118 @@
+# Sprout, batch 2
+hornet|noun|a large wasp that can give a painful sting|A hornet buzzed around the trash can.|Stay away from the hornet nest under the roof.|Animals
+cricket|noun|a jumping insect that chirps at night by rubbing its wings|A cricket chirped outside my window all night.|The cricket hopped into the grass.|Animals
+grasshopper|noun|a green or brown insect with long back legs for jumping|The grasshopper jumped right over my shoe.|A grasshopper can leap many times its own length.|Animals
+earthworm|noun|a long, soft worm that lives in the soil|An earthworm wiggled up after the rain.|The robin pulled an earthworm out of the lawn.|Animals
+cobweb|noun|an old, dusty spider web|There was a cobweb in the corner of the attic.|Grandpa brushed a cobweb off the old box.|Animals
+falcon|noun|a fast bird that hunts by diving through the air|The falcon dove down from the sky.|A falcon can fly faster than a car on the highway.|Animals
+sparrow|noun|a small brown bird that hops and chirps|A sparrow hopped along the sidewalk.|The sparrow pecked at the crumbs.|Animals
+raven|noun|a large, clever black bird|A raven sat on the fence and croaked.|The raven solved the puzzle to get the treat.|Animals
+woodpecker|noun|a bird that taps holes in trees with its beak|We heard a woodpecker tapping on the oak tree.|The woodpecker looked for bugs under the bark.|Animals
+hummingbird|noun|a tiny bird whose wings beat so fast they hum|A hummingbird drank from the red flower.|The hummingbird hovered in one spot.|Animals
+seagull|noun|a white and gray bird that lives near the sea|A seagull tried to grab my sandwich at the beach.|The seagull floated on the waves.|Animals
+puffin|noun|a black and white seabird with a colorful beak|The puffin carried little fish in its beak.|A puffin nests in a burrow on a cliff.|Animals
+squid|noun|a sea animal with a long body and ten arms|A squid squirts ink to hide.|The giant squid lives deep in the ocean.|Animals
+shrimp|noun|a small sea animal with a thin shell and many legs|A tiny shrimp darted between the rocks.|We had shrimp with rice for dinner.|Animals
+clam|noun|a sea animal that lives inside two hard shells|The clam closed its shell tight.|We dug for a clam in the wet sand.|Animals
+oyster|noun|a sea animal in a rough shell that can make a pearl|A pearl grows inside an oyster.|The oyster clung to the rock.|Animals
+seahorse|noun|a small fish with a head shaped like a horse|The seahorse curled its tail around the seaweed.|A daddy seahorse carries the babies.|Animals
+eel|noun|a long, slippery fish shaped like a snake|An eel slid between the rocks.|The eel hid in a hole in the reef.|Animals
+salmon|noun|a big pink fish that swims up rivers to lay eggs|The salmon leaped up the waterfall.|A bear caught a salmon in the river.|Animals
+newt|noun|a small animal like a lizard that lives near water|A newt crawled out of the pond.|The newt had bright orange spots.|Animals
+alligator|noun|a large reptile with a wide snout and strong jaws|An alligator rested in the swamp.|The alligator slid into the water without a splash.|Animals
+crocodile|noun|a large reptile with a long, narrow snout that lives in rivers|The crocodile floated like a log.|A crocodile has very thick, bumpy skin.|Animals
+iguana|noun|a large green lizard with spikes down its back|The iguana warmed up in the sun.|An iguana munches on leaves and flowers.|Animals
+chameleon|noun|a lizard that can change the color of its skin|The chameleon turned green on the leaf.|A chameleon can move each eye on its own.|Animals
+gecko|noun|a small lizard with sticky feet that can climb walls|A gecko ran up the kitchen wall.|The gecko licked its own eye.|Animals
+camel|noun|a desert animal with one or two humps on its back|The camel carried bags across the sand.|A camel can go many days without drinking.|Animals
+llama|noun|a fluffy animal with a long neck from South America|The llama had soft, woolly fur.|A llama hummed when it was happy.|Animals
+yak|noun|a big, hairy ox that lives in cold mountains|The yak's long hair kept it warm.|Farmers use a yak to carry heavy loads.|Animals
+bison|noun|a huge, shaggy animal with a big hump and short horns|A bison grazed on the prairie.|The bison rolled in the dust.|Animals
+moose|noun|a very large deer with wide, flat antlers|A moose waded into the lake to eat plants.|The moose was taller than our car.|Animals
+reindeer|noun|a deer that lives in cold places and has big antlers|A reindeer pulled the sled through the snow.|The reindeer dug for moss under the snow.|Animals
+antelope|noun|a fast, graceful animal with horns that lives in grasslands|The antelope leaped over the bush.|A herd of antelope ran across the plain.|Animals
+gazelle|noun|a small, quick antelope with big dark eyes|The gazelle bounced high in the air.|A gazelle can run very fast.|Animals
+hippo|noun|a huge, heavy animal that spends its day in rivers|The hippo opened its huge mouth.|A hippo can hold its breath underwater.|Animals
+rhino|noun|a large, thick-skinned animal with one or two horns on its nose|The rhino rolled in the mud to stay cool.|A baby rhino followed its mother.|Animals
+leopard|noun|a big wild cat with dark spots that climbs trees|The leopard rested on a branch.|A leopard's spots look like little roses.|Animals
+jaguar|noun|a big spotted wild cat from the rainforest that loves to swim|The jaguar swam across the river.|A jaguar's roar is deep and loud.|Animals
+lynx|noun|a wild cat with tufts of hair on its ears and a short tail|A lynx crept through the snowy forest.|The lynx has big furry paws like snowshoes.|Animals
+coyote|noun|a wild dog that lives in North America and howls at night|We heard a coyote howl far away.|The coyote trotted across the field.|Animals
+hyena|noun|a wild animal from Africa whose call sounds like laughing|The hyena made a giggling sound.|A hyena has very strong jaws.|Animals
+panda|noun|a black and white bear from China that eats bamboo|The panda munched on bamboo all day.|A baby panda is tiny when it is born.|Animals
+skunk|noun|a black and white animal that sprays a very bad smell|The skunk raised its tail, so we backed away.|A skunk wandered through our yard at night.|Animals
+weasel|noun|a small, quick animal with a long body and short legs|The weasel slipped into a hole in the wall.|A weasel can turn white in winter.|Animals
+ferret|noun|a small, playful animal with a long body, sometimes kept as a pet|Our ferret hides socks under the couch.|The ferret wiggled through the tube.|Animals
+mole|noun|a small animal that digs tunnels underground and can barely see|A mole made little hills all over the lawn.|The mole has big front paws for digging.|Animals
+hamster|noun|a small furry pet with puffy cheeks|My hamster runs on its wheel at night.|The hamster stuffed seeds in its cheeks.|Animals
+hare|noun|an animal like a big rabbit with long ears and strong back legs|The hare raced across the meadow.|A hare's ears are longer than a rabbit's.|Animals
+colt|noun|a young male horse|The colt kicked up its heels in the field.|A colt grows quickly in its first year.|Animals
+gosling|noun|a baby goose|The fluffy gosling followed its parents.|Each gosling paddled in a line.|Animals
+hatchling|noun|a baby animal that has just come out of its egg|A turtle hatchling crawled toward the sea.|The hatchling peeped for its mother.|Animals
+litter|noun|a group of baby animals born at the same time to one mother|Our dog had a litter of six puppies.|The smallest kitten in the litter was the bravest.|Animals
+kennel|noun|a small house or place where dogs stay|The dog slept in his kennel.|We left our dog at the kennel during the trip.|Animals
+stable|noun|a building where horses are kept|The horses rest in the stable at night.|We brushed the ponies in the stable.|Animals
+coop|noun|a small house for chickens|We gathered eggs from the chicken coop.|The hens went into the coop at sunset.|Animals
+pasture|noun|a grassy field where animals eat|The cows grazed in the pasture.|The horses galloped across the pasture.|Animals
+hutch|noun|a wooden box or cage for rabbits|Our bunny lives in a hutch in the yard.|We put fresh hay in the hutch.|Animals
+aquarium|noun|a glass tank or building where fish and sea animals are kept|We saw sharks at the aquarium.|My goldfish swims in a small aquarium.|Animals
+antler|noun|one of the branching horns on a deer's head|The deer had a broken antler.|Each antler falls off and grows back every year.|Animals
+gill|noun|the part of a fish that lets it breathe underwater|The fish's gill opened and closed.|A shark has a gill slit on each side.|Animals
+pouch|noun|a pocket of skin where some animals carry their babies|The joey peeked out of its mother's pouch.|A kangaroo's pouch keeps the baby safe.|Animals
+hump|noun|a round lump on an animal's back|The camel's hump stores fat for long trips.|A whale arched its hump out of the water.|Animals
+lair|noun|the hidden home of a wild animal|The fox slept in its lair under the roots.|In the story, the dragon guarded its lair.|Animals
+moody|adjective|changing from happy to grumpy quickly|My little brother is moody when he's tired.|The moody cat purred and then hissed.|Feelings
+sheepish|adjective|a little embarrassed because you did something silly|He gave a sheepish smile after tripping.|She looked sheepish when the cookie jar was empty.|Feelings
+homesick|adjective|sad because you miss your home|I felt homesick on my first night at camp.|The homesick boy called his mom.|Feelings
+overjoyed|adjective|very, very happy|We were overjoyed to see the new puppy.|Grandma was overjoyed by our visit.|Feelings
+bored|adjective|tired because nothing is interesting|I get bored on long car rides.|The bored cat stared out the window.|Feelings
+annoyed|adjective|a little bit angry|She was annoyed by the buzzing fly.|He looked annoyed when the ball hit his tower.|Feelings
+thankful|adjective|happy and grateful for something|I am thankful for my family.|We felt thankful for the warm soup.|Feelings
+ashamed|adjective|feeling bad about something you did wrong|He felt ashamed after shouting at his sister.|Don't be ashamed to ask for help.|Feelings
+envious|adjective|wishing you had what someone else has|I was envious of my friend's new bike.|She felt envious of her brother's big room.|Feelings
+frightened|adjective|afraid|The frightened kitten hid under the bed.|I was frightened by the thunder.|Feelings
+jumpy|adjective|nervous and easily startled|The loud storm made the dog jumpy.|I was jumpy before my piano recital.|Feelings
+antsy|adjective|restless and unable to sit still|We got antsy waiting for the movie to start.|The antsy kids wiggled in their seats.|Feelings
+bubbly|adjective|happy, lively and full of energy|Our bubbly teacher always makes us laugh.|She has a bubbly laugh.|Character
+chipper|adjective|cheerful and lively|Dad is chipper even early in the morning.|The chipper bird sang outside.|Character
+nosy|adjective|too interested in other people's business|Our nosy cat peeks into every bag.|Don't be nosy; that's her diary.|Character
+truthful|adjective|always telling the truth|A truthful friend tells you when your shoe is untied.|Please be truthful about what happened.|Character
+fib|noun|a small lie, usually about something unimportant|He told a fib about eating the last cookie.|That was just a fib; I really did clean my room.|Talk and writing
+tattle|verb|to tell a grown-up that someone else did something wrong|Please don't tattle about little things.|She ran to tattle on her brother.|Talk and writing
+brag|verb|to talk too proudly about yourself|It's not kind to brag about winning.|He likes to brag about his fast bike.|Talk and writing
+swap|verb|to trade one thing for another|Let's swap stickers.|We swap books every week.|Money and work
+lend|verb|to let someone use something of yours for a while|Can you lend me a pencil?|I will lend you my umbrella.|Money and work
+chortle|verb|to laugh in a happy, gurgly way|Grandpa began to chortle at the joke.|The baby will chortle when you tickle her.|Talk and writing
+cackle|verb|to laugh in a loud, sharp way|The witch in the play let out a cackle, and we heard her cackle again.|The hens cackle in the yard.|Talk and writing
+sob|verb|to cry loudly with big breaths|The little boy began to sob when his ice cream fell.|She started to sob at the sad ending.|Feelings
+whimper|verb|to make soft, sad crying sounds|The puppy would whimper when we left.|I heard the baby whimper in her crib.|Feelings
+whine|verb|to complain in a long, unhappy voice|Please don't whine about bedtime.|The dog began to whine at the door.|Talk and writing
+pout|verb|to push out your lips when you are upset|She likes to pout when she doesn't get her way.|Don't pout; we'll play later.|Feelings
+frown|verb|to pull your eyebrows down when you are unhappy or thinking hard|The teacher began to frown at the noise.|Why do you frown when you read?|Feelings
+beam|verb|to smile very widely|The kids beam when they see the cake.|She began to beam at the good news.|Feelings
+smirk|verb|to smile in a sly or smug way|He began to smirk when he won the bet.|Don't smirk at your sister.|Feelings
+shrug|verb|to lift your shoulders to show you don't know or don't care|He gave a shrug and said, "I don't know."|When I asked where the cat was, she could only shrug.|Movement and action
+trudge|verb|to walk slowly and heavily because you are tired|We had to trudge through the deep snow.|They trudge home after a long day.|Movement and action
+hobble|verb|to walk with difficulty, as if your foot hurts|I had to hobble after I stubbed my toe.|The old dog would hobble to his bed.|Movement and action
+teeter|verb|to wobble as if about to fall|The cup began to teeter on the edge of the table.|Watch the stack of blocks teeter.|Movement and action
+clamber|verb|to climb awkwardly using hands and feet|We had to clamber over the big rocks.|The kids clamber up the hill.|Movement and action
+wade|verb|to walk through water|We had to wade across the shallow stream.|Let's wade in the lake to cool off.|Movement and action
+dribble|verb|to bounce a ball over and over while moving; also, to let liquid drip|She can dribble the ball down the court.|Don't dribble juice on your shirt.|Movement and action
+trickle|verb|to flow slowly in a thin stream|Water began to trickle down the window.|Sand will trickle through your fingers.|Nature and weather
+gush|verb|to pour out quickly in a big stream|Water began to gush from the broken pipe.|The fountain can gush high into the air.|Nature and weather
+spill|verb|to let something fall or flow out by accident|Try not to spill your milk.|I spill paint every time I open the jar.|Movement and action
+cram|verb|to stuff things tightly into a small space|Don't cram all your toys into one box.|We tried to cram into the tiny car.|Movement and action
+squash|verb|to press something until it is flat|Don't squash the bread in the bag.|I squash the box flat for recycling.|Movement and action
+squish|verb|to squeeze something soft so it changes shape|I love to squish the playdough.|Mud will squish between your toes.|Movement and action
+pinch|verb|to squeeze something between your finger and thumb|Pinch a little salt into the bowl.|The crab might pinch your finger.|Movement and action
+poke|verb|to push something with your finger or a stick|Don't poke the sleeping dog.|Poke a hole in the dirt for the seed.|Movement and action
+nudge|verb|to push gently, usually with your elbow|I gave my friend a nudge to wake him up.|Nudge the door open with your foot.|Movement and action
+shove|verb|to push hard and rough|Please don't shove in line.|We had to shove the heavy box into the closet.|Movement and action
+haul|verb|to pull or carry something heavy|We had to haul the wagon up the hill.|The truck will haul the logs away.|Movement and action
+lug|verb|to carry something heavy with effort|I had to lug my backpack all day.|We lug the groceries up the stairs.|Movement and action
+hoist|verb|to lift something heavy, often with ropes|The sailors hoist the sail.|Help me hoist the box onto the shelf.|Movement and action
+heave|verb|to lift or throw something heavy with great effort|We had to heave the pumpkin into the cart.|On three, heave the bag over the wall.|Movement and action
+lob|verb|to throw or hit a ball high and slowly|She can lob the ball over the net.|Lob the beanbag into the bucket.|Movement and action
+snatch|verb|to grab something quickly|The seagull tried to snatch my chip.|Snatch the flag before the other team does.|Movement and action
+grip|verb|to hold something tightly|Grip the handle while the bus moves.|I grip the monkey bars with both hands.|Movement and action
+thump|verb|to hit with a dull, heavy sound|My heart began to thump with excitement.|The rabbit will thump its foot when it's alarmed.|Senses

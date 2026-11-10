@@ -54,8 +54,8 @@ test("word bank is clean", () => {
     assert.notEqual(w.e2, w.e, "second sentence differs from the first");
   }
   assert.equal(new Set(all.map(w => w.w)).size, all.length, "no duplicates");
-  // Every level on the main road has 600 to 800 words
-  for (let l = 0; l < 6; l++) { const n = all.filter((w) => w.l === l && !w.c).length; assert.ok(n >= 600 && n <= 800, `level ${l} has ${n} words`); }
+  // Every level has about 1,200 words (3.2 doubled the bank)
+  for (let l = 0; l < 6; l++) { const n = all.filter((w) => w.l === l && !w.c).length; assert.ok(n >= 1100 && n <= 1500, `level ${l} has ${n} words`); }
 });
 test("side trails point at real words", () => {
   const all = JSON.parse(readFileSync(new URL("../../public/data/words.json", import.meta.url)));

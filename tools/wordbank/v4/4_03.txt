@@ -1,0 +1,115 @@
+# Academic, batch 3: logic, mind, language, economics, science, art
+syllogistic|adjective|Using a form of reasoning where a conclusion follows from two premises|Her syllogistic argument was hard to fault.|The proof is neatly syllogistic.|Mind and ideas
+inductive|adjective|Reasoning from specific cases to a general rule|Inductive reasoning built the theory from many observations.|Science often starts with inductive steps.|Mind and ideas
+deductive|adjective|Reasoning from general rules to a specific conclusion|The detective's deductive skill solved the case.|Geometry relies on deductive proof.|Mind and ideas
+epistemic|adjective|Relating to knowledge and how we know things|She raised an epistemic question: how can we be sure?|The study has epistemic limits.|Mind and ideas
+teleological|adjective|Explaining things by their purpose or end goal|A teleological argument says eyes exist in order to see.|He rejected teleological accounts of evolution.|Mind and ideas
+ontological|adjective|Relating to the nature of being or existence|The seminar tackled ontological questions.|Is a fictional character's existence an ontological puzzle?|Mind and ideas
+dialectical|adjective|Reaching truth through the clash of opposing ideas|The class used a dialectical method of debate.|History, he argued, moves in a dialectical way.|Mind and ideas
+priming|noun|In psychology, the way exposure to one thing shapes a later response|Priming made subjects faster to recognize related words.|Ads rely on subtle priming.|Mind and ideas
+attribution|noun|Crediting something to a source or cause|The quote's attribution is disputed.|Attribution errors lead us to blame people rather than circumstances.|Mind and ideas
+sublimation|noun|Turning a solid directly into a gas; also, redirecting impulses into acceptable outlets|Dry ice shows sublimation.|He channeled frustration into art through sublimation.|Science and tech
+repression|noun|Holding back thoughts or feelings; also, harsh control by authorities|Repression of anger can backfire.|The regime's repression drew protests.|Mind and ideas
+rationalization|noun|A plausible but untrue reason given to justify behavior|Skipping the gym because of rain was a rationalization.|We all make a rationalization now and then.|Mind and ideas
+confabulation|noun|Unintentionally filling memory gaps with invented details|Confabulation can make eyewitness accounts unreliable.|The study measured confabulation in tired subjects.|Mind and ideas
+introversion|noun|A tendency to focus inward and recharge alone|Her introversion made parties tiring.|Introversion is not the same as shyness.|Character
+extroversion|noun|A tendency to seek energy from social interaction|His extroversion lit up every meeting.|Extroversion helped her in sales.|Character
+psychosomatic|adjective|Physical symptoms caused or worsened by the mind|Stress can cause psychosomatic headaches.|The doctor considered a psychosomatic cause.|Body and health
+placebo|noun|A harmless substance given as if it were medicine, used in trials|Half the group received a placebo.|The placebo effect can be surprisingly strong.|Body and health
+morpheme|noun|The smallest unit of meaning in language|"Un-" is a morpheme meaning "not."|"Dogs" has two parts, and "-s" is a morpheme.|Talk and writing
+phoneme|noun|The smallest unit of sound that distinguishes meaning|"Bat" and "pat" differ by one phoneme.|Each phoneme is a building block of speech.|Talk and writing
+lexeme|noun|A basic dictionary word, covering all its forms|"Run," "ran" and "running" belong to one lexeme.|Each lexeme gets a single dictionary entry.|Talk and writing
+semantics|noun|The study of meaning in language; also, arguing over word meanings|Semantics explains why "bank" can mean two things.|Let's not argue semantics.|Talk and writing
+pragmatics|noun|The study of how context shapes meaning|Pragmatics explains why "Can you pass the salt?" is a request.|The course covers syntax and pragmatics.|Talk and writing
+etymon|noun|The earlier word from which a word is derived|The etymon of "salary" is the Latin for salt.|Each entry lists its etymon.|Talk and writing
+cognate|noun|A word sharing an origin with a word in another language|"Night" and German "Nacht" are a cognate pair; each is a cognate of the other.|Spotting a cognate makes Spanish easier.|Talk and writing
+loanword|noun|A word adopted from another language|"Kindergarten" is a loanword from German.|English is full of loanwords, and "piano" is one loanword.|Talk and writing
+calque|noun|A phrase borrowed by translating it word for word|"Skyscraper" became a calque in many languages.|"Flea market" is a calque from French.|Talk and writing
+archaism|noun|A word or style no longer in common use|"Thou" is an archaism.|The writer used archaism for flavor.|Talk and writing
+idiolect|noun|The unique way an individual speaks|Her idiolect includes "wicked" for "great."|Every idiolect blends family and place.|Talk and writing
+pidgin|noun|A simple mixed language that develops so groups can communicate|Traders spoke a pidgin at the port.|The pidgin had few grammar rules.|Talk and writing
+creole|noun|A full language that develops from a pidgin|The island's creole blends French and African languages.|Children grow up speaking the creole natively.|Talk and writing
+diacritic|noun|A mark added to a letter to change its sound, like an accent|"Café" has a diacritic over the e.|Spanish uses a diacritic in "niño."|Talk and writing
+orthography|noun|The conventional spelling system of a language|English orthography is famously irregular.|The reform simplified the orthography.|Talk and writing
+palindrome|noun|A word or phrase that reads the same backward and forward|"Racecar" is a palindrome.|She collects every palindrome she finds.|Talk and writing
+anagram|noun|A word formed by rearranging the letters of another|"Listen" is an anagram of "silent."|He solved the anagram in seconds.|Talk and writing
+homophone|noun|A word that sounds like another but differs in meaning|"Pair" and "pear" are a homophone pair, each a homophone of the other.|Spell-check misses every homophone.|Talk and writing
+homograph|noun|A word spelled like another but different in meaning|"Lead" (the metal) is a homograph of "lead" (to guide).|Context reveals which homograph is meant.|Talk and writing
+eponym|noun|A person after whom something is named, or the name itself|The sandwich's eponym was an English earl.|Each eponym hides a story.|Talk and writing
+toponym|noun|A place name|"Sierra Nevada" is a toponym meaning snowy range.|The map lists every toponym in the region.|Talk and writing
+monopsony|noun|A market with only one buyer|The town's single employer had a monopsony on labor.|Monopsony can push wages down.|Money and work
+underwriter|noun|A person or firm that assesses and takes on financial risk|The underwriter approved the loan.|Each underwriter reviews the policy.|Money and work
+actuary|noun|An expert who calculates risks and premiums for insurers|The actuary estimated how long people live.|She became an actuary after studying statistics.|Money and work
+amortization|noun|Paying off a debt gradually through scheduled payments|The amortization schedule spans thirty years.|Amortization lowers the balance month by month.|Money and work
+accrual|noun|The gradual building up of something, such as interest|The accrual of interest surprised her.|Vacation days build up by accrual.|Money and work
+liquidation|noun|Closing a business and selling its assets|The store announced a liquidation sale.|The firm went into liquidation.|Money and work
+receivership|noun|Control of a troubled business by a court-appointed manager|The airline was placed in receivership.|Receivership gave creditors time.|Money and work
+insolvency|noun|The state of being unable to pay debts|The company faced insolvency.|Insolvency forced the sale.|Money and work
+speculator|noun|Someone who invests in risky ventures hoping for quick profit|A speculator bought the empty lots.|The speculator gambled on rising prices.|Money and work
+protectionism|noun|Shielding domestic industries with tariffs and quotas|Protectionism can raise consumer prices.|The debate pitted free trade against protectionism.|Money and work
+globalization|noun|The growing integration of economies and cultures worldwide|Globalization brought cheap goods and new competition.|The lecture weighed the costs of globalization.|Money and work
+gentrification|noun|Renovation of a poorer neighborhood by wealthier newcomers, often displacing residents|Gentrification raised rents downtown.|The documentary examines gentrification.|Society and law
+urbanization|noun|The growth of cities as people move from rural areas|Rapid urbanization strained housing.|Urbanization changed the landscape.|Places and travel
+polymer|noun|A large molecule made of repeating units|Plastic is a polymer.|DNA is a natural polymer.|Science and tech
+monomer|noun|A small molecule that can join with others to form a polymer|Each monomer links to the next.|Glucose is the monomer of starch.|Science and tech
+covalent|adjective|Describing a chemical bond in which atoms share electrons|Water's atoms are held by covalent bonds.|A covalent bond is very strong.|Science and tech
+ionic|adjective|Describing a bond formed by attraction between charged atoms|Table salt has an ionic bond.|Ionic compounds dissolve easily in water.|Science and tech
+oxidation|noun|A chemical reaction with oxygen, such as rusting|Oxidation turned the iron red.|Lemon juice slows the oxidation of apples.|Science and tech
+electrolysis|noun|Splitting a compound using an electric current|Electrolysis splits water into hydrogen and oxygen.|The lab demonstrated electrolysis.|Science and tech
+nucleotide|noun|A building block of DNA and RNA|Each nucleotide carries one letter of the genetic code.|A nucleotide has a sugar, a phosphate and a base.|Science and tech
+ribosome|noun|A tiny structure in cells that builds proteins|The ribosome reads genetic instructions.|Every cell contains many a ribosome.|Science and tech
+transpiration|noun|The loss of water vapor from plant leaves|Transpiration cools the forest.|Hot days increase transpiration.|Science and tech
+trophic|adjective|Relating to feeding and nutrition in an ecosystem|Wolves sit at the top trophic level.|The study traced trophic links in the lake.|Science and tech
+speciation|noun|The formation of new species|Island isolation drives speciation.|Speciation can take thousands of generations.|Science and tech
+convergent|adjective|Coming together; in biology, evolving similar traits independently|Wings in bats and birds are convergent features.|Their views were convergent on most points.|Science and tech
+vestigial|adjective|Remaining but no longer useful|The appendix may be a vestigial organ.|A vestigial rule lingered in the handbook.|Science and tech
+homologous|adjective|Similar in structure because of shared ancestry|A bat's wing and a human arm are homologous.|The proteins are homologous across species.|Science and tech
+tableau|noun|A striking scene, often of people posed as in a picture|The actors froze in a tableau.|The dinner table made a perfect tableau.|Arts and stories
+intaglio|noun|A design cut into a surface, or a printing method using incised plates|The ring bore an intaglio of a lion.|Intaglio prints have rich, raised lines.|Arts and stories
+lithograph|noun|A print made from a flat stone or metal plate|The museum sold a lithograph of the poster.|Each lithograph was signed.|Arts and stories
+etching|noun|A print made from a design eaten into metal by acid|The etching shows a stormy harbor.|She learned etching in art school.|Arts and stories
+woodcut|noun|A print made from a design carved into wood|The book was illustrated with woodcuts, each woodcut bold and black.|Woodcut lines are thick and graphic.|Arts and stories
+serigraph|noun|A print made by silkscreen|The gallery displayed a colorful serigraph.|Each serigraph used six screens.|Arts and stories
+armature|noun|A framework that supports a sculpture as it is built|The clay was molded over a wire armature.|A steel armature holds the statue.|Arts and stories
+pentimento|noun|A trace of an earlier painting showing through a later one|X-rays revealed a pentimento of a different face.|The pentimento hints at the artist's first idea.|Arts and stories
+grisaille|noun|Painting in shades of gray|The ceiling is painted in grisaille to mimic stone.|Grisaille studies help artists plan values.|Arts and stories
+anamorphosis|noun|A distorted image that looks normal only from a certain angle|The skull in the painting is an anamorphosis.|Street artists use anamorphosis for 3D effects.|Arts and stories
+montage|noun|A sequence of short shots edited together to show time or ideas|A training montage showed her improving.|The film opens with a montage of city life.|Arts and stories
+homage|noun|Special honor or respect shown publicly|The film pays homage to old westerns.|They paid homage to their teacher.|Arts and stories
+auteur|noun|A filmmaker whose personal style shapes the whole work|Critics call her an auteur.|The auteur wrote, directed and edited the film.|Arts and stories
+egalitarianism|noun|The belief that all people deserve equal rights and opportunities|Egalitarianism shaped the club's rules.|The founders prized egalitarianism.|Society and law
+impasse|noun|A situation where no progress is possible|Talks reached an impasse.|A mediator broke the impasse.|Society and law
+kudos|noun|Praise and honor for an achievement|Kudos to the stage crew.|She earned kudos for the design.|Talk and writing
+idyll|noun|An extremely happy, peaceful scene or period|The summer at the lake was an idyll.|The poem describes a pastoral idyll.|Feelings
+gallantry|noun|Courageous behavior, or polite attention|He was decorated for gallantry.|Old-fashioned gallantry made him hold every door.|Character
+pantheon|noun|All the gods of a religion; also, a group of revered people|Zeus ruled the Greek pantheon.|She joined the pantheon of great novelists.|Society and law
+oeuvre|noun|The complete body of an artist's work|The retrospective covers her whole oeuvre.|The film is unusual within his oeuvre.|Arts and stories
+patois|noun|A regional dialect, often of a rural area|Villagers spoke a local patois.|The novel captures the patois of the docks.|Talk and writing
+portmanteau|noun|A word blending two others, like "brunch"; also, a large suitcase|"Smog" is a portmanteau of smoke and fog.|He packed a leather portmanteau.|Talk and writing
+precis|noun|A concise summary|Write a one-page precis of the report.|Her precis captured every key point.|Talk and writing
+prosody|noun|The patterns of rhythm and sound in poetry or speech|The course studies the prosody of sonnets.|Prosody helps listeners hear questions.|Talk and writing
+polyphony|noun|Music with several independent melodies at once|Medieval choirs perfected polyphony.|The polyphony of voices filled the hall.|Arts and stories
+spoonerism|noun|An accidental swap of sounds between words, like "tease my ears" for "ease my tears"|His spoonerism had the class laughing.|"Fighting a liar" for "lighting a fire" is a spoonerism.|Talk and writing
+shambolic|adjective|Chaotic and disorganized|The rehearsal was shambolic.|A shambolic launch confused customers.|Good, bad and strange
+scintillate|verb|To sparkle; to be brilliantly lively or witty|Stars scintillate on clear nights.|Her conversation could scintillate.|Look and shape
+winnow|verb|To separate grain from chaff; to sift out the best|Farmers winnow wheat in the wind.|We had to winnow the list to five finalists.|Mind and ideas
+rhapsodize|verb|To speak or write with great enthusiasm|He loves to rhapsodize about pizza.|Critics rhapsodize over her voice.|Talk and writing
+colloquium|noun|An academic conference or seminar|She presented at the history colloquium.|The colloquium ran for two days.|Mind and ideas
+dirigible|noun|An airship that can be steered|A silver dirigible floated over the city.|The museum has a model dirigible.|Places and travel
+debenture|noun|A long-term loan certificate issued by a company|The company issued a debenture to raise cash.|Investors bought each debenture.|Money and work
+tendentious|adjective|Promoting a particular point of view, especially a controversial one|The documentary was tendentious.|Avoid tendentious language in reports.|Talk and writing
+arrogate|verb|To claim or seize without right|He tried to arrogate the credit.|The council cannot arrogate those powers.|Society and law
+aureole|noun|A circle of light around the head; a halo|The saint is painted with an aureole.|Sunset made an aureole around the hill.|Look and shape
+bagatelle|noun|A trifle; also, a short, light piece of music|The fine was a mere bagatelle to him.|She played a charming bagatelle.|More and less
+prescience|noun|Knowledge of events before they happen|Her prescience about the market was uncanny.|The novel showed remarkable prescience.|Mind and ideas
+perspicacity|noun|Keen insight and judgment|Her perspicacity spotted the flaw at once.|The editor's perspicacity saved the book.|Mind and ideas
+valediction|noun|A farewell, or words said in farewell|"Yours truly" is a common valediction.|His valediction moved the class.|Talk and writing
+vespers|noun|An evening service of prayer|Bells rang for vespers.|The monks gathered for vespers.|Time and change
+fabulist|noun|A writer of fables; also, a teller of tall tales|The fabulist wrote stories of talking animals.|Don't trust him; he's a fabulist.|Arts and stories
+sesquicentennial|noun|A 150th anniversary|The town celebrated its sesquicentennial.|The sesquicentennial parade was huge.|Time and change
+tittle|noun|A tiny amount; the dot over an i|Not one tittle of the rule changed.|She dotted each tittle carefully.|More and less
+tosh|noun|Nonsense|"Tosh," she laughed at the rumor.|The article was utter tosh.|Talk and writing
+soupcon|noun|A very small amount; a trace|Add a soupcon of garlic.|There was a soupcon of mockery in his voice.|More and less
+sanctum|noun|A private, sacred or inner place|Dad's study is his sanctum.|Few were allowed in the inner sanctum.|Places and travel
+peroration|noun|The concluding part of a speech, meant to inspire|Her peroration brought the crowd to its feet.|The lawyer's peroration was dramatic.|Talk and writing
+coterminous|adjective|Having the same boundaries or extent|The district is coterminous with the county.|Their careers were coterminous.|Places and travel

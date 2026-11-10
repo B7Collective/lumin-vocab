@@ -1,0 +1,62 @@
+# Sprout, batch 6
+guzzle|verb|to drink something quickly and greedily|The thirsty dog began to guzzle water from the bowl.|Don't guzzle your juice; sip it.|Food
+chomp|verb|to bite down hard and noisily|The horse began to chomp on a carrot.|I like to chomp on crunchy apples.|Food
+swallow|verb|to make food or drink go down your throat|Chew well before you swallow.|The snake can swallow an egg whole.|Body and health
+lick|verb|to touch with your tongue|The puppy likes to lick my face.|Lick the drip before it reaches your hand.|Body and health
+peer|verb|to look closely or carefully, as if it is hard to see|We had to peer into the dark cave.|The owl seemed to peer at us from the branch.|Senses
+squint|verb|to look with your eyes partly closed|I had to squint in the bright sun.|Grandpa will squint to read small print.|Senses
+glance|verb|to look at something quickly|Glance at the clock to check the time.|She would glance back to see if we were following.|Senses
+stare|verb|to look at something for a long time without looking away|It's rude to stare at people.|The cat likes to stare at the fish tank.|Senses
+blink|verb|to close and open your eyes very quickly|Try not to blink while I take the photo.|The owl will blink slowly.|Body and health
+overhear|verb|to hear something people did not mean for you to hear|I happened to overhear the surprise plan.|Did you overhear what the teacher said?|Senses
+shriek|verb|to make a short, high, loud cry|The kids shriek with joy on the roller coaster.|I heard my sister shriek when she saw the spider.|Senses
+squeal|verb|to make a long, high, excited sound|The piglets squeal when it's dinnertime.|We squeal every time the swing goes high.|Senses
+yelp|verb|to give a short, sharp cry, like a small dog|The puppy gave a yelp when I stepped on its tail.|I heard the dog yelp at the door.|Animals
+holler|verb|to shout loudly|Holler if you need help.|We heard the farmer holler from the field.|Talk and writing
+chant|verb|to say or sing words over and over in a steady beat|The fans chant the team's name.|We chant the rhyme while jumping rope.|Talk and writing
+somersault|noun|a roll where you tuck your head and flip over|She did a somersault on the grass.|Can you do a somersault in the pool?|Movement and action
+cartwheel|noun|a sideways flip on your hands with your legs spinning like a wheel|He did a cartwheel across the lawn.|I learned to do a cartwheel in gym class.|Movement and action
+handstand|noun|balancing upside down on your hands|She held a handstand for ten seconds.|We practiced a handstand against the wall.|Movement and action
+whirl|verb|to spin around quickly|Leaves whirl in the autumn wind.|The dancers whirl across the stage.|Movement and action
+swirl|verb|to move around in twisting circles|Watch the milk swirl into the coffee.|Snowflakes swirl around the streetlight.|Movement and action
+crouch|verb|to bend your knees and get low to the ground|Crouch down behind the bush to hide.|The cat will crouch before it pounces.|Movement and action
+kneel|verb|to go down on one or both knees|Kneel down to tie your shoe.|We kneel in the garden to pull weeds.|Movement and action
+squat|verb|to crouch down with your knees bent|Squat down to pick up the box.|The frog sat in a squat on the lily pad, ready to squat even lower.|Movement and action
+duck|verb|to lower your head or body quickly to avoid something|Duck so the ball doesn't hit you!|We had to duck under the low branch.|Movement and action
+dodge|verb|to move quickly out of the way|Dodge the ball if it comes at you.|The rabbit can dodge the fox.|Movement and action
+swoop|verb|to fly down quickly and smoothly|The owl will swoop down on a mouse.|Watch the swallows swoop over the pond.|Movement and action
+flap|verb|to move wings or something flat up and down|The bird began to flap its wings.|The flag will flap in the wind.|Movement and action
+doze|verb|to sleep lightly for a short time|Grandpa likes to doze in his chair.|The cat would doze in the sun.|Body and health
+snip|verb|to cut with small, quick cuts|Snip the string with the scissors.|We snip the flowers for a vase.|Movement and action
+trim|verb|to cut a little bit off to make something neat|Dad will trim the hedge.|I need to trim my bangs.|Movement and action
+mend|verb|to fix something that is broken or torn|Grandma will mend my torn shirt.|We tried to mend the broken fence.|Movement and action
+repair|verb|to fix something so it works again|The mechanic will repair the car.|Can you repair my bike chain?|Things and tools
+wipe|verb|to clean by rubbing with a cloth|Wipe the table after dinner.|Wipe your feet on the mat.|Movement and action
+polish|verb|to rub something until it shines|We polish the silver spoons.|Polish your shoes for the party.|Movement and action
+rake|verb|to gather leaves or grass with a long-handled tool|We rake the leaves into a big pile.|Rake the garden before you plant seeds.|Movement and action
+unpack|verb|to take things out of a bag or box|Let's unpack our suitcases.|I helped unpack the groceries.|Movement and action
+deliver|verb|to bring something to a person or place|The mail carrier will deliver the package.|We deliver cookies to our neighbors.|Money and work
+vault|verb|to jump over something using your hands or a pole|She can vault over the fence.|Watch the gymnast vault over the horse.|Movement and action
+chase|verb|to run after someone or something to catch it|The dog likes to chase its tail.|We chase the bubbles across the yard.|Movement and action
+hurry|verb|to move or do something quickly|Hurry, or we'll miss the bus!|We had to hurry home before the rain.|Movement and action
+settle|verb|to get comfortable and stay in one place|The birds settle in their nest at night.|Settle down; the movie is starting.|Movement and action
+relax|verb|to rest and feel calm|Let's relax in the hammock.|Take a deep breath and relax.|Feelings
+knot|noun|a twist in string or rope that holds it tight|Tie a knot at the end of the thread.|There's a knot in my shoelace.|Things and tools
+sort|verb|to put things into groups|Sort the socks by color.|We sort the recycling every week.|Mind and ideas
+tape|verb|to stick something down with a sticky strip|Tape your drawing to the wall.|We had to tape the box shut.|Things and tools
+grownup|noun|an adult|Ask a grownup to help you cut the fruit.|The grownup held the ladder.|Society and law
+toddler|noun|a young child who is learning to walk|The toddler wobbled across the room.|My toddler cousin loves to stack blocks.|Society and law
+newborn|noun|a baby that was born very recently|The newborn slept all day.|Our cat had a newborn kitten.|Society and law
+twin|noun|one of two babies born at the same time to the same mother|I have a twin brother.|Each twin had a different favorite color.|Society and law
+cousin|noun|a child of your aunt or uncle|My cousin is coming to visit.|We built a fort with my cousin.|Society and law
+nephew|noun|the son of your brother or sister|My aunt took her nephew to the zoo.|My uncle's nephew is my cousin.|Society and law
+niece|noun|the daughter of your brother or sister|My niece loves to draw horses.|He bought a gift for his niece.|Society and law
+classmate|noun|someone in the same class as you|My classmate shared her crayons.|Every classmate signed the card.|Society and law
+buddy|noun|a friend or partner|My buddy and I walked to school.|Pick a buddy for the field trip.|Society and law
+sleepover|noun|a party where friends stay the night|We had popcorn at the sleepover.|I packed my pillow for the sleepover.|Society and law
+daybreak|noun|the time in the morning when light first appears|The rooster crowed at daybreak.|We left for the trip at daybreak.|Time and change
+nighttime|noun|the time when it is dark|Owls hunt at nighttime.|Nighttime is when the stars come out.|Time and change
+someday|adverb|at some time in the future|Someday I want to visit the moon.|We'll go to the beach someday.|Time and change
+meanwhile|adverb|at the same time, while something else happens|I set the table; meanwhile, Mom cooked.|Meanwhile, the cat ate the fish.|Time and change
+afterward|adverb|later, after something else|We played outside and had snacks afterward.|Afterward, we all went home.|Time and change
+seasonal|adjective|happening only at a certain time of year|Pumpkins are a seasonal treat.|The pool is seasonal and closes in fall.|Time and change

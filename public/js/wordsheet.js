@@ -41,7 +41,7 @@ export function toggleSave(btn, w) {
   if (on) model.learn(p.id, w); else model.setCard(p.id, w, { st: "seen", srs: null });
   btn.setAttribute("aria-pressed", String(on));
   btn.classList.remove("pop"); void btn.offsetWidth; btn.classList.add("pop");
-  if (on) { burst(btn, ["#F2B544", "#FFE1A0", "#FFFFFF"]); play("tap"); buzz(10); toast(`"${w}" will come back in Practice`); }
+  if (on) { burst(btn, ["#F2B544", "#FFE1A0", "#FFFFFF"]); play("tap"); buzz(10); toast(`Saved "${w}". Find it in Library, and it comes back in Practice`); }
   return on;
 }
 

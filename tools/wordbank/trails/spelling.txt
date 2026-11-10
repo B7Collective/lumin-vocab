@@ -84,3 +84,8 @@ dilettante
 sacrosanct
 recalcitrant
 ingratiate
+friend|noun|A person you like and trust. Trick: a friend is there to the END|My friend shared her crayons.|Talk and writing|0
+again|adverb|One more time. Trick: a gain, then again|Let's play that game again!|Talk and writing|0
+people|noun|Men, women and children. Trick: People Eat Our Pies, Love Eating|Lots of people came to the park.|Talk and writing|0
+there|adverb|In that place. Trick: there has "here" inside it, and both tell you where|Put the box over there.|Talk and writing|0
+hindrance

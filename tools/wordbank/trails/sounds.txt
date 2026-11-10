@@ -85,3 +85,9 @@ inaudible
 auditory
 acoustics
 amplify
+acoustic
+unison
+jangle|verb|To make a harsh ringing sound, like keys shaken together|His keys jangle in his pocket.|Senses|2
+sputter|verb|To make popping, spitting sounds|The old engine began to sputter.|Senses|2
+resound
+clamorous

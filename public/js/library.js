@@ -10,6 +10,7 @@ import { start } from "./games.js";
 
 const SHELVES = [
   { key: "favorites", name: "Favorites", art: "favorites", empty: "Tap the heart on any word to keep it here." },
+  { key: "saved", name: "Saved", art: "review", empty: "Tap the bookmark on any word to save it. Saved words come back in Practice." },
   { key: "lists", name: "Lists", art: "lists", empty: "Make a list for a book, a trip or a test." },
   { key: "history", name: "History", art: "history", empty: "Every word you see shows up here." },
   { key: "mine", name: "My words", art: "mywords", empty: "Add words you meet in books or conversation." },
@@ -18,6 +19,7 @@ function shelfWords(p, key) {
   const cs = model.cards(p.id);
   const when = (c) => Math.max(c.actAt || 0, c.seenAt || 0);
   if (key === "favorites") return cs.filter((c) => c.fav).sort((a, b) => when(b) - when(a)).map((c) => [c.w, when(c)]);
+  if (key === "saved") return cs.filter((c) => c.st === "learning" || (c.st === "known" && c.srs)).sort((a, b) => when(b) - when(a)).map((c) => [c.w, when(c)]);
   if (key === "history") return cs.sort((a, b) => when(b) - when(a)).map((c) => [c.w, when(c)]);
   if (key === "mine") return model.customWords(p.id).sort((a, b) => b.created - a.created).map((c) => [c.w, c.created]);
   return [];

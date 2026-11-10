@@ -1,0 +1,126 @@
+# Academic (adults), batch 1: law, government, economics, science, ideas, art, architecture, music
+estoppel|noun|A legal rule that stops someone from going back on what they earlier said or did|Because she had accepted the payments for years, estoppel barred her from denying the deal.|The lawyer argued estoppel prevented the landlord from changing the terms.|Society and law
+tort|noun|A wrongful act, other than breaking a contract, that gives someone the right to sue|Slipping on an unshoveled walk can lead to a tort claim.|Negligence is the most common tort.|Society and law
+indictment|noun|A formal charge of a serious crime; also, a strong criticism|The grand jury returned an indictment.|The report was an indictment of the city's planning.|Society and law
+acquittal|noun|A verdict that a defendant is not guilty|The jury's acquittal surprised the reporters.|After the acquittal, he walked out free.|Society and law
+arraignment|noun|The court hearing where a defendant is formally charged and enters a plea|At the arraignment, she pleaded not guilty.|The arraignment lasted ten minutes.|Society and law
+deposition|noun|Sworn testimony given outside court, recorded for later use|The witness gave a deposition in the lawyer's office.|The deposition ran for six hours.|Society and law
+injunction|noun|A court order requiring someone to do or stop doing something|The judge issued an injunction halting construction.|An injunction kept the protest away from the entrance.|Society and law
+litigation|noun|The process of taking a dispute to court|The companies settled to avoid litigation.|Patent litigation can drag on for years.|Society and law
+codicil|noun|An addition or change made to a will|A codicil left the piano to her niece.|He signed a codicil a week before he passed away.|Society and law
+escrow|noun|Money or property held by a third party until a deal is complete|The deposit sat in escrow until closing.|Escrow protects both buyer and seller.|Money and work
+lien|noun|A legal claim on property until a debt is paid|The bank placed a lien on the house.|You can't sell the car until the lien is cleared.|Money and work
+probate|noun|The legal process of proving a will and settling an estate|The estate spent a year in probate.|Probate court approved the will.|Society and law
+magistrate|noun|A judge who handles minor cases|The magistrate set bail at the hearing.|She appeared before a magistrate for the traffic case.|Society and law
+recidivism|noun|The tendency of a convicted person to offend again|Education programs reduce recidivism.|The study tracked recidivism over five years.|Society and law
+restitution|noun|Paying back or restoring what was lost or taken|The court ordered restitution to the victims.|He made restitution by repairing the fence.|Society and law
+sovereign|adjective|Having supreme, independent authority|The island became a sovereign nation.|Each state guards its sovereign rights.|Society and law
+suffrage|noun|The right to vote in public elections|The movement fought for women's suffrage.|Universal suffrage came late to many countries.|Society and law
+plenary|adjective|Full and complete, or attended by all members|The conference opened with a plenary session.|The governor holds plenary power in emergencies.|Society and law
+quorum|noun|The minimum number of members needed to make a meeting's decisions valid|Without a quorum, the board could not vote.|We reached a quorum just after seven.|Society and law
+filibuster|noun|A long speech used to delay or block a vote|The senator's filibuster lasted twelve hours.|They ended the filibuster with a procedural vote.|Society and law
+gerrymander|verb|To redraw voting districts to favor one party|Critics accused the legislature of trying to gerrymander the map.|Courts can strike down maps that gerrymander unfairly.|Society and law
+bicameral|adjective|Having two legislative chambers|Congress is a bicameral legislature.|Most states have a bicameral system.|Society and law
+bipartisan|adjective|Supported by two political parties|The bill passed with bipartisan support.|A bipartisan panel studied the issue.|Society and law
+plebiscite|noun|A direct vote by all citizens on an important question|The region held a plebiscite on independence.|The plebiscite drew record turnout.|Society and law
+autocracy|noun|Government by one person with unlimited power|The novel imagines life under autocracy.|The country slid from democracy toward autocracy.|Society and law
+technocracy|noun|Government or control by technical experts|Some called the new cabinet a technocracy.|Critics worry technocracy ignores ordinary voters.|Society and law
+theocracy|noun|A government run by religious leaders according to religious law|The historian compared monarchy and theocracy.|The ancient city was a theocracy.|Society and law
+realpolitik|noun|Politics based on practical goals and power rather than ideals|Their alliance was pure realpolitik.|Realpolitik won out over principle.|Society and law
+detente|noun|An easing of tension between rivals, especially nations|The summit marked a period of detente.|The siblings reached a fragile detente over the remote.|Society and law
+enclave|noun|A distinct area or group within a larger one|The neighborhood is an enclave of artists.|The tiny country is an enclave surrounded by another.|Places and travel
+secede|verb|To formally withdraw from a union or organization|The region voted to secede.|Several members threatened to secede from the league.|Society and law
+fiefdom|noun|An area controlled by one person, often jealously|The manager ran his department like a fiefdom.|In medieval times, a lord ruled a fiefdom.|Society and law
+feudal|adjective|Relating to the medieval system of lords, vassals and land|Feudal society was rigidly ranked.|The company's culture felt almost feudal.|Society and law
+vassal|noun|In feudal times, a person who held land from a lord in return for loyalty|The vassal swore an oath to his lord.|The small kingdom acted as a vassal of its powerful neighbor.|Society and law
+externality|noun|A side effect of an activity that affects people not involved in it|Pollution is a classic negative externality.|A beautiful garden can be a positive externality for neighbors.|Money and work
+stagflation|noun|Slow economic growth combined with high inflation and unemployment|The 1970s were marked by stagflation.|Economists feared a return to stagflation.|Money and work
+oligopoly|noun|A market controlled by a small number of companies|Airlines in the region form an oligopoly.|An oligopoly can keep prices high.|Money and work
+depreciation|noun|A decrease in value over time|Car depreciation is steepest in the first year.|The company recorded depreciation on its machines.|Money and work
+usury|noun|Lending money at unreasonably high interest|Laws against usury cap interest rates.|The lender was accused of usury.|Money and work
+mercantilism|noun|An economic theory that a nation grows rich by exporting more than it imports|Mercantilism shaped colonial trade.|Critics of mercantilism favored freer trade.|Money and work
+allele|noun|One of the different forms of a gene|Each parent passes on one allele.|A recessive allele can skip generations.|Science and tech
+phenotype|noun|The observable traits of a living thing, shaped by genes and environment|Eye color is part of a person's phenotype.|The two plants share genes but differ in phenotype.|Science and tech
+genotype|noun|The genetic makeup of an organism|Testing revealed the dog's genotype.|Identical twins share a genotype.|Science and tech
+mycology|noun|The scientific study of fungi|Mycology explains how mushrooms spread.|She switched from botany to mycology.|Science and tech
+paleontology|noun|The study of fossils and ancient life|Paleontology tells us how dinosaurs lived.|He studied paleontology in the badlands.|Science and tech
+seismology|noun|The study of earthquakes and waves through the earth|Seismology helps cities plan safer buildings.|Advances in seismology improved warnings.|Science and tech
+meteorology|noun|The science of the atmosphere and weather|Meteorology relies on satellites and radar.|She studied meteorology to chase storms.|Science and tech
+hydrology|noun|The science of water on and under the earth|Hydrology guides flood planning.|The dam's design drew on hydrology.|Science and tech
+tectonics|noun|The study of the large-scale movements of the earth's crust|Plate tectonics explains why continents drift.|Tectonics shaped the mountain range.|Science and tech
+stratigraphy|noun|The study of rock layers and their order|Stratigraphy helped date the fossils.|The cliff is a textbook of stratigraphy.|Science and tech
+photon|noun|A particle of light|A single photon struck the detector.|Each photon carries a tiny bit of energy.|Science and tech
+quantum|noun|The smallest possible amount of energy or matter in physics|Light comes in packets called a quantum each.|A quantum leap in physics is actually tiny.|Science and tech
+torque|noun|A twisting force that causes rotation|The wrench gives more torque with a longer handle.|Electric motors deliver torque instantly.|Science and tech
+vector|noun|A quantity with both size and direction; also, a carrier of disease|Velocity is a vector.|Mosquitoes are a vector for malaria.|Science and tech
+scalar|noun|A quantity with size but no direction|Temperature is a scalar.|Speed is a scalar; velocity is not.|Science and tech
+asymptote|noun|A line a curve approaches ever more closely but never meets|The graph creeps toward its asymptote.|Progress felt like an asymptote: always closer, never done.|Science and tech
+logarithm|noun|The power to which a base must be raised to produce a given number|The logarithm of 100 in base ten is 2.|Earthquake scales use a logarithm.|Science and tech
+infinitesimal|adjective|So small it can barely be measured|The risk was infinitesimal.|Infinitesimal changes added up over centuries.|More and less
+probabilistic|adjective|Based on or involving probability|Weather forecasts are probabilistic.|The model gives a probabilistic answer, not a certain one.|Science and tech
+deterministic|adjective|Where every outcome is fully decided by prior causes|A deterministic system has no randomness.|He took a deterministic view of history.|Mind and ideas
+metaphysics|noun|The branch of philosophy that studies the nature of reality|Metaphysics asks what it means to exist.|The class spent a month on metaphysics.|Mind and ideas
+aesthetics|noun|The study of beauty and taste, or a particular sense of style|Her aesthetics favor clean lines.|The course covers aesthetics and art history.|Arts and stories
+pantheism|noun|The belief that the divine is identical with the universe and nature|The poet's love of nature bordered on pantheism.|Pantheism sees no gap between god and world.|Mind and ideas
+deism|noun|Belief in a creator who does not intervene in the world|Several founders were drawn to deism.|Deism pictures a clockmaker who winds the world and steps back.|Mind and ideas
+stoicism|noun|Calm endurance of hardship without complaint; also an ancient philosophy|She bore the news with stoicism.|Stoicism teaches us to focus on what we can control.|Mind and ideas
+existentialism|noun|A philosophy stressing individual freedom and responsibility for creating meaning|Existentialism asks what we owe ourselves.|The novel is steeped in existentialism.|Mind and ideas
+empiricism|noun|The view that knowledge comes mainly from experience and evidence|Science is built on empiricism.|Her empiricism made her test every claim.|Mind and ideas
+rationalism|noun|The view that reason, not experience, is the main source of knowledge|Rationalism prizes logic over the senses.|The debate pitted rationalism against empiricism.|Mind and ideas
+asceticism|noun|Strict self-denial, often for spiritual reasons|The monk's asceticism impressed visitors.|Her asceticism extended to owning almost nothing.|Mind and ideas
+humanism|noun|An outlook that emphasizes human values, reason and dignity|Renaissance humanism revived classical learning.|His humanism showed in every policy.|Mind and ideas
+transcendentalism|noun|A movement holding that intuition and nature reveal spiritual truth|Transcendentalism shaped American nature writing.|The essay is a classic of transcendentalism.|Mind and ideas
+romanticism|noun|An artistic movement celebrating emotion, nature and the individual|Romanticism rebelled against cold reason.|His romanticism about the old days ignored the hardships.|Arts and stories
+rococo|adjective|Highly ornate, with elaborate curves and decoration|The ballroom was gloriously rococo.|Rococo furniture is covered in gilded swirls.|Arts and stories
+neoclassical|adjective|Reviving the styles of ancient Greece and Rome|The courthouse is neoclassical, with tall columns.|Neoclassical painting favors calm, balanced scenes.|Arts and stories
+impressionism|noun|A painting style capturing light and fleeting moments with loose brushwork|Impressionism began in nineteenth-century France.|Her garden looks like impressionism come to life.|Arts and stories
+expressionism|noun|An art style that distorts reality to express emotion|Expressionism uses jarring colors and shapes.|The film's sets owe a debt to expressionism.|Arts and stories
+cubism|noun|An art style that shows objects broken into geometric shapes from many angles|Cubism shattered the single point of view.|The portrait is a playful nod to cubism.|Arts and stories
+surrealism|noun|An art movement depicting dreamlike, illogical scenes|Melting clocks are a famous image of surrealism.|The play leaned into surrealism.|Arts and stories
+minimalism|noun|A style using very few elements|Her apartment is a study in minimalism.|Minimalism in music repeats simple patterns.|Arts and stories
+impasto|noun|Paint applied so thickly that brush marks stand out|The sunflowers glow with heavy impasto.|Impasto gives the canvas real texture.|Arts and stories
+fresco|noun|A painting made on wet plaster|The chapel ceiling is a vast fresco.|Restorers cleaned the fading fresco.|Arts and stories
+tempera|noun|Paint made by mixing pigment with egg yolk|Medieval icons were painted in tempera.|Tempera dries quickly to a soft sheen.|Arts and stories
+gouache|noun|Thick, opaque watercolor paint|She painted the poster in gouache.|Gouache dries flat and bright.|Arts and stories
+vignette|noun|A brief, vivid scene or description|The book is a series of vignettes, and each vignette is a single afternoon.|She shared a funny vignette from her childhood.|Arts and stories
+triptych|noun|A work of art in three panels|The altar triptych folds closed.|Her photo triptych shows the same tree in three seasons.|Arts and stories
+diptych|noun|A work of art made of two hinged panels|The diptych pairs a portrait with a landscape.|The ivory diptych is centuries old.|Arts and stories
+frieze|noun|A horizontal band of sculpted or painted decoration|A marble frieze circles the temple.|The kids painted a frieze around the classroom.|Arts and stories
+cornice|noun|A decorative molding along the top of a wall or building|Pigeons nested on the cornice.|The cornice was carved with leaves.|Look and shape
+colonnade|noun|A row of evenly spaced columns|We walked through the shady colonnade.|The museum's colonnade frames the plaza.|Places and travel
+gargoyle|noun|A carved grotesque figure on a building, often a water spout|Rain poured from the gargoyle's mouth.|Each gargoyle on the cathedral is different.|Arts and stories
+cupola|noun|A small dome on a roof|A copper cupola topped the barn.|Light poured through the cupola.|Look and shape
+rotunda|noun|A round building or room, usually with a dome|We gathered under the capitol rotunda.|The library's rotunda echoes softly.|Places and travel
+portico|noun|A porch with a roof supported by columns|We waited under the portico out of the rain.|The museum's portico faces the park.|Places and travel
+pediment|noun|The triangular top above columns on a classical building|Statues filled the temple's pediment.|The bank's pediment bears its name.|Look and shape
+balustrade|noun|A railing supported by short decorative posts|She leaned on the stone balustrade.|A balustrade ran along the terrace.|Things and tools
+clerestory|noun|A high row of windows above eye level|Light streamed through the clerestory.|The barn's clerestory windows kept it bright.|Places and travel
+apse|noun|A rounded, domed area at the end of a church|The choir sang from the apse.|Mosaics glitter in the apse.|Places and travel
+vestibule|noun|An entrance hall|We shook off our coats in the vestibule.|The vestibule had a tiled floor.|Places and travel
+mezzanine|noun|A floor between two main floors, often open to the one below|Our seats were on the mezzanine.|The office has a small mezzanine.|Places and travel
+parapet|noun|A low protective wall along the edge of a roof or bridge|She peered over the parapet at the river.|Archers once hid behind the parapet.|Places and travel
+battlement|noun|A wall with gaps at the top of a castle|Flags flew above the battlement.|We walked the battlement at sunset.|Places and travel
+cadenza|noun|A showy solo passage near the end of a piece of music|The violinist's cadenza drew gasps.|She improvised her own cadenza.|Arts and stories
+glissando|noun|A rapid slide through a series of notes|The harp ended with a shimmering glissando.|A trombone glissando got a laugh.|Arts and stories
+diminuendo|noun|A gradual decrease in loudness|The piece ends in a long diminuendo.|Her voice faded in a gentle diminuendo.|Arts and stories
+legato|adverb|Smoothly and connected, without breaks between notes|Play this passage legato.|The cellist bowed legato.|Arts and stories
+fortissimo|adverb|Very loudly|The finale is marked fortissimo.|The brass played fortissimo.|Arts and stories
+pianissimo|adverb|Very softly|The choir sang pianissimo.|The final chord is played pianissimo.|Arts and stories
+allegro|adverb|At a brisk, lively tempo|The first movement is allegro.|Play it allegro, but not rushed.|Arts and stories
+andante|adverb|At a moderately slow, walking tempo|The second movement is andante.|An andante pace suits the lullaby.|Arts and stories
+adagio|adverb|At a slow, graceful tempo|The adagio movement brought tears.|The dancers moved adagio.|Arts and stories
+arpeggio|noun|The notes of a chord played one after another|She practiced each arpeggio slowly.|A rippling arpeggio opens the song.|Arts and stories
+counterpoint|noun|Two or more independent melodies played together; also, a contrasting element|The fugue is a masterpiece of counterpoint.|Her calm was a counterpoint to his panic.|Arts and stories
+fugue|noun|A musical piece in which a theme is repeated and woven among parts|The organist played a fugue.|The fugue's theme enters four times.|Arts and stories
+sonata|noun|A composition for one or two instruments, usually in several movements|He played a piano sonata.|The sonata has three movements.|Arts and stories
+concerto|noun|A composition for a solo instrument and orchestra|She performed a violin concerto.|The concerto's slow movement is the most famous.|Arts and stories
+requiem|noun|A musical work honoring someone who has passed away|The choir sang a requiem for the founder.|The requiem was somber and beautiful.|Arts and stories
+cantata|noun|A choral work with solos, usually on a religious or story theme|The church choir performed a cantata.|The cantata tells a simple story.|Arts and stories
+oratorio|noun|A large musical work for orchestra and voices, without costumes or scenery|The oratorio filled the concert hall.|An oratorio is like an opera without staging.|Arts and stories
+consonance|noun|Agreement or harmony; also, repeated consonant sounds|The plan was in consonance with our values.|"Pitter patter" shows consonance.|Talk and writing
+syncopation|noun|A rhythm that stresses the offbeat|Jazz thrives on syncopation.|The syncopation made the song feel bouncy.|Arts and stories
+oxymoron|noun|A phrase that combines contradictory words, like "jumbo shrimp"|"Deafening silence" is an oxymoron.|Calling it "working vacation" is an oxymoron.|Talk and writing
+soliloquy|noun|A speech in a play where a character speaks thoughts aloud alone|The actor's soliloquy held the audience spellbound.|In the soliloquy, the hero admits his fears.|Arts and stories
+monologue|noun|A long speech by one person|The comedian opened with a monologue.|Her monologue about her childhood moved the room.|Arts and stories
+parable|noun|A simple story that teaches a moral lesson|The teacher told a parable about two builders.|Every parable hides a lesson.|Arts and stories
+limerick|noun|A funny five-line poem with a bouncy rhythm|He wrote a limerick about his cat.|Each limerick ended with a pun.|Arts and stories

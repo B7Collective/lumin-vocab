@@ -1,0 +1,87 @@
+# Academic, batch 6 (Open English WordNet)
+bonhomie|noun|Cheerful friendliness|The host's bonhomie put everyone at ease.|There was easy bonhomie in the locker room.|Character
+dispassion|noun|Freedom from strong emotion; calm objectivity|The judge weighed the case with dispassion.|She described the storm with eerie dispassion.|Character
+exactitude|noun|Great precision and accuracy|The clockmaker worked with exactitude.|Scientists value exactitude.|Mind and ideas
+flippancy|noun|Lack of proper seriousness|His flippancy annoyed the teacher.|She regretted her flippancy at the meeting.|Character
+gravitas|noun|Seriousness and dignity that earn respect|The anchor brought gravitas to the newscast.|He lacked the gravitas to lead.|Character
+inconstancy|noun|A tendency to change or be unreliable|The inconstancy of the weather ruined our plans.|Poets lament the inconstancy of fortune.|Character
+stridency|noun|A harsh, forceful quality in sound or argument|The stridency of the debate alarmed viewers.|She softened the stridency of her letter.|Talk and writing
+sycophancy|noun|Flattering powerful people to gain advantage|Sycophancy was rewarded in that office.|His sycophancy embarrassed his colleagues.|Character
+certitude|noun|Absolute certainty|She spoke with complete certitude.|Science rarely offers certitude.|Mind and ideas
+concision|noun|The quality of being brief and clear|Editors prize concision.|The essay's concision made it powerful.|Talk and writing
+effusion|noun|An unrestrained outpouring of words or feeling|Her effusion of thanks embarrassed him.|The poem is an effusion of joy.|Talk and writing
+entreaty|noun|An earnest request|She ignored his entreaty to stay.|Their entreaty for help was heard.|Talk and writing
+histrionics|noun|Exaggerated, dramatic behavior meant to get attention|Spare me the histrionics.|The player's histrionics drew a penalty.|Character
+pedantry|noun|Excessive attention to small details or rules|His pedantry about commas wore everyone out.|The review slid into pedantry.|Mind and ideas
+phraseology|noun|A particular way of putting words together|Legal phraseology can be baffling.|Her phraseology was elegant.|Talk and writing
+twaddle|noun|Silly, empty talk or writing|The article was pure twaddle.|Don't believe that twaddle.|Talk and writing
+verbiage|noun|Too many words, used without need|Cut the verbiage and state the point.|The report drowned in verbiage.|Talk and writing
+watchword|noun|A word or phrase expressing a guiding principle|Safety is our watchword.|"Simplicity" became the watchword of the design.|Talk and writing
+decrepitude|noun|The state of being worn out by age or neglect|The mansion fell into decrepitude.|Despite its decrepitude, the car still ran.|Time and change
+destitution|noun|Extreme poverty|The war left many families in destitution.|Charities fight destitution.|Money and work
+paroxysm|noun|A sudden outburst of emotion or activity|He collapsed in a paroxysm of laughter.|A paroxysm of coughing stopped her speech.|Feelings
+expound|verb|To explain something in detail|The professor began to expound her theory.|He loves to expound on jazz history.|Talk and writing
+portend|verb|To be a sign that something is likely to happen|Dark clouds portend rain.|The early losses may portend a bad season.|Time and change
+propound|verb|To put forward an idea for consideration|She chose to propound a new theory.|Philosophers propound many puzzles.|Mind and ideas
+bedevil|verb|To cause continual trouble|Injuries continue to bedevil the team.|Delays bedevil the project.|Good, bad and strange
+conciliate|verb|To calm someone or win them over|She tried to conciliate the angry customer.|The treaty aimed to conciliate both sides.|Society and law
+gladden|verb|To make glad|The news will gladden her heart.|Sunshine seemed to gladden the town.|Feelings
+ensnare|verb|To catch in a trap|Spiders ensnare flies in their webs.|The scam tried to ensnare retirees.|Movement and action
+congeal|verb|To thicken or become solid, especially as it cools|Gravy will congeal if left out.|Vague ideas began to congeal into a plan.|Science and tech
+acquisitive|adjective|Eager to gain wealth or possessions|The acquisitive collector bought every rare stamp.|An acquisitive company swallowed rivals.|Money and work
+acrimonious|adjective|Angry and bitter|The divorce was acrimonious.|An acrimonious debate followed.|Feelings
+avaricious|adjective|Extremely greedy for wealth|The avaricious landlord raised rents again.|Fables warn against avaricious kings.|Character
+beneficent|adjective|Doing good; generous|A beneficent donor paid for the library.|The beneficent ruler built schools.|Character
+blameworthy|adjective|Deserving blame|Both drivers were blameworthy.|No one was found blameworthy.|Society and law
+chagrined|adjective|Annoyed or embarrassed at a failure|He was chagrined to lose to his little sister.|The chagrined chef remade the dish.|Feelings
+clamorous|adjective|Loud and noisy; also, insistent|The clamorous crowd demanded an encore.|Clamorous calls for reform grew.|Senses
+corpulent|adjective|Large and heavy in body|The corpulent cat lounged on the porch.|A corpulent merchant appears in the tale.|Body and health
+discomfited|adjective|Made uneasy or embarrassed|The discomfited speaker lost his place.|She looked discomfited by the praise.|Feelings
+disputatious|adjective|Fond of arguing|The disputatious uncle argued about everything.|It was a disputatious meeting.|Character
+duplicitous|adjective|Deceitful; two-faced|The duplicitous spy fooled both sides.|Her duplicitous smile hid a plan.|Character
+encumbered|adjective|Weighed down or burdened|Encumbered by luggage, we missed the bus.|The house was encumbered with debt.|More and less
+enraptured|adjective|Filled with great delight|The enraptured audience sat in silence.|She was enraptured by the music.|Feelings
+expeditious|adjective|Quick and efficient|We need an expeditious solution.|The repair was expeditious.|Time and change
+funereal|adjective|Gloomy and solemn, as at a funeral|The room had a funereal hush.|He spoke in funereal tones.|Feelings
+imprudent|adjective|Not showing care for the consequences|It was imprudent to hike without water.|An imprudent loan caused trouble.|Character
+inauspicious|adjective|Suggesting that the future will not be good|The trip had an inauspicious start.|Rain made for an inauspicious opening day.|Good, bad and strange
+incautious|adjective|Not careful enough about risks|An incautious step sent him sliding.|Her incautious remark leaked the secret.|Character
+indelicate|adjective|Lacking tact; slightly improper|It was indelicate to ask her age.|He made an indelicate joke.|Talk and writing
+injudicious|adjective|Showing poor judgment|The injudicious purchase strained the budget.|An injudicious tweet ended his campaign.|Character
+inopportune|adjective|Happening at an inconvenient time|The phone rang at an inopportune moment.|An inopportune storm delayed the launch.|Time and change
+insubstantial|adjective|Lacking strength, weight or reality|The evidence was insubstantial.|An insubstantial mist hung over the lake.|More and less
+intemperate|adjective|Lacking self-control; also, extreme|His intemperate remarks caused a scandal.|The desert has an intemperate climate.|Character
+irresolute|adjective|Unsure what to do; hesitant|The irresolute leader kept changing course.|She stood irresolute at the door.|Character
+kaleidoscopic|adjective|Constantly changing in color or pattern|The market was a kaleidoscopic swirl of color.|The novel offers a kaleidoscopic view of the city.|Look and shape
+luxuriant|adjective|Rich and abundant in growth|Luxuriant ferns covered the bank.|He has a luxuriant beard.|Nature and weather
+malodorous|adjective|Smelling very unpleasant|The malodorous swamp kept visitors away.|A malodorous cheese sat on the counter.|Senses
+overwrought|adjective|In a state of nervous excitement; also, too elaborate|The overwrought parents paced the hall.|The prose is overwrought.|Feelings
+piteous|adjective|Deserving or arousing pity|The kitten gave a piteous cry.|The piteous story moved the jury.|Feelings
+pliant|adjective|Easily bent; also, easily influenced|Willow branches are pliant.|The pliant committee approved everything.|Character
+praiseworthy|adjective|Deserving praise|Her effort was praiseworthy.|It's a praiseworthy goal.|Good, bad and strange
+precipitous|adjective|Very steep; also, sudden and dramatic|The trail ends at a precipitous cliff.|Sales took a precipitous drop.|Look and shape
+priggish|adjective|Smugly proper and self-righteous|His priggish comments annoyed the class.|She avoided sounding priggish.|Character
+prudish|adjective|Easily shocked by things that seem improper|The prudish critic disliked the film's humor.|Don't be prudish about a little teasing.|Character
+puckish|adjective|Playful and mischievous|He had a puckish grin.|Her puckish humor delighted the kids.|Character
+repentant|adjective|Sorry for having done wrong|The repentant boy apologized.|A repentant thief returned the bike.|Feelings
+reproachful|adjective|Expressing disapproval or disappointment|She gave him a reproachful look.|His reproachful tone stung.|Feelings
+reverential|adjective|Showing deep respect|They spoke in reverential tones.|Fans keep a reverential silence at the shrine.|Feelings
+rhapsodic|adjective|Extremely enthusiastic|The critics were rhapsodic about the show.|He grew rhapsodic about the view.|Feelings
+riotous|adjective|Wild and noisy; also, very bright and abundant|The party was riotous.|The garden is a riotous mix of color.|Good, bad and strange
+roguish|adjective|Playfully mischievous; also, dishonest|He gave a roguish wink.|The roguish hero charms everyone.|Character
+rotund|adjective|Round and plump|The rotund innkeeper laughed heartily.|A rotund teapot sat on the shelf.|Look and shape
+serendipitous|adjective|Happening by lucky chance|Their meeting was serendipitous.|A serendipitous find led to the cure.|Good, bad and strange
+shamefaced|adjective|Showing shame or embarrassment|The shamefaced puppy hid under the table.|He gave a shamefaced apology.|Feelings
+slipshod|adjective|Careless and sloppy|The repairs were slipshod.|His slipshod notes were useless.|Good, bad and strange
+slothful|adjective|Lazy|The slothful cat ignored the mouse.|Slothful habits crept in over summer.|Character
+stilted|adjective|Stiff and unnatural in manner|Their conversation was stilted.|The translation sounds stilted.|Talk and writing
+stoical|adjective|Enduring hardship without complaint|She remained stoical through the long recovery.|His stoical calm impressed everyone.|Character
+straitlaced|adjective|Very strict about proper behavior|The straitlaced principal banned slang.|He seemed straitlaced but loved jokes.|Character
+unceremonious|adjective|Abrupt and without courtesy|They got an unceremonious goodbye.|His unceremonious exit surprised us.|Talk and writing
+unvarnished|adjective|Plain and straightforward; not disguised|She told the unvarnished truth.|Here is my unvarnished opinion.|Talk and writing
+valorous|adjective|Showing great courage|The valorous firefighter returned to the building.|Legends tell of valorous knights.|Character
+vexatious|adjective|Causing annoyance or worry|The vexatious lawsuit was dismissed.|A vexatious delay held up the train.|Good, bad and strange
+waspish|adjective|Sharply irritable|He made a waspish reply.|Her waspish wit stung critics.|Character
+willowy|adjective|Tall, slim and graceful|The willowy dancer moved like water.|Willowy reeds swayed at the shore.|Look and shape
+wrathful|adjective|Full of intense anger|The wrathful storm tore the sails.|A wrathful god appears in the myth.|Feelings
+wrongheaded|adjective|Having bad judgment and stubbornly sticking to it|The plan was wrongheaded from the start.|His wrongheaded logic baffled the panel.|Mind and ideas

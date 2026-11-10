@@ -287,7 +287,7 @@ const chapterCache = new Map();
 // [{ words, lookout, landmark: [img, name, line] }]
 export function chapterWords(level) {
   if (chapterCache.has(level)) return chapterCache.get(level);
-  const list = MAIN.filter((w) => w.l === level && !(w.x && w.x.includes("funny")));
+  const list = MAIN.filter((w) => w.l === level && !w.fo);
   // kid lists are already ordered by hand; older levels go from the most common word to the rarest
   const ordered = level <= 1 ? list : [...list].sort((a, b) => (b.z || 0) - (a.z || 0));
   const chapters = [];
@@ -476,5 +476,5 @@ export function practicePool(p, size = 10, topic = null) {
 }
 // Find your level: two words from each level, easiest first
 export function placementWords(maxLevel = MAX_LEVEL) {
-  return Array.from({ length: maxLevel + 1 }, (_, l) => l).flatMap((l) => shuffled(MAIN.filter((w) => w.l === l && !(w.x && w.x.includes("funny")) && (w.z || 3) < (l < 2 ? 6 : 3.6))).slice(0, 2));
+  return Array.from({ length: maxLevel + 1 }, (_, l) => l).flatMap((l) => shuffled(MAIN.filter((w) => w.l === l && !w.fo && (w.z || 3) < (l < 2 ? 6 : 3.6))).slice(0, 2));
 }

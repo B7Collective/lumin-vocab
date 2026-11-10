@@ -1,0 +1,71 @@
+# Explorer, batch 3 (school subjects and character)
+summary|noun|a short telling of the main points|Write a summary of the chapter in three sentences.|Her summary left out the boring parts.|Talk and writing
+conclusion|noun|the end of something, or what you decide after thinking|The conclusion of the story was a surprise.|We came to the conclusion that the cat ate the fish.|Mind and ideas
+cause|noun|the reason something happens|The storm was the cause of the power outage.|What was the cause of the loud noise?|Mind and ideas
+prediction|noun|a guess about what will happen next|My prediction is that it will rain.|Her prediction about the ending was right.|Mind and ideas
+theme|noun|the main idea or lesson of a story; also, the topic of a party|The theme of the book is friendship.|The party had a pirate theme.|Arts and stories
+setting|noun|where and when a story takes place|The setting of the story is a snowy forest.|Describe the setting in your own words.|Arts and stories
+character|noun|a person or animal in a story; also, what someone is like inside|My favorite character is the clever fox.|Telling the truth shows good character.|Arts and stories
+resolution|noun|the part of a story where the problem is solved; also, a promise to yourself|In the resolution, the friends make up.|My new year's resolution is to read more.|Arts and stories
+caption|noun|words under a picture that explain it|Read the caption under the photo.|We wrote a funny caption for the comic.|Talk and writing
+headline|noun|the title of a news story, printed in big letters|The headline said "Snow Day!"|Each headline grabbed my attention.|Talk and writing
+index|noun|an alphabetical list at the back of a book that shows where to find things|Look up "volcano" in the index.|The index said frogs were on page ten.|Talk and writing
+outline|noun|a plan of the main points, or a line around the edge of a shape|Make an outline before you write.|Trace the outline of your hand.|Talk and writing
+draft|noun|an early version of a piece of writing|This is my first draft of the story.|She fixed mistakes in the second draft.|Talk and writing
+publish|verb|to print or post writing for others to read|Our class will publish a poetry book.|Authors publish their stories so others can read them.|Talk and writing
+adaptation|noun|a change that helps a living thing survive where it lives|Thick fur is an adaptation for cold weather.|A camel's hump is a clever adaptation.|Science and tech
+producer|noun|a living thing that makes its own food, like a plant; also, someone who makes things|Grass is a producer in the food chain.|The farm is a big producer of apples.|Science and tech
+consumer|noun|a living thing that eats other things; also, someone who buys things|A rabbit is a consumer that eats plants.|Every consumer wants a fair price.|Science and tech
+magnetism|noun|the force that makes magnets pull or push|Magnetism pulled the paper clips to the magnet.|A compass works because of magnetism.|Science and tech
+rotation|noun|one full turn around a center|Earth makes one rotation every day.|We took turns in rotation.|Science and tech
+revolution|noun|one trip around something; also, a big change|Earth makes one revolution around the sun each year.|The computer started a revolution in how we work.|Science and tech
+axis|noun|an imaginary line that something spins around|Earth spins on its axis.|The top wobbled on its axis.|Science and tech
+equator|noun|an imaginary line around the middle of Earth|It is hot near the equator.|The ship crossed the equator.|Places and travel
+longitude|noun|lines on a map that run from the North Pole to the South Pole|Sailors used longitude to find their way.|Find the longitude of our town on the globe.|Places and travel
+delta|noun|land shaped like a fan where a river spreads into the sea|Birds nest in the river delta.|The delta is full of rich soil.|Places and travel
+atom|noun|the tiniest piece of something that still is that thing|Everything is made of atoms, and each atom is very tiny.|An atom is too small to see.|Science and tech
+vapor|noun|tiny drops of water or other liquid floating in the air|Steam is water vapor.|Vapor rose from the hot soup.|Science and tech
+vibration|noun|a fast shaking movement|I felt the vibration of the train.|The phone's vibration tickled my hand.|Science and tech
+pitch|noun|how high or low a sound is; also, a throw in baseball|The whistle had a high pitch.|The pitcher threw a fast pitch.|Senses
+reflection|noun|an image you see in a mirror or water|I saw my reflection in the lake.|The moon's reflection shimmered.|Science and tech
+colony|noun|a group of people or animals living together in a new place|Ants live in a colony.|The colony grew into a town.|Society and law
+settler|noun|a person who moves to a new place to live|The settler built a log cabin.|Each settler planted crops.|Society and law
+territory|noun|an area of land that belongs to someone or an animal|The wolf guarded its territory.|The map showed each territory in a different color.|Places and travel
+constitution|noun|the main written rules for how a country or group is run|The constitution protects people's rights.|Our club wrote its own constitution.|Society and law
+amendment|noun|a change or addition to a rule or law|The amendment gave more people the right to vote.|We made an amendment to our class rules.|Society and law
+candidate|noun|a person who wants to be chosen, like in an election|Each candidate gave a speech.|She was a candidate for class president.|Society and law
+governor|noun|the leader of a state|The governor signed the new law.|Our class wrote a letter to the governor.|Society and law
+senator|noun|a person elected to help make laws|The senator visited our school.|Each state has two senators, and each senator votes on laws.|Society and law
+monument|noun|a statue or building that honors a person or event|We visited a monument in the city.|The monument stood in the middle of the park.|Places and travel
+goods|noun|things that are made to be sold|Trucks carry goods to stores.|The market sells goods from many farms.|Money and work
+services|noun|work that people do for others, like haircuts or repairs|Doctors and teachers provide services.|We paid for the plumber's services.|Money and work
+demand|noun|how much people want to buy something|There is high demand for umbrellas when it rains.|Demand for ice cream grows in summer.|Money and work
+fraction|noun|a part of a whole number, like one half|One quarter is a fraction.|Shade the fraction of the circle.|Science and tech
+decimal|noun|a number with a dot, like 2.5|A decimal can show parts of a dollar.|Put the decimal point in the right place.|Science and tech
+percent|noun|out of one hundred|Fifty percent means half.|The phone battery is at ten percent.|Science and tech
+equation|noun|a math sentence that shows two things are equal|Solve the equation 3 + x = 5.|She wrote the equation on the board.|Science and tech
+quotient|noun|the answer to a division problem|The quotient of 10 divided by 2 is 5.|Check your quotient by multiplying.|Science and tech
+remainder|noun|what is left over after dividing|Seven divided by two is three with a remainder of one.|The remainder of the cake went in the fridge.|More and less
+perimeter|noun|the distance around the edge of a shape|Find the perimeter of the square.|We walked the perimeter of the park.|Look and shape
+symmetry|noun|when both halves of something match|Butterfly wings have symmetry.|Fold the paper to check its symmetry.|Look and shape
+polygon|noun|a flat shape with straight sides|A triangle is a polygon.|Draw a polygon with six sides.|Look and shape
+hexagon|noun|a shape with six sides|Honeycombs are made of hexagons, and each hexagon fits perfectly.|A hexagon has six corners.|Look and shape
+octagon|noun|a shape with eight sides|A stop sign is an octagon.|Count the sides of the octagon.|Look and shape
+cylinder|noun|a shape like a can, with round ends and straight sides|A soup can is a cylinder.|Roll the cylinder across the table.|Look and shape
+pyramid|noun|a shape with a square base and four triangle sides that meet at a point|The ancient pyramid was made of stone.|We built a pyramid out of cups.|Look and shape
+sphere|noun|a perfectly round shape like a ball|The planet is a sphere.|A marble is a tiny sphere.|Look and shape
+average|noun|the usual amount, found by adding numbers and dividing|The average of 2 and 4 is 3.|On average, I read one book a week.|Science and tech
+data|noun|facts and numbers collected to learn something|We collected data about the weather.|The data showed more rain in April.|Science and tech
+regret|verb|to feel sorry about something you did or didn't do|I regret not bringing a jacket.|You won't regret trying the pie.|Feelings
+resentful|adjective|feeling upset because you think something was unfair|He felt resentful about doing all the chores.|She was resentful when her turn was skipped.|Feelings
+compassionate|adjective|caring about others who are hurting|The compassionate nurse held my hand.|Be compassionate to someone who is sad.|Character
+sympathetic|adjective|showing that you understand someone's feelings|My teacher was sympathetic when I was upset.|She gave a sympathetic nod.|Character
+respectful|adjective|polite and showing that you value others|Be respectful when others are speaking.|He was respectful to his grandparents.|Character
+obedient|adjective|doing what you are told|The obedient dog sat when I said "sit."|The obedient students lined up quietly.|Character
+inventive|adjective|good at thinking up new ideas|My inventive sister built a robot from boxes.|That's an inventive way to fix it.|Character
+boastful|adjective|talking too proudly about yourself|The boastful rabbit lost the race.|He was boastful about his new shoes.|Character
+thoughtless|adjective|not thinking about how others feel|It was thoughtless to forget her birthday.|A thoughtless comment can hurt.|Character
+careless|adjective|not paying enough attention|A careless mistake cost me a point.|Don't be careless with your glasses.|Character
+forgiving|adjective|ready to let go of anger when someone says sorry|My grandma is very forgiving.|Be forgiving when a friend makes a mistake.|Character
+cooperative|adjective|willing to work together|The cooperative team finished first.|Our cat is not very cooperative at bath time.|Character
+tolerant|adjective|accepting of others who are different|A tolerant person listens to other views.|We should be tolerant of each other's habits.|Character

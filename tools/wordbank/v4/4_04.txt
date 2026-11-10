@@ -1,0 +1,85 @@
+# Academic, batch 4 (domain vocabulary: law, government, science, math, arts, architecture, music)
+appellate|adjective|Relating to appeals against a court's decision|The case went to the appellate court.|She argued before an appellate panel.|Society and law
+negligence|noun|Failure to take proper care, especially in a legal sense|The landlord was sued for negligence.|Negligence caused the warehouse fire.|Society and law
+caucus|noun|A meeting of party members to choose candidates or set policy|The caucus met to pick a leader.|Iowa holds an early caucus.|Society and law
+constituency|noun|The voters a representative serves, or any group of supporters|She held town halls across her constituency.|Teachers are a key constituency for the bill.|Society and law
+junta|noun|A group that takes power by force and rules a country|The junta suspended elections.|A military junta ruled for a decade.|Society and law
+patronage|noun|Support from a patron; also, the power to hand out jobs and favors|The museum thrives on private patronage.|Old political machines ran on patronage.|Society and law
+conglomerate|noun|A large corporation made of many different companies|The conglomerate owns hotels and airlines.|A media conglomerate bought the paper.|Money and work
+epidemiology|noun|The study of how diseases spread through populations|She studied epidemiology after the outbreak.|Epidemiology helps cities plan for flu season.|Science and tech
+malignant|adjective|Harmful and tending to spread or grow worse|Doctors confirmed the growth was not malignant.|Rumor can have a malignant effect on a team.|Body and health
+variance|noun|The amount of difference or change; also, official permission to break a zoning rule|The data showed wide variance.|They needed a variance to build the garage.|Science and tech
+deduction|noun|Reasoning from general rules to a specific conclusion; also, an amount subtracted|Holmes reached the answer by deduction.|The tax deduction saved them money.|Mind and ideas
+maxim|noun|A short statement of a general truth or rule of conduct|"Waste not, want not" is an old maxim.|Her maxim was to listen first.|Talk and writing
+treatise|noun|A formal written work that examines a subject in depth|He wrote a treatise on light.|The treatise runs to six hundred pages.|Talk and writing
+dissertation|noun|A long research essay, especially for a doctorate|She defended her dissertation in May.|His dissertation studied coral reefs.|Talk and writing
+bylaw|noun|A rule made by a club, company or local authority|The club bylaw limits terms to two years.|A town bylaw bans leaf burning.|Society and law
+easement|noun|A legal right to use part of someone else's land|The utility has an easement for its power lines.|Hikers cross the farm on a public easement.|Society and law
+indemnity|noun|Protection against loss, or payment for a loss|The contract includes an indemnity clause.|The insurer paid an indemnity for the flood.|Money and work
+remand|verb|To send a case back to a lower court; also, to return a person to custody|The appeals court will remand the case.|The judge chose to remand him until trial.|Society and law
+ratify|verb|To formally approve an agreement|Both countries must ratify the treaty.|Members voted to ratify the new contract.|Society and law
+lobbyist|noun|A person paid to influence lawmakers|The lobbyist met with three senators.|Each lobbyist must register with the state.|Society and law
+sedition|noun|Speech or action that urges rebellion against a government|He was charged with sedition.|Old laws against sedition limited free speech.|Society and law
+federalism|noun|A system in which power is shared between national and state governments|Federalism lets states set many of their own rules.|The debate turned on federalism.|Society and law
+despot|noun|A ruler with total power who uses it cruelly|The despot jailed his critics.|History remembers the despot harshly.|Society and law
+armistice|noun|An agreement to stop fighting|The armistice was signed at dawn.|Veterans gather on Armistice Day, and the armistice is remembered each year.|Society and law
+protectorate|noun|A state controlled and protected by another|The island became a British protectorate.|The protectorate kept its own king.|Society and law
+secularism|noun|The principle that government should be separate from religion|The constitution enshrines secularism.|Secularism shaped the school system.|Society and law
+nepotism|noun|Favoring relatives, especially in giving jobs|Hiring his nephew looked like nepotism.|The firm has rules against nepotism.|Society and law
+remittance|noun|Money sent to someone, often family abroad|Her monthly remittance supports her parents.|Each remittance arrives by wire.|Money and work
+remuneration|noun|Payment for work or services|The remuneration includes a bonus.|Directors receive modest remuneration.|Money and work
+centrifuge|noun|A machine that spins samples fast to separate their parts|The lab used a centrifuge to separate the cells.|The centrifuge whirred for an hour.|Science and tech
+conduction|noun|The passing of heat or electricity through a material|Copper allows fast heat conduction.|Conduction warms the pan's handle.|Science and tech
+mitosis|noun|Cell division that produces two identical cells|Skin cells renew through mitosis.|We watched mitosis under a microscope.|Science and tech
+neuron|noun|A nerve cell that carries signals|Each neuron connects to thousands of others.|A neuron fires in a fraction of a second.|Body and health
+thermodynamics|noun|The science of heat, energy and work|Engines obey the laws of thermodynamics.|She teaches thermodynamics to engineers.|Science and tech
+stratum|noun|A layer of rock or soil; also, a level of society|Fossils lay in a single stratum.|Every social stratum felt the downturn.|Nature and weather
+antigen|noun|A substance that triggers the body to make antibodies|Vaccines expose the body to an antigen.|The test detects a viral antigen.|Body and health
+quark|noun|A tiny particle that makes up protons and neutrons|A proton holds three quarks, and each quark carries a charge.|Physicists named one quark "strange."|Science and tech
+lemma|noun|A proven statement used to help prove a larger theorem|The proof rests on a short lemma.|She stated the lemma before the main result.|Science and tech
+causation|noun|The relationship of cause and effect|Correlation does not prove causation.|The study could not establish causation.|Mind and ideas
+dualism|noun|The view that reality has two basic kinds, such as mind and matter|Many philosophers have argued for dualism.|The novel plays on the dualism of light and dark.|Mind and ideas
+materialism|noun|Too much focus on money and possessions; also, the view that only matter is real|The holidays can slide into materialism.|Philosophical materialism denies a separate soul.|Mind and ideas
+idealism|noun|The pursuit of high ideals; also, the view that reality is shaped by mind|Her idealism inspired the volunteers.|Idealism fades a little with every budget meeting.|Mind and ideas
+annotation|noun|A note added to explain or comment on a text|Each annotation explains an old word.|Her annotation filled the margin.|Talk and writing
+codex|noun|An ancient book made of bound pages rather than a scroll|The codex was copied by hand.|Scholars dated the codex to the fifth century.|Arts and stories
+monograph|noun|A detailed scholarly study of a single subject|She published a monograph on moths.|The monograph took eight years to write.|Talk and writing
+gable|noun|The triangular top part of a wall under a sloped roof|A round window sat in the gable.|Ivy climbed the west gable.|Look and shape
+cantilever|noun|A beam fixed at one end that sticks out without support at the other|The balcony rests on a steel cantilever.|A cantilever holds the diving board.|Things and tools
+dormer|noun|A window that juts out from a sloping roof|The attic has a sunny dormer.|They added a dormer to the bedroom.|Look and shape
+obelisk|noun|A tall, four-sided stone pillar that tapers to a point|An obelisk stands in the square.|The obelisk was carved in Egypt.|Look and shape
+plinth|noun|A heavy base that supports a statue or column|The statue stands on a granite plinth.|The empty plinth awaited a new sculpture.|Look and shape
+recuse|verb|To remove yourself from a case because of a conflict of interest|The judge chose to recuse herself.|He had to recuse himself from the vote.|Society and law
+cloture|noun|A procedure for ending debate and calling a vote|The Senate voted for cloture.|Cloture needs sixty votes.|Society and law
+statecraft|noun|The skill of running a government and dealing with other nations|The treaty was a feat of statecraft.|She studied statecraft and diplomacy.|Society and law
+cronyism|noun|Giving jobs and favors to friends rather than the most qualified people|Critics accused the mayor of cronyism.|Cronyism weakens public trust.|Society and law
+meiosis|noun|Cell division that produces cells with half the usual chromosomes|Meiosis makes egg and pollen cells.|Biology students compare meiosis and mitosis.|Science and tech
+phylum|noun|A major group in the classification of living things|Insects belong to the phylum of arthropods.|Each phylum shares a basic body plan.|Science and tech
+prophylactic|adjective|Intended to prevent disease or trouble|She took prophylactic steps against sunburn.|The vet gave a prophylactic dose.|Body and health
+carcinogen|noun|A substance that can cause cancer|Tobacco smoke contains many a carcinogen.|The chemical was listed as a carcinogen.|Body and health
+parabola|noun|A U-shaped curve, like the path of a thrown ball|The fountain's water arcs in a parabola.|Graph the parabola on the grid.|Science and tech
+hyperbola|noun|A curve with two separate, mirror-image branches|The equation describes a hyperbola.|A comet can follow a hyperbola past the sun.|Science and tech
+hedonism|noun|The pursuit of pleasure as the main goal of life|The resort sells a weekend of hedonism.|Ancient thinkers debated hedonism.|Mind and ideas
+utilitarianism|noun|The view that the right action brings the greatest good to the most people|Utilitarianism weighs outcomes above rules.|The ethics class debated utilitarianism.|Mind and ideas
+assonance|noun|Repetition of vowel sounds in nearby words|"Hear the mellow wedding bells" is full of assonance.|Poets use assonance to make lines sing.|Arts and stories
+ellipsis|noun|The punctuation mark of three dots, or the leaving out of words|She ended the text with an ellipsis.|The ellipsis showed that words were cut.|Talk and writing
+enjambment|noun|Continuing a sentence past the end of a line of poetry|Enjambment pulls the reader to the next line.|The poet uses enjambment for suspense.|Arts and stories
+iambic|adjective|Using a rhythm of one unstressed then one stressed syllable|Many old plays are written in iambic meter.|Tap out the iambic beat.|Arts and stories
+couplet|noun|Two lines of poetry that rhyme and go together|The sonnet ends with a couplet.|She wrote a funny couplet for the card.|Arts and stories
+quatrain|noun|A stanza of four lines|Each quatrain rhymes on the second and fourth lines.|The ballad opens with a quatrain.|Arts and stories
+gilding|noun|A thin layer of gold applied to a surface|The frame's gilding glowed in the light.|Gilding covered the dome.|Look and shape
+lintel|noun|A horizontal beam over a door or window|A carved lintel crowns the doorway.|The stone lintel cracked in the quake.|Things and tools
+pilaster|noun|A flat column that sticks out slightly from a wall|White pilasters frame the entrance, and each pilaster is fluted.|The pilaster is purely decorative.|Look and shape
+transept|noun|The part of a cross-shaped church that crosses the main hall|Light poured into the north transept.|The choir sang from the transept.|Places and travel
+belfry|noun|A bell tower, or the room in it that holds the bells|Pigeons nested in the belfry.|The belfry rang at noon.|Places and travel
+minaret|noun|A tall, slender tower of a mosque|The minaret rose above the old city.|A call to prayer sounded from the minaret.|Places and travel
+pergola|noun|An open garden frame of posts and beams, often covered with vines|Grapes hung from the pergola.|We ate dinner under the pergola.|Places and travel
+ziggurat|noun|An ancient stepped tower built in Mesopotamia|The ziggurat rose in giant steps.|Archaeologists mapped the ziggurat's base.|Places and travel
+madrigal|noun|A song for several voices without instruments, popular in the Renaissance|The choir sang an English madrigal.|Each madrigal weaves five voices together.|Arts and stories
+nocturne|noun|A dreamy piece of music suggesting the night|The pianist ended with a famous nocturne.|She played a quiet nocturne.|Arts and stories
+scherzo|noun|A lively, playful movement in a symphony or sonata|The scherzo bounced along.|The orchestra raced through the scherzo.|Arts and stories
+tremolo|noun|A rapid, trembling repetition of a note|The violins played a soft tremolo.|Guitarists add tremolo for shimmer.|Arts and stories
+vibrato|noun|A slight, rapid wobble in pitch that adds warmth to a note|The singer's vibrato was gentle.|Cellists add vibrato with the left hand.|Arts and stories
+etude|noun|A piece of music written to practice a skill|She practiced a piano etude daily.|The etude drills fast scales.|Arts and stories
+ostinato|noun|A musical phrase repeated again and again|A bass ostinato drives the song.|The cellos keep the ostinato steady.|Arts and stories
+engraving|noun|A picture printed from a design cut into metal or wood|The book has an engraving on every page.|An old engraving of the harbor hung there.|Arts and stories

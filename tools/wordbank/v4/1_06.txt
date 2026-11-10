@@ -1,0 +1,78 @@
+# Explorer, batch 6 (science, arts, talk, time)
+acid|noun|a sour substance that can eat away at things, like lemon juice or vinegar|Lemon juice is a weak acid.|The acid fizzed when it touched the baking soda.|Science and tech
+anatomy|noun|the study of the parts of a body|We learned about frog anatomy in science.|The anatomy poster showed every bone.|Science and tech
+bacteria|noun|tiny living things that can only be seen with a microscope|Wash your hands to get rid of bacteria.|Some bacteria help us digest food.|Science and tech
+biology|noun|the study of living things|In biology we looked at leaves under a microscope.|She loves biology and animals.|Science and tech
+botany|noun|the study of plants|Botany taught us how seeds sprout.|He studied botany in the greenhouse.|Science and tech
+carbon|noun|a basic element found in all living things and in coal and diamonds|Diamonds are made of carbon.|Plants take in carbon from the air.|Science and tech
+cell|noun|the tiny building block that all living things are made of|Your body is made of trillions of cells, and each cell has a job.|We looked at an onion cell under the microscope.|Science and tech
+chemical|noun|a substance made by or used in chemistry|Bleach is a strong chemical.|Never mix cleaning chemicals; each chemical can react.|Science and tech
+chlorophyll|noun|the green stuff in plants that helps them make food from sunlight|Chlorophyll makes leaves green.|In fall, the chlorophyll fades and leaves turn red.|Science and tech
+climate|noun|the usual weather of a place over many years|The desert has a hot, dry climate.|Penguins live in a cold climate.|Nature and weather
+condense|verb|to turn from a gas into a liquid, or to make shorter|Steam will condense on a cold window.|Condense your notes into one page.|Science and tech
+cycle|noun|a set of events that repeat in order|The water cycle moves rain from sky to sea and back.|A butterfly's life cycle has four stages.|Science and tech
+decompose|verb|to rot and break down slowly|Leaves decompose into soil.|Fruit peels decompose in the compost.|Science and tech
+dinosaur|noun|a reptile that lived millions of years ago|We saw a dinosaur skeleton at the museum.|The biggest dinosaur was longer than a bus.|Animals
+element|noun|a basic substance that cannot be broken into simpler ones, like gold or oxygen|Gold is an element.|Water is made of two elements, and oxygen is one element.|Science and tech
+exoskeleton|noun|a hard shell on the outside of some animals, like insects and crabs|A beetle's exoskeleton protects its body.|Crabs shed their exoskeleton as they grow.|Animals
+germ|noun|a tiny living thing that can make you ill|Cover your sneeze so you don't spread germs; one germ can spread fast.|Soap washes away each germ.|Body and health
+lens|noun|a curved piece of glass that bends light, like in glasses or a camera|The camera lens needs cleaning.|A magnifying lens makes bugs look big.|Science and tech
+magma|noun|melted rock deep under the ground|Magma rises up inside the volcano.|When magma reaches the surface, it's called lava.|Science and tech
+mantle|noun|the thick, hot layer of rock beneath Earth's crust|The mantle is under the crust.|Heat moves slowly through the mantle.|Science and tech
+matter|noun|anything that takes up space, like solids, liquids and gases|Air is matter, even though you can't see it.|Matter can change from solid to liquid.|Science and tech
+membrane|noun|a thin, soft layer that covers or separates parts|A thin membrane covers the inside of an egg.|The cell has a membrane around it.|Science and tech
+moisture|noun|a small amount of water in the air or on something|Moisture fogged up the mirror.|Plants need moisture in the soil.|Nature and weather
+oxygen|noun|a gas in the air that people and animals need to breathe|We breathe in oxygen.|Plants give off oxygen.|Science and tech
+ozone|noun|a gas high in the sky that protects Earth from the sun's harmful rays|The ozone layer blocks strong sunlight.|We learned how to protect the ozone.|Science and tech
+pressure|noun|the force of pushing on something; also, a stressful feeling|Check the air pressure in your bike tires.|I felt pressure before the big game.|Science and tech
+prism|noun|a clear glass shape that splits light into a rainbow|The prism made a rainbow on the wall.|Hold the prism up to the window.|Science and tech
+protein|noun|a nutrient in foods like eggs, beans and fish that helps your body grow|Beans are full of protein.|Protein helps build strong muscles.|Food
+pupa|noun|the stage when an insect changes inside a case before becoming an adult|The caterpillar became a pupa.|Inside the pupa, the butterfly forms.|Animals
+retina|noun|the part at the back of your eye that senses light|Light hits the retina at the back of the eye.|The eye doctor looked at my retina.|Body and health
+spore|noun|a tiny seed-like cell that mushrooms and ferns use to make new plants|A mushroom releases each spore into the air.|Ferns grow from a spore, not a seed.|Science and tech
+stamen|noun|the part of a flower that makes pollen|Bees brush against the stamen.|The lily's stamen was dusted with orange pollen.|Nature and weather
+thermal|adjective|having to do with heat|I wear thermal socks in winter.|Hawks ride the thermal air currents.|Science and tech
+toxic|adjective|poisonous|Some berries are toxic to eat.|Keep toxic cleaners away from pets.|Body and health
+virus|noun|a tiny germ that can make people ill, or a harmful computer program|A virus can cause a cold.|The computer got a virus from a bad link.|Science and tech
+voltage|noun|the strength of the electricity in a wire or battery|This battery has low voltage.|High voltage can be dangerous.|Science and tech
+applause|noun|clapping to show you enjoyed something|The applause went on for a long time.|She bowed to the applause.|Arts and stories
+audition|noun|a short performance to try out for a part|I had an audition for the school play.|Her audition went well.|Arts and stories
+backdrop|noun|a painted cloth behind a stage, or the background of something|We painted a forest backdrop for the play.|The mountains made a lovely backdrop.|Arts and stories
+biography|noun|the story of a real person's life, written by someone else|I read a biography of a famous scientist.|Her biography told about her childhood.|Arts and stories
+cartoon|noun|a funny drawing, or an animated show|We watched a cartoon on Saturday morning.|She drew a cartoon of our dog.|Arts and stories
+collage|noun|a picture made by gluing scraps of paper, photos or fabric|We made a collage from magazine pictures.|Her collage was full of colors.|Arts and stories
+comic|noun|a story told in pictures with speech bubbles|I read a comic about a superhero.|She drew her own comic.|Arts and stories
+composer|noun|a person who writes music|The composer wrote a song for the movie.|My piano teacher is a composer.|Arts and stories
+concert|noun|a show where people play music|We went to an outdoor concert.|The school concert was on Friday.|Arts and stories
+curtain|noun|a cloth that hangs at a window or across a stage|The curtain rose and the show began.|Close the curtain to block the sun.|Arts and stories
+debut|noun|someone's first public performance|The young singer made her debut.|It was the band's debut concert.|Arts and stories
+documentary|noun|a film about real people and events|We watched a documentary about whales.|The documentary showed life in the Arctic.|Arts and stories
+easel|noun|a stand that holds a painting while you work|The artist set her canvas on the easel.|We each had an easel in art class.|Arts and stories
+fantasy|noun|a story about magical, imaginary things|I love fantasy books with dragons.|Flying is just a fantasy.|Arts and stories
+finale|noun|the last, exciting part of a show|The fireworks finale lit up the sky.|Everyone sang in the finale.|Arts and stories
+gallery|noun|a room or building where art is shown|We visited a gallery full of paintings.|Her drawing hung in the school gallery.|Arts and stories
+graffiti|noun|writing or drawings on walls in public places|The wall was covered in colorful graffiti.|The town painted over the graffiti.|Arts and stories
+illustration|noun|a picture in a book that helps tell the story|Each page had a beautiful illustration.|The illustration showed the fox in the snow.|Arts and stories
+lyrics|noun|the words of a song|I know all the lyrics to that song.|She wrote the lyrics on a napkin.|Arts and stories
+masterpiece|noun|an excellent work of art or skill|The painting is a masterpiece.|Her science project was a masterpiece.|Arts and stories
+musical|noun|a play or movie with lots of singing and dancing|We saw a musical about a lion.|The school musical sold out.|Arts and stories
+opera|noun|a play in which the words are sung|The opera singer hit a high note.|We dressed up for the opera.|Arts and stories
+palette|noun|a board for mixing paints, or a set of colors|She mixed blue and yellow on her palette.|The room had a calm palette of greens.|Arts and stories
+performance|noun|a show, or how well someone does something|The dance performance was amazing.|Her performance on the test improved.|Arts and stories
+prop|noun|an object used by actors in a play|The sword was a cardboard prop.|Each prop had to be ready before the show.|Arts and stories
+puppetry|noun|the art of making puppets move and talk|Puppetry takes a lot of practice.|We learned puppetry at camp.|Arts and stories
+rehearsal|noun|a practice before a performance|We stayed late for rehearsal.|The dress rehearsal went smoothly.|Arts and stories
+scene|noun|a part of a play or movie, or a place where something happens|The final scene made me cry.|The ranger arrived on the scene.|Arts and stories
+script|noun|the written words of a play or movie|Each actor got a script.|She wrote the script for our video.|Arts and stories
+sequel|noun|a book or movie that continues a story|The sequel was even better.|I can't wait for the sequel.|Arts and stories
+spotlight|noun|a strong beam of light on one person or place|The singer stood in the spotlight.|The spotlight followed the dancer.|Arts and stories
+symphony|noun|a long piece of music for an orchestra|The orchestra played a symphony.|We heard a symphony in the park.|Arts and stories
+tragedy|noun|a very sad event, or a sad play|The play was a tragedy.|It was a tragedy when the old oak fell.|Arts and stories
+stutter|verb|to repeat sounds when you speak, without meaning to|He might stutter when he's excited.|Many people stutter, and that's okay.|Talk and writing
+anniversary|noun|the date when something happened in an earlier year|Today is my parents' wedding anniversary.|The town had a party on its 100th anniversary.|Time and change
+eventually|adverb|after a long time|Eventually, the rain stopped.|You will eventually learn to ride.|Time and change
+frequently|adverb|often|We frequently visit the library.|It frequently rains in spring.|Time and change
+occasionally|adverb|sometimes, but not often|We occasionally eat out.|Occasionally, a deer walks through the yard.|Time and change
+overnight|adverb|during the night, or very quickly|The snow fell overnight.|She didn't become a star overnight.|Time and change
+timeline|noun|a line that shows events in the order they happened|We made a timeline of our lives.|The timeline started with the dinosaurs.|Time and change
+yearly|adjective|happening once a year|We have a yearly family picnic.|The yearly checkup is in May.|Time and change

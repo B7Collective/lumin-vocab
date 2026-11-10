@@ -1,0 +1,134 @@
+# Sprout, batch 3
+porridge|noun|a warm, soft breakfast made by cooking oats in milk or water|Goldilocks tasted the porridge in the story.|We ate warm porridge with honey on a cold morning.|Food
+bagel|noun|a round, chewy bread with a hole in the middle|I had a toasted bagel with cream cheese.|The bagel was still warm from the bakery.|Food
+biscuit|noun|a small, soft bread roll, or a crisp cookie|Grandma baked a fluffy biscuit for each of us.|He dunked his biscuit in his cocoa.|Food
+custard|noun|a sweet, creamy pudding made with eggs and milk|The custard wobbled on the plate.|We poured warm custard over the apple pie.|Food
+pudding|noun|a soft, sweet, creamy dessert|Chocolate pudding is my favorite dessert.|She licked the pudding off her spoon.|Food
+apricot|noun|a small, soft orange fruit with a stone inside|The apricot was fuzzy and sweet.|We dried each apricot in the sun.|Food
+papaya|noun|a large tropical fruit with orange flesh and black seeds|We scooped the seeds out of the papaya.|Papaya tastes a little like melon.|Food
+tangerine|noun|a small, sweet orange that is easy to peel|I peeled a tangerine for my lunch.|The tangerine smelled bright and fresh.|Food
+cantaloupe|noun|a round melon with a rough skin and sweet orange inside|Dad cut the cantaloupe into slices.|Cantaloupe is juicy on a hot day.|Food
+cranberry|noun|a small, sour red berry|We made cranberry sauce for the holiday.|A cranberry is too sour to eat plain.|Food
+celery|noun|a crunchy green vegetable with long stalks|I dipped my celery in peanut butter.|Celery makes a loud crunch when you bite it.|Food
+cauliflower|noun|a vegetable with a big white head that looks like a cloud of tiny trees|We roasted the cauliflower with cheese.|The cauliflower looked like a little white cloud.|Food
+radish|noun|a small, round, red vegetable with a peppery taste|The radish was crisp and spicy.|We pulled a radish out of the garden.|Food
+zucchini|noun|a long green squash|Mom grated zucchini into the muffins.|Our zucchini grew as long as my arm.|Food
+eggplant|noun|a shiny purple vegetable shaped like a big egg|We grilled slices of eggplant.|The eggplant was soft and smoky.|Food
+smoothie|noun|a thick drink made by blending fruit with milk or yogurt|I made a banana smoothie for breakfast.|The smoothie was pink from the strawberries.|Food
+cocoa|noun|a warm, chocolate drink|We sipped cocoa after sledding.|Add a marshmallow to your cocoa.|Food
+burrito|noun|a soft, rolled flatbread filled with beans, rice or meat|I ate a bean burrito for lunch.|Fold the burrito so nothing falls out.|Food
+dumpling|noun|a small ball of dough, often filled and boiled or steamed|Grandma folds each dumpling by hand.|The soup had a dumpling floating in it.|Food
+chowder|noun|a thick, creamy soup, often made with fish or corn|We had corn chowder at the beach.|The chowder warmed us up.|Food
+omelet|noun|eggs beaten and cooked flat, often folded over a filling|Dad made a cheese omelet.|My omelet had peppers and onions inside.|Food
+casserole|noun|a dish of food baked slowly in the oven|Our neighbor brought us a warm casserole.|The casserole bubbled in the oven.|Food
+frosting|noun|a sweet, creamy topping spread on cakes|I licked the frosting off my cupcake.|The frosting was bright blue.|Food
+caramel|noun|a sticky, golden candy made by heating sugar|We dipped apples in caramel.|The caramel stuck to my teeth.|Food
+marshmallow|noun|a soft, puffy, white candy|We toasted a marshmallow over the campfire.|The marshmallow melted into my cocoa.|Food
+fudge|noun|a soft, rich, chocolate candy|Grandpa makes fudge every winter.|The fudge melted in my mouth.|Food
+peppermint|noun|a cool, fresh flavor that tingles in your mouth|The peppermint candy was red and white.|Peppermint tea smells fresh.|Food
+vanilla|noun|a sweet flavor that comes from a bean|I'd like vanilla ice cream, please.|Add a drop of vanilla to the batter.|Food
+nutmeg|noun|a warm brown spice, often used in baking|Sprinkle nutmeg on the eggnog.|The pumpkin pie had nutmeg in it.|Food
+ginger|noun|a spicy root used in cooking and baking|We baked ginger cookies.|Ginger gives the soup a little kick.|Food
+parsley|noun|a green herb used to add flavor or decorate food|Sprinkle parsley on the pasta.|The parsley made the plate look fancy.|Food
+almond|noun|an oval nut with a brown skin|I had an almond with my apple.|Almond milk is made from nuts.|Food
+walnut|noun|a wrinkly nut inside a hard shell|We cracked a walnut with a nutcracker.|The walnut looks a little like a tiny brain.|Food
+raisin|noun|a dried grape|There was a raisin in every bite of cereal.|A raisin is sweet and chewy.|Food
+coconut|noun|a big, hard, hairy nut with white flesh and sweet water inside|We drank the water from a coconut.|The coconut fell from the palm tree.|Food
+pineapple|noun|a large tropical fruit with spiky skin and sweet yellow flesh|The pineapple had a crown of leaves.|We grilled pineapple on the barbecue.|Food
+mango|noun|a sweet, juicy tropical fruit with orange flesh|The mango juice ran down my chin.|Ripe mango is soft and sweet.|Food
+oatmeal|noun|a warm breakfast made from cooked oats|I put berries on my oatmeal.|The oatmeal kept me full until lunch.|Food
+pickle|noun|a cucumber kept in salty or sour water|A pickle came with my sandwich.|The pickle was sour and crunchy.|Food
+ladle|noun|a big, deep spoon for serving soup|Use the ladle to fill each bowl.|The ladle dripped soup on the stove.|Things and tools
+spatula|noun|a flat tool for flipping or spreading food|Flip the pancake with the spatula.|She scraped the bowl with a spatula.|Things and tools
+colander|noun|a bowl with holes for draining water from food|Pour the noodles into the colander.|We rinsed the berries in a colander.|Things and tools
+kettle|noun|a pot with a spout for boiling water|The kettle whistled on the stove.|Fill the kettle for tea.|Things and tools
+saucer|noun|a small plate that goes under a cup|She set the teacup on its saucer.|The cat drank milk from a saucer.|Things and tools
+platter|noun|a large, flat plate for serving food|Dad carried in a platter of turkey.|The fruit platter looked like a rainbow.|Things and tools
+pitcher|noun|a large jug with a handle and spout for pouring drinks|Pour the lemonade from the pitcher.|The pitcher was full of cold water.|Things and tools
+blender|noun|a kitchen machine that chops and mixes food into liquid|We made soup in the blender.|The blender whirred loudly.|Things and tools
+pantry|noun|a small room or closet where food is kept|The cereal is in the pantry.|Our pantry smells like spices.|Places and travel
+cupboard|noun|a cabinet with shelves and a door|The plates are in the cupboard.|I found the cookies hidden in the cupboard.|Things and tools
+faucet|noun|the tap that water comes out of|Turn off the faucet while you brush.|The faucet drips all night.|Things and tools
+washcloth|noun|a small towel for washing your face or body|Use a warm washcloth to clean your face.|The washcloth was soft and fluffy.|Things and tools
+sponge|noun|a soft, squishy thing full of holes that soaks up water|Wipe the table with a sponge.|The sponge soaked up the spilled milk.|Things and tools
+dustpan|noun|a flat pan you sweep dirt into|Sweep the crumbs into the dustpan.|I held the dustpan while Dad swept.|Things and tools
+hamper|noun|a basket for dirty clothes|Put your socks in the hamper.|The hamper was overflowing.|Things and tools
+hanger|noun|a hook-shaped holder for hanging clothes|Hang your coat on a hanger.|The closet was full of empty hangers, so I grabbed a hanger for my shirt.|Things and tools
+quilt|noun|a warm blanket made of pieces of cloth sewn together|Grandma sewed a quilt from old shirts.|I curled up under the quilt.|Things and tools
+cot|noun|a small, narrow bed that folds up|I slept on a cot at the sleepover.|Each camper had a cot in the cabin.|Things and tools
+bunk|noun|one of two beds stacked on top of each other|I sleep on the top bunk.|My sister has the bottom bunk.|Things and tools
+cradle|noun|a small bed for a baby that rocks|The baby slept in a wooden cradle.|Rock the cradle gently.|Things and tools
+chimney|noun|a tall pipe that lets smoke out of a house|Smoke curled out of the chimney.|A bird built a nest on the chimney.|Places and travel
+fireplace|noun|a place in a room where a fire is built|We warmed our hands by the fireplace.|Stockings hung over the fireplace.|Places and travel
+hearth|noun|the floor of a fireplace|The cat slept on the warm hearth.|We stacked logs by the hearth.|Places and travel
+cellar|noun|a room under a house, often used for storage|We keep potatoes in the cellar.|The cellar was cool and dark.|Places and travel
+basement|noun|the floor of a building that is below the ground|Our playroom is in the basement.|We waited out the storm in the basement.|Places and travel
+driveway|noun|a short road from the street to a house|We drew with chalk on the driveway.|The car is parked in the driveway.|Places and travel
+curb|noun|the raised edge where the sidewalk meets the street|Stop at the curb and look both ways.|The ball rolled to the curb.|Places and travel
+hedge|noun|a row of bushes planted close together|The cat hid in the hedge.|Dad trimmed the hedge into a neat box.|Nature and weather
+patio|noun|a flat outdoor area next to a house|We ate dinner on the patio.|The patio was warm from the sun.|Places and travel
+balcony|noun|a small porch on the outside of an upstairs room|We watched fireworks from the balcony.|Flowers grew on the hotel balcony.|Places and travel
+doorknob|noun|the round handle you turn to open a door|Turn the doorknob slowly.|The doorknob was cold in winter.|Things and tools
+banister|noun|the rail you hold on to beside the stairs|Hold the banister on the way down.|Don't slide down the banister!|Things and tools
+nursery|noun|a baby's bedroom, or a place where young plants are grown|We painted the nursery yellow.|We bought tomato plants at the nursery.|Places and travel
+playroom|noun|a room for playing with toys|We built a fort in the playroom.|The playroom was covered in blocks.|Places and travel
+eyebrow|noun|the line of hair above each eye|He raised one eyebrow in surprise.|She drew an eyebrow on her snowman.|Body and health
+eyelash|noun|one of the short hairs on the edge of your eyelid|I found an eyelash on my cheek and made a wish.|Each eyelash helps keep dust out of your eyes.|Body and health
+nostril|noun|one of the two openings in your nose|A tickle in my nostril made me sneeze.|Breathe in through one nostril.|Body and health
+knuckle|noun|a joint in your finger that bends|I bumped my knuckle on the table.|Knock on the door with one knuckle.|Body and health
+forehead|noun|the part of your face above your eyebrows|Mom felt my forehead to see if I was warm.|He wiped his forehead after the race.|Body and health
+dimple|noun|a small dent in your cheek when you smile|She has a dimple on one side.|His dimple showed when he grinned.|Body and health
+burp|verb|to let air out of your stomach through your mouth|Say "excuse me" after you burp.|Pat the baby's back to help her burp.|Body and health
+smelly|adjective|having a strong, bad smell|My gym socks are smelly.|The smelly cheese made us hold our noses.|Senses
+minty|adjective|tasting or smelling of mint|The toothpaste is fresh and minty.|I like minty gum.|Senses
+sugary|adjective|full of sugar; very sweet|Sugary drinks are bad for your teeth.|The sugary cereal turned the milk sweet.|Senses
+mushy|adjective|soft and squishy|The banana got mushy in my bag.|Overcooked peas are mushy.|Senses
+silky|adjective|soft and smooth like silk|The kitten's fur was silky.|She has long, silky hair.|Senses
+scratchy|adjective|rough and itchy against your skin|This wool sweater is scratchy.|His voice was scratchy from yelling at the game.|Senses
+crinkly|adjective|full of little wrinkles and making a rustling sound|The candy came in crinkly paper.|Grandpa has crinkly eyes when he smiles.|Senses
+gritty|adjective|rough with tiny bits like sand|My sandwich got gritty at the beach.|The floor felt gritty under my feet.|Senses
+rumble|verb|to make a long, deep, rolling sound|I heard thunder rumble far away.|My tummy began to rumble before lunch.|Senses
+jingle|verb|to make light ringing sounds, like bells or keys|The keys jingle in Dad's pocket.|Bells jingle on the cat's collar.|Senses
+chime|verb|to ring with a clear, musical sound|The clock will chime at noon.|Wind chimes chime in the breeze.|Senses
+hush|verb|to make quiet|Hush now, the baby is sleeping.|The librarian asked us to hush.|Senses
+megaphone|noun|a cone you speak into to make your voice louder|The coach shouted through a megaphone.|A megaphone made her voice boom across the field.|Things and tools
+microphone|noun|a tool that picks up your voice to make it louder or record it|She sang into the microphone.|Tap the microphone to see if it works.|Things and tools
+tambourine|noun|a small drum with jingly metal disks around the edge|I shook the tambourine to the beat.|The tambourine jingled with every shake.|Arts and stories
+xylophone|noun|an instrument with wooden or metal bars you hit with small hammers|She played a song on the xylophone.|Each bar on the xylophone makes a different note.|Arts and stories
+harmonica|noun|a small instrument you play by blowing in and out|Grandpa played the harmonica by the fire.|The harmonica fit in his pocket.|Arts and stories
+flute|noun|a long instrument you blow across to play high notes|She practices the flute every day.|The flute sounded like a bird.|Arts and stories
+trumpet|noun|a brass instrument you blow into to make loud, bright notes|The trumpet blared at the parade.|He pressed the buttons on his trumpet.|Arts and stories
+violin|noun|a wooden instrument with strings, played with a bow|She tucked the violin under her chin.|The violin played a sweet song.|Arts and stories
+banjo|noun|an instrument with strings and a round body, played by plucking|He strummed a happy tune on the banjo.|The banjo has a bright, twangy sound.|Arts and stories
+harp|noun|a large instrument with many strings that you pluck|The harp sounded like falling rain.|She plucked each string of the harp.|Arts and stories
+choir|noun|a group of people who sing together|I sing in the school choir.|The choir sang in three parts.|Arts and stories
+duet|noun|a song or piece played or sung by two people|We sang a duet at the concert.|The piano duet needed four hands.|Arts and stories
+lullaby|noun|a soft song sung to help a baby sleep|Mom sang a lullaby until I fell asleep.|The lullaby was slow and gentle.|Arts and stories
+storybook|noun|a book of stories for children|The storybook had bright pictures.|Grandpa read us a storybook at bedtime.|Arts and stories
+bookmark|noun|a strip of paper that marks your place in a book|Put a bookmark in so you don't lose your page.|I made a bookmark with a feather on it.|Things and tools
+folktale|noun|an old story passed down by people over many years|The folktale was about a clever fox.|Every country has its own folktale about the moon.|Arts and stories
+wizard|noun|a man in stories who can do magic|The wizard waved his staff.|In the book, a wizard turns a frog into a prince.|Arts and stories
+unicorn|noun|a make-believe horse with one horn on its head|She drew a unicorn with a rainbow mane.|The unicorn in the story could fly.|Arts and stories
+mermaid|noun|a make-believe sea creature, half woman and half fish|The mermaid sat on a rock and sang.|I dressed up as a mermaid for the party.|Arts and stories
+troll|noun|a grumpy creature in stories that lives under bridges or in caves|The troll guarded the bridge.|In the tale, the goats tricked the troll.|Arts and stories
+goblin|noun|a small, mischievous creature in stories|The goblin hid the king's crown.|A goblin giggled in the dark cave.|Arts and stories
+pixie|noun|a tiny, playful magical creature in stories|A pixie sprinkled glitter on the flowers.|The pixie lived in a mushroom.|Arts and stories
+gnome|noun|a tiny old man in stories who lives underground; also a garden statue|A garden gnome stood by the pond.|The gnome guarded the hidden gold.|Arts and stories
+magician|noun|a person who does magic tricks|The magician pulled a coin from my ear.|We clapped for the magician.|Arts and stories
+juggler|noun|a person who can keep several things in the air at once|The juggler tossed five balls.|A juggler at the fair juggled flaming torches.|Arts and stories
+acrobat|noun|a person who does flips, balances and other daring tricks|The acrobat flipped across the stage.|An acrobat swung from the trapeze.|Arts and stories
+wand|noun|a thin stick used for magic in stories or tricks|The fairy waved her wand.|I made a wand out of a twig.|Arts and stories
+potion|noun|a magic drink in stories|The witch stirred a bubbling potion.|The potion turned his hair blue.|Arts and stories
+throne|noun|the special chair a king or queen sits on|The queen sat on her golden throne.|The throne had a red velvet cushion.|Arts and stories
+moat|noun|a deep ditch filled with water around a castle|The castle had a wide moat.|They lowered the bridge over the moat.|Places and travel
+drawbridge|noun|a bridge that can be pulled up to block the way|The guards raised the drawbridge.|We crossed the drawbridge into the castle.|Places and travel
+spyglass|noun|a small telescope that sailors use|The pirate looked through his spyglass.|Through the spyglass, I saw an island.|Things and tools
+spaceship|noun|a vehicle that travels into space|The spaceship blasted off into the stars.|We built a spaceship out of a cardboard box.|Science and tech
+moonlight|noun|the soft light that comes from the moon|The lake glowed in the moonlight.|We walked home by moonlight.|Nature and weather
+sunbeam|noun|a ray of sunlight|The cat napped in a sunbeam.|A sunbeam shone through the window.|Nature and weather
+twilight|noun|the soft, dim light just after the sun sets|Bats come out at twilight.|The sky turned purple at twilight.|Time and change
+noon|noun|twelve o'clock in the middle of the day|We eat lunch at noon.|The sun is high at noon.|Time and change
+weekday|noun|any day from Monday to Friday|I go to school every weekday.|The park is quiet on a weekday.|Time and change
+hourglass|noun|a glass timer where sand trickles from the top to the bottom|Flip the hourglass to start your turn.|The sand in the hourglass ran out.|Time and change
+sundial|noun|a clock that uses the sun's shadow to tell the time|The sundial's shadow pointed to three.|There was an old sundial in the garden.|Time and change
+stopwatch|noun|a watch for timing exactly how long something takes|The coach held a stopwatch at the finish line.|Start the stopwatch when I say go.|Time and change

@@ -72,3 +72,4 @@ parameter
 sensor
 turbine
 orrery
+pneumatics

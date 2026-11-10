@@ -553,7 +553,9 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
 
 /* ---- Library and word lists -------------------------------------------------- */
 .lib { display: grid; gap: var(--s4); grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (min-width: 720px) { .lib { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 720px) { .lib { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+/* five shelves on a two-column phone: the last one lies flat across the row */
+@media (max-width: 719px) { .lib > .gcard:last-child:nth-child(odd) { grid-column: 1 / -1; flex-direction: row; align-items: center; } .lib > .gcard:last-child:nth-child(odd) .art { width: 96px; flex: none; } .lib > .gcard:last-child:nth-child(odd) small { margin-top: 0; } }
 .wlist { display: flex; flex-direction: column; gap: var(--s3); }
 .wcard { background: var(--card); border-radius: var(--r-l); box-shadow: var(--shadow); padding: var(--s4) var(--s5); display: flex; flex-direction: column; gap: var(--s2); min-width: 0; }
 .wcard .top { display: flex; align-items: center; gap: var(--s3); flex-wrap: wrap; }

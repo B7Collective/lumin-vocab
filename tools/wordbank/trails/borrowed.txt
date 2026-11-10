@@ -72,3 +72,10 @@ dilettante
 bricolage
 gestalt
 weltschmerz
+zany
+yogurt|noun|A thick, tangy food made from milk. From Turkish|I had yogurt with berries for breakfast.|Food|1
+genre
+gourmet
+macabre
+bazaar
+diaspora

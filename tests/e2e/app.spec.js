@@ -65,6 +65,8 @@ test("first run: the word screen, heart, save, details and library", async ({ pa
   await page.screenshot({ path: `test-results/shots/${info.project.name}-words.png` });
   await page.goto("/#/library/favorites");
   await expect(page.locator(".wcard .w", { hasText: first })).toBeVisible();
+  await page.goto("/#/library/saved");
+  await expect(page.locator(".wcard .w", { hasText: first })).toBeVisible();
   await page.goto("/#/you");
   await expect(page.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("1");
   await expect(page.locator(".streak .n")).toHaveText("1");
@@ -352,7 +354,7 @@ test("every word served comes from the chosen level", async ({ page }, info) => 
   await page.goto("/#/setup");
   const res = await page.evaluate(async () => {
     const m = await import("/js/model.js");
-    for (let i = 0; i < 100 && !m.WORDS.length; i++) await new Promise((r) => setTimeout(r, 100));
+    for (let i = 0; i < 100 && !(m.WORDS.length && m.TRAILS.length); i++) await new Promise((r) => setTimeout(r, 100));
     const out = [];
     for (let lv = 0; lv <= m.MAX_LEVEL; lv++) {
       const p = m.profile(m.newProfile({ name: "L" + lv, role: lv <= 1 ? "kid" : lv <= 3 ? "teen" : "adult", level: lv }).id);
@@ -362,12 +364,18 @@ test("every word served comes from the chosen level", async ({ page }, info) => 
       for (const t of m.trailsFor(p)) lists.push(m.trailWords(t, p));
       lists.push(lists[0].slice(0, 40).flatMap((w) => m.distractors(w, 3, "d")));
       const all = lists.flat();
-      out.push({ lv, size: lists[0].length, outside: all.filter((w) => w.l !== lv).map((w) => w.w) });
+      const sets = ["beautiful", "funny"].map((k) => m.MAIN.filter((w) => w.x && w.x.includes(k) && w.l === lv).length);
+      const trails = m.trailsFor(p).map((t) => [t.key, m.trailWords(t, p).length]);
+      out.push({ lv, size: lists[0].length, outside: all.filter((w) => w.l !== lv).map((w) => w.w), sets, trails });
     }
     return out;
   });
   for (const r of res) {
     expect(r.outside, `level ${r.lv} shows words from other levels`).toEqual([]);
-    expect(r.size, `level ${r.lv} has enough words`).toBeGreaterThanOrEqual(600);
+    expect(r.size, `level ${r.lv} has enough words`).toBeGreaterThanOrEqual(1100);
+    // the side packs and side trails follow the level too, with a real set of words at every level
+    for (const n of r.sets) expect(n, `level ${r.lv} collection size`).toBeGreaterThanOrEqual(9);
+    expect(r.trails.length, `level ${r.lv} side trails`).toBeGreaterThanOrEqual(15);
+    for (const [k, n] of r.trails) expect(n, `${k} at level ${r.lv}`).toBeGreaterThanOrEqual(9);
   }
 });

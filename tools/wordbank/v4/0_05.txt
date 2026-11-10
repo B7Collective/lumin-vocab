@@ -1,0 +1,71 @@
+# Sprout, batch 5
+seaweed|noun|a plant that grows in the sea|Seaweed tangled around my ankles in the water.|The crab hid under a clump of seaweed.|Nature and weather
+coral|noun|a hard, colorful sea animal that grows in groups and forms reefs|Tiny fish swam around the pink coral.|Coral grows very slowly in warm seas.|Nature and weather
+reef|noun|a ridge of rock or coral near the surface of the sea|We snorkeled over the coral reef.|Bright fish live on the reef.|Nature and weather
+shore|noun|the land along the edge of the sea or a lake|We walked along the shore looking for shells.|Waves splashed against the shore.|Nature and weather
+dune|noun|a hill of sand piled up by the wind|We rolled down the sand dune.|Grass grew on top of the dune.|Nature and weather
+bay|noun|a part of the sea that curves into the land|Sailboats floated in the calm bay.|We swam in a sheltered bay.|Places and travel
+brook|noun|a small stream|A brook babbled through the woods.|We hopped across the brook on stones.|Nature and weather
+riverbank|noun|the land along the side of a river|We had a picnic on the riverbank.|Turtles sunned themselves on the riverbank.|Nature and weather
+bog|noun|soft, wet, muddy ground|My boot got stuck in the bog.|Frogs croaked in the bog.|Nature and weather
+rainforest|noun|a thick, warm forest where it rains a lot|Parrots and monkeys live in the rainforest.|The rainforest is full of tall trees and vines.|Nature and weather
+grove|noun|a small group of trees|We picked oranges in the grove.|A grove of birch trees stood by the lake.|Nature and weather
+clearing|noun|an open space in a forest without trees|The deer grazed in a sunny clearing.|We set up our tent in the clearing.|Nature and weather
+slope|noun|ground that goes up or down at an angle|We sledded down the snowy slope.|The ball rolled down the slope.|Places and travel
+ridge|noun|a long, narrow top of a hill or mountain|We hiked along the rocky ridge.|The sun rose over the ridge.|Places and travel
+gravel|noun|small loose stones|The car crunched over the gravel.|We spread gravel on the garden path.|Nature and weather
+clay|noun|soft, sticky earth you can shape and then harden|We made bowls out of clay.|The clay dried hard in the sun.|Nature and weather
+gemstone|noun|a beautiful stone that can be cut and polished|She found a purple gemstone in the cave.|Each gemstone sparkled in the light.|Nature and weather
+lava|noun|hot, melted rock that comes out of a volcano|Red lava flowed down the mountain.|The lava cooled into black rock.|Nature and weather
+snowman|noun|a figure made of big balls of snow|We built a snowman with a carrot nose.|The snowman melted in the sun.|Nature and weather
+hailstone|noun|a small ball of ice that falls like rain|A hailstone bounced off the car.|The hailstone was as big as a pea.|Nature and weather
+raindrop|noun|a single drop of rain|A raindrop slid down the window.|I caught a raindrop on my tongue.|Nature and weather
+downpour|noun|a very heavy rain|We got soaked in the downpour.|The downpour flooded the street.|Nature and weather
+thunderstorm|noun|a storm with thunder and lightning|We watched the thunderstorm from the window.|The thunderstorm rattled the windows.|Nature and weather
+whirlwind|noun|a small wind that spins around very fast|A whirlwind spun the leaves into the air.|The kids ran around like a whirlwind.|Nature and weather
+misty|adjective|full of thin fog|It was a misty morning by the lake.|The hills looked misty and blue.|Nature and weather
+petal|noun|one of the soft, colored parts of a flower|A rose petal floated in the water.|She pulled off one petal at a time.|Nature and weather
+bud|noun|a small bump on a plant that grows into a leaf or flower|A tiny bud appeared on the branch.|The rose bud opened in the morning.|Nature and weather
+bark|noun|the rough outer covering of a tree|We made rubbings of the tree bark.|The woodpecker tapped at the bark.|Nature and weather
+stump|noun|the bottom part of a tree left after it is cut down|We sat on a tree stump to rest.|Mushrooms grew on the old stump.|Nature and weather
+fern|noun|a green plant with feathery leaves and no flowers|Ferns grew in the shady forest, and one fern curled like a fiddle.|The fern unrolled a new leaf.|Nature and weather
+ivy|noun|a climbing plant with shiny leaves|Ivy covered the old brick wall.|The ivy crept up the tree.|Nature and weather
+thistle|noun|a prickly plant with purple flowers|The goat munched on a thistle.|Watch out for the thistle; it's prickly.|Nature and weather
+clover|noun|a small plant with three round leaves|I found a four-leaf clover!|Bees buzzed over the clover.|Nature and weather
+dandelion|noun|a yellow flower that turns into a fluffy white puff of seeds|I blew on the dandelion and made a wish.|A dandelion grew through the sidewalk.|Nature and weather
+buttercup|noun|a small, shiny yellow wildflower|She held a buttercup under my chin.|The field was full of buttercups, and each buttercup shone.|Nature and weather
+poppy|noun|a flower with bright, papery petals, often red|A red poppy waved in the wind.|The poppy closed its petals at night.|Nature and weather
+orchid|noun|a fancy flower with unusual shapes and colors|Grandma grows an orchid by the window.|The orchid had purple spots.|Nature and weather
+herb|noun|a plant used to add flavor to food or for its smell|We grow herbs on the windowsill, and basil is my favorite herb.|Pick an herb to add to the soup.|Food
+classroom|noun|a room where a class meets to learn|Our classroom has a reading corner.|The classroom was quiet during the test.|Places and travel
+cafeteria|noun|a place where you get food and eat, like at school|We eat lunch in the cafeteria.|The cafeteria smelled like pizza.|Places and travel
+locker|noun|a small metal cupboard that locks, for keeping your things|I keep my coat in my locker.|My locker is next to my friend's.|Things and tools
+eraser|noun|a rubber tool that rubs out pencil marks|Use your eraser to fix the mistake.|The eraser left pink crumbs.|Things and tools
+sharpener|noun|a tool that makes a pencil pointy|My pencil sharpener is shaped like an apple.|The sharpener filled with shavings.|Things and tools
+notebook|noun|a book of blank pages to write in|I wrote my story in my notebook.|She doodles in her notebook.|Things and tools
+binder|noun|a folder with rings that hold papers|Put the worksheet in your binder.|My binder is full of drawings.|Things and tools
+worksheet|noun|a page of questions or activities for students|We finished the math worksheet.|The worksheet had a maze on the back.|Things and tools
+homework|noun|schoolwork you do at home|I finish my homework before dinner.|The homework was about the moon.|Things and tools
+subtract|verb|to take one number away from another|If you subtract two from five, you get three.|We learned to subtract with blocks.|Science and tech
+numeral|noun|a symbol for a number, like 7|Write the numeral for ten.|The clock had a fancy numeral at each hour.|Science and tech
+digit|noun|any one of the numbers from 0 to 9|Our phone number has ten digits, and the first digit is two.|Each digit counts in a math problem.|Science and tech
+measure|verb|to find out how long, big or heavy something is|Measure the table with a tape measure.|We measure how tall I grow each year.|Science and tech
+weigh|verb|to find out how heavy something is|Let's weigh the pumpkin.|The vet will weigh the puppy.|Science and tech
+hint|noun|a small clue that helps you guess|Can you give me a hint?|The hint was "it lives in the sea."|Mind and ideas
+goal|noun|something you are trying to do; also, where you score in a game|My goal is to read ten books.|She kicked the ball into the goal.|Mind and ideas
+choice|noun|a chance to pick between things|You have a choice of red or blue.|It was a hard choice.|Mind and ideas
+decision|noun|a choice you make after thinking|We made a decision to go to the beach.|The referee's decision was final.|Mind and ideas
+mistake|noun|something done wrong by accident|Everyone makes a mistake sometimes.|I fixed the mistake with my eraser.|Mind and ideas
+lesson|noun|a time of learning, or something learned|We had a swimming lesson.|The story had a lesson about sharing.|Mind and ideas
+project|noun|a big piece of work, often done over many days|Our class project is a model volcano.|We worked on the project together.|Mind and ideas
+battery|noun|a small container of power for toys and gadgets|The flashlight needs a new battery.|My toy car stopped when the battery ran out.|Science and tech
+bulb|noun|the glass part of a lamp that lights up; also, the round root of some plants|Dad changed the light bulb.|We planted a tulip bulb in the fall.|Science and tech
+switch|noun|a button or lever that turns something on or off|Flip the switch to turn on the light.|The switch is by the door.|Science and tech
+tablet|noun|a flat computer with a touch screen|We read a book on the tablet.|The tablet needs charging.|Science and tech
+password|noun|a secret word that lets you into something|Never share your password.|I forgot my password again.|Science and tech
+printer|noun|a machine that puts words and pictures from a computer onto paper|The printer printed my drawing.|The printer ran out of ink.|Science and tech
+gear|noun|a wheel with teeth that turns other wheels in a machine|Each gear turned the next one.|My bike has a gear for going uphill.|Science and tech
+ramp|noun|a sloping path that connects a lower and a higher place|The ball rolled down the ramp.|We pushed the wagon up the ramp.|Science and tech
+motor|noun|a machine that makes something move|The boat's motor hummed.|My toy car has a tiny motor.|Science and tech
+engine|noun|a machine that makes power to move a car, train or plane|The engine roared to life.|The train engine puffed smoke.|Science and tech
+fuel|noun|something burned to make heat or power, like gas or wood|The car needs fuel to go.|Dry wood is good fuel for a fire.|Science and tech

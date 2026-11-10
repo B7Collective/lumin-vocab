@@ -66,3 +66,13 @@ entree
 provender
 refection
 collation
+morsel
+ration
+staple
+provisions
+concoct
+sustenance
+potable
+insipid
+soupcon
+amalgam

@@ -54,3 +54,13 @@ officious
 sycophant
 pettifog
 scrivener
+liaise|verb|To work closely with another person or group and share information|She will liaise with the design team.|Money and work|3
+memorandum|noun|A written message sent within an organization|The memorandum explained the new schedule.|Money and work|3
+itemize|verb|To list things one by one|Please itemize your expenses.|Money and work|3
+proprietary
+vocational
+practitioner
+drudgery
+quorum
+remuneration
+comptroller

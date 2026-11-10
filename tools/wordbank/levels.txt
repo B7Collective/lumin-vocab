@@ -15,3 +15,9 @@
 3: aural, oral, flout, flaunt, imply, militate
 4: elude, proceed, venial, appraise, uninterested, loath, loathe
 5: prescribe
+
+# 3.2: the most familiar of the new Academic words step down to Wordsmith, so Academic stays the harder level
+3: quantum, sovereign, vector, litigation, indictment, magistrate, advent, constituency, dissertation, torque, aesthetics, hale, polymer, homage, negligence, caucus, substrate, deposition, injunction, repression, placebo, globalization, kudos, patronage, variance, deduction, pulmonary
+# 3.2: keep mix-up pairs together after the re-sort
+5: appraise, apprise, depreciate, deprecate
+3: censure, discrete

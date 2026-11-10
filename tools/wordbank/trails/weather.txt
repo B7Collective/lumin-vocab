@@ -75,3 +75,8 @@ insolation|noun|The amount of sunlight reaching a surface|Desert insolation is f
 orographic|adjective|Caused by mountains, as when air rises over them and drops rain|The orographic rain soaks one side of the range and leaves the other dry.||4
 isotherm|noun|A line on a map joining places with the same temperature|The freezing isotherm crept south overnight.||4
 convection|noun|The rising and sinking of warm and cool air or water that carries heat|Convection builds the tall thunderclouds of summer afternoons.||4
+monsoon
+stratus
+cumulonimbus
+troposphere
+doldrums

@@ -1,0 +1,70 @@
+# Explorer, batch 4 (what people are like)
+agitated|adjective|nervous and upset, unable to stay calm|The agitated dog paced by the door.|She grew agitated when she couldn't find her ticket.|Feelings
+aspiring|adjective|hoping and working to become something|Our aspiring chef bakes every weekend.|The aspiring writer filled three notebooks.|Character
+brash|adjective|bold in a loud, pushy way|The brash player bragged before the game.|His brash plan surprised everyone.|Character
+carefree|adjective|happy and without worries|We spent a carefree summer at the lake.|The carefree puppy chased butterflies.|Feelings
+cocky|adjective|too sure of yourself|The cocky hare lost to the tortoise.|Don't get cocky after one win.|Character
+contented|adjective|happy and satisfied|The contented cat purred in my lap.|He gave a contented sigh after dinner.|Feelings
+crabby|adjective|grumpy and easily annoyed|I'm crabby when I'm hungry.|The crabby old man shooed the pigeons.|Feelings
+crafty|adjective|clever at tricking others; also, good at making things|The crafty fox found a way into the henhouse.|My crafty aunt sews her own clothes.|Character
+demanding|adjective|needing lots of time, effort or attention|Training a puppy is demanding.|The coach is demanding but fair.|Character
+devious|adjective|sneaky and tricky|The villain had a devious plan.|Hiding the remote was a devious move.|Character
+dishonest|adjective|not telling the truth|It is dishonest to copy someone's answers.|The dishonest shopkeeper changed the price.|Character
+dutiful|adjective|doing what you are supposed to, carefully and without complaint|The dutiful dog guarded the sheep.|She was a dutiful helper in the garden.|Character
+easygoing|adjective|relaxed and not easily upset|My easygoing friend never minds waiting.|Our easygoing cat lets the baby pet her.|Character
+enterprising|adjective|full of energy and good ideas for getting things done|The enterprising kids opened a car wash.|An enterprising girl started a dog-walking business.|Character
+fainthearted|adjective|easily frightened, not brave|The ghost tour is not for the fainthearted.|He felt fainthearted at the top of the slide.|Character
+finicky|adjective|very fussy about small things|My finicky cat eats only one kind of food.|The old printer is finicky.|Character
+flamboyant|adjective|bold, colorful and showy|The singer wore a flamboyant feathered hat.|The parrot's flamboyant colors stood out.|Character
+flighty|adjective|changing your mind often; not serious|The flighty bird hopped from branch to branch.|He's too flighty to finish a project.|Character
+forgetful|adjective|often forgetting things|My forgetful grandpa leaves his glasses everywhere.|I'm forgetful in the morning.|Character
+frank|adjective|honest and direct|She gave me her frank opinion.|Let me be frank: the cake is burned.|Character
+gruff|adjective|rough and grumpy in voice or manner|The gruff farmer was kind underneath.|He answered in a gruff voice.|Character
+headstrong|adjective|determined to do things your own way|The headstrong pony refused to turn.|My headstrong sister wanted to climb first.|Character
+impish|adjective|playfully naughty|He gave an impish grin.|The impish kitten untied my shoes.|Character
+impressionable|adjective|easily influenced by others|Young kids are impressionable.|The impressionable puppy copied the older dog.|Character
+indecisive|adjective|unable to make up your mind|I'm indecisive at the ice cream shop.|The indecisive squirrel ran back and forth.|Character
+industrious|adjective|hardworking and busy|Ants are industrious insects.|The industrious kids cleaned the whole park.|Character
+insecure|adjective|not feeling sure of yourself|She felt insecure on her first day.|Loose bolts made the shelf insecure.|Feelings
+introverted|adjective|quiet and comfortable spending time alone|My introverted friend loves reading.|He's introverted but very funny.|Character
+irritable|adjective|easily annoyed|I get irritable when I'm tired.|The irritable goose hissed at us.|Feelings
+levelheaded|adjective|calm and sensible, even in hard moments|The levelheaded captain kept everyone safe.|Be levelheaded in an emergency.|Character
+lighthearted|adjective|cheerful and not too serious|We had a lighthearted chat.|The movie was lighthearted and fun.|Feelings
+neat|adjective|tidy and in order; also, cool|My desk is neat and clean.|That's a neat trick!|Look and shape
+outgoing|adjective|friendly and happy to meet new people|My outgoing sister talks to everyone.|The outgoing puppy greeted each guest.|Character
+overbearing|adjective|bossy in a way that pushes others around|The overbearing captain gave too many orders.|Don't be overbearing when you lead.|Character
+pessimistic|adjective|expecting things to turn out badly|He was pessimistic about the weather.|Don't be pessimistic; we might win.|Character
+plucky|adjective|brave and determined, especially when small|The plucky little dog chased off the goose.|A plucky girl climbed to the top.|Character
+practical|adjective|sensible and useful|Boots are a practical choice for rain.|She has a practical way of solving problems.|Character
+prim|adjective|very neat, proper and a little stiff|The prim teacher straightened her collar.|The garden was prim and tidy.|Character
+quarrelsome|adjective|often arguing|The quarrelsome geese honked at each other.|Don't be quarrelsome at dinner.|Character
+quirky|adjective|unusual in a fun, interesting way|My quirky uncle wears mismatched socks.|The café had quirky decorations.|Character
+rowdy|adjective|noisy and wild|The rowdy crowd cheered loudly.|The puppies got rowdy at bath time.|Character
+sassy|adjective|bold and cheeky in a playful way|The sassy parrot talked back.|She gave a sassy answer.|Character
+scatterbrained|adjective|forgetful and disorganized|My scatterbrained cousin forgot his shoes.|I feel scatterbrained on Monday mornings.|Character
+self-conscious|adjective|worried about what others think of you|He felt self-conscious about his new haircut.|Don't be self-conscious; you sing well.|Feelings
+sentimental|adjective|full of tender feelings about the past|Grandma is sentimental about old photos.|I keep my old toy for sentimental reasons.|Feelings
+short-tempered|adjective|quick to get angry|The short-tempered goose chased us.|He gets short-tempered when he's hungry.|Character
+snobbish|adjective|acting as if you are better than others|The snobbish cat ignored the other cats.|It's snobbish to make fun of cheap shoes.|Character
+softhearted|adjective|kind and easily moved by others' troubles|My softhearted dad feeds every stray cat.|She is too softhearted to say no.|Character
+spirited|adjective|full of energy and courage|The spirited horse galloped ahead.|We had a spirited debate.|Character
+spunky|adjective|brave and full of energy|The spunky little girl climbed the tree.|Our spunky puppy chased the waves.|Character
+stingy|adjective|not willing to share or spend|The stingy king kept all the gold.|Don't be stingy with the popcorn.|Character
+studious|adjective|liking to study and learn|The studious boy read every book.|She is studious and asks great questions.|Character
+talkative|adjective|liking to talk a lot|My talkative parrot never stops chatting.|She is talkative at lunch.|Character
+tireless|adjective|working hard without getting tired|The tireless volunteers cleaned the beach.|Our coach is tireless.|Character
+unselfish|adjective|thinking of others before yourself|It was unselfish to share your snack.|The unselfish player passed the ball.|Character
+vain|adjective|too proud of how you look|The vain peacock admired itself in the pond.|Don't be vain about your new shoes.|Character
+wholehearted|adjective|complete and sincere|She gave her wholehearted support.|We made a wholehearted effort.|Feelings
+wily|adjective|clever and tricky|The wily raccoon opened the trash can.|A wily fox fooled the hounds.|Character
+zany|adjective|silly in a wild, funny way|The cartoon was zany and loud.|My zany uncle wore a chicken hat.|Character
+zealous|adjective|very eager and enthusiastic|The zealous fan painted his face.|She is zealous about recycling.|Character
+quick-witted|adjective|able to think and answer quickly and cleverly|The quick-witted student solved the riddle.|A quick-witted joke made us laugh.|Character
+open-minded|adjective|willing to listen to new ideas|Be open-minded about new foods.|An open-minded friend listens first.|Character
+good-natured|adjective|friendly, kind and easy to get along with|Our good-natured dog lets kids climb on him.|He laughed in a good-natured way.|Character
+high-spirited|adjective|lively and full of fun|The high-spirited kids ran out to play.|The high-spirited pony bucked and danced.|Character
+strong-willed|adjective|determined to get your own way|The strong-willed toddler refused to nap.|She is strong-willed and never quits.|Character
+tough-minded|adjective|strong and practical, not easily upset|The tough-minded captain stayed calm.|You must be tough-minded to finish a marathon.|Character
+self-centered|adjective|thinking mostly about yourself|It was self-centered to take all the cookies.|The self-centered cat hogged the bed.|Character
+narrow-minded|adjective|unwilling to listen to new ideas|Don't be narrow-minded about new games.|A narrow-minded rule can be unfair.|Character
+rash|adjective|done too quickly without thinking|It was a rash decision to jump in.|Don't be rash; think first.|Character

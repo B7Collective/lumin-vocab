@@ -65,3 +65,10 @@ harbor
 canoe
 isthmus
 rusticate
+jaunt
+exodus
+diaspora
+transatlantic|adjective|Crossing the Atlantic Ocean|The transatlantic flight took seven hours.|Places and travel|3
+emigre|noun|A person who has left their own country, often for political reasons|The emigre opened a bakery in Paris.|Places and travel|4
+cabotage|noun|The right to carry passengers or goods within another country's borders|Cabotage rules stop foreign airlines from flying domestic routes.|Places and travel|4
+intercontinental|adjective|Traveling or reaching between continents|The intercontinental flight crossed two oceans.|Places and travel|4

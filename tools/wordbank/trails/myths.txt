@@ -66,3 +66,8 @@ apollonian|adjective|Calm, orderly and rational. From Apollo, the Greek god of l
 dionysian|adjective|Wild, joyful and free. From Dionysus, the Greek god of festivals|The street party had a dionysian energy.||4
 olympian|adjective|Lofty and grand, like the gods of Mount Olympus|He watched the argument with olympian calm.||4
 hermetic|adjective|Sealed tight against air; also, cut off from the outside world. From Hermes, said to have invented a magic seal|The jar has a hermetic lid.||4
+oracle
+muse|noun|A person or thing that inspires an artist. From the Muses, Greek goddesses of the arts|The sea was the painter's muse.|Arts and stories|3
+typhoon|noun|A violent tropical storm in the western Pacific. Partly from Typhon, a monstrous storm giant in Greek myth|The typhoon closed every port.|Arts and stories|3
+psyche|noun|The human mind or soul. From Psyche, the Greek maiden who became the goddess of the soul|The novel explores the hero's troubled psyche.|Arts and stories|3
+fury|noun|Wild, violent anger. From the Furies, Greek spirits of vengeance|The storm struck with fury.|Arts and stories|3

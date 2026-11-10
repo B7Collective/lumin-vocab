@@ -1,0 +1,70 @@
+# Explorer, batch 5 (places and travel)
+aboard|adverb|on or onto a ship, train, bus or plane|All aboard! The train is leaving.|We climbed aboard the ferry.|Places and travel
+abroad|adverb|in or to another country|My aunt is traveling abroad this summer.|He studied abroad for a year.|Places and travel
+accent|noun|the way people from a certain place pronounce words|Our neighbor has a lovely Scottish accent.|She picked up an accent after living abroad.|Talk and writing
+antique|noun|an old object that is valuable because of its age|The clock is an antique from 1890.|We found an antique at the yard sale.|Things and tools
+aqueduct|noun|a bridge or channel built to carry water a long way|The old stone aqueduct carried water to the city.|We walked under the arches of the aqueduct.|Places and travel
+archaeologist|noun|a scientist who digs up and studies things from long ago|The archaeologist found an ancient pot.|An archaeologist brushed dirt off the bones.|Science and tech
+architect|noun|a person who designs buildings|The architect drew plans for the new school.|She wants to be an architect.|Money and work
+astronomy|noun|the study of stars, planets and space|I joined the astronomy club.|Astronomy helps us learn about the universe.|Science and tech
+avenue|noun|a wide street, often lined with trees|We walked down a shady avenue.|The parade went down Main Avenue.|Places and travel
+barge|noun|a long, flat boat for carrying heavy loads on rivers|The barge carried coal down the river.|A barge drifted slowly past.|Places and travel
+boardwalk|noun|a wooden path along a beach or over wet ground|We rode bikes on the boardwalk.|The boardwalk crossed the marsh.|Places and travel
+bonfire|noun|a large outdoor fire|We toasted marshmallows at the bonfire.|The bonfire crackled on the beach.|Nature and weather
+cabin|noun|a small wooden house, or a room on a ship or plane|We stayed in a log cabin.|The pilot spoke to the cabin.|Places and travel
+canal|noun|a waterway dug by people for boats or water|Boats floated along the canal.|The city had a canal instead of streets.|Places and travel
+cargo|noun|goods carried by a ship, plane or truck|The ship's cargo was bananas.|They unloaded the cargo at the dock.|Places and travel
+caravan|noun|a group of people or vehicles traveling together|A caravan of camels crossed the desert.|Our cars drove in a caravan.|Places and travel
+carnival|noun|a fun fair with rides, games and food|We rode the Ferris wheel at the carnival.|The carnival had cotton candy.|Places and travel
+catapult|noun|an old machine that throws things far|They built a catapult that tossed water balloons.|The castle model had a tiny catapult.|Things and tools
+cathedral|noun|a very large, important church|The cathedral had colorful windows.|We heard the cathedral bells.|Places and travel
+chapel|noun|a small church or a room for prayer|They got married in a little chapel.|The chapel was quiet and peaceful.|Places and travel
+coastline|noun|the shape of the land along the sea|The coastline was rocky and wild.|We drove along the coastline.|Places and travel
+countryside|noun|land outside cities, with farms and fields|We biked through the countryside.|The countryside was green in spring.|Places and travel
+crossroads|noun|a place where two roads cross|Turn left at the crossroads.|An old inn stood at the crossroads.|Places and travel
+cruise|noun|a vacation on a big ship|We went on a cruise to the islands.|The cruise ship had a pool.|Places and travel
+dam|noun|a wall built across a river to hold back water|Beavers build a dam with sticks.|The dam makes power from the water.|Places and travel
+detour|noun|a different road you take when the usual way is blocked|We took a detour around the construction.|The detour led us past a farm stand.|Places and travel
+dock|noun|a platform where boats tie up|We fished off the dock.|The boat pulled up to the dock.|Places and travel
+ferry|noun|a boat that carries people and cars across water|We took the ferry to the island.|The ferry honked as it left.|Places and travel
+globe|noun|a round model of Earth|Spin the globe and find our country.|The globe sits on my desk.|Places and travel
+gondola|noun|a long, narrow boat used on canals, or a cabin hanging from a cable|We rode a gondola up the mountain.|The gondola glided through the canal.|Places and travel
+gorge|noun|a deep, narrow valley with steep sides|A river ran through the gorge.|We looked down into the gorge.|Places and travel
+hike|noun|a long walk in nature|We went on a hike to the waterfall.|The hike was steep but fun.|Places and travel
+hut|noun|a small, simple house or shelter|The fishermen rested in a hut.|We built a hut out of branches.|Places and travel
+inn|noun|a small hotel, often in the countryside|We spent the night at a cozy inn.|The inn served hot soup.|Places and travel
+jetty|noun|a long wall or pier sticking out into the water|We walked to the end of the jetty.|Waves crashed against the jetty.|Places and travel
+lodge|noun|a cabin or house used for vacations, like in the mountains|We stayed at a ski lodge.|The lodge had a big fireplace.|Places and travel
+marina|noun|a harbor for small boats and yachts|Sailboats bobbed in the marina.|We ate lunch by the marina.|Places and travel
+mill|noun|a building with machines for grinding grain or making things|The old mill had a water wheel.|Flour comes from the mill.|Places and travel
+observatory|noun|a building with big telescopes for watching the sky|We saw Saturn at the observatory.|The observatory sits on a hilltop.|Science and tech
+outpost|noun|a small camp or settlement far from other places|The rangers lived at a lonely outpost.|The outpost was the last stop before the desert.|Places and travel
+pagoda|noun|a tower with many roofs, found in parts of Asia|The pagoda had seven levels.|We climbed the pagoda for the view.|Places and travel
+pavilion|noun|an open building with a roof, used for shade or events|We ate lunch under the pavilion.|The band played in the pavilion.|Places and travel
+pier|noun|a walkway built out over the water|We fished off the pier.|The pier had a merry-go-round.|Places and travel
+plaza|noun|an open public square in a town|Pigeons gathered in the plaza.|We met friends in the plaza.|Places and travel
+port|noun|a town with a harbor where ships load and unload|The ship sailed into port.|The busy port was full of cranes.|Places and travel
+quarry|noun|a big pit where stone is dug out|The quarry was filled with blue water.|Stone for the castle came from a quarry.|Places and travel
+raft|noun|a flat boat made of logs or an inflatable float|We built a raft from logs.|The raft floated down the river.|Places and travel
+ranch|noun|a large farm for raising cattle, horses or sheep|We rode horses on the ranch.|The ranch had hundreds of cows.|Places and travel
+reservoir|noun|a lake that stores water for a town|The reservoir was full after the rain.|We hiked around the reservoir.|Places and travel
+resort|noun|a place where people go to relax on vacation|The beach resort had three pools.|We stayed at a ski resort.|Places and travel
+schooner|noun|a sailing ship with two or more masts|The schooner sailed into the harbor.|We toured an old wooden schooner.|Places and travel
+shipwreck|noun|the remains of a ship that sank|Divers explored the shipwreck.|The story begins with a shipwreck.|Places and travel
+skyline|noun|the outline of buildings against the sky|The city skyline sparkled at night.|We photographed the skyline from the bridge.|Places and travel
+skyscraper|noun|a very tall building|The skyscraper had a hundred floors.|From the skyscraper, cars looked tiny.|Places and travel
+stadium|noun|a big place with seats around a field for games and concerts|The stadium was full of fans.|We cheered from the top of the stadium.|Places and travel
+steeple|noun|a tall, pointed tower on top of a church|A bell rang in the steeple.|The steeple rose above the town.|Places and travel
+subway|noun|an underground train|We took the subway downtown.|The subway was crowded at rush hour.|Places and travel
+suburb|noun|a neighborhood near the edge of a city|We live in a quiet suburb.|The suburb had big yards.|Places and travel
+temple|noun|a building for worship|We visited an ancient temple.|The temple had a golden roof.|Places and travel
+tourist|noun|a person who visits a place for fun|The tourist took lots of photos.|Every tourist wants to see the falls.|Places and travel
+trailhead|noun|the place where a hiking trail begins|We parked at the trailhead.|A map stood at the trailhead.|Places and travel
+tram|noun|a vehicle that runs on rails along city streets|We rode the tram across town.|The tram dinged its bell.|Places and travel
+trek|noun|a long, hard journey, usually on foot|The trek up the mountain took two days.|It's a trek to the bus stop.|Places and travel
+viaduct|noun|a long bridge with many arches, carrying a road or railway|The train rolled across the viaduct.|The stone viaduct crossed the valley.|Places and travel
+vineyard|noun|a farm where grapes are grown|Rows of grapes covered the vineyard.|We picked grapes at the vineyard.|Places and travel
+wharf|noun|a platform where ships load and unload|Fishermen sold crabs on the wharf.|The wharf smelled like the sea.|Places and travel
+windmill|noun|a building with big blades that turn in the wind to make power or grind grain|The windmill turned in the breeze.|An old windmill stood on the hill.|Places and travel
+airfare|noun|the price of a plane ticket|Airfare is cheaper on weekdays.|We saved up for the airfare.|Money and work
+tollbooth|noun|a small booth where drivers pay to use a road or bridge|We stopped at the tollbooth to pay.|The tollbooth gave us a receipt.|Places and travel
