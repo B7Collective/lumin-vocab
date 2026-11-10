@@ -38,3 +38,21 @@ empathize|verb|To understand and share another person's feelings|I can empathize
 moot|adjective|No longer worth discussing; open to debate|The rain made the picnic question moot.
 pragmatic
 succinct
+obfuscate
+tangential
+aphorism
+interlocutor
+repartee
+laconic
+loquacious
+garrulous
+voluble
+pithy
+cogent
+platitude
+equivocal
+elucidate
+conciliatory
+circumlocution
+equivocate
+badinage

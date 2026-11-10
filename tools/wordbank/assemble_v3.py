@@ -123,10 +123,13 @@ for o in out:
 out = [o for o in out if not (o["l"] == 2 and o["z"] >= 4.6 and not o.get("x"))]
 # Re-tier the teen and adult-academic levels by how common each word is, so every step up is harder:
 # Scholar gets the most familiar third, Wordsmith the middle, Academic the least common. Each level keeps
-# its size. Words on side trails and hand-moved words stay put, so trails and kids' trails don't shift.
+# its size. Hand-moved words stay put. Side trails pick their words by level band, so this is safe for them too.
 # (Without this, Academic's everyday "academic" words, like salary and urban, made it easier than Wordsmith.)
-movable = [o for o in out if o["l"] in (2, 3, 4) and not o.get("c") and not o.get("x") and o["w"] not in relevel]
-size = {l: sum(1 for o in movable if o["l"] == l) for l in (2, 3, 4)}
+movable = [o for o in out if o["l"] in (2, 3, 4) and not o.get("c") and o["w"] not in relevel]
+fixed = collections.Counter(o["l"] for o in out if o["l"] in (2, 3, 4) and not o.get("c") and o["w"] in relevel)
+total = len(movable) + sum(fixed.values())
+# each of the three levels ends up about the same size, counting the hand-moved words already there
+size = {2: total // 3 - fixed[2], 3: total // 3 - fixed[3]}; size[4] = len(movable) - size[2] - size[3]
 movable.sort(key=lambda o: -(o["z"] - 0.05 * len(o["w"])))
 i = 0
 for l in (2, 3, 4):

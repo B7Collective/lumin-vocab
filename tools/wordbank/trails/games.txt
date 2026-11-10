@@ -25,3 +25,30 @@ clutch|adjective|Done well under pressure at a key moment|He made a clutch shot 
 triumph
 rematch|noun|A second game between the same players|They asked for a rematch.||0
 teammate|noun|A member of the same team|My teammate passed me the ball.||0
+nemesis
+indomitable
+doughty
+legerdemain
+nonpareil
+fortuitous
+vanquish|verb|To defeat completely|They hoped to vanquish last year's champions.||4
+acumen|noun|Sharp skill at judging situations and making good decisions|Her tactical acumen won the chess tournament.||4
+adversary|noun|An opponent or enemy|He shook hands with his old adversary after the match.||3
+capitulate|verb|To give in or surrender|After an hour of tough defense, the other team began to capitulate.||4
+feint|noun|A pretend move meant to fool an opponent|The fencer's feint drew her opponent to the left.||4
+parry|verb|To block or turn aside an attack, or dodge a tricky question|She learned to parry every shot at the net.||4
+zugzwang|noun|(chess) A position where every possible move makes things worse|With no safe moves left, the king was in zugzwang.||5
+ascendancy|noun|A position of power or control over others|The team's ascendancy in the league lasted five seasons.||4
+stratagem|noun|A clever plan or trick to outwit an opponent|Her stratagem was to give up a piece and win the game.||4
+gamesmanship|noun|Winning with clever tricks that bend the rules without breaking them|Talking during his opponent's serve was pure gamesmanship.||4
+pyrrhic|adjective|Won at such a great cost that it is barely worth it|It was a pyrrhic victory: we won, but our best player was hurt.||5
+vicissitudes|noun|Changes of fortune, good and bad|Through all the vicissitudes of the season, they kept their spirit.||5
+tenacity|noun|Determination to keep going; refusing to give up|The goalie's tenacity kept them in the game.||3
+endgame|noun|The final stage of a game, especially chess|She was shaky in the opening but brilliant in the endgame.||3
+grandmaster|noun|A chess player of the highest rank|The grandmaster played twenty games at once.||3
+redoubtable
+indefatigable
+dauntless
+celerity
+puissant
+prestidigitation

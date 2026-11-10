@@ -27,3 +27,32 @@ rover|noun|A vehicle that explores the surface of a planet or moon|The rover too
 universe
 astronomer
 planet
+syzygy
+aphelion
+empyrean
+welkin
+cosmology
+refraction
+astrolabe
+sextant
+meridian
+crepuscular
+noctilucent
+gloaming
+orrery
+penumbra
+perihelion|noun|The point in an orbit when a planet or comet is closest to the sun|Earth reaches perihelion in early January.||5
+parallax|noun|The way an object seems to shift when seen from two places, used to measure the distance to stars|Astronomers used parallax to measure how far away the star is.||5
+quasar|noun|An extremely bright, distant object powered by a giant black hole|Light from that quasar left it billions of years ago.||4
+interstellar|adjective|Between the stars|The old probe is now in interstellar space.||3
+heliocentric|adjective|Having the sun at the center|The heliocentric model put the sun, not Earth, in the middle.||4
+gibbous|adjective|(of the moon) More than half lit but not yet full|A gibbous moon rose over the hills.||5
+occultation|noun|When one object in the sky passes in front of another and hides it|We watched the occultation of a bright star by the moon.||5
+albedo|noun|How much light a surface reflects|Fresh snow has a very high albedo.||5
+sublunary
+vespertine
+umbral
+tenebrous
+stratosphere
+incandescent
+nadir

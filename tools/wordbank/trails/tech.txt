@@ -24,3 +24,35 @@ avatar|noun|A picture or character that represents you online|She chose a fox as
 debug|verb|To find and fix errors in code|It took an hour to debug the game.
 backup|noun|A copy of data kept in case the original is lost|Make a backup of your photos.||0
 privacy|noun|Being free from being watched or shared without permission|Check your privacy settings.
+digitize
+heuristic
+semiconductor
+transistor
+extrapolate
+latency|noun|The delay between asking for data and getting it|High latency made the video call stutter.||4
+redundancy|noun|Extra copies or systems kept as a backup in case one fails|Store your photos in two places for redundancy.||4
+obsolescence|noun|The process of becoming outdated and no longer used|Some gadgets seem built for quick obsolescence.||4
+interoperable|adjective|Able to work smoothly with other systems|The new apps are interoperable with older computers.||5
+open-source|adjective|Software whose code is shared freely for anyone to see, use and improve|This app is open-source, so anyone can check how it works.||4
+metadata|noun|Data that describes other data, like when and where a photo was taken|The photo's metadata showed the date it was taken.||4
+biometric|adjective|Using body features, like fingerprints or faces, to identify someone|The phone has a biometric lock.||4
+skeuomorphic|adjective|Designed to look like a real-world object, like a notes app with paper lines|Old apps were skeuomorphic, with fake leather and stitching.||5
+cryptography|noun|The science of writing and reading secret codes|Cryptography keeps your messages private.||4
+recursion|noun|In programming, a function that calls itself to solve a smaller version of a problem|The maze solver works by recursion.||5
+syntax|noun|The rules for how words or code must be arranged|One missing bracket caused a syntax error.||3
+telemetry|noun|Data a device sends automatically to someone far away|The app's telemetry reports crashes to the developers.||5
+emulator|noun|A program that lets one computer act like another|He played old arcade games on an emulator.||4
+firmware|noun|Built-in software that controls a device's basic hardware|Update the router's firmware tonight.||4
+throughput|noun|How much work or data a system can handle in a given time|The new server doubled our throughput.||5
+asynchronous|adjective|Not happening at the same time; in tech, tasks that run without waiting for each other|The class used asynchronous video lessons.||4
+instantiate
+interpolate
+iterative
+decouple
+oscillate
+calibrate
+encapsulate
+deprecate
+idempotent|adjective|(computing) Giving the same result no matter how many times an action is repeated|Pressing an elevator button is idempotent: once or ten times, one elevator comes.||5
+obfuscate
+modality

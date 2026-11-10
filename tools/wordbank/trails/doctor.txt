@@ -30,3 +30,30 @@ antibiotic|noun|A medicine that kills bacteria|Antibiotics don't work on colds.
 ultrasound|noun|A scan that uses sound waves to see inside the body|The ultrasound showed a healthy heart.
 anesthesia|noun|Medicine that stops you from feeling pain|He was under anesthesia during surgery.
 recuperate|verb|To recover health or strength|She recuperated at home for a week.
+malady
+etiology
+palliative
+analgesic
+pathogen
+remission
+emollient
+efficacious
+soporific
+anodyne
+degenerative
+autonomic
+deleterious
+salubrious
+insalubrious
+valetudinarian
+febrile
+malinger
+lenitive
+palliate
+proprioception
+nostrum
+dyspeptic
+sternutation
+singultus
+oscitation
+somnolent

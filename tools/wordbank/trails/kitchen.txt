@@ -26,3 +26,24 @@ brine
 puree|verb|To blend food until smooth|Puree the soup in the blender.
 dollop|noun|A spoonful of something soft|Add a dollop of whipped cream.||0
 drizzle
+macerate
+gastronomy
+comestible
+postprandial
+repast
+epicurean
+gourmand
+infuse
+confection
+victuals
+leaven
+chiffonade|noun|Leafy herbs or greens sliced into thin ribbons|Finish the soup with a chiffonade of basil.||4
+brunoise|noun|Vegetables cut into tiny, even cubes|The chef asked for a brunoise of carrot and celery.||5
+coddle|verb|To cook gently in water just below boiling; also, to treat someone too gently|Coddle the eggs for six minutes.||4
+confit|noun|Food cooked slowly in fat or sugar until very tender|The garlic confit melted into the bread.||5
+emulsify|verb|To blend two liquids that normally separate, like oil and vinegar|Whisk quickly to emulsify the dressing.||4
+esculent
+quaff
+slake
+satiate
+surfeit

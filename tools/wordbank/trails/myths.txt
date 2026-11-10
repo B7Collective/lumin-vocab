@@ -33,3 +33,23 @@ fauna
 hygiene
 halcyon
 zephyr
+stentorian
+cornucopia
+chimera
+elysian
+protean|adjective|Able to change shape or adapt easily. From Proteus, a sea god who could change form|A protean actor, she played a queen and a robot in one week.||4
+sibylline|adjective|Mysterious and prophetic. From the Sibyls, the prophetesses of old stories|The fortune cookie gave a sibylline warning.||5
+hector|verb|To bully or nag. From Hector, a hero of the Trojan War|Please don't hector your brother about his homework.||4
+procrustean|adjective|Forcing everything to fit one rigid pattern. From Procrustes, who stretched or trimmed his guests to fit his bed|The procrustean rules ignored every special case.||5
+sisyphean|adjective|Endless and hopeless, like pushing a boulder up a hill forever. From Sisyphus|Keeping the beach house free of sand is a sisyphean task.||5
+promethean|adjective|Boldly creative and daring. From Prometheus, who gave fire to people|The inventor had a promethean streak.||5
+panacea|noun|A cure for everything. From Panacea, goddess of healing|There's no panacea for a broken heart.||4
+stygian|adjective|Very dark and gloomy. From the river Styx in the underworld|The cave was stygian beyond the first bend.||5
+saturnine|adjective|Gloomy and serious. From Saturn, linked in old belief with a slow, dark mood|His saturnine face finally broke into a smile.||5
+labyrinthine|adjective|Twisting and confusing, like a maze|The old library had labyrinthine halls.||4
+oracular|adjective|Mysterious and wise-sounding, like an oracle's message|His oracular replies drove the reporters crazy.||5
+chthonic
+myrmidon
+nepenthe
+panoply
+augury

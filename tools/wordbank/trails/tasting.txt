@@ -24,3 +24,25 @@ scrumptious
 bland
 decadent|adjective|Rich and indulgent|The chocolate cake was decadent.||2
 mellow|adjective|Smooth and gentle, not harsh|The soup had a mellow flavor.||1
+gustatory
+olfactory
+redolent
+cloying
+insipid
+acrid
+pungent
+savor
+epicurean
+connoisseur
+saccharine
+ambrosial
+palatable
+unctuous|adjective|Rich, smooth and almost oily in the mouth; also, too eager to please|The slow-cooked sauce was deep and unctuous.||5
+astringent|adjective|Sharp and drying in the mouth, like strong tea or unripe fruit|The unripe persimmon was so astringent it puckered my mouth.||4
+toothsome|adjective|Pleasantly firm to bite; tasty|The pasta was cooked until just toothsome.||4
+mouthfeel|noun|The way a food or drink feels in your mouth|The soup had a silky mouthfeel.||4
+piquancy|noun|A pleasantly sharp, spicy or tangy flavor|A squeeze of lime added piquancy to the salsa.||5
+sapid|adjective|Full of strong, pleasant flavor|The sapid broth needed nothing more.||5
+nidorous
+mephitic
+fetid

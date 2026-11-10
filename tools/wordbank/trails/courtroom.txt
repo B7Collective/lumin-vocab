@@ -27,3 +27,22 @@ exonerate
 litigate|verb|To take a dispute to court|They chose to settle instead of litigate.
 bailiff|noun|An officer who keeps order in a courtroom|The bailiff asked everyone to rise.
 recess|noun|A short break in a court session; a break at school|The judge called a recess.
+exculpate
+corroborate
+jurisprudence
+impunity
+contravene
+vindicate
+adjudicate
+malfeasance
+indemnify
+stipulate
+proviso
+retroactive
+reparation
+recant
+impute
+inalienable
+unimpeachable
+gravamen
+condign

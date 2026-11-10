@@ -31,3 +31,29 @@ graupel
 breeze
 gust
 precipitation
+katabatic
+brumal
+hibernal
+gelid
+estival
+mizzle
+zephyr
+inclement
+sweltering
+tempestuous
+sultry
+deluge
+nimbus
+alpenglow
+isobar|noun|A line on a weather map joining places with the same air pressure|Where each isobar sits close to the next, expect strong winds.||5
+sirocco|noun|A hot, dusty wind that blows from North Africa across the Mediterranean|The sirocco turned the sky a hazy orange.||5
+haboob|noun|A huge wall of dust and sand pushed ahead of a storm|A haboob swept across the desert town.||5
+boreal
+spindrift
+algid
+xeric
+turbid
+torrential
+balmy
+tepid
+permafrost

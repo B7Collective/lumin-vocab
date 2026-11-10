@@ -136,7 +136,9 @@ export function stats(pid) {
 // Deterministic shuffle so each person gets their own order, stable across devices.
 function seeded(str) { let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; } return () => { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; }; }
 // Which levels a category can draw from, so kids never see grown-up words
-export function levelsFor(p) { return p.level <= 1 ? [0, 1] : [p.level - 1, p.level, p.level + 1].filter((l) => l <= MAX_LEVEL); }
+// Levels to draw from when browsing topics and sets: kids stay with kids' words, teens get a step either side,
+// adults get only the adult levels
+export function levelsFor(p) { return p.level <= 1 ? [0, 1] : p.level >= 4 ? [4, 5] : [p.level - 1, p.level, p.level + 1]; }
 export function topicCounts(p) {
   const allowed = levelsFor(p), out = {};
   for (const w of MAIN) if (allowed.includes(w.l)) out[w.t] = (out[w.t] || 0) + 1;
@@ -314,10 +316,14 @@ export function trailsFor(p) {
   return [...TRAILS].sort((x, y) => rank(x.key) - rank(y.key)).filter((t) => t.aud === "all" || (t.aud === "teen" && !kid) || (t.aud === "adult" && !kid && (p.role === "adult" || p.level >= 4)))
     .filter((t) => trailWords(t, p).length >= 6);
 }
-// Kids see the gentler words of a trail; everyone else sees all of it, easiest first
+// Each trail shows the words that fit your level, in the order they were written:
+// kids up to Scholar, Scholar up to Academic, Wordsmith and up for older teens, and only Academic and Philosopher for adults
+// (minus anything very common). A mix-up pair stays together if either half fits.
+const TRAIL_BAND = [[0, 2], [0, 2], [2, 4], [3, 5], [4, 5], [4, 5]];
+export function trailBand(p) { const [lo, hi] = isKid(p) ? [0, 2] : TRAIL_BAND[Math.min(p.level, MAX_LEVEL)]; return { lo, hi, zmax: p.level >= 4 && !isKid(p) ? 4 : 9 }; }
 export function trailWords(t, p) {
-  const kid = isKid(p);
-  return t.words.map((w) => BY.get(w)).filter((w) => w && (!kid || w.l <= 2));
+  const { lo, hi, zmax } = trailBand(p), ok = (w) => w && w.l >= lo && w.l <= hi && (w.z || 0) < zmax;
+  return t.words.map((w) => BY.get(w)).filter((w) => w && (ok(w) || (w.cf && t.words.includes(w.cf) && ok(BY.get(w.cf)))));
 }
 export function trailChapters(key, p) {
   const t = trail(key); if (!t) return [];

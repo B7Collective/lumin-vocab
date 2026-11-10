@@ -35,3 +35,35 @@ honk|noun|The loud sound of a goose or a car horn|Geese honked overhead.
 tintinnabulation
 susurrus
 bombinate
+cacophony
+stentorian
+sibilant
+plangent
+caterwaul
+stridulate
+sough
+dulcet
+mellifluous
+sonorous
+borborygmus
+euphony
+cadence
+cachinnate
+onomatopoeia|noun|A word that sounds like the noise it names, such as buzz or sizzle|"Kerplunk" is a perfect bit of onomatopoeia.||3
+reverberate|verb|To echo again and again|The drumbeat seemed to reverberate through the canyon.||3
+clangor|noun|A loud, ringing, repeated noise|The clangor of the bells woke the whole town.||4
+crepitate|verb|To make a crackling sound|Dry leaves crepitate under your boots in autumn.||5
+thrum|verb|To make a low, steady humming or strumming sound|Listen to the rain thrum on the tin roof.||4
+skirl|noun|A shrill, wailing sound, like bagpipes|The skirl of the pipes opened the parade.||5
+burble|verb|To make a soft bubbling sound|A little stream would burble past the cabin all night.||4
+ululate|verb|To make a long, wavering, high-pitched cry|The crowd began to ululate in celebration.||5
+clarion|adjective|Loud and clear, like a trumpet|She ended with a clarion call to action.||4
+staccato|adjective|Made of short, sharp, separate sounds|The staccato tapping of hail filled the car.||4
+resonant|adjective|Deep, clear and lingering|His resonant voice filled the hall.||3
+strident|adjective|Loud and harsh|A strident alarm went off down the hall.||4
+raucous
+guttural
+timbre
+lilting
+bedlam
+decibel

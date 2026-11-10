@@ -25,3 +25,33 @@ expedition
 nomad
 visa|noun|Permission stamped in a passport to enter a country|She applied for a student visa.||2
 stopover|noun|A short stay in a place during a longer journey|We made a stopover in Iceland.
+peregrinate
+wayfarer
+itinerant
+peripatetic
+circumnavigate
+circuitous
+cartography
+impedimenta
+traverse
+cosmopolitan
+embarkation|noun|The act of boarding a ship or aircraft at the start of a journey|Embarkation begins an hour before the ship sails.||4
+disembark|verb|To leave a ship, aircraft or train|Please wait for the signal to disembark.||3
+sojourn|noun|A short stay in a place that is not your home|A brief sojourn in the mountains was just what she needed.||4
+peregrination|noun|A long journey, especially a wandering one|His peregrination took him through nine countries on foot.||5
+expatriate|noun|A person who lives outside their own country|The cafe was a favorite of every expatriate in the city.||4
+polyglot|noun|A person who speaks several languages well|The tour guide was a polyglot who switched languages mid-sentence.||4
+vagabond|noun|A person who wanders from place to place without a settled home|He traveled like a vagabond, with one bag and no plans.||3
+xenophile|noun|A person who is drawn to foreign places, people and customs|A true xenophile, she tried every dish the market offered.||5
+concourse|noun|A large open hall in an airport or station where people walk and gather|We agreed to meet by the clock in the main concourse.||3
+pilgrimage|noun|A journey to a place that holds deep meaning for you|Visiting her grandmother's village felt like a pilgrimage.||3
+hinterland|noun|The remote areas of a country, far from its cities and coasts|The old train wound slowly into the hinterland.||4
+divagate
+perambulate
+circumambulate
+antipodes
+accoutrements
+promontory
+argosy
+errant
+transitory

@@ -1,4 +1,4 @@
-# spelling|Often Misspelled|Words that trip up even good spellers, with the trick to each one|all|2|Talk and writing
+# spelling|Often Misspelled|Words that trip up even good spellers, many with a trick to remember them|all|2|Talk and writing
 necessary|adjective|Needed; required. Trick: one collar, two sleeves (one c, two s)|Sleep is necessary for a growing brain.||1
 separate|adjective|Apart; not joined. Trick: there's "a rat" in separate|Keep the raw meat separate from the salad.||1
 definitely|adverb|Without any doubt. Trick: it holds the word "finite"|We are definitely going to the beach.||1
@@ -55,3 +55,32 @@ sincerely|adverb|Truly and honestly. Trick: keep the e from "sincere"|I sincerel
 parallel
 millennium
 exaggerate
+liaison
+desiccate
+onomatopoeia
+mnemonic
+vacillate
+conscientious
+connoisseur
+idiosyncrasy|noun|A habit or quirk unique to one person. Trick: it ends in -sy, not -cy|Humming while she reads is her idiosyncrasy.||4
+minuscule|adjective|Extremely small. Trick: it comes from minus, so mi-nus, not mini|Only a minuscule crumb was left.||4
+inoculate|verb|To protect against a disease with a vaccine. Trick: one n, one c|Vets inoculate puppies against several diseases.||4
+sacrilegious|adjective|Disrespectful toward something sacred. Trick: it's sacri-, not religious|Putting ketchup on that steak felt sacrilegious to the chef.||5
+pharaoh|noun|A ruler of ancient Egypt. Trick: the a comes before the o|The pharaoh's tomb was full of treasure.||3
+unwieldy|adjective|Hard to carry or handle because of its size or shape. Trick: it's wield, not weild|The unwieldy couch wouldn't fit through the door.||4
+impostor|noun|Someone who pretends to be someone else. Trick: it ends in -or|The impostor wore a borrowed uniform.||4
+memento|noun|An object kept to remember a person or event. Trick: it's me-mento, as in memory|A seashell was her memento of the trip.||4
+indispensable|adjective|Absolutely necessary. Trick: it ends in -able|A good flashlight is indispensable when camping.||3
+camaraderie|noun|Friendship and trust in a group. Trick: camara-, not comra-|The team's camaraderie showed on and off the field.||4
+bourgeois|adjective|Typical of the comfortable middle class, sometimes with a hint of dullness. Trick: b-o-u-r-g-e-o-i-s|They found the gated suburb a little bourgeois.||5
+fuchsia|noun|A bright purplish-pink color. Trick: it's fuch-sia, named after a botanist, not fusch-ia|She painted the front door fuchsia.||4
+paraphernalia|noun|The many small items used for an activity. Trick: remember the r in para-pher|The drawer was full of baking paraphernalia.||4
+sesquipedalian
+pusillanimous
+surreptitious
+effervescent
+fastidious
+dilettante
+sacrosanct
+recalcitrant
+ingratiate

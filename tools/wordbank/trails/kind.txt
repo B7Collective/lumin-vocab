@@ -28,3 +28,24 @@ selfless|adjective|Caring more about others than yourself|The firefighter's self
 trustworthy|adjective|Able to be relied on to be honest|A trustworthy friend keeps secrets.
 conscientious
 humble
+affable
+ebullient
+debonair
+forthright
+genial
+laudable
+munificent
+sagacious
+scrupulous
+stalwart
+avuncular
+cordial
+urbane
+winsome
+probity
+fortitude
+candor
+sprezzatura
+alacrity
+forbearance
+accolade

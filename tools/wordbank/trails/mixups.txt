@@ -50,3 +50,29 @@ imply|verb|To suggest without saying directly. The speaker implies|Are you imply
 infer ~ imply
 emigrate|verb|To leave your country to live in another|Her great-grandparents emigrated from Italy.|||~immigrate
 immigrate|verb|To come into a new country to live|They immigrated to Canada in 1990.|||~emigrate
+tortuous|adjective|Full of twists and turns; complicated. Not the same as torturous|The tortuous mountain road made everyone carsick.||4|~torturous
+torturous|adjective|Causing great pain or suffering|Waiting for the results was torturous.||4|~tortuous
+censor|verb|To remove parts of something considered unsuitable|The station will censor the rude words in the song.||3|~censure
+censure|verb|To criticize strongly and officially|The council voted to censure the mayor.||4|~censor
+venal|adjective|Open to bribery; willing to do wrong for money|The venal official took gifts from both sides.||5|~venial
+venial|adjective|Minor and easily forgiven|Forgetting to call back is a venial slip, not a betrayal.||5|~venal
+militate|verb|To be a strong reason against something (usually "militate against")|Bad weather may militate against an outdoor wedding.||5|~mitigate
+mitigate|verb|To make something less severe|Planting trees can mitigate the summer heat.||4|~militate
+appraise|verb|To judge the value or quality of something|An expert will appraise the old ring.||3|~apprise
+apprise|verb|To inform or tell someone|Please apprise me of any changes.||4|~appraise
+disinterested|adjective|Fair because you have nothing to gain. Not the same as uninterested|We need a disinterested judge.||4|~uninterested
+uninterested|adjective|Not interested; bored|The cat looked uninterested in its new toy.||3|~disinterested
+deprecate|verb|To express disapproval of something, or to play it down|She tends to deprecate her own cooking, but it's delicious.||5|~depreciate
+depreciate|verb|To lose value over time|A new car starts to depreciate the moment you drive it home.||4|~deprecate
+regretful|adjective|Feeling sorry about something you did|He was regretful about missing her recital.||3|~regrettable
+regrettable|adjective|Deserving regret; unfortunate|The mix-up was regrettable but easy to fix.||3|~regretful
+loath|adjective|Unwilling; reluctant|I'm loath to leave such a cozy cafe.||4|~loathe
+loathe|verb|To hate strongly|I loathe cold, soggy fries.||3|~loath
+eminent|adjective|Famous and respected in a field|An eminent scientist gave the opening talk.||3|~imminent
+imminent|adjective|About to happen very soon|With dark clouds overhead, rain was imminent.||3|~eminent
+complaisant ~ complacent
+complacent ~ complaisant
+proscribe ~ prescribe
+prescribe|verb|To order a medicine or treatment; to set down a rule|The doctor will prescribe rest and fluids.||2|~proscribe
+ingenuous ~ ingenious
+ingenious ~ ingenuous

@@ -41,3 +41,34 @@ schadenfreude
 zeitgeist
 angst
 canyon|noun|A deep valley with steep sides. From Spanish cañón, "tube"|The canyon glowed red at sunset.||0
+malaise
+juggernaut
+kowtow
+sangfroid
+wunderkind
+raconteur
+virtuoso
+connoisseur
+ennui|noun|A tired, restless boredom. From French|A week of rainy ennui ended when the circus came to town.||4
+kitsch|noun|Showy, sentimental art or objects, often enjoyed with a wink. From German|The diner was full of cheerful kitsch, from neon signs to flamingo salt shakers.||4
+chutzpah|noun|Bold, cheeky confidence. From Yiddish|It took chutzpah to ask the chef for his secret recipe.||4
+hubris|noun|Too much pride or self-confidence. From Greek|The champion's hubris made him skip practice, and he lost.||4
+aficionado|noun|A devoted fan who knows a lot about something. From Spanish|A jazz aficionado, he owned hundreds of old records.||4
+cachet|noun|Prestige; a special quality people admire. From French|The little bakery had real cachet among food lovers.||4
+bravado|noun|A bold show of courage meant to impress, often hiding fear. From Spanish|His bravado faded as the roller coaster began to climb.||3
+sobriquet|noun|A nickname. From French|The fast-talking auctioneer earned the sobriquet "Lightning."||5
+pundit|noun|An expert who shares opinions, often in the media. From Hindi, "learned one"|Every pundit on the panel predicted the wrong winner.||4
+leitmotif|noun|A theme or idea that keeps coming back in a work. From German|Loss is the leitmotif of the whole novel.||5
+pastiche|noun|A work that imitates another style, often as a playful tribute. From Italian|The play is a pastiche of old detective movies.||5
+ersatz|adjective|Fake or substitute, usually not as good. From German|The ersatz coffee tasted like burnt toast.||5
+vendetta|noun|A long, bitter feud. From Italian|The two neighbors kept up a vendetta over a fence.||3
+mantra|noun|A word or phrase repeated for focus or encouragement. From Sanskrit|"One step at a time" became her mantra.||3
+gauche|adjective|Socially awkward; lacking grace. From French, "left"|It felt gauche to check his phone during the toast.||5
+weltanschauung
+saudade
+lagniappe
+tchotchke
+dilettante
+bricolage
+gestalt
+weltschmerz
