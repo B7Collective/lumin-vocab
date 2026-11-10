@@ -116,11 +116,13 @@ export function todayCount(pid) {
   const start = srs.startOfDay(Date.now());
   return cards(pid).filter(c => (c.st === "learning" || c.st === "known") && (c.actAt || 0) >= start).length;
 }
+// Reviews come only from words at your current level (and your own custom words)
+const reviewable = (pid) => { const p = profile(pid); return cards(pid).filter(c => c.st === "learning" && c.srs && (!p || atLevel(p, lookup(c.w)))); };
 export function due(pid, now = Date.now()) {
-  return cards(pid).filter(c => c.st === "learning" && c.srs && c.srs.due <= now).sort((a, b) => a.srs.due - b.srs.due);
+  return reviewable(pid).filter(c => c.srs.due <= now).sort((a, b) => a.srs.due - b.srs.due);
 }
 export function nextDue(pid) {
-  const l = cards(pid).filter(c => c.st === "learning" && c.srs).map(c => c.srs.due).sort((a, b) => a - b);
+  const l = reviewable(pid).map(c => c.srs.due).sort((a, b) => a - b);
   return l[0] || 0;
 }
 export function stats(pid) {
@@ -136,9 +138,10 @@ export function stats(pid) {
 // Deterministic shuffle so each person gets their own order, stable across devices.
 function seeded(str) { let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; } return () => { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; }; }
 // Which levels a category can draw from, so kids never see grown-up words
-// Levels to draw from when browsing topics and sets: kids stay with kids' words, teens get a step either side,
-// adults get only the adult levels
-export function levelsFor(p) { return p.level <= 1 ? [0, 1] : p.level >= 4 ? [4, 5] : [p.level - 1, p.level, p.level + 1]; }
+// The one rule for what you see: words come only from the level you chose (your own custom words always show).
+// Every feed, topic, set, trail, road, game and review goes through this.
+export function levelsFor(p) { return [p.level]; }
+export const atLevel = (p, w) => !!w && (w.custom || w.l === p.level);
 export function topicCounts(p) {
   const allowed = levelsFor(p), out = {};
   for (const w of MAIN) if (allowed.includes(w.l)) out[w.t] = (out[w.t] || 0) + 1;
@@ -150,7 +153,7 @@ export function queue(p) {
   if (p.feedSet) {
     const t = trail(p.feedSet);
     if (t) return trailWords(t, p).filter(w => !done.has(w.w));
-    const allowed = p.feedSet === "funny" ? [0, 1, 2, 3] : levelsFor(p);
+    const allowed = levelsFor(p);
     return MAIN.filter(w => w.x && w.x.includes(p.feedSet) && allowed.includes(w.l) && !done.has(w.w)).map(w => [rnd(), w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
   }
   if (p.feedTopic) {
@@ -159,7 +162,6 @@ export function queue(p) {
       .map(w => [Math.abs(w.l - p.level) + rnd() * 0.9, w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
   }
   const at = MAIN.filter(w => w.l === p.level && !done.has(w.w));
-  const below = p.level > 0 ? MAIN.filter(w => w.l === p.level - 1 && !done.has(w.w)) : [];
   // Any order, with a light touch: the youngest teen level eases in with its more familiar words; at every
   // level the very common ones wait at the back, so the first words you meet are the ones worth learning
   const keyed = (arr) => arr.map(w => [(p.level === 2 ? -(w.z || 2.5) * 0.3 : 0) + ((w.z || 0) >= 4.2 ? 2 : 0) + rnd() * 1.8, w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
@@ -168,8 +170,8 @@ export function queue(p) {
     const fav = main.filter(w => p.topics.includes(w.t)), rest = main.filter(w => !p.topics.includes(w.t));
     main = []; while (fav.length || rest.length) { if (fav.length) main.push(fav.shift()); if (fav.length) main.push(fav.shift()); if (rest.length) main.push(rest.shift()); }
   }
-  // When a level runs out, keep going with the level below so the feed never ends abruptly
-  return main.length ? main : keyed(below);
+  // When every word at this level has been seen, the Words screen says so; it never borrows from another level
+  return main;
 }
 
 // ---- Collections and custom words ----------------------------------------
@@ -316,14 +318,11 @@ export function trailsFor(p) {
   return [...TRAILS].sort((x, y) => rank(x.key) - rank(y.key)).filter((t) => t.aud === "all" || (t.aud === "teen" && !kid) || (t.aud === "adult" && !kid && (p.role === "adult" || p.level >= 4)))
     .filter((t) => trailWords(t, p).length >= 6);
 }
-// Each trail shows the words that fit your level, in the order they were written:
-// kids up to Scholar, Scholar up to Academic, Wordsmith and up for older teens, and only Academic and Philosopher for adults
-// (minus anything very common). A mix-up pair stays together if either half fits.
-const TRAIL_BAND = [[0, 2], [0, 2], [2, 4], [3, 5], [4, 5], [4, 5]];
-export function trailBand(p) { const [lo, hi] = isKid(p) ? [0, 2] : TRAIL_BAND[Math.min(p.level, MAX_LEVEL)]; return { lo, hi, zmax: p.level >= 4 && !isKid(p) ? 4 : 9 }; }
+// Each trail shows only the words at your level, in the order they were written.
+// A mix-up shows only when both words of the pair are at your level.
 export function trailWords(t, p) {
-  const { lo, hi, zmax } = trailBand(p), ok = (w) => w && w.l >= lo && w.l <= hi && (w.z || 0) < zmax;
-  return t.words.map((w) => BY.get(w)).filter((w) => w && (ok(w) || (w.cf && t.words.includes(w.cf) && ok(BY.get(w.cf)))));
+  const ok = (w) => w && w.l === p.level;
+  return t.words.map((w) => BY.get(w)).filter((w) => ok(w) && (!w.cf || !t.words.includes(w.cf) || ok(BY.get(w.cf))));
 }
 export function trailChapters(key, p) {
   const t = trail(key); if (!t) return [];
@@ -368,7 +367,7 @@ const pickOne = (a) => a[Math.floor(Math.random() * a.length)];
 export function distractors(word, n, field) {
   const lv = word.l == null ? 3 : word.l;
   let same = WORDS.filter((x) => x.w !== word.w && x.l === lv && x[field] && x[field] !== word[field] && x.cf !== word.w && word.cf !== x.w);
-  if (same.length < n * 4) same = same.concat(WORDS.filter((x) => x.w !== word.w && Math.abs(x.l - lv) === 1 && x[field] && x[field] !== word[field]));
+  if (same.length < n) same = same.concat(WORDS.filter((x) => x.w !== word.w && Math.abs(x.l - lv) === 1 && x[field] && x[field] !== word[field]));
   const pos = same.filter((x) => x.p === word.p);
   const pool = pos.length >= n * 3 ? pos : same;
   const out = new Set();
@@ -462,7 +461,7 @@ export function mixedKind(word, reps, kid) {
 }
 // Words a person can practice: what they're learning, then their journey words, then their level
 export function practicePool(p, size = 10, topic = null) {
-  const mine = cards(p.id).filter((c) => c.st === "learning").map((c) => lookup(c.w)).filter(Boolean);
+  const mine = cards(p.id).filter((c) => c.st === "learning").map((c) => lookup(c.w)).filter((w) => atLevel(p, w));
   let pool = shuffled(topic ? mine.filter((w) => w.t === topic) : mine);
   if (pool.length < size) {
     const j = journeyState(p), chs = chapterWords(p.level).slice(0, j.ch + 1).flatMap((c) => c.words);

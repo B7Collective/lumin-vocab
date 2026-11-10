@@ -170,3 +170,21 @@ razzmatazz|The opening ceremony had plenty of razzmatazz.
 conniption|The cat had a conniption at the sight of the vacuum.
 gobsmacked|We were gobsmacked by the view from the top.
 flibbertigibbet|He called his chatty parrot a little flibbertigibbet.
+ecliptic|Eclipses can only happen when the moon crosses the ecliptic.
+azimuth|Point the telescope to an azimuth of ninety degrees, due east.
+asterism|The Summer Triangle is a bright asterism of three stars.
+luminosity|Astronomers compare each star's luminosity to the sun's.
+perigee|The satellite moves fastest at perigee.
+regolith|The rover scooped up a sample of red regolith.
+accretion|Comets may have grown by slow accretion of ice and dust.
+sidereal|Astronomers keep sidereal time to track the stars.
+anticyclone|A winter anticyclone can bring frosty, still mornings.
+adiabatic|Pilots learn about adiabatic cooling in their first weather class.
+insolation|Solar panels are rated for the local insolation.
+orographic|Orographic clouds often cap the peak in the afternoon.
+isotherm|The forecast map showed each isotherm in a different color.
+convection|Convection carries warm air up from the sunny ground.
+apollonian|The museum's apollonian halls were cool, white and quiet.
+dionysian|The festival turned dionysian once the band started.
+olympian|She spoke with olympian confidence about the plan.
+hermetic|The old scientist lived a hermetic life in the hills.

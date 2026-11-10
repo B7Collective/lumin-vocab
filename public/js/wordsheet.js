@@ -55,7 +55,7 @@ export function details(wordText) {
       h("div", { class: "dhead" }, h("span", { class: "muted" }, w.p), sayPill(w, p)),
       sec("Meaning", h("p", { style: { fontSize: "var(--t-l)" } }, w.d)),
       w.e ? sec("Example", h("p", { class: "ex" }, w.e), w.e2 ? h("p", { class: "ex" }, w.e2) : null) : null,
-      w.cf && model.BY.get(w.cf) ? sec("Don't mix it up with", h("p", {}, h("button", { class: "chip", onclick: () => details(w.cf) }, w.cf), " ", model.BY.get(w.cf).d)) : null,
+      w.cf && model.atLevel(p, model.BY.get(w.cf)) ? sec("Don't mix it up with", h("p", {}, h("button", { class: "chip", onclick: () => details(w.cf) }, w.cf), " ", model.BY.get(w.cf).d)) : null,
       w.m && w.m.length ? sec("Similar words", h("p", {}, w.m.join(", "))) : null,
       w.f && w.f.length ? sec("Word family", h("div", { class: "wordchips" }, w.f.map((f) => model.BY.get(f) ? h("button", { class: "chip", onclick: () => details(f) }, f) : h("span", { class: "chip" }, f)))) : null,
       sec("Where it lives", h("p", {}, w.custom ? "Your own word" : w.c ? `Side trails, ${w.t}` : `${LEVEL(w.l).name}, ${w.t}`),

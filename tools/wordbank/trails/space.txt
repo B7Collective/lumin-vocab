@@ -56,3 +56,18 @@ tenebrous
 stratosphere
 incandescent
 nadir
+luminous
+launch
+glimmer
+orbital
+ethereal
+silhouette
+nebulous
+ecliptic|noun|The path the sun appears to trace across the sky over a year|The planets all stay close to the ecliptic.||4
+azimuth|noun|The direction of an object in the sky, measured in degrees around the horizon from north|The app gave the comet's azimuth and height above the horizon.||4
+asterism|noun|A recognizable pattern of stars that is not one of the official constellations|The Big Dipper is an asterism, not a constellation.||4
+luminosity|noun|The total amount of light a star gives off|A star's luminosity depends on its size and temperature.||4
+perigee|noun|The point in the moon's or a satellite's orbit when it is closest to Earth|A full moon at perigee looks a little bigger.||4
+regolith|noun|The layer of loose dust and broken rock covering the moon or a planet|Astronaut boots left deep prints in the regolith.||4
+accretion|noun|Growth by gradually gathering material, like dust clumping into planets|Planets formed by accretion over millions of years.||4
+sidereal|adjective|Measured by the stars rather than the sun|A sidereal day is about four minutes shorter than a solar day.||4

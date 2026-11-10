@@ -96,7 +96,7 @@ route("topics", (main) => {
     on ? h("span", { class: "tnow" }, "Showing") : null);
   page.append(h("div", { class: "phead" }, h("div", {}, h("h1", {}, "Topics"), h("p", {}, "Choose what the Words screen shows. Your difficulty still decides how hard."))),
     h("div", { class: "actions" }, h("button", { class: "btn" + (current ? "" : " primary"), onclick: () => pickTopic(null) }, current ? "Show all words" : "Showing all words at your level")));
-  const setWords = (set) => model.MAIN.filter((w) => w.x && w.x.includes(set) && (set === "funny" || allowed.includes(w.l)));
+  const setWords = (set) => model.MAIN.filter((w) => w.x && w.x.includes(set) && allowed.includes(w.l));
   const sets = [["beautiful", "Beautiful words"], ["funny", "Funny words"]].filter(([k]) => setWords(k).length >= 4);
   if (sets.length) page.append(h("section", { class: "sec" }, h("h2", {}, "Collections"),
     h("div", { class: "tcards" }, sets.map(([k, label]) => card(label, plural(setWords(k).length, "word"), artIcon(k), current === k, () => pickTopic(null, k), peek(setWords(k)))))));

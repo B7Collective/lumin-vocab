@@ -57,3 +57,21 @@ torrential
 balmy
 tepid
 permafrost
+frigid
+arid
+brisk
+drench
+humid
+avalanche
+blustery
+temperature
+tropical
+bleak
+glacial
+inundate
+anticyclone|noun|A large area of high air pressure that usually brings calm, settled weather|An anticyclone kept the skies clear all week.||4
+adiabatic|adjective|(of air) Warming or cooling only because it is squeezed or expanded, not because heat is added|Air cools in an adiabatic way as it rises up a mountain.||4
+insolation|noun|The amount of sunlight reaching a surface|Desert insolation is fierce at midday.||4
+orographic|adjective|Caused by mountains, as when air rises over them and drops rain|The orographic rain soaks one side of the range and leaves the other dry.||4
+isotherm|noun|A line on a map joining places with the same temperature|The freezing isotherm crept south overnight.||4
+convection|noun|The rising and sinking of warm and cool air or water that carries heat|Convection builds the tall thunderclouds of summer afternoons.||4

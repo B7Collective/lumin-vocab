@@ -53,3 +53,16 @@ myrmidon
 nepenthe
 panoply
 augury
+hero
+magical
+dragon
+giant
+spell
+legend
+legendary
+quest
+mnemonic
+apollonian|adjective|Calm, orderly and rational. From Apollo, the Greek god of light and reason|Her apollonian style kept the meeting calm and on track.||4
+dionysian|adjective|Wild, joyful and free. From Dionysus, the Greek god of festivals|The street party had a dionysian energy.||4
+olympian|adjective|Lofty and grand, like the gods of Mount Olympus|He watched the argument with olympian calm.||4
+hermetic|adjective|Sealed tight against air; also, cut off from the outside world. From Hermes, said to have invented a magic seal|The jar has a hermetic lid.||4

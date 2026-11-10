@@ -8,3 +8,10 @@
 3: balmy, bedlam, conceited, elation, forlorn, haughty, metamorphosis, menagerie, putrid, ravenous, raucous, ricochet, receptacle, squall, wistful, torrential, locomotion, fabricate, debunk, hyperbole, euphemism, etymology, osmosis, amenity, apprehensive, colloquial, capitalization, digress, elegy, indignant, juxtaposition, nonchalant, precocious, scrutinize, superfluous, verdant, sweltering, tepid, unwieldy, ombudsman, isthmus, deflation, insolvent, iridescent, gregarious, haphazard, incandescent, illusory, implore, immutable, fulcrum
 3: apprehension, stakeholder, sustenance, typography, methodical, belittle, grueling, reproach, falter, rancid, entree, infuse, emulsion, insatiable, narcissism
 3: disgruntled, fluctuate, persevere, indignation
+# Mix-up partners that only live on the trail sit at the same level as their pair, so the pair shows together
+0: peak, pore
+1: capitol, counsel
+2: principal, cite, site
+3: aural, oral, flout, flaunt, imply, militate
+4: elude, proceed, venial, appraise, uninterested, loath, loathe
+5: prescribe

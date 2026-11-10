@@ -346,3 +346,28 @@ test("sync server rejects unsafe requests", async ({ request }, info) => {
   const page = await request.get("/");
   expect(page.headers()["content-security-policy"]).toContain("style-src 'self';");
 });
+
+test("every word served comes from the chosen level", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop", "data check, one browser is enough");
+  await page.goto("/#/setup");
+  const res = await page.evaluate(async () => {
+    const m = await import("/js/model.js");
+    for (let i = 0; i < 100 && !m.WORDS.length; i++) await new Promise((r) => setTimeout(r, 100));
+    const out = [];
+    for (let lv = 0; lv <= m.MAX_LEVEL; lv++) {
+      const p = m.profile(m.newProfile({ name: "L" + lv, role: lv <= 1 ? "kid" : lv <= 3 ? "teen" : "adult", level: lv }).id);
+      const lists = [m.queue(p), m.chapterWords(lv).flatMap((c) => c.words), m.practicePool(p, 40)];
+      for (const t of Object.keys(m.topicCounts(p))) lists.push(m.queue({ ...p, feedTopic: t }));
+      for (const s of ["beautiful", "funny"]) lists.push(m.queue({ ...p, feedSet: s }));
+      for (const t of m.trailsFor(p)) lists.push(m.trailWords(t, p));
+      lists.push(lists[0].slice(0, 40).flatMap((w) => m.distractors(w, 3, "d")));
+      const all = lists.flat();
+      out.push({ lv, size: lists[0].length, outside: all.filter((w) => w.l !== lv).map((w) => w.w) });
+    }
+    return out;
+  });
+  for (const r of res) {
+    expect(r.outside, `level ${r.lv} shows words from other levels`).toEqual([]);
+    expect(r.size, `level ${r.lv} has enough words`).toBeGreaterThanOrEqual(600);
+  }
+});

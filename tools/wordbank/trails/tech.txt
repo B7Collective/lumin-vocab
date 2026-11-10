@@ -56,3 +56,19 @@ deprecate
 idempotent|adjective|(computing) Giving the same result no matter how many times an action is repeated|Pressing an elevator button is idempotent: once or ten times, one elevator comes.||5
 obfuscate
 modality
+gadget
+inventor
+compass
+contraption
+invention
+microscope
+device
+appliance
+blueprint
+circuit
+interface
+infrastructure
+parameter
+sensor
+turbine
+orrery
