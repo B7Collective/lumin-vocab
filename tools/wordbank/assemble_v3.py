@@ -121,6 +121,17 @@ for o in out:
     if o["t"] not in TOPICS: o["t"] = "Good, bad and strange"
     if o["w"] in BEAUTIFUL: o.setdefault("x", []).append("beautiful")
 out = [o for o in out if not (o["l"] == 2 and o["z"] >= 4.6 and not o.get("x"))]
+# Re-tier the teen and adult-academic levels by how common each word is, so every step up is harder:
+# Scholar gets the most familiar third, Wordsmith the middle, Academic the least common. Each level keeps
+# its size. Words on side trails and hand-moved words stay put, so trails and kids' trails don't shift.
+# (Without this, Academic's everyday "academic" words, like salary and urban, made it easier than Wordsmith.)
+movable = [o for o in out if o["l"] in (2, 3, 4) and not o.get("c") and not o.get("x") and o["w"] not in relevel]
+size = {l: sum(1 for o in movable if o["l"] == l) for l in (2, 3, 4)}
+movable.sort(key=lambda o: -(o["z"] - 0.05 * len(o["w"])))
+i = 0
+for l in (2, 3, 4):
+    for o in movable[i:i + size[l]]: o["l"] = l
+    i += size[l]
 text = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
 assert "—" not in text  # no em dashes in the word list
 open("words.json", "w", encoding="utf-8").write(text)

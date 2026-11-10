@@ -114,7 +114,7 @@ const SAMPLES = [
   { w: "majestic", p: "adj.", i: "muh-JEH-stihk", d: "Grand and beautiful in a powerful way", scene: "aurora", x: 50 },
   { w: "ambiguous", p: "adj.", i: "/æmˈbɪɡjuəs/", d: "Having more than one possible meaning; unclear", scene: "forest", x: 50 },
   { w: "meticulous", p: "adj.", i: "/məˈtɪkjələs/", d: "Showing great attention to detail; very careful", scene: "attic", x: 46 },
-  { w: "ubiquitous", p: "adj.", i: "/juˈbɪkwɪtəs/", d: "Present everywhere", scene: "harbor", x: 52 },
+  { w: "fortuitous", p: "adj.", i: "/fɔrˈtuɪtəs/", d: "Happening by lucky chance", scene: "harbor", x: 52 },
   { w: "ineffable", p: "adj.", i: "/ɪˈnɛfəbəl/", d: "Too great or extreme to be expressed in words", scene: "library", x: 56 },
 ];
 route("welcome", (main) => {

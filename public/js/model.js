@@ -14,7 +14,7 @@ export const LEVELS = [
   { name: "Explorer", ages: "Ages 8 to 12", group: 0, sample: "majestic", about: "Words for curious readers and big questions" },
   { name: "Scholar", ages: "Ages 12 to 15", group: 1, sample: "ambiguous", about: "Words from class, good books and the news" },
   { name: "Wordsmith", ages: "Ages 15 to 18", group: 1, sample: "meticulous", about: "Words that sharpen essays, tests and arguments" },
-  { name: "Academic", ages: "Adults", group: 2, sample: "ubiquitous", about: "Precise words from science, law, work and ideas" },
+  { name: "Academic", ages: "Adults", group: 2, sample: "fortuitous", about: "Precise, less common words for work, ideas and good writing" },
   { name: "Philosopher", ages: "Adults", group: 2, sample: "ineffable", about: "Rare, literary and beautiful words" },
 ];
 export const MAX_LEVEL = LEVELS.length - 1;
@@ -158,8 +158,9 @@ export function queue(p) {
   }
   const at = MAIN.filter(w => w.l === p.level && !done.has(w.w));
   const below = p.level > 0 ? MAIN.filter(w => w.l === p.level - 1 && !done.has(w.w)) : [];
-  // Older levels lead with the more familiar of the hard words, with plenty of variety mixed in
-  const keyed = (arr) => arr.map(w => [p.level >= 2 ? -(w.z || 2.5) * 0.8 + rnd() * 1.8 : rnd(), w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  // Any order, with a light touch: the youngest teen level eases in with its more familiar words; at every
+  // level the very common ones wait at the back, so the first words you meet are the ones worth learning
+  const keyed = (arr) => arr.map(w => [(p.level === 2 ? -(w.z || 2.5) * 0.3 : 0) + ((w.z || 0) >= 4.2 ? 2 : 0) + rnd() * 1.8, w]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
   let main = keyed(at);
   if (p.topics && p.topics.length) {
     const fav = main.filter(w => p.topics.includes(w.t)), rest = main.filter(w => !p.topics.includes(w.t));
