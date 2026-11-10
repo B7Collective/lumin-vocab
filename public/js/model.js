@@ -238,11 +238,11 @@ export const REGIONS = [
   ["fireside", "The Winter Lodge", "a bear in a knitted scarf", "The bear pours you cocoa and pulls a chair closer to the fire. Stay a while.", "bear"],
   ["attic", "The Stargazer's Attic", "a moth with silver wings", "The moth circles your lantern. It's the brightest thing up here now.", "moth"],
 ];
-// Four more regions; they have keepers in words but no portrait yet
-REGIONS.splice(4, 0, ["summit", "The High Pass", "a mountain goat with a brass bell", "The goat rings its bell twice: once for every word, it says, and once for the view.", null]);
-REGIONS.splice(7, 0, ["bridge", "The Old Stone Bridge", "a heron fishing under the arch", "The heron doesn't look up. Patience, it seems to say, catches more than hurry.", null]);
-REGIONS.splice(10, 0, ["village", "The Snowy Village", "a robin on a lamppost", "The robin hops along the lane, lighting the way to a warm window.", null]);
-REGIONS.push(["cliffs", "The Lighthouse Cliffs", "a puffin with a striped beak", "The puffin waddles to the cliff edge and points at the lighthouse. Nearly home, it says.", null]);
+// Four more regions, slotted between the first eight
+REGIONS.splice(4, 0, ["summit", "The High Pass", "a mountain goat with a brass bell", "The goat rings its bell twice: once for every word, it says, and once for the view.", "goat"]);
+REGIONS.splice(7, 0, ["bridge", "The Old Stone Bridge", "a heron fishing under the arch", "The heron doesn't look up. Patience, it seems to say, catches more than hurry.", "heron"]);
+REGIONS.splice(10, 0, ["village", "The Snowy Village", "a robin on a lamppost", "The robin hops along the lane, lighting the way to a warm window.", "robin"]);
+REGIONS.push(["cliffs", "The Lighthouse Cliffs", "a puffin with a striped beak", "The puffin waddles to the cliff edge and points at the lighthouse. Nearly home, it says.", "puffin"]);
 // Something found at each stop, kept in your passport
 export const KEEPSAKES = ["a brass key", "a pressed violet", "a sea-glass marble", "a striped feather", "a map with a coffee ring", "a smooth river stone", "a tiny bell",
   "a paper crane", "a copper coin with a hole", "an acorn cap", "a ribbon bookmark", "a jar of fireflies (let go at dawn)", "a postcard from nowhere", "a sprig of thyme",
