@@ -97,7 +97,7 @@ confection|noun|A sweet treat; something elaborately made|The bakery's window wa
 emulsion|noun|A mixture of two liquids that normally don't blend|Mayonnaise is an emulsion of oil and egg.|Food
 caramelize|verb|To turn sugar brown and sweet by heating|Caramelize the onions slowly.|Food
 leaven|verb|To make dough rise; to lighten|Yeast leavens the bread.|Food
-vintage|noun|The year a wine was made; something of high quality from the past|They opened a bottle of an older vintage.|Food
+vintage|adjective|Old, of high quality and worth keeping|She found a vintage typewriter at the flea market.|Things and tools
 infuse|verb|To soak to extract flavor; to fill with a quality|Infuse the tea for five minutes.|Food
 terroir|noun|How soil and climate shape the taste of a food|The coffee's flavor comes from its terroir.|Food
 ergonomic|adjective|Designed for comfort and efficient use|She bought an ergonomic keyboard.|Things and tools

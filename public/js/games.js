@@ -100,6 +100,7 @@ route("play", (main) => {
     if (done) return;
     const w = pick();
     if (!w) return finish();
+    if (scrollY > 0) scrollTo(0, 0);
     progress();
     foot.replaceChildren();
     let kind = kindFor(w);
@@ -123,12 +124,13 @@ route("play", (main) => {
       const out = (s.mode === "perfection" && !ok) || (s.mode === "rush" && lives <= 0) || (!endless && i >= total);
       const fast = endless || s.mode === "placement";
       if (q.kind === "flash") { setTimeout(() => out ? finish() : ask(), 260); return; } // you graded yourself: no verdict needed
+      const reveal = () => requestAnimationFrame(() => { const r = foot.getBoundingClientRect(); if (r.bottom > innerHeight - 8) foot.scrollIntoView({ block: "end", behavior: reduced() ? "auto" : "smooth" }); });
       if (ok) {
-        foot.replaceChildren(verdict(true, w, q));
+        foot.replaceChildren(verdict(true, w, q)); reveal();
         setTimeout(() => out ? finish() : ask(), fast ? 650 : 900);
       } else {
         const go2 = h("button", { class: "btn primary wide", onclick: () => out ? finish() : ask() }, out ? "See results" : "Continue");
-        foot.replaceChildren(verdict(ok, w, q), go2);
+        foot.replaceChildren(verdict(ok, w, q), go2); reveal();
         setTimeout(() => go2.focus(), 60);
       }
     };
