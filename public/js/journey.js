@@ -3,6 +3,7 @@
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
 import { h, icon, toast, sheet, closeSheet, plural } from "./ui.js";
+import { tapDecor } from "./decorfx.js";
 import { art, landmark, icon as artIcon, sceneUrl, SCENES, trailArt, keeperArt, keeperSrc, landFor, groundUrl, decorUrl, decorSize, decorMove } from "./art.js";
 import { play } from "./sound.js";
 import { start } from "./games.js";
@@ -100,7 +101,10 @@ function ground(land) { return h("div", { class: "ground", "aria-hidden": "true"
 // One thing beside the path: a picture with a soft shadow, and its own small movement
 function decorPiece(name, k, flip) {
   const move = decorMove(name);
-  return h("i", { class: "dc" + (move ? " " + move : ""), "data-n": name, style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", class: flip ? "flip" : null }));
+  const dc = h("i", { class: "dc" + (move ? " " + move : ""), "data-n": name, style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", draggable: "false", class: flip ? "flip" : null }));
+  // a tap brings it to life for a moment (a click, so scrolling past never sets it off)
+  dc.addEventListener("click", () => tapDecor(dc, name));
+  return dc;
 }
 function stepMap(p, st, info, trailKey) {
   const land = landFor(trailKey || model.regionOf(st.ch)[0], !!trailKey);

@@ -2,7 +2,6 @@
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
 
 // Full-screen scenes behind words. x is the horizontal focus (percent) used when a tall screen crops the picture.
-// Full-screen scenes behind words. x is the horizontal focus (percent) used when a tall screen crops the picture.
 // group: places (photographs) or dreamy (soft abstract washes); light scenes get a deeper shade so white words stay readable.
 export const SCENES = [
   { id: "library", name: "Library", x: 56, group: "places" }, { id: "forest", name: "Forest", x: 50, group: "places" },
@@ -22,10 +21,12 @@ export const SCENES = [
 export const SCENE_GROUPS = [["places", "Places"], ["paper", "Paper art"], ["dreamy", "Dreamy"]];
 export const wallpaperUrl = (id) => `/art/wallpapers/${id}.jpg`;
 export const sceneUrl = (id) => `/art/scenes/${id}.webp`;
-// Full-screen spots (the Words screen, the welcome page, wallpapers) use a large copy where one exists: a phone
-// stretches a scene to fill a tall screen, so the light copy would look soft. Thumbnails keep the light one.
-const XL = new Set(["moonriver", "emberpeak", "redfalls", "junglemoon", "greatwave", "moonpagoda", "canyonarch", "crystalcave"]);
-export const sceneBig = (id) => XL.has(id) ? `/art/scenes/xl/${id}.webp` : sceneUrl(id);
+// Full-screen spots (the Words screen, the welcome page) use large copies: a wide one for wide screens, and a tall
+// one for phones held upright, cut around the scene's focus so a tall screen gets every pixel it shows.
+// Thumbnails keep the light copy. Both large copies were enlarged with Real-ESRGAN (see CREDITS.md).
+const upright = () => { try { return matchMedia("(max-aspect-ratio: 4/5)").matches; } catch { return false; } };
+export const sceneBig = (id) => `/art/scenes/${upright() ? "tall" : "xl"}/${id}.webp`;
+export const sceneFx = (sc) => upright() ? 50 : sc.x;
 // Pick a scene for a word: the profile's chosen one, or a gentle rotation that stays the same for a word on every device
 export function sceneFor(p, word) {
   if (p && p.scene && p.scene !== "auto") return SCENES.find((s) => s.id === p.scene) || SCENES[0];

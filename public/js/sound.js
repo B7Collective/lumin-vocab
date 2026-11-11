@@ -16,6 +16,13 @@ function note(freq, at = 0, dur = 0.5, vol = 0.12, type = "sine") {
 }
 export const sounds = {
   tap: () => note(880, 0, 0.12, 0.05),
+  // soft sounds for tapping the scenery beside the Journey road
+  pop: () => { note(520, 0, 0.12, 0.045, "triangle"); note(780, 0.035, 0.12, 0.03); },
+  twinkle: () => { const s = [1047, 1175, 1319, 1568, 1760, 2093]; const a = s[Math.floor(Math.random() * 6)]; note(a, 0, 0.35, 0.03); note(a * 1.5, 0.07, 0.45, 0.022); },
+  bell: () => [784, 988, 1175].forEach((f, i) => note(f, i * 0.12, 0.7, 0.035)),
+  bloop: () => { note(330, 0, 0.18, 0.05); note(495, 0.06, 0.22, 0.035); },
+  buzzy: () => { note(220, 0, 0.25, 0.018, "sawtooth"); note(233, 0.04, 0.25, 0.014, "sawtooth"); },
+  rustle: () => { note(1320, 0, 0.08, 0.012, "triangle"); note(1480, 0.05, 0.08, 0.01, "triangle"); note(1240, 0.1, 0.08, 0.009, "triangle"); },
   right: () => { note(660, 0, 0.35, 0.1); note(990, 0.08, 0.5, 0.09); },
   wrong: () => { note(196, 0, 0.28, 0.09, "triangle"); },
   heart: () => { note(784, 0, 0.25, 0.07); note(1175, 0.05, 0.35, 0.05); },

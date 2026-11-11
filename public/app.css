@@ -1462,3 +1462,16 @@ textarea.mine:focus { outline: none; border-color: var(--accent); box-shadow: 0 
 .jmap.land .jnode .nm { background: var(--card); color: var(--ink); font-weight: 700; padding: 4px 12px; border-radius: var(--r-pill); box-shadow: 0 0 0 1px var(--line), 0 2px 0 var(--lip); position: relative; z-index: 1; margin-top: 4px; }
 .jmap.land .jnode.locked .nm { color: var(--muted); font-weight: 600; }
 .jmap.land .jnode .nl { box-shadow: 0 0 0 1px var(--line), 0 2px 0 var(--lip); }
+/* The scenery answers a tap: the picture moves and a few small pieces appear around it, then fade */
+.land .dc img { pointer-events: auto; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.land .dc .fxbit { position: absolute; z-index: 2; pointer-events: none; display: block; line-height: 0; will-change: transform, opacity; }
+.land .dc .fxbit svg { display: block; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .18)); }
+.land .dc .glowdot { width: 6px; height: 6px; border-radius: 50%; background: var(--c, #FFD27A); box-shadow: 0 0 8px 3px color-mix(in srgb, var(--c, #FFD27A) 70%, transparent); }
+.land .dc .ring { width: 100%; height: 100%; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .85); box-shadow: 0 0 0 1px rgba(90, 175, 185, .35); }
+.land .dc .note { font: 700 20px/1 var(--serif); color: #6B5BA6; line-height: 1; text-shadow: 0 1px 0 rgba(255, 255, 255, .8); }
+[data-theme="dark"] .land .dc .note { color: #CDBFF5; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+.land .dc .puff { width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)); }
+.land .dc .puff.dust { width: 14px; height: 14px; background: radial-gradient(closest-side, rgba(170, 150, 120, .7), rgba(170, 150, 120, 0)); }
+.land .dc .flake { width: 5px; height: 5px; border-radius: 50%; background: #fff; box-shadow: 0 0 3px rgba(255, 255, 255, .9), 0 0 0 .5px rgba(120, 140, 160, .35); }
+.land .dc .bee { width: 9px; height: 7px; border-radius: 50%; background: repeating-linear-gradient(90deg, #F2B544 0 2px, #2B2118 2px 4px); box-shadow: -2px -3px 0 -1px rgba(255, 255, 255, .9), 1px -3px 0 -1px rgba(255, 255, 255, .9); }
+.land .dc .paper { width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 1px 1px rgba(0, 0, 0, .15); }

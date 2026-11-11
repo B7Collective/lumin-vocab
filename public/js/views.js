@@ -11,7 +11,7 @@ import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app
 import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, ACCENTS, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 import { canScan, scanCode } from "./scan.js";
-import { SCENES, SCENE_GROUPS, sceneUrl, sceneBig, wallpaperUrl, topicArt, keeperArt } from "./art.js";
+import { SCENES, SCENE_GROUPS, sceneUrl, sceneBig, sceneFx, wallpaperUrl, topicArt, keeperArt } from "./art.js";
 import { play } from "./sound.js";
 import "./words.js";
 import "./journey.js";
@@ -142,7 +142,7 @@ const SAMPLES = [
 ];
 route("welcome", (main) => {
   let cur = 0, timer = null;
-  const bgs = SAMPLES.map((x, k) => h("img", { class: "wbg", src: k ? null : sceneBig(x.scene), "data-src": sceneBig(x.scene), alt: "", style: { "--fx": x.x + "%", opacity: k ? "0" : "1", transition: "opacity 1.2s var(--ease)" }, decoding: "async", fetchpriority: k ? "low" : "high" }));
+  const bgs = SAMPLES.map((x, k) => h("img", { class: "wbg", src: k ? null : sceneBig(x.scene), "data-src": sceneBig(x.scene), alt: "", style: { "--fx": sceneFx(x) + "%", opacity: k ? "0" : "1", transition: "opacity 1.2s var(--ease)" }, decoding: "async", fetchpriority: k ? "low" : "high" }));
   // The other scenes load once the first is on screen, so the page appears quickly
   addEventListener("load", () => setTimeout(() => bgs.forEach((b) => { if (!b.src) b.src = b.dataset.src; }), 600), { once: true });
   if (document.readyState === "complete") setTimeout(() => bgs.forEach((b) => { if (!b.src) b.src = b.dataset.src; }), 600);
@@ -490,7 +490,7 @@ route("settings", (main, args = []) => {
     if (id === shown) return; shown = id;
     const sc = SCENES.find((x) => x.id === id) || SCENES[0];
     const [cur, next] = pvA.classList.contains("on") ? [pvA, pvB] : [pvB, pvA];
-    next.src = sceneBig(sc.id); next.style.setProperty("--fx", sc.x + "%");
+    next.src = sceneBig(sc.id); next.style.setProperty("--fx", sceneFx(sc) + "%");
     const swap = () => { next.classList.add("on"); cur.classList.remove("on"); preview.classList.toggle("light", !!sc.light); };
     next.complete ? swap() : (next.onload = swap);
   };

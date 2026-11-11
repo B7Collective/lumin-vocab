@@ -3,7 +3,7 @@
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
 import { h, icon, speak, share, fitWord, reduced, preloadWord } from "./ui.js";
-import { sceneFor, sceneBig as sceneUrl } from "./art.js";
+import { sceneFor, sceneBig as sceneUrl, sceneFx } from "./art.js";
 import { sayPill, details, toggleFav, toggleSave, POS_SHORT } from "./wordsheet.js";
 
 const HINT_KEY = "lumin-swipe-hint";
@@ -34,7 +34,7 @@ route("words", (main) => {
   function slide(word) {
     if (!word) {
       const sc = sceneFor(p, "end");
-      return h("div", { class: "wslide" }, h("img", { class: "wbg", src: sceneUrl(sc.id), alt: "", style: { "--fx": sc.x + "%" } }), h("div", { class: "wshade" }),
+      return h("div", { class: "wslide" }, h("img", { class: "wbg", src: sceneUrl(sc.id), alt: "", style: { "--fx": sceneFx(sc) + "%" } }), h("div", { class: "wshade" }),
         h("div", { class: "wbody" }, h("div", { class: "wdone" },
           h("h2", {}, p.feedTopic || p.feedSet ? "That's every word in this topic" : "You've seen every word at this level"),
           h("p", {}, "Practice the ones you saved, or pick another topic."),
@@ -45,7 +45,7 @@ route("words", (main) => {
     const fav = h("button", { class: "wbtn glass fav", "aria-label": "Favorite", "aria-pressed": String(!!c.fav), onclick: () => toggleFav(fav, word.w) }, icon("heart"));
     const save = h("button", { class: "wbtn glass save", "aria-label": "Save to practice", "aria-pressed": String(c.st === "learning"), onclick: () => toggleSave(save, word.w) }, icon("bookmark"));
     const el = h("div", { class: "wslide" + (sc.light ? " light" : ""), "data-word": word.w },
-      h("img", { class: "wbg", src: sceneUrl(sc.id), alt: "", style: { "--fx": sc.x + "%" }, decoding: "async" }),
+      h("img", { class: "wbg", src: sceneUrl(sc.id), alt: "", style: { "--fx": sceneFx(sc) + "%" }, decoding: "async" }),
       h("div", { class: "wshade" }),
       h("div", { class: "motes", "aria-hidden": "true" }, Array.from({ length: 7 }, (_, k) => h("i", { style: { "--x": `${8 + ((k * 37 + word.w.length * 11) % 84)}%`, "--d": `${14 + (k * 5) % 11}s`, "--delay": `${-k * 2.7}s`, "--s": `${2 + (k % 3)}px` } }))),
       h("div", { class: "wbody" },
