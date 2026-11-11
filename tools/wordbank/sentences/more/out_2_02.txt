@@ -1,0 +1,130 @@
+ornamental|Is the fence ornamental or practical?|Ornamental cabbages add color in winter.|decorative, fancy|functional
+gyrate|Why do the fans gyrate when the music starts?|Weather maps show storms that gyrate over the ocean.|spin, whirl, twirl|
+dislodge|Can a cough dislodge the stuck popcorn?|It took two of us to dislodge the boulder.|remove, knock loose, free|
+displace|How much water does a ship displace?|New apps may displace older ones.|move, replace, uproot|
+revolve|Does your whole week revolve around soccer?|The planets revolve around the sun.|rotate, circle, orbit|
+levitate|Can magnets make a train levitate?|Watch the drone levitate above the field.|float, hover, rise|sink
+invasive|Is that plant invasive?|Doctors chose a less invasive surgery.|intrusive, spreading|native
+amphibious|Is a frog amphibious?|The army tested an amphibious tank.|land-and-water|
+genus|Which genus does the oak belong to?|Each genus contains one or more species.|group, class, category|
+avian|Is the virus avian?|Avian researchers tagged the cranes.|bird|
+feline|Is your pet feline or canine?|The dancer's feline steps were silent.|catlike|canine
+bovine|Why do cows look so bovine and calm?|Bovine milk is the most common in stores.|cowlike, sluggish|
+equine|Is the clinic just for equine patients?|Equine therapy pairs kids with gentle horses.|horse|
+fauna|What fauna live in the Arctic?|The park protects both flora and fauna.|animals, wildlife|flora
+plankton|Can you see plankton with your eyes?|Plankton make much of the planet's oxygen.|microorganisms|
+perceptible|Was the change in tone perceptible?|A barely perceptible smile crossed his face.|noticeable, visible, detectable|imperceptible
+decibel|Where does a whisper fall on the decibel scale?|A jet engine is far past a safe decibel level.|sound unit|
+umami|Can you taste the umami in tomatoes?|Soy sauce adds umami to soup.|savoriness|
+sensory|Do you like sensory play with sand?|Too much noise causes sensory overload.|perceptual|
+culinary|What culinary skills do you have?|Paris is a culinary capital.|cooking, gastronomic|
+provisions|Did we pack enough provisions?|The contract has provisions for late delivery.|supplies, rations, stores|
+caramelize|How long does it take sugar to caramelize?|The bananas caramelize in the pan.|brown, glaze|
+vintage|Do you like vintage clothes?|My dad drives a vintage car from 1965.|classic, retro, antique|modern
+ergonomic|Is your desk chair ergonomic?|Ergonomic tools reduce wrist pain.|comfortable, user-friendly|
+interface|Is the new interface easier?|Teachers interface with parents through the app.|connection, display, link|
+component|Which component of the bike failed?|Trust is a key component of friendship.|part, piece, element|whole
+sensor|How does a rain sensor work?|The car's sensor beeped near the wall.|detector, monitor|
+turbine|How much power does one turbine make?|Steam spins the turbine in the plant.|rotor, engine|
+piston|Why did the piston seize?|Each piston rises and falls thousands of times a minute.|plunger, rod|
+gasket|Do we need a new gasket?|The mechanic replaced the head gasket.|seal, washer, ring|
+tectonic|What happens when tectonic plates collide?|The election caused a tectonic shift in politics.|seismic, structural|
+sedimentary|Do fossils form in sedimentary rock?|Sedimentary layers tell the history of the canyon.|layered|igneous
+igneous|How do igneous rocks form?|Pumice is an igneous rock that can float.|volcanic|sedimentary
+aurora|Have you ever seen an aurora?|The aurora painted the sky purple and green.|northern lights|
+deforestation|What are the main causes of deforestation?|Deforestation has shrunk the orangutan's home.|clear-cutting, logging|reforestation
+ecology|Why is pond ecology so fragile?|Ecology classes often take field trips.|environmental science|
+conservation|How can we support conservation?|Energy conservation saves money too.|preservation, protection|waste
+composition|What's the composition of the soil?|Her composition for piano won a prize.|makeup, arrangement, piece|
+cinematography|Who did the cinematography?|The cinematography won an award.|filmmaking, camerawork|
+choreography|Who did the choreography for the show?|The fight scenes had careful choreography.|dance design, staging|
+manuscript|Where is the original manuscript?|Monks copied each manuscript by hand.|document, draft, text|
+narrative|What's the narrative of the documentary?|The game has a gripping narrative.|story, account, tale|
+calligraphy|Can you write in calligraphy?|Calligraphy takes a steady hand.|penmanship, lettering|scrawl
+sequential|Are the clues sequential?|Sequential photos show the bud opening.|consecutive, ordered|random
+periodic|Do you get periodic checkups?|Periodic floods enriched the valley's soil.|regular, recurring, cyclical|constant
+temporal|Is the movie's temporal jump confusing?|Kings held temporal power, not spiritual.|time-based, worldly|spiritual
+arbitrary|Why does the rule feel arbitrary?|An arbitrary cutoff left her one point short.|random, unreasoned, capricious|reasoned
+cerebral|Do you like cerebral games like chess?|Her humor is dry and cerebral.|intellectual, brainy|emotional
+emaciated|Why does the stray look so emaciated?|The emaciated trees struggled through the drought.|gaunt, skeletal, skinny|plump
+hiatus|Is the show on hiatus?|After a short hiatus, she returned to painting.|break, pause, gap|continuation
+imminent|Is a storm imminent?|The bridge's collapse seemed imminent.|impending, near, looming|distant
+lethargic|Why do you feel lethargic after lunch?|Heat makes the lizards lethargic.|sluggish, drowsy, listless|energetic
+myriad|What are the myriad uses of baking soda?|Myriad tiny fish shimmered in the bay.|countless, numerous, many|few
+notorious|Why is that corner notorious for accidents?|The notorious pirate was finally caught.|infamous, disreputable|unknown
+ornate|Isn't the old theater ornate?|The ornate gate had iron vines and roses.|elaborate, decorated, fancy|plain
+orthodox|Is that an orthodox chess opening?|His orthodox training clashed with her bold style.|traditional, conventional|unorthodox
+partisan|Is the newspaper partisan?|Partisan fighting stalled the bill.|biased, one-sided, factional|neutral
+pedestrian|Was the movie pedestrian?|A pedestrian bridge crosses the river.|dull, ordinary, walker|exciting
+profound|What profound idea did the book share?|Profound silence filled the empty church.|deep, intense, meaningful|shallow
+prolific|Who is the most prolific scorer on the team?|Rabbits are prolific breeders.|productive, fruitful|unproductive
+provincial|Is the town's attitude provincial?|The provincial capital sits by the lake.|regional, narrow-minded|cosmopolitan
+volatile|Is the stock market volatile?|Gasoline is a volatile liquid.|unstable, explosive, erratic|stable
+aviary|How many birds live in the aviary?|We walked through the tropical aviary.|birdhouse, enclosure|
+raptor|Is an owl a raptor?|A raptor's eyes can spot a mouse from far away.|bird of prey, hawk|
+carnivorous|Are all sharks carnivorous?|Carnivorous plants live in poor soil.|meat-eating|herbivorous
+theorem|Can you prove the theorem?|The theorem took centuries to prove.|proposition, principle|
+oxidize|Why does copper oxidize green?|A cut apple will oxidize and turn brown.|rust, corrode|
+combustible|Is the material combustible?|Combustible dust can explode in a barn.|flammable, inflammable|fireproof
+emblem|What's the emblem on your jersey?|The lion is the emblem of the city.|symbol, badge, crest|
+gadgetry|Do you love modern gadgetry?|The spy movie was full of gadgetry.|gadgets, devices, gizmos|
+trellis|Can roses climb the trellis?|Grapevines covered the old trellis.|lattice, frame, arbor|
+parchment|Is the old letter on parchment?|Line the pan with parchment paper.|vellum, paper|
+quill|Can you write with a quill?|The porcupine lost a quill on the fence.|pen, feather, spine|
+abode|Where is your summer abode?|The hermit's abode was a cave.|home, dwelling, residence|
+locale|What locale did they choose for the wedding?|The novel's locale is a misty island.|setting, place, site|
+environs|What's in the environs of the castle?|We explored the city and its leafy environs.|surroundings, outskirts, vicinity|
+chasm|How wide is the chasm?|Over the years, a chasm grew between the two friends.|gorge, gulf, rift|
+grotto|Is the grotto safe to swim in?|A statue stood in a mossy grotto.|cave, cavern|
+vista|Which vista is your favorite?|A new vista opened after college.|view, panorama, outlook|
+fare|What's the bus fare?|The menu offers simple country fare.|price, ticket, food|
+nourishment|What nourishment does a baby bird need?|Books give nourishment to the mind.|food, nutrition, sustenance|starvation
+gluttony|Is a holiday feast an excuse for gluttony?|In the fable, the fox's gluttony was his downfall.|overeating, greed|moderation
+bounty|Was there a bounty on the outlaw?|The fall harvest brought a bounty of apples.|abundance, reward, plenty|scarcity
+brawny|Is the new coach brawny?|Brawny arms lifted the hay bales.|muscular, burly, strong|scrawny
+lush|Is the lawn lush after the rain?|The film has a lush orchestral score.|green, rich, luxuriant|barren
+sonnet|Can you write a sonnet?|A classic sonnet has fourteen lines.|poem, verse|
+saga|What's the latest in the family saga?|The old saga tells of kings and sea voyages.|epic, tale, chronicle|
+prodigy|Was the pianist a child prodigy?|The math prodigy started college at fourteen.|genius, wonder, talent|
+cameo|Did you spot the cameo?|Grandma wears a cameo brooch.|brief appearance, walk-on|
+ensemble|Who's in the ensemble cast?|Her ensemble of hat, scarf, and boots matched.|group, troupe, outfit|soloist
+abandon|Why did they abandon the old farm?|They danced with joyful abandon.|leave, desert, give up|keep
+abstract|Do you like abstract art?|Love is hard to define because it's abstract.|theoretical, conceptual|concrete
+absurd|Isn't it absurd to argue over a crayon?|The plot was so absurd it was funny.|ridiculous, silly, ludicrous|sensible
+accelerate|How fast can a cheetah accelerate?|Practice will accelerate your progress.|speed up, quicken, hasten|slow down
+accommodate|Can the hotel accommodate our dog?|We tried to accommodate everyone's schedule.|house, fit, adapt|
+acknowledge|Did she acknowledge your message?|Authors often acknowledge their editors in the preface.|admit, recognize, thank|deny
+adequate|Is the lighting adequate for reading?|Make sure you get adequate rest.|enough, sufficient, acceptable|inadequate
+adhere|Does the tape adhere to wet surfaces?|We adhere to a strict bedtime.|stick, follow, obey|detach
+adjacent|Are your seats adjacent?|The library is in the adjacent building.|neighboring, next to, beside|distant
+advocate|Who will advocate for the students?|My aunt is an advocate for clean water.|support, champion, promote|oppose
+aesthetic|Do you like the café's aesthetic?|The bridge has both practical and aesthetic value.|artistic, visual, style|
+aggravate|Does cold weather aggravate your knee?|Don't aggravate your sister when she's tired.|worsen, annoy, irritate|relieve
+allegiance|Where does your allegiance lie?|Fans switched allegiance after the trade.|loyalty, devotion, fidelity|disloyalty
+alter|Can you alter the dress?|The news did not alter her plans.|change, modify, adjust|keep
+ambition|What's your biggest ambition?|Ambition drove him to practice daily.|goal, aim, drive|
+amend|Can we amend the plan?|The senator tried to amend the bill.|revise, change, fix|
+analogy|Can you think of an analogy for gravity?|The analogy between a cell and a factory helped.|comparison, parallel|
+anecdote|Do you have a funny anecdote from camp?|The speech began with a touching anecdote.|story, tale, account|
+anonymous|Why did the writer stay anonymous?|The tip came from an anonymous caller.|unnamed, nameless, unknown|known
+aspire|What do you aspire to become?|Young players often aspire to join the national team.|aim, hope, strive|
+assert|Can you assert your opinion politely?|Studies assert that sleep helps memory.|claim, declare, state|deny
+assess|How will the teacher assess the project?|Engineers assess the bridge for damage.|evaluate, judge, rate|
+attain|How did she attain such skill?|In winter, few climbers attain the summit.|reach, achieve, gain|
+attribute|What attribute do you value most in a friend?|I attribute my success to hard work.|quality, trait, credit|
+authentic|Is the signature authentic?|Food trucks often serve authentic street food.|genuine, real, true|fake
+autonomy|How much autonomy do you have at home?|The region was granted autonomy.|independence, self-rule|dependence
+avid|Are you an avid gamer?|An avid gardener, she grows twenty kinds of tomatoes.|keen, eager, passionate|indifferent
+bewilder|Did the instructions bewilder you?|Fast talkers bewilder my grandpa.|confuse, puzzle, baffle|clarify
+biased|Is the survey biased?|We need a judge who isn't biased.|partial, prejudiced, one-sided|fair, neutral
+bland|Is the hospital food bland?|His bland reply gave nothing away.|tasteless, dull, mild|flavorful
+boycott|Why did fans boycott the game?|The boycott lasted a whole year.|ban, shun, protest|support
+candid|Can I be candid with you?|The candid photos were the best ones.|frank, honest, open|guarded
+catalyst|What was the catalyst for the change?|A catalyst speeds up a chemical reaction.|trigger, spark, stimulus|
+cease|When will the noise cease?|The factory will cease production next year.|stop, end, halt|begin
+chaotic|Why was the meeting so chaotic?|Chaotic traffic surrounded the stadium.|disorderly, wild, messy|orderly
+chronological|Is the story told in chronological order?|Her chronological age is twelve.|sequential, ordered|random
+coherent|Is the argument coherent?|After the nap, he finally sounded coherent.|logical, clear, consistent|incoherent
+comply|Did the company comply with the law?|If you comply, you'll get your phone back.|obey, follow, conform|defy
+compensate|Will the airline compensate us for the delay?|Glasses compensate for poor eyesight.|make up for, repay, offset|
+competent|Is the new driver competent?|A competent editor caught every typo.|capable, skilled, able|incompetent

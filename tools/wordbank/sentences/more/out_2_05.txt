@@ -1,0 +1,130 @@
+organism|Is a mushroom an organism?|Coral is a living organism, not a rock.|living thing, life form, creature|
+microbe|Can a microbe survive in space?|Every microbe in yogurt helps it ferment.|germ, microorganism, bacterium|
+filament|Why did the filament burn out?|A jellyfish trails filament after filament behind it.|thread, fiber, strand|
+alloy|Is steel an alloy?|The new bike frame uses a light alloy.|blend, mixture|
+cartilage|Does cartilage heal quickly?|The athlete hurt the cartilage in her knee.|gristle, tissue|
+ligament|How long does a torn ligament take to heal?|A ligament connects bone to bone.|tendon, band|
+marrow|What does bone marrow do?|The cold chilled us to the marrow.|core, pith|
+artery|Which artery carries blood to the brain?|The highway is the city's busiest artery.|vessel, main road|vein
+respiration|How does exercise affect respiration?|Leaves release water during respiration.|breathing|
+dehydrated|How do you know if you're dehydrated?|Dehydrated fruit makes a light trail snack.|dried, parched, thirsty|hydrated
+sprain|How did you sprain your ankle?|Ice the sprain for twenty minutes.|twist, strain, wrench|
+fracture|Is it a fracture or just a bruise?|A fracture in the ice made us turn back.|break, crack, split|
+abdomen|Why does your abdomen hurt?|Bees have a striped abdomen.|belly, stomach, tummy|
+cranium|How hard is the human cranium?|Paleontologists studied the dinosaur cranium.|skull, head|
+condiment|What condiment goes best with fries?|The diner set out every condiment imaginable.|sauce, relish, seasoning|
+morsel|Can I have a morsel of your cake?|Not a morsel of food was wasted.|bite, scrap, crumb|
+ration|How should we ration the snacks?|Each soldier got a daily ration.|portion, allowance, share|
+famished|Are you famished after practice?|The famished puppy ate in seconds.|starving, ravenous, hungry|full
+glutton|Am I a glutton for wanting more pie?|The glutton in the story ate the whole feast.|overeater, pig|
+delectable|Isn't this pastry delectable?|Delectable smells drifted from the food truck.|delicious, tasty, yummy|disgusting
+succulent|Is the steak succulent?|Aloe is a succulent that stores water in its leaves.|juicy, moist, tender|dry
+braise|How long should I braise the short ribs?|Chefs braise tough cuts until they fall apart.|stew, simmer|
+perishable|Is cheese very perishable?|Perishable goods ship in cold trucks.|spoilable, short-lived|nonperishable
+staple|Is pasta a staple in your house?|Hand me a staple for this paper.|basic, essential, mainstay|luxury
+delicacy|What's the strangest delicacy you've tried?|She handled the topic with delicacy.|treat, specialty, tact|
+brine|Why soak olives in brine?|The ocean is natural brine.|salt water, pickle|
+merchandise|Is the merchandise on sale?|The museum's merchandise includes mugs and posters.|goods, products, wares|
+inventory|Who will take inventory of the supplies?|Her mental inventory of chores was long.|stock, list, catalog|
+retail|What is the retail price?|Retail stores are busiest in December.|selling, sales|wholesale
+invest|Would you invest in a lemonade stand?|Smart people invest in learning.|put in, fund, spend|
+bankrupt|What happens when a company goes bankrupt?|The idea was bankrupt of originality.|broke, insolvent, ruined|solvent
+debt|How did they get into debt?|I owe you a debt of thanks.|liability, bill, obligation|credit
+apprentice|Would you like to be an apprentice to a chef?|The electrician took on a young apprentice.|trainee, learner, novice|master
+vocation|What's your dream vocation?|She found her vocation in caring for animals.|calling, career, profession|
+livelihood|How do they earn their livelihood?|Tourism is the island's main livelihood.|living, income, job|
+commodity|Is water becoming a commodity?|Time is a precious commodity.|product, good, resource|
+currency|What currency do they use in Mexico?|The idea gained currency among students.|money, cash, acceptance|
+auction|Have you ever been to an auction?|The school auction raised money for the band.|sale, bidding|
+salvage|Can we salvage the soggy cake?|The salvage crew raised the sunken boat.|rescue, save, recover|lose
+quota|Did you meet your reading quota?|The factory set a daily production quota.|share, target, allowance|
+hamlet|How many people live in the hamlet?|The road wound through hamlet after hamlet.|village, settlement|city
+province|Which province do they live in?|Baking is my mom's province, not mine.|region, territory, area|
+frontier|Why is the ocean floor called a frontier?|The frontier of medicine keeps moving.|border, edge, boundary|
+fjord|How deep is the fjord?|Waterfalls poured into the fjord.|inlet, sound|
+savanna|What grows on the savanna?|Giraffes graze on savanna trees.|grassland, plain|
+steppe|What animals live on the steppe?|Wind sweeps across the endless steppe.|plain, prairie, grassland|
+cove|Can we swim in the cove?|Smugglers once used the cove at night.|bay, inlet, harbor|
+inlet|Is the inlet deep enough for boats?|Mangroves grow along the inlet.|cove, bay, creek|
+vicinity|Are there any hotels in the vicinity?|Police searched the vicinity for clues.|neighborhood, area, surroundings|
+haven|Is the island a haven for birds?|The garden is a haven of peace.|refuge, shelter, sanctuary|
+itinerary|What's on the itinerary for Saturday?|We changed our itinerary because of the storm.|schedule, plan, route|
+excursion|What excursion would you choose?|Our excursion to the caves was the highlight.|outing, trip, jaunt|
+pilgrimage|Have you ever been on a pilgrimage?|Each year, families make a pilgrimage to the old shrine.|journey, trek, trip|
+nomad|Would you like to live as a nomad?|The digital nomad works from a laptop anywhere.|wanderer, traveler, rover|settler
+apparatus|What apparatus do divers use?|The gym's apparatus includes rings and bars.|equipment, device, gear|
+mechanism|How does the mechanism work?|Sleep is the body's repair mechanism.|machinery, system, workings|
+gauge|Can you gauge the distance?|The rain gauge filled to an inch.|measure, meter, estimate|
+chisel|Can you shape the stone with a chisel?|Water can chisel a canyon over time.|carve, cut, tool|
+anvil|Why is an anvil so heavy?|The cartoon anvil fell on the coyote.|block, forge|
+winch|Can the winch lift the car?|Sailors winch up the sail.|crank, hoist, pulley|
+vessel|What vessel holds the soup?|The fishing vessel returned at dawn.|container, ship, boat|
+trinket|What trinket did you bring back?|A trinket dangled from her keychain.|ornament, bauble, knickknack|
+heirloom|Do you have a family heirloom?|We planted heirloom tomatoes from old seeds.|keepsake, legacy, treasure|
+sieve|Can you sift the sand through a sieve?|My memory is like a sieve today.|strainer, sifter, filter|
+tripod|Do we need a tripod for the night photos?|The tripod wobbled on the rocks.|stand, support|
+kiln|How hot does a kiln get?|The kiln cracked one of the vases.|oven, furnace|
+chronicle|Who will chronicle the trip?|The show will chronicle a year in the forest.|record, history, document|
+interval|What's the interval between the trains?|The play had a short interval.|gap, pause, break|
+prehistoric|What did prehistoric animals eat?|The fridge has prehistoric leftovers.|ancient, primitive, early|modern
+medieval|Have you seen a medieval sword?|The fair had medieval costumes.|ancient, old|modern
+simultaneous|Can you do simultaneous tasks?|Simultaneous translation is very hard.|concurrent, parallel|separate
+interim|Who will lead in the interim?|We stayed with friends in the interim.|meantime, temporary, provisional|permanent
+aftermath|What happened in the aftermath of the game?|Clean-up crews worked in the aftermath.|consequences, wake, results|
+monarchy|What's the difference between a monarchy and a republic?|The monarchy ended over a century ago.|kingdom, royalty|republic
+verdict|What was the verdict?|Food critics gave their verdict on the new menu.|decision, judgment, ruling|
+testimony|Was her testimony believable?|The ancient walls stand as testimony to their skill.|evidence, statement, proof|
+alliance|Why did the countries form an alliance?|The alliance between the families lasted generations.|partnership, union, coalition|rivalry
+propaganda|How can you spot propaganda?|The ad was pure propaganda for the company.|misinformation, publicity|truth
+civic|What civic group do you belong to?|The civic center hosts concerts.|community, public, municipal|private
+heritage|What is your family's heritage?|The town protects its heritage buildings.|legacy, tradition, ancestry|
+arrogant|Why is the champion so arrogant?|His arrogant tone annoyed the referee.|proud, haughty, conceited|humble
+earnest|Is his apology earnest?|In earnest, she began to study.|sincere, serious, heartfelt|insincere
+cynical|Why are you so cynical about the plan?|Cynical comments brought the mood down.|skeptical, distrustful, jaded|optimistic
+malicious|Was the prank malicious?|Malicious gossip can ruin friendships.|spiteful, mean, hurtful|kind
+reserved|Is the table reserved?|She has a reserved way of speaking.|shy, quiet, booked|outgoing
+jargon|Can you explain without jargon?|Legal jargon fills the contract.|lingo, terminology, slang|plain language
+slang|What slang do you use with your friends?|Old slang can sound funny today.|lingo, jargon, idiom|formal language
+hubbub|What's all the hubbub about?|The hubbub of the market woke me up.|commotion, din, uproar|quiet
+hoopla|Why all the hoopla about the new store?|The hoopla faded after a week.|fuss, hype, excitement|
+gizmo|What does this gizmo do?|The kitchen drawer is full of gizmos, and I don't know what one gizmo does.|gadget, device, contraption|
+nitwit|Who's the nitwit who left the gate open?|Don't call your brother a nitwit.|fool, dimwit, nincompoop|genius
+dillydally|Why do you dillydally in the morning?|There's no time to dillydally; the train leaves soon.|dawdle, linger, delay|hurry
+mishmash|Why is the playlist such a mishmash?|The meal was a mishmash of leftovers.|jumble, hodgepodge, mix|
+topsy-turvy|Why is the room topsy-turvy?|It's been a topsy-turvy week.|chaotic, upside-down, messy|orderly
+helter-skelter|Why are the toys scattered helter-skelter?|Fans ran helter-skelter when it rained.|chaotic, haphazard, wildly|orderly
+knickknack|Where did you get that knickknack?|The shop sells knickknack after knickknack.|trinket, ornament, bauble|
+rumpus|What caused the rumpus downstairs?|During the storm, the kids raised a rumpus.|uproar, racket, fuss|calm
+hijinks|What hijinks did you get up to at camp?|From start to finish, the movie is pure hijinks.|antics, pranks, shenanigans|
+lickety-split|Can you finish lickety-split?|The cat ran lickety-split up the tree.|quickly, fast, swiftly|slowly
+willy-nilly|Why are the books stacked willy-nilly?|Don't change the rules willy-nilly.|randomly, haphazardly|carefully
+fuddy-duddy|Is your uncle a fuddy-duddy about music?|Only a fuddy-duddy hates water slides.|stick-in-the-mud, fogey|
+kibosh|Who put the kibosh on the party?|The storm put the kibosh on our camping trip.|stop, end|go-ahead
+statistics|What do the statistics show?|Statistics can be twisted to tell any story.|data, figures, numbers|
+ultimately|Who will ultimately decide?|Ultimately, kindness won the day.|finally, eventually, in the end|initially
+identify|Could you identify the culprit?|Many teens identify with the main character.|recognize, name, spot|
+legislation|What legislation is being debated?|Legislation takes months to pass.|law, laws, statutes|
+resistance|How much resistance did the plan face?|Water resistance makes swimming hard.|opposition, defiance, friction|support
+expansion|What's the plan for the expansion?|The game's expansion adds new levels.|growth, enlargement, extension|contraction
+constant|Why is the baby's crying constant?|The speed of light is a constant.|steady, continual, unchanging|variable
+external|Is the hard drive external?|The external door needs paint.|outside, outer, exterior|internal
+criticism|How do you handle criticism?|The plan drew heavy criticism.|critique, disapproval, review|praise
+universal|Is laughter truly universal?|A universal remote controls everything.|worldwide, general, common|specific
+extensive|How extensive is the damage?|She has extensive experience with horses.|wide, broad, thorough|limited
+regardless|Will you go regardless of the weather?|Regardless of age, everyone can join.|anyway, nonetheless|
+recognition|Did she get recognition for her work?|Facial recognition unlocks the phone.|acknowledgment, credit, praise|
+moral|What moral did the fable teach?|Telling the truth was the moral choice.|lesson, ethical, message|immoral
+assessment|What was your assessment of the game?|The nurse made a quick assessment.|evaluation, judgment, review|
+publication|When is the publication date?|The results surprised everyone after their publication.|release, book, magazine|
+institution|Is the bakery an institution in town?|Marriage is an old institution.|organization, establishment, tradition|
+evolution|How did the evolution of birds happen?|The band's evolution is clear across its albums.|development, progress, growth|
+elite|Is the school elite?|Elite athletes train twice a day.|best, top, privileged|ordinary
+translation|Is the translation accurate?|Something got lost in translation.|interpretation, rendering|
+enterprise|What enterprise would you start?|The enterprise grew into a big company.|business, venture, project|
+exception|Is there an exception to the rule?|She was the exception, finishing early.|exclusion, anomaly|rule
+fundamental|What is the fundamental problem?|Trust is fundamental in a team.|basic, essential, core|minor
+participation|How can we increase participation?|Voter participation was high this year.|involvement, engagement|absence
+innovation|What's the greatest innovation of all time?|The lab is a hub of innovation.|invention, novelty, change|tradition
+feedback|Can you give me feedback on my drawing?|The microphone made a screech of feedback.|response, comments, input|
+stability|Why is stability important for kids?|The ladder lost its stability on the mud.|steadiness, balance, security|instability
+intellectual|Is chess more intellectual than checkers?|The professor is a famous intellectual.|scholarly, academic, thinker|

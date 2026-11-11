@@ -34,6 +34,18 @@ if __import__("os").path.exists("levels.txt"):
         for w in re.split(r"[,\s]+", ws.strip()):
             if w: relevel[w] = int(l)
 
+POSMAP = {"noun": ("n",), "verb": ("v",), "adjective": ("a", "s"), "adverb": ("r",)}
+def antonyms(w, pos):
+    """Opposites from Open English WordNet, only plain single words that don't share the word's stem (no undependable for dependable)"""
+    out = []
+    for p, senses in E.get(w, []):
+        if p not in POSMAP.get(pos, ()): continue
+        for s in senses:
+            for rel, target in s["rels"]:
+                if rel != "antonym" or target not in SENSES: continue
+                a = SENSES[target][0]
+                if re.fullmatch(r"[a-z]{3,}", a) and a not in out and a[:4] != w[:4] and w not in a and a not in w and not UNSAFE.search(a): out.append(a)
+    return out[:2]
 def extras(w, kid):
     fam, sim = [], []
     if w in E:
@@ -52,6 +64,8 @@ def add(w, pos, d, ex, topic, level, sets=()):
     o = {"w": w, "p": pos, "l": level, "d": d, "e": ex, "s": respell(cmu[key]) if key in cmu else "",
          "i": ipa(cmu[key]) if key in cmu else "", "t": OLD.get(topic, topic), "f": fam, "m": sim}
     if sets: o["x"] = list(sets)
+    ant = antonyms(w, pos)
+    if ant: o["a"] = ant
     seen[w] = o; out.append(o); return True
 def read(fname):
     for line in open(fname, encoding="utf-8"):
@@ -124,6 +138,26 @@ for w, sent in V4.items():
     if "e2" not in seen[w]: seen[w]["e2"] = sent
 open("e2_problems.txt", "w").write("\n".join(bad))
 print("second sentences:", sum(1 for o in out if o.get("e2")), "of", len(out), "| problems:", len(bad))
+
+# Third and fourth sentences plus hand-picked synonyms and opposites (sentences/more/out_*.txt,
+# "word|sentence|sentence|syn, syn|ant, ant"). New sentences go in e3 so each word shows up in fresh settings.
+# Hand-picked synonyms replace the automatic ones (which mixed in loose relatives like "animal" or "machine").
+HYPERNYMS = {"animal", "bug", "bird", "machine", "thing", "person", "object", "device", "plant", "fish", "food", "place", "act", "being", "organism"}
+more_n = 0
+for f in sorted(glob.glob("sentences/more/out_*.txt")):
+    for line in open(f, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if not line.strip() or line.startswith("#"): continue
+        w, s1, s2, syn, ant = [x.strip() for x in line.split("|")]
+        if w not in seen: continue
+        o = seen[w]; more_n += 1
+        wre = re.compile(r"(^|[^\w])" + re.escape(w) + r"(?![\w])", re.I)
+        o["e3"] = [x for x in (s1, s2) if wre.search(x) and x.lower() not in (o["e"].lower(), str(o.get("e2", "")).lower())]
+        syns = [x.strip() for x in syn.split(",") if x.strip() and x.strip().lower() != w]
+        ants = [x.strip() for x in ant.split(",") if x.strip() and x.strip().lower() != w]
+        o["m"] = syns[:4] if syns else [x for x in o.get("m", []) if x not in HYPERNYMS]
+        if ants: o["a"] = ants[:3]
+print("hand-picked sentences and synonyms:", more_n)
 
 for o in out: o["z"] = round(zipf_frequency(o["w"].replace("-", " "), "en"), 1)
 # Rebalance: the rarest teen words move up to Philosopher; Scholar's most everyday words step aside

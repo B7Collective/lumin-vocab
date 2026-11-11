@@ -216,7 +216,7 @@ function welcomeScenes() {
   return h("section", { class: "wsec wscenes", "aria-labelledby": "w-scenes" },
     h("div", { class: "wpostcards", "aria-hidden": "true" }, cards.map(([sc, x, r], i) => h("div", { class: "wpost", style: { "--r": r + "deg", "--i": i } }, h("img", { src: sceneUrl(sc), alt: "", width: 320, height: 180, loading: "lazy", decoding: "async", style: { objectPosition: `${x}% 50%` } })))),
     h("div", { class: "wscenetext" }, h("h2", { id: "w-scenes" }, "Scenes worth keeping"),
-      h("p", { class: "lead" }, "Sixteen hand-painted places sit behind your words: harbors, libraries, snowy villages, northern lights. Pick a favorite, or let them shuffle."),
+      h("p", { class: "lead" }, "Twenty-four scenes sit behind your words: harbors, libraries, snowy villages, northern lights and layered paper landscapes. Pick a favorite, or let them shuffle."),
       h("p", { class: "muted" }, "Like one? Save it to your phone as a wallpaper, straight from Settings.")));
 }
 

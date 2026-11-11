@@ -1,0 +1,130 @@
+bouncy|My new sneakers feel bouncy when I run.|Is the trampoline more bouncy than the bed?|springy, lively, peppy|flat
+breezy|Hang the sheets out on a breezy day.|Why is the beach so breezy in the evening?|windy, airy, gusty|still
+bright|Turn off the bright light, please.|What a bright kid; she reads fast!|shiny, sunny, clever|dim, dark
+bumpy|Why does the plane feel bumpy in clouds?|A toad has bumpy skin.|rough, lumpy, uneven|smooth
+busy|Ants are busy all summer long.|Are you busy, or can you play?|active, occupied|idle
+careful|A careful painter stays inside the lines.|Was the waiter careful with the tray?|cautious, gentle|careless
+cheeky|My cheeky cousin stuck out his tongue.|What a cheeky grin you have!|sassy, playful|polite
+chubby|Look at the chubby little hamster!|My chubby cat loves to nap.|plump, round, tubby|skinny
+colorful|Fall trees are so colorful.|Let's make a colorful paper chain.|bright, vivid|dull, plain
+comfortable|Is your seat comfortable?|Wear comfortable shoes for the hike.|cozy, relaxed, comfy|uncomfortable
+cranky|Why is the bus driver so cranky today?|A cranky old goat lived on the hill.|grumpy, crabby|cheerful
+creaky|Does your bed sound creaky when you move?|A creaky gate opened in the wind.|squeaky|silent
+cuddly|Which stuffed animal is the most cuddly?|Baby koalas look so cuddly.|huggable, soft|prickly
+daring|Who was daring enough to try the snails?|A daring squirrel took food from my hand.|bold, brave, fearless|timid
+dizzy|Are you dizzy after the spinning ride?|Looking down from the tower made me dizzy.|woozy, giddy|steady
+dreamy|Grandma has a dreamy look when she tells old stories.|What a dreamy pink sky!|faraway, peaceful|
+drowsy|Long movies make me drowsy.|Is the bear drowsy after its winter nap?|sleepy, tired|alert, awake
+elegant|Mom wore an elegant dress to the party.|What an elegant way to fold a napkin!|graceful, fancy, stylish|clumsy
+fearless|Be fearless and try the high dive!|Our fearless cat walks along the fence.|brave, bold, daring|afraid, scared
+feathery|A feathery tail stuck out from the bush.|Snow came down in feathery flakes.|fluffy, light, soft|
+fizzy|Is fizzy water the same as soda?|The tablet made the water fizzy.|bubbly|flat
+flat|Our town is flat, so biking is easy.|Lay the map flat on the table.|level, even, smooth|bumpy, hilly
+foggy|Can boats see on a foggy night?|My glasses got foggy when I came inside.|misty, hazy, cloudy|clear
+frosty|Our breath made clouds in the frosty air.|Who drew on the frosty window?|icy, cold, chilly|warm
+glossy|Look how glossy the crow's feathers are!|Paint the door with glossy paint.|shiny, sleek|dull
+gooey|Is the middle of the brownie gooey?|My hands are gooey from the glue.|sticky, mushy|
+greedy|Don't be greedy; leave some for others.|Why did the greedy dragon hoard gold?|selfish|generous
+grouchy|Why is the cat so grouchy today?|A grouchy goose chased us at the park.|grumpy, cranky|cheerful
+handy|Is there a handy spot for my keys?|My uncle is handy with tools.|useful, helpful, skillful|useless
+happy-go-lucky|Is your puppy as happy-go-lucky as mine?|Even in the rain, my happy-go-lucky friend smiled.|carefree, easygoing|worried
+helpful|Thank you for being so helpful today.|Is the map helpful or confusing?|useful, kind|unhelpful
+hilarious|Have you heard the hilarious knock-knock joke?|The puppet show was hilarious!|funny, silly|boring
+humongous|Look at the humongous wave!|My backpack is humongous this year.|huge, giant, enormous|tiny
+icy|An icy wind blew through the trees.|Skate carefully on the icy pond.|frozen, cold, frosty|warm
+itchy|Do bug bites make you itchy?|My new tag is itchy on my neck.|scratchy|
+joyful|What a joyful sound the band made!|Our joyful dog jumped into the snow.|happy, cheerful, glad|sad
+lazy|My lazy dog won't fetch.|Saturday was a lazy, rainy day.|idle, slow|busy, active
+lively|Our classroom gets lively after recess.|A lively puppy ran circles around us.|busy, peppy, bouncy|dull, sleepy
+lucky|Is seven your lucky number?|We were lucky to see a whale.|fortunate|unlucky
+magical|Do you think unicorns are magical?|What a magical night for a parade!|enchanting, amazing|ordinary
+mighty|A mighty wave crashed on the rocks.|Ants are tiny but mighty.|powerful, strong|weak
+muddy|Why is the dog so muddy?|We splashed in the muddy puddles.|dirty, messy|clean
+nifty|Grandma has a nifty bag with many pockets.|What a nifty little robot!|clever, handy, neat|
+odd|What an odd hat!|Is it odd that my cat likes baths?|strange, weird, unusual|normal
+playful|Dolphins are playful animals.|Our playful goat butts the ball.|frisky, lively, fun|serious
+pointy|Be careful with the pointy scissors.|Do elves have pointy ears?|sharp, spiky|blunt, round
+prickly|Why is a hedgehog so prickly?|My wool hat feels prickly.|spiky, thorny, scratchy|smooth
+puffy|My eyes were puffy when I woke up.|Look at the puffy marshmallows!|swollen, fluffy|flat
+quiet|The forest was quiet after the snow.|Why are you so quiet today?|silent, calm, hushed|loud, noisy
+roomy|Is the backpack roomy enough for my lunch?|We need a roomy box for the puppy.|big, spacious, large|cramped
+rosy|A rosy sunset filled the sky.|The baby has rosy cheeks.|pink, blushing|pale
+rusty|Do not touch the rusty nail.|My rusty old bike still works.|corroded, old|
+scruffy|Why is your coat so scruffy?|A scruffy cat lived behind the store.|messy, shabby, untidy|neat, tidy
+shaggy|My dad has a shaggy beard.|A shaggy yak looked up at us.|hairy, woolly, messy|smooth
+shimmering|Her shimmering dress caught the light.|Look at the shimmering bubbles!|sparkling, glittering, glowing|dull
+sleepy|Why do I feel sleepy after lunch?|Our little town is quiet and sleepy.|tired, drowsy|awake, alert
+slimy|Are frogs slimy or dry?|Ew, the old lettuce is slimy!|slippery, gooey|dry
+snug|Is your coat snug enough?|We were snug in our sleeping bags.|cozy, warm, tight|loose
+soaring|Look at the soaring kites!|We heard the singer's soaring voice.|flying, rising, gliding|falling
+speedy|Is a speedy car better than a slow one?|Thanks for the speedy reply!|fast, quick, rapid|slow
+spotless|Is the car spotless after the wash?|Her white sneakers stayed spotless all day.|clean, perfect|dirty
+spotted|Look at that spotted ladybug!|Do you like the spotted socks?|dotted, speckled|plain
+squishy|Do you like squishy balls?|The mud felt squishy between my toes.|soft, mushy|hard
+steady|Keep a steady hand when you pour.|My heart beat slow and steady.|stable, firm, even|shaky, wobbly
+stinky|What is that stinky smell?|Stinky cheese tastes better than it smells.|smelly|fragrant
+stormy|Was the sea stormy last night?|On stormy days, we read inside.|rainy, windy, wild|calm, sunny
+striped|Is a tiger striped like a zebra?|I wore my striped shirt today.|lined, banded|plain
+strong|Is the rope strong enough?|My dad has strong arms.|powerful, tough, mighty|weak
+sunny|Will it be sunny for the picnic?|Our new puppy has a sunny personality.|bright, clear, cheerful|cloudy, gloomy
+sweet|Is the candy too sweet?|What a sweet thing to say!|sugary, kind, nice|sour
+terrific|What a terrific day at the beach!|Your drawing looks terrific.|great, wonderful, super|awful
+thirsty|Is the dog thirsty after the walk?|Hot days make me thirsty.|parched, dry|
+thoughtful|My thoughtful sister brought me soup.|Thank you for the thoughtful note.|kind, caring|thoughtless
+toasty|Is the car toasty yet?|My mittens keep my hands toasty.|warm, cozy|cold
+tricky|Spelling some words can be tricky.|A tricky fox fooled the hens.|hard, sly|easy
+twinkly|Grandpa has twinkly eyes when he laughs.|We hung twinkly stars in my room.|sparkly, shining|dull
+velvety|Do you like velvety pillows?|A velvety moth landed on my hand.|soft, smooth|rough
+warm|Wear a warm coat today.|What a warm hug!|hot, cozy, toasty|cold, cool
+wavy|Let's draw a wavy line.|Hot air makes the road look wavy.|curly, curvy|straight
+wild|Have you seen a wild turkey?|My hair is wild in the morning!|untamed, natural|tame
+wise|Is it wise to swim after dark?|My wise grandpa always has good advice.|smart, clever, sensible|foolish
+wonderful|What a wonderful surprise!|Isn't the snow wonderful?|amazing, great, terrific|awful
+wooly|My wooly hat keeps my ears warm.|Is a llama wooly like a sheep?|fuzzy, furry, fleecy|
+yummy|What's the most yummy snack you know?|Mmm, that soup smells yummy!|tasty, delicious|yucky
+zesty|Do you like zesty salsa?|A zesty orange smell came from the bowl.|tangy, spicy, lively|bland
+bake|Can we bake cookies today?|Grandma will bake a pie for the party.|cook, roast|
+bloom|When do the roses bloom?|Cactus flowers bloom after rain.|blossom, flower, open|wilt, fade
+blush|Do you blush when people clap for you?|My cheeks start to blush when I'm shy.|redden, turn pink|
+bounce|Can you bounce the ball ten times?|Kangaroos bounce across the field.|spring, hop, rebound|
+breathe|Fish breathe through their gills.|Can you breathe underwater with a snorkel?|inhale, exhale|
+brush|Did you brush your hair?|Please brush the sand off your feet.|sweep, comb, scrub|
+bubble|Watch the hot cocoa bubble in the pot.|Soap will bubble up when you scrub.|fizz, foam, boil|
+buzz|Why do flies buzz near your ear?|My phone will buzz when you text.|hum, drone|
+carry|Ants carry crumbs back home.|Will you carry me up the stairs?|hold, bring, take|drop
+chatter|Squirrels chatter at the cat.|Did your teeth chatter in the cold?|talk, babble, gab|
+chirp|Do crickets chirp at night?|I heard a baby bird chirp in the bush.|tweet, peep, cheep|
+clap|Can you clap the beat?|Let's clap for the winner!|applaud|
+climb|Can goats climb trees?|We will climb to the top of the hill.|scale, go up|descend
+cuddle|Puppies cuddle together to keep warm.|Do you want to cuddle and read a book?|hug, snuggle|
+dangle|Earrings dangle from her ears.|Bats dangle upside down to sleep.|hang, swing|
+dive|Can you dive to the bottom of the pool?|Pelicans dive for fish.|plunge, jump|
+doodle|Did you doodle on your homework?|I like to doodle stars in the margins.|draw, sketch, scribble|
+drip|Ice cream will drip down your cone.|Did you hear the rain drip from the roof?|drop, trickle|pour
+fling|Monkeys fling banana peels!|Fling open the window to let in air.|throw, toss, hurl|catch
+float|Will this toy boat float?|Clouds float across the sky.|drift, bob|sink
+fold|Can you fold a paper airplane?|Help me fold the laundry.|bend, crease, tuck|unfold
+gaze|Cats gaze out the window at birds.|Why do you gaze at the moon?|stare, look, watch|glance
+glow|Do jellyfish glow in the dark?|The candle began to glow.|shine, gleam, light up|
+gobble|Don't gobble your dinner so fast.|Turkeys gobble when they call.|gulp, devour, wolf|nibble
+grin|Why are you trying not to grin?|I couldn't help but grin at the puppy.|smile, beam|frown
+growl|Did you hear my tummy growl?|Does your cat growl at strangers?|snarl, rumble|purr
+grumble|Don't grumble about the chores.|Thunder began to grumble far away.|complain, mutter, moan|
+gurgle|I hear the drain gurgle.|Does the creek gurgle over the stones?|bubble, burble|
+hop|Hop on one foot like a bunny.|Can frogs hop very far?|jump, skip, leap|
+howl|Does your dog howl at sirens?|Listen to the wind howl outside!|wail, cry, yowl|
+hug|Can I hug you goodbye?|Bears hug trees to scratch their backs.|cuddle, squeeze, embrace|
+juggle|Who taught you to juggle?|Watch me juggle these oranges!|toss|
+knit|Can you knit a hat for my doll?|My aunt will knit me a sweater.|weave, stitch|
+laugh|What makes you laugh the most?|Babies laugh at peekaboo.|giggle, chuckle|cry
+listen|Did you listen to the story?|Please listen when someone is talking.|hear, pay attention|ignore
+melt|Will the butter melt on the toast?|Chocolate can melt in your pocket.|thaw, soften|freeze
+mix|Can I mix the batter?|Don't mix the red and green paint.|stir, blend, combine|separate
+nap|Do lions nap during the day?|Let's nap in the hammock.|doze, rest, snooze|wake
+nuzzle|Puppies nuzzle their mom for milk.|Watch the pony nuzzle its friend.|nudge, snuggle|
+paddle|Ducks paddle with their feet.|Can you paddle the kayak alone?|row, swim|
+paint|Can I paint your nails?|We will paint the fence white.|color, draw|
+pat|Gently pat the baby's back.|Can I pat your horse?|tap, stroke|
+peel|Can you peel an orange in one piece?|Sunburned skin can peel.|skin, strip|
+plant|Let's plant a tree for the birds.|When should we plant the pumpkins?|sow, grow|dig up
+pop|Did you hear the popcorn pop?|Can you pop the bubble with your finger?|burst, bang, crack|

@@ -122,28 +122,39 @@ const hasTTS = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynt
 export const ACCENTS = [["us", "American"], ["gb", "British"]];
 export const clipSlug = (w) => String(w).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const clipUrl = (w, accent) => `/audio/${accent === "gb" ? "gb" : "us"}/${clipSlug(w)}.mp3`;
-let actx = null, playing = null;
+// Clips play through a media player (like a video), not the sound-effects mixer, so phones play them even with the
+// ringer off and use the media volume. One player is reused: once a tap has started it, it can play again later
+// (say, when a new word appears with Read aloud on). Clips are fetched once and handed to the player as files in memory.
+if (typeof navigator !== "undefined" && navigator.audioSession) { try { navigator.audioSession.type = "playback"; } catch {} }
+const player = typeof Audio !== "undefined" ? new Audio() : null;
+if (player) { player.preload = "auto"; player.setAttribute("playsinline", ""); }
 const clips = new Map();
-const ctx = () => { if (!actx) { const C = window.AudioContext || window.webkitAudioContext; if (C) actx = new C(); } if (actx && actx.state === "suspended") actx.resume().catch(() => {}); return actx; };
-// Phones only allow sound after a tap, so wake the audio on the first touch anywhere
-if (typeof window !== "undefined") ["pointerdown", "keydown"].forEach((t) => window.addEventListener(t, () => ctx(), { once: true, capture: true }));
-async function clipBuffer(url) {
+let unlocked = false;
+const unlock = () => {
+  if (unlocked || !player) return; unlocked = true;
+  if (!player.src) { player.src = "/audio/silent.mp3"; player.play().catch(() => { unlocked = false; }); }
+};
+if (typeof window !== "undefined") ["pointerdown", "keydown", "touchend"].forEach((t) => window.addEventListener(t, unlock, { capture: true }));
+function clipFile(url) {
   if (clips.has(url)) return clips.get(url);
-  const pending = fetch(url).then((r) => { if (!r.ok) throw new Error("no clip"); return r.arrayBuffer(); }).then((b) => new Promise((ok, bad) => ctx().decodeAudioData(b, ok, bad)));
+  const pending = fetch(url).then((r) => { if (!r.ok) throw new Error("no clip"); return r.blob(); }).then((b) => URL.createObjectURL(b));
   clips.set(url, pending);
-  if (clips.size > 60) clips.delete(clips.keys().next().value);
   pending.catch(() => clips.delete(url));
+  if (clips.size > 60) { const [old, pr] = clips.entries().next().value; clips.delete(old); pr.then((u) => URL.revokeObjectURL(u)).catch(() => {}); }
   return pending;
 }
 async function playClip(word, accent) {
-  const c = ctx(); if (!c) return false;
-  const buf = await clipBuffer(clipUrl(word, accent));
-  if (playing) { try { playing.stop(); } catch {} }
-  const src = c.createBufferSource(); src.buffer = buf; src.connect(c.destination); src.start(); playing = src;
+  if (!player) throw new Error("no player");
+  const src = await clipFile(clipUrl(word, accent));
+  player.pause();
+  player.src = src;
+  player.currentTime = 0;
+  unlocked = true;
+  await player.play();
   return true;
 }
 // Preload a word's clip (for example the next card) so it plays the instant it's asked for
-export function preloadWord(w, p) { const word = BY.get(w); if (word && !word.custom && ctx()) clipBuffer(clipUrl(w, p && p.accent)).catch(() => {}); }
+export function preloadWord(w, p) { const word = BY.get(w); if (word && !word.custom && player) clipFile(clipUrl(w, p && p.accent)).catch(() => {}); }
 
 const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|kathy|ralph|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|deranged|hysterical|pipe organ)\b/i;
 const NATURAL = /(premium|enhanced|natural|neural|online)/i;
@@ -162,7 +173,7 @@ function speakDevice(text, accent) {
   } catch { return false; }
 }
 // Can this device play words out loud at all (recorded clips, or the device voice as a fallback)
-export const canSpeak = () => (typeof window !== "undefined" && !!(window.AudioContext || window.webkitAudioContext)) || hasTTS();
+export const canSpeak = () => (typeof Audio !== "undefined") || hasTTS();
 export function speak(text, p) {
   if (!text) return false;
   const accent = (p && p.accent) === "gb" ? "gb" : "us";

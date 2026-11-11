@@ -1,0 +1,130 @@
+bucketful|Who dumped a bucketful of water on me?|A bucketful of crabs scuttled around.|pailful|
+spare|Can you spare a minute to help?|Is there a spare tire in the trunk?|extra, leftover|
+leftover|What should we do with the leftover cake?|My leftover allowance went in the jar.|extra, remaining|
+quarter|Can I have a quarter for the gumball machine?|We left at a quarter past nine.|fourth|
+triple|Can you do a triple jump?|Our dog ate triple his dinner!|threefold|single
+heaps|Thanks heaps for your help!|Heaps of snow piled up by the door.|lots, loads, tons|bit
+fewer|Why are there fewer birds in winter?|Fewer cars means quieter streets.|less|more
+nearly|Are we nearly there yet?|My puppy is nearly as big as me.|almost, close to|
+troop|Is your troop going on the hike?|Kids marched to the park in a troop.|group, band, pack|
+nurse|Was the nurse kind to you?|My aunt works as a nurse at night.|caregiver|patient
+dentist|Did the dentist find any cavities?|My dentist gave me a new toothbrush.|tooth doctor|
+veterinarian|Can a veterinarian fix a bird's wing?|My sister wants to be a veterinarian.|vet, animal doctor|
+plumber|Can the plumber come today?|The plumber crawled under the sink.|pipe fixer|
+carpenter|Can a carpenter build a treehouse?|The carpenter sanded the table smooth.|builder, woodworker|
+mechanic|Does the mechanic know what's wrong?|The mechanic's hands were covered in grease.|repairman|
+pilot|Did the pilot say we were landing?|The pilot flew us over the mountains.|aviator, flyer|passenger
+sailor|Would you like to be a sailor?|The sailor saw a whale from the deck.|seaman, mariner|
+gardener|Is your grandma a good gardener?|A busy gardener pulls weeds every day.|grower|
+grocer|Does the grocer sell fresh bread?|Our grocer knows every customer's name.|shopkeeper, storekeeper|
+waiter|Can you ask the waiter for more napkins?|The waiter carried six plates at once.|server|customer
+lifeguard|Is the lifeguard on duty?|The lifeguard jumped in to help a swimmer.|rescuer|
+ranger|Did the ranger give you a badge?|The ranger warned us about the slippery rocks.|warden, guard|
+engineer|What does an engineer do all day?|The engineer tested the new robot arm.|designer, builder|
+sculptor|What will the sculptor make out of the ice?|The sculptor's hands were covered in clay.|carver, artist|
+potter|Did the potter make that vase?|The potter let me try the wheel.|ceramist, craftsman|
+photographer|Can the photographer take our picture?|The photographer climbed a tree for the best shot.|cameraman|
+poet|Who is your favorite poet?|The poet wrote about the first snow.|writer, rhymer|
+dancer|Is your sister a good dancer?|The dancer leaped like a deer.|ballerina, performer|
+janitor|Did the janitor fix the broken door?|Our janitor waves at every kid.|custodian, caretaker|
+tailor|Can the tailor fix my torn jacket?|The tailor measured my arms.|dressmaker, seamstress|
+barber|Does the barber give you a lollipop?|The barber used a buzzing razor.|hairdresser, hairstylist|
+florist|Did the florist make your bouquet?|The florist's shop smelled like roses.|flower seller|
+jeweler|Can the jeweler make my ring smaller?|The jeweler looked at the diamond through a tiny lens.|goldsmith|
+lumberjack|Can a lumberjack climb a tall tree?|The lumberjack split logs all morning.|woodcutter, logger|
+shepherd|Does the shepherd sleep with the sheep?|The shepherd played a flute on the hill.|herder|
+blacksmith|What does a blacksmith make?|The blacksmith dipped the hot iron in water.|smith, metalworker|
+emperor|Did the emperor live in a palace?|The emperor penguin is the biggest penguin.|ruler, king|
+detective|Can you be the detective in our game?|The detective used a magnifying glass.|investigator, sleuth|
+messenger|Can the messenger deliver my note?|A pigeon was once used as a messenger.|courier, runner|
+seaweed|Can you eat seaweed?|The beach was covered in slimy seaweed.|kelp, algae|
+coral|Is coral a plant or an animal?|We saw orange coral on the reef.||
+reef|How many fish live on the reef?|Divers explored the old reef.|coral reef, shoal|
+shore|How far is it to the shore?|Shells washed up on the shore.|beach, coast, bank|sea
+dune|How tall is that dune?|The wind made ripples on the dune.|sandhill, mound|
+bay|Can we sail across the bay?|Seals rested on the rocks in the bay.|cove, inlet, harbor|
+brook|Can you hear the brook?|We floated paper boats down the brook.|creek, stream|
+riverbank|Did you see the otter on the riverbank?|We found a smooth stone on the riverbank.|bank, shore|
+bog|Do moose live in the bog?|Cranberries grow in a bog.|swamp, marsh|
+rainforest|What animals live in the rainforest?|It rains almost every day in the rainforest.|jungle|desert
+grove|Can we have a picnic in the grove?|The olive grove was old and quiet.|orchard, thicket|
+clearing|Can we play in the clearing?|A fox crossed the clearing.|opening, glade|
+slope|How steep is the slope?|The goat climbed the rocky slope.|hill, incline|
+ridge|Can you see the ridge from here?|Snow covered the mountain ridge.|crest, edge|
+gravel|Why is there gravel on the path?|The fish tank has blue gravel.|pebbles, stones|
+clay|Can we make a pot out of clay?|The riverbank had red clay.|mud, earth|
+gemstone|What color is your favorite gemstone?|The crown had a big green gemstone.|jewel, gem|
+lava|How hot is lava?|We pretended the floor was lava!|magma|
+snowman|Can we build a snowman today?|Our snowman wore Dad's old hat.|snow figure|
+hailstone|How big was the hailstone?|A hailstone hit the tent with a ping.|hail|
+raindrop|Can you count each raindrop on the window?|A raindrop landed on my nose.|drop|
+downpour|Did you get caught in the downpour?|The picnic ended in a sudden downpour.|cloudburst, deluge|drizzle
+thunderstorm|Are you afraid of a thunderstorm?|The power went out during the thunderstorm.|storm|
+whirlwind|What did the whirlwind pick up?|It was a whirlwind of a day!|twister, cyclone|
+misty|Why are the windows misty?|The mountains looked misty at sunrise.|foggy, hazy|clear
+petal|How many petals does a daisy have? Pull a petal and count.|A petal landed in my hair.|leaf|
+bud|When will the bud open?|Each bud on the tree turned into a leaf.|sprout|
+bark|Why is the bark peeling off?|Birch bark is white and papery.|rind, skin|
+stump|Can you jump off the stump?|A frog sat on the stump by the pond.|trunk, base|
+fern|Does a fern need lots of sun?|We pressed a fern in a book.||
+ivy|Is that ivy poisonous?|Ivy climbed all the way up the chimney.|vine|
+thistle|Why does the thistle have spikes?|Butterflies love the thistle flowers.|weed|
+clover|Do bees like clover?|The rabbit nibbled the clover.|shamrock|
+dandelion|Is a dandelion a weed or a flower?|We made a crown from dandelion stems.||
+buttercup|Do you like butter? Hold a buttercup under your chin!|A buttercup grew by the fence.||
+poppy|Why is the poppy red?|A poppy has a fuzzy stem.||
+orchid|Is an orchid hard to grow?|The orchid bloomed for weeks.||
+herb|Which herb smells like lemon?|Mint is an herb that spreads fast.|spice, seasoning|
+classroom|How many kids are in your classroom?|There's a pet hamster in our classroom.|room, class|
+cafeteria|What's for lunch in the cafeteria today?|The cafeteria was loud and busy.|lunchroom, canteen|
+locker|Can you open your locker?|I put a picture inside my locker door.|cubby, cabinet|
+eraser|Can I borrow your eraser?|My eraser smells like strawberries.|rubber|
+sharpener|Where is the pencil sharpener?|The sharpener ate my pencil!||
+notebook|Can I see your notebook?|My notebook has a puppy on the cover.|journal, pad|
+binder|Is your binder in your backpack?|The binder snapped shut on my finger.|folder|
+worksheet|Did you finish the worksheet?|Today's worksheet had a word search on it.|handout, sheet|
+homework|Do you have homework tonight?|My dog did not eat my homework!|assignment, schoolwork|
+subtract|Can you subtract seven from ten?|Subtract the cookies I ate, and three are left.|take away, minus|add
+numeral|Can you write the numeral for five?|The numeral on my shirt is nine.|number, figure|
+digit|What is the last digit of your phone number?|A toe is also called a digit.|number, figure|
+measure|Can you measure the rug?|Let's measure the flour for the cake.|size, gauge|
+weigh|How much does your backpack weigh?|Every week, the vet will weigh the puppy.|measure|
+hint|Do you want a hint?|Here's a hint: it's yellow and long.|clue, tip|
+goal|What's your goal for this year?|We scored a goal in the last minute!|aim, target, plan|
+choice|Is chocolate your first choice?|You made a good choice.|pick, option|
+decision|Did you make a decision yet?|Choosing a puppy was a big decision.|choice, call|
+mistake|Was it a mistake to wear sandals in the snow?|Don't worry; it's an easy mistake to make.|error, slip|
+lesson|What was the lesson in the story?|My piano lesson is on Monday.|class, moral|
+project|Can I help with your project?|Our science project grew mold.|task, assignment|
+battery|Is the battery out of power?|My tablet battery lasts all day.|cell|
+bulb|Can you change the bulb?|The bulb in the porch light burned out.|lamp, light|
+switch|Can you reach the light switch?|Let's switch seats for the ride home.|button, lever|
+tablet|Can I use the tablet after dinner?|The tablet slipped out of my hands.|computer, screen|
+password|What's the password to the treehouse?|Make your password hard to guess.|code, secret word|
+printer|Is the printer working?|The printer jammed again.|copier|
+gear|Which gear do you use on hills?|Pack your camping gear.|cog, wheel|
+ramp|Can you skate down the ramp?|The ramp helps wheelchairs get into the building.|slope, incline|
+motor|Does the motor still work?|The motor on the fan stopped.|engine|
+engine|Why is the engine making that noise?|The fire engine raced down the street.|motor|
+fuel|What kind of fuel does a rocket use?|Food is fuel for your body.|gas, energy|
+guzzle|Why do you guzzle your milk so fast?|Big trucks guzzle gas.|gulp, swig|sip
+chomp|Can you chomp through that carrot?|The shark began to chomp on the bait.|bite, munch, crunch|nibble
+swallow|Can a snake swallow a whole egg?|It's hard to swallow big pills.|gulp, down|
+lick|Can you lick your nose?|Our cat likes to lick her paws.|lap, taste|
+peer|Can you peer through the keyhole?|We like to peer into tide pools.|look, gaze, squint|
+squint|Do you squint when you read?|The sun made us squint at the beach.|peer|
+glance|Can you glance at my drawing?|Take a quick glance at the map.|peek, look|stare
+stare|Why do you stare at the TV like that?|Babies like to stare at faces.|gaze, look|glance
+blink|Can you blink and wink at the same time?|In the blink of an eye, the cookie was gone!|wink, flicker|
+overhear|Did someone overhear our plan?|I didn't mean to overhear you.|eavesdrop, catch|
+shriek|Why did you shriek like that?|The owl let out a shriek in the dark.|scream, screech|whisper
+squeal|Did you hear the tires squeal?|The baby began to squeal with joy.|screech, squeak|
+yelp|Why did the dog yelp?|I let out a yelp when the ice touched my back.|cry, squeal|
+holler|Why do you holler up the stairs?|Can you holler when dinner's ready?|shout, yell, call|whisper
+chant|What do you chant at the game?|In class, we chant the times tables.|sing, repeat|
+somersault|Who can do a somersault on the trampoline?|The puppy did a clumsy somersault.|roll, flip, tumble|
+cartwheel|How many cartwheels can you do in a row? I can do one cartwheel.|Her cartwheel was perfectly straight.|flip|
+handstand|Can you do a handstand?|My handstand lasted three seconds.||
+whirl|Can you whirl like a top?|We watched the snow whirl past the window.|spin, twirl|
+swirl|Can you swirl the paint with a stick?|Fog began to swirl around the lighthouse.|twist, spin, curl|
+crouch|Can you crouch like a frog?|We had to crouch to get through the tunnel.|squat, bend, duck|stand

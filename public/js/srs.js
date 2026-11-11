@@ -54,9 +54,13 @@ export function startOfDay(ms) {
 export const isMastered = (st) => st && st.s >= 21 && st.reps >= 4;
 
 // Turn an answer into a grade: wrong = Again, slow or hinted = Hard, quick = Easy.
-export function gradeFor(correct, ms, hinted = false) {
+// "Quick" depends on how much there was to read: a true-or-false call is faster than reading four definitions.
+const QUICK_MS = { truefalse: 2500, listen: 3000, word: 3500, gap: 5000, mixup: 4000, synonym: 3500, opposite: 3500, oddone: 4500,
+  meaning: 6000, incontext: 7000, usage: 9000, spell: 6000, unscramble: 6000, hidden: 15000, hearspell: 7000 };
+export function gradeFor(correct, ms, hinted = false, kind = "", slow = 1) {
   if (!correct) return Again;
-  if (hinted || ms > 12000) return Hard;
-  if (ms < 3500) return Easy;
+  const quick = (QUICK_MS[kind] || 4000) * slow;
+  if (hinted || ms > quick * 3.5) return Hard;
+  if (ms < quick) return Easy;
   return Good;
 }

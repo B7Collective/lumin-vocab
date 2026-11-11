@@ -1,0 +1,130 @@
+foreclose|Why did the bank foreclose on the house?|One bad review can foreclose a young chef's chances.|repossess, seize, preclude|
+arraign|When will the court arraign him?|Prosecutors plan to arraign the smugglers next week.|charge, indict, accuse|acquit
+extradite|Will the country extradite the suspect?|Some nations refuse to extradite their own citizens.|deport, hand over, repatriate|harbor
+attache|What does a press attache do?|The attache carried documents to the embassy.|diplomat, envoy, aide|
+burgher|Who was the wealthiest burgher in town?|A proud burgher built the clock tower.|citizen, townsman, freeman|
+liquidate|Why did they liquidate the store?|Owners liquidate inventory before closing.|sell off, convert, dissolve|acquire
+devalue|Why would a country devalue its money?|Cruel comments devalue a person's effort.|depreciate, cheapen, diminish|appreciate
+bullion|How is bullion stored?|Pirates dreamed of chests of gold bullion.|gold bars, ingots|
+annuity|Is an annuity a good investment?|The lottery winner chose an annuity over a lump sum.|pension, allowance, income|
+antitrust|Why do antitrust laws exist?|Antitrust lawyers studied the merger.|anti-monopoly, competition|
+subduction|What happens in a subduction zone?|Subduction pulls ocean floor deep into the earth.|plate sinking|
+porosity|How does porosity affect soil?|High porosity makes a sponge soak up water.|permeability, openness|density
+isostasy|How does isostasy work?|Isostasy keeps mountains floating like icebergs.|crustal balance, equilibrium|
+lithosphere|How thick is the lithosphere?|Cracks in the lithosphere let magma rise.|crust, outer shell|
+asthenosphere|Why is the asthenosphere soft?|Heat makes the asthenosphere flow slowly.|upper mantle|
+redshift|How do astronomers measure redshift?|A huge redshift means a galaxy is very far away.|spectral shift|blueshift
+declination|What is the declination of that star?|Compass declination changes from place to place.|deviation, angle, inclination|
+geocentric|Why did people believe in a geocentric universe?|Geocentric maps of the sky look strange today.|earth-centered|heliocentric
+umbra|Were you in the umbra during the eclipse?|The umbra of the tree kept us cool.|shadow, shade|penumbra
+chromosphere|What color is the chromosphere?|Jets of gas leap up from the chromosphere.|solar layer|
+mesosphere|How high is the mesosphere?|Meteors flash and fade in the mesosphere.|atmospheric layer|
+feldspar|Is feldspar a common mineral?|Feldspar crystals sparkle in the countertop.|mineral|
+schist|How does schist form?|Schist splits into thin, shiny sheets.|metamorphic rock|
+gneiss|How is gneiss different from granite?|Gneiss forms deep underground.|metamorphic rock|
+drumlin|How did the drumlin form?|Each drumlin points the way the glacier moved.|glacial hill, mound|
+esker|Have you hiked an esker?|The esker made a natural walking path.|ridge, glacial ridge|
+lahar|How fast does a lahar move?|Warning sirens sounded as the lahar approached.|mudflow, debris flow|
+artesian|Is the spring water artesian?|Artesian pressure pushes water up the pipe.|self-flowing, pressurized|
+oxbow|How does an oxbow lake form?|Herons fish in the quiet oxbow.|bend, meander, loop|
+cirque|What is in the cirque?|Hikers camped by the cirque lake.|corrie, basin, hollow|
+moraine|What does a moraine look like?|A rocky moraine marks where the glacier ended.|ridge, debris|
+reagent|Which reagent should we add?|The reagent showed whether sugar was present.|chemical, catalyst|
+solute|What is the solute in lemonade?|Sugar dissolves as a solute in tea.|dissolved substance|solvent
+titration|Why do chemists use titration?|Titration tells how acidic the juice is.|measurement, analysis|
+valence|What is the valence of oxygen?|Valence explains how atoms link up.|combining power|
+hydrocarbon|Is methane a hydrocarbon?|Plastic is made from a hydrocarbon base.|petroleum compound|
+isomer|What is an isomer?|An isomer has the same formula but a new shape.|variant, form|
+cortisol|What makes cortisol rise?|Long walks can lower cortisol.|stress hormone|
+serotonin|What does serotonin do?|Exercise can raise serotonin levels.|neurotransmitter|
+cerebellum|Where is the cerebellum?|Dancers rely on a sharp cerebellum.|hindbrain|
+hippocampus|What does the hippocampus do?|Sleep helps the hippocampus store memories.|memory center|
+amygdala|Why does the amygdala make us jump?|The amygdala sounds an alarm when we're scared.|fear center|
+hypothalamus|What does the hypothalamus control?|The hypothalamus tells you when you're thirsty.|brain region|
+thalamus|What does the thalamus do?|Signals from your eyes pass through the thalamus.|relay center|
+pituitary|Where is the pituitary gland?|A tiny pituitary gland controls growth.|hypophysis|
+medulla|What does the medulla control?|The medulla works even while you sleep.|brainstem|
+hepatic|What does hepatic mean?|Hepatic health depends on diet and exercise.|liver-related|
+gastric|What causes gastric upset?|Gastric juice is very acidic.|stomach-related, digestive|
+renal|What does a renal doctor treat?|Renal stones can be painful.|kidney-related, nephric|
+peptide|What does a peptide do?|Each peptide is a small piece of a protein.|amino acid chain|
+glycogen|Where is glycogen stored?|Pasta helps runners build up glycogen.|stored sugar, starch|
+topology|What does topology study?|Topology explains why a knot can't be untied without cutting.|geometry|
+transcendental|Is e a transcendental number?|A transcendental feeling came over her at the summit.|mystical, spiritual, otherworldly|mundane
+geodesic|Have you seen a geodesic dome?|Pilots follow a geodesic path to save fuel.|shortest-path|
+kinematics|What does kinematics describe?|Kinematics predicts where a thrown ball lands.|mechanics, motion study|
+electromagnetism|How does electromagnetism work?|Electromagnetism lets a doorbell ring.|magnetism, electricity|
+pneumatics|How do pneumatics work?|Pneumatics open the bus doors.|air power|hydraulics
+mutualism|Can you give an example of mutualism?|Mutualism helps both oxpeckers and rhinos.|symbiosis, cooperation|parasitism
+commensalism|What is an example of commensalism?|Commensalism lets remora fish ride on sharks.|symbiosis|
+autotroph|Is algae an autotroph?|Every autotroph turns light into food.|producer|heterotroph
+heterotroph|Are humans a heterotroph?|A heterotroph must eat to survive.|consumer|autotroph
+herpetology|Why do people study herpetology?|Herpetology students tracked frogs at night.|study of reptiles|
+ichthyology|What does ichthyology study?|Ichthyology students counted salmon.|study of fish|
+limnology|What does limnology study?|Limnology helps protect lakes from pollution.|freshwater science|
+echinoderm|Is a sand dollar an echinoderm?|Every echinoderm has a five-part body.|starfish, sea urchin|
+cnidarian|Is coral a cnidarian?|A cnidarian stings with tiny darts.|jellyfish, coral|
+annelid|Is a leech an annelid?|The annelid wriggled across the wet sidewalk.|segmented worm|
+monotreme|Which animal is a monotreme?|A monotreme mother lays leathery eggs.|egg-laying mammal|
+pinniped|Is a sea lion a pinniped?|The pinniped barked from the dock.|seal, walrus, sea lion|
+lagomorph|Is a rabbit a lagomorph?|A lagomorph has long hind legs.|rabbit, hare|
+passerine|Are robins passerine birds?|Passerine birds fill the woods with song.|perching, songbird|
+positron|What happens when a positron meets an electron?|A positron has the same mass as an electron.|antielectron|electron
+boson|What is a boson?|Every boson follows special rules of physics.|particle|fermion
+bonhomie|Where does his bonhomie come from?|Bonhomie filled the holiday party.|geniality, friendliness, cordiality|hostility
+dispassion|Can a judge show complete dispassion?|With dispassion, the scientist read the results.|objectivity, detachment, impartiality|passion
+exactitude|Why does surgery need exactitude?|Bakers measure with exactitude.|precision, accuracy, exactness|inaccuracy
+flippancy|Why such flippancy at a serious time?|Flippancy at a funeral is unkind.|frivolity, levity, cheekiness|seriousness
+gravitas|Does the new principal have gravitas?|Her deep voice added gravitas to the speech.|dignity, seriousness, solemnity|frivolity
+inconstancy|Why does the poet complain of inconstancy?|Sailing was hard because of the wind's inconstancy.|fickleness, changeability, instability|constancy
+stridency|Why the stridency in her voice?|Stridency in the ads turned viewers away.|harshness, shrillness, loudness|softness
+sycophancy|Why does sycophancy bother you?|Sycophancy won't earn you a raise.|flattery, fawning, obsequiousness|honesty
+certitude|Do you have certitude about the answer?|With certitude, she marked "true."|certainty, conviction, sureness|doubt
+concision|Why do editors value concision?|Concision is the soul of a good headline.|brevity, succinctness, terseness|wordiness
+effusion|What caused the effusion of joy?|An effusion of lava spilled from the crater.|outpouring, gush, outburst|
+entreaty|Did you hear the entreaty?|A child's entreaty won an extra story.|plea, appeal, petition|
+histrionics|Why all the histrionics?|Histrionics on the soccer field annoy referees.|dramatics, theatrics, melodrama|calm
+pedantry|Is correcting grammar pedantry?|Pedantry ruins a casual chat.|nitpicking, fussiness, hairsplitting|
+phraseology|Why is the phraseology so odd?|Old phraseology makes the letter charming.|wording, language, diction|
+twaddle|Why listen to such twaddle?|The ad was full of twaddle about magic beans.|nonsense, drivel, rubbish|sense
+verbiage|Can we cut the verbiage?|Legal verbiage filled ten pages.|wordiness, verbosity, padding|concision
+watchword|What is your team's watchword?|Kindness was her lifelong watchword.|motto, slogan, maxim|
+decrepitude|Why is the barn in such decrepitude?|The old bike's decrepitude made it squeak.|dilapidation, decay, frailty|vigor
+destitution|How can we end destitution?|Destitution drove families to the city.|poverty, penury, want|wealth
+paroxysm|What caused the paroxysm of tears?|The dusty attic sent me into a paroxysm of sneezing.|fit, spasm, outburst|
+expound|Can you expound on your idea?|Grandpa will expound on fishing for hours.|explain, elaborate, explicate|
+portend|What do the crows portend?|A rumbling volcano may portend an eruption.|foreshadow, herald, signal|
+propound|What theory did she propound?|The scientist will propound her idea at the meeting.|propose, suggest, advance|
+bedevil|What problems bedevil the school?|Weeds bedevil every gardener.|plague, torment, trouble|
+conciliate|How can we conciliate the neighbors?|A kind note may conciliate an angry friend.|appease, placate, pacify|antagonize
+gladden|What would gladden your day?|Letters from home gladden a homesick camper.|cheer, delight, please|sadden
+ensnare|How do sticky plants ensnare bugs?|Fishing nets can ensnare sea turtles.|trap, catch, snare|free
+congeal|Why does fat congeal in the pan?|Cold gravy began to congeal in the bowl.|thicken, solidify, set|melt
+acquisitive|Why is the collector so acquisitive?|Acquisitive magpies hoard shiny things.|greedy, grasping, covetous|generous
+acrimonious|Why was the meeting acrimonious?|An acrimonious split ended the band.|bitter, hostile, rancorous|friendly
+avaricious|Why is the dragon so avaricious?|An avaricious merchant overcharged everyone.|greedy, grasping, miserly|generous
+beneficent|Who is the town's most beneficent citizen?|A beneficent rain ended the drought.|charitable, benevolent, kind|malevolent
+blameworthy|Who is blameworthy for the mess?|Blameworthy behavior earned a time-out.|culpable, guilty, responsible|blameless
+chagrined|Why are you so chagrined?|A chagrined smile followed the wrong answer.|embarrassed, mortified, humiliated|pleased
+clamorous|Why are the seagulls so clamorous?|Clamorous fans filled the arena.|noisy, loud, boisterous|quiet
+corpulent|Why is the goldfish so corpulent?|A corpulent pumpkin won first prize.|stout, portly, plump|thin
+discomfited|Why did the speaker look discomfited?|Discomfited guests stared at the spilled cake.|embarrassed, flustered, unsettled|composed
+disputatious|Why is the lawyer so disputatious?|Disputatious siblings argued all car ride.|argumentative, contentious, combative|agreeable
+duplicitous|Why is the villain so duplicitous?|Duplicitous ads hid the real price.|deceitful, two-faced, dishonest|honest
+encumbered|Why do you feel so encumbered?|Encumbered with books, she waddled to class.|burdened, laden, weighed down|unencumbered
+enraptured|Why are the kids so enraptured?|Enraptured fans sang every word.|enchanted, delighted, captivated|bored
+expeditious|Was the service expeditious?|An expeditious decision saved the day.|swift, prompt, efficient|slow
+funereal|Why is the music so funereal?|A funereal gray sky hung over the town.|somber, mournful, gloomy|cheerful
+imprudent|Was the purchase imprudent?|Imprudent sailors ignored the storm warning.|unwise, reckless, foolish|prudent
+inauspicious|Was it an inauspicious beginning?|An inauspicious black cloud followed us all day.|unpromising, ominous, unfavorable|auspicious
+incautious|Was the remark incautious?|Incautious hikers wandered off the trail.|careless, rash, reckless|cautious
+indelicate|Was the question indelicate?|An indelicate burp interrupted the speech.|tactless, rude, crude|tactful
+injudicious|Was the decision injudicious?|Injudicious spending drained the club's funds.|unwise, imprudent, foolish|judicious
+inopportune|Was the call inopportune?|An inopportune sneeze ruined the photo.|untimely, inconvenient, ill-timed|timely
+insubstantial|Is the plan insubstantial?|Insubstantial snacks left us hungry.|flimsy, weak, slight|substantial
+intemperate|Why was the reply so intemperate?|Intemperate weather closed the pass.|excessive, immoderate, extreme|moderate
+irresolute|Why are you so irresolute?|An irresolute shopper held two shirts for an hour.|indecisive, hesitant, wavering|resolute
+kaleidoscopic|Why is the festival so kaleidoscopic?|Kaleidoscopic fish darted around the reef.|colorful, multicolored, ever-changing|monochrome
+luxuriant|Why is the garden so luxuriant?|A luxuriant mane fell over the lion's shoulders.|lush, abundant, profuse|sparse
+malodorous|What is that malodorous smell?|Malodorous socks lay under the bed.|smelly, stinking, foul|fragrant
+overwrought|Why are you so overwrought?|An overwrought speech made people roll their eyes.|agitated, frantic, overdone|calm

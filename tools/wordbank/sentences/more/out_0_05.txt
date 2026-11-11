@@ -1,0 +1,130 @@
+firefighter|Would you like to be a firefighter one day?|A firefighter rescued a kitten from the tree.||
+manners|Where did the puppy learn such good manners?|Please use your manners at the table.|politeness, courtesy|rudeness
+permission|Did you get permission to have a sleepover?|Always ask permission before you pet a dog.|okay, consent|
+safety|Hold my hand for safety in the parking lot.|What safety rules do you know for bikes?|protection|danger
+contest|Who won the sandcastle contest?|Our class had a spelling contest.|competition, match, game|
+holiday|Which holiday is your favorite?|We got a day off for the holiday.|celebration, vacation|
+club|Can I join your art club?|Our club has a secret handshake.|group, team|
+coin|Can you make a coin disappear?|I found an old coin in the sand.|penny, change|
+bank|How much money is in the bank?|We opened a bank account for my savings.|vault|
+price|What's the price of that kite?|The price was too high, so we waited.|cost|
+save|Can you save me a seat?|Let's save our leftovers for lunch.|keep, store|spend, waste
+spend|How will you spend your birthday money?|We spend summers at the lake.|use, pay|save
+earn|How can I earn money for a new game?|You earn points for each right answer.|get, win, make|lose
+cashier|Can you give the money to the cashier?|The cashier smiled and handed me a receipt.|clerk, checker|customer
+farmer|Does the farmer get up before the sun?|The farmer planted rows of corn.|grower, rancher|
+job|What job do you want when you grow up?|Washing dishes is a messy job.|work, task, chore|
+baker|Our baker makes the best bagels.|The baker gets up while it's still dark.|cook, pastry chef|
+wallet|Did you leave your wallet in the car?|My new wallet has a zipper.|purse, billfold|
+expensive|Why are concert tickets so expensive?|We picked the less expensive shoes.|costly, pricey|cheap
+cheap|Is this toy cheap because it breaks easily?|We found a cheap bike at a yard sale.|inexpensive, low-cost|expensive
+trade|Will you trade your apple for my orange?|Kids like to trade cards at recess.|swap, exchange, switch|
+customer|Every customer gets a free sticker.|Is the customer always right?|buyer, shopper|seller
+morning|Do you like to sleep in on Saturday morning?|The morning sun lit up my room.|dawn, sunrise|evening, night
+evening|What do you do in the evening?|The evening sky turned purple.|night, dusk|morning
+tomorrow|What should we do tomorrow?|Is tomorrow a school day?|next day|yesterday
+yesterday|What did you have for lunch yesterday?|My tooth fell out yesterday.|the day before|tomorrow
+minute|Can you hold your breath for a minute?|The bus comes in one minute!|moment, sec|
+weekend|What did you do this weekend?|This weekend, we're going camping.|days off|
+bedtime|What's your bedtime on school nights?|Our cat knows when it's bedtime.|sleep time|
+early|Do you like to wake up early?|We left early to get good seats.|soon, ahead of time|late
+late|Hurry, or we'll be late!|Owls stay up late.|tardy, delayed|early
+soon|Will it be my turn soon?|We'll be at Grandma's soon.|shortly, quickly|later
+grow|How tall will you grow?|We grow beans in our garden.|sprout, get bigger|shrink
+elbow|Can you lick your elbow?|Don't put your elbow on the table.|joint|
+ankle|My sock slid down to my ankle.|Can you balance on one ankle?|joint|
+wrist|My bracelet slid off my wrist.|Bend your wrist to wave hello.|joint|
+heartbeat|Can you feel your heartbeat in your chest?|A baby's heartbeat is fast.|pulse, beat|
+healthy|What's a healthy snack for after school?|Our new puppy is healthy and strong.|well, fit, strong|sick
+sore|Do your arms feel sore after swimming?|My finger is sore from the paper cut.|achy, hurt, tender|
+bandage|Does the bandage have dinosaurs on it?|Wrap a bandage around the scraped knee.|band-aid, dressing|
+heal|How long will my knee take to heal?|Rest helps a broken bone heal.|mend, get better|
+chew|Puppies chew on everything.|Can you chew gum and walk at the same time?|munch, gnaw, bite|
+freckle|I have a freckle shaped like a star!|Each freckle got darker in the summer sun.|spot, dot|
+ticklish|Is your dad ticklish?|Are you ticklish under your arms?|giggly|
+shout|Why did you shout so loud?|Fans shout when their team scores.|yell, holler, cry|whisper
+spell|How do you spell your last name?|I can spell ten words with no mistakes.|write out|
+sentence|Can you write a sentence about your dog?|My sentence ends with a question mark.|phrase, line|
+letter|Did a letter come in the mail?|What letter does your name start with?|note, card, character|
+title|Can you guess the title of my song?|My story needs a good title.|name, heading|
+label|What does the label on the bottle say?|I put a label with my name on my coat.|tag, sticker|
+message|Did you get my message?|Mom left a message saying she'd be late.|note, text|
+reply|Did your friend reply to your card?|I'll reply to the letter tonight.|answer, respond|ask
+tale|Have you heard the tale of the three bears?|This old tale is about a clever fox.|story, legend, fable|
+remember|Do you remember where you put your shoes?|Grandpa likes to remember when he was a kid.|recall, recollect|forget
+forget|Did you forget your homework again?|How could I forget your birthday?|lose track|remember
+guess|Can you guess what's in the box?|My guess is that it's a puppy!|think, suppose|know
+pretend|Do you like to pretend to be a dinosaur?|Kittens pretend to hunt toy mice.|act, make believe, play|
+plan|What's the plan for Saturday?|Let's plan a party for the teacher.|idea, scheme|
+learn|What did you learn at school today?|Parrots can learn lots of words.|study, discover|forget
+choose|Which color will you choose for your room?|It's hard to choose just one puppy.|pick, select, decide|
+understand|Do you understand the rules?|My dog seems to understand every word.|get, know, follow|misunderstand
+puppet|Can you make the puppet talk?|We made a sock puppet with button eyes.|doll, marionette|
+dragon|Would you be friends with a dragon?|My dragon drawing has green scales.|beast, monster|
+knight|Can a girl be a knight?|The brave knight fought off the dragon.|warrior, soldier|
+giant|Have you read a story about a friendly giant?|The giant stomped across the hills.|ogre, titan|dwarf
+castle|Would you like to live in a castle?|The castle had a moat and a bridge.|palace, fort, tower|
+drum|Can you play the drum?|My little brother uses a pot as a drum.|tom-tom|
+dance|Do you like to dance at parties?|Bees dance to tell others where flowers are.|move, boogie, twirl|
+stage|Are you nervous to stand on the stage?|The band set up on the stage.|platform|
+tune|Can you hum the tune to that song?|The ice cream truck plays a happy tune.|song, melody|
+salty|Are pretzels too salty for you?|My skin felt salty after swimming in the sea.|briny|sweet
+crunchy|Do you like crunchy or soft cookies?|Fresh snow is crunchy under our boots.|crisp, crispy|soft, mushy
+bitter|Why is coffee so bitter?|The medicine had a bitter taste.|sharp, sour|sweet
+squeaky|Is the wheel on your wagon squeaky?|The squeaky toy drove the dog wild.|creaky|silent
+loud|Why is the music so loud?|My dad has a loud sneeze.|noisy, booming|quiet, soft
+taste|Do you want to taste my lemonade?|Can you taste the cinnamon?|try, sample|
+hammer|Can I use the hammer?|Watch your fingers with that hammer.|mallet|
+scissors|Where are the safety scissors?|The scissors were too dull to cut the cloth.|shears, clippers|
+shovel|Grab a shovel and help dig the garden.|My shovel hit something hard.|spade|
+bucket|Who kicked over the bucket?|The bucket was full of crabs.|pail|
+broom|Can you hand me the broom?|In the story, the witch flew on a broom.|brush, sweeper|
+rope|Can you climb the rope in gym?|We jumped rope at recess.|cord, line, string|
+glue|Is the glue dry yet?|Don't get glue on the table.|paste, gum|
+ruler|How long is your ruler?|I used a ruler to draw the box.|measuring stick|
+zipper|Can you zip your zipper all by yourself?|My backpack zipper broke.|fastener|
+basket|Who put the kittens in the basket?|Our laundry basket is full.|hamper, bin|
+wheel|How many wheels does a car have? Each wheel helps it roll.|My skateboard has a loose wheel.|tire, ring|
+friendly|Is the dog next door friendly?|The friendly nurse gave me a sticker.|kind, nice, warm|unfriendly, mean
+caring|Our caring neighbor brought us soup.|What a caring thing to do!|kind, loving, gentle|uncaring, cold
+selfish|Why is the dragon in the story so selfish?|Taking all the crayons is selfish.|greedy|generous, unselfish
+bossy|Am I being bossy?|The bossy goose chased the ducks away.|pushy|meek
+sneaky|Who took the last cookie? Someone sneaky!|My sneaky brother hid my shoes.|sly, tricky, crafty|honest
+fussy|Why is the baby so fussy today?|Cats can be fussy about food.|picky, cranky|easygoing
+beach|What do you bring to the beach?|The beach was covered in shells.|shore, coast, seaside|
+desert|What animals live in the desert?|We hiked in the desert at sunrise.|wasteland, dunes|jungle
+jungle|What sounds do you hear in the jungle?|A jungle is hot, wet, and green.|rainforest|desert
+farm|Have you ever stayed on a farm?|My uncle has a farm with goats.|ranch|city
+bridge|Have you ever crossed a rope bridge?|A troll lives under the bridge in the story.|overpass, crossing|
+cave|Is it dark inside the cave?|We found a cave by the river.|cavern, den|
+market|Let's buy corn at the market.|The market was busy on Saturday.|store, shop, fair|
+hospital|The doctor works at the hospital.|We brought flowers to the hospital.|clinic|
+scared|Are you scared of the dark?|My dog gets scared when it storms.|afraid, frightened|brave
+glad|Are you glad school is out?|We were glad to be home.|happy, pleased|sad
+upset|Why are you upset?|Too much candy can upset your tummy.|sad, unhappy|calm, happy
+jealous|Are you jealous of your little sister?|Our cat gets jealous of the new puppy.|envious|
+hopeful|Are you hopeful about the game tomorrow?|With a hopeful smile, he opened the door.|optimistic, positive|hopeless
+breakfast|What did you eat for breakfast?|Let's have breakfast outside.|morning meal|
+snack|Can I have a snack before dinner?|What's your favorite snack?|treat, bite|
+noodle|Can you slurp up a noodle?|A noodle stuck to the ceiling!|pasta|
+dessert|What's your favorite dessert?|Can we skip dinner and have dessert?|sweet, treat|
+berry|Is that berry safe to eat?|We put a berry on top of each cupcake.|fruit|
+sauce|Do you like tomato sauce on your noodles?|The chef stirred the sauce.|gravy, dip|
+crumb|Did you leave a crumb on the couch?|Ants carried away every crumb.|bit, speck|
+turtle|Can a turtle breathe underwater?|My turtle loves to eat lettuce.|tortoise, terrapin|
+rabbit|Do you think a rabbit likes carrots best?|Our rabbit hops around the yard.|bunny, hare|
+beaver|Why does a beaver chew trees?|We saw a beaver swimming in the creek.||
+raccoon|Is that a raccoon in the trash can?|A raccoon washes its food in the water.||
+eagle|How high can an eagle fly?|An eagle has very sharp eyes.|hawk, falcon|
+shark|Does a shark have sharp teeth?|A baby shark is called a pup.||
+snail|How fast can a snail go?|A snail hid inside its shell.|slug|
+crab|Can a crab walk forward?|We caught a crab with a net.||
+badger|Does a badger sleep during the day?|Our badger stuffed toy is my favorite.||
+otter|Does an otter hold hands with friends while it sleeps?|An otter juggled a little stone.||
+beetle|How many legs does a beetle have?|My brother keeps a beetle in a box.|bug|
+ladybug|Make a wish when a ladybug lands on you!|Is a ladybug a beetle?|ladybird|
+moth|Why does a moth fly to the light?|A big moth landed on the window.||
+flamingo|Can a flamingo really sleep on one leg?|A flamingo eats with its head upside down.||
+peacock|Have you ever seen a white peacock?|The peacock strutted across the lawn.||
+parrot|What would you teach a parrot to say?|Our parrot whistles when Dad comes home.||
+koala|Is a koala a bear?|A baby koala rides on its mom's back.||

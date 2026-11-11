@@ -1,0 +1,130 @@
+accessory|What's your favorite accessory?|Every phone accessory in the shop was on sale.|extra, add-on, attachment|
+accomplice|Who was the accomplice in the heist movie?|The cat was my accomplice in stealing the last cookie.|partner, helper, sidekick|
+acronym|What does that acronym stand for?|Scuba is an acronym few people realize.|abbreviation, initialism|
+adhesive|Is the adhesive strong enough?|Adhesive bandages come in many sizes.|glue, paste, sticky|
+admission|How much is admission?|College admission season is stressful.|entry, entrance, confession|exclusion
+adversity|How do you handle adversity?|In the face of adversity, the team rallied.|hardship, difficulty, misfortune|prosperity
+aerial|Have you seen the aerial photos of the town?|The circus performer did an aerial flip.|airborne, overhead, sky|ground
+affiliate|Is the clinic an affiliate of the hospital?|Each affiliate shares the same logo.|partner, branch, member|
+agility|How can athletes improve agility?|Mental agility helps in chess.|nimbleness, quickness, flexibility|clumsiness
+alias|Why did the writer use an alias?|The detective knew the thief by several aliases, but one alias stood out.|pseudonym, nickname, pen name|
+alternative|What's an alternative plan?|Alternative music was popular in the nineties.|option, choice, substitute|
+ambiance|What gives the restaurant its ambiance?|Soft music set the ambiance.|atmosphere, mood, feel|
+amnesty|Will there be an amnesty for overdue books?|The amnesty let people turn in old fireworks safely.|pardon, forgiveness, reprieve|punishment
+annex|Where is the annex?|The country tried to annex the island.|extension, wing, add|
+antidote|Is there an antidote for this venom?|A walk outside is my antidote to boredom.|remedy, cure, counteragent|poison
+apprehend|Did the police apprehend the thief?|The scale of the galaxy is hard to apprehend.|arrest, catch, understand|release
+archive|Can I search the archive online?|Archive your old emails to clear space.|records, collection, store|
+arena|How many people fit in the arena?|Politics is a tough arena.|stadium, venue, field|
+array|What array of colors do the flowers have?|The solar array powers the whole farm.|range, collection, display|
+artisan|Who is the artisan who made the vase?|Artisan cheese costs more but tastes great.|craftsperson, maker|
+aspect|Which aspect of the plan worries you?|The house has a sunny southern aspect.|feature, side, element|
+backlash|Why was there backlash to the new logo?|The company faced backlash online.|reaction, outcry, protest|support
+banner|What should the banner say?|The team's banner hung in the gym.|flag, sign, poster|
+baseline|What's the baseline for the experiment?|The tennis player stayed at the baseline.|benchmark, starting point|
+beacon|Did you see the beacon on the hill?|The library is a beacon of learning.|light, signal, guide|
+bonus|Did you get a bonus at work?|As a bonus, the hotel had a pool.|extra, reward, perk|penalty
+breach|How was there a breach in security?|The whale made a breach out of the water.|break, violation, gap|
+brochure|Do you have a brochure for the tour?|The brochure promised sunny weather.|pamphlet, leaflet, booklet|
+bulletin|Did you hear the news bulletin?|The class bulletin lists upcoming events.|announcement, report, notice|
+bureau|Where is the travel bureau?|The old bureau has a mirror on top.|agency, office, dresser|
+cadet|How long does a cadet train?|The space cadet dreamed of other planets.|trainee, recruit|
+calamity|What calamity struck the village?|Losing my phone felt like a calamity.|disaster, catastrophe, tragedy|blessing
+caliber|What caliber of player is she?|The museum shows art of the highest caliber.|quality, standard, level|
+campaign|Who ran the campaign?|The ad campaign was everywhere.|drive, crusade, push|
+capsule|What's inside the time capsule?|The astronauts returned in a capsule.|pod, case, pill|
+civilian|Was the pilot a civilian?|Civilian life felt strange after the army.|citizen, noncombatant|soldier
+clan|Which clan does she belong to?|Our clan gathers every summer.|family, tribe, kin|
+cliche|Is "time flies" a cliche?|The movie's ending was a cliche.|stereotype, platitude, overused phrase|original
+clinic|Is the clinic open on Sunday?|The coach ran a free soccer clinic.|health center, practice, workshop|
+cockpit|Can I sit in the cockpit?|The race car cockpit is tiny.|flight deck, cabin|
+collision|What caused the collision?|A collision of ideas sparked the debate.|crash, impact, clash|
+column|Which column is your name in?|She writes a weekly column for the paper.|pillar, post, article|
+commentary|Who did the commentary for the game?|The film includes a director's commentary.|narration, remarks, analysis|
+commission|How much commission does the agent earn?|The artist got a commission for a mural.|fee, assignment, committee|
+commute|How long is your commute?|Many people commute by train.|travel, journey, trip|
+compartment|Which compartment has the snacks?|The train compartment had six seats.|section, pocket, chamber|
+competitor|Who is your biggest competitor?|The two shops are friendly competitors, and each competitor helps the other.|rival, opponent, contestant|ally
+confederation|Why did the states form a confederation?|The confederation broke apart after ten years.|alliance, league, union|
+configuration|What's the best configuration for the room?|The stars appeared in a strange configuration.|arrangement, layout, setup|
+congestion|How can cities reduce congestion?|Steam helps clear congestion.|crowding, traffic, blockage|
+contribution|What's your contribution to the party?|Science owes a lot to her contribution.|donation, gift, input|
+convoy|Why did the trucks travel in a convoy?|Ducks crossed the pond in a little convoy.|caravan, procession, fleet|
+coordinate|Who will coordinate the volunteers?|Find the coordinate on the graph.|organize, arrange, point|
+correlation|Is there a correlation between screen time and sleep?|Correlation doesn't always mean cause.|connection, link, relationship|
+coverage|Does your phone have coverage here?|The insurance coverage includes floods.|reporting, protection, range|
+criterion|What criterion matters most to you?|Price was the only criterion for the choice.|standard, measure, benchmark|
+decree|What did the decree say?|The mayor's decree closed the beach.|order, ruling, edict|
+defect|Does the car have a defect?|A single defect ruined the diamond.|flaw, fault, imperfection|
+demolition|When is the demolition scheduled?|The team's demolition of their rival was stunning.|destruction, razing, wrecking|construction
+descendant|Are you a descendant of royalty?|Modern birds are descendants of dinosaurs, and the chicken is one descendant.|offspring, heir|ancestor
+dictator|How did the dictator gain power?|My little brother acts like a tiny dictator.|tyrant, despot, autocrat|democrat
+disclaimer|Did the video have a disclaimer?|The disclaimer says results may vary.|caveat, warning, waiver|
+dynasty|How long did the dynasty rule?|The coach built a dynasty that won ten titles.|lineage, house, empire|
+edict|Who issued the edict?|The emperor's edict changed the calendar.|order, decree, command|
+embargo|Why was there an embargo on fruit?|The news was under embargo until noon.|ban, block, restriction|
+encyclopedia|Do you use an online encyclopedia?|My uncle is a walking encyclopedia of trivia.|reference book, compendium|
+estate|Who owns the estate?|They sold the estate at auction.|property, land, holdings|
+exemption|Can I get an exemption from the fee?|Tax exemption helps small charities.|exception, immunity, release|obligation
+expertise|What's your area of expertise?|The job requires technical expertise.|skill, knowledge, mastery|ignorance
+exposure|How much exposure did the band get?|The photo had too much exposure.|publicity, contact, attention|
+facility|Where is the training facility?|She has a facility for languages.|building, center, ability|
+federation|Which federation runs the tournament?|The federation sets rules for every race.|union, league, alliance|
+fiasco|How did the party become a fiasco?|The launch was a fiasco of crashing servers.|disaster, flop, failure|success
+forum|Is there a forum for parents?|The museum held a forum on art.|discussion, assembly, platform|
+foundation|What's the foundation of a good friendship?|The foundation funds clean water projects.|base, groundwork, charity|
+frequency|At what frequency do the buses run?|Bats hear sounds at a high frequency.|rate, regularity, pitch|
+gesture|What gesture means "come here"?|It was a thoughtful gesture to send flowers.|signal, sign, act|
+grant|Did you apply for the grant?|Please grant me one wish.|award, funding, allow|deny
+hindsight|What would you change with hindsight?|Hindsight is always clear.|retrospect, reflection|foresight
+icon|Who is a fashion icon you admire?|The app icon is a little blue bird.|symbol, image, idol|
+inquiry|Did you send an inquiry?|The scientist's inquiry led to a cure.|question, investigation, query|
+inspection|When is the next inspection?|On closer inspection, the "spider" was a leaf.|examination, check, review|
+insulation|Does the attic have insulation?|The jacket's insulation kept me warm on the hike.|padding, lining, protection|
+irrigation|How does drip irrigation work?|Ancient farmers built irrigation canals.|watering, channeling|
+jurisdiction|Which court has jurisdiction?|The forest is under federal jurisdiction.|authority, control, territory|
+keynote|Who is the keynote speaker?|Hope was the keynote of the whole evening.|main, central theme|
+layer|How many layers does the cake have? Each layer has jam.|A thin layer of dust covered the shelf.|sheet, coat, level|
+lineage|What is the dog's lineage?|The family's lineage includes several doctors.|ancestry, descent, heritage|
+loophole|Is there a loophole in the contract?|Lawyers search for every loophole.|gap, way out, flaw|
+mainstream|Is the band mainstream yet?|Mainstream news covered the protest.|popular, conventional, common|fringe
+makeshift|Can we build a makeshift raft?|The garage became a makeshift gym.|temporary, improvised, stopgap|permanent
+militia|What did the town militia do?|A militia guarded the border village.|army, force, guard|
+niche|Have you found your niche?|The shop serves a small niche of collectors.|corner, specialty, nook|
+norm|Is that behavior the norm here?|Four-day school weeks are becoming the norm.|standard, rule, custom|exception
+novelty|Is the novelty wearing off?|The novelty shop sells rubber chickens.|newness, gimmick, freshness|familiarity
+ordeal|How did you survive the ordeal?|The surgery was a long ordeal for the family.|trial, struggle, hardship|
+ordinance|What does the ordinance say?|The city passed an ordinance about trash bins.|law, rule, regulation|
+overhaul|Does the website need an overhaul?|The mechanic will overhaul the engine.|revamp, renovation, repair|
+oversight|Was it just an oversight?|The board has oversight of the budget.|mistake, slip, supervision|
+panorama|Did you take a panorama photo?|The book offers a panorama of the century.|view, vista, overview|
+participant|How many participants were there? Each participant got a shirt.|The participant waved at the finish line.|member, entrant, contestant|spectator
+patent|Is the invention under patent?|She will patent her new toy.|license, copyright, protection|
+phase|What phase is the moon in?|It's just a phase; he'll grow out of it.|stage, period, step|
+platform|Which platform does the train leave from?|The candidate's platform includes free lunches.|stage, stand, program|
+poll|What did the poll show?|The class will poll everyone about the trip.|survey, vote, ballot|
+precaution|What precaution should we take?|Pack an extra battery as a precaution.|safeguard, care, measure|
+prerequisite|What's the prerequisite for the course?|Trust is a prerequisite for teamwork.|requirement, condition, necessity|
+preview|Did you watch the preview?|Please preview the slides before class.|trailer, sneak peek, look|
+rebate|How much is the rebate?|The tax rebate arrived in the mail.|refund, discount, repayment|
+rehabilitation|How long is the rehabilitation?|The old train station is under rehabilitation.|recovery, restoration, therapy|
+reign|How long did the reign last?|Chaos began to reign when the power went out.|rule, dominate, sovereignty|
+remnant|What's this remnant of fabric for?|The castle is a remnant of an old kingdom.|leftover, remainder, scrap|
+replica|Is it a replica or the real thing?|The replica looked exactly like the original.|copy, model, duplicate|original
+residue|What's that sticky residue?|Soap residue clouds the glass.|remains, leftover, film|
+retrospect|In retrospect, was the trip a good idea?|In retrospect, I'd pack lighter.|hindsight, reflection|
+scholarship|Did you apply for the scholarship?|Her scholarship in history is impressive.|grant, award, learning|
+sector|Which sector do you want to work in?|The ship moved into a new sector of space.|area, field, zone|
+simulation|Is the simulation realistic?|The game is a farming simulation.|model, imitation, re-creation|reality
+skeptic|Are you a skeptic about ghosts?|A healthy skeptic asks good questions.|doubter, cynic, questioner|believer
+stereotype|Why is the stereotype unfair?|The movie broke every stereotype about nerds.|cliche, generalization, label|
+successor|Who will be the king's successor?|The successor to the old console is faster.|heir, replacement, follower|predecessor
+syndrome|What causes the syndrome?|Imposter syndrome makes people doubt themselves.|condition, disorder, pattern|
+synopsis|Can you give me a synopsis?|The synopsis spoiled the twist.|summary, outline, recap|
+tenure|How long was his tenure?|Professors with tenure have job security.|term, time, incumbency|
+transcript|Can I get a transcript of the podcast?|Her transcript shows straight A's.|record, copy, written version|
+trend|What's the latest trend?|The trend shows rising prices.|fashion, pattern, direction|
+tribute|Was the song a tribute to her grandma?|The town held a tribute concert.|homage, honor, salute|
+tribunal|What did the tribunal decide?|The tribunal handles workplace disputes.|court, panel, board|
+trilogy|Have you read the trilogy?|The movie trilogy took ten years to make.|series, set of three|
+ultimatum|What was the ultimatum?|The boss gave an ultimatum: finish by Friday.|demand, final offer, warning|

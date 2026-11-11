@@ -1,0 +1,130 @@
+walrus|How long are a walrus's tusks?|At the aquarium, a walrus blew bubbles at us.|sea cow|
+starfish|Does a starfish have a mouth?|A pink starfish clung to the rock.|sea star|
+lobster|What color is a lobster in the sea?|Can a lobster swim backward?||
+toad|Is a toad the same as a frog?|We found a toad in the garden after the rain.||
+pelican|How many fish fit in a pelican's pouch?|Each pelican dove into the water with a splash.||
+porcupine|Can a porcupine throw its quills?|A baby porcupine is called a porcupette.|hedgehog|
+chipmunk|Where does a chipmunk sleep in winter?|I saw a chipmunk carrying an acorn.|squirrel|
+lizard|Have you ever held a lizard?|Our lizard eats crickets.|gecko, reptile|
+cheetah|How fast can a cheetah run?|A cheetah's spots help it hide in the grass.|wild cat|
+gorilla|Can a gorilla learn sign language?|We watched a gorilla eat a banana.|ape|
+ostrich|Can an ostrich really hide its head in the sand?|An ostrich has only two toes on each foot.||
+swan|Is a black swan rare?|Each swan on the lake had a partner.||
+duckling|How many ducklings can you count? I see one duckling hiding.|Every duckling learned to swim on the first day.|chick|
+foal|Can a foal run the day it's born?|The foal stayed close to its mom.|colt, pony|
+piglet|Is that piglet pink or spotted?|The piglet squealed when it saw the food.|baby pig|
+cub|Where does a bear cub sleep in winter?|Each cub wrestled with its sister.|baby|
+fawn|Why does a fawn have white spots?|We saw a fawn drinking from the stream.|baby deer|
+rooster|Does a rooster crow only in the morning?|Our rooster woke the whole street.|cock|hen
+snout|Why does a pig have such a big snout?|The dog pushed its snout into my hand.|nose, muzzle|
+hoof|Does it hurt when a horse gets new shoes on its hoof?|A goat's hoof helps it climb rocks.|foot|
+whisker|Why does a cat have whiskers? Each whisker helps it feel.|A whisker fell off my kitten's face.|bristle, hair|
+beak|Can a bird's beak grow back?|The duck has a flat, wide beak.|bill|
+claw|Does a cat's claw grow like a fingernail?|An eagle grabs fish with each claw.|nail, talon|
+antenna|What does an ant do with its antenna?|The bug's antenna wiggled when I came close.|feeler|
+paw|Why is my dog licking its paw?|Our cat left a muddy paw print on the bed.|foot|
+sparkly|Do you like sparkly nail polish?|The lake looked sparkly at sunset.|shiny, glittery|dull
+glittery|Who spilled the glittery paint?|I got a glittery card for my birthday.|sparkly, shiny|dull
+spotty|Why is my apple spotty?|The spotty dog wagged its tail.|spotted, dotted|plain
+teeny|Look at the teeny little frog!|I can only eat a teeny bite more.|tiny, small|huge
+lumpy|Who made the lumpy mashed potatoes?|My pillow is lumpy and hard.|bumpy|smooth
+curly|Is your hair curly or straight?|The curly ribbon bounced on the present.|wavy, twisty|straight
+shiny|Look at my shiny new shoes!|The shiny coin sat at the bottom of the fountain.|bright, gleaming|dull
+dotted|Can you cut along the dotted line?|The sky was dotted with stars.|spotted, speckled|plain
+tangled|Why is the hose all tangled?|The kitten got tangled in the yarn.|knotted, twisted|neat
+cheery|What a cheery song!|Our classroom has cheery yellow walls.|happy, bright|glum, gloomy
+glum|Why are you so glum today?|The team felt glum after the loss.|sad, gloomy|cheery, happy
+sulky|Please don't be sulky about bedtime.|My sulky cat ignored me all day.|grumpy, moody|cheerful
+startled|Did the loud noise make you startled?|The startled bird flew up into the tree.|surprised, scared|calm
+squirm|Worms squirm when you pick them up.|Did you squirm at the doctor's office?|wiggle, twist|
+scoot|Can you scoot your chair closer?|Watch the crab scoot across the sand.|slide, zip|
+slurp|Can you slurp a milkshake through a straw?|The dog likes to slurp water from the bowl.|gulp, sip|
+sniffle|Do you have a sniffle?|My puppy began to sniffle at the door.|sniff, snuffle|
+hiccup|How do you make a hiccup go away?|I let out a hiccup in the middle of class!|hic|
+gargle|Can you gargle a song?|The dentist told me to gargle after brushing.|rinse|
+scrub|Can you scrub the bathtub?|We scrub the dog when he rolls in mud.|wash, clean|
+sweep|Can you sweep the leaves off the path?|Let's sweep the garage together.|brush, clean|
+rinse|Did you rinse your plate?|Rinse your mouth after you brush.|wash, clean|
+soak|Did the rain soak your shoes?|I love to soak in a warm bath.|wet, drench|dry
+heap|Who left this heap of shoes by the door?|Our cat sleeps in a heap of blankets.|pile, mound, stack|
+bundle|Can you carry this bundle of wood?|I got a bundle of books from the library.|bunch, pack|
+untie|Who can untie this tricky knot?|Please untie the dog from the post.|undo, loosen|tie
+buckle|Can you buckle your sister's car seat?|My belt is hard to buckle.|fasten, clip|unbuckle
+button|Can you button your shirt all the way up?|Don't forget to button your sweater.|fasten, close|unbutton
+skid|Did your bike skid on the gravel?|Cars can skid when the road is icy.|slide, slip|
+nestle|Baby birds nestle under their mother.|Can I nestle next to you on the couch?|snuggle, cuddle|
+snuggle|Do you like to snuggle with your dog?|The baby will snuggle into your neck.|cuddle, nestle|
+yank|Did you yank the weeds out?|Please don't yank on the cat's tail!|pull, tug, jerk|push
+crawl|Can you crawl under the fence?|Ants crawl across the picnic blanket.|creep, inch|
+pancake|Do you like syrup on your pancake?|Can you flip a pancake in the air?|flapjack, hotcake|
+muffin|Which muffin do you want?|We baked a muffin for each friend.|cupcake|
+waffle|Do you want butter on your waffle?|The waffle iron was hot.||
+pretzel|Can you twist your arms like a pretzel?|I bought a big soft pretzel at the fair.||
+popsicle|Which flavor of popsicle do you want?|Grape popsicles make your tongue purple, so I picked an orange popsicle.|ice pop|
+lemonade|Would you like ice in your lemonade?|Pink lemonade is my favorite.||
+syrup|Do you want more syrup?|Maple syrup comes from trees.||
+crust|Do you eat the crust on your pizza?|The crust on this bread is crunchy.|edge, shell|
+yolk|Do you like a runny yolk?|This egg has two yolks, and each yolk is bright yellow.||
+sprinkles|Can I have sprinkles on my ice cream?|We put sprinkles on the birthday cake.|nonpareils|
+pebbly|Is the path pebbly or smooth?|The pebbly ground hurt my bare feet.|stony, rocky|smooth
+muggy|Why is it so muggy today?|After the rain, the air felt muggy.|humid, sticky|dry
+icicle|Can you break off an icicle?|Water dripped from the icicle onto my nose.|ice|
+snowdrift|Did the car get stuck in a snowdrift?|We jumped into the snowdrift.|drift, snowbank|
+pinecone|Can you find a pinecone for the craft?|A pinecone fell on my head!|cone|
+daisy|She loves me, she loves me not, said the girl with the daisy.|We made a daisy chain for her hair.||
+tulip|What color is your favorite tulip?|We planted a tulip bulb in the fall.||
+cactus|Does a cactus need much water?|We have a tiny cactus on our windowsill.||
+vine|Can you swing on a vine like in the movies?|A vine grew all over the old wall.|creeper, ivy|
+cliff|Can goats climb up a cliff?|The waves crashed against the cliff.|bluff, ledge|
+creek|Let's skip stones in the creek.|Is the creek deep after the rain?|brook, stream|
+hilltop|Let's race to the hilltop!|A windmill stood on the hilltop.|summit, peak|valley
+lane|Which lane is yours in the race?|We walked down a lane lined with trees.|road, path, street|
+porch|Can we eat dinner on the porch?|A box was left on the porch.|deck, veranda|
+barn|Is the barn red or white?|Owls live in the old barn.|stable, shed|
+playhouse|Can we paint the playhouse purple?|My playhouse has a mailbox too.|clubhouse|
+sandbox|Who left a toy truck in the sandbox?|The cat thinks the sandbox is its bathroom!|sandpit|
+mailbox|Is there anything in the mailbox?|A bird built a nest in our mailbox.|letterbox|
+sled|Can two people fit on one sled?|Our dog pulled the sled through the snow.|toboggan|
+scooter|Can I ride your scooter?|My scooter has lights in the wheels.||
+helmet|Does your helmet fit?|The astronaut took off her helmet.|hard hat|
+kite|Can you help me fly my kite?|Our kite got stuck in a tree.||
+flashcard|Can you quiz me with each flashcard?|This flashcard has a picture of a cow.|card|
+sticker|Can I put a sticker on your hand?|I got a sticker for being brave at the doctor.|decal, label|
+tissue|Do you need a tissue?|Wrap the gift in tissue paper.|hankie, napkin|
+bandana|Can you tie a bandana on the dog?|My bandana has blue stars on it.|scarf, kerchief|
+binoculars|Can you see the moon with binoculars?|Grandpa keeps his binoculars by the window.|field glasses|
+hornet|Did a hornet sting you?|A hornet is bigger than a bee.|wasp|
+cricket|Can you hear the cricket in the grass?|My lizard eats a cricket every day.||
+grasshopper|Can you catch a grasshopper?|A grasshopper landed on my book.||
+earthworm|Why does an earthworm come out when it rains?|We put an earthworm on the fishing hook.|worm|
+cobweb|Who will sweep the cobweb off the ceiling?|We hung a fake cobweb for Halloween.|web|
+falcon|Can a falcon catch a bird in the air?|The falcon sat on the trainer's glove.|hawk|
+sparrow|Is that a sparrow at the feeder?|A sparrow built a nest in our tree.||
+raven|Can a raven really talk?|The raven hid a shiny ring.|crow|
+woodpecker|Doesn't a woodpecker get a headache?|A woodpecker drummed on our gutter.||
+hummingbird|How fast does a hummingbird flap its wings?|We hung a feeder for the hummingbird.||
+seagull|Why is the seagull so noisy?|A seagull stole a french fry from me!|gull|
+puffin|Can a puffin swim underwater?|The puffin had a bright orange beak.||
+squid|How many arms does a squid have?|A squid can change color too.||
+shrimp|Can a shrimp swim backward?|A shrimp is a tiny sea creature.|prawn|
+clam|Why is a clam happy at high tide?|We found an empty clam shell.||
+oyster|Can you find a pearl in an oyster?|An oyster cleans the water around it.||
+seahorse|Can a seahorse swim fast?|The tiny seahorse hid in the grass.||
+eel|Is an eel a fish or a snake?|Some eels can make electricity, and that eel can too.||
+salmon|Why does a salmon swim upstream?|We grilled salmon for dinner.||
+newt|Can a newt live on land and in water?|The newt was as small as my finger.|salamander|
+alligator|How many teeth does an alligator have?|We saw an alligator at the zoo.|gator, crocodile|
+crocodile|Can a crocodile climb a tree?|The crocodile opened its jaws wide.|alligator|
+iguana|Can an iguana swim?|Our iguana likes to eat squash.|lizard|
+chameleon|What color is a chameleon when it sleeps?|The chameleon caught a bug with its tongue.|lizard|
+gecko|How does a gecko stick to glass?|A tiny gecko lived on our porch.|lizard|
+camel|What's inside a camel's hump?|We rode a camel at the fair.|dromedary|
+llama|Does a llama really spit?|The llama looked at us with big eyes.|alpaca|
+yak|Is a yak friendly?|Yak milk makes good cheese.|ox|
+bison|How heavy is a bison?|A bison herd crossed the road.|buffalo|
+moose|Can a moose swim?|A moose has a flap of skin under its chin.|elk|
+reindeer|Do reindeer really fly?|A reindeer can smell food under the snow.|caribou|
+antelope|How high can an antelope jump?|The antelope had long, twisty horns.|gazelle|
+gazelle|Can a gazelle outrun a lion?|A baby gazelle hid in the tall grass.|antelope|
+hippo|Can a hippo swim?|A hippo has pink sweat that works like sunscreen.|hippopotamus|
+rhino|How heavy is a rhino?|Birds ride on the rhino's back.|rhinoceros|

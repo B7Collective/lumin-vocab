@@ -1,0 +1,54 @@
+milestone|What milestone are you proud of?|An old stone milestone marks the road to town.|landmark, achievement, marker|
+onboarding|How long is the onboarding?|Good onboarding makes new hires feel welcome.|orientation, induction|
+delegate|Can you delegate some chores?|The delegate voted for the plan.|assign, entrust, representative|
+initiative|Who showed initiative today?|The city's green initiative planted a thousand trees.|drive, plan, ambition|
+iterate|How many times should we iterate?|The team will iterate on the logo until it's right.|repeat, refine, revise|
+logistics|Who handles the logistics?|Logistics companies move goods worldwide.|planning, coordination, organization|
+memo|Did you get the memo?|She wrote a memo to the whole office.|note, message, notice|
+prioritize|How do you prioritize homework?|Doctors prioritize the sickest patients.|rank, focus on, put first|
+quarterly|Are the meetings quarterly?|The company's quarterly profits rose.|every three months|
+roadmap|What's on the roadmap for next year?|A clear roadmap kept the project on track.|plan, blueprint, outline|
+workflow|How can we improve the workflow?|The artist has a strict workflow.|process, procedure, routine|
+scalable|Is the business scalable?|Cloud servers are scalable during busy times.|expandable, flexible|limited
+proactive|How can you be more proactive?|A proactive nurse noticed the problem early.|forward-looking, anticipatory|reactive
+brainstorm|Can we brainstorm after lunch?|A brainstorm of ideas filled the whiteboard.|think up, ideate|
+takeaway|What's your takeaway from the lecture?|We ordered takeaway food for dinner.|lesson, key point, takeout|
+pivot|Can the company pivot quickly?|The door swings on a pivot.|turn, shift, hinge|
+streamline|How can we streamline the process?|Designers streamline cars to reduce drag.|simplify, smooth, modernize|complicate
+jangle|Why do the keys jangle?|Loud alarms jangle my nerves.|clank, rattle, jingle|
+sputter|Why does the faucet sputter?|He began to sputter an excuse.|splutter, cough, stammer|
+equinox|When is the fall equinox?|On the equinox, the sun sets due west.||
+solstice|Is today the solstice?|Crowds gather at old stone circles on the solstice.||
+celestial|What's your favorite celestial object?|The choir sang with a celestial sound.|heavenly, cosmic, divine|earthly
+exoplanet|How do scientists find an exoplanet?|Some exoplanets may support life, and one exoplanet looks promising.|alien world|
+interstellar|Is interstellar travel possible?|An interstellar comet passed by in 2017.|cosmic, galactic|
+embarrass|Did I embarrass you?|Baby photos embarrass most teenagers.|humiliate, shame, fluster|
+conscience|Does your conscience bother you?|With a clear conscience, she slept well.|morals, principles, scruples|
+conscious|Are you conscious of your posture?|The patient was conscious after surgery.|aware, awake, mindful|unconscious
+occurrence|How common is the occurrence?|Lightning strikes are a daily occurrence somewhere.|event, incident, happening|
+privilege|What privilege do you appreciate?|Members get the privilege of early entry.|advantage, right, honor|
+maintenance|Who handles maintenance here?|Regular maintenance keeps the car running.|upkeep, care, servicing|neglect
+questionnaire|How long is the questionnaire?|The doctor's questionnaire asked about sleep.|survey, form, poll|
+recommend|What would you recommend?|Doctors recommend eight hours of sleep.|suggest, advise, endorse|
+cemetery|Is the cemetery very old?|Squirrels play among the trees in the cemetery.|graveyard, burial ground|
+colleague|Who is your favorite colleague?|My colleague and I share a desk.|coworker, associate, partner|
+committee|Who is on the committee?|The committee met for three hours.|board, panel, council|
+guarantee|Can you guarantee delivery by Friday?|Hard work isn't a guarantee of success.|promise, assurance, warranty|
+noticeable|Is the scratch noticeable?|Her confidence grew noticeable over the year.|visible, obvious, apparent|unnoticeable
+pastime|What's your favorite pastime?|Reading on the porch is Grandpa's pastime.|hobby, leisure activity|work
+playwright|Who is the playwright?|The young playwright won a prize.|dramatist, writer|
+possession|What's your most valuable possession?|The team kept possession of the ball.|belonging, property, control|
+threshold|What's your pain threshold?|The bride was carried over the threshold.|doorway, limit, brink|
+fluorescent|Why are fluorescent lights so harsh?|The rock glowed fluorescent green under the lamp.|glowing, luminous, bright|
+acquaintance|Is he a friend or an acquaintance?|I made her acquaintance at a party.|contact, associate|stranger
+sincerely|Do you sincerely believe that?|She sincerely thanked every volunteer.|truly, honestly, genuinely|insincerely
+pharaoh|How old was the youngest pharaoh?|The pharaoh's mask was made of gold.|king, ruler|
+indispensable|Is your phone indispensable?|A good map is indispensable on a road trip.|essential, vital, necessary|unnecessary
+briny|Is the water briny?|The briny smell of the sea filled the harbor.|salty|fresh
+decadent|Isn't this dessert decadent?|The decadent palace had golden toilets.|indulgent, luxurious, lavish|plain
+cache|Where's the cache of supplies?|Clear the browser cache to see changes.|store, stash, hoard|
+firewall|Is the firewall turned on?|A firewall separates the two parts of the building.|security barrier|
+malware|How did the malware get in?|The malware locked all the files.|virus, spyware|
+phishing|How can you spot phishing?|Phishing texts ask for your password.|scam, fraud|
+syntax|Is the syntax correct?|Poets bend syntax for effect.|grammar, structure|
+barometer|What does the barometer say?|Sales are a barometer of public mood.|gauge, indicator, measure|

@@ -1,0 +1,130 @@
+brave|Would you be brave enough to hold a frog?|My little brother was brave at the dentist today.|bold, fearless, daring|scared, timid
+cheerful|Who can stay cheerful on a rainy Monday?|Yellow paint made my room look cheerful.|happy, sunny, bright|grumpy, gloomy
+grumpy|Never wake a grumpy bear!|After the long car ride, everyone felt grumpy.|cranky, crabby, cross|cheerful, jolly
+proud|Grandma felt proud when I read her a whole book.|Are you proud of your new drawing?|pleased, glad|ashamed
+nervous|Before the big game, my tummy felt nervous.|Do you get nervous on the first day of school?|worried, uneasy, jumpy|calm, relaxed
+calm|After the storm, the sea grew calm again.|How do you stay calm when you're upset?|peaceful, quiet, still|upset, nervous
+gentle|Use gentle hands with your baby brother.|A gentle wind moved the leaves.|soft, tender, careful|rough
+curious|The curious puppy sniffed every box.|Why are cats so curious about bags?|nosy, interested|bored
+lonely|Our dog gets lonely when we leave.|Is the last cookie in the jar lonely?|alone, lonesome|
+grateful|I'm grateful for friends who make me laugh.|Say thank you to show you are grateful.|thankful|ungrateful
+embarrassed|I felt embarrassed when I called my teacher Mom.|Don't be embarrassed; everyone trips sometimes.|shy, red-faced|
+excited|Who is excited for the field trip?|My puppy gets excited when I come home.|thrilled, eager|bored, calm
+patient|Can you be patient while the cookies bake?|A patient fisher waits all morning.|calm, steady|impatient
+shy|The shy kitten hid behind the couch.|Is it okay to feel shy at a party?|quiet, timid, bashful|bold, outgoing
+delighted|Mom was delighted with her birthday card.|We were delighted to see a rainbow.|happy, pleased, thrilled|upset, sad
+worried|Why do you look so worried?|Dad was worried about the storm.|anxious, nervous, uneasy|calm, relaxed
+eager|The eager dog waited by the door.|We were eager to open the box.|keen, excited|bored
+frustrated|The puzzle made me so frustrated!|When the kite won't fly, I get frustrated.|annoyed, upset|pleased
+relieved|My cat came home, and I was so relieved.|Was the team relieved when the rain stopped?|glad, thankful|worried
+thrilled|My sister was thrilled with her new bike.|Are you thrilled about the trip?|excited, delighted|disappointed
+gloomy|Why is the clown so gloomy today?|On gloomy days, we play board games.|dark, sad, dull|bright, cheerful
+polite|A polite guest says thank you for dinner.|Was the waiter polite to you?|kind, courteous|rude
+honest|Thank you for being honest about the broken vase.|Can you give me an honest answer?|truthful|dishonest
+fair|Is it fair if one kid gets all the toys?|Let's take turns so the game is fair.|even, just|unfair
+generous|My generous aunt shared her whole pie.|It was generous of you to give your seat.|giving, kind|selfish, stingy
+silly|What a silly hat for a dog!|My uncle tells silly jokes at dinner.|goofy, funny|serious
+cozy|Our blanket fort is so cozy.|Let's read in the cozy chair by the window.|snug, comfy, warm|
+kind|Be kind to the new kid in class.|Our bus driver is kind to everyone.|nice, caring, gentle|mean, unkind
+jolly|A jolly old man waved from the sleigh.|The jolly music made us dance.|merry, cheerful|gloomy, grumpy
+content|With a book and a blanket, I was content.|Grandpa is content with his little garden.|happy, pleased, satisfied|unhappy
+enormous|Have you ever seen such an enormous pumpkin?|An enormous ship sailed into the bay.|huge, giant, gigantic|tiny
+tiny|Look at the tiny shoes for the doll!|How can a tiny seed grow into a tree?|small, little, wee|huge, enormous
+gigantic|Have you ever seen a gigantic whale?|My brother ate a gigantic slice of cake.|huge, enormous, giant|tiny
+smooth|Feel how smooth this stone is.|The ice on the pond was smooth.|flat, even, sleek|rough, bumpy
+rough|Sandpaper is rough on purpose.|My dad's hands get rough from yard work.|bumpy, scratchy|smooth
+fuzzy|My new slippers are warm and fuzzy.|Is a peach fuzzy or smooth?|furry, fluffy, soft|smooth
+sticky|My hands are sticky from the honey.|Watch out for the sticky tape!|gooey, tacky|
+slippery|Fish feel slippery in your hands.|Watch out, the steps are slippery!|slick, slidey|
+soggy|Nobody likes a soggy sandwich.|My socks got soggy in the puddle.|wet, soaked, mushy|dry, crispy
+crispy|Do you like your toast soft or crispy?|Leaves turn crispy and brown in the fall.|crunchy|soggy, soft
+fragile|Carry the eggs carefully; they are fragile.|The fragile vase sat on a high shelf.|delicate, breakable|sturdy, strong
+sturdy|The sturdy chair held the whole family.|Is this ladder sturdy enough to climb?|strong, solid, tough|fragile, flimsy
+ancient|Dinosaur footprints are ancient clues in the rock.|How did people in ancient times tell time?|old, aged|new, modern
+rapid|The river was rapid after the rain.|Can you hear my rapid heartbeat?|fast, quick, speedy|slow
+hollow|An owl lived in the hollow tree.|Tap the drum; it sounds hollow.|empty|solid, full
+narrow|The path between the rocks was narrow.|Can a cat fit through such a narrow gap?|thin, tight|wide
+gleaming|Grandpa polished his gleaming boots.|A gleaming star sat on top of the tree.|shiny, shining, bright|dull
+dim|The hallway is dim at night.|My flashlight got dim, so I changed the batteries.|dark, faint|bright
+damp|Is the grass still damp from the rain?|We dried our damp mittens by the heater.|moist, wet|dry
+chilly|Bring a hat; it's chilly by the lake.|My nose gets chilly when I sled.|cold, cool, nippy|warm, hot
+scorching|What a scorching summer day!|Don't touch the scorching pan!|blazing, burning, hot|freezing, chilly
+fierce|Even a kitten can look fierce when it hisses.|The team played a fierce game in the snow.|wild, strong|gentle, tame
+clever|What a clever way to fix the kite!|The clever fox found the hidden cheese.|smart, bright, sharp|foolish
+tidy|Keep your desk tidy, please.|After the party, we made the room tidy again.|neat, orderly|messy, untidy
+messy|Why is the kitchen so messy?|Making mud pies is messy work.|untidy, sloppy|tidy, neat
+noisy|Recess is the noisy part of the day.|A noisy truck woke me up.|loud, rowdy|quiet, silent
+silent|Be silent so the deer won't run.|The house was silent after bedtime.|quiet, still|noisy, loud
+plump|These plump grapes are ready to eat.|The baby has plump little cheeks.|round, chubby|thin, skinny
+brilliant|Whose brilliant idea was the blanket fort?|Her paper crown was a brilliant gold.|bright, clever, dazzling|dull
+rare|Finding a four-leaf clover is rare.|We spotted a rare blue bird.|unusual, uncommon|common
+wobbly|My front tooth is wobbly.|Don't stand on that wobbly stool.|shaky, loose|steady
+crooked|My snowman's hat sat crooked on his head.|Can you fix the crooked tower before it falls?|bent, twisted|straight
+vast|The desert looked vast and empty.|A vast field of sunflowers stretched ahead.|huge, wide, endless|small
+steep|We pushed our bikes up the steep hill.|Is this slide too steep for you?|sharp, sheer|gentle, flat
+shallow|The puddle was shallow, so I jumped in.|Is the creek shallow enough to cross?|low|deep
+delicious|What smells so delicious in here?|The pie was so delicious that I asked for more.|tasty, yummy|yucky
+sour|Lemons taste really sour.|My face scrunched up at the sour candy.|tart, sharp|sweet
+spicy|Is the salsa too spicy for you?|Dad loves spicy noodles.|hot, peppery|mild
+juicy|Juice dripped from the juicy peach.|I want the most juicy orange.|ripe, moist|dry
+ripe|Pick only the ripe strawberries.|How can you tell when a melon is ripe?|ready|unripe, green
+fragrant|The fragrant roses filled the room.|Fresh bread is so fragrant!|sweet-smelling, perfumed|smelly
+sparkling|Look at the sparkling snow!|She wore sparkling shoes to the party.|shiny, glittering, twinkling|dull
+dusty|The old books were dusty.|Our boots got dusty on the farm path.|dirty, grimy|clean
+fluffy|The pillows are big and fluffy.|What a fluffy little chick!|soft, puffy, fuzzy|flat
+whisper|Can you whisper the secret to me?|We whisper in the library.|murmur, mutter|shout, yell
+giggle|The baby will giggle if you tickle her toes.|Why did you giggle during the song?|laugh, titter|cry
+gallop|At the beach, horses gallop through the waves.|Our dog can gallop like a little pony.|race, run, dash|walk
+scurry|Did you see the squirrels scurry up the tree?|Little crabs scurry into their holes.|scamper, scuttle, hurry|stroll
+tumble|Puppies tumble over each other in the grass.|Did the blocks tumble down again?|fall, topple, roll|
+wander|Sheep wander all over the hills.|My mind tends to wander during long car rides.|roam, stroll, drift|
+explore|Astronauts explore space in rockets.|On vacation, we like to explore new towns.|discover, search, investigate|
+gather|Please gather your crayons.|Birds gather twigs for their nests.|collect, pick up|scatter
+sprinkle|Did you sprinkle the plants with water?|Let's sprinkle sugar on the berries.|scatter, dust|
+squeeze|Can you squeeze into the little car?|Give my hand a squeeze if you're scared.|press, pinch, crush|
+stretch|Stretch your arms up high.|The cat likes to stretch after a nap.|reach, extend|shrink
+balance|Seals can balance a ball on their noses.|I helped my sister balance on her new bike.|steady|tip, wobble
+crumble|The cookie will crumble in your pocket.|Old walls crumble over time.|break up, fall apart|
+dash|Let's dash inside before it rains!|The puppy made a dash for the ball.|run, race, rush|stroll
+peek|No peek at your presents!|Can I peek inside the oven?|glance, peep, look|
+shiver|Wet dogs shiver after a bath.|I started to shiver at the bus stop.|shake, tremble, quiver|
+soar|Watch the eagle soar over the hills.|Our hopes began to soar when we heard the news.|fly, glide, rise|sink, drop
+splash|Don't splash me with the hose!|The ducks like to splash in the pond.|spatter, splatter|
+stomp|The giant began to stomp through the forest.|Please don't stomp up the stairs.|stamp, tramp|tiptoe
+sway|The trees sway in the breeze.|Sway your arms to the music.|rock, swing|
+twirl|Twirl around in your new skirt!|Can you twirl the spaghetti on your fork?|spin, whirl, twist|
+wiggle|The worm began to wiggle on the path.|Can you wiggle your ears?|squirm, wriggle|
+munch|The horses munch on hay all day.|We like to munch popcorn at the movies.|chew, crunch, chomp|
+nibble|Mice nibble on cheese.|Let the baby nibble a cracker.|bite, peck|gobble
+sip|The hummingbird stopped to sip from the flower.|Can I have one sip of your juice?|taste|gulp
+gulp|Don't gulp your milk so fast.|The fish will gulp down the bug.|swallow, guzzle|sip
+chuckle|Dad began to chuckle at the funny card.|Did you chuckle at my joke?|laugh, chortle|
+yawn|Why do we yawn when we see others yawn?|The lion gave a big yawn.|gape|
+stumble|Don't stumble on the tree roots.|I heard him stumble in the dark.|trip, slip, lurch|
+cling|Baby monkeys cling to their mothers.|Wet socks cling to your feet.|hold, grip, hang on|let go
+creep|A cat will creep toward a bird.|Let's creep past the sleeping dog.|sneak, crawl, tiptoe|
+dart|Little fish dart under the rocks.|The rabbit made a dart for the bushes.|dash, zip, rush|
+drift|Leaves drift down the stream.|Clouds drift across the sky.|float, glide|
+glide|Skaters glide across the ice.|Owls glide without a sound.|slide, sail, float|
+hover|Bees hover over the flowers.|Can a helicopter hover in one place?|float, hang|
+leap|Can you leap over the puddle?|I saw a deer leap over the fence.|jump, spring, bound|
+perch|Parrots perch on the zookeeper's arm.|Where do the chickens perch at night?|sit, rest, roost|
+scramble|The kids began to scramble for the candy.|Crabs scramble over the wet rocks.|climb, clamber, rush|
+slither|Did you see the snake slither away?|The lizard can slither under the door.|slide, glide, wriggle|
+collect|I collect smooth stones from the beach.|Please collect the papers from your table.|gather, save, keep|scatter
+discover|What did the scientists discover in the cave?|Kids love to discover bugs under rocks.|find, uncover, spot|
+imagine|Can you imagine life without cars?|Close your eyes and imagine a beach.|picture, dream up, pretend|
+invent|Who would invent a flying bike?|What would you invent to clean your room?|create, make up, design|
+protect|Mother birds protect their eggs.|How do turtles protect themselves?|guard, shield, defend|harm
+rescue|The lifeguard came to rescue the swimmer.|We want to rescue a dog from the shelter.|save, free|
+share|Do you want to share my umbrella?|Every week, we share stories at bedtime.|split, give|keep, hog
+solve|We will solve the mystery together.|Who can solve the puzzle first?|figure out, answer, crack|
+borrow|Our neighbor came to borrow a cup of sugar.|You can borrow my umbrella if it rains.|use, take|lend
+compare|If you compare the twins, one has a freckle.|Let's compare our pumpkins after carving.|match, contrast|
+decide|Help me decide which ice cream to get.|Did you decide on a name for the puppy?|choose, pick|
+describe|Can you describe the lost dog?|I asked the boy to describe his dream.|tell, explain|
+exclaim|"It's snowing!" I heard my sister exclaim.|Fans exclaim when their team scores.|shout, cry out|whisper
+mumble|Please don't mumble; speak up.|He tends to mumble when he's sleepy.|mutter, murmur|shout
+wonder|Do you ever wonder how birds know where to fly?|I wonder what's for dinner.|think, ask, puzzle|
+admire|Everyone came over to admire the new puppy.|What do you admire most about your coach?|like, love, respect|dislike
+fetch|Can you fetch the ball, pup?|Please fetch your coat from the hook.|get, bring, retrieve|

@@ -4,7 +4,7 @@
 
 `public/data/words.json` is released under the Creative Commons Attribution-ShareAlike 4.0 International license ([LICENSES/CC-BY-SA-4.0.txt](LICENSES/CC-BY-SA-4.0.txt)). It is built from:
 
-- **Entries at every level and in every side trail:** words chosen, and definitions and both example sentences written, for Lumin Vocab by B7 Collective LLC (hand-written sources in `tools/wordbank/`: level lists, `trails/` and `sentences/`). Word origins in the Borrowed Words and Words from Myths trails are summarized from common dictionary etymologies.
+- **Entries at every level and in every side trail:** words chosen, and definitions and all four example sentences (two more per word in `sentences/more/`), plus the similar and opposite words, written, for Lumin Vocab by B7 Collective LLC (hand-written sources in `tools/wordbank/`: level lists, `trails/` and `sentences/`). Word origins in the Borrowed Words and Words from Myths trails are summarized from common dictionary etymologies.
 - **Which words to add (version 3.2 expansion):** new words were picked from three openly licensed word lists, then every definition and example was written for Lumin Vocab (nothing is copied from these lists but the headwords):
   - The CEFR-J Wordlist Version 1.5. Compiled by Yukio Tono, Tokyo University of Foreign Studies. Copyright Tono Laboratory, TUFS; free for research and commercial use with citation. Via [Open Language Profiles](https://github.com/openlanguageprofiles/olp-en-cefrj).
   - The Octanove Vocabulary Profile for C1/C2 levels, version 1.0, by Octanove Labs, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Via [Open Language Profiles](https://github.com/openlanguageprofiles/olp-en-cefrj).
@@ -17,7 +17,7 @@
 
 ## Pictures and sound (CC0 1.0)
 
-The scenes in `public/art/scenes/` (and their wallpaper copies in `public/art/wallpapers/`) and the paper illustrations in `public/art/icons/`, `public/art/journey/`, `public/art/trails/`, `public/art/keepers/`, `public/art/decor/` (the things beside the road) and `public/art/ground/` (the region ground textures) were made for Lumin Vocab by B7 Collective LLC with Google Gemini image generation. They are AI-generated images, not photographs. To the extent B7 Collective holds any rights in them, they are dedicated to the public domain under CC0 1.0. Sounds are synthesized in the browser by `public/js/sound.js`; there are no audio files.
+The scenes in `public/art/scenes/` (and their wallpaper copies in `public/art/wallpapers/`) and the paper illustrations in `public/art/icons/`, `public/art/journey/`, `public/art/trails/`, `public/art/keepers/`, `public/art/decor/` (the things beside the road) and `public/art/ground/` (the region ground textures) were made for Lumin Vocab by B7 Collective LLC with Google Gemini image generation. They are AI-generated images, not photographs. The eight paper art scenes (moonriver, emberpeak, redfalls, junglemoon, greatwave, moonpagoda, canyonarch, crystalcave) were supplied by B7 Collective LLC as AI-generated artwork and enlarged for Lumin Vocab with the EDSR super-resolution model (Lim et al., 2017) through OpenCV; the model itself is not shipped with the app. To the extent B7 Collective holds any rights in them, they are dedicated to the public domain under CC0 1.0. Sounds are synthesized in the browser by `public/js/sound.js`; there are no audio files.
 
 ## Software and fonts
 

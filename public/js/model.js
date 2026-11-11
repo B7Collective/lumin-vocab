@@ -110,7 +110,17 @@ export function learn(pid, w) { const c = card(pid, w); return setCard(pid, w, {
 export function know(pid, w) { return setCard(pid, w, { st: "known", actAt: Date.now() }); }
 export function seen(pid, w) { const c = card(pid, w); if (!c) setCard(pid, w, { st: "seen", seenAt: Date.now() }); else store.update("card", cid(pid, w), { seenAt: Date.now() }); }
 export function toggleFav(pid, w) { const c = card(pid, w); return setCard(pid, w, { fav: !(c && c.fav) }).fav; }
-export function grade(pid, w, g) { const c = card(pid, w) || learn(pid, w); return setCard(pid, w, { st: "learning", srs: srs.review(c.srs || srs.newState(), g) }); }
+// One review per word per day counts. Answering the same word five times in one sitting is practice, not five days of memory,
+// so only the first answer of the day moves the schedule (unless the word is due again, after a miss).
+export function grade(pid, w, g, now = Date.now()) {
+  const c = card(pid, w) || learn(pid, w), st = c.srs;
+  if (st && st.reps && srs.startOfDay(st.last) === srs.startOfDay(now) && st.due > now) return c;
+  return setCard(pid, w, { st: "learning", srs: srs.review(st || srs.newState(), g, now) });
+}
+const COUNT_WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
+export const countWord = (n) => COUNT_WORDS[n] || String(n);
+// Your own sentence for a word, written in "Use it"
+export const setMine = (pid, w, text) => setCard(pid, w, { mine: text, mineAt: Date.now() });
 
 export function todayCount(pid) {
   const start = srs.startOfDay(Date.now());
@@ -254,12 +264,12 @@ export const KEEPSAKES = ["a brass key", "a pressed violet", "a sea-glass marble
   "a whistle carved from willow", "a button with four holes", "a seashell that hums", "a candle stub", "a compass that points home", "a clay bead", "a star chart",
   "a lucky horseshoe nail", "a wax seal", "a pinecone", "a spool of red thread", "a folded riddle", "a moth's dropped scale", "a snow globe", "a wooden whistle", "a lantern wick"];
 export const STEPS = [
-  { key: "learn", name: "Meet the words", icon: "flashcards", line: "Six new lights for your lantern." },
+  { key: "learn", name: "Meet the words", icon: "flashcards", line: "Six new words. Just read and listen." },
   { key: "meaning", name: "What they mean", icon: "match", line: "Match each word to its meaning." },
   { key: "gap", name: "Fill the gaps", icon: "gap", line: "Fresh sentences, missing a word." },
   { key: "spell", name: "Build them", icon: "unscramble", line: "Put the letters back in order." },
   { key: "mix", name: "Mix it up", icon: "shuffle", line: "A bit of everything." },
-  { key: "test", name: "The keeper's riddle", icon: "perfect", line: "Answer the keeper to pass the landmark." },
+  { key: "test", name: "The keeper's riddle", icon: "perfect", line: "Show the keeper the words are yours." },
 ];
 export const LOOKOUT_STEPS = [
   { key: "usage", name: "Campfire stories", icon: "review", line: "Which sentence gets the word right?" },
@@ -294,7 +304,7 @@ export function chapterWords(level) {
   let lm = 0, since = [];
   for (let i = 0; i < ordered.length; i += CHAPTER_SIZE) {
     const words = ordered.slice(i, i + CHAPTER_SIZE);
-    chapters.push({ words, lookout: false, landmark: LANDMARKS[lm++ % LANDMARKS.length] });
+    chapters.push({ words, lookout: false, landmark: LANDMARKS[lm++ % LANDMARKS.length], idx: lm });
     since.push(...words);
     if (chapters.length % 5 === 4 && i + CHAPTER_SIZE < ordered.length) {
       const rnd = seeded("lookout" + level + chapters.length);
@@ -308,7 +318,70 @@ export function chapterWords(level) {
 }
 export const regionOf = (ch) => REGIONS[Math.floor(ch / REGION_SIZE) % REGIONS.length];
 export const keepsakeOf = (ch, level) => KEEPSAKES[(ch * 7 + level * 3) % KEEPSAKES.length];
-export const stepsFor = (chapter, trailKey) => trailKey === "spelling" ? SPELL_STEPS : trailKey === "mixups" ? MIXUP_STEPS : trailKey ? TRAIL_STEPS : (chapter && chapter.lookout ? LOOKOUT_STEPS : STEPS);
+// Every stop on the road plays differently. The first and last steps are fixed (meet the words, the keeper's riddle);
+// the four in between are drawn from a pool of games, the same for a stop every time you visit it, different from its
+// neighbors. Kids get the kid-friendly games.
+const STEP_POOL = {
+  meaning: { name: "What they mean", icon: "match", line: "Match each word to its meaning." },
+  pairs: { name: "Match the pairs", icon: "match", line: "Tap a word, then its meaning." },
+  memory: { name: "Memory cards", icon: "flashcards", line: "Flip two cards. Find each word's meaning." },
+  incontext: { name: "Read the clues", icon: "talk", line: "Work out what each word means in a sentence." },
+  listen: { name: "Listen closely", icon: "senses", line: "Hear the word, then find it." },
+  gap: { name: "Fill the gaps", icon: "gap", line: "Sentences you haven't seen, missing a word." },
+  cloze: { name: "Word bank", icon: "history", line: "Place each word in its sentence." },
+  usage: { name: "Spot the right use", icon: "talk", line: "Only one sentence uses the word right." },
+  oddone: { name: "Odd one out", icon: "mind", line: "Three belong together. Which one doesn't?" },
+  synonym: { name: "Find its twin", icon: "senses", line: "Pick the word closest in meaning." },
+  spell: { name: "Build them", icon: "unscramble", line: "Put the letters back in order." },
+  hidden: { name: "Light the letters", icon: "streak", line: "Guess the word one letter at a time." },
+  wordsearch: { name: "Word hunt", icon: "describing", line: "Find the words hidden in the letters." },
+  hearspell: { name: "Hear and spell", icon: "senses", line: "Listen, then spell what you hear." },
+  spellit: { name: "Spell them", icon: "spelling", line: "Type each word from its meaning." },
+  useit: { name: "Make it yours", icon: "mywords", line: "Write your own sentence with each word." },
+  mix: { name: "Mix it up", icon: "shuffle", line: "Every word once more, a new way." },
+};
+// A stop walks the way words are learned: meet them, recognize them, see them in sentences, get their shape right,
+// then use them yourself. Each slot has its own shelf of games, and the road walks through every shelf in a shuffled
+// order, so neighboring stops never repeat a game in the same slot and it takes many stops before a combination comes back.
+const SLOTS = [
+  ["meaning", "pairs", "incontext", "memory", "listen"],          // recognize: what does it mean?
+  ["gap", "cloze", "usage", "synonym", "oddone"],                 // context: how is it used?
+  ["hidden", "spell", "spellit", "hearspell"],                    // form: how is it spelled?
+  ["useit", "mix", "useit"],                                      // use: make it yours
+];
+const KID_SKIP = new Set(["oddone", "hearspell", "usage", "synonym", "spellit", "useit"]);
+const HARD_FORM = new Set(["spellit", "hearspell"]);
+function variedSteps(chapter, kid) {
+  const idx = chapter.idx || 0;
+  // Kids skip the "use it" slot: four short steps and the riddle
+  const mid = SLOTS.slice(0, kid ? 3 : 4).map((slot, k) => {
+    const opts = [...new Set(slot)].filter((x) => !(kid && KID_SKIP.has(x)));
+    const order = seededOrder(k === 3 ? slot : opts, "slot" + k + (kid ? "k" : ""));
+    let pick = order[(idx + k * 2) % order.length];
+    // typing a word from memory waits until you've walked a few stops
+    if (HARD_FORM.has(pick) && idx < 3) pick = order.find((x) => !HARD_FORM.has(x));
+    return pick;
+  });
+  return [STEPS[0], ...mid.map((k) => ({ key: k, ...STEP_POOL[k] })), STEPS[STEPS.length - 1]];
+}
+function seededOrder(list, key) { const rnd = seeded(key); return list.map((x) => [rnd(), x]).sort((a, b) => a[0] - b[0]).map((x) => x[1]); }
+const stepCache = new WeakMap(), kidStepCache = new WeakMap();
+const KID_LOOKOUT = [{ key: "incontext", name: "Campfire stories", icon: "review", line: "What does each word mean in the story?" }, ...LOOKOUT_STEPS.slice(1)];
+export function stepsFor(chapter, trailKey, kid = chapter ? chapter.words.every((w) => w.l <= 1) : false) {
+  if (trailKey === "spelling") return SPELL_STEPS;
+  if (trailKey === "mixups") return MIXUP_STEPS;
+  if (trailKey) {
+    if (!chapter) return TRAIL_STEPS;
+    const play = seededOrder(["pairs", "memory", "hidden", "wordsearch", "cloze", "incontext", "oddone", "listen", "gap"].filter((k) => !(kid && KID_SKIP.has(k))), "trail" + trailKey);
+    const k = play[(chapter.idx || 0) % play.length];
+    return [TRAIL_STEPS[0], { ...TRAIL_STEPS[1], key: k, name: STEP_POOL[k].name, icon: STEP_POOL[k].icon, line: STEP_POOL[k].line }, TRAIL_STEPS[2]];
+  }
+  if (!chapter) return STEPS;
+  if (chapter.lookout) return kid ? KID_LOOKOUT : LOOKOUT_STEPS;
+  const cache = kid ? kidStepCache : stepCache;
+  if (!cache.has(chapter)) cache.set(chapter, variedSteps(chapter, kid));
+  return cache.get(chapter);
+}
 
 // Side trails: short themed walks with no daily lock
 export const trail = (key) => TRAILS.find((t) => t.key === key);
@@ -329,7 +402,7 @@ export function trailChapters(key, p) {
   const ws = trailWords(t, p);
   // mix-ups stay in pairs; others stay in the order they were written
   const size = key === "mixups" ? 4 : CHAPTER_SIZE, out = [];
-  for (let i = 0; i < ws.length; i += size) { const words = ws.slice(i, i + size); if (words.length >= 2) out.push({ words, lookout: false, landmark: null }); }
+  for (let i = 0; i < ws.length; i += size) { const words = ws.slice(i, i + size); if (words.length >= 2) out.push({ words, lookout: false, landmark: null, idx: out.length }); }
   if (out.length > 1 && out[out.length - 1].words.length < 3) { const last = out.pop(); out[out.length - 1].words.push(...last.words); }
   return out;
 }
@@ -385,18 +458,54 @@ export function scramble(w) {
 export const escapeRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const wordRe = (w) => new RegExp(`(^|[^\\w])${escapeRe(w)}(?![\\w])`, "i");
 // Sentences for a word. The Words screen shows the first; games prefer the others so you meet the word somewhere new.
-export const sentences = (word) => [word.e, ...(word.e2 ? [].concat(word.e2) : [])].filter((x) => x && wordRe(word.w).test(x));
-export function gapSentence(word, fresh = true) {
+export const sentences = (word) => [word.e, ...(word.e2 ? [].concat(word.e2) : []), ...(word.e3 || [])].filter((x) => x && wordRe(word.w).test(x));
+// Games take turns through a word's sentences, so the same one doesn't come back until you've seen the rest.
+// The Words screen's own example goes last. Remembered per device.
+const SENT_KEY = "lumin-sent";
+let sentUse = null;
+const loadUse = () => { if (sentUse) return sentUse; try { sentUse = JSON.parse(localStorage.getItem(SENT_KEY) || "{}"); } catch { sentUse = {}; } return sentUse; };
+let saveT = null;
+const saveUse = () => { clearTimeout(saveT); saveT = setTimeout(() => { try { const keys = Object.keys(sentUse); if (keys.length > 4000) keys.slice(0, keys.length - 3000).forEach((k) => delete sentUse[k]); localStorage.setItem(SENT_KEY, JSON.stringify(sentUse)); } catch {} }, 400); };
+export function nextSentence(word, ok = () => true) {
   const all = sentences(word); if (!all.length) return null;
-  const pick = fresh && all.length > 1 ? pickOne(all.slice(1)) : pickOne(all);
-  return pick.replace(wordRe(word.w), "$1_____");
+  const order = all.length > 1 ? [...all.slice(1), all[0]] : all;
+  const use = loadUse(), start = use[word.w] || 0;
+  for (let k = 0; k < order.length; k++) {
+    const idx = (start + k) % order.length;
+    if (ok(order[idx])) { use[word.w] = idx + 1; saveUse(); return order[idx]; }
+  }
+  return null;
+}
+export function gapSentence(word, fresh = true) {
+  const pick = fresh ? nextSentence(word) : sentences(word)[0];
+  // "a _____" or "an _____" would give the answer away, so the article stays neutral
+  return pick ? pick.replace(wordRe(word.w), "$1_____").replace(/\b(a|an) _____/gi, (m, art) => (art[0] === "A" ? "A" : "a") + "/an _____") : null;
 }
 export const blankExample = (word) => gapSentence(word, false);
-const SYN_OK = /^[a-z]{3,}$/;
-function synonymFor(word) {
-  const s = (word.m || []).filter((x) => SYN_OK.test(x) && x !== word.w && !x.includes(word.w.slice(0, 4)));
-  return s.length ? pickOne(s) : null;
+const SYN_OK = /^[a-z][a-z' -]{2,}$/;
+function editDist(a, b) {
+  const d = Array.from({ length: b.length + 1 }, (_, k) => k);
+  for (let i = 1; i <= a.length; i++) { let prev = d[0]; d[0] = i;
+    for (let j = 1; j <= b.length; j++) { const t = d[j]; d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = t; } }
+  return d[b.length];
 }
+// A usable close word: plain, not the same stem, not a spelling variant, and not harder than the word itself
+const synOk = (word, x) => {
+  if (!SYN_OK.test(x) || x === word.w) return false;
+  const a = word.w.toLowerCase(), b = x.toLowerCase();
+  if (b.includes(a.slice(0, 4)) || a.includes(b.slice(0, 4)) || editDist(a, b) <= 2) return false;
+  const o = BY.get(x);
+  return !o || (o.l <= (word.l ?? 3) + 1 && (o.z == null || o.z >= 3.2));
+};
+const synsOf = (word) => (word.m || []).filter((x) => synOk(word, x));
+function synonymFor(word) { const s = synsOf(word); return s.length ? pickOne(s) : null; }
+// Close cousins for Odd one out: (when the bank knows them) the same part of speech
+const goodSyns = (word) => synsOf(word).filter((x) => !BY.get(x) || BY.get(x).p === word.p);
+// Two words are related when either lists the other as a close word or an opposite
+const related = (a, b) => (a.m || []).includes(b.w) || (b.m || []).includes(a.w) || (a.a || []).includes(b.w) || (b.a || []).includes(a.w);
+// A sentence that works as a build-the-sentence puzzle: not too short, not too long
+const buildable = (text, kid) => { const n = text.trim().split(/\s+/).length; return n >= 4 && n <= (kid ? 9 : 13); };
+export const sentenceTiles = (text) => text.trim().split(/\s+/);
 // Which kinds can be asked about this word
 export function canAsk(word, kind, kid) {
   const letters = /^[a-z]+$/i.test(word.w);
@@ -407,7 +516,13 @@ export function canAsk(word, kind, kid) {
     case "mixup": return !!word.cf && !!BY.get(word.cf) && !!gapSentence(word);
     case "spell": return letters && !kid;
     case "unscramble": return letters && word.w.length <= 12;
-    case "listen": return typeof speechSynthesis !== "undefined";
+    case "listen": return true;
+    case "hidden": return /^[a-z][a-z' -]*$/i.test(word.w) && word.w.replace(/[^a-z]/gi, "").length >= 3 && word.w.length <= 16;
+    case "incontext": return sentences(word).length > 0;
+    case "oddone": return goodSyns(word).length >= 2;
+    case "opposite": return !!(word.a && word.a.length) && (word.p === "adjective" || word.p === "adverb");
+    case "build": return sentences(word).some((x) => buildable(x, kid));
+    case "hearspell": return letters && !kid;
     default: return true;
   }
 }
@@ -418,6 +533,7 @@ export function question(word, kind, kid = false) {
   if (kind === "spell" && kid) kind = "unscramble";
   if (!canAsk(word, kind, kid)) kind = kind === "listen" ? "meaning" : canAsk(word, "gap", kid) ? "gap" : "word";
   if (kind === "flash") return { kind, word };
+  if (kind === "useit") return { kind, word, model: nextSentence(word) || word.e };
   if (kind === "spell") return { kind, word, prompt: word.d };
   if (kind === "unscramble") return { kind, word, prompt: word.d, tiles: scramble(word.w) };
   if (kind === "meaning" || kind === "listen") return { kind, word, prompt: word.w, options: shuffled([word, ...distractors(word, n, "d")]).map((x) => ({ text: x.d, right: x.w === word.w })) };
@@ -427,18 +543,44 @@ export function question(word, kind, kid = false) {
     return { kind, word, prompt: shown, truth: real || !other, options: [{ text: "True", right: real || !other }, { text: "False", right: !(real || !other) }] };
   }
   if (kind === "synonym") {
-    const syn = synonymFor(word), others = distractors(word, n, "w").map((x) => x.w).filter((x) => !(word.m || []).includes(x));
+    const syn = synonymFor(word), others = distractors(word, n * 3, "w").filter((x) => !related(word, x) && !(x.m || []).includes(syn) && x.t !== word.t).map((x) => x.w);
     return { kind, word, prompt: word.w, options: shuffled([syn, ...others.slice(0, n)]).map((t) => ({ text: t, right: t === syn })) };
   }
   if (kind === "usage") {
     // The right sentence, plus other words' sentences with this word dropped in where it doesn't belong
     const right = pickOne(sentences(word).length > 1 ? sentences(word).slice(1) : sentences(word));
     const wrong = [];
-    for (const x of shuffled(distractors(word, n * 3, "w"))) {
+    // A borrowed sentence can't come from a close word or the same topic, or the "wrong" use might be right
+    for (const x of shuffled(distractors(word, n * 4, "w"))) {
+      if (related(word, x) || x.t === word.t) continue;
       const s = sentences(x)[0]; if (!s || wrong.length >= n) continue;
       wrong.push(s.replace(wordRe(x.w), `$1${word.w}`));
     }
     return { kind, word, prompt: word.w, options: shuffled([{ text: right, right: true }, ...wrong.map((t) => ({ text: t, right: false }))]) };
+  }
+  if (kind === "hidden") return { kind, word, prompt: word.d };
+  if (kind === "hearspell") return { kind, word, prompt: word.d };
+  if (kind === "incontext") {
+    const sent = nextSentence(word);
+    return { kind, word, prompt: sent, options: shuffled([word, ...distractors(word, n, "d")]).map((x) => ({ text: x.d, right: x.w === word.w })) };
+  }
+  if (kind === "oddone") {
+    // two of the word's close cousins and one stranger: spot the stranger
+    const twins = shuffled(goodSyns(word)).slice(0, 2);
+    // the stranger is an everyday word, so the puzzle is about meaning, not about knowing a rare word
+    const odd = distractors(word, 12, "w").filter((x) => (x.z == null || x.z >= 3.8) && !related(word, x) && !twins.some((t) => (x.m || []).includes(t)) && /^[a-z]{3,}$/.test(x.w)).map((x) => x.w)[0]
+      || distractors(word, 6, "w").map((x) => x.w).find((x) => !twins.includes(x) && !(word.m || []).includes(x));
+    return { kind, word, twins, odd, options: shuffled([word.w, ...twins, odd]).map((t) => ({ text: t, right: t === odd })) };
+  }
+  if (kind === "opposite") {
+    const opp = pickOne(word.a), others = distractors(word, n + 2, "w").map((x) => x.w).filter((x) => !(word.m || []).includes(x) && !word.a.includes(x)).slice(0, n);
+    return { kind, word, prompt: word.w, answer: opp, options: shuffled([opp, ...others]).map((t) => ({ text: t, right: t === opp })) };
+  }
+  if (kind === "build") {
+    const sent = nextSentence(word, (x) => buildable(x, kid)) || sentences(word).find((x) => buildable(x, kid));
+    const tiles = sentenceTiles(sent);
+    let mixed; do { mixed = shuffled(tiles.map((t, k) => ({ t, k }))); } while (mixed.length > 1 && mixed.every((x, k) => x.k === k));
+    return { kind, word, sentence: sent, tiles: mixed };
   }
   if (kind === "mixup") {
     const other = BY.get(word.cf);
@@ -448,16 +590,31 @@ export function question(word, kind, kid = false) {
   return { kind, word, prompt, options: shuffled([word, ...distractors(word, n, "w")]).map((x) => ({ text: x.w, right: x.w === word.w })) };
 }
 // A mix that eases in: meaning first, then harder and more varied kinds as a word gets familiar
-export function mixedKind(word, reps, kid) {
-  if (reps === 0) return pickOne(["meaning", "meaning", "truefalse"]);
-  const kinds = ["meaning", "word", "truefalse", "listen"];
-  if (canAsk(word, "gap", kid)) kinds.push("gap", "gap");
-  if (canAsk(word, "synonym", kid)) kinds.push("synonym");
-  if (canAsk(word, "mixup", kid)) kinds.push("mixup", "mixup");
-  if (reps >= 1 && canAsk(word, "usage", kid)) kinds.push("usage");
-  if (reps >= 2) kinds.push(kid ? "unscramble" : "spell");
-  if (reps >= 1 && canAsk(word, "unscramble", kid)) kinds.push("unscramble");
-  return pickOne(kinds);
+let lastKinds = [];
+const NO_KINDS = new Set();
+// The keeper's riddle asks you to recall and use the words: no coin-flip true-or-false
+export const RIDDLE_SKIP = new Set(["truefalse"]);
+export function mixedKind(word, reps, kid, no = NO_KINDS) {
+  const kinds = reps === 0 ? ["meaning", "truefalse", "listen"] : ["meaning", "word", "truefalse", "listen"];
+  if (reps === 0 && canAsk(word, "incontext", kid)) kinds.push("incontext");
+  if (reps >= 1) {
+    if (canAsk(word, "gap", kid)) kinds.push("gap");
+    if (canAsk(word, "incontext", kid)) kinds.push("incontext");
+    if (canAsk(word, "synonym", kid)) kinds.push("synonym");
+    if (canAsk(word, "oddone", kid)) kinds.push("oddone");
+    if (canAsk(word, "opposite", kid)) kinds.push("opposite", "opposite");
+    if (canAsk(word, "mixup", kid)) kinds.push("mixup", "mixup");
+    if (canAsk(word, "usage", kid)) kinds.push("usage");
+    if (canAsk(word, "hidden", kid)) kinds.push("hidden");
+    if (canAsk(word, "unscramble", kid)) kinds.push("unscramble");
+  }
+  if (reps >= 2) { kinds.push(kid ? "unscramble" : "spell"); if (canAsk(word, "hearspell", kid)) kinds.push("hearspell"); }
+  // never the same kind twice in a row, and rarely within three
+  const ok = kinds.filter((k) => !no.has(k)), list = ok.length ? ok : ["meaning"];
+  const fresh = list.filter((k) => !lastKinds.includes(k));
+  const k = pickOne(fresh.length ? fresh : list.filter((x) => x !== lastKinds[0]).length ? list.filter((x) => x !== lastKinds[0]) : list);
+  lastKinds = [k, ...lastKinds].slice(0, 3);
+  return k;
 }
 // Words a person can practice: what they're learning, then their journey words, then their level
 export function practicePool(p, size = 10, topic = null) {

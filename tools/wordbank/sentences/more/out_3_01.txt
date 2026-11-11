@@ -1,0 +1,130 @@
+fey|Why does the new neighbor seem so fey?|In the old ballad, a fey stranger appears at midnight.|otherworldly, whimsical, ethereal|down-to-earth
+bombast|Did you notice the bombast in his campaign ads?|Beneath all the bombast was a sound idea.|grandiloquence, bluster, pomposity|plain speech
+cornucopia|What's in the cornucopia on the table?|The festival offered a cornucopia of street food.|abundance, horn of plenty, wealth|scarcity
+hagiography|Is the documentary honest or hagiography?|Early accounts of the explorer were pure hagiography.|idealization, glorification|expose
+hermitage|Would you enjoy living in a hermitage?|The monk's hermitage clung to the cliff.|retreat, refuge, sanctuary|
+histrionic|Why are reality shows so histrionic?|The actor's histrionic sobbing drew laughter.|melodramatic, theatrical, over-the-top|restrained
+juggernaut|Can a small startup beat a juggernaut?|The juggernaut of progress rolled over the village.|powerhouse, colossus, giant|
+macerate|How long should I macerate the fruit?|The chef would macerate cherries in syrup.|soak, steep, soften|
+maelstrom|How did she stay calm in the maelstrom?|Sailors feared the maelstrom off the coast.|whirlpool, turmoil, chaos|calm
+meridian|When does the sun cross the meridian?|The artist's career reached its meridian in her forties.|peak, zenith, longitude|nadir
+nemesis|Who is your nemesis on the team?|Math was my nemesis until tenth grade.|archenemy, rival, foe|ally
+obsequious|Why is the assistant so obsequious?|Obsequious praise made the boss suspicious.|servile, fawning, sycophantic|assertive
+pandemonium|What caused the pandemonium at the store?|The final buzzer set off pandemonium in the stands.|chaos, uproar, bedlam|order
+philistine|Is it philistine to skip the museum?|The philistine mayor cut all arts funding.|boor, lowbrow|aesthete
+sangfroid|How did the goalie keep such sangfroid?|Her sangfroid in the debate impressed the judges.|composure, poise, cool|panic
+schadenfreude|Is schadenfreude ever harmless?|Comedy often runs on a little schadenfreude.|gloating, malicious joy|sympathy
+simulacrum|Is the replica just a simulacrum?|The chatbot offered a simulacrum of friendship.|imitation, copy, likeness|original
+sophomoric|Why was the humor so sophomoric?|His sophomoric argument ignored the facts.|juvenile, immature, puerile|mature
+swain|Who is the lovesick swain in the play?|A swain tended sheep on the hillside.|suitor, admirer, beau|
+talisman|Do you carry a talisman?|The team treats its old mascot as a talisman.|charm, amulet, good-luck piece|
+troglodyte|Why call him a troglodyte?|Some troglodyte communities still live in carved caves.|cave dweller, reactionary|
+wayfarer|Where did the wayfarer rest?|The wayfarer carried only a staff and a cloak.|traveler, wanderer, rover|homebody
+wunderkind|Was the director a wunderkind?|The young wunderkind sold her company at twenty.|prodigy, whiz kid, phenom|late bloomer
+abstraction|Is mathematics pure abstraction?|Her paintings drift toward abstraction.|concept, generalization|concreteness
+aegis|Under whose aegis was the project launched?|The children played under the aegis of watchful parents.|protection, sponsorship, auspices|
+allegory|Is the movie an allegory?|The poet used a garden as an allegory for the soul.|parable, fable, symbolism|
+analogous|Is the situation analogous to last year's?|The two systems are roughly analogous.|comparable, similar, parallel|dissimilar
+anomaly|Is the result an anomaly?|A tall sunflower was an anomaly in the field of daisies.|irregularity, oddity, outlier|norm
+attrition|How can teams reduce attrition?|Steady attrition wore down the soldiers' morale.|erosion, wearing down, loss|growth
+axiom|Is "time is money" an axiom?|Every proof rests on at least one axiom.|principle, truism, maxim|
+canonical|Is that the canonical answer?|Fans debate which sequels are canonical.|authoritative, accepted, standard|apocryphal
+caveat|What's the caveat here?|With one caveat, the study supports the idea.|warning, proviso, condition|
+cognition|How does exercise affect cognition?|Infants show surprising cognition about numbers.|thinking, perception, understanding|
+correlate|Do sleep and grades correlate?|Researchers tried to correlate diet with mood.|connect, relate, link|
+credence|Do you give credence to rumors?|The witness's story gained credence over time.|belief, credibility, trust|doubt
+debunk|Can science debunk the legend?|Fact-checkers debunk false claims daily.|disprove, expose, refute|confirm
+diaspora|How large is the diaspora?|Food connects members of the diaspora.|dispersion, exiles, community|
+diffuse|How does perfume diffuse in a room?|Her answer was diffuse and hard to follow.|spread, scattered, vague|concentrated
+discrete|Are the categories discrete?|The data come in discrete steps.|separate, distinct, individual|continuous
+dogma|Should science avoid dogma?|Political dogma blocked the compromise.|doctrine, creed, belief|
+emergent|Is consciousness an emergent property?|An emergent market grew around the new tech.|developing, arising, nascent|established
+entropy|Does entropy always increase?|Entropy took over the abandoned house.|disorder, decay, chaos|order
+ethos|What's the team's ethos?|The school's ethos is kindness above all.|spirit, character, values|
+etymology|What's the etymology of "quarantine"?|Etymology reveals surprising word histories.|word origin, derivation|
+holistic|Is the program holistic?|A holistic plan looks at diet, sleep and stress.|comprehensive, integrated, whole|piecemeal
+homogeneous|Is the class too homogeneous?|The suburb was homogeneous in style.|uniform, alike, consistent|heterogeneous
+impetus|What gave you the impetus to start?|The new coach gave the team fresh impetus.|stimulus, momentum, drive|deterrent
+incremental|Are the improvements incremental?|Incremental savings add up to a lot.|gradual, step-by-step, piecemeal|sudden
+inference|What inference can you draw?|By inference, the butler did it.|deduction, conclusion, reasoning|
+intrinsic|Is the painting's intrinsic value high?|Motivation works best when it's intrinsic.|inherent, built-in, essential|extrinsic
+juxtaposition|What does the juxtaposition suggest?|The photo's juxtaposition of rich and poor shocked viewers.|contrast, comparison, pairing|
+lexicon|Is "ghosting" in your lexicon?|The legal lexicon baffles newcomers.|vocabulary, dictionary, glossary|
+locus|Where is the locus of the problem?|The city became the locus of the new movement.|center, hub, focus|
+motif|What motif do you notice in the story?|A floral motif decorates the plates.|theme, pattern, design|
+normative|Is the advice normative or descriptive?|Normative rules can feel stifling.|prescriptive, standard|descriptive
+orthodoxy|Why would anyone challenge orthodoxy?|Economic orthodoxy changed after the crisis.|convention, tradition, doctrine|heresy
+parameter|Which parameter should we change?|Within that parameter, you have freedom.|limit, boundary, variable|
+parity|Is there pay parity at the company?|The two currencies reached parity.|equality, equivalence, balance|disparity
+parse|Can you parse this sentence?|The computer will parse the data overnight.|analyze, dissect, interpret|
+pedagogy|What pedagogy does the school follow?|Her pedagogy centers on hands-on projects.|teaching, instruction, education|
+periphery|What's on the periphery of the photo?|New ideas often start at the periphery.|edge, fringe, outskirts|center
+propagate|How do you propagate a succulent?|Sound waves propagate through water.|spread, breed, disseminate|suppress
+proponent|Who is the main proponent of the plan?|Each proponent spoke for two minutes.|advocate, supporter, champion|opponent
+qualitative|Is the research qualitative?|The change was qualitative, not just bigger.|descriptive, nonnumerical|quantitative
+quantify|Can you quantify the improvement?|Economists try to quantify everything.|measure, calculate, count|
+rationale|What's the rationale behind the rule?|The rationale was safety.|reasoning, justification, logic|
+redress|How can we redress the imbalance?|The victims sought redress for the error.|remedy, compensation, correct|
+replicate|Can you replicate the experiment?|Cells replicate by dividing.|copy, duplicate, reproduce|
+schema|What schema does the app use?|The schema organizes thousands of records.|framework, outline, model|
+semantic|Is the disagreement just semantic?|Semantic memory stores facts and meanings.|linguistic, verbal|
+skepticism|Why do you have skepticism about the plan?|Skepticism protected her from scams.|doubt, suspicion, disbelief|belief
+symbiosis|Is the partnership a symbiosis?|Bees and flowers share a symbiosis.|cooperation, interdependence, mutualism|
+tacit|Was there tacit approval?|Tacit knowledge is hard to teach.|implicit, unspoken, implied|explicit
+taxonomy|What's the taxonomy of that insect?|The store's taxonomy of products confused shoppers.|classification, categorization|
+tenet|What's a basic tenet of the religion?|A core tenet of science is testability.|principle, belief, doctrine|
+transcend|Can art transcend borders?|Her love of the game seemed to transcend age.|surpass, exceed, rise above|
+trope|Is the twist a tired trope?|The film plays with the trope of the wise mentor.|cliche, convention, motif|
+unilateral|Was the ceasefire unilateral?|She made a unilateral change to the plan.|one-sided, independent|multilateral
+adjunct|Is the course an adjunct to the main program?|The tutor served as an adjunct to the class.|addition, supplement, auxiliary|
+annotate|Did you annotate the poem?|Scholars annotate old letters for modern readers.|comment on, note, gloss|
+arbiter|Who will be the arbiter of the dispute?|Time is the final arbiter of art.|judge, referee, mediator|
+attest|Can you attest to her honesty?|Fossils attest to an ancient sea.|confirm, verify, testify|deny
+austerity|Did austerity help the economy?|The monk lived with great austerity.|frugality, belt-tightening, severity|extravagance
+cartography|Is cartography still a career?|Medieval cartography mixed fact with fantasy.|mapmaking, charting|
+catalyze|What will catalyze change?|The scandal helped catalyze reform.|spark, trigger, prompt|inhibit
+causal|Is the link causal or just a coincidence?|Scientists traced a causal chain of events.|causative, determining|coincidental
+complicit|Were the guards complicit?|Silent bystanders can be complicit.|implicated, involved, accessory|innocent
+conjecture|Is that fact or conjecture?|Historians conjecture that the fort was abandoned.|speculation, guess, theory|fact
+constituent|What are the constituent parts of the machine?|The senator met with each constituent.|component, element, voter|
+contiguous|Are the lots contiguous?|The forest is contiguous with the park.|adjacent, adjoining, neighboring|separate
+convergence|What caused the convergence of ideas?|Phones and cameras reached a convergence that changed photography.|meeting, merging, union|divergence
+disparity|Why is there such a disparity in pay?|The disparity between rich and poor grew.|gap, difference, inequality|parity
+distill|Can you distill the main idea?|Farmers distill lavender into oil.|condense, extract, refine|
+divergent|Why are their opinions so divergent?|Divergent thinking leads to new ideas.|differing, contrasting|convergent
+dossier|What's in the dossier?|The detective opened the dossier on the suspect.|file, record, portfolio|
+empirical|Is there empirical evidence?|Empirical tests disproved the old belief.|observed, experimental, factual|theoretical
+entail|What would the move entail?|Does the role entail late nights?|involve, require, necessitate|
+equilibrium|How did the ecosystem regain equilibrium?|She lost her equilibrium on the ice.|balance, stability, poise|imbalance
+esoteric|Is the book too esoteric?|The professor loves esoteric jokes.|obscure, arcane, specialized|mainstream
+exponential|Is the growth exponential?|Interest compounds at an exponential pace.|rapid, escalating|linear
+extant|Are any of the letters extant?|The extant walls are Roman.|surviving, existing, remaining|extinct
+hegemony|Who held hegemony over the region?|Cultural hegemony shapes taste.|dominance, supremacy, control|
+hierarchical|Is the company very hierarchical?|Hierarchical lists help organize notes.|ranked, layered, graded|flat
+legitimacy|Was the government's legitimacy questioned?|The referee's legitimacy was never challenged.|lawfulness, validity, authority|illegitimacy
+longitudinal|Is the study longitudinal?|Longitudinal data show long-term trends.|long-term, ongoing|cross-sectional
+manifesto|What does the manifesto promise?|Her manifesto for the club was a single page.|declaration, platform, statement|
+morphology|What's the morphology of the cell?|Morphology explains how "unhappy" is built.|structure, form, shape|
+obsolescence|Is obsolescence built into phones?|The factory faced obsolescence.|outdatedness, disuse|novelty
+plurality|Did the candidate win a plurality?|A plurality of voices made the meeting lively.|majority, multitude, diversity|
+prognosis|What's the prognosis for the economy?|The doctor's prognosis was encouraging.|forecast, outlook, prediction|
+proliferation|Why the proliferation of food trucks?|Nuclear proliferation worries world leaders.|spread, increase, expansion|decline
+provisional|Is the date provisional?|A provisional government took charge.|temporary, interim, conditional|permanent
+reiterate|Can you reiterate the instructions?|The coach will reiterate the plan at halftime.|repeat, restate, emphasize|
+repository|Where is the repository of records?|My grandmother is a repository of family stories.|storehouse, archive, depository|
+retrospective|Did you see the retrospective?|In a retrospective essay, she reviewed her career.|exhibition, review, look back|prospective
+salient|What's the most salient fact?|The report's salient findings came first.|prominent, notable, striking|minor
+sedentary|Is your job sedentary?|Sedentary habits can harm health.|inactive, seated, stationary|active
+subversive|Is the song subversive?|Subversive art challenges those in power.|rebellious, seditious, radical|conformist
+surrogate|Who acted as a surrogate?|Tofu works as a surrogate for meat.|substitute, stand-in, proxy|
+tenuous|Is the evidence tenuous?|They kept a tenuous grip on the lead.|weak, flimsy, shaky|strong
+trajectory|What's the rocket's trajectory?|The company's trajectory is upward.|path, course, arc|
+ubiquitous|Are electric scooters ubiquitous here?|Pigeons are ubiquitous in big cities.|omnipresent, everywhere, pervasive|rare
+volatility|How do traders handle volatility?|The volatility of the weather ruined our plans.|instability, unpredictability|stability
+abiotic|Which abiotic factors affect the pond?|Soil type is an abiotic factor for farmers.|nonliving, physical|biotic
+amenity|What amenity matters most to you?|A library is the one amenity the town lacks.|facility, convenience, comfort|
+anthropology|Why did you choose anthropology?|Anthropology studies how people live.|ethnology, social science|
+antibody|How does an antibody work?|A vaccine trains the body to make the right antibody.|immune protein|antigen
+arable|Is the land arable?|Arable fields stretched to the horizon.|farmable, cultivable, fertile|barren
+archipelago|How many islands are in the archipelago?|Kayakers explored the archipelago for a week.|island group, chain of islands|
+archival|Is the footage archival?|The library stores archival maps.|historical, documentary|

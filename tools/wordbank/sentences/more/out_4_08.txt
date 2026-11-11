@@ -1,0 +1,130 @@
+remand|Why would a court remand the case?|Higher courts often remand cases for a new hearing.|return, send back, recommit|release
+ratify|When will the club ratify its new rules?|Three-quarters of the states had to ratify the amendment.|approve, confirm, sanction|reject
+lobbyist|What does a lobbyist do all day?|A lobbyist for teachers pushed for smaller classes.|advocate, agent, campaigner|
+sedition|Why was sedition a crime in the old days?|Pamphlets full of sedition were passed around in secret.|insurrection, rebellion, subversion|loyalty
+federalism|How does federalism work?|Federalism gives each state its own police and schools.|decentralization|centralism
+despot|Why did the despot fear the press?|In the fairy tale, a despot taxed the villagers into poverty.|tyrant, dictator, autocrat|
+armistice|When was the armistice signed?|Church bells rang to celebrate the armistice.|truce, ceasefire, peace|
+protectorate|What is a protectorate?|The tiny kingdom lived as a protectorate for decades.|dependency, colony, territory|
+secularism|What does secularism mean for schools?|Secularism keeps religion out of government.|nonreligiousness|theocracy
+nepotism|Why is nepotism unfair?|Nepotism gave the boss's nephew the best job.|favoritism, cronyism, bias|meritocracy
+remittance|How much is the remittance?|A remittance from abroad paid for her tuition.|payment, transfer, allowance|
+remuneration|Is the remuneration fair?|Fair remuneration keeps good workers.|pay, salary, compensation|
+centrifuge|What does a centrifuge do?|Astronauts train in a giant centrifuge.|separator, spinner|
+conduction|How does conduction warm a spoon?|Metal pans cook by conduction.|transmission, transfer|insulation
+mitosis|What happens during mitosis?|Mitosis lets a cut on your finger heal.|cell division|
+neuron|How fast does a neuron send a signal?|Every neuron in your brain is a messenger.|nerve cell|
+thermodynamics|Why is thermodynamics important?|Thermodynamics explains why ice melts in your hand.|heat science, physics|
+stratum|Which stratum holds the fossils?|A stratum of clay sat beneath the sand.|layer, level, bed|
+antigen|How does an antigen trigger the immune system?|Immune cells hunt down each antigen.|immunogen, foreign substance|antibody
+quark|How small is a quark?|A quark can never be found alone.|subatomic particle|
+lemma|Why prove a lemma first?|The lemma made the big proof easier.|proposition, theorem|
+causation|Is there causation or just correlation?|Proving causation takes careful experiments.|cause, origination|correlation
+dualism|What is dualism in philosophy?|Dualism in the story pits good against evil.|duality, binary|monism
+materialism|Is materialism always a bad thing?|Materialism in old philosophy said only atoms are real.|consumerism, greed|spirituality, idealism
+idealism|Why did his idealism fade?|Youthful idealism fueled the campaign.|optimism, utopianism, romanticism|realism, cynicism
+annotation|Can you add an annotation to the map?|An annotation in the margin explained the joke.|note, comment, gloss|
+codex|Where was the codex found?|The ancient codex had pages of vellum.|manuscript, book, volume|
+monograph|Who wrote the monograph?|A monograph on owls sat on the shelf.|treatise, study, paper|
+gable|Why is the gable painted blue?|Snow slid off the steep gable.|roof end, pediment|
+cantilever|How does a cantilever bridge work?|The house's cantilever hangs over the waterfall.|bracket, overhang|
+dormer|Can you see the dormer from the street?|Moonlight shone through the dormer.|roof window|
+obelisk|Who built the obelisk?|A granite obelisk marks the city center.|pillar, monolith, monument|
+plinth|What does the plinth say?|A bronze lion sits on a marble plinth.|base, pedestal, foundation|
+recuse|Why must the juror recuse herself?|Judges recuse themselves from cases involving friends.|withdraw, excuse, step aside|
+cloture|What does cloture do?|A cloture vote ended the long debate.|closure, end of debate|filibuster
+statecraft|What is good statecraft?|Statecraft requires patience and compromise.|diplomacy, governance, politics|
+cronyism|How can we stop cronyism?|Cronyism put the mayor's friends in charge.|favoritism, nepotism, patronage|fairness
+meiosis|How is meiosis different from mitosis?|Meiosis creates genetic variety.|cell division, reduction division|
+phylum|Which phylum includes jellyfish?|A phylum is broader than a class.|division, category|
+prophylactic|Is the medicine prophylactic?|Prophylactic sunscreen prevents painful burns.|preventive, protective|curative
+carcinogen|Is asbestos a carcinogen?|Scientists test new chemicals to see if each is a carcinogen.|toxin, cancer-causing agent|
+parabola|Does a basketball shot follow a parabola?|A satellite dish has the shape of a parabola.|curve, arc|
+hyperbola|How is a hyperbola different from a parabola?|A hyperbola has two curved arms.|curve|
+hedonism|Is hedonism a good way to live?|Hedonism on vacation meant ice cream every day.|pleasure-seeking, indulgence|asceticism
+utilitarianism|What does utilitarianism say about lying?|Utilitarianism would save five people over one.|consequentialism|
+assonance|Can you hear the assonance in that line?|"Go slow over the road" uses assonance.|vowel rhyme, resonance|
+ellipsis|Why end the sentence with an ellipsis?|An ellipsis can build suspense.|omission, three dots|
+enjambment|Where is the enjambment in this poem?|Enjambment makes the poem flow like speech.|run-on line|
+iambic|Is the poem written in iambic meter?|A heartbeat has an iambic rhythm.|metrical|
+couplet|Can you write a rhyming couplet?|A couplet on the cake read "Happy day, hip hooray."|pair, distich|
+quatrain|How many lines are in a quatrain?|A quatrain on the card rhymed perfectly.|stanza, verse|
+gilding|Is the gilding real gold?|Gilding on the old clock had worn thin.|gold leaf, gilt|
+lintel|Why is the lintel cracked?|A lintel above the window holds up the wall.|beam, header, crosspiece|
+pilaster|What is a pilaster?|A painted pilaster framed the fireplace.|column, pillar|
+transept|Where is the transept?|Tourists gathered in the south transept.|wing, arm|
+belfry|Who climbs the belfry?|Bats flew out of the belfry at dusk.|bell tower, campanile, steeple|
+minaret|How tall is the minaret?|The minaret glowed against the sunset.|tower, spire|
+pergola|Shall we build a pergola in the yard?|Wisteria covered the pergola.|arbor, trellis, bower|
+ziggurat|Who built the ziggurat?|A ziggurat looks like a giant staircase.|temple tower, step pyramid|
+madrigal|What is a madrigal?|A madrigal about spring opened the concert.|part song, glee|
+nocturne|Which nocturne do you like?|A soft nocturne played as we fell asleep.|serenade, night piece|
+scherzo|Why is the scherzo so playful?|The scherzo made the audience smile.|jest, movement|
+tremolo|How do you play a tremolo on the mandolin?|A spooky tremolo opened the ghost movie.|trill, quaver, shake|
+vibrato|Do you like a singer with strong vibrato?|Too much vibrato can sound wobbly.|tremolo, quaver|
+etude|Which etude are you practicing?|A difficult etude tested her fingers.|study, exercise|
+ostinato|Can you hear the ostinato?|An ostinato beat kept the dancers moving.|riff, repeated phrase|
+engraving|Who made the engraving?|An engraving on the ring read "Forever."|etching, carving, inscription|
+emolument|What emolument does the mayor receive?|The job came with a small emolument and a big title.|salary, pay, fee|
+taciturnity|Why is the farmer known for his taciturnity?|Taciturnity runs in that quiet family.|reticence, reserve, silence|talkativeness
+proscription|What led to the proscription of the book?|A proscription on swimming followed the shark sighting.|ban, prohibition, embargo|permission
+equable|Is your teacher equable?|An equable breeze kept the beach comfortable.|even-tempered, calm, steady|volatile
+suffuse|Did the room suffuse with light?|Joy will suffuse the house on holiday mornings.|spread, fill, permeate|
+voracity|Did you see the voracity of the shark?|Her voracity for books never faded.|greed, hunger, appetite|
+revile|Why do people revile the villain?|Neighbors revile the noisy new highway.|denounce, condemn, vilify|praise
+connote|What does "slender" connote?|Words like "cozy" connote comfort.|suggest, imply, signify|denote
+incongruity|Did you notice the incongruity?|Snow in July was an incongruity nobody expected.|mismatch, inconsistency, contradiction|harmony
+malleability|What gives clay its malleability?|Children's opinions have great malleability.|pliability, flexibility, plasticity|rigidity
+contrive|How did you contrive to get tickets?|Villains contrive elaborate traps.|devise, engineer, arrange|
+edification|Did the museum offer any edification?|For our edification, Grandpa explained the rules.|enlightenment, instruction, education|
+rumination|What led to your rumination?|Cows spend hours in rumination.|reflection, contemplation, pondering|
+recumbent|Why is the lion recumbent?|A recumbent bike is easier on the back.|reclining, lying down, prone|upright
+impresario|Who is the impresario behind the show?|The impresario counted ticket sales nervously.|promoter, producer, manager|
+concurrence|Do you have the principal's concurrence?|Good luck and good weather arrived in happy concurrence.|agreement, consent, coincidence|disagreement
+antithetical|Is greed antithetical to friendship?|Their views were antithetical on every topic.|opposed, contrary, contradictory|compatible
+denunciation|Why was the denunciation so harsh?|A denunciation of litter filled the town newsletter.|condemnation, criticism, censure|praise
+intersperse|Should we intersperse photos in the essay?|Gardeners intersperse flowers among vegetables.|scatter, sprinkle, mix|
+plutocrat|Why does the plutocrat own three yachts?|Every plutocrat in town came to the gala.|tycoon, magnate, mogul|pauper
+retrospection|Did retrospection change your view?|In retrospection, the trip was worth it.|reflection, hindsight, recollection|anticipation
+belligerence|Why the sudden belligerence?|The goose's belligerence scared the toddlers.|hostility, aggression, combativeness|friendliness
+preconception|What preconception did you have about camping?|Her first visit shattered every preconception.|assumption, presumption, bias|
+infallibility|Does anyone have infallibility?|Belief in your own infallibility leads to mistakes.|perfection, unerringness|fallibility
+lamentation|Why is the song full of lamentation?|Loud lamentation followed the lost game.|mourning, wailing, grief|celebration
+derisive|Why the derisive laughter?|A derisive snort came from the back row.|mocking, scornful, sneering|respectful
+disdainful|Why is the critic so disdainful?|A disdainful sniff greeted the cheap perfume.|scornful, contemptuous, haughty|respectful
+ponderous|Why was the speech so ponderous?|Ponderous footsteps shook the floor.|heavy, slow, labored|light, nimble
+puritanical|Why are the rules so puritanical?|Puritanical parents banned all candy.|strict, prudish, austere|permissive
+dissension|What caused the dissension?|Dissension grew over where to eat.|disagreement, discord, conflict|harmony
+exude|Does the flower exude a scent?|Champions exude calm before big games.|emit, radiate, ooze|absorb
+ostensible|What was the ostensible purpose?|The ostensible leader was just a figurehead.|apparent, supposed, professed|actual
+unadulterated|Is the juice unadulterated?|Unadulterated fun filled the snow day.|pure, unmixed, undiluted|impure
+prostrate|Why did the knight lie prostrate?|Prostrate with exhaustion, he fell asleep on the floor.|flat, prone, overcome|upright
+repose|Did you find repose at the beach?|In repose, the lake looked like glass.|rest, calm, tranquility|activity
+opulence|Did the hotel's opulence impress you?|Opulence filled every room of the mansion.|luxury, wealth, splendor|poverty
+innuendo|Why rely on innuendo?|Innuendo spread faster than facts.|insinuation, hint, implication|
+hitherto|Was the island hitherto unknown?|Hitherto, nobody had climbed the peak.|until now, previously, heretofore|
+allegorical|Is the fable allegorical?|An allegorical mural showed justice as a woman.|symbolic, figurative, metaphorical|literal
+anarchic|Why is the classroom so anarchic?|An anarchic game of tag broke out at recess.|chaotic, lawless, disorderly|orderly
+idiomatic|Is your Spanish idiomatic?|Idiomatic phrases trip up language learners.|colloquial, natural, vernacular|
+revelatory|Was the interview revelatory?|A revelatory moment changed her mind.|eye-opening, illuminating, enlightening|
+happenstance|Was it happenstance that we met?|Happenstance brought the two old friends together.|chance, coincidence, accident|design
+truism|Is "time flies" a truism?|Every truism holds a bit of wisdom.|platitude, commonplace, maxim|
+resound|Will the bells resound tonight?|Thunder seemed to resound through the canyon.|echo, reverberate, ring|
+legation|Where is the legation located?|The legation hosted a small reception.|mission, embassy, delegation|
+exchequer|Who manages the exchequer?|Taxes filled the royal exchequer.|treasury, coffers, purse|
+comptroller|What does a comptroller do?|The comptroller found errors in the budget.|controller, auditor|
+actuarial|What is actuarial science?|Actuarial math sets car insurance prices.|statistical, risk-based|
+macroeconomic|What macroeconomic factors affect prices?|Macroeconomic policy shapes jobs and inflation.|economy-wide|microeconomic
+regency|Who ruled during the regency?|Regency gowns had high waists.|interregnum, rule|
+viceroy|Who was the viceroy of the colony?|The viceroy's carriage rolled through the city.|governor, regent, proconsul|
+tithe|Do you give a tithe?|A tithe of the harvest went to the abbey.|tenth, offering, levy|
+bourgeoisie|Who belongs to the bourgeoisie?|The bourgeoisie built grand homes on the boulevard.|middle class|proletariat
+proletariat|Who made up the proletariat?|Old posters showed the proletariat marching.|working class, laborers|bourgeoisie
+executor|Who is the executor of the will?|An executor makes sure wishes are honored.|administrator, trustee|
+bequest|What was in the bequest?|A bequest of books filled the new library.|legacy, inheritance, endowment|
+intestate|What happens if someone is intestate?|Intestate property may go to the nearest relatives.|without a will|testate
+suzerain|What did the suzerain demand?|The suzerain let local kings keep their crowns.|overlord, sovereign, ruler|vassal
+usurer|Why is the usurer a villain?|The usurer charged double the fair rate.|loan shark, moneylender|
+specie|Did the bank pay in specie?|Pirates hoped to find specie in the hold.|coins, coinage, hard currency|paper money
+divestiture|Why did the company order a divestiture?|Divestiture of the shoe brand raised cash.|sale, disposal, sell-off|acquisition
+underwrite|Who will underwrite the festival?|Insurers underwrite the risk of storms.|sponsor, guarantee, fund|

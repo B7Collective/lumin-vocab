@@ -1,0 +1,130 @@
+utopia|What would your utopia look like?|The island seemed like a utopia until the storm hit.|paradise, ideal world, dreamland|dystopia
+vendor|Which vendor has the best tacos?|The software vendor fixed the bug.|seller, merchant, supplier|buyer
+workforce|How has the workforce changed?|Robots now make up part of the workforce.|staff, employees, labor force|
+median|What's the median score?|The median strip had flowers.|middle, average, midpoint|
+canon|Is the movie part of the canon?|The choir sang a canon in three parts.|body of work, rule|
+electron|What is an electron?|Every electron carries a tiny negative charge.|particle|
+neutron|Where is the neutron found?|Neutron stars are incredibly dense.|particle|
+proton|What charge does a proton have?|A single proton is the center of a hydrogen atom.|particle|
+plasma|Is plasma a liquid or a gas?|Neon signs glow because of plasma.|ionized gas|
+integer|Is zero an integer?|Minus three is an integer too.|whole number|fraction
+calculus|Is calculus as hard as people say?|Calculus describes how things change.|mathematics|
+octave|Can you sing up an octave?|The bird's song jumped an octave.|eight notes|
+aria|Which aria is your favorite?|She hummed an aria while cooking.|song, solo|
+refrain|What's the refrain of the song?|Please refrain from talking during the movie.|chorus, hold back|
+pigment|What pigment makes leaves green?|Cave artists made pigment from crushed rocks.|color, dye, tint|
+gothic|Do you like gothic architecture?|The book has a gothic, spooky mood.|medieval, dark, eerie|
+porcelain|Is the doll porcelain?|Her skin was smooth as porcelain.|china, ceramic|
+turret|Who lives in the turret?|A tank turret can turn in a circle.|tower|
+keystone|What happens if you remove the keystone?|Bees are a keystone of the food chain.|cornerstone, foundation, linchpin|
+gazebo|Can we have the picnic in the gazebo?|Lights twinkled on the gazebo.|pavilion, summerhouse|
+foyer|Is the foyer big enough for a coat rack?|Guests chatted in the foyer.|entrance hall, lobby, vestibule|
+spire|Can you see the spire from here?|The spire was struck by lightning.|steeple, tower, peak|
+bibliography|Did you include a bibliography?|The bibliography was longer than the essay.|reference list, sources|
+exposition|Is the exposition too long?|The science exposition drew big crowds.|explanation, exhibition, introduction|
+interlude|Was there an interlude in the concert?|A brief interlude of sunshine cheered us.|break, pause, intermission|
+overture|Did you hear the overture?|Their overture of peace was welcomed.|prelude, opening, proposal|finale
+serenade|Will you serenade me?|Crickets serenade us every night.|sing to, song, ballad|
+rhapsody|Have you heard the rhapsody?|She went into rhapsody about the cake.|ecstasy, rapture, composition|
+nave|How long is the nave?|Candles lined the nave.|aisle, hall|
+atrium|Does the mall have an atrium?|The atrium is filled with palm trees.|courtyard, hall, chamber|
+terracotta|Are the pots terracotta?|The walls were painted terracotta.|clay, earthenware|
+exponent|What's the exponent here?|He's a leading exponent of fair trade.|power, advocate, champion|
+folio|Is this a first folio?|The artist's folio held her best drawings.|page, sheet, volume|
+treasury|Who runs the treasury?|The library is a treasury of stories.|bank, coffers, storehouse|
+matrix|How do you multiply a matrix?|The city is a matrix of streets.|grid, network, framework|
+consulate|Where is the consulate?|The consulate issued new passports.|embassy|
+regent|Who served as regent?|The regent ruled until the prince turned eighteen.|ruler, caretaker|
+guild|Which guild did the bakers join?|The game's guild raided the dungeon.|association, union, society|
+trustee|Who is the trustee of the fund?|The college trustee voted for the change.|guardian, custodian, director|
+corona|Did you see the corona during the eclipse?|A corona of light surrounded the streetlamp.|halo, ring|
+shale|Is shale hard or soft?|Gas is trapped in shale deep underground.|rock|
+biomass|Can biomass be used for fuel?|The forest's biomass absorbs carbon.|organic matter|
+dopamine|What does dopamine do?|Phone notifications give a little dopamine hit.|neurotransmitter|
+impeach|Can the council impeach the mayor?|Lawyers tried to impeach the witness's story.|charge, accuse|acquit
+notary|Do we need a notary?|The notary checked our IDs.|official, witness|
+debtor|Is the debtor able to pay?|The debtor asked for more time.|borrower|creditor
+creditor|Who is the company's biggest creditor?|The creditor demanded payment.|lender|debtor
+basalt|Is basalt a volcanic rock?|Black basalt sand covered the beach.|lava rock|
+obsidian|Is obsidian really that sharp?|An obsidian arrowhead lay in the dirt.|volcanic glass|
+mica|Why does mica sparkle?|Mica flakes glittered in the sand.|mineral|
+caldera|How big is the caldera?|Hot springs bubble inside the caldera.|crater|
+epicenter|Where was the epicenter?|The café is the epicenter of town gossip.|center, focal point, hub|
+predation|How does predation shape a herd?|Camouflage helps insects avoid predation.|hunting, preying|
+phytoplankton|What do phytoplankton need?|Phytoplankton bloom turned the water green.|algae|
+krill|How small are krill?|Penguins feast on krill.|plankton|
+oceanography|Would you study oceanography?|Oceanography reveals deep-sea creatures.|marine science|
+hydraulics|How do hydraulics work?|The plane's hydraulics failed briefly.|fluid power|
+aerodynamics|Why do bikes care about aerodynamics?|Bird wings show amazing aerodynamics.|airflow|
+antimatter|What happens when antimatter meets matter?|Antimatter is a favorite of science fiction.|antiparticles|matter
+neutrino|How do scientists detect a neutrino?|The neutrino passed through the planet without stopping.|particle|
+fission|How does fission release energy?|Bacteria reproduce by fission.|splitting|fusion
+lipid|Is cholesterol a lipid?|Olive oil is a healthy lipid.|fat, oil|
+cellulose|Can people digest cellulose?|Cellulose gives celery its crunch.|plant fiber|
+synapse|What happens at a synapse?|Practice builds strong synapse connections.|junction|
+femur|How long is the femur?|The dinosaur femur was taller than a person.|thighbone|
+tibia|Which bone is the tibia?|Shin guards protect the tibia.|shinbone|
+sternum|Where is the sternum?|Press on the sternum during CPR.|breastbone|
+vertebra|How many vertebrae are in the spine? Each vertebra is small.|A slipped disk sits between each vertebra.|spinal bone|
+pelvis|What does the pelvis support?|Dancers move from the pelvis.|hips, hipbone|
+polynomial|Can you graph the polynomial?|The polynomial had four terms.|expression|
+quadratic|Is the equation quadratic?|A quadratic graph makes a curve.|second-degree|
+denominator|What's the denominator in five-eighths?|Kindness is our common denominator.|divisor|numerator
+trigonometry|Is trigonometry useful in real life?|Trigonometry helps sailors find their position.|math|
+ellipse|Is the track an ellipse?|The planet's orbit is a slight ellipse.|oval|circle
+concentric|Are the rings concentric?|Tree rings form concentric patterns.|coaxial, nested|
+pumice|Can a chunk of pumice float?|Pumice stones are rough and light.|volcanic rock|
+stalactite|How long does a stalactite take to form?|Water dripped from each stalactite.|dripstone|stalagmite
+stalagmite|Is that a stalagmite?|The stalagmite rose like a tower.|dripstone|stalactite
+troposphere|Where does weather happen? In the troposphere?|Planes fly near the top of the troposphere.|lower atmosphere|
+ionosphere|How does the ionosphere help radio?|Solar storms disturb the ionosphere.|upper atmosphere|
+aftershock|Did you feel the aftershock?|The aftershock of the news lasted for weeks.|tremor, repercussion|
+seismograph|How does a seismograph work?|The seismograph needle jumped.|seismometer|
+chloroplast|What does a chloroplast do?|Animal cells don't have a chloroplast.|organelle|
+organelle|Can you name an organelle?|The mitochondrion is an organelle that makes energy.|cell part|
+vacuole|What's inside a vacuole?|A large vacuole keeps plants firm.|sac, cavity|
+cytoplasm|What does cytoplasm look like?|Cytoplasm fills the cell like jelly.|cell fluid|
+prokaryote|Is a bacterium a prokaryote?|The earliest life on Earth was a prokaryote.|single cell|eukaryote
+eukaryote|Is a plant a eukaryote?|Every animal is a eukaryote.|complex cell|prokaryote
+mycelium|How far can mycelium spread?|Mycelium links trees together underground.|fungal network|
+zooplankton|What exactly are zooplankton?|Jellyfish larvae are part of the zooplankton.|plankton|
+polyp|Is a coral a polyp?|A jellyfish starts life as a polyp.|organism|
+cephalopod|Is a squid a cephalopod?|The cuttlefish is a cephalopod with a shell inside.|mollusk|
+endorphin|What triggers an endorphin rush?|A long run released a flood of endorphin.|hormone|
+epidermis|How thick is the epidermis?|Leaves have an epidermis too.|skin, outer layer|
+clavicle|Where is the clavicle?|The clavicle is easy to break in a fall.|collarbone|
+patella|What does the patella protect?|Kneepads cover the patella.|kneecap|
+numerator|What's the numerator in two-thirds?|Increase the numerator to make the fraction bigger.|dividend|denominator
+quadrilateral|Is a kite a quadrilateral?|Every quadrilateral has four angles.|four-sided shape|
+trapezoid|How do you find the area of a trapezoid?|The bridge's frame forms a trapezoid.|quadrilateral|
+rhombus|Is a square a rhombus?|The tile pattern used a rhombus shape.|diamond, lozenge|
+parallelogram|Is a rhombus a parallelogram?|The shadow formed a long parallelogram.|quadrilateral|
+isosceles|Is the triangle isosceles?|Two equal sides make a triangle isosceles.|two-sided equal|scalene
+equilateral|Are all angles equal in an equilateral triangle?|The logo is an equilateral triangle.|equal-sided|scalene
+hypotenuse|Which side is the hypotenuse?|The hypotenuse is opposite the right angle.|longest side|
+polyhedron|Is a cube a polyhedron?|A gem is cut into a polyhedron.|solid, solid shape|
+sine|What's the sine of ninety degrees?|The sine wave looks like a smooth hill.|ratio|cosine
+cosine|What's the cosine of sixty degrees?|Use the cosine rule for that triangle.|ratio|sine
+serf|What was life like for a serf?|The serf owed part of his harvest to the lord.|peasant, laborer|lord
+fief|How big was the fief?|Each fief came with duties to the king.|estate, domain|
+stratus|Do stratus clouds bring rain?|A low stratus deck covered the city.|cloud layer|
+cumulonimbus|Is a cumulonimbus dangerous for planes?|The cumulonimbus flattened into an anvil shape.|thundercloud|
+doldrums|How do you escape the doldrums?|Sales were in the doldrums all winter.|slump, stagnation|
+climatology|What does climatology study?|Climatology uses data from centuries.|climate science|
+volcanology|Is volcanology a risky job?|Volcanology helps predict eruptions.|volcano science|
+craft|What craft do you like to do?|The hovercraft is a strange craft.|skill, handiwork, vessel|
+charter|When was the school's charter signed?|We'll charter a boat for the day.|constitution, hire, rent|
+transit|Do you take transit to school?|The planet's transit across the sun was visible.|transport, passage, travel|
+bulk|Is it cheaper to buy in bulk?|Most of the class passed; the bulk scored above eighty.|mass, majority, quantity|
+magnetic|Is gold magnetic at all?|The singer's magnetic voice drew a crowd.|attractive, charismatic|repellent
+linear|Is the path linear?|Linear thinking can miss creative ideas.|straight, sequential, direct|nonlinear
+anchor|Where should we drop anchor?|Family is my anchor.|mooring, support, presenter|
+fusion|How does nuclear fusion work?|Jazz fusion mixes rock and jazz.|merger, blend, union|fission
+acoustic|Is the concert acoustic?|The acoustic tiles made the room quieter.|sound, unplugged|electric
+portable|Is the charger portable?|Portable toilets lined the festival field.|movable, mobile, compact|fixed
+circulation|How can you improve circulation?|The coin went out of circulation.|flow, distribution, movement|
+synthetic|Is the rug synthetic or wool?|Synthetic diamonds look just like real ones.|artificial, man-made|natural
+exterior|What color is the exterior?|His calm exterior hid his nerves.|outside, surface, shell|interior
+elevation|What's the elevation here?|The drawing shows the front elevation of the house.|height, altitude|depth
+plague|What caused the plague?|Pop-up ads plague the website.|epidemic, pestilence, torment|
+atmospheric|Is the music atmospheric?|Atmospheric scientists study clouds.|ambient, moody, airy|

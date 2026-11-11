@@ -10,7 +10,9 @@ import { countUp } from "./motion.js";
 import { wordCard, details } from "./wordsheet.js";
 
 const UNLOCK_KEY = "lumin-unlocked";
-const STEP_KIND = { learn: "flash", meaning: "meaning", gap: "gap", spell: "unscramble", spellit: "spell", mix: "mixed", test: "mixed", usage: "usage", mixup: "mixup" };
+const STEP_KIND = { learn: "flash", meaning: "meaning", gap: "gap", spell: "unscramble", spellit: "spell", mix: "mixed", test: "mixed", usage: "usage", mixup: "mixup",
+  pairs: "pairs", memory: "memory", cloze: "cloze", incontext: "incontext", build: "build", oddone: "oddone", hidden: "hidden", wordsearch: "wordsearch", hearspell: "hearspell",
+  sprint: "quick", review: "mixed", truefalse: "truefalse", listen: "listen", synonym: "synonym", useit: "useit" };
 const dateFmt = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" });
 const svgEl = (tag) => document.createElementNS("http://www.w3.org/2000/svg", tag);
 
@@ -35,21 +37,27 @@ const lights = (p) => { const chs = model.chapterWords(p.level); return model.jo
 const back = (trailKey) => (trailKey ? `/journey/trail/${trailKey}` : "/journey");
 
 function runStep(p, ch, stepIdx, trailKey) {
-  const info = chapterInfo(p, ch, trailKey), step = info.steps[stepIdx];
+  const info = chapterInfo(p, ch, trailKey), step = info.steps[stepIdx], kid = model.isKid(p);
   let words = [...info.words].sort(() => Math.random() - 0.5);
-  if (step.key === "mix") words = words.concat([...info.words].sort(() => Math.random() - 0.5));
-  if (step.key === "test" && !info.lookout && !trailKey) words = words.concat(lookBack(p, ch, 4)).sort(() => Math.random() - 0.5);
-  const need = step.key === "test" ? Math.ceil(words.length * 0.8) : 0;
+  const riddle = step.key === "test";
+  if (riddle && !info.lookout && !trailKey) words = words.concat(lookBack(p, ch, kid ? 2 : 4)).sort(() => Math.random() - 0.5);
+  // A word passes the riddle if you get it right, first time or on its second chance
+  const need = riddle ? Math.ceil(words.length * (kid ? 0.75 : 0.8)) : 0;
   const keeper = trailKey ? "trail marker" : model.regionOf(ch)[2];
+  const study = step.key === "learn", n = info.words.length;
   start({
-    title: step.name, words, kind: STEP_KIND[step.key], art: step.key === "test" && !trailKey ? "src:" + keeperSrc(model.regionOf(ch)) : step.icon, back: back(trailKey), doneLabel: trailKey ? "Back to the trail" : "Back to the road", again: false,
-    endNote: (r) => step.key === "test" && r.right < need ? (trailKey ? `Get ${need} of ${words.length} right to pass the marker. Try again whenever you like.` : `${keeper[0].toUpperCase() + keeper.slice(1)} needs ${need} of ${words.length} right before you pass. Try again whenever you're ready.`)
-      : step.key === "learn" ? "These words will come back in Practice, just before you'd forget them." : null,
+    title: step.name, words, kind: STEP_KIND[step.key], art: riddle && !trailKey ? "src:" + keeperSrc(model.regionOf(ch)) : step.icon, back: back(trailKey), doneLabel: trailKey ? "Back to the trail" : "Back to the road", again: false,
+    // Only the riddle moves your review schedule. Everything before it is learning, and learning shouldn't count against you.
+    grade: riddle, study, noKinds: riddle ? model.RIDDLE_SKIP : null, retry: riddle || !study,
+    studyHead: `${model.countWord(n)} new ${n === 1 ? "word" : "words"} met`,
+    endNote: (r) => riddle && r.passed < need ? (trailKey ? `Get ${need} of ${words.length} to pass the marker. Try again whenever you like.` : `${keeper[0].toUpperCase() + keeper.slice(1)} needs ${need} of ${words.length} before you pass. Try again whenever you're ready.`)
+      : study ? "Now let's use them." : step.key === "useit" ? "Your sentences are saved with each word." : null,
     onFinish: (r) => {
       if (r.stopped) return;
-      if (step.key === "learn") info.words.forEach((w) => { const c = model.card(p.id, w.w); if (!c || c.st !== "learning") model.learn(p.id, w.w); });
-      if (step.key === "test" && r.right < need) return;
-      const stars = r.acc === 100 ? 3 : r.acc >= 80 ? 2 : 1;
+      if (study) info.words.forEach((w) => { const c = model.card(p.id, w.w); if (!c || c.st !== "learning") model.learn(p.id, w.w); });
+      if (riddle && r.passed < need) return;
+      // stars come from first tries; meeting the words and writing your own sentences always earn all three
+      const stars = study || step.key === "useit" ? 3 : r.acc === 100 ? 3 : r.acc >= 80 ? 2 : 1;
       const before = model.journeyState(model.profile(p.id), trailKey);
       const after = model.advanceJourney(p.id, ch, stepIdx, stars, trailKey);
       if (after.ch > before.ch) { try { sessionStorage.setItem(UNLOCK_KEY, (trailKey || "") + ":" + after.ch); } catch {} }
@@ -92,7 +100,7 @@ function ground(land) { return h("div", { class: "ground", "aria-hidden": "true"
 // One thing beside the path: a picture with a soft shadow, and its own small movement
 function decorPiece(name, k, flip) {
   const move = decorMove(name);
-  return h("i", { class: "dc" + (move ? " " + move : ""), style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", class: flip ? "flip" : null }));
+  return h("i", { class: "dc" + (move ? " " + move : ""), "data-n": name, style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", class: flip ? "flip" : null }));
 }
 function stepMap(p, st, info, trailKey) {
   const land = landFor(trailKey || model.regionOf(st.ch)[0], !!trailKey);
@@ -118,10 +126,18 @@ function stepMap(p, st, info, trailKey) {
     h("div", { class: "plaque" }, h("strong", {}, trailKey ? `Marker ${st.ch + 1} of ${info.count}` : info.lookout ? "The campfire" : info.name),
       h("span", { class: "muted" }, trailKey ? "Pass the marker to walk on. No waiting on trails." : info.lookout ? "Pass the lookout check to walk on" : `Answer the keeper's riddle to reach it. A keepsake waits there.`)));
   map.append(goal);
-  // Things beside the path, chosen per stop so each stop looks a little different but stays the same on every visit
-  const pieces = land.decor, start = (st.ch * 5) % pieces.length;
-  const placed = [...nodes.map((_, k) => pieces[(start + k) % pieces.length]), pieces[(start + 2) % pieces.length], pieces[(start + 4) % pieces.length]]
-    .map((name, k) => { const d = decorPiece(name, k, (st.ch + k) % 3 === 1); decor.append(d); return d; });
+  // Scenery: a scattered handful of things from this land, in little clusters on both sides of the road, big and
+  // small, a few slipping off the edge like a real landscape. Chosen and placed per stop (same on every visit).
+  const pieces = land.decor;
+  const seed = "decor" + (trailKey || "") + st.ch;
+  const pickRnd = seededRnd(seed + "pick");
+  const COUNT = 20;
+  let prevName = null;
+  const placed = Array.from({ length: COUNT }, (_, k) => {
+    let name; do { name = pieces[Math.floor(pickRnd() * pieces.length)]; } while (pieces.length > 1 && name === prevName);
+    prevName = name;
+    const d = decorPiece(name, k, pickRnd() < 0.45); decor.append(d); return d;
+  });
   const layout = () => {
     if (!document.body.contains(map)) { removeEventListener("resize", layout); return; }
     const amp = Math.min(110, map.clientWidth * 0.24), wave = [0, 0.75, 1, 0.35, -0.55, -0.95];
@@ -135,22 +151,7 @@ function stepMap(p, st, info, trailKey) {
     const road = [[box.width / 2, 34], ...pts];
     for (const cls of ["roadedge", "road"]) { const r = svgEl("path"); r.setAttribute("d", d(road)); r.setAttribute("class", cls); trail.append(r); }
     const all = svgEl("path"); all.setAttribute("d", d(pts)); trail.append(all);
-    // decor sits on the side away from each step, inside the edges; two more flank the landmark
-    const W = box.width, small = W < 420 ? 0.82 : 1, reach = Math.min(W * 0.36, 190);
-    placed.forEach((el, k) => {
-      const sz = parseFloat(el.style.getPropertyValue("--sz")) * small;
-      let x, y;
-      if (k < nodes.length) {
-        const dx = pts[k][0] - W / 2, side = Math.abs(dx) < 20 ? (k % 2 ? 1 : -1) : -Math.sign(dx);
-        x = W / 2 + side * reach; y = pts[k][1] + 6 + ((k * 13) % 22);
-      } else {
-        const g = goal.querySelector("img").getBoundingClientRect(), side = k === nodes.length ? -1 : 1;
-        x = pts[pts.length - 1][0] + side * (g.width / 2 + sz * 0.15); y = pts[pts.length - 1][1] + g.height * 0.32;
-      }
-      x = Math.max(sz / 2 + 4, Math.min(W - sz / 2 - 4, x));
-      el.style.setProperty("--w", sz + "px");
-      el.style.left = Math.round(x - sz / 2) + "px"; el.style.top = Math.round(y - sz / 2) + "px";
-    });
+    scatter(placed, box, road, nodes, goal, seed, decor);
     if (st.step > 0) { const w = svgEl("path"); w.setAttribute("d", d(pts.slice(0, st.step + 1))); w.setAttribute("class", "walked"); trail.append(w); }
     // the traveler stands at the current step
     const here = pts[Math.min(st.step, pts.length - 1)];
@@ -161,6 +162,48 @@ function stepMap(p, st, info, trailKey) {
   document.fonts && document.fonts.ready.then(layout);
   setTimeout(() => { const c = map.querySelector(".jnode.current"); if (c && c.getBoundingClientRect().top > innerHeight * 0.75) c.scrollIntoView({ block: "center", behavior: "smooth" }); }, 500);
   return map;
+}
+// Small seeded random numbers, so a stop's scenery is the same every visit
+function seededRnd(str) { let x = 2166136261; for (let i = 0; i < str.length; i++) x = Math.imul(x ^ str.charCodeAt(i), 16777619); return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ (x >>> 15), 1 | x); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+// Place scenery like a landscape painter would: away from the road, the steps and their labels; grouped in loose
+// clusters of two or three with a big piece and smaller companions; sizes varied; things lower down drawn in front.
+function scatter(placed, box, road, nodes, goal, seed, layer) {
+  // the scenery layer can be wider than the map on big screens; work in its coordinates
+  const lb = layer.getBoundingClientRect(), off = lb.left - box.left;
+  const rnd = seededRnd(seed + "place"), W = lb.width, H = box.height, phone = box.width < 520;
+  // points along the road so we can keep clear of it
+  const along = [];
+  road.forEach((pt, k) => { if (!k) return; const [x0, y0] = road[k - 1]; for (let t = 0; t <= 1; t += 0.08) along.push([x0 + (pt[0] - x0) * t, y0 + (pt[1] - y0) * t]); });
+  const keepOut = [...nodes.flatMap((n) => [n.querySelector(".disc"), n.querySelector(".nm"), n.querySelector(".nl"), n.querySelector(".jstart")]), goal.querySelector("img"), goal.querySelector(".plaque")]
+    .filter(Boolean).map((el) => { const r = el.getBoundingClientRect(); return [r.left - box.left - 10, r.top - box.top - 10, r.right - box.left + 10, r.bottom - box.top + 10]; });
+  const clearOf = (xl, y, rad) => { const x = xl + off; return along.every(([ax, ay]) => Math.hypot(ax - x, ay - y) > rad + 30) && keepOut.every(([l, t, r, b]) => x + rad * 0.8 < l || x - rad * 0.8 > r || y + rad * 0.8 < t || y - rad * 0.8 > b); };
+  const spots = [];
+  let anchor = null;
+  placed.forEach((el, k) => {
+    const base = parseFloat(el.style.getPropertyValue("--sz")) * (phone ? 0.78 : 1);
+    let best = null;
+    for (let tries = 0; tries < 90 && !best; tries++) {
+      const companion = anchor && rnd() < 0.55;
+      const sz = companion ? base * (0.5 + rnd() * 0.3) : base * (0.8 + rnd() * 0.45);
+      let x, y;
+      if (companion) { const a = rnd() * Math.PI * 2, dist = (anchor.sz + sz) * (0.38 + rnd() * 0.22); x = anchor.x + Math.cos(a) * dist; y = anchor.y + Math.abs(Math.sin(a)) * dist * 0.5 + (rnd() - 0.3) * 18; }
+      else { x = (rnd() < 0.5 ? rnd() * 0.42 : 0.58 + rnd() * 0.42) * W * 1.08 - W * 0.04; y = 70 + rnd() * (H - 150); }
+      const rad = sz / 2;
+      if (x < -rad * 0.35 || x > W + rad * 0.35 || y < 40 || y > H - 30) continue;
+      if (!clearOf(x, y, rad)) continue;
+      if (spots.some((s2) => Math.hypot(s2.x - x, s2.y - y) < (s2.sz + sz) * (companion && s2 === anchor ? 0.32 : 0.46))) continue;
+      // the same piece twice close together looks copied and pasted, so twins keep well apart
+      if (spots.some((s2) => s2.n === el.dataset.n && Math.hypot(s2.x - x, s2.y - y) < Math.max(260, (s2.sz + sz) * 1.8))) continue;
+      best = { x, y, sz, n: el.dataset.n };
+    }
+    if (!best) { el.style.display = "none"; return; }
+    el.style.display = "";
+    spots.push(best);
+    anchor = rnd() < 0.6 ? best : null;
+    el.style.setProperty("--w", Math.round(best.sz) + "px");
+    el.style.left = Math.round(best.x - best.sz / 2) + "px"; el.style.top = Math.round(best.y - best.sz * 0.85) + "px";
+    el.style.zIndex = String(Math.round(best.y));
+  });
 }
 // A passport stamp for a finished stop
 function stamp(p, e, trailKey, k = 0) {

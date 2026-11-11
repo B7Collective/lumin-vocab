@@ -1,0 +1,130 @@
+cupboard|Which cupboard has the cups?|Our cat likes to sleep in the cupboard.|cabinet, closet|
+faucet|Who left the faucet running?|The bathroom faucet squeaks when you turn it.|tap, spout|
+washcloth|Can you get me a clean washcloth?|My washcloth has a duck on it.|cloth, flannel|
+sponge|Squeeze the sponge over the sink.|A sea sponge is a real animal!|scrubber|
+dustpan|Where did you put the dustpan?|The dustpan was full of dog hair.|scoop|
+hamper|Is the hamper full again?|The cat hid inside the laundry hamper.|basket, bin|
+hanger|Can you hang your dress on a hanger?|The hanger fell off the hook.|hook|
+quilt|Who made this quilt?|My quilt has stars and moons on it.|blanket, comforter|
+cot|Can I sleep on the cot tonight?|The cot squeaked every time I rolled over.|bed, camp bed|
+bunk|Who gets the top bunk?|Our bunk beds have a ladder.|bed|
+cradle|Who made the wooden cradle?|My doll sleeps in a little cradle.|crib, bassinet|
+chimney|How does smoke get up the chimney?|Our chimney is made of red bricks.|flue, stack|
+fireplace|Can we light the fireplace tonight?|The fireplace crackled all evening.|hearth|
+hearth|Let's sit by the hearth and read.|The dog stretched out on the hearth.|fireplace|
+cellar|Is there anything spooky in the cellar?|Apples stay fresh in a cool cellar.|basement|attic
+basement|Is the basement flooded after the rain?|Our basement has a ping-pong table.|cellar|attic
+driveway|Can we play basketball in the driveway?|Snow covered the whole driveway.|drive|
+curb|Wait at the curb for the bus.|My skateboard hit the curb.|edge, border|
+hedge|Can you jump over the hedge?|Birds built a nest in the hedge.|bushes, shrubs|
+patio|Can we have a party on the patio?|Snow covered the chairs on the patio.|deck, terrace|
+balcony|Can we see the ocean from the balcony?|A pigeon landed on our balcony.|deck, porch|
+doorknob|Why is the doorknob sticky?|I tied a balloon to the doorknob.|handle, knob|
+banister|Can you slide down the banister?|Wrap lights around the banister for the holidays.|railing, handrail|
+nursery|Is the nursery ready for the baby?|The plant nursery smells like dirt and flowers.|baby room|
+playroom|Can we clean up the playroom later?|Our playroom has a reading nook.|game room|
+eyebrow|Can you wiggle each eyebrow?|My eyebrow twitches when I'm tired.|brow|
+eyelash|Did an eyelash fall in your eye?|The doll has a long eyelash on each eye.|lash|
+nostril|Can you flare your nostril?|A bubble came out of the baby's nostril.|nose|
+knuckle|Can you crack your knuckle?|My knuckle hurt after I punched the pillow.|joint|
+forehead|Why is your forehead so red?|I bumped my forehead on the shelf.|brow|
+dimple|Do you have a dimple when you smile?|Grandpa has a dimple in his chin.|dent|
+burp|Did the baby just burp?|Soda always makes me burp.|belch|
+smelly|What's that smelly thing in the fridge?|After soccer, my shoes are so smelly.|stinky|fragrant
+minty|Do you like minty ice cream?|My breath is minty after I brush.|fresh|
+sugary|Is this cereal too sugary?|The pancakes had a sugary crust.|sweet|sour
+mushy|Do you like mushy peas?|The snow turned mushy in the sun.|soft, squishy|crisp, firm
+silky|Is the ribbon silky?|The puppy's ears felt silky.|smooth, soft|rough
+scratchy|Why is my throat scratchy?|The old record made a scratchy sound.|itchy, rough|smooth
+crinkly|Do you like the crinkly sound of leaves?|The baby loves her crinkly toy.|wrinkly, crispy|smooth
+gritty|Why is the lettuce gritty?|Sand made my sandwich gritty.|sandy, grainy|smooth
+rumble|Do you hear the train rumble by?|Big trucks rumble down our street.|roar, boom, growl|
+jingle|Can you jingle the bells?|Coins jingle in my piggy bank.|tinkle, ring|
+chime|When will the bells chime?|The doorbell began to chime.|ring, toll, ding|
+hush|Can you hush the puppy?|A hush fell over the crowd.|quiet, silence|noise
+megaphone|Can I try the megaphone?|The cheerleader yelled into her megaphone.|bullhorn, loudspeaker|
+microphone|Is the microphone on?|The singer dropped the microphone!|mic|
+tambourine|Can you play the tambourine?|I made a tambourine from paper plates.||
+xylophone|Can you play a song on the xylophone?|My little brother bangs on his xylophone.||
+harmonica|Can you play the harmonica?|The harmonica made a sad, sweet sound.|mouth organ|
+flute|Is the flute hard to play?|Her flute is shiny and silver.|pipe|
+trumpet|How loud is a trumpet?|An elephant's call sounds like a trumpet.|horn, bugle|
+violin|How old is your violin?|The violin squeaked at first.|fiddle|
+banjo|Who taught you to play the banjo?|Most banjo players use five strings.||
+harp|Can you play the harp?|In the story, an angel played the harp.|lyre|
+choir|Can I join the choir?|Our choir sang in the snow.|chorus|
+duet|Do you want to sing a duet with me?|The duet ended with a big bow.|pair, two-part song|solo
+lullaby|What lullaby did your mom sing to you?|The music box plays a lullaby.|cradle song|
+storybook|Which storybook should we read tonight?|My storybook has a pop-up dragon.|picture book|
+bookmark|Where is my bookmark?|A leaf makes a pretty bookmark.|marker|
+folktale|Do you know a folktale from Grandma's country?|In the folktale, the tortoise wins the race.|legend, fable, tale|
+wizard|What would you do if you were a wizard?|The wizard's hat had stars on it.|magician, sorcerer|
+unicorn|Do you believe in unicorns? I want a unicorn of my own!|I got a unicorn cake for my birthday.||
+mermaid|Can a mermaid talk to fish?|In the book, a mermaid saves a sailor.||
+troll|Is the troll in the story friendly?|A troll lives under the bridge in the old tale.|ogre|
+goblin|Why is the goblin so sneaky?|The goblin in the movie had pointy ears.|imp, gremlin|
+pixie|Can a pixie fly?|The pixie in my drawing has pink wings.|fairy, sprite|
+gnome|Why does the gnome have a red hat?|Our garden gnome has a fishing pole.|dwarf, elf|
+magician|How did the magician do that trick?|The magician made a rabbit disappear.|wizard, conjurer|
+juggler|Can the juggler juggle eggs?|The juggler rode a unicycle too.||
+acrobat|How does an acrobat learn to flip?|The acrobat stood on one hand.|gymnast, tumbler|
+wand|Can I borrow your wand?|With a wave of her wand, the toy came to life.|stick, staff|
+potion|What color is the potion?|We made a pretend potion with juice.|brew, mixture|
+throne|Can I sit on the throne?|The cat thinks the couch is its throne.|seat, chair|
+moat|Are there crocodiles in the moat?|We dug a moat around our sandcastle.|ditch, trench|
+drawbridge|How heavy is a drawbridge?|The drawbridge creaked as it came down.|bridge|
+spyglass|Can you see the ship through the spyglass?|We made a spyglass from a paper tube.|telescope|
+spaceship|Where would you fly in a spaceship?|The spaceship landed on a strange planet.|rocket, spacecraft|
+moonlight|Do owls hunt by moonlight?|Moonlight came through my window.|moonshine, glow|
+sunbeam|Can you catch a sunbeam in a jar?|Dust floated in the sunbeam.|ray, sunray|
+twilight|Is it dark yet, or still twilight?|Fireflies blink at twilight.|dusk, nightfall|dawn
+noon|What time is it? Almost noon.|The bell rings at noon.|midday|midnight
+weekday|Is today a weekday or the weekend?|On a weekday, we wake up early.|workday|weekend
+hourglass|How long does the hourglass take?|Pink sand filled the little hourglass.|timer|
+sundial|Can a sundial work at night?|We made a sundial with a stick and stones.|clock|
+stopwatch|Can you time me with the stopwatch?|My stopwatch says nine seconds!|timer|
+oval|Is an egg an oval or a circle?|We drew an oval for the face.|egg-shaped|
+zigzag|Can you run in a zigzag?|Lightning makes a zigzag in the sky.|crooked, jagged|straight
+spiral|Can you draw a spiral?|Water goes down the drain in a spiral.|coil, swirl|
+twisty|Is the trail twisty or straight?|I like twisty straws.|winding, curvy|straight
+wiggly|Is your tooth wiggly?|The puppy was too wiggly to hold.|wobbly, squirmy|still
+lopsided|Why is the snowman lopsided?|My lopsided tower fell over.|crooked, uneven|even
+crumpled|Why is your shirt so crumpled?|The crumpled paper ball bounced off the wall.|wrinkled, crushed|smooth
+wrinkly|Are your fingers wrinkly from swimming?|The wrinkly old apple was still sweet.|crinkly, creased|smooth
+floppy|Do you like floppy hats?|The floppy fish flipped on the dock.|limp, droopy|stiff
+droopy|Why does the plant look droopy?|My socks were droopy and wet.|saggy, floppy|perky
+blunt|Is this knife too blunt?|The blunt end of the pencil makes a fat line.|dull|sharp
+chunky|Do you like chunky or smooth peanut butter?|My grandma knit me a chunky scarf.|thick, lumpy|thin
+scrawny|Why does the cat look so scrawny?|The scrawny bush grew big in a year.|skinny, bony|plump
+lanky|Is your lanky brother good at basketball?|The lanky boy had to duck through the door.|tall, gangly|stocky
+stubby|Why does the dog have stubby legs?|My stubby crayon was hard to hold.|short, stumpy|long
+gangly|Was your dad gangly as a kid?|The gangly puppy tripped over its paws.|lanky, awkward|graceful
+petite|Is the dress too petite for me?|A petite bird sat on the branch.|small, tiny|large
+bulky|Is that bag too bulky to carry?|My bulky backpack bumped everyone on the bus.|big, heavy|slim
+hefty|How hefty is that box?|The farmer lifted a hefty bag of feed.|heavy, big|light
+rickety|Is the old ladder too rickety?|A rickety shed stood in the field.|shaky, wobbly|sturdy
+faded|Why is the flag so faded?|My faded hat used to be bright red.|pale, worn|bright
+glowing|Look at the glowing jellyfish!|My glowing stars light up the ceiling.|shining, bright|dark
+see-through|Is the bag see-through?|Ghosts in cartoons are see-through.|clear, transparent|
+patchy|Why is the dog's fur patchy?|The snow was patchy on the hill.|spotty, uneven|even
+stripy|Do you like my stripy socks?|A stripy bee buzzed by.|striped|plain
+checkered|Do you have a checkered board for the game?|The checkered floor looks like a chessboard.|squared|
+plaid|Is your skirt plaid?|The bagpiper wore a plaid kilt.|tartan|
+pearly|Look at the pearly shell!|The pearly moon shone through the clouds.|shiny, white|
+ruby|Is that stone a real ruby?|The sunset glowed ruby red.|red|
+sapphire|What color is a sapphire?|Her eyes were sapphire blue.|blue|
+violet|Do you like violet or pink better?|A violet flower grew in the crack.|purple|
+lilac|Can you smell the lilac?|We painted the room a soft lilac.|purple, lavender|
+turquoise|Is the pool turquoise or blue?|A turquoise bird flew past.|teal, aqua|
+scarlet|Do you like my scarlet scarf?|The scarlet leaf floated down.|red|
+crimson|Why did the sky turn crimson?|She wore a crimson cape.|red, deep red|
+navy|Is your coat navy or black?|The navy ship sailed into the bay.|dark blue|
+beige|Is beige a boring color?|Our dog is beige with a white tail.|tan, sand|
+maroon|Is maroon more red or brown?|The maroon sweater is my favorite.|dark red|
+plenty|Do we have plenty of time?|There are plenty of fish in the sea.|lots, enough|few
+several|I told you several times!|Several kids raised their hands.|some, a few|
+dozen|How many is a dozen? It's twelve.|We picked a dozen apples.|twelve|
+handful|Can I have a handful of popcorn?|The puppy is a real handful!|fistful|
+spoonful|Just one spoonful of medicine, please.|A spoonful of honey makes tea sweet.|spoon|
+mouthful|That's a mouthful of a name!|The hamster had a mouthful of seeds.|bite|
+armful|Can you carry an armful of toys upstairs?|She gave her puppy an armful of hugs.|bundle, load|

@@ -16,6 +16,15 @@ const GAMES = [
   { kind: "synonym", name: "Find its twin", about: "Pick the word closest in meaning", art: "senses", grown: true },
   { kind: "usage", name: "Spot the right use", about: "Only one sentence gets it right", art: "talk", grown: true },
   { kind: "listen", name: "Listen closely", about: "Hear it, then find it", art: "senses" },
+  { kind: "pairs", name: "Match the pairs", about: "Tap a word, then its meaning", art: "match" },
+  { kind: "wordsearch", name: "Word hunt", about: "Find the words hidden in a grid", art: "describing" },
+  { kind: "hidden", name: "Light the letters", about: "Guess the word letter by letter", art: "streak" },
+  { kind: "build", name: "Build the sentence", about: "Put the words back in order", art: "lists" },
+  { kind: "useit", name: "Make it yours", about: "Write your own sentence with each word", art: "mywords", grown: true },
+  { kind: "incontext", name: "Read the clues", about: "What does it mean in this sentence?", art: "talk", grown: true },
+  { kind: "oddone", name: "Odd one out", about: "Three belong together. One doesn't", art: "mind", grown: true },
+  { kind: "opposite", name: "Opposites", about: "Find the word that means the opposite", art: "shuffle" },
+  { kind: "hearspell", name: "Hear and spell", about: "Listen, then type the word", art: "senses", grown: true },
   { kind: "mixed", name: "Game shuffle", about: "A bit of everything", art: "shuffle" },
 ];
 
@@ -31,7 +40,7 @@ route("practice", (main) => {
   if (due.length) {
     const words = due.slice(0, p.reviewSize || 20).map((c) => model.lookup(c.w)).filter(Boolean);
     feature = [h("h2", {}, `${plural(words.length, "word")} ready to review`), h("p", {}, "A few minutes now keeps them for good."),
-      h("button", { class: "btn primary start", onclick: () => start({ title: "Today's review", words, kind: "mixed", art: "review" }) }, "Start review")];
+      h("button", { class: "btn primary start", onclick: () => start({ title: "Today's review", words, kind: "mixed", art: "review", retry: true }) }, "Start review")];
   } else if (learning) {
     const nd = model.nextDue(p.id);
     feature = [h("h2", {}, "You're all caught up"), h("p", {}, nd ? `Your next review is ${untilText(nd)}. Want to warm up anyway?` : "Nothing is due right now."),
@@ -44,9 +53,18 @@ route("practice", (main) => {
 
   const pool = () => model.practicePool(p, 10);
   // Single-kind games pick words that suit them (a twin to find, sentences to compare)
-  const poolFor = (kind) => () => ["synonym", "usage"].includes(kind) ? model.practicePool(p, 60).filter((w) => model.canAsk(w, kind, kid)).slice(0, 10) : pool();
+  const PICKY = ["synonym", "usage", "oddone", "opposite", "build", "incontext", "hidden"];
+  const poolFor = (kind) => () => {
+    if (!PICKY.includes(kind)) return pool();
+    let ws = model.practicePool(p, 80).filter((w) => model.canAsk(w, kind, kid));
+    // opposites are rare: borrow from the whole level when your own words don't have enough
+    if (ws.length < 6) ws = ws.concat(model.WORDS.filter((w) => w.l === p.level && !w.c && model.canAsk(w, kind, kid) && !ws.includes(w)).sort(() => Math.random() - 0.5)).slice(0, 10);
+    return ws.slice(0, 10);
+  };
   page.append(h("section", { class: "sec" }, h("h2", {}, "Games"), h("p", {}, "Uses the words you're learning, then your Journey words."),
-    h("div", { class: "cards" }, GAMES.filter((g) => !(g.grown && kid) && (g.kind !== "listen" || canSpeak())).map((g) => h("button", { class: "gcard", onclick: () => start({ title: g.name, words: poolFor(g.kind)(), refill: poolFor(g.kind), kind: kid && g.kind === "spell" ? "unscramble" : g.kind, art: g.art }) },
+    h("div", { class: "cards" }, GAMES.filter((g) => !(g.grown && kid) && (g.kind !== "listen" || canSpeak())).map((g) => h("button", { class: "gcard", onclick: () => start({ title: g.name, words: poolFor(g.kind)(), refill: poolFor(g.kind), kind: kid && g.kind === "spell" ? "unscramble" : g.kind, art: g.art,
+        // word order and your own sentences are practice, not a memory test
+        grade: g.kind !== "build" && g.kind !== "useit", retry: true, study: false }) },
       art(artIcon(g.art), "", 240), h("strong", {}, g.name), h("small", {}, g.about))))));
 
   const big = () => model.practicePool(p, 40);

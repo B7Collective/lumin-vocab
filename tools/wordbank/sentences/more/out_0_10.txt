@@ -1,0 +1,130 @@
+kneel|Can you kneel on the soft grass?|The knight had to kneel before the queen.|bow, crouch|stand
+squat|Can you squat like a frog?|Ducks squat in the reeds to hide.|crouch, hunker|stand
+duck|Why did you duck behind the couch?|Duck your head when you go into the tent.|dodge, bend|
+dodge|Can you dodge the snowballs?|Bunnies zigzag to dodge danger.|avoid, sidestep|
+swoop|Can you swoop like an eagle?|Bats swoop down to catch bugs.|dive, glide|
+flap|Can you flap your arms like a chicken?|The tent door began to flap in the storm.|flutter, wave|
+doze|Did you doze during the movie?|The dog started to doze by the fire.|nap, snooze|wake
+snip|Can you snip the tag off my shirt?|Grandpa likes to snip roses for the table.|cut, clip|
+trim|Can you trim the dog's nails?|We trim the tree with lights every winter.|clip, cut|
+mend|Can you mend the hole in my sock?|Hugs help mend a sad heart.|fix, repair|break
+repair|Who will repair the roof?|We had to repair the tire after it popped.|fix, mend|break
+wipe|Can you wipe your nose with a tissue?|Please wipe the crumbs off your chin.|clean, rub|
+polish|Can you polish the trophy?|Dad likes to polish his old car.|shine, buff|
+rake|Can you rake the sand smooth?|Every fall, we rake the whole yard.|gather, sweep|
+unpack|Did you unpack your lunch box?|After the trip, we had to unpack the car.|empty|pack
+deliver|Can you deliver this note to your teacher?|Storks deliver babies only in stories.|bring, carry, drop off|
+vault|Can you vault over the puddle?|Watch the cat vault onto the shelf.|leap, jump|
+chase|Do you want to chase the ducks?|Puppies chase each other around the yard.|follow, pursue, run after|flee
+hurry|Why are you in such a hurry?|Hurry up and put your shoes on!|rush, hasten|dawdle
+settle|Can you settle down for a story?|Dust will settle on the shelf.|sit, rest, calm down|
+relax|Can you relax your shoulders?|We like to relax at the beach.|rest, unwind, chill|worry
+knot|Can you tie a knot in the rope?|My hair is full of knots, and one knot hurts.|tie, tangle|
+sort|Can you sort the crayons by color?|What sort of game do you like?|group, order, arrange|mix
+tape|Can you tape the torn page?|We used tape to hang the banner.|stick, fasten|
+grownup|Can a grownup open this jar?|Every grownup at the party danced.|adult|child
+toddler|Is your toddler sister walking yet?|The toddler giggled at the bubbles.|tot, little one|
+newborn|How small is a newborn baby?|The newborn foal stood up fast.|baby, infant|
+twin|Do you have a twin?|My twin and I like different foods.|double|
+cousin|How many cousins do you have? My oldest cousin is twelve.|Our cousin taught us a card game.|relative|
+nephew|Did your nephew like the gift?|My nephew plays soccer every Saturday.|relative|niece
+niece|Is your niece older than you?|Her niece sent a thank-you card.|relative|nephew
+classmate|Which classmate sits next to you?|A classmate helped me find my coat.|schoolmate, peer|
+buddy|Who is your best buddy?|My reading buddy helps me with hard words.|friend, pal|
+sleepover|Can I have a sleepover this weekend?|We stayed up too late at the sleepover.|slumber party|
+daybreak|Did you hear the birds at daybreak?|The fishermen set out at daybreak.|dawn, sunrise|nightfall
+nighttime|Do you like nighttime walks?|The city sparkles at nighttime.|night, dark|daytime
+someday|Will you be a pilot someday?|Someday this little tree will be huge.|one day, sometime|never
+meanwhile|Meanwhile, back at the castle, the dragon slept.|Dad cooked; meanwhile, we set the table.|at the same time|
+afterward|Can we go to the park afterward?|We ate dinner and watched a movie afterward.|later, after|before
+seasonal|Is the pumpkin drink seasonal?|The store sells seasonal fruit.|yearly|
+passport|Where do you keep your passport?|You need a passport to fly to another country.|travel papers|
+luggage|How much luggage are we taking?|My luggage has wheels.|bags, suitcases|
+aisle|Which aisle has the cereal?|The cart blocked the aisle.|walkway, row|
+runway|Can we watch planes on the runway?|The model walked down the runway.|landing strip|
+kayak|Have you ever been in a kayak?|My kayak tipped over in the lake.|canoe|
+ketchup|Do you like ketchup on your fries?|The ketchup bottle made a funny noise.|catsup, sauce|
+shampoo|Did you rinse out the shampoo?|This shampoo smells like coconut.|hair soap|
+pajamas|Can I wear my pajamas to breakfast?|My pajamas have rockets on them.|pjs, nightclothes|
+emoji|Which emoji do you use most?|She sent a laughing emoji.|smiley, icon|
+origami|Can you fold an origami boat?|Origami takes patience and careful folds.|paper folding|
+safari|Would you like to go on a safari?|On our safari, we saw a family of elephants.|trip, expedition|
+avocado|Is an avocado a fruit?|We put avocado on our toast.||
+chocolate|Do you like milk or dark chocolate?|The chocolate bunny had a hollow middle.|cocoa|
+tomato|Is a tomato a fruit or a vegetable?|We grew a tomato as big as my fist.||
+cookie|Can I have one more cookie?|The cookie crumbled in my hand.|biscuit|
+boss|Who is the boss of this game?|The cat thinks she's the boss of the house.|leader, chief|
+kindergarten|What did you learn in kindergarten?|Kindergarten is where I made my first friend.|preschool|
+ballet|Do you take ballet?|Ballet dancers practice for years.|dance|
+zero|Is zero an even number?|I got zero wrong on the test!|nothing, none|
+mosquito|Why does a mosquito bite itch?|Wear bug spray so no mosquito bites you.|bug, gnat|
+ukulele|Is a ukulele easy to learn?|Grandpa plays the ukulele at parties.|uke|
+boomerang|Can you throw a boomerang?|Our boomerang got stuck in a tree.||
+kangaroo|How far can a kangaroo jump?|A kangaroo can't walk backward.|wallaby|
+swell|Isn't that a swell hat?|We had a swell time at the fair.|great, nifty|lousy
+snazzy|Where did you get those snazzy shoes?|The magician wore a snazzy cape.|stylish, flashy|plain
+peachy|How was your day? Just peachy!|Everything at camp was peachy.|fine, great|
+groovy|Isn't that music groovy?|Grandma had a groovy lamp with bubbles.|cool, hip|
+fab|Doesn't the cake look fab?|We had a fab day at the beach.|fabulous, great|
+cool|Isn't that a cool trick?|The pool felt cool on a hot day.|great, neat, chilly|warm, lame
+awesome|Wasn't the show awesome?|You did an awesome job on your project.|amazing, great|awful
+epic|Wasn't that an epic game?|We went on an epic bike ride.|huge, amazing|small
+totally|Are you totally sure?|The cake was totally gone by noon.|completely, fully|partly
+referee|Did the referee see the foul?|The referee wore a striped shirt.|umpire, judge|
+rematch|Can we have a rematch?|I won the rematch!|replay|
+teammate|Who is your favorite teammate?|A good teammate cheers for everyone.|partner|opponent
+charming|Isn't the little cottage charming?|Grandpa has a charming old car.|lovely, delightful|unpleasant
+delightful|Wasn't the puppet show delightful?|The garden smelled delightful.|lovely, charming|awful
+kindhearted|Is your aunt kindhearted?|A kindhearted stranger found my lost cat.|kind, caring|cruel
+whisk|Can you whisk the eggs for me?|The waiter will whisk away the plates.|beat, whip|
+dice|Can you dice the carrots?|Dice the cheese into little cubes.|cube, chop|
+dollop|Can I have a dollop of jam?|Mud landed on my shoe in a big dollop.|blob, spoonful|
+lose|Did you lose your mitten?|Our team didn't lose a game all season.|misplace|find, win
+loose|Is your shoe loose?|The goat got loose from the pen.|free, slack|tight
+peak|Can we climb to the peak?|Snow covered the mountain peak.|top, summit|base
+pore|Did you pore over the instructions?|Scientists pore over pictures from space.|study, read|skim
+breath|Can you hold your breath for ten seconds?|My breath made a cloud in the cold air.|air, puff|
+savings|How much is in your savings?|I spent all my savings on a bike.|nest egg|
+receipt|Did the cashier give you a receipt?|The receipt was longer than my arm!|bill, slip|
+refund|Can I get a refund for this broken toy?|We got a refund for the canceled trip.|repayment|
+cereal|What's your favorite cereal?|The cereal got soggy in the milk.|grain|
+sizzle|Can you hear the pancakes sizzle?|Water drops sizzle on a hot pan.|hiss, fry|
+hiss|Why does the cat hiss at the dog?|Air began to hiss out of the tire.|fizz, whistle|
+crackle|Can you hear the fire crackle?|The radio began to crackle and buzz.|snap, pop|
+thud|What was that thud?|The backpack hit the floor with a thud.|thump, bump|
+clang|Did you hear the clang of the bell?|The metal lid fell with a loud clang.|clank, bang|
+whoosh|Did you feel the whoosh of the fan?|With a whoosh, the rocket was gone.|rush, swoosh|
+zoom|Can your toy car zoom across the floor?|Bees zoom from flower to flower.|speed, race, dash|crawl
+kerplunk|Did you hear the kerplunk?|My sandal fell in the lake, kerplunk!|plop, splash|
+plop|Can you plop the ice cube in my drink?|The frog went plop into the pond.|drop, plunk|
+swish|Can you swish your skirt?|The jump rope made a swish every time.|whoosh, swoosh|
+babble|Why does the baby babble so much?|We fell asleep to the babble of the creek.|chatter, gurgle|
+cuckoo|Did the cuckoo sing this morning?|Our cuckoo clock has a tiny bird inside.|bird|
+fizz|Do you like the fizz in soda?|The tablet will fizz in the water.|bubble, foam|
+clink|Can you clink your cup with mine?|We heard the clink of ice in the glass.|tinkle, ting|
+thwack|Did you hear the thwack of the bat?|The pillow hit him with a soft thwack.|whack, smack|
+ping|Did the oven ping?|A pebble hit the window with a ping.|ding, ring|
+boom|Did you hear the boom?|Thunder made a boom over the lake.|bang, crash|
+crunch|Can you hear the crunch of the chips?|Fall leaves crunch under my boots.|crackle, snap|
+splat|Did the egg go splat?|The pie hit the floor with a splat.|smack, splash|
+honk|Did the geese honk at you?|Don't honk the horn at the ducks.|beep, toot|
+asteroid|How big is an asteroid?|An asteroid might have a moon of its own.|space rock|
+meteor|Did you see the meteor?|A meteor shower lights up the August sky.|fireball, falling star|
+astronaut|Would you like to be an astronaut?|The astronaut ate food from a pouch.|spaceman, cosmonaut|
+crater|How deep is that crater?|We made a crater in the sand with a rock.|hole, pit|
+rover|What did the rover find on Mars?|The rover moves very slowly across the rocks.|explorer, vehicle|
+library|Can we go to the library after school?|Our library has a fish tank.|reading room|
+until|Can I stay up until nine?|We played until the stars came out.|till, up to|
+broccoli|Do you like broccoli?|My dog will eat broccoli off my plate.||
+beginning|What happened at the beginning of the story?|It's the beginning of spring.|start, opening|end
+friend|Will you be my friend?|My best friend lives next door.|pal, buddy|enemy
+again|Can we go to the zoo again?|Oh no, the dog got out again!|once more|
+people|How many people live in your town?|Some people like rainy days.|folks, persons|
+there|Is there any milk left?|There goes the bus!|over there|here
+flaky|Do you like flaky biscuits?|The old paint was flaky and peeling.|crumbly, crispy|
+tender|Is the chicken tender?|My bruise is still tender.|soft, gentle|tough
+chewy|Do you like chewy candy?|The gummy bears were very chewy.|gummy|crisp
+buttery|Do you like buttery toast?|The cookies were soft and buttery.|rich, creamy|
+smoky|Why does the room smell smoky?|The campfire left a smoky smell on our clothes.|hazy, sooty|
+tart|Is the lemonade too tart?|Rhubarb is tart, so we add sugar.|sour, tangy|sweet
+browser|Which browser do you use?|My browser has too many tabs open.|web app|

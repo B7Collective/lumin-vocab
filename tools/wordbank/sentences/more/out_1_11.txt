@@ -1,0 +1,63 @@
+sear|How long should you sear the fish?|The hot pan will sear the onions fast.|brown, scorch, char|
+sift|Can you sift the sand for shells?|We sift through old photos for the album.|sieve, strain, sort|
+puree|Can you puree the pumpkin for pie?|The baby ate pea puree for lunch.|blend, mash|
+accept|Will you accept the invitation?|It's hard to accept losing.|take, receive, agree to|refuse
+except|Who came except Grandma?|The store is open every day except Sunday.|but, besides, other than|including
+advice|What's the best advice you've gotten?|Grandpa gives advice about fishing.|tip, suggestion, guidance|
+advise|What would you advise me to do?|Doctors advise kids to sleep ten hours.|suggest, recommend, counsel|
+capitol|Where is the state capitol?|A gold dome sits on top of the capitol.|statehouse|
+farther|Can you throw the ball farther than me?|The beach is farther away than the park.|further, more distant|nearer
+further|Do you need any further help?|Let's not argue any further.|more, additional|
+counsel|Who gives you good counsel?|The judge listened to the counsel for both sides.|advice, lawyer, guidance|
+interest|How much interest does the bank pay?|Our savings earned interest every month.|earnings, return|
+credit|Who gets credit for the drawing?|Mom paid with a credit card.|praise, recognition, trust|blame
+expense|What is your family's biggest expense?|A new roof is a big expense.|cost, spending, price|income
+deposit|Did you make a deposit at the bank?|The river leaves a deposit of mud each spring.|payment, savings, layer|withdrawal
+withdraw|Can you withdraw money from the machine?|The turtle will withdraw into its shell.|take out, pull back|deposit
+panic|Why did the chickens panic?|When I lost my mom at the mall, I tried not to panic.|fear, alarm, fright|calm
+atlas|Can you find the river in the atlas?|My atlas has a map of every state.|map book|
+siren|Did you hear the siren?|In the myth, a siren sang to sailors.|alarm, horn|
+helium|Why does helium make balloons float?|Helium is lighter than air.|gas|
+python|How long can a python grow?|A python can swallow an egg whole.|snake, constrictor|
+murmur|Can you hear the murmur of the creek?|She would murmur a song to the baby.|whisper, mumble, hum|shout
+squelch|Did your shoes squelch in the puddle?|Wet socks squelch in rain boots.|squish, slosh|
+clatter|What was that clatter in the kitchen?|Hooves made a clatter on the cobblestones.|rattle, clang, racket|
+whir|Can you hear the blender whir?|The drone began to whir overhead.|hum, buzz, purr|
+twang|Did you hear the twang of the bow?|The cowboy spoke with a twang.|ping, vibration|
+nebula|What colors are in that nebula?|The telescope showed a glowing nebula.|star cloud, gas cloud|
+meteorite|Have you ever held a meteorite?|A meteorite crashed into the field.|space rock|
+supernova|Can you see a supernova without a telescope?|A supernova lit up the sky long ago.|exploding star|
+cosmos|How big is the cosmos?|We watched a show about the cosmos.|universe, space|
+necessary|Is homework necessary over the summer?|A map is necessary for the hike.|needed, essential, required|optional
+separate|Can you separate the eggs?|We sleep in separate rooms.|apart, divide, split|join
+definitely|Will you definitely come to the game?|That was definitely the best pizza ever.|surely, certainly, absolutely|maybe
+receive|What gift did you receive?|Plants receive light through their leaves.|get, accept, collect|give, send
+believe|Do you believe in ghosts?|Believe in yourself, and keep trying.|trust, accept, think|doubt
+weird|Isn't it weird when your foot falls asleep?|My cat has a weird habit of eating tape.|strange, odd, bizarre|normal
+restaurant|What's your favorite restaurant?|The new restaurant has outdoor tables.|cafe, diner, eatery|
+knowledge|How do you gain knowledge?|Knowledge grows a little every time you read.|learning, understanding, know-how|ignorance
+lightning|How far away was the lightning?|Count the seconds after the lightning.|flash, bolt|
+vacuum|Can you vacuum under the couch?|Space is almost a perfect vacuum.|void, cleaner|
+foreign|Have you visited a foreign country?|Learning a foreign song is fun.|overseas, strange, unfamiliar|native, local
+height|What's your height in inches?|Fear of height made me freeze on the ladder.|tallness, elevation|depth
+cinnamon|Do you like cinnamon on your oatmeal?|The whole house smelled like cinnamon.|spice|
+souvenir|What souvenir did you bring home?|A souvenir shirt reminds me of the trip.|keepsake, memento|
+business|What business would you like to start?|The dog walking business made ten dollars.|company, shop, work|
+address|What's the address of the zoo?|The principal will address the whole school.|location, speech|
+earthy|Do you like earthy colors?|The garden had a rich, earthy smell.|natural, soil-like|
+mellow|Is the music mellow?|Our old dog has become mellow.|calm, smooth, gentle|harsh
+hashtag|What hashtag should we use?|The hashtag helped people find our photos.|tag, label|
+hyperlink|Where does this hyperlink go?|A hyperlink is usually blue and underlined.|link|
+router|Where is the router?|The router's lights blinked green.|modem, network box|
+server|Is the server running?|Our photos are saved on a server.|computer, host|
+streaming|What are you streaming tonight?|Streaming music uses a lot of data.|playing online|
+meme|What's the funniest meme you've seen?|The meme about cats and cucumbers spread fast.|joke, image|
+debug|How do you debug a program?|It takes patience to debug code.|fix, troubleshoot|
+privacy|Why is privacy important online?|Our cat values her privacy under the bed.|secrecy, solitude|
+gale|How strong was the gale?|A gale blew across the bay.|storm, windstorm, blast|breeze
+humidity|What's the humidity today?|High humidity makes bread go moldy.|dampness, moisture, mugginess|dryness
+cyclone|Is a cyclone the same as a hurricane?|The cyclone brought heavy rain.|hurricane, typhoon|
+heatwave|How do you stay cool during a heatwave?|Dogs pant hard during a heatwave.|hot spell|cold snap
+cumulus|Are those cumulus clouds?|A cumulus cloud looked like a sheep.|cloud|
+cirrus|Do cirrus clouds bring rain?|Cirrus clouds look like feathers.|cloud|
+thunderhead|Is that a thunderhead in the west?|We ran inside when the thunderhead rolled in.|storm cloud|

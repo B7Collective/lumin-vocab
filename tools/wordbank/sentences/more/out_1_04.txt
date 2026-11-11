@@ -1,0 +1,130 @@
+fragrance|What fragrance is your shampoo?|A sweet fragrance drifted from the bakery.|scent, aroma, perfume|stink
+geography|Do you like geography class?|Maps help us learn geography.|earth science|
+glimmer|Is there a glimmer of hope we'll win?|We saw a glimmer of gold in the stream.|flicker, gleam, glint|
+gorgeous|Isn't the peacock gorgeous?|We had gorgeous weather for the picnic.|beautiful, stunning, lovely|ugly
+gradual|Was the change in your height gradual?|A gradual rise in the road made biking easy.|slow, steady, gentle|sudden
+gratitude|How can you show gratitude to your coach?|She felt deep gratitude for her friends.|thankfulness, appreciation|ingratitude
+guardian|Who is your guardian angel in the story?|A goose acted as the guardian of the barnyard.|protector, keeper, defender|
+harmony|Do the birds sing in harmony?|Our pets live in harmony.|peace, agreement, unity|conflict
+hesitant|Why are you hesitant to try the slide?|A hesitant deer stepped onto the road.|unsure, reluctant, doubtful|eager
+historic|Is this a historic day for our town?|We toured a historic ship.|famous, important, old|
+hospitable|Was the campground hospitable?|Hospitable neighbors brought us cookies.|welcoming, friendly, kind|unfriendly
+humorous|Do you like humorous books?|The play was humorous from start to end.|funny, comic, witty|serious
+illustrator|Who is the illustrator of this book?|An illustrator visited our school to draw with us.|artist, drawer|
+imaginative|What imaginative game shall we play?|An imaginative kid turned a stick into a sword.|creative, inventive|dull
+immerse|Can you immerse the egg in vinegar?|I like to immerse myself in a good game.|dip, soak, plunge|
+inherit|Did you inherit your mom's freckles?|My brother will inherit Grandpa's old watch.|receive, get|
+inspire|What books inspire you?|Nature can inspire beautiful art.|motivate, encourage, move|discourage
+instinct|Is it instinct that makes cats chase string?|My instinct told me to wait.|intuition, gut feeling|
+instrument|Which instrument do you want to play?|A thermometer is an instrument for measuring heat.|tool, device|
+intelligent|Are pigs really intelligent?|An intelligent robot can learn from mistakes.|smart, clever, bright|foolish
+invention|What is the best invention ever?|My invention is a hat with a built-in umbrella.|creation, gadget, device|
+journal|What did you write in your journal today?|My travel journal is full of ticket stubs.|diary, log, notebook|
+jubilant|Why are the fans so jubilant?|The jubilant puppy wagged its whole body.|joyful, overjoyed, thrilled|gloomy
+kindle|Can a good teacher kindle your curiosity?|We used pinecones to kindle the campfire.|light, spark, ignite|put out
+labyrinth|Can you find your way out of the labyrinth?|The old castle was a labyrinth of halls.|maze, tangle|
+landscape|What landscape do you like best?|Snow turned the landscape white.|scenery, view, countryside|
+launch|When will the boat launch?|Let's launch our lemonade stand on Saturday.|start, begin, send off|end
+legendary|Is your grandma's pie legendary?|A legendary sea monster lived in the lake.|famous, celebrated|unknown
+liberty|What does liberty mean to you?|The bird finally had its liberty.|freedom, independence|captivity
+mammoth|Was the woolly mammoth hairy?|We finished a mammoth puzzle with a thousand pieces.|huge, giant, enormous|tiny
+marine|Do you want to be a marine scientist?|We saw marine life in the tide pool.|ocean, sea, aquatic|land
+mature|Is the fruit mature enough to pick?|My big sister is very mature.|grown-up, adult, ripe|childish
+melody|Can you whistle the melody?|The ice cream truck plays the same melody every day.|tune, song|
+mention|Did I mention I have a puppy?|Please mention my name to your teacher.|say, note, bring up|
+merry|Are you feeling merry today?|A merry fiddler played at the fair.|cheerful, jolly, happy|gloomy
+microscope|What did you see under the microscope?|A microscope can show tiny germs.|magnifier, lens|
+mischievous|Why does that kitten look so mischievous?|A mischievous wind blew my hat away.|naughty, playful, impish|well-behaved
+moment|Can you wait a moment?|In a moment, the sun came out.|instant, minute, second|
+monitor|Can you monitor the soup so it doesn't boil over?|A baby monitor lets parents hear the baby.|watch, check, track|
+motivate|What can motivate you to clean your room?|Good coaches motivate their players.|inspire, encourage, drive|discourage
+multiply|Can you multiply five by six?|Rabbits multiply fast in the spring.|times, increase, grow|divide
+mural|What should we paint on the mural?|The mural on the school wall shows the planets.|wall painting|
+narrate|Can you narrate the story in your own words?|A famous actor will narrate the nature film.|tell, recount|
+negotiate|Can you negotiate with your brother for the window seat?|Ships must negotiate around the rocks.|bargain, work out|
+noble|Is it noble to share your lunch?|A noble horse carried the prince.|honorable, good, grand|mean
+nourishing|Is soup nourishing when you're sick?|Rain is nourishing for the garden.|healthy, nutritious|unhealthy
+novel|Have you read a whole novel?|That's a novel idea!|book, story, new|
+oasis|Is there an oasis in this desert?|The library is my quiet oasis.|haven, refuge, retreat|
+observant|Are you observant enough to spot the hidden cat?|An observant teacher noticed I was sad.|watchful, alert, sharp|unaware
+occasion|What's the occasion for the cake?|We save the fancy plates for a big occasion.|event, celebration|
+ocean|Have you ever swum in the ocean?|An ocean of stars filled the night sky.|sea, deep|
+original|Is your idea original?|The original book is better than the movie.|new, first, unique|copy
+outdoors|Do you like being outdoors in winter?|Our class read outdoors today.|outside, open air|indoors
+paradise|What would your paradise look like?|A pile of leaves is paradise for a puppy.|heaven, dreamland|
+participate|Did you participate in the parade?|The whole class can participate in the cleanup.|join, take part|watch
+passage|Can you read this passage aloud?|We found a passage under the old house.|path, hallway, section|
+peaceful|Isn't the lake peaceful today?|A peaceful nap is the best part of Sunday.|calm, quiet, serene|noisy
+perform|What song will you perform?|Doctors perform checkups on babies.|act, play, do|
+persistent|Why is the cough so persistent?|A persistent kid can learn anything.|determined, stubborn|quitting
+perspective|Can you see it from my perspective?|Lying in the grass gave me a new perspective on clouds.|view, angle, outlook|
+pioneer|Who was a pioneer in space travel?|A pioneer family crossed the plains in a wagon.|trailblazer, settler, founder|
+pleasant|Isn't the breeze pleasant?|The new neighbor seems pleasant.|nice, lovely, enjoyable|unpleasant
+plume|Did you see the plume of steam from the train?|The knight's helmet had a red plume.|feather, cloud, puff|
+ponder|What do you ponder when you can't sleep?|The owl seemed to ponder the moon.|think, wonder, consider|
+prairie|What animals live on the prairie?|Wildflowers covered the prairie in spring.|plain, grassland, meadow|
+prepare|How do you prepare for a test?|Let's prepare the garden for spring.|get ready, plan|
+pride|Did you feel pride when you scored?|A lion pride is a lion family.|satisfaction, dignity|shame
+procedure|What's the procedure for a fire drill?|Follow the procedure step by step.|process, method, steps|
+quest|What would you go on a quest for?|My quest for the perfect pumpkin took all day.|search, mission, journey|
+recycle|Can we recycle this box?|Old jars become pencil holders when we recycle them.|reuse, reprocess|waste
+reflect|Can a puddle reflect the sky?|Take a minute to reflect on your day.|mirror, think, consider|
+region|Which region of the country do you live in?|Rain is rare in this desert region.|area, zone, part|
+reserve|Can you reserve a seat for me?|We keep a reserve of water for emergencies.|save, keep, book|
+resilient|Are you resilient after a bad day?|Resilient weeds grow through cracks.|tough, strong, hardy|fragile
+resolve|How can we resolve the problem?|I made a resolve to read every day.|solve, settle, fix|
+respect|How do you show respect to your elders?|Our coach has the respect of the whole team.|honor, courtesy|disrespect
+reward|What's the reward for finishing your chores?|Seeing the view was our reward for the climb.|prize, treat, payoff|punishment
+rhythm|Can you clap a rhythm for me to copy?|The waves have a gentle rhythm.|beat, tempo|
+rival|Who is your biggest rival in chess?|My little brother sees the cat as a rival.|competitor, opponent|teammate
+rotate|Can you rotate the puzzle piece?|We rotate chores every week.|spin, turn, switch|
+rural|Do you like rural or city life?|In rural areas, stars look brighter.|country, farmland|urban
+sanctuary|Is there a sanctuary for old horses near here?|My room is my sanctuary.|refuge, haven, shelter|
+satisfy|What snack will satisfy you until dinner?|Nothing can satisfy my curiosity about space.|please, fill, content|disappoint
+scavenger|Is a vulture a scavenger?|Seagulls are noisy beach scavengers, and one scavenger stole my chip!|forager|
+scenery|Did you like the scenery on the drive?|The play had painted scenery.|landscape, view|
+scientist|What kind of scientist do you want to be?|A scientist must ask lots of questions.|researcher, expert|
+sculpt|Can you sculpt a snow dragon?|Wind and water sculpt the rocks over time.|carve, shape, mold|
+shelter|Where do animals find shelter in a storm?|The animal shelter has many puppies.|cover, refuge, protection|
+signal|What's the signal to stop?|My phone has no signal in the basement.|sign, cue, gesture|
+similar|Are your shoes similar to mine?|Lions and tigers are similar in size.|alike, like, close|different
+solar|Can a solar car drive at night?|We made a solar oven from a pizza box.|sun|lunar
+solution|What's the solution to this riddle?|Mix the salt into a warm solution of water.|answer, fix, key|problem
+spectacle|What a spectacle the parade was!|The snowstorm was a spectacle of white.|show, sight, marvel|
+stampede|What caused the stampede?|There was a stampede to the cafeteria.|rush, charge|
+statue|Who is the statue of?|Freeze like a statue!|sculpture, figure|
+summarize|Could you summarize your day in a sentence?|The last page will summarize the chapter.|sum up, recap|expand
+supply|Do we have enough supply of paper?|Can you supply the snacks for the party?|stock, provide, store|
+surface|Is the surface of the moon dusty?|Scratch the surface of the card to win.|top, face, outside|inside
+survive|How do animals survive the winter?|Will my sunflower survive the frost?|live, last, endure|perish
+talented|Who is the most talented artist in your class?|Our talented dog can balance a treat on its nose.|gifted, skilled, able|
+temperature|What's the temperature outside?|My temperature was normal by morning.|heat, warmth|
+terrain|What terrain is best for mountain bikes?|The terrain changed from sand to rocks.|ground, land|
+thrilling|Wasn't the zip line thrilling?|We read a thrilling book about pirates.|exciting, exhilarating|boring
+tradition|What is your favorite holiday tradition?|It's a tradition to sing on the first snow.|custom, ritual, habit|
+tremble|Why does the dog tremble during storms?|The bridge seemed to tremble under the truck.|shake, shiver, quiver|
+triumphant|Did you feel triumphant after the race?|A triumphant shout came from the treehouse.|victorious, proud|defeated
+tropical|Do you like tropical fruit?|A tropical storm is heading toward the coast.|steamy, warm|arctic
+universe|How big is the universe?|My little world is my whole universe.|cosmos, space|
+unusual|What an unusual hat!|An unusual bird landed in our yard.|odd, strange, rare|common
+victory|How did it feel to win the victory?|Our victory dance was silly.|win, triumph, success|defeat
+volume|Can you raise the volume?|What volume of water fits in this jug?|loudness, amount|
+volunteer|Will you volunteer to read first?|Volunteers cleaned up the beach, and every volunteer got a hat.|offer, help out|
+whimsical|Do you like whimsical stories?|Grandma has a whimsical garden full of gnomes.|playful, fanciful, quirky|serious
+wildlife|What wildlife lives in your backyard?|Please don't feed the wildlife.|animals, creatures, nature|
+wisdom|What wisdom did your grandpa share?|There's wisdom in waiting your turn.|knowledge, sense, judgment|foolishness
+wondrous|Wasn't the light show wondrous?|We read a wondrous tale about a flying whale.|marvelous, amazing|ordinary
+zoologist|Would you like to be a zoologist?|A zoologist came to talk about snakes.|animal scientist|
+government|What does the government do?|Our town government fixed the park.|leaders, state|
+election|Who won the election?|We had an election for team captain.|vote, poll|
+justice|What does justice mean?|The hero fought for justice.|fairness, right|injustice
+council|Who is on the council?|Our class council meets every week.|board, committee, group|
+ballot|Did you fill in your ballot?|The ballot box was full by noon.|vote|
+democracy|How does democracy work in your class?|Voting is a big part of democracy.|self-rule, free elections|dictatorship
+rights|What rights do kids have?|Animals have rights too.|freedoms, privileges|
+equality|Why is equality important?|Our team plays with equality; everyone gets a turn.|fairness, sameness|inequality
+ceremony|Did you go to the graduation ceremony?|The ceremony began with music.|event, celebration|
+custom|What is a custom in your family?|It's our custom to eat outside on birthdays.|habit, tradition, practice|
+culture|What do you love about your culture?|Food is a big part of every culture.|heritage, way of life|
+majority|Did the majority vote for the movie?|Most of the cookies are gone; the majority were eaten by Dad!|most, bulk|minority
+treaty|Why do countries sign a treaty?|My brother and I signed a treaty about the remote.|agreement, pact, deal|

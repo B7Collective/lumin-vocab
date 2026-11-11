@@ -1,0 +1,130 @@
+leopard|Can a leopard change its spots?|A leopard carried its dinner up a tree.|panther, big cat|
+jaguar|Does a jaguar like water?|We spotted a jaguar sleeping in the shade.|big cat|
+lynx|Have you ever seen a lynx in the wild?|The lynx pounced on a snowshoe hare.|bobcat, wild cat|
+coyote|Is a coyote a kind of wolf?|A coyote crossed the road at dusk.|prairie wolf|
+hyena|Why does a hyena sound like it's laughing?|Can a hyena share its food with friends?||
+panda|How much bamboo does a panda eat?|The panda rolled down the little hill.||
+skunk|Did a skunk spray our dog?|A baby skunk is called a kit.||
+weasel|Can a weasel fit through a tiny hole?|A weasel darted under the shed.|stoat|
+ferret|Can a ferret learn tricks?|The ferret stole my sock and ran!||
+mole|Can a mole see in the dark?|A mole dug a tunnel under our garden.||
+hamster|What does your hamster like to eat?|Our hamster escaped and hid in a shoe.|gerbil|
+hare|Did the hare win the race in the story?|A hare can jump very high.|jackrabbit, rabbit|
+colt|Can I ride the colt yet?|The colt galloped next to its mother.|foal, pony|filly
+gosling|Is the gosling yellow or gray?|A gosling swam close to its mother.|baby goose|
+hatchling|How small is a turtle hatchling?|The hatchling cracked its shell with a tiny tooth.|chick, baby|
+litter|How many kittens were in the litter?|Every puppy in the litter had a white paw.|brood, family|
+kennel|Does your dog like her kennel?|The kennel had a soft blanket inside.|doghouse, crate|
+stable|Is the stable warm in winter?|The pony's name was painted over the stable door.|barn|
+coop|Did you close the coop door?|A fox tried to get into the coop.|henhouse, pen|
+pasture|Can we let the sheep into the pasture?|The pasture was full of yellow flowers.|field, meadow, grassland|
+hutch|Is the hutch big enough for two bunnies?|Clean the hutch every week.|cage, pen|
+aquarium|Can we visit the aquarium on Saturday?|Our classroom aquarium has a snail in it.|fish tank|
+antler|How big can a moose antler grow?|We found an antler in the woods.|horn|
+gill|Can you see the gill moving on the fish?|A tadpole breathes with a gill at first.||
+pouch|What does a kangaroo keep in its pouch?|The hamster filled its cheek pouch with seeds.|pocket, bag|
+hump|Does a camel's hump hold water?|My cat arched her back into a hump.|bump, lump|
+lair|Where is the bear's lair?|The wolf crept back to its lair.|den, hideout|
+moody|Why is the weather so moody today?|Teenagers in movies are often moody.|grumpy, cranky|cheerful
+sheepish|Why do you look so sheepish?|With a sheepish grin, he said sorry.|embarrassed, shy|proud
+homesick|Do you get homesick on sleepovers?|Our dog gets homesick at the kennel.|lonely|
+overjoyed|Were you overjoyed when the snow day came?|The team was overjoyed with the trophy.|thrilled, delighted|sad
+bored|Are you bored? Let's play a game.|Our dog gets bored and chews shoes.|uninterested|interested, excited
+annoyed|Are you annoyed with me?|The cat seemed annoyed by the bath.|bothered, irritated|pleased
+thankful|What are you thankful for today?|I'm thankful my lost cat came home.|grateful|ungrateful
+ashamed|Why do you feel ashamed?|The puppy looked ashamed of the mess.|embarrassed, sorry|proud
+envious|Are you envious of your cousin's trip?|Our dog looked envious of the cat's bed.|jealous|content
+frightened|Who was frightened by the haunted house?|Frightened birds flew from the tree.|scared, afraid|calm
+jumpy|Why are you so jumpy today?|The jumpy cat leaped at every sound.|nervous, twitchy|calm
+antsy|Do you get antsy on long trips?|The puppy was antsy before his walk.|restless, fidgety|calm
+bubbly|Is the new girl bubbly or quiet?|Her bubbly laugh filled the room.|cheerful, lively|glum
+chipper|You seem chipper this morning!|Even in the rain, the mail carrier was chipper.|cheerful, perky|gloomy
+nosy|Why is the neighbor so nosy?|A nosy squirrel peeked in our window.|snoopy, prying|
+truthful|Is a truthful answer always easy?|My truthful little sister told on herself.|honest|dishonest
+fib|Was that a fib?|Telling a fib can get you in trouble.|lie, story|truth
+tattle|Do you tattle when your brother is naughty?|Nobody likes it when you tattle.|tell, snitch|
+brag|Did he brag about his new shoes?|A good winner doesn't brag.|boast, show off|
+swap|Can we swap seats?|Let's swap lunches today.|trade, switch|
+lend|Will you lend me your bike?|The library will lend you books for free.|loan, give|borrow
+chortle|Did you hear Dad chortle at the cartoon?|The joke made the whole class chortle.|chuckle, laugh|
+cackle|Why do hens cackle after they lay an egg?|My aunt has a loud cackle when she laughs.|laugh, screech|
+sob|Did you sob at the end of the movie?|It's okay to sob when you're sad.|cry, weep|laugh
+whimper|Why does the puppy whimper at night?|The hurt kitten began to whimper.|whine, cry|
+whine|Do you whine when you're hungry?|My dog will whine for a treat.|complain, moan|
+pout|Why are you trying to pout?|My little sister can pout better than anyone.|sulk, frown|smile
+frown|Why the big frown?|Turn that frown upside down!|scowl|smile
+beam|Did you beam when you won the prize?|Grandma will beam when she sees your card.|grin, smile|frown
+smirk|Why did the cat look like it had a smirk?|Wipe that smirk off your face!|grin|
+shrug|Why did you shrug your shoulders?|With a shrug, my dad said, "Maybe."|lift your shoulders|
+trudge|Did you have to trudge up the hill?|We trudge home from the bus in the rain.|plod, stomp|skip
+hobble|Why did the dog hobble on three legs?|My new shoes made me hobble.|limp|stride
+teeter|Did the vase teeter on the shelf?|Don't teeter on the edge of the pool.|wobble, sway|
+clamber|Can you clamber up the jungle gym?|Goats clamber up steep rocks.|climb, scramble|
+wade|Can we wade in the pond?|Herons wade in the water to catch fish.|paddle, walk|
+dribble|Can you dribble with your other hand?|Babies dribble when their teeth come in.|drip, bounce|
+trickle|Can you hear the water trickle in the fountain?|Sweat started to trickle down my face.|drip, seep|gush
+gush|Did the soda gush out when you opened it?|Water will gush out if you turn the tap all the way.|pour, spurt|trickle
+spill|Who spilled the beans? Don't spill the secret!|Did you spill glitter on the rug?|drop, slosh|
+cram|Can we cram one more toy in the box?|Don't cram the whole sandwich in your mouth!|stuff, pack, jam|
+squash|Did you squash the bug?|Don't squash your hat when you sit.|crush, flatten|
+squish|Can you squish the clay into a ball?|Wet sneakers squish when you walk.|squash, squeeze|
+pinch|Can you pinch the clay into a pot?|Grandma likes to pinch my cheeks.|squeeze, nip|
+poke|Don't poke your brother!|Can you poke the straw into the juice box?|jab, prod|
+nudge|Can you nudge the cat off my chair?|The horse gave me a nudge with its nose.|push, bump|
+shove|Did someone shove you?|Can you shove the couch closer to the wall?|push|pull
+haul|How much can a big truck haul?|We haul water to the garden in buckets.|drag, carry, pull|
+lug|Why do I have to lug this heavy bag?|Every summer, we lug the cooler down to the beach.|carry, haul|
+hoist|Can you hoist the flag up the pole?|A crane will hoist the steel beams.|lift, raise|lower
+heave|Can you heave the bag into the truck?|The dog let out a heave of a sigh.|lift, throw, toss|
+lob|Can you lob the ball to me?|We lob pillows across the room.|toss, throw|
+snatch|Did the crow snatch your sandwich?|Watch the frog snatch a fly!|grab, take, seize|
+grip|Can you grip the rope tight?|My new shoes have good grip on ice.|grasp, hold, clutch|release
+thump|What was that thump on the roof?|Did you hear a thump in the night?|thud, bang, bump|
+porridge|Do you like your porridge hot or cold?|We added raisins to our porridge.|oatmeal, mush|
+bagel|Do you like a plain or a sesame bagel?|We toasted a bagel for breakfast.|roll|
+biscuit|Can I have butter on my biscuit?|Our dog sits for a biscuit.|roll, cookie|
+custard|Is custard like pudding?|Grandma makes custard with nutmeg on top.|pudding, cream|
+pudding|Can I have pudding after dinner?|We made pudding from a box.|custard, dessert|
+apricot|Have you ever tried an apricot?|We picked an apricot off the tree.||
+papaya|What does papaya taste like?|We cut a big papaya in half.||
+tangerine|Can you peel the tangerine in one piece?|We put a tangerine in each stocking.|mandarin, clementine|
+cantaloupe|Is the cantaloupe ripe?|Cantaloupe is sweet and orange.|melon, muskmelon|
+cranberry|Do you like cranberry juice?|Cranberry bogs turn red in the fall.||
+celery|Do you like celery in your soup?|We stuck raisins on celery to make ants on a log.||
+cauliflower|Have you ever tried purple cauliflower?|My dog likes to eat cauliflower.||
+radish|Is a radish spicy?|We put radish slices on our salad.||
+zucchini|Can we make zucchini bread?|A zucchini can grow very fast.|courgette, squash|
+eggplant|Do you like eggplant on pizza?|The eggplant in our garden is shiny.|aubergine|
+smoothie|Can I have a smoothie after soccer?|We put spinach in our smoothie and it turned green.|shake|
+cocoa|Do you want whipped cream on your cocoa?|The hot cocoa warmed my hands.|hot chocolate|
+burrito|Do you like beans in your burrito?|Our burrito was as big as my arm.|wrap|
+dumpling|Can you make a dumpling?|We eat a dumpling for good luck.||
+chowder|Is clam chowder white or red?|The chowder was full of corn and potatoes.|soup, stew|
+omelet|Can you flip an omelet?|Let's make an omelet with spinach.||
+casserole|What's in the casserole tonight?|We baked a tuna casserole.|bake, dish|
+frosting|Can I lick the frosting bowl?|We spread pink frosting on the cake.|icing|
+caramel|Do you like caramel on your ice cream?|The caramel turned golden in the pan.|toffee|
+marshmallow|How many marshmallows can you fit in your mouth? Just one marshmallow, please.|We roasted each marshmallow until it was golden.||
+fudge|Can we make fudge for the bake sale?|This fudge has nuts in it.||
+peppermint|Do you like peppermint gum?|A peppermint candy stuck to my pocket.|mint|
+vanilla|Do you want vanilla or chocolate?|The kitchen smelled like vanilla.||
+nutmeg|Can you smell the nutmeg in the pie?|A little nutmeg goes a long way.|spice|
+ginger|Have you ever had ginger ale?|We made a ginger house for the holidays.|spice|
+parsley|Do you like parsley on your potatoes?|We grow parsley on the windowsill.|herb|
+almond|Can you crack an almond?|There's an almond on top of each cookie.|nut|
+walnut|Can a squirrel open a walnut?|We baked walnut brownies.|nut|
+raisin|Is a raisin really a dried grape?|A raisin fell in my cereal.||
+coconut|Can you crack open a coconut?|We drank coconut milk at the beach.||
+pineapple|Does pineapple belong on pizza?|We cut the pineapple into rings.||
+mango|Do you like mango ice cream?|A ripe mango smells sweet.||
+oatmeal|Do you like brown sugar on your oatmeal?|We baked oatmeal cookies.|porridge|
+pickle|Do you like a sweet pickle or a sour pickle?|There was one pickle left in the jar.|gherkin|
+ladle|Can you hand me the ladle?|Grandpa used a ladle to serve the chili.|scoop, dipper|
+spatula|Where is the spatula?|Use a spatula to spread the frosting.|turner, scraper|
+colander|Can you find the colander?|Our colander has a crack in it.|strainer, sieve|
+kettle|Is the kettle hot?|We put the kettle on for cocoa.|teapot, pot|
+saucer|Did the saucer break?|The teacup and saucer had little roses.|dish, plate|
+platter|Can you carry the platter?|A big platter of cookies sat on the table.|plate, tray|
+pitcher|Can you fill the pitcher with water?|The pitcher had lemons floating in it.|jug|
+blender|Can you put the lid on the blender?|The blender made our ice into snow.|mixer|
+pantry|Is there any cereal in the pantry?|We keep the flour in the pantry.|cupboard, larder|

@@ -1,0 +1,130 @@
+flutter|Did you see the flag flutter in the wind?|My heart began to flutter before the show.|flap, wave, flicker|
+hum|Can you hum the song if you forget the words?|Bees hum as they buzz from flower to flower.|buzz, drone, murmur|
+observe|Scientists observe stars with big telescopes.|What did you observe about the snail's trail?|watch, notice, study|ignore
+plunge|Penguins plunge into icy water to catch fish.|Are you ready to plunge into the pool?|dive, jump, drop|
+pounce|Foxes pounce on mice hiding under the snow.|My little sister likes to pounce on me in the morning.|leap, spring, jump|
+sprint|Can you sprint all the way to the fence?|Cheetahs sprint faster than any other animal.|dash, race, run|stroll, walk
+toss|Please toss your trash in the bin.|Can you toss a pancake in the pan?|throw, flip, pitch|catch
+trace|Can you trace the path through the maze?|I like to trace pictures of dinosaurs.|copy, outline, draw|
+vanish|Where did my sock vanish to?|Snowmen vanish when the sun comes out.|disappear, fade|appear
+waddle|Ducklings waddle in a line behind their mom.|In big boots, I waddle like a penguin.|toddle, wobble|
+blossom|Bees buzz from blossom to blossom.|Can you smell the apple blossom?|flower, bloom, bud|
+burrow|Is that hole a burrow for a fox?|A prairie dog peeked out of its burrow.|hole, den, tunnel|
+canyon|How deep is that canyon?|Eagles soared high above the canyon.|gorge, valley, ravine|
+cocoon|What will come out of the cocoon?|Wrapped in my blanket, I felt like I was in a cocoon.|case, shell|
+dew|My sneakers got soaked in the morning dew.|Tiny drops of dew sparkled on the leaves.|moisture, droplets|
+drizzle|Is it a drizzle or a downpour?|We didn't need umbrellas for the drizzle.|sprinkle, mist, shower|downpour
+echo|Does your voice echo in the gym?|Clap your hands and listen for the echo.|reflection, ring|
+fossil|Is this a fossil or just a rock?|Scientists found a dinosaur fossil in the desert.|remains, imprint|
+galaxy|How many stars are in a galaxy?|Spaceships in movies zoom across the galaxy.|star system, cosmos|
+glacier|Over many years, a glacier carved this valley.|Is a glacier made of snow or ice?|ice field, ice sheet|
+harvest|Pumpkins are ready at harvest time.|We helped with the apple harvest at the orchard.|crop, picking, gathering|planting
+horizon|Can you see a boat out on the horizon?|Storm clouds piled up along the horizon.|skyline, edge|
+meadow|We had a picnic in a sunny meadow.|Butterflies flew all over the meadow.|field, pasture, grassland|
+moss|Is moss soft enough to sleep on?|Squirrels use moss to line their nests.|lichen|
+nest|Squirrels build a nest of leaves high in trees.|Shh, don't scare the birds off their nest.|home, roost|
+orbit|How long does Earth take to orbit the sun?|The space station stays in orbit high above us.|path, circuit, loop|
+pebble|There's a pebble stuck in my shoe.|Can you find a pebble shaped like a heart?|stone, rock|boulder
+planet|Which planet has the biggest rings?|Our planet has lots of oceans.|world, globe|
+puddle|My boots made a splash in the puddle.|After the rain, puddles covered the playground, and one puddle was huge.|pool|
+shadow|When does your shadow look the shortest?|We made a bunny shadow with our hands.|shade, silhouette|light
+stream|Fish swim up the stream in spring.|Let's follow the stream to see where it goes.|brook, creek|
+thunder|Do you count after a flash to hear the thunder?|Loud thunder rolled over the hills.|boom, rumble|
+volcano|Have you ever made a baking soda volcano?|Hot lava poured down the side of the volcano.|mountain, crater|
+breeze|Laundry dries fast in a warm breeze.|Can you feel the breeze from the fan?|wind, draft|gale
+cavern|Our flashlights lit up the huge cavern.|Water drips from the ceiling of the cavern.|cave, hollow|
+creature|What creature made these tracks in the snow?|The deep sea is home to glowing creatures, and each creature is strange.|animal, beast, being|
+flock|Did you see the flock of sheep on the hill?|Pigeons gathered in a flock to wait for crumbs.|group, herd, gaggle|
+herd|The cowboys moved the herd across the river.|Zebras stay safe by staying in a herd.|group, pack, drove|
+hive|Honey is made inside the hive.|Stay away from that hive by the shed.|beehive, colony|
+insect|Is a spider an insect? No, it has eight legs.|My favorite insect is the firefly.|bug|
+mammal|Is a bat a mammal or a bird?|Every mammal has some hair or fur.|animal|
+reptile|Would you like a reptile as a pet?|Snakes and crocodiles are reptiles, and each reptile has scales.|lizard, snake, turtle|
+seedling|The little seedling poked out of the dirt.|Keep the seedling near a sunny window.|sprout, young plant|
+soil|Dig a hole in the soil for the seed.|Is this soil too dry for the tomatoes?|dirt, earth, ground|
+swamp|Alligators hide in the swamp.|Our boots got stuck in the swamp mud.|marsh, bog, wetland|
+tide|When the tide comes in, the beach gets smaller.|Shells wash up when the tide goes out.|current, flow|
+twig|Snap! I stepped on a twig.|My snowman has a twig for each arm.|stick, branch|
+waterfall|Is the waterfall cold if you stand under it?|A tall waterfall poured into the green pool.|falls, cascade|
+pollen|Achoo! Pollen makes my nose itch.|Flowers need bees to move their pollen.|dust, powder|
+nectar|Hummingbirds love the nectar in red flowers.|Bees turn nectar into honey.|juice, honey|
+gust|One big gust flipped my umbrella.|The kite rose with every gust.|blast, puff, rush|calm
+frost|We drew pictures in the frost on the glass.|Will frost hurt the pumpkins?|ice, rime|
+magnet|Will this magnet stick to a spoon?|We used a magnet to find the lost pins.|attractor|
+gravity|Without gravity, we would float away.|On the moon, gravity is much weaker.|pull, force, weight|
+telescope|Can you see the moon's craters with a telescope?|For my birthday, I want a telescope.|scope, spyglass|
+compass|Which way does the compass say is north?|Sailors used a compass to cross the sea.|direction finder|
+liquid|Is honey a liquid or a solid?|Pour the liquid slowly into the bowl.|fluid|solid
+cottage|Smoke rose from the cottage chimney.|Would you like to live in a tiny cottage?|cabin, hut, house|mansion
+harbor|Seagulls circled over the harbor.|The ship sailed into the harbor before the storm.|port, dock, bay|
+lantern|A paper lantern glowed in the window.|Can you hold the lantern while I set up the tent?|lamp, light, torch|
+attic|Is the attic too dusty to play in?|Our Halloween boxes live in the attic.|loft|basement, cellar
+canoe|Can three people fit in the canoe?|Our canoe tipped over, and we got soaked!|boat, kayak|
+palace|What would you do if you lived in a palace?|Guards stood at the palace gates.|castle, mansion|hut
+treasure|My shell collection is my treasure.|Is there treasure at the bottom of the sea?|riches, jewels, gold|
+tunnel|Moles dig a tunnel under the lawn.|Let's crawl through the play tunnel!|passage, burrow|
+village|Everyone in the village knows the baker.|We drove through a tiny village in the hills.|town, hamlet|city
+voyage|How long did the voyage across the ocean take?|Pack plenty of snacks for the voyage!|trip, journey, cruise|
+journey|Pack a snack for the journey.|Every journey starts with one step.|trip, voyage, travel|
+adventure|What was your best adventure this summer?|Reading a book can feel like an adventure.|quest, trip, exploit|
+celebration|Will there be balloons at the celebration?|After the big win, the team had a celebration.|party, festival|
+invitation|Did you send an invitation to your cousin?|The invitation had a picture of a dragon.|invite, card|
+mystery|Can you help me solve the mystery of the missing cookies?|I love books with a mystery inside.|puzzle, secret, riddle|
+gadget|Which gadget opens the cans?|Grandpa loves every new kitchen gadget.|tool, device, machine|
+feast|Squirrels feast on acorns in the fall.|What a feast! There are ten pies.|banquet, meal, spread|snack
+recipe|Can I see the recipe for your cookies?|This recipe needs three eggs.|directions, formula|
+flavor|Which flavor of ice cream do you want?|A little salt gives soup more flavor.|taste|
+aroma|Can you smell the aroma of popcorn?|Pine trees gave the cabin a fresh aroma.|smell, scent, fragrance|stink
+texture|Do you like the texture of mashed potatoes?|Close your eyes and feel the texture.|feel, touch|
+glimpse|Did you get a glimpse of the falling star?|We got a glimpse of the ocean from the plane.|peek, glance, look|stare
+dawn|Birds start singing at dawn.|The farmers were up before dawn.|sunrise, daybreak, morning|dusk, sunset
+dusk|Fireflies glow at dusk.|We have to be home by dusk.|sunset, twilight, evening|dawn, sunrise
+midnight|Is it scary to stay up until midnight?|A spooky owl hooted at midnight.|middle of the night|noon
+season|Which season brings the most snow?|Baseball season starts in the spring.|time of year, period|
+audience|Was the audience laughing at the clown?|Look at the audience and smile.|crowd, viewers, spectators|
+champion|Our dog was the champion of the dog show.|Who is the hot dog eating champion?|winner, victor, hero|loser
+crew|A crew of workers fixed our street.|The film crew set up lights in the park.|team, group, staff|
+guest|Should the guest get the softest pillow?|Every guest at the party got a balloon.|visitor, company|host
+hero|In my story, the hero is a brave cat.|My big sister is my hero.|champion, star|villain
+neighbor|Did the neighbor find her lost cat?|We baked cookies for the new neighbor.|friend|stranger
+author|Who is the author of this funny book?|When I grow up, I want to be an author.|writer, storyteller|reader
+inventor|Who was the inventor of the telephone?|The young inventor made a shoe that ties itself.|creator, maker, designer|
+captain|Do you want to be captain of the team?|The captain gave the sailors their jobs.|leader, chief, skipper|
+chef|What will the chef make for dinner?|My dad is the best chef in our family.|cook, baker|
+crowd|Did the crowd cheer when the band came out?|It's hard to see over the crowd.|throng, mob, mass|
+rhyme|What word makes a rhyme with "bee"?|Every line in the song ends with a rhyme.|jingle, verse|
+riddle|Here's a riddle: what has hands but can't clap?|The riddle was so tricky that nobody got it.|puzzle, brain teaser|
+poem|Can you read your poem out loud?|This poem is about a sleepy cat.|verse, rhyme, song|
+chapter|Which chapter are you on?|This chapter ends with a big surprise.|part, section|
+fable|What lesson did the fable teach?|My favorite fable is about the ant and the grasshopper.|tale, story, legend|
+promise|Do you promise to keep it a secret?|We promise to clean up after the party.|swear, vow, pledge|
+apologize|When you hurt someone, apologize and help.|Did you apologize to your brother?|say sorry|
+announce|Let's announce the winner after lunch.|Did they announce when school starts?|tell, declare, report|
+explain|Please explain why the sky is blue.|Let me explain how to play.|describe, show, tell|confuse
+memory|Do you have a memory from when you were three?|A good memory helps you learn songs fast.|recollection, remembrance|
+clue|Here's a clue: it's something you wear.|Detectives look for every clue.|hint, sign, tip|
+habit|Biting your nails is a hard habit to stop.|Is reading every day a habit for you?|routine, custom, practice|
+notice|Did anyone notice my new haircut?|You'll notice the leaves turning red soon.|see, spot, observe|ignore, miss
+sniff|Bunnies sniff the air for danger.|Can you sniff out where the cookies are?|smell, whiff|
+muscle|Which muscle helps you smile?|Lifting the box made every muscle in my arm sore.|strength, brawn|
+skeleton|A snake's skeleton has hundreds of bones.|Is that skeleton real or plastic?|bones, frame|
+nocturnal|Is your hamster nocturnal? Mine plays all night.|Many desert animals are nocturnal to escape the heat.|night-active|diurnal
+hatch|How long do duck eggs take to hatch?|We watched baby turtles hatch on the beach.|emerge, break out|
+migrate|Butterflies migrate thousands of miles.|Why do whales migrate every year?|travel, move|stay
+hibernate|Do frogs hibernate in the mud?|Chipmunks hibernate, but they wake up to snack.|sleep, rest|
+sprout|Old potatoes in the cupboard can sprout.|When will the flowers sprout?|grow, bud, spring up|wither
+build|Birds build nests from twigs and grass.|Can you build a tower taller than me?|make, construct, assemble|destroy, wreck
+sculpture|We made a sculpture out of clay.|Is that sculpture made of ice?|statue, figure, carving|
+puzzle|This puzzle has a missing piece!|Can you help me with this word puzzle?|riddle, problem, game|
+ribbon|I won a blue ribbon at the fair.|Tie a ribbon in your hair.|band, bow, strip|
+explorer|What did the explorer find in the jungle?|Be an explorer and check under every rock.|traveler, adventurer|
+artist|Which artist painted the starry sky?|Every kid is an artist with a crayon.|painter, creator|
+tornado|Where do you go if a tornado comes?|A tornado can spin like a giant top.|twister, cyclone, whirlwind|
+island|What would you take to a desert island?|Turtles lay eggs on that sandy island.|isle, key|mainland
+pond|Frogs jump into the pond with a plop.|Can we feed the fish in the pond?|pool, lake|
+den|Lion cubs play outside their den.|We made a cozy den under the stairs.|lair, lodge, burrow|
+predator|Is a shark a predator?|The rabbit ran from the predator.|hunter|prey
+adorable|What an adorable little piglet!|Your baby brother looks adorable in that hat.|cute, sweet, lovable|ugly
+awful|What is that awful smell?|My cold made me feel awful.|terrible, horrible, dreadful|wonderful, great
+bashful|Don't be bashful; come join the game!|The bashful kitten peeked out from the box.|shy, timid, coy|bold
+blissful|After a warm bath, I felt blissful.|What a blissful nap in the hammock!|joyful, happy, peaceful|miserable

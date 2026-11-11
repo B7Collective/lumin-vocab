@@ -1,0 +1,130 @@
+scion|Is she the scion of a famous family?|A young apple scion was grafted onto the old tree.|heir, descendant, offspring|ancestor
+seemly|Is it seemly to wear jeans to a wedding?|Seemly manners impressed the hosts.|proper, fitting, appropriate|unseemly
+shibboleth|Is that rule just an old shibboleth?|Knowing the secret handshake was the club's shibboleth.|password, slogan, custom|
+snivel|Why do you snivel when you lose?|Sniffly puppies snivel by the door.|whimper, whine, sniffle|
+stultify|Can boredom stultify a child?|Too many rules stultify a team.|stifle, dull, hamper|stimulate
+sunder|What could sunder the alliance?|Earthquakes sunder roads in two.|split, sever, divide|unite, join
+thrall|Is the town in thrall to the factory?|The magician held the kids in thrall.|bondage, spell, captivity|freedom
+transmogrify|Can a wizard transmogrify a frog?|Fresh paint will transmogrify the old shed.|transform, convert, metamorphose|
+truckle|Why truckle to the boss?|Courtiers truckle to the king for favors.|kowtow, grovel, submit|defy
+vainglory|Did vainglory ruin the king?|In the myth, vainglory leads the hero to fall.|vanity, conceit, boastfulness|humility
+wastrel|Is the character a wastrel?|A wastrel spent his days lounging in cafes.|spendthrift, idler, good-for-nothing|
+zealotry|Can zealotry be dangerous?|Fan zealotry turned the stadium into chaos.|fanaticism, extremism, fervor|moderation
+syllogistic|Is the argument syllogistic?|Syllogistic logic links two premises to a conclusion.|logical, deductive|
+inductive|Is the scientist using inductive logic?|Inductive guesses can still be wrong.|empirical, generalizing|deductive
+deductive|Is chess a deductive game?|Deductive puzzles train your brain.|logical, inferential|inductive
+epistemic|Why is this an epistemic question?|Epistemic humility means admitting what you don't know.|cognitive, knowledge-related|
+teleological|Is the explanation teleological?|Teleological thinking assumes everything has a goal.|purposive, goal-directed|
+ontological|Is that an ontological question?|Ontological debates ask whether numbers are real.|metaphysical, existential|
+dialectical|How does dialectical thinking work?|Dialectical debates sharpen both sides.|argumentative, logical|
+priming|How does priming affect memory?|Hearing "yellow" first is priming for "banana."|cueing, preparing|
+attribution|Who gets attribution for the photo?|Proper attribution is part of honest writing.|credit, ascription, citation|
+sublimation|Can ice undergo sublimation?|She used sublimation to turn anger into running.|vaporization, redirection|
+rationalization|Is that a rationalization?|Rationalization helped him justify eating dessert.|excuse, justification, pretext|
+confabulation|Is confabulation the same as lying?|Confabulation fills gaps without meaning to deceive.|fabrication, false memory|
+introversion|Is introversion a weakness?|People often mistake introversion for rudeness.|reserve, shyness, inwardness|extroversion
+extroversion|How does extroversion help in sales?|Extroversion made him the life of the party.|sociability, outgoingness|introversion
+psychosomatic|Can worry cause psychosomatic pain?|Psychosomatic stomachaches came before every test.|mind-body, stress-related|
+morpheme|Which morpheme in "unhappy" means "not"?|The morpheme "-ed" shows past tense.|word part, unit of meaning|
+phoneme|Which phoneme starts the word "cat"?|Babies learn each phoneme by listening.|speech sound|
+lexeme|Is "go" a lexeme?|A dictionary lists each lexeme once.|word, term|
+semantics|Is this just a matter of semantics?|Semantics helps computers understand questions.|meaning, interpretation|
+pragmatics|What does pragmatics study?|Sarcasm is a puzzle for pragmatics.|contextual meaning|
+etymon|What is the etymon of "breakfast"?|An etymon can be very old.|root, origin, source|
+cognate|Is "mother" a cognate of "madre"?|Cognate words help language learners.|related word, relative|
+loanword|Is "sushi" a loanword?|Every loanword tells a story of contact.|borrowing, borrowed word|
+calque|Is "flea market" a calque?|A calque translates a phrase piece by piece.|loan translation|
+archaism|Why use an archaism in a poem?|"Ye olde shoppe" uses an archaism for charm.|old word, relic|neologism
+idiolect|Does your family have its own idiolect?|Her idiolect mixes Spanish and English.|personal dialect, speech style|
+pidgin|How does a pidgin form?|Sailors invented a pidgin to trade.|contact language, lingua franca|
+creole|Is a creole a real language?|Haitian creole is spoken by millions.|mixed language|
+diacritic|Which diacritic changes the sound?|A diacritic can change a word's meaning.|accent, mark|
+orthography|Why is English orthography so strange?|Orthography rules say "i before e" sometimes.|spelling, writing system|
+palindrome|Can you think of a palindrome?|"Was it a cat I saw?" is a palindrome.|mirror word|
+anagram|Can you make an anagram of your name?|"Earth" is an anagram of "heart."|word scramble|
+homophone|Is "flower" a homophone of "flour"?|Kids mix up each homophone in writing.|sound-alike|
+homograph|Is "bow" a homograph?|A homograph can trick readers.|same-spelled word|
+eponym|Who is the eponym of the teddy bear?|Each eponym honors a real person.|namesake, title|
+toponym|What toponym means "red river"?|Many a toponym comes from old languages.|place name, geographical name|
+monopsony|Is the factory a monopsony?|A monopsony can set low prices for farmers.|sole buyer|monopoly
+underwriter|What does an underwriter do?|An underwriter checked the risk of the new building.|insurer, guarantor|
+actuary|Is being an actuary a good job?|An actuary uses math to predict risk.|statistician, risk analyst|
+amortization|How does amortization work?|Amortization tables show each payment.|repayment, payoff|
+accrual|How does interest accrual work?|Accrual accounting records income when it's earned.|accumulation, buildup|
+liquidation|What happens in a liquidation?|Liquidation prices drew huge crowds.|selloff, closing, dissolution|
+receivership|Why was the company in receivership?|Receivership saved the factory from closing.|administration, trusteeship|
+insolvency|What usually causes insolvency?|Careful budgeting helps avoid insolvency.|bankruptcy, ruin, failure|solvency
+speculator|Is a speculator the same as an investor?|A land speculator bought the swamp cheap.|gambler, risk-taker, trader|
+protectionism|Why do some leaders favor protectionism?|Protectionism protects local farmers from imports.|trade barriers, tariffs|free trade
+gentrification|How does gentrification change a neighborhood?|Gentrification brought coffee shops and higher prices.|urban renewal, upscaling|
+urbanization|What causes rapid urbanization?|Urbanization turned the farmland into suburbs.|city growth, development|
+monomer|What is a monomer?|A monomer is like a single bead on a necklace.|building block, unit|polymer
+covalent|What is a covalent bond?|Covalent sharing holds diamonds together.|electron-sharing|ionic
+ionic|Is salt an ionic compound?|Ionic charges attract like magnets.|charged, electrostatic|covalent
+oxidation|Why does oxidation turn apples brown?|Oxidation slowly weakens old metal bridges.|rusting, corrosion|reduction
+electrolysis|How does electrolysis work?|Electrolysis is used to plate jewelry with gold.|electrochemical splitting|
+nucleotide|How many types of nucleotide are in DNA?|Every nucleotide pairs with a partner.|base, building block|
+ribosome|What does a ribosome make?|A ribosome works like a tiny factory.|organelle|
+transpiration|How does transpiration help plants?|Transpiration pulls water up from the roots.|evaporation, vapor loss|
+trophic|What is a trophic level?|Trophic cascades begin when wolves return.|nutritional, feeding|
+speciation|What causes speciation in animals?|Speciation gave rise to many finch types.|species formation, divergence|
+convergent|Are dolphins and sharks an example of convergent evolution?|Convergent paths led the two hikers to the same peak.|merging, meeting, coinciding|divergent
+vestigial|Is the tailbone vestigial?|Vestigial wings remain on some flightless birds.|rudimentary, leftover, remnant|functional
+homologous|Are whale fins and human hands homologous?|Homologous bones show a shared ancestor.|corresponding, matching, similar|analogous
+tableau|Did the play end with a tableau?|A tableau of autumn leaves filled the window.|scene, picture, display|
+intaglio|What is an intaglio print?|An intaglio seal pressed a crest into wax.|engraving, incised design|relief
+lithograph|Is that poster a lithograph?|A vintage lithograph hung in the hallway.|print|
+etching|How is an etching made?|A tiny etching of a bird decorated the card.|engraving, print|
+woodcut|Have you ever made a woodcut?|A woodcut of a fox illustrated the story.|block print, engraving|
+serigraph|Is a serigraph the same as a screen print?|A bright serigraph decorated the dorm room.|silkscreen print|
+armature|What is inside the statue's armature?|An armature of chicken wire shaped the papier-mâché.|frame, framework, skeleton|
+pentimento|Can you see the pentimento in this painting?|A faint pentimento showed an earlier hat.|trace, ghost image|
+grisaille|Why paint in grisaille?|A grisaille panel looks like carved marble.|monochrome, gray painting|
+anamorphosis|Can you see the hidden anamorphosis?|Chalk anamorphosis makes a sidewalk look like a cliff.|distortion, optical illusion|
+montage|Do you like a good movie montage?|A montage of baby photos played at the party.|collage, compilation, medley|
+auteur|Is the director an auteur?|Every auteur has a signature look.|filmmaker, director, author|
+egalitarianism|What does egalitarianism mean in a family?|Egalitarianism means everyone gets a vote.|equality, fairness|elitism
+impasse|How do you break an impasse?|The debate team reached an impasse over pizza toppings.|deadlock, stalemate, standstill|breakthrough
+idyll|Was your vacation an idyll?|The farm in spring was a perfect idyll.|paradise, heaven, utopia|nightmare
+gallantry|Is gallantry old-fashioned today?|The firefighter received a medal for gallantry.|bravery, courage, chivalry|cowardice
+pantheon|Who belongs in the pantheon of rock music?|The ancient Greek pantheon had twelve major gods.|gods, deities, hall of fame|
+oeuvre|What is the best film in her oeuvre?|His oeuvre spans painting and sculpture.|body of work, output|
+patois|Do you speak the local patois?|The fishermen joked in their patois.|dialect, vernacular, jargon|
+portmanteau|Is "spork" a portmanteau?|An old portmanteau sat in the attic.|blend, suitcase, trunk|
+precis|Can you write a precis of the chapter?|The precis fit on an index card.|summary, synopsis, abstract|
+prosody|How does prosody change meaning?|Poets play with prosody to create rhythm.|meter, rhythm, intonation|
+polyphony|What is polyphony in music?|A busy city street is a polyphony of sounds.|counterpoint, harmony|monophony
+spoonerism|Can you make up a spoonerism?|"Tons of soil" for "sons of toil" is a spoonerism.|slip of the tongue|
+shambolic|Why was the parade so shambolic?|Shambolic piles of laundry covered the floor.|chaotic, disorganized, messy|orderly
+scintillate|Do diamonds scintillate in the light?|Her jokes always scintillate at dinner.|sparkle, glitter, twinkle|
+winnow|How do farmers winnow grain?|Editors winnow hundreds of stories each month.|sift, filter, separate|
+rhapsodize|Why do you rhapsodize about tacos?|Fans rhapsodize about the band's first album.|gush, rave, enthuse|criticize
+colloquium|Who will speak at the colloquium?|A colloquium on bees met at the college.|seminar, conference, symposium|
+dirigible|Have you ever seen a dirigible?|The dirigible drifted slowly over the park.|airship, blimp, zeppelin|
+debenture|What is a debenture?|A debenture promises to repay with interest.|bond, certificate, loan|
+tendentious|Is the article tendentious?|Tendentious headlines push one side.|biased, partisan, one-sided|impartial
+arrogate|Why arrogate a title you didn't earn?|Some leaders arrogate powers they don't have.|seize, usurp, appropriate|
+aureole|Did you see the aureole around the moon?|An aureole of light framed her face.|halo, nimbus, corona|
+bagatelle|Is the cost just a bagatelle?|The pianist played a cheerful bagatelle.|trifle, triviality, ditty|
+prescience|Did his prescience surprise you?|Prescience about the storm saved the crops.|foresight, foreknowledge, vision|
+perspicacity|Where did she get her perspicacity?|Detectives need great perspicacity.|insight, shrewdness, acuity|obtuseness
+valediction|What was the valediction at the end of the letter?|A short valediction closed the ceremony.|farewell, goodbye, send-off|greeting
+vespers|What time is vespers?|Soft singing at vespers filled the abbey.|evening prayer, evensong|matins
+fabulist|Is the author a fabulist?|My uncle is a fabulist about his fishing trips.|storyteller, fabler, liar|
+sesquicentennial|When is the school's sesquicentennial?|Fireworks marked the city's sesquicentennial.|anniversary, jubilee|
+tittle|Did you change a single tittle?|The lawyer read every jot and tittle.|iota, jot, particle|
+tosh|Isn't that rumor tosh?|What a load of tosh, said Grandpa.|nonsense, rubbish, drivel|sense
+soupcon|Would you like a soupcon of cream?|A soupcon of lemon brightened the soup.|trace, hint, dash|
+sanctum|Where is your sanctum?|The tree house was the kids' sanctum.|sanctuary, retreat, refuge|
+peroration|Was the peroration inspiring?|The coach's peroration fired up the team.|conclusion, summation, finale|introduction
+coterminous|Are the city and county coterminous?|The festival is coterminous with the full moon.|concurrent, coextensive|
+appellate|What does an appellate judge do?|The appellate ruling overturned the verdict.|appeals, reviewing|
+junta|How long did the junta rule?|The junta closed the newspapers.|regime, cabal, faction|
+conglomerate|Who owns the conglomerate?|Rock conglomerate contains pebbles cemented together.|corporation, group, combine|
+epidemiology|Why does epidemiology matter?|Epidemiology tracks the flu across the country.|public health science|
+malignant|Was the tumor malignant?|A malignant rumor spread through the office.|harmful, dangerous, malevolent|benign
+maxim|What is your favorite maxim?|A maxim on the wall said "Be kind."|saying, adage, proverb|
+treatise|Have you read the treatise on bees?|An old treatise on gardening sat on the shelf.|essay, study, dissertation|
+bylaw|Does the bylaw allow pets?|Each bylaw was read aloud at the meeting.|rule, regulation, ordinance|
+easement|Is there an easement across our yard?|An easement lets the neighbors reach the lake.|right of way, access|
+indemnity|Does the policy include indemnity?|Indemnity protected the shop after the fire.|compensation, insurance, protection|

@@ -1,0 +1,130 @@
+pour|Can you pour the juice without spilling?|Rain began to pour just as we got to the car.|tip, spill, flow|
+purr|Does a lion purr like a house cat?|My kitten started to purr on my lap.|hum, rumble|hiss
+race|Do you want to race me to the swings?|Snails can't race very fast.|run, dash, speed|crawl
+rattle|Do you hear the dishes rattle when the truck goes by?|Hail made the roof rattle all night.|clatter, shake, jingle|
+roar|Did you hear the crowd roar?|The engines began to roar on the runway.|bellow, howl, boom|whisper
+roll|Can you roll down the grassy hill?|Help me roll the yarn into a ball.|turn, spin, tumble|
+rustle|Something made the bushes rustle.|Can you hear the paper rustle in the bag?|crackle, swish|
+scoop|Use a cup to scoop the dog food.|Can you scoop sand into the bucket?|dip, ladle, spoon|
+scratch|Does your dog scratch at the door?|Try not to scratch your new car.|scrape, claw, rub|
+scribble|Please don't scribble in the library book.|I like to scribble notes on sticky paper.|scrawl, doodle|
+shake|Can you shake hands like a grown-up?|Wet dogs shake water everywhere.|wiggle, rattle, jiggle|
+shuffle|Penguins shuffle across the ice.|Can you shuffle the cards for me?|drag, scuff, mix|march
+sing|Do birds sing more in the spring?|I sing my baby sister to sleep.|chant, hum, chirp|
+skip|Can you skip all the way to the corner?|Let's skip stones on the lake.|hop, bounce, prance|
+slide|Did you slide on the ice?|Penguins slide into the water.|glide, slip, skid|
+smile|What makes you smile?|My baby brother has a big smile.|grin, beam|frown
+sneeze|Cover your nose when you sneeze.|Do cats sneeze like people do?|achoo|
+snooze|Can I snooze for five more minutes?|Bears snooze all winter.|nap, doze, sleep|wake
+spin|Can you spin on one foot?|Spiders spin silk for their webs.|twirl, whirl, turn|
+splatter|Mud will splatter if you stomp in it.|Did the rain splatter your window?|splash, spatter, spray|
+squeak|Why does my chair squeak?|My new shoes squeak on the gym floor.|peep, creak, chirp|
+stack|Can you stack the plates in the cupboard?|We stack firewood by the shed.|pile, heap|scatter
+stir|Can you stir the pancake batter?|Please don't stir up trouble at dinner.|mix, blend, whisk|
+stroll|Let's stroll along the beach after lunch.|Old dogs like to stroll, not run.|walk, wander, amble|race, dash
+swing|Can you swing a bat?|Monkeys swing from tree to tree.|sway, rock|
+tickle|Don't tickle me, I'll laugh!|Grass can tickle your bare feet.|touch, poke|
+tiptoe|Can you tiptoe without making a sound?|Ballet dancers dance on tiptoe.|creep, sneak|stomp
+trot|Our dog likes to trot next to my bike.|Watch the horse trot around the field.|jog, run|walk
+tug|Babies tug on your hair.|Did you feel a tug on the fishing line?|pull, yank, jerk|push
+whistle|Did the train whistle as it came in?|Coach blew her whistle to start the game.|toot, pipe|
+wink|Did the puppet just wink at me?|Can you wink with your left eye?|blink|
+wobble|My bike tends to wobble when I go slow.|Did the table wobble when you leaned on it?|shake, sway, teeter|steady
+wrap|Can you help me wrap the presents?|Wrap a scarf around your neck.|cover, fold, bundle|unwrap
+acorn|An oak tree grows from a tiny acorn.|We found an acorn with a little cap.|nut, seed|
+alphabet|What is the last letter of the alphabet?|Can you say the alphabet backward?|letters|
+apron|My apron is covered in flour.|Chefs wear an apron in the kitchen.|smock, pinafore|
+backpack|Did you zip your backpack?|My backpack has a dinosaur on it.|bag, pack, knapsack|
+bakery|Let's stop at the bakery for a muffin.|The bakery opens early in the morning.|bake shop, pastry shop|
+balloon|Can you blow up this balloon?|The hot air balloon floated over the hills.|bubble|
+beehive|Is honey kept inside the beehive?|Stay far from that beehive!|hive|
+blizzard|We built a snow fort after the blizzard.|During the blizzard, we couldn't see the barn.|snowstorm, storm|
+boulder|Can you climb that big boulder?|The boulder was too heavy to move.|rock, stone|pebble
+butterfly|What colors are on the butterfly's wings?|I painted a butterfly on my cheek.|moth|
+calendar|What day is it on the calendar?|Our calendar has a puppy for each month.|planner, schedule|
+campfire|Let's tell stories around the campfire.|Put out the campfire before bed.|bonfire, fire|
+caterpillar|What will the caterpillar turn into?|A green caterpillar ate holes in our lettuce.|larva, grub|
+cloud|What shape is that cloud?|Not one cloud was in the sky.|mist, puff|
+comet|Have you ever seen a comet?|A comet flies around the sun.|meteor|
+costume|What costume will you wear for Halloween?|I made a robot costume out of boxes.|outfit, disguise|
+crayon|My crayon broke in half.|Which crayon color do you like best?|pencil, marker|
+dolphin|A dolphin talks with clicks and whistles.|Can a dolphin sleep with one eye open?|porpoise|
+dragonfly|Is a dragonfly fast?|We watched a dragonfly land on a reed.|bug, insect|
+earthquake|What should you do in an earthquake?|After the earthquake, the books were on the floor.|tremor, quake|
+feather|Can a feather float in the air?|A peacock feather has an eye on it.|plume, quill|
+firefly|Did you catch a firefly?|Each firefly flashed its little light.|lightning bug|
+flashlight|Can you find the flashlight in the dark?|We read under the covers with a flashlight.|torch, lamp|
+forest|Have you ever camped in a forest?|The forest was quiet and green.|woods, woodland|desert
+garden|Can we plant carrots in the garden?|Grandma's garden is full of roses.|yard, patch, bed|
+giraffe|Why does a giraffe have such a long neck?|A baby giraffe is taller than a grown-up.|animal|
+hammock|Can two people fit in a hammock?|We swung in the hammock all afternoon.|swing, sling|
+hedgehog|Have you ever held a hedgehog?|A hedgehog eats bugs and worms.|animal|
+iceberg|Did a ship crash into an iceberg?|Seals rested on the iceberg.|ice, glacier|
+igloo|Is it warm inside an igloo?|Our snow igloo melted in the sun.|snow house|
+jellyfish|Do not touch a jellyfish on the beach!|Some jellyfish glow in the dark.|sea jelly|
+kitten|Can I hold the kitten?|Our kitten loves to play with yarn.|cat, kitty|
+ladder|Climb the ladder to the slide.|Firefighters use a tall ladder.|steps, rungs|
+lighthouse|Does someone live in the lighthouse?|A lighthouse helps ships find their way.|beacon, tower|
+map|Can you find our town on the map?|Pirates follow a treasure map.|chart, guide|
+marble|Which marble is your favorite?|A marble rolled across the floor.|ball|
+mitten|Where is my other mitten?|My mitten has a hole in the thumb.|glove|
+moon|Have you ever seen the moon in the daytime?|Astronauts have walked on the moon.|satellite|sun
+mountain|Is there snow on the mountain?|The mountain was so tall it touched the clouds.|peak, hill|valley
+museum|Can we go to the museum this weekend?|There's a real mummy in this museum!|gallery, exhibit|
+music|What music do you like to dance to?|Turn the music down, please.|songs, tunes|silence
+octopus|Can an octopus change color?|An octopus can squeeze through tiny holes.|sea creature|
+orchard|Let's pick peaches at the orchard.|Bees buzzed through the orchard.|grove|
+owl|Can an owl turn its head all the way around?|A white owl sat on the fence.|bird|
+parade|Did you see the floats in the parade?|We waved flags at the parade.|march, procession|
+penguin|Can a penguin fly?|A penguin keeps its egg on its feet.|bird|
+picnic|What should we pack for the picnic?|Ants came to our picnic!|outdoor meal, lunch|
+pillow|Let's have a pillow fight!|My pillow is soft and squishy.|cushion|
+pirate|Would you like to be a pirate?|Every pirate in the story wanted gold.|buccaneer, sailor|
+playground|Can we go to the playground after school?|The playground was full of kids.|park, play area|
+pumpkin|Can we pick a pumpkin at the farm?|My pumpkin has a silly face.|squash, gourd|
+rainbow|How many colors are in a rainbow?|Look, a rainbow over the lake!|arc, spectrum|
+robot|Would you like a robot to do your chores?|My robot can dance and blink.|machine|
+rocket|How fast does a rocket go?|We made a rocket out of a bottle.|spaceship|
+sandcastle|Let's build a sandcastle with towers.|My sandcastle has a moat.|castle|
+scarecrow|Do crows really fear a scarecrow?|Our scarecrow wears an old straw hat.|figure|
+seashell|Can you hear the ocean in a seashell?|We made a necklace from a seashell.|shell|
+snowflake|Can you catch a snowflake on your tongue?|I cut a paper snowflake for the window.|flake|
+spider|Is that spider in the corner real?|A spider has eight legs.|bug|
+squirrel|Where does a squirrel hide its nuts?|Look, that squirrel ran off with my sandwich!|chipmunk|
+sunflower|Can a sunflower turn to follow the sun?|We grew a sunflower taller than Dad.|flower, bloom|
+sunrise|Is the sky pink at sunrise?|Roosters crow at sunrise.|dawn, daybreak|sunset
+sunset|Let's watch the sunset from the hill.|We have to be home by sunset.|dusk, sundown|sunrise
+tadpole|Does a tadpole have legs?|We kept a tadpole in a jar for a day.|polliwog|
+teacher|Who was your first teacher?|The teacher wrote on the board.|instructor, tutor|student
+tent|Can we sleep in a tent tonight?|The wind shook our tent.|shelter|
+thermometer|Mom used a thermometer to check my fever.|What does the thermometer say today?|gauge|
+tortoise|Can a tortoise live for a hundred years?|A tortoise can hide in its shell.|turtle|
+tractor|Can I ride on the tractor?|The red tractor got stuck in the mud.|machine|
+treehouse|Let's build a treehouse with a rope ladder.|My treehouse has a secret door.|fort, hideout|
+umbrella|My umbrella turned inside out!|Open your umbrella; it's raining.|parasol|
+valley|Can you see the valley from the top?|Sheep grazed in the green valley.|hollow, dale|peak, mountain
+wagon|Can I ride in the wagon?|We loaded the wagon with firewood.|cart|
+whale|How big is a blue whale?|A whale sang under the water.|sea mammal|
+wind|Can you hear the wind howling?|The wind made the kite fly high.|breeze, gust|
+zebra|Is a zebra black with white stripes, or white with black stripes?|A zebra kicked up dust.|animal|
+zoo|Which animal do you want to see at the zoo?|The zoo has a new baby panda.|animal park|
+friendship|What makes a good friendship?|A card can show your friendship.|bond, closeness|
+kindness|Small acts of kindness make people smile.|Can you show kindness to a new kid?|caring, goodness|cruelty, meanness
+courage|Where did the lion find its courage?|My sister showed courage at the swim test.|bravery, nerve|fear
+patience|Do you have the patience to build a puzzle?|My dad has lots of patience with me.|calm|impatience
+surprise|What a nice surprise!|Don't tell; it's a surprise.|shock, treat|
+wish|What would your wish be?|Blow on a dandelion and make a wish.|hope, dream|
+idea|Whose idea was it to paint the dog?|What a great idea!|thought, plan|
+question|Do you have a question for me?|That's a tricky question.|ask, query|answer
+story|What's your favorite story?|Grandpa has a funny story about a goat.|tale, account|
+joke|Do you know a good joke?|Was that a joke or the truth?|gag, riddle|
+secret|Shh, it's a secret!|Do you have a secret hiding spot?|mystery|
+rule|What's the first rule of the game?|Please follow the rule about running.|law, order|
+vote|Did you vote for the class pet's name?|We will vote by raising our hands.|choose, elect|
+team|Which team won the game?|Our team built the best robot.|group, crew, side|
+leader|Who will be the leader of the line?|A good leader listens to everyone.|chief, head, boss|follower
+mayor|What does the mayor do all day?|The mayor came to our parade.|town leader|
+law|Why is there a law about speed?|A new law protects the forest.|rule|
+community|How can we help our community?|The whole community came to the fair.|neighborhood, town|
+citizen|What can a citizen do to help the town?|A citizen can vote when they grow up.|resident, member|
+librarian|Did the librarian read us a story?|Our librarian knows every book on the shelf.|book keeper|

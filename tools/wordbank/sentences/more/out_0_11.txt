@@ -1,0 +1,14 @@
+cursor|Where did the cursor go?|Click where the cursor is flashing.|pointer, arrow|
+pixel|How many pixels are on your screen? Each pixel is tiny.|Zoom in until you can see a single pixel.|dot|
+spam|Is this email real or spam?|We got so much spam that we changed our address.|junk mail|
+upload|Can you upload the video for Grandma?|It took ages to upload the big file.|send, post|download
+download|Can we download the song?|The game is still trying to download.|save, get|upload
+username|What's your username in the game?|Never use your real name as your username.|login, screen name|
+glitch|Was that a glitch, or did I lose?|There's a glitch in the clock; it says 99:99.|bug, error, hiccup|
+avatar|Can I change my avatar to a cat?|My avatar wears a little crown.|icon, character|
+backup|Do you have a backup of your story?|We keep a backup flashlight in the car.|copy, spare|
+hurricane|What should we pack if a hurricane comes?|The hurricane knocked over our fence.|storm, cyclone, typhoon|
+hail|Is that rain or hail?|The hail made the grass look white.|sleet, ice|
+fog|Can you see through the fog?|The ship's horn blew in the thick fog.|mist, haze|
+mist|Can you feel the mist from the sprinkler?|The garden was wet with morning mist.|fog, haze, spray|
+thaw|When will the pond thaw?|The frozen pipes began to thaw by noon.|melt, defrost|freeze

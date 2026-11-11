@@ -1,0 +1,130 @@
+mephitic|What is that mephitic odor?|A mephitic cloud drifted from the skunk's hiding place.|noxious, foul, fetid|fragrant
+nidorous|Why does the kitchen smell so nidorous?|Nidorous smells drifted from the food stalls.|meaty, smoky, burnt|
+stridulate|How do crickets stridulate?|Katydids stridulate from the treetops all evening.|chirp, rasp, chirr|
+euphonious|Is your name euphonious?|Euphonious birdsong filled the garden.|melodious, harmonious, sweet|cacophonous
+glaucous|Why are the leaves glaucous?|Glaucous waves rolled under a cloudy sky.|blue-green, gray-green, sea-green|
+smaragdine|Have you seen smaragdine water?|Smaragdine moss covered the stones.|emerald, green|
+fulvous|Is the lion's mane fulvous?|Fulvous light filled the autumn barn.|tawny, golden, reddish-yellow|
+viridescent|Why is the bread viridescent?|Viridescent algae spread across the pond.|greenish, verdant|
+chatoyant|Why is the cat's eye chatoyant?|Chatoyant silk shimmered in the window.|iridescent, lustrous, shimmering|dull
+umbral|Do you like umbral photography?|Umbral shapes moved across the moonlit lawn.|shadowy, shaded, dark|bright
+vulpine|Why is the salesman so vulpine?|Vulpine cunning helped the fox steal the cheese.|foxy, crafty, cunning|
+ursine|Why is the wrestler so ursine?|An ursine figure lumbered through the fog.|bearlike|
+corvine|Have you heard corvine calls at dawn?|Corvine eyes watched us from the fence.|crowlike, ravenlike|
+leonine|Who has a leonine face?|Leonine roars came from the zoo.|lionlike, feline, majestic|
+ophidian|Why does the dancer move in an ophidian way?|Ophidian tracks crossed the sand.|serpentine, snakelike|
+piscine|Do you like piscine creatures?|Piscine smells drifted from the harbor.|fishlike, fishy, aquatic|
+apian|Is the hive full of apian activity?|Apian buzz filled the clover field.|beelike|
+cervine|Have you seen cervine tracks?|Cervine eyes glowed in the headlights.|deerlike|
+hircine|Why does the barn smell hircine?|Hircine bleats echoed across the hillside.|goatlike|
+litotes|Can you give an example of litotes?|"He's no fool" is litotes for "he's clever."|understatement, meiosis|hyperbole
+anaphora|Why do speeches use anaphora?|Anaphora gives a poem a drumbeat.|repetition|
+chiasmus|Can you write a chiasmus?|Chiasmus makes a slogan memorable.|antimetabole, inversion|
+aposiopesis|Why end the line with aposiopesis?|Aposiopesis leaves the reader hanging.|break-off|
+hendiadys|Is "nice and warm" a hendiadys?|A hendiadys joins two nouns to make one idea.|figure of speech|
+bildungsroman|What is your favorite bildungsroman?|Every bildungsroman ends with growing up.|coming-of-age novel|
+ekphrasis|Have you written an ekphrasis?|An ekphrasis of a vase is a famous poem.|description, word painting|
+kenning|What is a kenning for the sea?|"Bone-house" is a kenning for the body.|metaphor, compound|
+euphuism|Why does euphuism sound so fancy?|Euphuism was once fashionable at court.|affectation, flowery style|plainness
+macaronic|Have you heard a macaronic song?|Macaronic jokes mix English and French.|bilingual, mixed|
+lexiphanic|Why is the essay so lexiphanic?|Lexiphanic speeches impress no one.|pretentious, bombastic, grandiloquent|plain
+apophenia|Is apophenia the same as superstition?|Apophenia turns static into secret messages.|pattern-seeing|
+pareidolia|Have you experienced pareidolia?|Pareidolia makes clouds look like dragons.|face-seeing, illusion|
+casuistry|Why rely on casuistry?|Casuistry made the excuse sound reasonable.|sophistry, rationalization, quibbling|
+apodictic|Is the claim apodictic?|Apodictic proofs end every argument.|indisputable, certain, incontrovertible|doubtful
+aporia|Did the debate end in aporia?|Aporia struck when both answers seemed right.|puzzlement, impasse, doubt|certainty
+ratiocination|Was the solution reached by ratiocination?|Ratiocination solved the locked-room mystery.|reasoning, logic, deduction|intuition
+syncretism|Is the festival an example of syncretism?|Syncretism blended two old religions.|fusion, blending, synthesis|
+entelechy|What is the entelechy of a seed?|A butterfly is the caterpillar's entelechy.|realization, actuality, fulfillment|potential
+haecceity|What gives a place its haecceity?|Haecceity makes your dog yours and no other.|thisness, individuality|
+gerontocracy|Is the council a gerontocracy?|Gerontocracy slowed every reform.|rule by elders|
+kleptocracy|How does a kleptocracy hurt citizens?|Kleptocracy left the roads full of potholes.|corrupt government|
+plutocracy|Is the country a plutocracy?|Plutocracy lets money buy elections.|oligarchy, rule by the rich|democracy
+ochlocracy|Why is ochlocracy so dangerous?|Ochlocracy ruled the angry village in the fable.|mob rule|
+irredentism|What usually drives irredentism?|Irredentism made the peace treaty fragile.|expansionism, nationalism|
+suzerainty|What does suzerainty mean?|Suzerainty let the little kingdom keep its own laws.|overlordship, dominion|independence
+primogeniture|Is primogeniture a fair custom?|Primogeniture shaped which children got land.|birthright, seniority|
+quondam|Who was your quondam teacher?|My quondam roommate now lives abroad.|former, erstwhile, onetime|current
+betimes|Why did you rise betimes?|Arrive betimes to get the best seats.|early, promptly, in good time|late
+aeonian|Are the mountains aeonian?|Aeonian stars watch over the desert.|eternal, everlasting, timeless|brief
+accoutrements|What accoutrements does a knight need?|Kitchen accoutrements filled every drawer.|gear, trappings, equipment|
+impedimenta|Why bring so much impedimenta?|Impedimenta slowed the army's march.|baggage, gear, luggage|
+reliquary|What is in the reliquary?|A golden reliquary held the saint's ring.|shrine, casket, case|
+orrery|How does an orrery work?|An antique orrery sat on the professor's desk.|planetarium, model|
+astrolabe|What can an astrolabe measure?|Sailors used an astrolabe to find latitude.|navigational instrument|
+clepsydra|How does a clepsydra keep time?|A clepsydra measured each athlete's turn.|water clock|
+tchotchke|Where did you buy that tchotchke?|A tiny tchotchke hung from the rearview mirror.|trinket, knickknack, bauble|
+esculent|Are the berries esculent?|Esculent roots fed the explorers.|edible, eatable, comestible|inedible
+viand|Which viand did you enjoy most?|A viand of roast duck arrived on silver.|food, dish, delicacy|
+victuals|Who packed the victuals?|Victuals for the campers filled three coolers.|food, provisions, grub|
+refection|Shall we stop for refection?|Refection at the inn lifted our spirits.|refreshment, snack, meal|
+sinistral|Is the guitarist sinistral?|Sinistral students need special scissors.|left-handed|dextral
+dextral|Are you dextral or sinistral?|Dextral spirals turn clockwise.|right-handed|sinistral
+proprioception|How does proprioception help athletes?|Proprioception helps you walk in the dark.|body awareness, kinesthesia|
+sternutation|What usually causes sternutation?|Sternutation followed every whiff of pepper.|sneezing|
+oscitation|Why is oscitation contagious?|Oscitation swept the bus on the long ride.|yawning|
+singultus|How do you cure singultus?|Singultus interrupted her speech.|hiccup, hiccough|
+horripilation|What usually causes horripilation?|Horripilation followed the spooky story.|goosebumps, goose flesh|
+perambulate|Shall we perambulate the park?|Tourists perambulate the old city walls.|stroll, saunter, wander|
+divagate|Why does the lecture divagate?|Rivers divagate across the flat plain.|digress, wander, ramble|
+caracole|Can the horse caracole?|Dressage horses caracole with elegance.|wheel, turn|
+gambol|Why do lambs gambol?|Dolphins gambol in the bow wave.|frolic, romp, caper|
+lollop|Why does the hare lollop like that?|Floppy-eared rabbits lollop across the lawn.|lope, bound, bounce|
+saltation|What is saltation in geology?|Saltation carries pebbles down the stream.|leaping, jumping, bounding|
+purlieu|What lies in the purlieu of the forest?|Small farms dot the purlieu of the city.|outskirts, environs, neighborhood|center
+fastness|Where is the bandits' fastness?|A rocky fastness sheltered the eagles.|stronghold, fortress, citadel|
+acculturation|How long does acculturation take?|Acculturation is easier for young children.|assimilation, adaptation, integration|
+amortize|How long will it take to amortize the loan?|Businesses amortize big purchases over many years.|pay off, liquidate, spread out|
+apposite|Was the example apposite?|Apposite remarks kept the meeting on track.|apt, fitting, pertinent|inappropriate
+autarky|Is autarky possible today?|Autarky meant growing all their own food.|self-sufficiency, independence|interdependence
+bifurcate|Where does the river bifurcate?|Opinions bifurcate on the question of homework.|fork, split, divide|merge
+bricolage|Is the sculpture a bricolage?|Bricolage art turns trash into treasure.|assemblage, collage, patchwork|
+circumscribe|Should rules circumscribe free time?|Fences circumscribe the old garden.|limit, restrict, confine|expand
+commensurable|Are apples and oranges commensurable?|Commensurable units make comparison easy.|comparable, measurable|incommensurable
+commodify|Do apps commodify friendship?|Some fear tourism will commodify the culture.|commercialize, market|
+decouple|Can we decouple the trailer?|Engineers decouple train cars at the station.|separate, detach, disconnect|couple
+demarcate|How do you demarcate the garden?|Flags demarcate the race course.|delimit, mark, define|
+denotation|What is the denotation of "snake"?|Dictionaries give a word's denotation, not its mood.|meaning, definition|connotation
+deprecate|Why deprecate the old version?|Modest people deprecate their own talents.|disapprove, belittle, phase out|approve
+desideratum|What is the desideratum for a new car?|A comfy chair is the desideratum of any reader.|requirement, essential, need|
+diachronic|Is the study diachronic?|Diachronic charts show how slang changes.|historical, longitudinal|synchronic
+elide|Do you elide your vowels?|Fast speakers elide syllables.|omit, skip, slur|
+epitomize|What foods epitomize summer?|Fireflies epitomize warm July nights.|embody, represent, typify|
+exigency|What exigency forced the change?|Exigency demanded a quick repair.|urgency, emergency, necessity|
+explicate|Can you explicate the passage?|Teachers explicate tricky poems for students.|explain, interpret, elucidate|
+falsifiable|Is astrology a falsifiable theory?|Falsifiable predictions make science strong.|testable, refutable|unfalsifiable
+fungible|Are concert tickets fungible?|Gold bars are fungible.|interchangeable, exchangeable|unique
+imprimatur|Did the book get an imprimatur?|The chef's imprimatur made the recipe famous.|approval, endorsement, sanction|disapproval
+instantiate|How do you instantiate an object in code?|Characters instantiate the author's ideas.|exemplify, embody, create|
+interlocutor|Who was your interlocutor?|A patient interlocutor listened to every word.|conversationalist, speaker, partner|
+interpolate|Can you interpolate the missing number?|Scribes sometimes interpolate their own words.|insert, estimate, interject|
+liminal|Is dusk a liminal time?|Liminal moments feel strange and exciting.|transitional, in-between, threshold|
+marginalia|Do you write marginalia?|Marginalia in old books tells us about readers.|notes, annotations, glosses|
+metonymy|Is "the press" an example of metonymy?|Metonymy lets "the bench" mean judges.|substitution, figure of speech|
+polymath|Who is the greatest polymath you know?|A polymath can talk about anything.|genius, renaissance person, scholar|specialist
+promulgate|When will they promulgate the law?|Teachers promulgate the new rules on day one.|proclaim, announce, publicize|
+recapitulate|Can you recapitulate the story?|The final chorus will recapitulate the opening theme.|summarize, recap, review|
+reify|Why reify an abstract idea?|Monuments reify a nation's memory.|concretize, materialize|
+stratify|Does the school stratify students by age?|Wealth can stratify a society.|layer, rank, classify|
+subsume|Can one category subsume another?|"Pets" can subsume dogs and cats.|include, encompass, absorb|exclude
+syllogism|Can you write a syllogism?|The syllogism ended with a surprising conclusion.|deduction, argument|
+synchronic|Is the survey synchronic?|Synchronic snapshots freeze a language in time.|static, contemporary|diachronic
+synecdoche|Is "boots on the ground" synecdoche?|Synecdoche lets "bread" mean food.|metonymy, figure of speech|
+teleology|What does teleology try to explain?|Teleology asks what something is for.|purpose, finality|
+anthropocentric|Are most stories anthropocentric?|Anthropocentric thinking forgets about animals.|human-centered|ecocentric
+antinomy|What antinomy troubles philosophers?|Antinomy arises when two good laws conflict.|paradox, contradiction|
+apprise|Will you apprise the team of the change?|Pilots apprise passengers of turbulence.|inform, notify, tell|
+aspersion|Why cast aspersion on her work?|Aspersion is not argument.|slander, slur, smear|praise
+bellwether|Is the town a bellwether?|Sneaker sales are a bellwether of fashion.|indicator, barometer, leader|
+contravene|Does the plan contravene the rules?|Parking there would contravene the city law.|violate, breach, infringe|obey
+deontology|What does deontology say about promises?|Deontology says some acts are always wrong.|duty ethics|consequentialism
+disabuse|Can you disabuse him of the myth?|Facts will disabuse readers of the rumor.|correct, enlighten, set straight|mislead
+encumber|Why encumber yourself with so much luggage?|Heavy boots encumber a swimmer.|burden, hamper, impede|free
+enfranchise|When did the country enfranchise women?|Laws that enfranchise citizens strengthen democracy.|empower, grant voting rights|disenfranchise
+enunciate|Can you enunciate more clearly?|Teachers enunciate new words slowly.|pronounce, articulate, state|mumble
+epigraph|What does the epigraph say?|An epigraph from a lullaby opens the book.|quotation, inscription, motto|
+epiphenomenon|Is the rash an epiphenomenon?|Traffic is an epiphenomenon of a growing city.|byproduct, side effect|
+exculpatory|Was the letter exculpatory?|Exculpatory photos proved where he had been.|vindicating, absolving, exonerating|incriminating
+iconoclastic|Why is the artist so iconoclastic?|Iconoclastic chefs put strawberries on pizza.|rebellious, radical, unorthodox|conventional
+impute|Why impute blame to me?|Critics impute selfish motives to every donor.|attribute, ascribe, assign|
+incommensurate|Is the reward incommensurate with the risk?|Incommensurate pay drove workers to quit.|disproportionate, inadequate|commensurate

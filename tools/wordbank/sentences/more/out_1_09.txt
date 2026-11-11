@@ -1,0 +1,130 @@
+archaeologist|What tools does an archaeologist use?|Every archaeologist dreams of finding a lost city.|digger, scientist|
+architect|Who was the architect of that tall tower?|My uncle, an architect, drew our new porch.|designer, planner|
+astronomy|Why do you like astronomy?|Ancient sailors used astronomy to cross the sea.|stargazing|
+avenue|Which avenue has the bakery?|Trees lined the avenue on both sides.|street, boulevard, road|
+barge|How much can a barge carry?|Please don't barge into my room!|boat, push|
+boardwalk|Can we get ice cream on the boardwalk?|The boardwalk creaked under our feet.|walkway, promenade|
+bonfire|Who will light the bonfire?|Sparks flew up from the bonfire.|campfire, blaze|
+cabin|Would you like to live in a cabin in the woods?|Our cabin on the ship had a round window.|hut, lodge, cottage|mansion
+canal|How do boats go uphill in a canal?|We rode a boat through the canal.|waterway, channel|
+cargo|What cargo does that truck carry?|The plane's cargo was full of mail.|load, freight, goods|
+caravan|Where is the caravan heading?|Ducks crossed the road in a little caravan.|convoy, train, procession|
+carnival|What's your favorite carnival ride?|The carnival came to town for a week.|fair, festival|
+catapult|How far can your catapult launch a marshmallow?|We built a catapult with spoons and rubber bands.|slingshot, launcher|
+cathedral|How old is the cathedral?|Sunlight poured through the cathedral windows.|church|
+chapel|Is the chapel open to visitors?|A tiny chapel sat on the hill.|church, shrine|
+coastline|How long is the coastline of the state?|Lighthouses dot the coastline.|shore, coast, seaboard|
+countryside|Do you like the city or the countryside?|Cows grazed all over the countryside.|country, farmland|city
+crossroads|Which way should we go at the crossroads?|My brother is at a crossroads about his future.|intersection, junction|
+cruise|Would you like to go on a cruise?|Let's cruise down the river on our bikes.|voyage, trip, sail|
+dam|What happens if the dam breaks?|We made a dam of rocks in the creek.|barrier, wall|
+detour|Why did we take a detour?|Our detour led to a hidden waterfall.|bypass, side road|shortcut
+dock|Can we jump off the dock?|The ship will dock at noon.|pier, wharf, landing|
+ferry|How long is the ferry ride?|A ferry carries cars across the bay.|boat|
+globe|Can you find the ocean on the globe?|Travelers come from all over the globe.|world, sphere, earth|
+gondola|Is the gondola ride scary?|The gondola swayed over the trees.|cable car, boat|
+gorge|How deep is the gorge?|Don't gorge yourself on candy!|canyon, ravine, valley|
+hike|Can we hike to the top of the hill?|The hike took us past a waterfall.|walk, trek, ramble|
+hut|Who lives in the little hut?|We sheltered in a hut during the rain.|shack, cabin, shed|mansion
+inn|Is there an inn in the village?|The inn had a sign shaped like a goose.|lodge, hotel|
+jetty|Can we fish from the jetty?|Seagulls sat along the jetty.|pier, breakwater|
+lodge|Is the lodge warm and cozy?|A beaver's lodge is made of sticks.|cabin, cottage|
+marina|How many boats are in the marina?|We watched the sunset from the marina.|harbor, dock|
+mill|What did the mill grind long ago?|A wheel turns in the stream beside the mill.|factory, grinder|
+observatory|Can we visit the observatory at night?|The observatory dome opened to the stars.|telescope house|
+outpost|Who lives at the outpost?|The fort was once a lonely outpost.|post, station, camp|
+pagoda|How many levels does the pagoda have?|The red pagoda stood in the garden.|tower, temple|
+pavilion|Can we have the party in the pavilion?|Rain drummed on the pavilion roof.|shelter, tent|
+pier|Is there a carousel on the pier?|We walked to the end of the pier.|dock, wharf, jetty|
+plaza|Is there a fountain in the plaza?|Musicians played in the plaza.|square, courtyard|
+port|Which port will the ship stop at?|The port was busy with cranes and ships.|harbor, dock|
+quarry|Can you swim in the old quarry?|Workers cut huge blocks from the quarry.|pit, mine|
+raft|Can we ride the raft down the river?|Otters float in a raft together.|float, boat|
+ranch|Have you been to a horse ranch?|Cowboys herd cattle on the ranch.|farm, spread|
+reservoir|Does our water come from the reservoir?|Ducks swim on the reservoir.|lake, pool, tank|
+resort|Is the resort near the beach?|Asking for help was my last resort.|hotel, retreat|
+schooner|How many sails does a schooner have?|A schooner sailed past the lighthouse.|sailboat, ship|
+shipwreck|What did divers find in the shipwreck?|Fish live inside the old shipwreck.|wreck|
+skyline|Can you see the skyline from your window?|The skyline glowed pink at dusk.|horizon, cityscape|
+skyscraper|How tall is the tallest skyscraper?|A window washer hung from the skyscraper.|tower, high-rise|
+stadium|How many people fit in the stadium?|The stadium lights came on at dusk.|arena, ballpark|
+steeple|Can you see the steeple from here?|A bird nested in the steeple.|spire, tower|
+subway|Have you ever ridden the subway?|A musician played in the subway station.|underground, metro|
+suburb|Do you live in a suburb or the city?|The suburb has lots of parks.|neighborhood, outskirts|city
+temple|How old is the temple?|Rub your temple if you have a headache.|shrine, place of worship|
+tourist|Where do tourists go in your town? Every tourist loves the bridge.|A tourist asked us for directions.|visitor, traveler|local
+trailhead|Is the bathroom at the trailhead?|Let's meet at the trailhead at noon.|trail start|
+tram|Does the tram go to the zoo?|The tram climbed the steep hill.|streetcar, trolley|
+trek|How long was your trek?|We had to trek through deep snow.|journey, hike, march|
+viaduct|How old is the viaduct?|A train crossed the viaduct high above the river.|bridge, overpass|
+vineyard|What grows in a vineyard?|The vineyard turned gold in the fall.|grape farm|
+wharf|Can we buy fish at the wharf?|Boats bumped against the wharf.|dock, pier, quay|
+windmill|Why does a windmill turn?|Every windmill on the hill spun in the breeze.|wind turbine|
+airfare|How much is the airfare?|We saved on airfare by flying early.|ticket price, fare|
+tollbooth|Do we need coins for the tollbooth?|The tollbooth worker waved hello.|toll gate|
+acid|Is vinegar an acid?|Acid in lemons makes them sour.|sour liquid|base
+anatomy|Do you like learning about anatomy?|An owl's anatomy helps it fly silently.|body structure|
+bacteria|Are all bacteria bad?|Yogurt has good bacteria.|germs, microbes|
+biology|What do you learn in biology?|Biology tells us how frogs grow.|life science|
+botany|Would you like to study botany?|Botany explains why leaves change color.|plant science|
+carbon|Why is carbon important?|Pencils are made with a kind of carbon.|element|
+cell|How small is a cell?|Our phone needs a new battery cell.|unit, compartment|
+chemical|What chemical makes soda fizz?|A chemical change happens when you bake a cake.|substance, compound|
+chlorophyll|What color is chlorophyll?|Plants use chlorophyll to catch sunlight.|green pigment|
+climate|What is the climate like where you live?|Bananas grow in a warm climate.|weather, conditions|
+condense|Why does water condense on a cold glass?|Can you condense the story into one sentence?|shorten, compress|expand, evaporate
+cycle|What's the life cycle of a frog?|Let's cycle to the park.|loop, round, ride|
+decompose|How long does a banana peel take to decompose?|Fallen logs decompose and feed the forest.|rot, decay, break down|
+dinosaur|Which dinosaur is your favorite?|My dinosaur toy roars when you press it.|reptile, fossil|
+element|Is iron an element?|Surprise is the key element of a good party.|part, piece, ingredient|
+exoskeleton|Does a spider have an exoskeleton?|A lobster's exoskeleton is hard and red.|shell, armor|
+germ|How small is a germ?|Every germ on your hands can make someone sick.|bug, microbe|
+lens|Is your camera lens dirty?|Glasses have a lens for each eye.|glass, eyepiece|
+magma|How hot is magma?|Magma cools to make new rock.|molten rock, lava|
+mantle|How deep is Earth's mantle?|Grandma's clock sits on the mantle above the fireplace.|layer, shelf|
+matter|Does air count as matter?|What's the matter? You look upset.|substance, stuff, material|
+membrane|What is the thin membrane in an egg?|A frog's foot has a thin membrane between its toes.|film, skin, layer|
+moisture|Why does bread lose its moisture?|Moisture beaded on the cold soda can.|dampness, wetness|dryness
+oxygen|Why do fish need oxygen?|Plants give us oxygen to breathe.|air|
+ozone|What does the ozone layer do?|The air smells like ozone after a storm.|gas|
+pressure|How does water pressure change when you dive?|Press the button with gentle pressure.|force, stress, push|
+prism|Can a prism make a rainbow indoors?|We hung a prism in the sunny window.|crystal, glass|
+protein|Which foods have the most protein?|Eggs are a great source of protein.|nutrient|
+pupa|How long does a butterfly stay a pupa?|The pupa hung still from the twig.|chrysalis, cocoon|
+retina|What does your retina do?|A camera's sensor works like a retina.|eye lining|
+spore|How does a spore travel?|One spore can grow into a whole mushroom.|seed, cell|
+stamen|Can you find the stamen in this flower?|Pollen sticks to the tip of the stamen.|flower part|
+thermal|Is your shirt thermal?|Birds glide on thermal currents.|heat, warm|
+toxic|Is that plant toxic to cats?|The toxic water was not safe to drink.|poisonous, harmful|safe, harmless
+virus|Is a cold caused by a virus?|We cleaned the virus off the laptop.|bug, germ|
+voltage|What voltage does a car battery have?|A volt meter shows the voltage.|power, charge|
+applause|Did the applause make you smile?|The applause shook the whole room.|clapping, cheers|boos
+audition|When is your audition?|She practiced her song for the audition.|tryout, test|
+backdrop|What backdrop did you paint?|Snowy hills were the backdrop for our photo.|background, scenery|foreground
+biography|Whose biography would you like to read?|The biography told how she became a pilot.|life story|
+cartoon|What's your favorite cartoon?|The cartoon dog wore a cape.|animation, comic|
+collage|What will you put in your collage?|My collage used old ticket stubs.|montage, patchwork|
+comic|Do you draw your own comic?|My uncle is a comic who tells jokes on stage.|cartoon, comedian, funny|
+composer|Who is your favorite composer?|Music for the movie came from a famous composer.|songwriter, musician|
+concert|What was the best concert you've been to?|The birds held a morning concert.|show, performance, recital|
+curtain|Can you open the curtain?|A curtain of rain swept across the field.|drape, screen|
+debut|When will the movie make its debut?|Her debut on the piano was a hit.|premiere, first show|farewell
+documentary|What documentary did you watch last?|We made a documentary about our town.|nonfiction film|
+easel|Can you set up the easel for me?|The easel held a big painting of a horse.|stand, frame|
+fantasy|Do you like fantasy stories?|My fantasy is to fly like a bird.|dream, imagination|reality
+finale|What happened in the finale?|The fireworks saved the best for the finale.|ending, climax|opening
+gallery|Can we visit the art gallery?|The gallery had paintings of the sea.|museum, exhibit|
+graffiti|Is graffiti art or a mess?|Graffiti covered the old train cars.|scribbles, tagging|
+illustration|Which illustration do you like best?|The illustration shows a bear in a boat.|picture, drawing|
+lyrics|Do you know the lyrics by heart?|The lyrics were about the ocean.|words, verses|
+masterpiece|Is your sandcastle a masterpiece?|The chef's cake was a masterpiece.|treasure, triumph, gem|
+musical|What musical would you like to be in?|Our school musical has singing pirates.|show, play|
+opera|Have you ever seen an opera?|Opera singers have powerful voices.|musical drama|
+palette|What palette of colors will you use?|My palette was covered in blue and green paint.|color board, color set|
+performance|How was your performance?|The car's performance is better with new tires.|show, act, results|
+prop|What prop do you need for the play?|Prop the door open with a book.|object, support|
+puppetry|Is puppetry hard to learn?|The puppetry show had singing socks.|puppet show|
+rehearsal|When is the next rehearsal?|The final rehearsal ran late.|practice, run-through|
+scene|Which scene was your favorite?|The ranger checked out the scene.|part, setting, view|
+script|Did you memorize the script?|For our puppet show, she wrote the whole script.|lines, text|
+sequel|Will there be a sequel?|The sequel picks up right where the first book ended.|follow-up, next part|prequel

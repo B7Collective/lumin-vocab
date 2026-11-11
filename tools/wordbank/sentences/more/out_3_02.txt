@@ -1,0 +1,130 @@
+assay|What did the assay reveal about the ore?|Inspectors assay every batch of silver.|analysis, test, examination|
+atrophy|Can your memory atrophy from disuse?|After the cast came off, his calf showed atrophy.|waste away, wither, decline|grow
+bandwidth|Does the office have enough bandwidth?|Parents of toddlers have little bandwidth for hobbies.|capacity, throughput|
+brokerage|Which brokerage do you use?|The brokerage fee was one percent.|investment firm, commission|
+capitalization|What's the market capitalization of the firm?|Check the capitalization in your essay title.|market value, worth|
+cardiovascular|Is swimming good cardiovascular exercise?|Cardiovascular disease runs in some families.|cardiac, heart|
+chronology|Can you sort out the chronology?|The novel scrambles its chronology on purpose.|timeline, sequence, order|
+coefficient|What's the coefficient in 3x?|Bridge builders check each metal's coefficient of expansion.|multiplier, factor|
+concession|Was the refund a concession?|We bought popcorn at the concession.|compromise, allowance, stand|
+conduit|Is the pipe a conduit for cables?|Teachers act as a conduit for knowledge.|channel, pipe, medium|
+congenital|Is the condition congenital?|He's a congenital optimist.|inborn, hereditary, innate|acquired
+contour|Can you trace the contour of the coast?|The dress follows the contour of the body.|outline, profile, shape|
+cosmopolitan|Is the city cosmopolitan?|Cosmopolitan travelers feel at home anywhere.|worldly, sophisticated, international|provincial
+curator|What does a museum curator do?|She's the curator of a huge playlist.|keeper, custodian, organizer|
+deflation|Is deflation good or bad?|The tire's slow deflation went unnoticed.|price decline, shrinkage|inflation
+demography|How is the city's demography changing?|Demography helps plan hospitals.|population studies|
+dermatology|Why did you see dermatology?|Dermatology clinics treat acne.|skin medicine|
+dialect|Can you understand the dialect?|She switched dialect when talking to her grandma.|vernacular, accent, idiom|
+diffusion|How does diffusion work in cells?|Within hours, the rumor's diffusion reached every class.|spread, dispersal, scattering|concentration
+electorate|How large is the electorate?|Candidates try to excite the electorate.|voters, constituency|
+encryption|Is the chat app's encryption strong?|Encryption scrambles data so thieves can't read it.|coding, scrambling, ciphering|decryption
+endowment|How big is the college's endowment?|Her greatest endowment is her patience.|fund, gift, talent|
+estuary|What lives in the estuary?|The estuary mixes fresh and salt water.|inlet, delta, river mouth|
+excise|What does the excise on gas fund?|The editor will excise the boring scene.|duty, tax, cut out|
+expenditure|How can we cut expenditure?|The project was a huge expenditure of time.|spending, outlay, cost|income
+geopolitics|How does geopolitics affect trade?|Water rights are a growing part of geopolitics.|international politics|
+gerontology|Why would someone study gerontology?|Advances in gerontology help people age well.|study of aging|
+homeostasis|How does the body keep homeostasis?|Ecosystems also seek homeostasis.|equilibrium, balance, stability|
+insolvent|Was the company insolvent?|An insolvent bank cannot repay deposits.|bankrupt, broke|solvent
+liquidity|Why does liquidity matter to banks?|Liquidity dried up during the crisis.|cash flow, availability|illiquidity
+longevity|What's the secret to longevity?|The band's longevity amazes critics.|long life, durability|brevity
+lucrative|Is coding a lucrative career?|The lucrative deal made headlines.|profitable, rewarding, gainful|unprofitable
+mercantile|Was the city a mercantile hub?|Mercantile families built grand houses.|commercial, trading|
+metropolis|Would you like to live in a metropolis?|Lights from the metropolis hid the stars.|city, megacity|village
+neurology|Is neurology a hard field?|Advances in neurology help stroke patients.|neuroscience|
+nutrient|Which nutrient is missing from your diet?|Plants pull each nutrient from the soil.|nourishment, vitamin, mineral|
+pathogen|What pathogen causes the flu?|Washing hands removes pathogens; every pathogen hates soap.|germ, microbe, virus|
+pathology|What did the pathology tests show?|The pathology of the disease is still unknown.|study of disease, diagnosis|
+pharmaceutical|Which pharmaceutical company makes it?|Pharmaceutical research takes years.|medicinal, medical|
+physiology|How does exercise change physiology?|She teaches human physiology at the college.|biology, body functions|
+precipitation|What's the chance of precipitation?|The chemist watched precipitation form crystals.|rainfall, rain, snow|drought
+quarantine|How long did the quarantine last?|The software placed the file in quarantine.|isolation, seclusion|
+regimen|What's your workout regimen?|A strict regimen helped him recover.|routine, plan, program|
+remission|How long has she been in remission?|The fever went into remission overnight.|recovery, abatement, respite|relapse
+sanitation|How did sanitation change city life?|Sanitation workers start before dawn.|hygiene, cleanliness|
+sediment|What's the sediment at the bottom of the jar?|Fossils form in layers of sediment.|deposit, silt, residue|
+semiconductor|Why are semiconductor chips so valuable?|The semiconductor factory runs day and night.|chip material|
+stakeholder|Who is the most important stakeholder?|Parents are key stakeholders; each stakeholder had a say.|investor, participant, interested party|
+terrestrial|Are terrestrial planets rocky?|Terrestrial radio reaches the whole valley.|earthly, land-based, earthbound|celestial, aquatic
+topography|How does topography affect weather?|The map shows the topography of the moon.|terrain, landscape, relief|
+viscosity|Why does viscosity matter in paint?|Lava's viscosity decides how far it flows.|thickness, stickiness|fluidity
+apprehension|Did you feel apprehension before the test?|Her quick apprehension of the problem impressed us.|anxiety, unease, understanding|confidence
+elation|Can you describe your elation?|The team's elation lasted all week.|joy, euphoria, delight|despair
+rapture|Why did the crowd go into rapture?|Gardeners speak of tulips with rapture.|ecstasy, bliss, euphoria|misery
+solace|Where do you find solace?|Music was his solace after the move.|comfort, consolation, relief|distress
+angst|Why is there so much angst before exams?|Teenage angst fills the diary's pages.|anxiety, dread, worry|calm
+pique|Did the article pique your interest?|He quit the team out of pique.|irritation, resentment, arouse|
+dismay|Did the news fill you with dismay?|The fans watched in dismay as the ball missed.|alarm, distress, disappointment|delight
+narcissism|Is social media feeding narcissism?|His narcissism made teamwork impossible.|vanity, self-absorption, egotism|humility
+authoritarian|Is the manager authoritarian?|Authoritarian parents set strict rules.|autocratic, dictatorial, strict|democratic, permissive
+convex|Is the lens convex or concave?|The dome has a convex shape.|curved outward, bulging|concave
+elliptical|Is the track elliptical?|Her elliptical reply left us guessing.|oval, cryptic|circular
+perpendicular|Are the lines perpendicular?|The cliff rose perpendicular from the sea.|vertical, upright, at right angles|parallel
+iridescent|Why is the feather iridescent?|The iridescent fish flashed blue and green.|shimmering, pearly, rainbow-like|dull
+gradient|What's the gradient of the hill?|The app shows a color gradient.|slope, incline, transition|
+fractal|What does a fractal look like?|Snowflakes show fractal patterns.|self-similar pattern|
+angular|Is his face angular?|Angular furniture filled the modern loft.|sharp, bony, pointed|rounded
+facet|Which facet of the job do you enjoy?|Light danced off every facet of the crystal.|aspect, side, face|
+silhouette|Whose silhouette is that in the window?|The dress has a classic silhouette.|outline, profile, shadow|
+vertex|Where's the vertex of the angle?|The parabola's vertex is at the origin.|apex, corner, point|
+locomotion|How do snails achieve locomotion?|The steam locomotion era changed travel.|movement, motion, travel|
+propulsion|What kind of propulsion does the boat use?|Electric propulsion is quiet.|thrust, drive, momentum|
+ricochet|Did the ball ricochet off the post?|The news began to ricochet across social media.|rebound, bounce, deflect|
+traverse|How long does it take to traverse the desert?|A rope bridge lets you traverse the gorge.|cross, travel, navigate|
+circumnavigate|Can you circumnavigate the problem?|The explorer tried to circumnavigate the island.|sail around, bypass, go around|
+evacuate|When did they evacuate the building?|Please evacuate calmly during a drill.|leave, clear, vacate|occupy
+parasite|Is a tapeworm a parasite?|The roommate was a parasite who never paid rent.|leech, freeloader|host
+ruminant|Is a sheep a ruminant?|Each ruminant chews its food twice.|cud-chewer, grazer|
+metamorphosis|What's the most dramatic metamorphosis in nature?|Her metamorphosis from shy to confident amazed us.|transformation, change, conversion|
+canine|Does the canine have a good nose?|Canine friends are loyal companions.|dog, doglike|feline
+ornithology|Is ornithology a hobby or a job?|An ornithology course taught us bird calls.|birdwatching, bird science|
+entomology|What do entomology students study?|Entomology reveals how ants farm fungus.|insect science|
+echolocation|How does echolocation work?|Blind people can learn a form of echolocation.|sonar|
+auditory|Are you an auditory learner?|An auditory illusion tricked our ears.|aural, hearing|visual
+imperceptible|Was the sound imperceptible?|An imperceptible nod gave the signal.|undetectable, invisible, faint|obvious
+acoustics|How are the acoustics in the hall?|Acoustics is a branch of physics.|sound quality|
+sustenance|What sustenance did they pack?|Hope was their only sustenance during the storm.|nourishment, food, support|
+emulsion|Why does the emulsion separate?|Paint is often an emulsion.|mixture, suspension|
+infuse|Can you infuse water with fruit?|Her teaching seemed to infuse the class with energy.|steep, imbue, fill|drain
+modular|Is the furniture modular?|Modular design makes repairs easier.|sectional, interchangeable|monolithic
+transistor|How does a transistor work?|The transistor radio was a 1950s hit.|semiconductor, switch|
+caliper|Can you hand me the caliper?|The brake caliper squeezes the disc.|gauge, measuring tool|
+fulcrum|Where should the fulcrum go?|Trust is the fulcrum of any team.|pivot, hinge, support|
+gyroscope|How does a gyroscope stay balanced?|The toy gyroscope spun on a string.|stabilizer, spinner|
+stratosphere|How high is the stratosphere?|Her career shot into the stratosphere.|upper atmosphere|
+permafrost|What happens when permafrost thaws?|Houses on permafrost can tilt and crack.|frozen ground, tundra|
+watershed|What's in the river's watershed?|The invention was a watershed moment.|turning point, drainage basin|
+glacial|Is the lake glacial?|She gave him a glacial stare.|icy, frosty, slow|warm, rapid
+baroque|Do you like baroque music?|The plot was too baroque to follow.|ornate, elaborate, flamboyant|plain
+modernism|What exactly defines modernism?|Modernism in poetry broke old rhymes.|modernity, avant-garde|traditionalism
+repertoire|What's in your repertoire?|The comedian's repertoire grew over the years.|range, collection, stock|
+anthology|Which anthology is your favorite?|The comic anthology has twenty artists.|collection, compilation, treasury|
+typography|Does typography matter in a resume?|The typography on the menu was elegant.|lettering, fonts, design|
+concurrent|Are the sessions concurrent?|He's serving concurrent terms on two boards.|simultaneous, coinciding|consecutive
+cyclical|Is the economy cyclical?|Cyclical storms batter the coast.|periodic, recurrent, regular|
+archaic|Why does the law sound archaic?|Archaic tools sat in the museum case.|ancient, outdated, antiquated|modern
+protracted|Why was the battle so protracted?|The protracted illness left him weak.|prolonged, lengthy, extended|brief
+adamant|Why are you so adamant?|The coach was adamant about practice.|firm, resolute, unyielding|flexible
+alleviate|What can alleviate the traffic?|Volunteers worked to alleviate hunger.|ease, relieve, lessen|worsen
+aloof|Why does the new teacher seem aloof?|The aloof star ignored the fans.|distant, detached, cold|warm
+ancillary|Are these ancillary fees?|Ancillary staff keep the hospital running.|supplementary, secondary, auxiliary|primary
+apathy|How can we fight apathy?|Apathy is the enemy of change.|indifference, disinterest|enthusiasm
+appease|How can we appease the neighbors?|Treats appease the barking dog.|placate, pacify, soothe|provoke
+arcane|Why are the tax rules so arcane?|The professor loves arcane trivia.|obscure, mysterious, esoteric|common
+ardent|Are you an ardent fan?|Ardent volunteers worked through the night.|passionate, fervent, eager|apathetic
+arduous|Was the journey arduous?|Learning a language is arduous but rewarding.|grueling, strenuous, tough|easy
+astute|Was it an astute move?|The astute investor sold before the crash.|shrewd, perceptive, sharp|naive
+austere|Why is the décor so austere?|The austere teacher rarely smiled.|severe, plain, stern|ornate
+banal|Was the speech banal?|Small talk can feel banal.|trite, hackneyed, dull|original
+bastion|Is the town a bastion of tradition?|The castle's bastion faced the sea.|stronghold, citadel, fortress|
+bedlam|What caused the bedlam?|Black Friday sales are pure bedlam.|chaos, pandemonium, uproar|calm
+brazen|How could he be so brazen?|The brazen raccoon stole a whole pie.|bold, shameless, audacious|timid
+burgeon|Will the startup burgeon?|Spring flowers burgeon along the path.|grow, flourish, expand|shrink
+byzantine|Why is the system so byzantine?|Office politics there are byzantine.|complex, convoluted, intricate|simple
+cadence|What's the cadence of the march?|Runners keep a steady cadence.|rhythm, beat, tempo|
+callous|Why was the response so callous?|Callous remarks hurt the volunteers.|cold, heartless, insensitive|caring
+caustic|Was the review caustic?|Caustic soda can burn your skin.|biting, scathing, corrosive|gentle
+cavalier|Why so cavalier about safety?|The cavalier driver ignored the signs.|offhand, careless, flippant|careful
+censure|Did the board censure him?|Public censure forced her to apologize.|condemnation, rebuke, reproach|praise
+clandestine|Was the meeting clandestine?|Clandestine radio stations broadcast during the war.|secret, covert, hidden|open

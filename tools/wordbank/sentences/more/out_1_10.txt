@@ -1,0 +1,130 @@
+spotlight|Do you like being in the spotlight?|The cat napped in a spotlight of sun.|limelight, beam, attention|
+symphony|How long is a symphony?|The birds sang a morning symphony.|concert, orchestral piece|
+tragedy|Why is the story a tragedy?|Losing the game was not a tragedy.|disaster, sad story|comedy
+stutter|Does the old engine stutter in the cold?|Even great speakers can stutter sometimes.|stammer|
+anniversary|When is the anniversary of the day you got your dog?|We made a cake for our school's anniversary.|birthday, celebration|
+eventually|Will the puppy eventually stop chewing shoes?|We eventually found the lost key.|finally, in the end, at last|immediately
+frequently|How frequently do you brush your teeth?|Owls frequently hunt at night.|often, regularly|rarely
+occasionally|Do you occasionally stay up late?|We occasionally see foxes in the park.|sometimes, now and then|often
+overnight|Did the bread rise overnight?|The video became famous overnight.|through the night, suddenly|
+timeline|Can you put the events on a timeline?|Our timeline stretched across the hallway.|chronology, schedule|
+yearly|When is your yearly vacation?|The yearly fair has a pie contest.|annual|
+account|Do you have a bank account?|His account of the trip was very funny.|record, story, report|
+coupon|Can we use a coupon for the pizza?|Grandma clips every coupon from the paper.|voucher, ticket|
+discount|Is there a student discount?|We bought the bikes at a big discount.|sale, markdown, reduction|markup
+earnings|What will you do with your earnings?|Our car wash earnings went to the shelter.|income, pay, wages|
+employer|Who is your mom's employer?|A good employer treats workers fairly.|boss, company|employee
+factory|What does the factory make?|The toy factory hums all night.|plant, mill, works|
+fee|Is there a fee to join the club?|The fee for the zoo is ten dollars.|charge, cost, price|
+labor|Who will provide the labor for the garden?|Ants divide their labor among workers.|work, toil, effort|rest
+manager|Can I speak to the manager?|The team manager handed out water.|boss, supervisor, director|
+paycheck|What did you buy with your first paycheck?|Her paycheck came on the first of the month.|salary, wages, pay|
+supplier|Who is the store's milk supplier?|Our supplier delivers fresh eggs.|provider, vendor|buyer
+tip|What's your best tip for studying?|The friendly waiter got a big tip from us.|hint, clue, gratuity|
+wealth|Is health more important than wealth?|The pirate's wealth was all in gold coins.|riches, fortune, money|poverty
+workshop|What's in Grandpa's workshop?|We built a birdhouse at the weekend workshop.|studio, class, shop|
+ally|Who is your ally in the game?|A good friend is a strong ally.|friend, partner, supporter|enemy
+assembly|What happened at the assembly today?|Toy assembly took all evening.|gathering, meeting|
+authority|Who has the authority to cancel school?|My grandma is an authority on gardening.|power, control, expert|
+duty|What duty do you have at home?|The firefighter was on duty all night.|job, task, obligation|
+flag|What colors are on the flag?|Wave the flag when the runners pass.|banner, standard|
+freedom|What does freedom mean to you?|Summer brings freedom from homework.|liberty, independence|captivity
+honor|Who would you like to honor with a card?|I give you my word of honor.|respect, glory, pride|shame
+independence|When did your country gain independence?|My little sister wants more independence.|freedom, self-reliance|dependence
+loyalty|How can you show loyalty to a friend?|The dog's loyalty never wavered.|faithfulness, devotion|betrayal
+nation|Which nation has the most people?|The nation celebrated its birthday with fireworks.|country, land, people|
+patriot|What makes someone a patriot?|The old patriot told stories of the past.|loyalist, citizen|traitor
+pledge|Did you make a pledge to help?|We pledge to keep the park clean.|promise, vow, oath|
+republic|How is a republic different from a kingdom?|Our class became a little republic with elections.|democracy, state|monarchy
+responsibility|Whose responsibility is it to water the plants?|Taking care of a pet is a big responsibility.|duty, job, task|
+tribe|Which tribe lived here long ago?|My cousins are my tribe.|clan, group, people|
+unity|How does unity help a team?|There's strength in unity.|togetherness, harmony|division
+cavity|How did you get a cavity?|The owl nested in a cavity in the tree.|hole, hollow|
+digestion|How does chewing help digestion?|Some animals have slow digestion.|processing food|
+fitness|What do you do for fitness?|Dogs need daily fitness, like long walks.|health, shape, strength|
+forearm|Can you balance a ball on your forearm?|My forearm was sore after tennis.|lower arm|
+gland|Which gland makes tears?|A sweat gland helps cool you down.|organ|
+immune|Are you immune to chickenpox?|My dad seems immune to scary movies.|protected, resistant|vulnerable
+lung|How big is a lung?|Take a deep breath to fill each lung.|breathing organ|
+nerve|Do you have the nerve to try the high dive?|A pinched nerve made his arm tingle.|courage, guts|fear
+rib|How many ribs do you have? Can you feel one rib?|The umbrella had a broken rib.|bone|
+saliva|Why do dogs make so much saliva?|Saliva starts to break down food.|spit|
+shin|Did you hit your shin on the bike pedal?|My shin was bruised after soccer.|leg|
+skull|How many bones are in your skull?|The pirate flag had a skull on it.|head, cranium|
+thigh|Do your thighs get tired on hikes? My thigh does!|The horse's thigh muscles are strong.|upper leg|
+tonsil|Does your tonsil hurt?|The doctor said one tonsil was swollen.|throat gland|
+vein|Can you see a vein on your hand?|A vein of gold ran through the rock.|vessel, streak|
+vitamin|Which vitamin comes from sunshine?|Carrots have a vitamin that helps your eyes.|nutrient, supplement|
+wellness|How do you take care of your wellness?|Our class talked about wellness and sleep.|health, well-being|illness
+cholesterol|What foods raise cholesterol?|Too much fried food can raise your cholesterol.|fat|
+minority|Was your idea in the minority?|A small minority liked the new lunch menu.|smaller part, few|majority
+shopkeeper|Is the shopkeeper friendly?|The shopkeeper swept the sidewalk each morning.|merchant, store owner|customer
+layover|How long is our layover?|We ate pizza during the layover.|stop, stopover|
+customs|How long did customs take?|Customs asked us about the apples in our bag.|border check|
+terminal|Which terminal is our flight in?|The terminal was full of travelers.|station, depot|
+departure|What time is our departure?|Her departure left the room quiet.|leaving, exit|arrival
+arrival|When is the arrival time?|The arrival of spring made everyone smile.|coming, landing|departure
+carousel|Which carousel horse do you want?|The carousel played music as it spun.|merry-go-round, conveyor|
+altitude|What altitude does the plane fly at?|At high altitude, it's hard to breathe.|height, elevation|depth
+stopover|Where is our stopover?|A stopover gave us time to stretch.|layover, break|
+bungalow|Would you like to live in a bungalow?|The bungalow had a porch swing.|cottage, cabin|
+tsunami|What causes a tsunami?|Signs showed where to go during a tsunami.|tidal wave|
+karaoke|What song would you sing at karaoke?|Karaoke night was full of silly songs.|sing-along|
+algebra|Is algebra hard to learn?|In algebra, letters can stand for numbers.|math|
+yacht|Who owns the big yacht?|A yacht with blue sails passed by.|sailboat, boat|
+sauna|Is a sauna hot or cold?|Cedar wood lines the walls of the sauna.|steam room|
+moccasin|Are your moccasins comfortable? My left moccasin is loose.|A beaded moccasin sat by the door.|slipper, shoe|
+loot|How much loot did you get trick-or-treating?|The raccoon ran off with our loot.|treasure, haul, booty|
+yogurt|Do you like plain or fruit yogurt?|Frozen yogurt melted down my arm.||
+baloney|Is that story true or baloney?|My brother's excuse was pure baloney.|nonsense, hooey|truth
+ritzy|Isn't that hotel ritzy?|The ritzy party had a chocolate fountain.|fancy, posh, swanky|plain
+hooey|Is that story a bunch of hooey?|The magic potion turned out to be hooey.|nonsense, baloney|fact
+jalopy|Will the old jalopy make it up the hill?|Grandpa fixed up a jalopy in the barn.|clunker, old car|
+moxie|Who has the most moxie on your team?|With a lot of moxie, she asked to be captain.|courage, nerve, spunk|timidity
+gumshoe|Is the gumshoe on the case?|The gumshoe found the missing cat.|detective, sleuth|
+ballyhoo|What's all the ballyhoo about?|The new store opened with lots of ballyhoo.|hype, fuss, fanfare|
+scram|Why did the squirrels scram?|Scram, you pesky crows!|leave, beat it, skedaddle|stay
+jitterbug|Can you dance the jitterbug?|My little brother is a jitterbug before tests.|swing dance|
+hep|Are you hep to the latest songs?|The hep kids knew every dance move.|hip, trendy, cool|square
+square|Is it square to like old movies?|He was too square to try the new dance.|nerd, dull person|hip
+far-out|Isn't that idea far-out?|Grandpa calls my rainbow shoes far-out.|wild, groovy, unusual|ordinary
+bummer|Isn't it a bummer the pool is closed?|What a bummer to miss the field trip!|letdown, disappointment|
+funky|Do you like funky music?|The fridge smelled a little funky.|groovy, quirky, odd|plain
+boogie|Can you boogie to this song?|Grandma likes to boogie in the kitchen.|dance, groove|
+dig|Do you dig my new hat?|I dig the way you think.|like, love, enjoy|dislike
+rad|Isn't that a rad bike?|We had a rad time at the skate park.|cool, awesome, great|lame
+gnarly|Was that fall gnarly?|The old tree had gnarly roots.|extreme, twisted, gross|
+tubular|Was the ride tubular?|The surfer called the wave tubular.|awesome, radical|lame
+grody|Isn't that sandwich grody?|The bathroom at camp was grody.|gross, disgusting, yucky|clean
+bodacious|Wasn't that a bodacious jump?|We had a bodacious idea for the fort.|remarkable, bold, awesome|ordinary
+radical|Is that a radical idea?|The team made a radical change to the plan.|extreme, drastic, cool|mild
+bling|Does the dog's collar have bling?|My sister likes shoes with bling.|sparkle, jewelry|
+noob|Are you a noob at chess?|The noob asked how to start the game.|beginner, newbie, rookie|pro
+glitzy|Isn't the dress glitzy?|The glitzy lights flashed outside the theater.|flashy, sparkly, showy|plain
+strategy|What's your strategy for winning?|A good strategy for tests is to sleep well.|plan, approach, tactic|
+tactic|What tactic did the coach use?|Crying is a baby's best tactic.|move, trick, method|
+checkmate|Can you checkmate me in three moves?|I didn't see the checkmate coming.|win, defeat|
+bluff|Are you trying to bluff?|The cat's puffed fur was a bluff.|fake, pretend, trick|
+underdog|Do you like rooting for the underdog?|The underdog surprised everyone and won.|long shot|favorite
+rally|Can the team rally in the second half?|We held a rally to save the park.|comeback, gathering|
+tiebreaker|What was the tiebreaker question?|The tiebreaker went to sudden overtime.|deciding round|
+sportsmanship|How can you show good sportsmanship?|Helping the other team up is great sportsmanship.|fair play|
+tournament|Who won the tournament?|Our class held a ping-pong tournament.|competition, contest|
+penalty|What was the penalty for the foul?|The penalty for being late was cleaning up.|punishment, fine|reward
+comeback|Did you see the team's comeback?|Bell-bottom pants made a comeback.|return, recovery|
+rookie|Who is the rookie on the team?|As a rookie driver, my cousin goes slowly.|beginner, newcomer, novice|veteran
+veteran|Is your grandpa a veteran?|The veteran teacher knew every trick.|expert, old hand|rookie
+clutch|Who made the clutch play?|Clutch the rail on the stairs.|key, crucial, grip|
+courageous|Who is the most courageous person you know?|The courageous girl stood up for her friend.|brave, bold, fearless|cowardly
+inspiring|What's the most inspiring book you've read?|The view from the top was inspiring.|uplifting, moving, motivating|dull
+upbeat|Is the song upbeat?|Even on rainy days, Grandma stays upbeat.|cheerful, positive, lively|gloomy
+warmhearted|Is your aunt warmhearted?|A warmhearted stranger helped us change the tire.|kind, caring, generous|cold
+selfless|What selfless act did you see today?|Moms often make selfless choices.|unselfish, generous, giving|selfish
+trustworthy|Is your dog trustworthy around food?|We need a trustworthy kid to hold the keys.|reliable, honest, dependable|untrustworthy
+knead|Can you knead the clay until it's soft?|Cats knead blankets with their paws.|work, press, mash|
+mince|Can you mince the onions?|Don't mince words; tell me the truth.|chop, dice|
+zest|Can you zest the orange?|She has a zest for life.|peel, gusto, eagerness|
+marinate|How long should we marinate the fish?|Let the idea marinate before you decide.|soak, steep|
+baste|Can you baste the roast for me?|Grandma likes to baste the turkey with butter.|moisten, drizzle|
+glaze|Do you like a chocolate glaze on donuts?|The potter will glaze the bowl blue.|coating, icing, varnish|
+poach|Can you poach an egg?|We will poach salmon for dinner.|simmer, cook|

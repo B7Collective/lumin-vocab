@@ -13,8 +13,13 @@ export const SCENES = [
   { id: "village", name: "Snowy Village", x: 54, group: "places" }, { id: "cliffs", name: "Lighthouse Cliffs", x: 48, group: "places" },
   { id: "swirl", name: "Sage Swirl", x: 52, group: "dreamy", light: true }, { id: "midnight", name: "Midnight Tide", x: 51, group: "dreamy" },
   { id: "crystal", name: "Crystal Star", x: 50, group: "dreamy" }, { id: "dawn", name: "Peach Dawn", x: 50, group: "dreamy", light: true },
+  // Paper art: layered paper landscapes. Each is composed so the middle still reads on a tall phone screen.
+  { id: "moonriver", name: "Moon River", x: 52, group: "paper" }, { id: "emberpeak", name: "Ember Peak", x: 58, group: "paper" },
+  { id: "redfalls", name: "Red Falls", x: 50, group: "paper", light: true }, { id: "junglemoon", name: "Jungle Moon", x: 50, group: "paper" },
+  { id: "greatwave", name: "Great Wave", x: 50, group: "paper" }, { id: "moonpagoda", name: "Moon Pagoda", x: 49, group: "paper" },
+  { id: "canyonarch", name: "Canyon Arch", x: 53, group: "paper" }, { id: "crystalcave", name: "Crystal Cave", x: 50, group: "paper" },
 ];
-export const SCENE_GROUPS = [["places", "Places"], ["dreamy", "Dreamy"]];
+export const SCENE_GROUPS = [["places", "Places"], ["paper", "Paper art"], ["dreamy", "Dreamy"]];
 export const wallpaperUrl = (id) => `/art/wallpapers/${id}.jpg`;
 export const sceneUrl = (id) => `/art/scenes/${id}.webp`;
 // Pick a scene for a word: the profile's chosen one, or a gentle rotation that stays the same for a word on every device

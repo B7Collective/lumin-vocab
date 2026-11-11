@@ -1,0 +1,130 @@
+kingdom|Who rules the kingdom in your story?|In the ocean kingdom, a whale was queen.|realm, land, monarchy|
+empire|How big was the empire on the map?|My little brother built a block empire on the rug.|realm, dominion|
+profit|How much profit did the car wash make?|We gave our profit to the animal shelter.|earnings, gain|loss
+allowance|How much allowance do you get each week?|My allowance goes into a jar for a new bike.|pocket money, spending money|
+career|What career would you love to have?|Grandpa had a long career as a teacher.|job, profession, work|
+employee|How does a new employee learn the job?|Each employee wears a green vest.|worker, staff member|boss
+income|How do farmers earn their income?|Some families earn extra income by selling eggs.|earnings, pay, wages|expenses
+loan|Can you give me a loan of a dollar?|We paid back the loan a little each month.|lending, advance|
+tax|What does sales tax mean?|Part of every toy's price is tax.|fee, charge, duty|
+wage|What is a fair wage for mowing a lawn?|Her summer wage paid for a new bike.|pay, salary, earnings|
+merchant|What did the merchant sell at the market?|A merchant ship sailed into port.|trader, seller, shopkeeper|customer
+economy|How does the weather affect a farm economy?|Our class made a pretend economy with paper money.|money system, trade|
+purchase|What was your best purchase this year?|Every purchase comes with a receipt.|buy, get|sell
+afford|Can we afford a trip to the beach?|I can't afford to lose my homework again.|pay for, manage|
+valuable|What is the most valuable thing you own?|Time with family is valuable.|precious, priceless, important|worthless
+donate|What toys can we donate?|Grandma likes to donate books to the library.|give, contribute|keep
+charity|Which charity helps animals?|We run a lemonade stand for charity.|giving, kindness, aid|
+digest|How long does it take to digest an apple?|I need time to digest all this news.|break down, absorb|
+lungs|How much air can your lungs hold?|Fish don't have lungs; they have gills.|breathing organs|
+pulse|Can you feel your pulse on your neck?|Your pulse speeds up when you run.|heartbeat, beat|
+injury|How did you get that injury?|The player sat out because of an injury.|hurt, wound|
+fever|Do you have a fever?|My fever went away after a good sleep.|temperature|
+organ|Which organ helps you think?|Your heart is an organ that never takes a break.|body part|
+spine|Can you feel the bumps of your spine?|A book's spine shows its title.|backbone|
+nutrition|Why is nutrition important for kids?|The label shows nutrition facts.|nourishment, diet|
+posture|How is your posture right now?|A dancer has great posture.|stance, bearing|slouch
+recover|How long will your knee take to recover?|Plants recover after a good rain.|heal, get better, bounce back|
+symptom|What symptom made you stay home?|Sneezing can be a symptom of allergies.|sign, clue|
+beverage|What beverage would you like?|No beverage is allowed in the library.|drink|
+cuisine|What cuisine does your family cook most?|Italian cuisine uses lots of tomatoes.|cooking, food|
+savory|Do you like savory or sweet breakfasts?|The savory smell of soup filled the house.|salty, tasty|sweet
+portion|Is this portion too big for you?|A portion of the money went to charity.|share, serving, part|whole
+simmer|Can you let the beans simmer while I set the table?|Let your anger simmer down before you talk.|stew, bubble|boil
+nutritious|Is popcorn a nutritious snack?|A nutritious lunch helps you focus.|healthy, wholesome|unhealthy
+leftovers|What do you do with leftovers?|Our dog waits for leftovers under the table.|remains, scraps|
+garnish|What garnish goes on a lemonade glass?|We garnish the soup with chopped chives.|decoration, topping|
+tangy|Is the yogurt tangy?|Tangy pickles go great with sandwiches.|sharp, tart, zesty|bland
+decade|What will you do in the next decade?|My uncle lived by the sea for a decade.|ten years|
+era|What era of history do you like best?|The phone was a new era for talking.|age, period, time|
+generation|What games did your parents' generation play?|Each generation of birds returns to the same tree.|age group|
+annual|When is the annual school picnic?|The annual report shows the year's work.|yearly|
+routine|What's your bedtime routine?|Our dog knows the morning routine.|habit, schedule, pattern|
+schedule|What's on your schedule today?|Let's schedule a playdate for Friday.|plan, calendar, timetable|
+deadline|When is the deadline for the book report?|We finished just before the deadline.|due date, cutoff|
+previous|What did you learn in your previous class?|Remember the previous lesson on fractions?|earlier, last, former|next
+permanent|Is the tattoo permanent?|The cast left a permanent mark on the floor.|lasting, forever|temporary
+evolve|How did whales evolve?|My drawing style will evolve as I practice.|develop, change, grow|
+punctual|Are you always punctual for school?|Be punctual for the bus, or you'll miss it.|on time, prompt|late
+overdue|Why is the library book overdue?|We're overdue for a family trip.|late, belated|early
+device|What device do you use to read?|A smoke alarm is a device that saves lives.|gadget, tool, machine|
+utensil|Which utensil do you use for soup?|Chopsticks are a utensil too.|tool, implement|
+appliance|Which appliance makes toast?|We bought a new appliance for the laundry room.|machine, gadget|
+lever|Can a lever lift a heavy rock?|The lever on the toilet makes it flush.|handle, bar|
+pulley|How does a pulley make lifting easier?|We built a pulley to send notes to the treehouse.|wheel, hoist|
+fabric|What fabric is your jacket made of?|We cut the fabric to make a pillow.|cloth, material, textile|
+equipment|Where do we store the gym equipment?|Firefighters carry heavy equipment.|gear, tools, supplies|
+container|Which container should hold the soup?|Every container in the fridge has a label.|box, jar, holder|
+blueprint|Can you read the blueprint for the treehouse?|The blueprint showed a secret room.|plan, design, drawing|
+faint|Is that a faint star or a planet?|A faint smile crossed her face.|dim, weak, soft|clear, strong
+muffled|Why is the radio so muffled?|My muffled voice came through the scarf.|quiet, dull, smothered|clear
+deafening|Wasn't the fireworks show deafening?|A deafening silence followed the joke.|loud, roaring|quiet
+sensation|What sensation do you feel in a cold pool?|The new movie caused a sensation.|feeling, tingle, buzz|
+stench|What is that awful stench?|A skunk left a stench that lasted all day.|stink, smell, reek|fragrance
+sensitive|Are your eyes sensitive to bright light?|My little brother is sensitive and cries easily.|delicate, tender, touchy|tough
+amphibian|Is a toad an amphibian?|An amphibian starts life in water.|frog, salamander|
+carnivore|Is a shark a carnivore?|A carnivore has sharp teeth for meat.|meat eater, predator|herbivore
+herbivore|Is a giraffe a herbivore?|An elephant is the biggest herbivore on land.|plant eater, grazer|carnivore
+omnivore|Is a pig an omnivore?|My dog is an omnivore; he eats carrots and chicken.|eats everything|
+species|How many species of birds visit your feeder?|Scientists found a new species of frog.|kind, type, sort|
+talon|How sharp is an eagle's talon?|The owl's talon left a mark on the glove.|claw|
+tusk|Why does a walrus have tusks? Each tusk helps it climb.|The elephant's tusk scraped the tree.|fang, ivory|
+mane|Do lionesses have a mane?|The pony's mane was braided with ribbons.|hair, locks|
+venom|How does a snake use its venom?|Bee venom makes a sting hurt.|poison, toxin|
+larva|What will the larva turn into?|A beetle larva lives in the soil.|grub, maggot|adult
+flipper|How does a penguin use its flipper?|I wore a flipper on each foot to swim faster.|fin, paddle|
+sketch|Can you sketch your dog?|My sketch of the cat was a little lopsided.|drawing, outline, doodle|
+canvas|How big is your canvas?|Our tent is made of canvas.|cloth, fabric|
+portrait|Who is in that portrait?|The artist painted a portrait of our cat.|picture, likeness, painting|
+chorus|Can you sing the chorus with me?|A chorus of frogs sang by the pond.|refrain, choir|solo
+orchestra|How many instruments are in an orchestra?|The orchestra played music from a movie.|band, ensemble|
+plot|What's the plot of your favorite book?|The pirates had a plot to sneak onto the ship.|story, scheme, plan|
+villain|Who is the villain in this story?|The villain in our play wore a black cape.|bad guy, rogue|hero
+comedy|Do you like comedy or adventure movies?|Our dog's tricks are pure comedy.|funny show, humor|tragedy
+coast|Have you been to the coast?|Lighthouses guard the rocky coast.|shore, seaside, beach|inland
+plateau|How high is the plateau?|Wild horses run on the plateau.|tableland, mesa|valley
+peninsula|Can you find a peninsula on the map?|The peninsula has beaches on three sides.|cape, point|
+capital|What's the capital of your state?|Start each sentence with a capital letter.|main city, uppercase|
+border|Where is the border between the two states?|Draw a border around your picture.|edge, boundary, line|center
+lagoon|Can we swim in the lagoon?|Turtles rested in the sunny lagoon.|pool, bay, inlet|
+marsh|What birds live in the marsh?|The marsh was full of cattails.|swamp, bog, wetland|
+pronounce|Can you pronounce my last name?|French words are tricky to pronounce.|say, speak|
+paragraph|How many sentences are in your paragraph?|Start a new paragraph for each idea.|section, passage|
+dialogue|Can you write a dialogue between a cat and a dog?|The movie had very little dialogue.|conversation, talk, chat|
+gossip|Why do people gossip?|The neighbors love to gossip over the fence.|chatter, rumor|
+complain|Why does the cat complain at dinner time?|It's no use to complain about the rain.|grumble, gripe, whine|praise
+vocabulary|How can you grow your vocabulary?|My parrot has a big vocabulary.|words, word list|
+nickname|Do you have a nickname?|Grandma gave me my nickname when I was a baby.|pet name|
+experiment|What experiment should we try?|Let's experiment with paper boat shapes.|test, trial|
+circuit|Can you build a simple circuit?|The runners ran a circuit around the park.|loop, path, route|
+friction|How does friction help us walk?|Ice has very little friction.|rubbing, drag|
+mineral|What mineral makes rocks sparkle?|Milk has a mineral that builds strong bones.|ore, crystal|
+bamboozle|Did that magic trick bamboozle you?|Don't let the cat bamboozle you into a second dinner.|trick, fool, confuse|
+brouhaha|What was all the brouhaha about?|A goose caused a brouhaha at the park.|fuss, uproar, commotion|calm
+cattywampus|Why is the rug all cattywampus?|My hat sat cattywampus on my head.|crooked, askew, lopsided|straight
+discombobulate|Did the maze discombobulate you?|Loud music can discombobulate a puppy.|confuse, muddle, fluster|
+doohickey|What does this doohickey do?|Dad lost the doohickey that holds the door open.|gadget, thingamajig, gizmo|
+flabbergasted|Were you flabbergasted by the surprise?|The flabbergasted teacher dropped her chalk.|astonished, amazed, stunned|
+gobbledygook|Why does the game manual sound like gobbledygook?|My baby brother speaks in gobbledygook.|nonsense, gibberish|sense
+hodgepodge|Why is your backpack such a hodgepodge?|Dinner was a hodgepodge of leftovers.|mix, jumble, mishmash|
+hullabaloo|What's all the hullabaloo outside?|A hullabaloo broke out when the ice cream truck came.|uproar, racket, commotion|quiet
+kerfuffle|What caused the kerfuffle at recess?|A small kerfuffle broke out over the swings.|fuss, ruckus, commotion|
+lollygag|Why do you lollygag at bedtime?|We like to lollygag at the beach.|dawdle, linger, dillydally|hurry
+malarkey|Is that story true or malarkey?|Don't believe that malarkey about a pet dragon.|nonsense, baloney|truth
+nincompoop|Who's the nincompoop who put salt in the sugar jar?|The cartoon nincompoop walked into a door.|fool, goof, dimwit|genius
+persnickety|Why is the chef so persnickety about the sauce?|My persnickety cat won't drink from a cup.|fussy, picky, finicky|easygoing
+rambunctious|Why is the puppy so rambunctious today?|A rambunctious game of tag broke out.|rowdy, wild, boisterous|calm
+shenanigans|What shenanigans did you get up to at camp?|The kittens' shenanigans kept us laughing.|antics, pranks, mischief|
+skedaddle|Can you skedaddle before the sprinklers turn on?|The mice will skedaddle when the cat comes.|scram, scoot, run off|stay
+snollygoster|Would a snollygoster keep his promises?|A snollygoster tricked the town in the old tale.|scoundrel, rascal, schemer|
+taradiddle|Is that a true story or a taradiddle?|Grandpa loves telling a good taradiddle.|fib, nonsense|truth
+wishy-washy|Why are you so wishy-washy about dinner?|The wishy-washy captain couldn't pick a direction.|indecisive, weak|firm, decisive
+whippersnapper|Who's this little whippersnapper?|A whippersnapper zoomed past on a scooter.|youngster, upstart|elder
+widdershins|Why did you walk widdershins around the tree?|The water swirled widdershins down the drain.|counterclockwise|clockwise
+codswallop|Isn't that story a load of codswallop?|Talking fish? What codswallop!|nonsense, rubbish|truth
+gallivant|Where did you gallivant off to today?|Our cat likes to gallivant around the neighborhood.|roam, wander, rove|
+abrupt|Why was the ending so abrupt?|An abrupt wind slammed the door.|sudden, sharp, quick|gradual
+accompany|Can you accompany me on the piano?|Fries accompany every burger here.|go with, escort, join|
+achieve|What do you want to achieve this year?|Teams achieve more by working together.|accomplish, reach, gain|fail
+affectionate|Is your cat affectionate?|An affectionate note was tucked in my lunch.|loving, caring, warm|cold
+aimless|Do you ever go on an aimless bike ride?|The aimless puppy wandered in circles.|random, purposeless, drifting|focused

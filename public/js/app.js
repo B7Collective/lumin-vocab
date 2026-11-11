@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "3.3.0";
+export const VERSION = "3.4.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -41,7 +41,7 @@ matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyLoo
 const NAV = [["words", "Words", "book"], ["journey", "Journey", "map"], ["practice", "Practice", "cap"], ["library", "Library", "books"], ["you", "You", "user"]];
 function shell(active) {
   const p = app.profile;
-  const topnav = document.getElementById("topnav"), bottom = document.getElementById("bottomnav"), me = document.getElementById("me");
+  const topnav = document.getElementById("topnav"), bottom = document.getElementById("bottomnav");
   topnav.replaceChildren(); bottom.replaceChildren();
   // The landing page offers the app straight away, so a family can install before setting anything up
   const getapp = document.getElementById("getapp");
@@ -49,7 +49,7 @@ function shell(active) {
   getapp.onclick = () => app.installFlow && app.installFlow();
   const show = !!p && !["setup", "welcome", "play", "who", "join"].includes(active);
   document.getElementById("app").classList.toggle("has-nav", show);
-  bottom.hidden = !show; me.hidden = !show; topnav.hidden = !show;
+  bottom.hidden = !show; topnav.hidden = !show;
   if (!show) return;
   const dueN = model.due(p.id).length;
   for (const [key, label, ic] of NAV) {
@@ -59,9 +59,6 @@ function shell(active) {
     bottom.append(h("a", { href: "#/" + key, "aria-current": cur }, icon(ic), label, badge ? h("span", { class: "dot", "aria-label": `${badge} due` }, String(badge)) : null));
   }
   motion.glide(topnav, active); motion.glide(bottom, active);
-  me.replaceChildren(avatar(p), h("span", { class: "me-name" }, p.name));
-  me.setAttribute("aria-label", `${p.name}. Open your settings or switch profile`);
-  me.onclick = () => go("/you");
 }
 
 let ready = false; // screens are loaded; a hash change during start-up waits for boot to render

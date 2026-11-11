@@ -45,28 +45,53 @@ export function toggleSave(btn, w) {
   return on;
 }
 
+// The word, up close: a calm page with the meaning first, the word in use, its closest and opposite words, and
+// what to do with it. Words that are in Lumin open their own page when tapped.
 export function details(wordText) {
   const p = app.profile, w = model.lookup(wordText);
   if (!w) return;
-  sheet(w.w, (b) => {
+  const body = sheet(w.w, (b) => {
+    b.classList.add("wsheet");
     const c = model.card(p.id, w.w);
-    const sec = (title, ...kids) => h("div", { class: "dsec" }, h("h3", {}, title), ...kids);
+    const linkChip = (x) => { const hit = model.BY.get(x); return hit && model.atLevel(p, hit) ? h("button", { class: "ws-chip link", onclick: () => details(x) }, x) : h("span", { class: "ws-chip" }, x); };
+    const label = (t) => h("h3", { class: "ws-label" }, t);
+    const examples = model.sentences(w).slice(0, 3);
+    const syns = (w.m || []).filter((x) => x !== w.w).slice(0, 6), ants = (w.a || []).slice(0, 4);
+    const where = w.custom ? "Your own word" : `${LEVEL(w.l).name}, ${w.t}`;
+    const trails = (w.x || []).map((k) => model.trail(k)).filter(Boolean);
+    const saved = c && c.st === "learning";
     b.append(
-      h("div", { class: "dhead" }, h("span", { class: "muted" }, w.p), sayPill(w, p)),
-      sec("Meaning", h("p", { style: { fontSize: "var(--t-l)" } }, w.d)),
-      w.e ? sec("Example", h("p", { class: "ex" }, w.e), w.e2 ? h("p", { class: "ex" }, w.e2) : null) : null,
-      w.cf && model.atLevel(p, model.BY.get(w.cf)) ? sec("Don't mix it up with", h("p", {}, h("button", { class: "chip", onclick: () => details(w.cf) }, w.cf), " ", model.BY.get(w.cf).d)) : null,
-      w.m && w.m.length ? sec("Similar words", h("p", {}, w.m.join(", "))) : null,
-      w.f && w.f.length ? sec("Word family", h("div", { class: "wordchips" }, w.f.map((f) => model.BY.get(f) ? h("button", { class: "chip", onclick: () => details(f) }, f) : h("span", { class: "chip" }, f)))) : null,
-      sec("Where it lives", h("p", {}, w.custom ? "Your own word" : w.c ? `Side trails, ${w.t}` : `${LEVEL(w.l).name}, ${w.t}`),
-        (() => { const ts = (w.x || []).map((k) => model.trail(k)).filter(Boolean); return ts.length ? h("div", { class: "wordchips" }, ts.map((t) => h("a", { class: "chip", href: `#/journey/trail/${t.key}`, onclick: () => closeSheet() }, t.name))) : null; })()),
-      h("div", { class: "actions" },
-        h("button", { class: "btn small" + (c && c.st === "learning" ? "" : " primary"), onclick: () => { model.learn(p.id, w.w); toast(`"${w.w}" will come back in Practice`); closeSheet(); } }, icon("bookmark"), c && c.st === "learning" ? "Saved to practice" : "Save to practice"),
-        h("button", { class: "btn quiet", onclick: () => listPicker(w.w) }, icon("folder"), "Add to a list"),
-        h("button", { class: "btn quiet", onclick: () => share(w) }, icon("share"), "Share"),
-        c && c.st === "known" ? null : h("button", { class: "btn quiet", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), "I already know it")),
-      h("p", { class: "muted small" }, w.custom ? "Added by you." : "Written for Lumin Vocab. Similar words from Open English WordNet (CC BY 4.0). ", h("a", { href: "#/about", onclick: () => closeSheet() }, "Credits")));
+      h("header", { class: "ws-hero" },
+        h("p", { class: "ws-kicker" }, h("span", { class: "ws-pos" }, w.p), h("span", { class: "ws-where" }, where)),
+        h("h1", { class: "ws-big serif" }, w.w),
+        sayPill(w, p)),
+      h("p", { class: "ws-def" }, w.d),
+      examples.length ? h("section", { class: "ws-block" }, label("In a sentence"),
+        h("ul", { class: "ws-ex" }, examples.map((x) => h("li", { class: "serif" }, markWord(x, w.w))))) : null,
+      c && c.mine ? h("section", { class: "ws-block" }, label("Your sentence"), h("p", { class: "ws-mine serif" }, markWord(c.mine, w.w))) : null,
+      syns.length || ants.length ? h("section", { class: "ws-block ws-rel" },
+        syns.length ? h("div", {}, label("Similar"), h("div", { class: "ws-chips" }, syns.map(linkChip))) : null,
+        ants.length ? h("div", {}, label("Opposite"), h("div", { class: "ws-chips" }, ants.map(linkChip))) : null) : null,
+      w.cf && model.atLevel(p, model.BY.get(w.cf)) ? h("section", { class: "ws-block ws-mix" }, label("Don't mix it up with"),
+        h("button", { class: "ws-mixcard", onclick: () => details(w.cf) }, h("strong", { class: "serif" }, w.cf), h("span", {}, model.BY.get(w.cf).d), icon("right", 18))) : null,
+      w.f && w.f.length ? h("section", { class: "ws-block" }, label("Word family"), h("div", { class: "ws-chips" }, w.f.map(linkChip))) : null,
+      trails.length ? h("section", { class: "ws-block" }, label("On the side trails"), h("div", { class: "ws-chips" }, trails.map((t) => h("a", { class: "ws-chip link", href: `#/journey/trail/${t.key}`, onclick: () => closeSheet() }, t.name)))) : null,
+      h("div", { class: "ws-acts" },
+        h("button", { class: "btn" + (saved ? "" : " primary"), onclick: () => { model.learn(p.id, w.w); toast(`"${w.w}" will come back in Practice`); closeSheet(); } }, icon("bookmark"), saved ? "Saved" : "Save to practice"),
+        h("button", { class: "ws-act", onclick: () => listPicker(w.w) }, icon("folder"), h("span", {}, "Add to list")),
+        h("button", { class: "ws-act", onclick: () => share(w) }, icon("share"), h("span", {}, "Share")),
+        c && c.st === "known" ? null : h("button", { class: "ws-act", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), h("span", {}, "I know it"))),
+      h("p", { class: "ws-src muted small" }, w.custom ? "Added by you." : "Written for Lumin Vocab. Word family from Open English WordNet (CC BY 4.0). ", w.custom ? null : h("a", { href: "#/about", onclick: () => closeSheet() }, "Credits")));
   });
+  // the big word sits in the page, so the sheet's own title stays out of the way
+  const head = body && body.querySelector(".sheet-head h2"); if (head) head.classList.add("sr");
+}
+// A sentence with the word picked out
+function markWord(text, word) {
+  const m = text.match(new RegExp(`(^|[^\\w])(${model.escapeRe(word)})(?![\\w])`, "i"));
+  if (!m) return [text];
+  const at = m.index + m[1].length;
+  return [text.slice(0, at), h("mark", {}, text.slice(at, at + m[2].length)), text.slice(at + m[2].length)];
 }
 
 export function listPicker(word) {

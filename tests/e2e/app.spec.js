@@ -29,16 +29,49 @@ async function answerWrong(page) {
 const word = (page) => page.locator(".wslide").first().getAttribute("data-word");
 // Play through a session, answering every option question right (or wrong when asked)
 async function playThrough(page, { wrongAt = -1 } = {}) {
-  for (let n = 0; n < 40; n++) {
-    await page.locator(".endcard, .flash:not(.flipped), .ltile, .spellin, .opts:not(.answered)").first().waitFor();
+  const wordFor = (page) => page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent.replace(/^Hint: /, ""); return m.WORDS.find((w) => w.d === d).w; });
+  for (let n = 0; n < 60; n++) {
+    await page.locator(".endcard, .flash:not(.flipped), .meet, .ltile, .spellin:not([disabled]), .opts:not(.answered), .hkeys, .bbank, .pairs, .wsgrid, .memo, .story").first().waitFor();
     if (await page.locator(".endcard").count()) return;
     const flash = page.locator(".flash");
-    if (await flash.count()) { await flash.click(); await page.getByRole("button", { name: "I knew it" }).click(); await page.waitForTimeout(350); continue; }
-    if (await page.locator(".ltile").count()) {
-      const target = await page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent; return m.WORDS.find((w) => w.d === d).w; });
+    if (await flash.count()) { await flash.click(); await page.getByRole("button", { name: "Knew it", exact: true }).click(); await page.waitForTimeout(350); continue; }
+    if (await page.locator("textarea.mine").count()) {
+      const w = await page.locator(".meethead .qw").textContent();
+      await page.locator("textarea.mine").fill(`Today I thought about the word ${w} at home.`);
+      await page.getByRole("button", { name: "Save my sentence" }).click(); await page.waitForTimeout(350); continue;
+    }
+    if (await page.locator(".meet").count()) { await page.locator(".pfoot .btn.primary").click(); await page.waitForTimeout(300); continue; }
+    if (await page.locator(".pairs").count()) {
+      const ks = await page.evaluate(() => [...document.querySelectorAll(".pc.pcw:not(.done)")].map((x) => x.dataset.w));
+      for (const k of ks) { await page.locator(`.pc.pcw[data-w="${k}"]`).click(); await page.locator(`.pc.pcd[data-w="${k}"]`).click(); }
+      await page.waitForTimeout(900); continue;
+    }
+    if (await page.locator(".memo").count()) {
+      const cards = await page.evaluate(async () => { const m = await import("/js/model.js"); return [...document.querySelectorAll(".mcard .mfront")].map((f) => { const t = f.textContent; const w = m.WORDS.find((x) => x.w === t) || m.WORDS.find((x) => x.d === t); return w ? w.w : t; }); });
+      const done = new Set();
+      for (let a = 0; a < cards.length; a++) { if (done.has(a)) continue; const b = cards.findIndex((x, k) => k !== a && x === cards[a]); done.add(a); done.add(b);
+        await page.locator(".mcard").nth(a).click(); await page.locator(".mcard").nth(b).click(); await page.waitForTimeout(250); }
+      await page.waitForTimeout(1000); continue;
+    }
+    if (await page.locator(".story").count()) {
+      const answers = await page.evaluate(async () => { const m = await import("/js/model.js"); return [...document.querySelectorAll(".sline")].map((l) => { const txt = l.textContent; const bank = [...document.querySelectorAll(".bbank .btile")].map((b) => b.dataset.w); const norm = (x) => x.replace(/\b(a\/an|an|a) /gi, "").replace(/\s+/g, " ").trim(); return bank.find((w) => m.sentences(m.BY.get(w)).some((s) => norm(s.replace(new RegExp(`(^|[^\\w])${m.escapeRe(w)}(?![\\w])`, "i"), "$1")) === norm(txt))) || bank[0]; }); });
+      for (let k = 0; k < answers.length; k++) { await page.locator(`.bbank .btile[data-w="${answers[k]}"]`).click(); await page.locator(".sgap").nth(k).click(); }
+      await page.getByRole("button", { name: "Check" }).click();
+      await page.getByRole("button", { name: "Continue" }).click(); await page.waitForTimeout(400); continue;
+    }
+    if (await page.locator(".wsgrid").count()) { await page.getByRole("button", { name: "Show the rest" }).click(); await page.waitForTimeout(1300); continue; }
+    if (await page.locator(".hkeys").count()) {
+      const target = await wordFor(page);
+      for (const c of new Set(target.toLowerCase().replace(/[^a-z]/g, ""))) { const k = page.locator(`.hkey[aria-label="Letter ${c}"]:not([disabled])`); if (await k.count()) await k.click(); }
+    } else if (await page.locator(".bbank").count()) {
+      const sent = await page.evaluate(async () => { const m = await import("/js/model.js"); const tiles = [...document.querySelectorAll(".bbank .btile")].map((b) => b.textContent); return m.WORDS.flatMap((w) => m.sentences(w)).find((x) => { const t = x.trim().split(/\s+/); return t.length === tiles.length && [...t].sort().join("|") === [...tiles].sort().join("|"); }); });
+      for (const t of sent.trim().split(/\s+/)) await page.evaluate((t) => [...document.querySelectorAll(".bbank .btile:not(.used)")].find((b) => b.textContent === t).click(), t);
+      await page.getByRole("button", { name: "Check" }).click();
+    } else if (await page.locator(".ltile").count()) {
+      const target = await wordFor(page);
       for (const ch of target) await page.locator(".ltile:not(.used)", { hasText: new RegExp(`^${ch}$`) }).first().click();
-    } else if (await page.locator(".spellin").count()) {
-      const target = await page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent; return m.WORDS.find((w) => w.d === d).w; });
+    } else if (await page.locator(".spellin:not([disabled])").count()) {
+      const target = await wordFor(page);
       await page.locator(".spellin").fill(target); await page.getByRole("button", { name: "Check" }).click();
     } else {
       await page.locator(".opt").first().waitFor();
@@ -60,7 +93,7 @@ test("first run: the word screen, heart, save, details and library", async ({ pa
   await page.locator(".wslide .save").first().click();
   await expect(page.locator(".toast")).toContainText(first);
   await page.getByRole("button", { name: "More about this word" }).click();
-  await expect(page.getByRole("dialog")).toContainText("Meaning");
+  await expect(page.getByRole("dialog")).toContainText("In a sentence");
   await page.getByRole("button", { name: "Close" }).click();
   await page.screenshot({ path: `test-results/shots/${info.project.name}-words.png` });
   await page.goto("/#/library/favorites");
@@ -100,7 +133,8 @@ test("a Journey chapter moves forward step by step", async ({ page }, info) => {
   await playThrough(page);
   await expect(page.locator(".endcard")).toBeVisible();
   await page.getByRole("button", { name: "Back to the road" }).click();
-  await expect(page.locator(".jnode.current .nm")).toHaveText("What they mean");
+  // the second step changes from stop to stop; it's always one of the "what does it mean" games
+  await expect(page.locator(".jnode.current .nm")).toHaveText(/What they mean|Match the pairs|Memory cards|Read the clues|Listen closely/);
   await expect(page.locator(".jnode.done")).toHaveCount(1);
   // locked steps say so instead of opening
   await page.locator(".jnode.locked").first().click();
@@ -400,4 +434,56 @@ test("words play their recorded audio in the chosen voice", async ({ page }) => 
   await page.goto("/#/settings/sound");
   await page.getByRole("radio", { name: "British" }).click();
   await expect.poll(() => clips.some(([u, s]) => u === "/audio/gb/luminous.mp3" && s === 200)).toBe(true);
+});
+
+test("every new game plays through to the end", async ({ page }, info) => {
+  test.skip(info.project.name === "ipad", "phone and desktop are enough");
+  test.setTimeout(240000);
+  const errors = watchErrors(page);
+  await onboard(page);
+  for (const kind of ["pairs", "memory", "cloze", "wordsearch", "hidden", "build", "incontext", "oddone", "opposite", "hearspell", "quick", "useit"]) {
+    await page.evaluate(async (kind) => {
+      const m = await import("/js/model.js"); const g = await import("/js/games.js"); const p = (await import("/js/app.js")).app.profile;
+      const words = m.WORDS.filter((w) => w.l === p.level && !w.c && (["pairs", "memory", "cloze", "wordsearch", "quick"].includes(kind) || m.canAsk(w, kind, false))).slice(0, 5);
+      g.start({ title: kind, words, kind, back: "/practice" });
+    }, kind);
+    await playThrough(page);
+    await expect(page.locator(".endcard h1"), kind).toBeVisible();
+  }
+  // each stop on the road gets its own mix of games, the same on every visit
+  const steps = await page.evaluate(async () => { const m = await import("/js/model.js"); const chs = m.chapterWords(4).filter((c) => !c.lookout).slice(0, 12); return chs.map((c) => m.stepsFor(c).map((s) => s.key).join(",")); });
+  expect(new Set(steps).size).toBeGreaterThan(5);
+  expect(steps.every((x) => x.startsWith("learn,") && x.endsWith(",test"))).toBe(true);
+  expect(errors).toEqual([]);
+});
+
+test("meeting words can't be failed, and a miss gets a second chance", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  const errors = watchErrors(page);
+  await onboard(page);
+  await page.goto("/#/journey");
+  await page.locator(".jnode.current").click();
+  await page.locator(".meet").waitFor();
+  // only a way forward: nothing to mark wrong
+  await expect(page.getByRole("button", { name: /Still learning|Didn't know/ })).toHaveCount(0);
+  await playThrough(page);
+  await expect(page.locator(".endcard h1")).toContainText("new words met");
+  await expect(page.locator(".endcard .score")).toHaveCount(0);
+  // meeting a word starts it in Practice but writes no review yet
+  const reps = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.cards(p.id).filter((c) => c.st === "learning").map((c) => (c.srs && c.srs.reps) || 0); });
+  expect(reps.length).toBe(6); expect(reps.every((r) => r === 0)).toBe(true);
+  // a missed word comes back once, asked another way
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const g = await import("/js/games.js"); const p = (await import("/js/app.js")).app.profile;
+    g.start({ title: "t", words: m.WORDS.filter((w) => w.l === p.level && !w.c).slice(0, 3), kind: "meaning", retry: true, back: "/practice" }); });
+  await page.locator('.opt[data-right="0"]').first().click();
+  await page.getByRole("button", { name: "Continue" }).click();
+  await playThrough(page);
+  const kinds = await page.evaluate(() => document.querySelectorAll(".reviewlist .row-item").length);
+  expect(kinds).toBe(3);
+  await expect(page.locator(".endcard .score")).toContainText("Got in the end");
+  // the same word answered twice in a day moves the schedule once
+  const once = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; const w = m.WORDS[50].w;
+    m.grade(p.id, w, 3); const a = m.card(p.id, w).srs.reps; m.grade(p.id, w, 4); return [a, m.card(p.id, w).srs.reps]; });
+  expect(once).toEqual([1, 1]);
+  expect(errors).toEqual([]);
 });
