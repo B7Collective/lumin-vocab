@@ -1296,8 +1296,13 @@ body:has(#app[data-route="words"]) .ambient, body:has(#app[data-route="welcome"]
 .ws-mixcard strong { font-size: calc(19px * var(--scale)); font-weight: 600; }
 .ws-mixcard span { color: var(--muted); font-size: var(--t-s); grid-column: 1; }
 .ws-mixcard .icon { grid-row: 1 / span 2; grid-column: 2; color: var(--muted); }
-.ws-acts { display: grid; grid-template-columns: minmax(0, 1fr) repeat(3, auto); align-items: center; gap: var(--s2); padding-top: var(--s4); border-top: 1px solid var(--line); }
-.ws-acts > .btn { margin-bottom: 4px; }
+/* Word sheet actions: the main action gets the full width and the three small ones share the row under it, evenly
+   spaced. The sheet is a narrow panel on every screen, so this one layout fits everywhere. */
+.ws-acts { display: flex; flex-direction: column; align-items: stretch; gap: var(--s3); padding-top: var(--s4); border-top: 1px solid var(--line); }
+.ws-acts > .btn { width: 100%; margin-bottom: 4px; }
+.ws-more { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--s2); }
+.ws-more .ws-act { min-width: 0; padding: var(--s2) var(--s1); }
+.ws-act span { white-space: nowrap; }
 .ws-act { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 62px; padding: 6px 8px; border: 0; border-radius: var(--r-m); background: none; color: var(--ink); font: inherit; font-size: var(--t-xs); font-weight: 700; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .ws-act .icon { width: 22px; height: 22px; }
 @media (hover: hover) { .ws-act:hover { background: var(--soft); } }
@@ -1463,7 +1468,9 @@ textarea.mine:focus { outline: none; border-color: var(--accent); box-shadow: 0 
 .jmap.land .jnode.locked .nm { color: var(--muted); font-weight: 600; }
 .jmap.land .jnode .nl { box-shadow: 0 0 0 1px var(--line), 0 2px 0 var(--lip); }
 /* The scenery answers a tap: the picture moves and a few small pieces appear around it, then fade */
-.land .dc img { pointer-events: auto; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.land .dc { pointer-events: auto; padding: 0; border: 0; margin: 0; background: none; color: inherit; font: inherit; -webkit-appearance: none; appearance: none; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.land .dc:focus { outline: none; }
+.land .dc img { pointer-events: none; -webkit-user-drag: none; }
 .land .dc .fxbit { position: absolute; z-index: 2; pointer-events: none; display: block; line-height: 0; will-change: transform, opacity; }
 .land .dc .fxbit svg { display: block; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .18)); }
 .land .dc .glowdot { width: 6px; height: 6px; border-radius: 50%; background: var(--c, #FFD27A); box-shadow: 0 0 8px 3px color-mix(in srgb, var(--c, #FFD27A) 70%, transparent); }

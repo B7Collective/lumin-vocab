@@ -101,8 +101,9 @@ function ground(land) { return h("div", { class: "ground", "aria-hidden": "true"
 // One thing beside the path: a picture with a soft shadow, and its own small movement
 function decorPiece(name, k, flip) {
   const move = decorMove(name);
-  const dc = h("i", { class: "dc" + (move ? " " + move : ""), "data-n": name, style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", draggable: "false", class: flip ? "flip" : null }));
-  // a tap brings it to life for a moment (a click, so scrolling past never sets it off)
+  const dc = h("button", { type: "button", tabindex: "-1", "aria-hidden": "true", class: "dc" + (move ? " " + move : ""), "data-n": name, style: { "--i": k, "--sz": decorSize(name) + "px" } }, h("img", { src: decorUrl(name), alt: "", width: decorSize(name), height: decorSize(name), loading: "lazy", decoding: "async", draggable: "false", class: flip ? "flip" : null }));
+  // A tap brings it to life for a moment. It is a real button, because iPhone Safari only sends taps to things it
+  // knows are tappable; a click (not a touch) so scrolling past never sets it off.
   dc.addEventListener("click", () => tapDecor(dc, name));
   return dc;
 }

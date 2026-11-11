@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "3.5.0";
+export const VERSION = "3.6.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -162,7 +162,11 @@ async function boot() {
     navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(() => {});
     // A new version took over: offer a quick reload so every screen uses it
     navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (hadController) toast("Lumin Vocab was updated", { label: "Reload", fn: () => location.reload() });
+      if (!hadController) return;
+      toast("Lumin Vocab was updated", { label: "Reload", fn: () => location.reload() });
+      // Phones keep an installed app open for days, so also reload by itself the next time it is put away,
+      // unless a game is in progress (that would lose the round)
+      document.addEventListener("visibilitychange", () => { if (document.hidden && !location.hash.startsWith("#/play")) location.reload(); });
     });
   }
 }

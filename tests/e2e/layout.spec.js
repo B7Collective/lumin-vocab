@@ -13,12 +13,26 @@ function check() {
     if (!vis(el) || scroller(el) || getComputedStyle(el).position === "fixed" || el.closest(".scrim")) continue;
     const r = el.getBoundingClientRect(); if (r.right > vw + 1 || r.left < -1) out.push("off screen: " + label(el));
   }
-  for (const el of scope.querySelectorAll(".btn, .chip, .topic, .topnav a, .bottomnav a, .suggest, .kbd, .status, .hudchip, .qkind, .jnode .nm, .eyebrow")) {
+  for (const el of scope.querySelectorAll(".btn, .chip, .topic, .topnav a, .bottomnav a, .suggest, .kbd, .status, .hudchip, .qkind, .jnode .nm, .eyebrow, .ws-act span")) {
     if (!vis(el)) continue; const rg = document.createRange(), tops = new Set();
     for (const n of el.childNodes) if (n.nodeType === 3 && n.textContent.trim()) { rg.selectNodeContents(n); for (const x of rg.getClientRects()) tops.add(Math.round(x.top)); }
     if (tops.size > 1) out.push("label wraps: " + label(el));
   }
-  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .gcard, .wcard, .stat")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim, .whint") && !el.matches(".wdl"));
+  // nothing spills out of its own button or pill (labels hung outside on purpose are positioned absolutely, and skipped)
+  for (const el of scope.querySelectorAll("button, .btn, .chip")) {
+    if (!vis(el) || el.closest(".decor") || el.matches(".jnode")) continue; // a Journey stop is a disc with its name card hanging below on purpose
+    const r = el.getBoundingClientRect(), rg = document.createRange(); let bad = false;
+    const walk = (n) => {
+      if (bad) return;
+      if (n.nodeType === 3) { if (!n.textContent.trim()) return; rg.selectNodeContents(n); for (const q of rg.getClientRects()) if (q.left < r.left - 1 || q.right > r.right + 1) bad = true; return; }
+      if (n.nodeType !== 1 || !vis(n) || getComputedStyle(n).position === "absolute") return;
+      const q = n.getBoundingClientRect(); if (q.left < r.left - 1 || q.right > r.right + 1) { bad = true; return; }
+      n.childNodes.forEach(walk);
+    };
+    el.childNodes.forEach(walk);
+    if (bad) out.push("spills out: " + label(el));
+  }
+  const boxes = [...scope.querySelectorAll("button, a, input, select, h1, h2, h3, p, li, .badge, .avatar, .topic, .tile, .panel, .gcard, .wcard, .stat")].filter(vis).filter(el => !el.closest(".bottomnav, .scrim, .whint, .decor") && !el.matches(".wdl"));
   const rs = boxes.map(el => el.getBoundingClientRect());
   for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
     if (boxes[i].contains(boxes[j]) || boxes[j].contains(boxes[i])) continue;
@@ -63,6 +77,12 @@ test("every screen keeps the layout standard", async ({ page }) => {
     await page.evaluate(() => document.querySelectorAll("#layer .toast").forEach(t => t.remove()));
     expect(await page.evaluate(check), s).toEqual([]);
   }
+  // the word details sheet, scrolled to its actions
+  await page.evaluate(async () => { const st = await import("/js/store.js"); const m = await import("/js/model.js"); await st.setMeta("activeProfile", m.profiles()[0].id); });
+  await page.goto("/#/words"); await page.reload();
+  await page.getByRole("button", { name: "More about this word" }).first().click();
+  await page.locator(".sheet .ws-acts").scrollIntoViewIfNeeded(); await page.waitForTimeout(400);
+  expect(await page.evaluate(check), "word sheet").toEqual([]);
   expect(errors).toEqual([]);
 });
 

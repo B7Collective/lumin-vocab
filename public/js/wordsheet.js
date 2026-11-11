@@ -78,9 +78,10 @@ export function details(wordText) {
       trails.length ? h("section", { class: "ws-block" }, label("On the side trails"), h("div", { class: "ws-chips" }, trails.map((t) => h("a", { class: "ws-chip link", href: `#/journey/trail/${t.key}`, onclick: () => closeSheet() }, t.name)))) : null,
       h("div", { class: "ws-acts" },
         h("button", { class: "btn" + (saved ? "" : " primary"), onclick: () => { model.learn(p.id, w.w); toast(`"${w.w}" will come back in Practice`); closeSheet(); } }, icon("bookmark"), saved ? "Saved" : "Save to practice"),
+        h("div", { class: "ws-more" },
         h("button", { class: "ws-act", onclick: () => listPicker(w.w) }, icon("folder"), h("span", {}, "Add to list")),
         h("button", { class: "ws-act", onclick: () => share(w) }, icon("share"), h("span", {}, "Share")),
-        c && c.st === "known" ? null : h("button", { class: "ws-act", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), h("span", {}, "I know it"))),
+        c && c.st === "known" ? null : h("button", { class: "ws-act", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), h("span", {}, "I know it")))),
       h("p", { class: "ws-src muted small" }, w.custom ? "Added by you." : "Written for Lumin Vocab. Word family from Open English WordNet (CC BY 4.0). ", w.custom ? null : h("a", { href: "#/about", onclick: () => closeSheet() }, "Credits")));
   });
   // the big word sits in the page, so the sheet's own title stays out of the way
