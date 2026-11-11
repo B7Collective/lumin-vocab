@@ -19,7 +19,18 @@ async function onboard(page, { name = "Alex", role = "An adult" } = {}) {
 
 // Answer whatever question is showing, wrongly (tiles in their scrambled order are never the word)
 async function answerWrong(page) {
-  await page.locator(".flash:not(.flipped), .ltile, .spellin, .opts:not(.answered)").first().waitFor();
+  await page.locator(".flash:not(.flipped), .ltile, .spellin, .opts:not(.answered), .hkeys").first().waitFor();
+  if (await page.locator(".hkeys").count()) {
+    // Guess the word: press letters that are not in it until the lanterns run out
+    const target = await page.evaluate(async () => { const m = await import("/js/model.js"); const d = document.querySelector(".qprompt .qd").textContent.replace(/^Hint: /, ""); return m.WORDS.find((w) => w.d === d).w.toLowerCase(); });
+    for (const c of "abcdefghijklmnopqrstuvwxyz") {
+      if (target.includes(c)) continue;
+      const k = page.locator(`.hkey[aria-label="Letter ${c}"]:not([disabled])`);
+      if (!(await page.locator(".hkeys").count()) || await page.getByRole("button", { name: /Continue|See results/ }).count()) break;
+      if (await k.count()) await k.click();
+    }
+    return true;
+  }
   if (await page.locator(".flash").count()) { await page.locator(".flash").click(); await page.getByRole("button", { name: "Still learning" }).click(); return false; }
   if (await page.locator(".ltile").count()) { for (const t of await page.locator(".ltile").all()) await t.click(); return true; }
   if (await page.locator(".spellin").count()) { await page.locator(".spellin").fill("zzzz"); await page.getByRole("button", { name: "Check" }).click(); return true; }
@@ -195,7 +206,13 @@ test("practice games score answers and challenges keep their rules", async ({ pa
   await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByRole("button", { name: /Rush/ }).click();
   await expect(page.locator(".pstat .icon")).toHaveCount(3);
-  for (let k = 0; k < 3; k++) { if (await answerWrong(page)) await page.getByRole("button", { name: /Continue|See results/ }).click(); else await page.waitForTimeout(400); }
+  for (let k = 0; k < 3; k++) {
+    if (await answerWrong(page)) {
+      // the answer sheet slides up; on a slow phone it can still be moving, so try again rather than wait forever
+      const go = page.getByRole("button", { name: /Continue|See results/ });
+      for (let t = 0; t < 5 && await go.count(); t++) await go.click({ timeout: 3000 }).catch(() => {});
+    } else await page.waitForTimeout(400);
+  }
   await expect(page.locator(".endcard")).toBeVisible();
   await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByRole("button", { name: /Sprint/ }).click();

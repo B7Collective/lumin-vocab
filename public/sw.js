@@ -6,7 +6,7 @@ const AUDIO = "lumin-audio-v1";
 const SHELL = [
   "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/data/trails.json", "/404.html", "/art/grain.png",
   "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/scan.js", "/js/vendor/qrcode.mjs",
-  "/js/art.js", "/js/sound.js", "/js/wordsheet.js", "/js/words.js", "/js/journey.js", "/js/practice.js", "/js/games.js", "/js/library.js", "/js/you.js", "/js/motion.js",
+  "/js/art.js", "/js/sound.js", "/js/wordsheet.js", "/js/words.js", "/js/journey.js", "/js/decorfx.js", "/js/practice.js", "/js/games.js", "/js/library.js", "/js/you.js", "/js/motion.js",
   "/icons/logo.svg", "/icons/favicon.svg", "/icons/app-192.png", "/icons/app-apple-180.png",
   "/fonts/literata-latin-400-normal.woff2", "/fonts/literata-latin-600-normal.woff2", "/fonts/literata-latin-400-italic.woff2",
   "/fonts/atkinson-hyperlegible-latin-400-normal.woff2", "/fonts/atkinson-hyperlegible-latin-700-normal.woff2",
