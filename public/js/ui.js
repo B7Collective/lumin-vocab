@@ -116,14 +116,23 @@ export const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matc
 export function haptic(pattern = 8) { try { if (navigator.vibrate && !reduced()) navigator.vibrate(pattern); } catch {} }
 
 export const canSpeak = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
-export function voices() { if (!canSpeak()) return []; return speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang)); }
+// Devices list their voices in no useful order, and Macs include joke and old robot voices (Albert, Zarvox,
+// Fred and friends). Hide those and rank the natural ones first, so "Automatic" picks the best voice the device has.
+const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|kathy|ralph|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|deranged|hysterical|pipe organ)\b/i;
+const NATURAL = /(premium|enhanced|natural|neural|online)/i;
+const GOOD = /^(google us english|ava|zoe|evan|nathan|noelle|allison|susan|samantha|tom|joelle|aria|jenny|guy|ana|michelle|christopher|eric|steffan|emma|andrew|brian|english united states)\b/i;
+const rank = (v) => (NATURAL.test(v.name) ? 100 : 0) + (GOOD.test(v.name.replace(/^microsoft\s+/i, "")) ? 40 : 0) + (/en[-_]US/i.test(v.lang) ? 20 : 0) + (v.localService ? 2 : 0);
+export function voices() {
+  if (!canSpeak()) return [];
+  return speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang) && !NOVELTY.test(v.name)).sort((a, b) => rank(b) - rank(a) || a.name.localeCompare(b.name));
+}
 export function speak(text, p) {
   if (!canSpeak() || !text) return false;
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     const vs = voices();
-    const pick = (p && p.voice && vs.find(v => v.name === p.voice)) || vs.find(v => /en-US/i.test(v.lang) && v.localService) || vs.find(v => /en-US/i.test(v.lang)) || vs[0];
+    const pick = (p && p.voice && vs.find(v => v.name === p.voice)) || vs[0];
     if (pick) u.voice = pick;
     u.lang = (pick && pick.lang) || "en-US";
     u.rate = (p && p.rate) || 0.9;

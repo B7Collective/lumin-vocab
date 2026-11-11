@@ -526,7 +526,7 @@ route("settings", (main) => {
       sw("Read words aloud", kid ? "Hear each new word and review question" : "Hear each new word as it appears", !!p.readAloud, (v) => save({ readAloud: v })),
       lockedKid || !vs.length ? null : h("div", { class: "field" }, h("label", { for: "set-voice" }, "Voice"),
         h("select", { id: "set-voice", onchange: (e) => { save({ voice: e.target.value }); speak("luminous", p); } }, h("option", { value: "" }, "Automatic"), vs.map(v => h("option", { value: v.name, selected: p.voice === v.name }, `${v.name} (${v.lang})`))),
-        h("small", {}, `Voices come from this ${LABELS.os[app.device.os]}, so they can differ between devices.`)),
+        h("small", {}, `Voices come from this ${LABELS.os[app.device.os]}, so they can differ between devices. Automatic picks the most natural one it has.${app.device.os === "macos" ? " For a much more natural voice, add a Premium voice such as Ava or Zoe: System Settings, Accessibility, Spoken Content, System voice, Manage Voices. Then reopen Lumin." : (app.device.os === "ios" || app.device.os === "ipados") ? " For a much more natural voice, add a Premium voice such as Ava: Settings, Accessibility, Spoken Content, Voices, English. Then reopen Lumin." : ""}`)),
       lockedKid ? null : h("div", { class: "field" }, h("label", { for: "set-rate" }, "Speaking speed"), h("input", { type: "range", id: "set-rate", min: "0.6", max: "1.2", step: "0.05", value: String(p.rate || 0.9), onchange: (e) => { save({ rate: parseFloat(e.target.value) }); speak("luminous", p); } })),
       h("button", { class: "btn small quiet start", onclick: () => speak("Lumin Vocab. Luminous.", p) }, icon("speak"), "Test"));
   }
