@@ -22,6 +22,10 @@ export const SCENES = [
 export const SCENE_GROUPS = [["places", "Places"], ["paper", "Paper art"], ["dreamy", "Dreamy"]];
 export const wallpaperUrl = (id) => `/art/wallpapers/${id}.jpg`;
 export const sceneUrl = (id) => `/art/scenes/${id}.webp`;
+// Full-screen spots (the Words screen, the welcome page, wallpapers) use a large copy where one exists: a phone
+// stretches a scene to fill a tall screen, so the light copy would look soft. Thumbnails keep the light one.
+const XL = new Set(["moonriver", "emberpeak", "redfalls", "junglemoon", "greatwave", "moonpagoda", "canyonarch", "crystalcave"]);
+export const sceneBig = (id) => XL.has(id) ? `/art/scenes/xl/${id}.webp` : sceneUrl(id);
 // Pick a scene for a word: the profile's chosen one, or a gentle rotation that stays the same for a word on every device
 export function sceneFor(p, word) {
   if (p && p.scene && p.scene !== "auto") return SCENES.find((s) => s.id === p.scene) || SCENES[0];

@@ -3,7 +3,7 @@
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
 import { h, icon, speak, share, fitWord, reduced, preloadWord } from "./ui.js";
-import { sceneFor, sceneUrl } from "./art.js";
+import { sceneFor, sceneBig as sceneUrl } from "./art.js";
 import { sayPill, details, toggleFav, toggleSave, POS_SHORT } from "./wordsheet.js";
 
 const HINT_KEY = "lumin-swipe-hint";

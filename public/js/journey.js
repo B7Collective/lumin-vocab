@@ -144,15 +144,25 @@ function stepMap(p, st, info, trailKey) {
     nodes.forEach((n, k) => n.style.setProperty("--dx", Math.round(wave[k % wave.length] * amp) + "px"));
     const box = map.getBoundingClientRect();
     const pts = [...nodes.map((n) => n.querySelector(".disc")), goal.querySelector("img")].map((d) => { const r = d.getBoundingClientRect(); return [r.left + r.width / 2 - box.left, r.top + r.height / 2 - box.top]; });
-    const d = (list) => list.map((pt, k) => k ? `Q ${list[k - 1][0]} ${(list[k - 1][1] + pt[1]) / 2} ${(list[k - 1][0] + pt[0]) / 2} ${(list[k - 1][1] + pt[1]) / 2} T ${pt[0]} ${pt[1]}` : `M ${pt[0]} ${pt[1]}`).join(" ");
+    // One smooth curve through every stop (a Catmull-Rom spline). Passing a count draws only the first stretches of
+    // the same curve, so the walked line always sits exactly on the road.
+    const d = (list, segs = list.length - 1) => {
+      const P = (i) => list[Math.max(0, Math.min(list.length - 1, i))];
+      let out = `M ${list[0][0]} ${list[0][1]}`;
+      for (let i = 0; i < Math.min(segs, list.length - 1); i++) {
+        const [a, b, c, e] = [P(i - 1), P(i), P(i + 1), P(i + 2)];
+        out += ` C ${b[0] + (c[0] - a[0]) / 6} ${b[1] + (c[1] - a[1]) / 6} ${c[0] - (e[0] - b[0]) / 6} ${c[1] - (e[1] - b[1]) / 6} ${c[0]} ${c[1]}`;
+      }
+      return out;
+    };
     trail.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
     trail.replaceChildren();
-    // a soft road under the dotted trail, coming in from above the first step
-    const road = [[box.width / 2, 34], ...pts];
-    for (const cls of ["roadedge", "road"]) { const r = svgEl("path"); r.setAttribute("d", d(road)); r.setAttribute("class", cls); trail.append(r); }
-    const all = svgEl("path"); all.setAttribute("d", d(pts)); trail.append(all);
+    // a paper road from stop to stop: a soft shadow, a crisp edge, the road itself, and footsteps down the middle
+    const road = pts;
+    for (const cls of ["roadshadow", "roadedge", "road"]) { const r = svgEl("path"); r.setAttribute("d", d(road)); r.setAttribute("class", cls); trail.append(r); }
+    const all = svgEl("path"); all.setAttribute("d", d(pts)); all.setAttribute("class", "steps"); trail.append(all);
     scatter(placed, box, road, nodes, goal, seed, decor);
-    if (st.step > 0) { const w = svgEl("path"); w.setAttribute("d", d(pts.slice(0, st.step + 1))); w.setAttribute("class", "walked"); trail.append(w); }
+    if (st.step > 0) { const w = svgEl("path"); w.setAttribute("d", d(pts, st.step)); w.setAttribute("class", "walked"); trail.append(w); }
     // the traveler stands at the current step
     const here = pts[Math.min(st.step, pts.length - 1)];
     const t = svgEl("circle"); t.setAttribute("class", "traveler"); t.setAttribute("cx", here[0]); t.setAttribute("cy", here[1] - 58); t.setAttribute("r", "7"); trail.append(t);
@@ -176,11 +186,11 @@ function scatter(placed, box, road, nodes, goal, seed, layer) {
   road.forEach((pt, k) => { if (!k) return; const [x0, y0] = road[k - 1]; for (let t = 0; t <= 1; t += 0.08) along.push([x0 + (pt[0] - x0) * t, y0 + (pt[1] - y0) * t]); });
   const keepOut = [...nodes.flatMap((n) => [n.querySelector(".disc"), n.querySelector(".nm"), n.querySelector(".nl"), n.querySelector(".jstart")]), goal.querySelector("img"), goal.querySelector(".plaque")]
     .filter(Boolean).map((el) => { const r = el.getBoundingClientRect(); return [r.left - box.left - 10, r.top - box.top - 10, r.right - box.left + 10, r.bottom - box.top + 10]; });
-  const clearOf = (xl, y, rad) => { const x = xl + off; return along.every(([ax, ay]) => Math.hypot(ax - x, ay - y) > rad + 30) && keepOut.every(([l, t, r, b]) => x + rad * 0.8 < l || x - rad * 0.8 > r || y + rad * 0.8 < t || y - rad * 0.8 > b); };
+  const clearOf = (xl, y, rad) => { const x = xl + off; return along.every(([ax, ay]) => Math.hypot(ax - x, ay - y) > rad + 38) && keepOut.every(([l, t, r, b]) => x + rad * 0.8 < l || x - rad * 0.8 > r || y + rad * 0.8 < t || y - rad * 0.8 > b); };
   const spots = [];
   let anchor = null;
   placed.forEach((el, k) => {
-    const base = parseFloat(el.style.getPropertyValue("--sz")) * (phone ? 0.78 : 1);
+    const base = parseFloat(el.style.getPropertyValue("--sz")) * (phone ? 0.78 : 1) * 0.9;  // scenery stays a touch smaller than the stops
     let best = null;
     for (let tries = 0; tries < 90 && !best; tries++) {
       const companion = anchor && rnd() < 0.55;

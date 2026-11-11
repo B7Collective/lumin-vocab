@@ -367,8 +367,8 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
 .words { position: fixed; inset: 0; overflow: hidden; background: #0E1217; touch-action: none; user-select: none; -webkit-user-select: none; }
 .wslide { position: absolute; inset: 0; will-change: transform, opacity; }
 .wbg { position: absolute; inset: -2%; width: 104%; height: 104%; object-fit: cover; object-position: var(--fx, 50%) 50%; filter: saturate(1.05) brightness(.9); animation: drift 28s ease-in-out infinite alternate; }
-@media (max-aspect-ratio: 4/5) { .wbg { filter: saturate(1.05) brightness(.86) blur(.6px); } }
-@keyframes drift { from { transform: scale(1.02) translate3d(0, 0, 0); } to { transform: scale(1.1) translate3d(-1.5%, -1%, 0); } }
+@media (max-aspect-ratio: 4/5) { .wbg { filter: saturate(1.05) brightness(.86); } }
+@keyframes drift { from { transform: scale(1) translate3d(0, 0, 0); } to { transform: scale(1.05) translate3d(-1%, -.6%, 0); } }
 .wshade { position: absolute; inset: 0; background: radial-gradient(120% 70% at 50% 46%, rgba(6,9,13,.28), rgba(6,9,13,.62) 100%), linear-gradient(to bottom, rgba(6,9,13,.45), rgba(6,9,13,0) 22%, rgba(6,9,13,0) 62%, rgba(6,9,13,.6)); }
 .wbody { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #fff; padding: calc(84px + var(--safe-top)) var(--gutter) calc(190px + var(--safe-bottom)); gap: var(--s4); }
 .wpos { font-family: var(--serif); font-style: italic; font-size: var(--t-m); color: rgba(255,255,255,.82); }
@@ -1443,3 +1443,22 @@ textarea.mine:focus { outline: none; border-color: var(--accent); box-shadow: 0 
 .pfoot .actions.mineacts .btn { margin: 0; }
 .pfoot .actions.mineacts .btn.quiet { flex: 0 0 auto; padding-inline: var(--s5); }
 .pfoot .actions.mineacts .btn.primary { flex: 1 1 auto; }
+/* The Journey road: a paper path laid across the ground. Sand with a crisp edge and a soft shadow, footsteps down
+   the middle, and the stretch you've walked traced in gold, so the way forward reads at a glance. */
+.land { --road: #EFE6D4; --road-edge: #C7B595; --road-shadow: rgba(60, 44, 20, .16); --trail-dot: rgba(120, 96, 58, .55); }
+[data-theme="dark"] .land { --road: #343E49; --road-edge: #1E252D; --road-shadow: rgba(0, 0, 0, .45); --trail-dot: rgba(236, 239, 242, .42); }
+.jmap .trail path.roadshadow { stroke: var(--road-shadow); stroke-width: 48; stroke-dasharray: none; stroke-linecap: round; animation: none; transform: translateY(5px); filter: blur(3px); }
+.jmap .trail path.roadedge { stroke: var(--road-edge); stroke-width: 44; }
+.jmap .trail path.road { stroke: var(--road); stroke-width: 39; }
+.jmap.land .trail path.steps { stroke: var(--trail-dot); stroke-width: 5; stroke-linecap: round; stroke-dasharray: 0 15; animation: none; }
+.jmap.land .trail path.walked { stroke: var(--accent); stroke-width: 6; stroke-linecap: round; stroke-dasharray: none; animation: none; filter: drop-shadow(0 0 5px rgba(242, 181, 68, .55)); }
+/* More road between stops, so it feels like walking somewhere */
+.jmap.land .jnode { margin-bottom: 44px; }
+/* Stops sit on the road like stations: a clear rim, solid labels that never blend into the path */
+.jmap.land .jnode .disc { box-shadow: 0 0 0 4px var(--card), 0 5px 0 4px var(--lip), 0 18px 26px -14px rgba(24,33,43,.5); }
+.jmap.land .jnode.current .disc { box-shadow: 0 0 0 5px var(--accent), 0 6px 0 5px var(--accent-lip), 0 22px 30px -14px rgba(24,33,43,.55); }
+.jmap.land .jnode.locked .disc { filter: grayscale(.55); opacity: 1; }
+.jmap.land .jnode.locked .disc img { opacity: .78; }
+.jmap.land .jnode .nm { background: var(--card); color: var(--ink); font-weight: 700; padding: 4px 12px; border-radius: var(--r-pill); box-shadow: 0 0 0 1px var(--line), 0 2px 0 var(--lip); position: relative; z-index: 1; margin-top: 4px; }
+.jmap.land .jnode.locked .nm { color: var(--muted); font-weight: 600; }
+.jmap.land .jnode .nl { box-shadow: 0 0 0 1px var(--line), 0 2px 0 var(--lip); }
