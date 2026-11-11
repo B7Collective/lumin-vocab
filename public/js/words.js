@@ -2,7 +2,7 @@
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
 import * as model from "./model.js";
 import { app, route, go } from "./app.js";
-import { h, icon, speak, share, fitWord, reduced } from "./ui.js";
+import { h, icon, speak, share, fitWord, reduced, preloadWord } from "./ui.js";
 import { sceneFor, sceneUrl } from "./art.js";
 import { sayPill, details, toggleFav, toggleSave, POS_SHORT } from "./wordsheet.js";
 
@@ -67,7 +67,7 @@ route("words", (main) => {
   root.prepend(cur);
   const preload = () => { const w = queue[idx + 1]; if (w) { const img = new Image(); img.src = sceneUrl(sceneFor(p, w.w).id); } };
   preload();
-  const onShow = (w) => { if (w && p.readAloud) setTimeout(() => speak(w.w, p), 500); };
+  const onShow = (w) => { if (!w) return; preloadWord(w.w, p); if (p.readAloud) setTimeout(() => speak(w.w, p), 500); };
   onShow(queue[idx]);
 
   // Move to another word. dir 1 = next (up), -1 = back (down).

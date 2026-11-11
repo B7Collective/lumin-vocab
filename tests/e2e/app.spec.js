@@ -158,12 +158,12 @@ test("practice games score answers and challenges keep their rules", async ({ pa
   await playThrough(page, { wrongAt: 1 });
   await expect(page.locator(".endcard h1")).toHaveText(/Well done|Keep going|Perfect/);
   await expect(page.locator(".score")).toContainText("Accuracy");
-  await page.getByRole("button", { name: "Done" }).click();
+  await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByRole("button", { name: /Rush/ }).click();
   await expect(page.locator(".pstat .icon")).toHaveCount(3);
   for (let k = 0; k < 3; k++) { if (await answerWrong(page)) await page.getByRole("button", { name: /Continue|See results/ }).click(); else await page.waitForTimeout(400); }
   await expect(page.locator(".endcard")).toBeVisible();
-  await page.getByRole("button", { name: "Done" }).click();
+  await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByRole("button", { name: /Sprint/ }).click();
   await expect(page.locator(".pstat")).toContainText(/\d+/);
   expect(errors).toEqual([]);
@@ -194,11 +194,19 @@ test("install guidance matches the device", async ({ page }, info) => {
 
 test("settings adapt to kids and parents, with a PIN", async ({ page }, info) => {
   await onboard(page, { name: "Pat" });
-  await page.goto("/#/settings");
-  await expect(page.getByRole("heading", { name: "Learning" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Family controls" })).toBeVisible();
+  await page.goto("/#/settings/learning");
+  // settings are split into tabs, one group on screen at a time
+  const tabs = page.getByRole("navigation", { name: "Settings sections" });
+  await expect(tabs.getByRole("button")).toHaveText(["Learning", "Look", "Sound", "Profile", "App"]);
+  await expect(page.getByRole("slider", { name: "Difficulty" })).toBeVisible();
+  await expect(page.getByRole("group", { name: "Topics" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Family controls" })).toBeHidden();
+  await tabs.getByRole("button", { name: "App" }).click();
+  await expect(page).toHaveURL(/#\/settings\/app$/);
   if (info.project.name === "desktop") await expect(page.getByRole("heading", { name: "Keyboard shortcuts" })).toBeVisible();
   else await expect(page.getByRole("heading", { name: "Keyboard shortcuts" })).toHaveCount(0);
+  await tabs.getByRole("button", { name: "Profile" }).click();
+  await expect(page.getByRole("heading", { name: "Family controls" })).toBeVisible();
   await page.getByRole("button", { name: "Set PIN" }).click();
   await page.getByLabel("4 to 8 digits").fill("2468"); await page.getByRole("button", { name: "Next" }).click();
   await page.getByLabel("Family PIN").fill("2468"); await page.getByRole("button", { name: "Save", exact: true }).click();
@@ -222,7 +230,7 @@ test("settings adapt to kids and parents, with a PIN", async ({ page }, info) =>
   await expect(page.locator(".toast")).toContainText("didn't match");
   await page.getByRole("button", { name: "Grown-up settings" }).click();
   await page.getByLabel("Family PIN").fill("2468"); await page.getByRole("button", { name: "Unlock" }).click();
-  await expect(page.getByRole("heading", { name: "Learning" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Settings sections" }).getByRole("button", { name: "Learning" })).toBeVisible();
   // parent profile is locked from the picker
   await page.goto("/#/who");
   await page.getByRole("button", { name: /Pat/ }).click();
@@ -251,7 +259,7 @@ test("two devices sync through the server, end to end encrypted", async ({ brows
   await b.goto("/#/you");
   await expect(b.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("3");
   // change on B reaches A
-  await b.goto("/#/settings");
+  await b.goto("/#/settings/profile");
   await b.getByLabel("Name").fill("Robin B"); await b.getByLabel("Name").blur();
   await b.waitForTimeout(3500);
   await a.goto("/#/family"); await a.getByRole("button", { name: "Sync now" }).click();
@@ -308,7 +316,7 @@ test("side trails walk at their own pace, and the difficulty slider moves by key
   // mix-up questions offer the pair
   await page.locator(".jnode.current").click();
   await expect(page.locator(".opts.two .opt")).toHaveCount(2);
-  await page.goto("/#/settings");
+  await page.goto("/#/settings/learning");
   const slider = page.getByRole("slider", { name: "Difficulty" });
   await slider.focus();
   await page.keyboard.press("ArrowLeft");
@@ -378,4 +386,18 @@ test("every word served comes from the chosen level", async ({ page }, info) => 
     expect(r.trails.length, `level ${r.lv} side trails`).toBeGreaterThanOrEqual(15);
     for (const [k, n] of r.trails) expect(n, `${k} at level ${r.lv}`).toBeGreaterThanOrEqual(9);
   }
+});
+
+test("words play their recorded audio in the chosen voice", async ({ page }) => {
+  const clips = [];
+  page.on("response", (r) => { if (r.url().includes("/audio/")) clips.push([new URL(r.url()).pathname, r.status()]); });
+  await onboard(page, { name: "Lee" });
+  const word = (await page.locator(".words .wword").first().innerText()).trim();
+  const slug = word.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  await page.getByRole("button", { name: new RegExp(`^Hear ${word}`) }).first().click();
+  await expect.poll(() => clips.some(([u, s]) => u === `/audio/us/${slug}.mp3` && s === 200)).toBe(true);
+  // switch to the British voice: it plays a sample
+  await page.goto("/#/settings/sound");
+  await page.getByRole("radio", { name: "British" }).click();
+  await expect.poll(() => clips.some(([u, s]) => u === "/audio/gb/luminous.mp3" && s === 200)).toBe(true);
 });

@@ -1,6 +1,8 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v3.2.2";
+const VERSION = "lumin-v3.3.0";
+// Word audio lives in its own cache so it survives app updates (each clip only changes if the word does)
+const AUDIO = "lumin-audio-v1";
 const SHELL = [
   "/", "/index.html", "/app.css", "/manifest.webmanifest", "/data/words.json", "/data/trails.json", "/404.html", "/art/grain.png",
   "/js/app.js", "/js/views.js", "/js/model.js", "/js/store.js", "/js/sync.js", "/js/srs.js", "/js/device.js", "/js/ui.js", "/js/scan.js", "/js/vendor/qrcode.mjs",
@@ -14,7 +16,7 @@ self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", (e) => {
-  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== VERSION && k !== AUDIO).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
 });
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
@@ -27,6 +29,11 @@ self.addEventListener("fetch", (e) => {
       if (isApp && r.ok && r.type === "basic") { const copy = r.clone(); caches.open(VERSION).then((c) => c.put("/index.html", copy)); }
       return r;
     }).catch(() => caches.open(VERSION).then((c) => c.match(url.pathname, { ignoreSearch: true }).then((hit) => hit || c.match("/index.html")))));
+    return;
+  }
+  // Word audio: kept once played, so a word you've heard plays instantly and offline
+  if (url.pathname.startsWith("/audio/")) {
+    e.respondWith(caches.open(AUDIO).then((c) => c.match(url.pathname).then((hit) => hit || fetch(url.pathname).then((r) => { if (r.ok && r.status === 200) c.put(url.pathname, r.clone()); return r; }))));
     return;
   }
   // Files: served from this version's cache (all files of one version always match), filled from the network when missing

@@ -1,6 +1,6 @@
 // Lumin Vocab: small UI helpers. User text is always set with textContent, never as HTML.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-import { COLORS } from "./model.js";
+import { COLORS, BY } from "./model.js";
 
 // Optional pieces are often written as "cond ? el : null". Skip empty values everywhere
 // instead of printing "null" or "false" on screen.
@@ -115,39 +115,60 @@ export const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matc
 // A light tap on devices that support it (most Android phones). iPhones ignore it.
 export function haptic(pattern = 8) { try { if (navigator.vibrate && !reduced()) navigator.vibrate(pattern); } catch {} }
 
-export const canSpeak = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
-// Two voices only: American and British. Each device has its own voices, so Lumin picks the most natural one it can
-// find for the accent you choose, and never the joke or old robot voices some devices include (Albert, Zarvox, Fred).
+const hasTTS = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
+// Two voices only: American and British. Every word in the bank has a studio-quality recording in both,
+// made with the open Kokoro voice model and served from our own site (public/audio/us and public/audio/gb).
+// Words a family adds themselves have no recording, so they fall back to the device's own best voice.
 export const ACCENTS = [["us", "American"], ["gb", "British"]];
+export const clipSlug = (w) => String(w).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const clipUrl = (w, accent) => `/audio/${accent === "gb" ? "gb" : "us"}/${clipSlug(w)}.mp3`;
+let actx = null, playing = null;
+const clips = new Map();
+const ctx = () => { if (!actx) { const C = window.AudioContext || window.webkitAudioContext; if (C) actx = new C(); } if (actx && actx.state === "suspended") actx.resume().catch(() => {}); return actx; };
+// Phones only allow sound after a tap, so wake the audio on the first touch anywhere
+if (typeof window !== "undefined") ["pointerdown", "keydown"].forEach((t) => window.addEventListener(t, () => ctx(), { once: true, capture: true }));
+async function clipBuffer(url) {
+  if (clips.has(url)) return clips.get(url);
+  const pending = fetch(url).then((r) => { if (!r.ok) throw new Error("no clip"); return r.arrayBuffer(); }).then((b) => new Promise((ok, bad) => ctx().decodeAudioData(b, ok, bad)));
+  clips.set(url, pending);
+  if (clips.size > 60) clips.delete(clips.keys().next().value);
+  pending.catch(() => clips.delete(url));
+  return pending;
+}
+async function playClip(word, accent) {
+  const c = ctx(); if (!c) return false;
+  const buf = await clipBuffer(clipUrl(word, accent));
+  if (playing) { try { playing.stop(); } catch {} }
+  const src = c.createBufferSource(); src.buffer = buf; src.connect(c.destination); src.start(); playing = src;
+  return true;
+}
+// Preload a word's clip (for example the next card) so it plays the instant it's asked for
+export function preloadWord(w, p) { const word = BY.get(w); if (word && !word.custom && ctx()) clipBuffer(clipUrl(w, p && p.accent)).catch(() => {}); }
+
 const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|kathy|ralph|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|deranged|hysterical|pipe organ)\b/i;
 const NATURAL = /(premium|enhanced|natural|neural|online)/i;
-const GOOD = {
-  us: /^(google us english|ava|zoe|evan|nathan|noelle|allison|susan|samantha|tom|aria|jenny|guy|ana|michelle|christopher|eric|emma|andrew|brian|english united states)\b/i,
-  gb: /^(google uk english|jamie|serena|kate|oliver|stephanie|daniel|sonia|ryan|libby|maisie|thomas|english united kingdom)\b/i,
-};
 const LANG = { us: /en[-_]US/i, gb: /en[-_]GB/i };
-const usable = () => (canSpeak() ? speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang) && !NOVELTY.test(v.name)) : []);
-const rank = (v, a) => (LANG[a].test(v.lang) ? 1000 : 0) + (NATURAL.test(v.name) ? 100 : 0) + (GOOD[a].test(v.name.replace(/^microsoft\s+/i, "")) ? 40 : 0) + (v.localService ? 2 : 0);
-export function voiceFor(accent = "us") {
-  const a = LANG[accent] ? accent : "us";
-  return usable().sort((x, y) => rank(y, a) - rank(x, a))[0] || null;
-}
-// True when the device has a clearly natural voice for that accent (used to suggest adding one)
-export const hasNaturalVoice = (accent = "us") => { const v = voiceFor(accent); return !!v && LANG[accent].test(v.lang) && NATURAL.test(v.name); };
-export function voices() { return usable(); }
-export function speak(text, p) {
-  if (!canSpeak() || !text) return false;
+const usable = () => (hasTTS() ? speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang) && !NOVELTY.test(v.name)) : []);
+const rank = (v, a) => (LANG[a].test(v.lang) ? 1000 : 0) + (NATURAL.test(v.name) ? 100 : 0) + (v.localService ? 2 : 0);
+const deviceVoice = (accent) => usable().sort((x, y) => rank(y, accent) - rank(x, accent))[0] || null;
+function speakDevice(text, accent) {
+  if (!hasTTS()) return false;
   try {
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    const accent = (p && p.accent) || "us";
-    const pick = voiceFor(accent);
-    if (pick) u.voice = pick;
-    u.lang = (pick && pick.lang) || (accent === "gb" ? "en-GB" : "en-US");
-    u.rate = (p && p.rate) || 0.9;
-    speechSynthesis.speak(u);
-    return true;
+    const u = new SpeechSynthesisUtterance(text), v = deviceVoice(accent);
+    if (v) u.voice = v;
+    u.lang = (v && v.lang) || (accent === "gb" ? "en-GB" : "en-US"); u.rate = 0.9;
+    speechSynthesis.speak(u); return true;
   } catch { return false; }
+}
+// Can this device play words out loud at all (recorded clips, or the device voice as a fallback)
+export const canSpeak = () => (typeof window !== "undefined" && !!(window.AudioContext || window.webkitAudioContext)) || hasTTS();
+export function speak(text, p) {
+  if (!text) return false;
+  const accent = (p && p.accent) === "gb" ? "gb" : "us";
+  const word = BY.get(text);
+  if (word && !word.custom) { playClip(text, accent).catch(() => speakDevice(text, accent)); return true; }
+  return speakDevice(text, accent);
 }
 
 // A picture tile for topics, trails and collections: art on top, name below, all the same size in a tidy grid.

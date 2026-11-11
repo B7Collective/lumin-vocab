@@ -8,7 +8,7 @@ import * as sync from "./sync.js";
 import * as srs from "./srs.js";
 import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
-import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, ACCENTS, hasNaturalVoice, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
+import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, ACCENTS, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 import { canScan, scanCode } from "./scan.js";
 import { SCENES, SCENE_GROUPS, sceneUrl, wallpaperUrl, topicArt, keeperArt } from "./art.js";
@@ -60,33 +60,28 @@ async function pinPrompt(title, confirm, onOk) {
 const section = (title, ic, color, ...kids) => h("section", { class: "section" }, h("h2", { class: "sec-title" }, title), ...kids);
 // Small paper illustration used in chips and choices
 // Topic picking: one tidy grid of picture tiles, used in setup and (inside a sheet) in Settings
-function topicPicker(selected, onchange) {
+function topicPicker(selected, onchange, cls = "") {
   let cur = [...selected];
-  return h("div", { class: "ttiles pick", role: "group", "aria-label": "Topics" }, model.TOPICS.filter((t) => t !== "My words").map((t) =>
+  return h("div", { class: "ttiles pick " + cls, role: "group", "aria-label": "Topics" }, model.TOPICS.filter((t) => t !== "My words").map((t) =>
     tile({ label: t, src: topicArt(t), on: cur.includes(t), onclick: (e) => { cur = cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]; e.currentTarget.setAttribute("aria-pressed", String(cur.includes(t))); haptic(); onchange(cur); } })));
 }
-const topicSummary = (ts) => !ts.length ? "None yet, so you get a mix of everything" : ts.length <= 3 ? ts.join(", ") : `${ts.slice(0, 2).join(", ")} and ${ts.length - 2} more`;
-function favTopicsField(p, save) {
-  const summary = h("small", {}, topicSummary(p.topics || []));
-  const open = () => sheet("Favorite topics", (b) => {
-    b.append(h("p", { class: "muted sheet-lede" }, "You'll see more words from these. Your difficulty still decides how hard."),
-      topicPicker(p.topics || [], (next) => { save({ topics: next }); summary.textContent = topicSummary(next); }),
-      h("div", { class: "actions sheet-foot" }, h("button", { class: "btn primary", onclick: () => closeSheet() }, "Done")));
-  });
-  return h("div", { class: "field rowfield" }, h("div", { class: "rowtxt" }, h("span", { class: "flabel" }, "Favorite topics"), summary),
-    h("button", { class: "btn small", onclick: open }, "Choose"));
+const topicSummary = (ts) => !ts.length ? "Pick a few to see more of them" : ts.length <= 3 ? ts.join(", ") : `${ts.slice(0, 2).join(", ")} and ${ts.length - 2} more`;
+
+// ---- Settings building blocks -------------------------------------------------
+// One row shape for the whole page: words on the left, the control on the right, a hairline between rows.
+const setRow = (title, sub, control, cls = "") => h("div", { class: "srow " + cls }, h("span", { class: "srow-txt" }, h("strong", {}, title), sub ? h("small", {}, sub) : null), control);
+// A row that opens a panel: a small picture, what it is, what it's set to, and a chevron
+const navRow = (lead, title, value, onclick, label) => h("button", { class: "srow nav", type: "button", onclick, "aria-label": label || title },
+  h("span", { class: "srow-txt" }, h("strong", {}, title), value), lead, h("span", { class: "chev", "aria-hidden": "true" }, icon("right", 20)));
+// A compact segmented control (one choice at a time)
+function segmented(label, opts, value, onpick) {
+  const box = h("div", { class: "segctl", role: "radiogroup", "aria-label": label });
+  opts.forEach(([v, l]) => box.append(h("button", { type: "button", role: "radio", "aria-checked": String(value === v), onclick: (e) => {
+    box.querySelectorAll("button").forEach((b) => b.setAttribute("aria-checked", String(b === e.currentTarget))); haptic(); onpick(v); } }, l)));
+  return box;
 }
-function voiceField(p, save) {
-  const tip = h("small", {});
-  const os = app.device.os, apple = os === "macos" || os === "ios" || os === "ipados";
-  const where = os === "macos" ? "System Settings, Accessibility, Spoken Content, System voice, Manage Voices" : "Settings, Accessibility, Spoken Content, Voices, English";
-  const note = (a) => { const want = a === "gb" ? "Jamie or Serena (Premium), under English (UK)" : "Ava or Zoe (Premium), under English (US)";
-    tip.textContent = hasNaturalVoice(a) ? "Using the most natural voice on this device." : apple ? `For a far more natural voice, add ${want}: ${where}. Then reopen Lumin.` : "Lumin uses the most natural voice this device has."; };
-  note(p.accent || "us");
-  if (canSpeak()) speechSynthesis.addEventListener("voiceschanged", () => note(model.profile(p.id)?.accent || "us"), { once: true });
-  return h("div", { class: "field" }, h("span", { class: "flabel" }, "Voice"),
-    h("div", { class: "chips", role: "group", "aria-label": "Voice" }, ACCENTS.map(([v, l]) => h("button", { class: "chip", "aria-pressed": String((p.accent || "us") === v),
-      onclick: (e) => { save({ accent: v }); [...e.currentTarget.parentNode.children].forEach((c) => c.setAttribute("aria-pressed", String(c === e.currentTarget))); note(v); speak("Luminous", { ...p, accent: v }); } }, l))), tip);
+function voiceRow(p, save) {
+  return setRow("Voice", "Every word is recorded in both", segmented("Voice", ACCENTS, p.accent === "gb" ? "gb" : "us", (v) => { save({ accent: v }); speak("luminous", { ...p, accent: v }); }));
 }
 const ROLE_ART = { adult: "character", teen: "talk", kid: "animals" };
 const ROLE_LEVEL = { kid: 0, teen: 2, adult: 4 };
@@ -463,16 +458,19 @@ function editProfile(id) {
 }
 
 // ---- Settings (adapts to who is using it and to the device) ----------------
-route("settings", (main) => {
+route("settings", (main, args = []) => {
   const p = app.profile, f = model.family();
   const kid = p.role === "kid";
   const lockedKid = kid && !!f.pin && !app.unlocked;
   const save = (patch) => { model.saveProfile({ ...model.profile(p.id), ...patch }); Object.assign(p, patch); applyLook(); };
   const page = h("div", { class: "page narrow" });
   main.append(page);
+  // Settings live in six tabs, so each screen is short and you always know where something is
+  const TABS = [["learning", "Learning"], ["look", "Look"], ["sound", "Sound"], ["profile", "Profile"], ["app", "App"]];
+  const TAB_OF = { Learning: "learning", Look: "look", "My look": "look", Sound: "sound", "Reading help": "sound", Profile: "profile", "Family controls": "profile", "This device": "app", "Keyboard shortcuts": "app", "Your data": "app", About: "app" };
   // Each section wears a small paper illustration
   const SEC_ART = { "My look": "arts", Look: "arts", "Reading help": "senses", Sound: "senses", Learning: "leveltest", Profile: "character", "Family controls": "society", "This device": "things", "Keyboard shortcuts": "spelling", "Your data": "lists", About: "mywords" };
-  const sec = (title, ...kids) => h("section", { class: "section sset" }, h("h2", { class: "sec-title" }, h("img", { class: "secart", src: `/art/icons/${SEC_ART[title] || "mywords"}.webp`, alt: "", width: 44, height: 44, loading: "lazy" }), title), h("div", { class: "panel" }, ...kids));
+  const sec = (title, ...kids) => h("section", { class: "section sset", "data-tab": TAB_OF[title] || "learning" }, h("h2", { class: "sec-title" }, h("img", { class: "secart", src: `/art/icons/${SEC_ART[title] || "mywords"}.webp`, alt: "", width: 44, height: 44, loading: "lazy" }), title), h("div", { class: "panel" }, ...kids));
   const sw = (title, sub, checked, onchange, id) => h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, title), sub ? h("small", {}, sub) : null), h("input", { type: "checkbox", id, checked, onchange: (e) => onchange(e.target.checked) }));
   const pressOne = (e, sel) => { e.currentTarget.parentNode.querySelectorAll(sel).forEach(c => c.setAttribute("aria-pressed", "false")); e.currentTarget.setAttribute("aria-pressed", "true"); };
   const seg = (label, opts, value, onpick) => h("div", { class: "field" }, h("span", { class: "flabel" }, label), h("div", { class: "chips", role: "group", "aria-label": label },
@@ -526,8 +524,21 @@ route("settings", (main) => {
       ...SCENE_GROUPS.map(([g, label]) => h("div", { class: "wgroup" }, h("h3", {}, label), h("div", { class: "wrow" }, SCENES.filter((sc) => sc.group === g).map(tile)))));
   };
   drawPicker();
-  const sceneSec = sec(kid ? "My look" : "Look", h("div", { class: "field" }, h("span", { class: "flabel" }, "Scene behind your words"), picker,
-    h("small", {}, "Like one? Tap the arrow on any scene to save it as a wallpaper.")));
+  const sceneThumb = h("span", { class: "scthumb", "aria-hidden": "true" });
+  const sceneValue = h("small", {});
+  const paintSceneRow = () => {
+    const cur = model.profile(p.id).scene || "auto";
+    const shots = cur === "auto" ? SCENES.filter((_, k) => k % 4 === 0).slice(0, 4) : [SCENES.find((x) => x.id === cur) || SCENES[0]];
+    sceneThumb.classList.toggle("mosaic", cur === "auto");
+    sceneThumb.replaceChildren(...shots.map((sc) => h("img", { src: sceneUrl(sc.id), alt: "", loading: "lazy", decoding: "async", style: { objectPosition: `${sc.x}% 50%` } })));
+    sceneValue.textContent = cur === "auto" ? "Shuffle: a new scene with every word" : (SCENES.find((x) => x.id === cur) || {}).name || "";
+  };
+  paintSceneRow();
+  const openScenes = () => sheet("Scene behind your words", (b) => {
+    b.classList.add("wide");
+    b.append(picker, h("p", { class: "muted small" }, "Like one? Tap the arrow on any scene to save it as a wallpaper."));
+  }, { onClose: paintSceneRow });
+  const sceneSec = sec(kid ? "My look" : "Look", navRow(sceneThumb, "Scene", sceneValue, openScenes, "Scene behind your words"));
 
   // Appearance, as three little windows of light
   const looks = [["device", "Auto", "contrast"], ["light", "Light", "sun"], ["dark", "Dark", "moon"]];
@@ -537,9 +548,9 @@ route("settings", (main) => {
   const scale = h("input", { type: "range", id: "set-scale", min: "0.9", max: "1.3", step: "0.05", value: String(p.scale || (model.isKid(p) ? 1.08 : 1)), oninput: (e) => { save({ scale: parseFloat(e.target.value) }); paintPreview(); } });
   const avatarPick = swatches(p.color, (i) => { save({ color: i }); render(); });
   sceneSec.querySelector(".panel").append(
-    h("div", { class: "field" }, h("label", { for: "set-scale" }, "Text size"), h("div", { class: "range-row" }, h("span", { "aria-hidden": "true", class: "small muted" }, "A"), scale, h("span", { "aria-hidden": "true", class: "muted big-a" }, "A"))),
-    kid ? h("div", { class: "field" }, h("span", { class: "flabel" }, "My color"), avatarPick) : null,
-    lockedKid ? null : h("div", { class: "field" }, h("span", { class: "flabel" }, "Appearance"), lookRow),
+    h("div", { class: "srow stack" }, h("label", { class: "srow-txt", for: "set-scale" }, h("strong", {}, "Text size")), h("div", { class: "range-row" }, h("span", { "aria-hidden": "true", class: "small muted" }, "A"), scale, h("span", { "aria-hidden": "true", class: "muted big-a" }, "A"))),
+    kid ? h("div", { class: "srow stack" }, h("span", { class: "srow-txt" }, h("strong", {}, "My color")), avatarPick) : null,
+    lockedKid ? null : h("div", { class: "srow stack" }, h("span", { class: "srow-txt" }, h("strong", {}, "Appearance")), lookRow),
     lockedKid ? null : (() => { const sys = matchMedia("(prefers-reduced-motion: reduce)").matches;
       const el = sw("Calmer motion", sys ? "On, because this device asks for less motion" : "Fewer animations when moving between words", sys || !!p.calm, (v) => save({ calm: v }));
       if (sys) el.querySelector("input").disabled = true; return el; })());
@@ -549,12 +560,9 @@ route("settings", (main) => {
   const soundSec = sec(kid ? "Reading help" : "Sound", sw("Sound effects", "Soft chimes when you answer and finish", p.sound !== false, (v) => { save({ sound: v }); if (v) play("right"); }));
   page.append(soundSec);
   if (canSpeak()) {
-    const vs = voices();
     soundSec.querySelector(".panel").append(
       sw("Read words aloud", kid ? "Hear each new word and review question" : "Hear each new word as it appears", !!p.readAloud, (v) => save({ readAloud: v })),
-      lockedKid || !vs.length ? null : voiceField(p, save),
-      lockedKid ? null : h("div", { class: "field" }, h("label", { for: "set-rate" }, "Speaking speed"), h("input", { type: "range", id: "set-rate", min: "0.6", max: "1.2", step: "0.05", value: String(p.rate || 0.9), onchange: (e) => { save({ rate: parseFloat(e.target.value) }); speak("luminous", p); } })),
-      h("button", { class: "btn small quiet start", onclick: () => speak("Lumin Vocab. Luminous.", p) }, icon("speak"), "Test"));
+      lockedKid ? null : voiceRow(p, save));
   }
 
   if (lockedKid) {
@@ -564,10 +572,11 @@ route("settings", (main) => {
 
   // Learning (first for teens and adults, after the fun stuff for kids)
   const learnSec = sec("Learning",
-    h("div", { class: "field" }, h("span", { class: "flabel" }, "Difficulty"), levelSlider(p.level, (i) => save({ level: i })), h("small", {}, "Each level keeps its own Journey progress, so you can switch and come back.")),
-    favTopicsField(p, save),
-    seg("Words per review", [[10, "10"], [20, "20"], [30, "30"]], p.reviewSize || 20, (v) => save({ reviewSize: v })),
-    h("a", { class: "linkbtn start", href: "#/practice" }, "Not sure? Take the level check in Practice"));
+    h("div", { class: "srow stack first" }, h("span", { class: "srow-txt" }, h("strong", {}, "Difficulty"), h("small", {}, "Each level keeps its own Journey progress, so you can switch and come back.")), levelSlider(p.level, (i) => save({ level: i })),
+      h("a", { class: "linkbtn start", href: "#/practice" }, "Not sure? Take the level check in Practice")),
+    h("div", { class: "srow stack" }, h("span", { class: "srow-txt" }, h("strong", {}, "Favorite topics"), h("small", {}, "Tap the ones you love to see more of them. Leave them all off for a mix.")),
+      topicPicker(p.topics || [], (next) => save({ topics: next }), "compact")),
+    setRow("Words per review", "How many words each review session holds", segmented("Words per review", [[10, "10"], [20, "20"], [30, "30"]], p.reviewSize || 20, (v) => save({ reviewSize: v }))));
   if (kid) page.append(learnSec); else page.insertBefore(learnSec, page.children[2]);
 
   // Profile
@@ -623,8 +632,33 @@ route("settings", (main) => {
 
   page.append(sec("About",
     h("p", {}, `Lumin Vocab ${VERSION}. Free and open source under the AGPL-3.0 license. Made by `, h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), "."),
-    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))), footer());
+    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))));
+  settingsTabs(page, TABS, args[0]);
+  page.append(footer());
 });
+
+// Tabs for Settings: one group of settings on screen at a time. Remembers the last tab; #/settings/look opens one directly.
+function settingsTabs(page, tabs, want) {
+  const secs = [...page.querySelectorAll("section.sset")];
+  const present = tabs.filter(([k]) => secs.some((x) => x.dataset.tab === k));
+  if (present.length < 2) return;
+  secs.forEach((x) => x.classList.toggle("solo", secs.filter((y) => y.dataset.tab === x.dataset.tab).length === 1));
+  let last = null; try { last = sessionStorage.getItem("lumin-settings-tab"); } catch {}
+  let cur = [want, last, present[0][0]].find((k) => present.some(([t]) => t === k));
+  const bar = h("nav", { class: "settabs", "aria-label": "Settings sections" });
+  const show = (k, user) => {
+    cur = k;
+    secs.forEach((x) => { x.hidden = x.dataset.tab !== k; });
+    page.dataset.stab = k;
+    bar.querySelectorAll("button").forEach((b) => { const on = b.dataset.tab === k; b.setAttribute("aria-current", on ? "page" : "false"); if (on && user) b.scrollIntoView({ block: "nearest", inline: "center", behavior: reduced() ? "auto" : "smooth" }); });
+    try { sessionStorage.setItem("lumin-settings-tab", k); } catch {}
+    if (user) { history.replaceState(null, "", "#/settings/" + k); const top = bar.getBoundingClientRect().top + scrollY - 12; if (scrollY > top) scrollTo({ top, behavior: reduced() ? "auto" : "smooth" }); }
+  };
+  present.forEach(([k, label]) => bar.append(h("button", { type: "button", "data-tab": k, onclick: () => { haptic(); show(k, true); } }, label)));
+  const hero = page.querySelector(".shero");
+  (hero ? hero.after(bar) : page.prepend(bar));
+  show(cur, false);
+}
 
 // Save a scene as a wallpaper: the share sheet on phones (so it can go straight to Photos), a download elsewhere
 async function saveWallpaper(sc, btn) {
@@ -717,6 +751,7 @@ route("about", (main) => {
       h("p", {}, "The word list is released under CC BY-SA 4.0 and built from:"),
       h("ul", { class: "credits" },
         h("li", {}, "Words, definitions and examples at every level: chosen and written for Lumin Vocab by B7 Collective."),
+        h("li", {}, "Word audio: recorded with the Kokoro-82M voice model by hexgrad (Apache-2.0), American voice Heart and British voice Emma, with pronunciations from the misaki dictionaries (Apache-2.0)."),
         h("li", {}, "Which words to add: picked with help from the CEFR-J Wordlist Version 1.5, compiled by Yukio Tono, Tokyo University of Foreign Studies (Tono Laboratory, TUFS), and the Octanove Vocabulary Profile for C1/C2 levels by Octanove Labs, CC BY-SA 4.0, both via ", h("a", { href: "https://github.com/openlanguageprofiles/olp-en-cefrj", rel: "noopener" }, "Open Language Profiles"), "."),
         h("li", {}, "Similar words and word families: from ", h("a", { href: "https://en-word.net", rel: "noopener" }, "Open English WordNet"), " by the Open English WordNet Community, CC BY 4.0. WordNet 3.1 Copyright 2011 by Princeton University. All rights reserved. THIS SOFTWARE AND DATABASE IS PROVIDED \"AS IS\" AND PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED."),
         h("li", {}, "Pronunciations (IPA and simple respellings): generated from the CMU Pronouncing Dictionary, Copyright (C) 1993-2015 Carnegie Mellon University, BSD 2-Clause License."),
