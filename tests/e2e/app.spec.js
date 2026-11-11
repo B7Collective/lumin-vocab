@@ -284,7 +284,7 @@ test("topics filter the words and stay age appropriate", async ({ page }, info) 
   await page.getByRole("link", { name: "All words" }).click();
   await expect(page.getByRole("heading", { name: "Topics" })).toBeVisible();
   await page.screenshot({ path: `test-results/shots/${info.project.name}-topics.png`, fullPage: true });
-  await page.locator(".tcard", { hasText: "Animals" }).click();
+  await page.locator(".ttile", { hasText: "Animals" }).click();
   await expect(page.locator(".hudchip", { hasText: "Animals" })).toBeVisible();
   const levels = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.queue(p).map((w) => w.l); });
   expect(levels.length).toBeGreaterThan(10);

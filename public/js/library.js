@@ -3,7 +3,7 @@
 import * as model from "./model.js";
 import * as store from "./store.js";
 import { app, route, go, render } from "./app.js";
-import { h, icon, toast, ask, confirmBox, plural } from "./ui.js";
+import { h, icon, toast, ask, confirmBox, plural, tile } from "./ui.js";
 import { art, icon as artIcon, topicArt, trailArt } from "./art.js";
 import { wordCard, addWord } from "./wordsheet.js";
 import { start } from "./games.js";
@@ -92,20 +92,17 @@ route("topics", (main) => {
   main.append(page);
   const pickTopic = (t, set) => { model.saveProfile({ ...model.profile(p.id), feedTopic: t || null, feedSet: set || null }); go("/words"); };
   const current = p.feedSet || p.feedTopic || "";
-  const peek = (ws) => [...ws].sort(() => Math.random() - 0.5).slice(0, 3).map((w) => w.w).join(", ");
-  const card = (label, sub, src, on, onclick, sample) => h("button", { class: "tcard", "aria-pressed": String(on), onclick },
-    art(src, "", 160), h("span", { class: "tbody" }, h("strong", {}, label, on ? h("span", { class: "sr" }, " (showing now)") : null), h("small", {}, sub), sample ? h("span", { class: "tsample" }, sample) : null),
-    on ? h("span", { class: "tnow" }, "Showing") : null);
+  const card = (label, sub, src, on, onclick) => tile({ label, sub, src, on, onclick, note: on ? " (showing now)" : "" });
   page.append(h("div", { class: "phead" }, h("div", {}, h("h1", {}, "Topics"), h("p", {}, "Choose what the Words screen shows. Your difficulty still decides how hard."))),
     h("div", { class: "actions" }, h("button", { class: "btn" + (current ? "" : " primary"), onclick: () => pickTopic(null) }, current ? "Show all words" : "Showing all words at your level")));
   const setWords = (set) => model.MAIN.filter((w) => w.x && w.x.includes(set) && allowed.includes(w.l));
   const sets = [["beautiful", "Beautiful words"], ["funny", "Funny words"]].filter(([k]) => setWords(k).length >= 4);
   if (sets.length) page.append(h("section", { class: "sec" }, h("h2", {}, "Collections"),
-    h("div", { class: "tcards" }, sets.map(([k, label]) => card(label, plural(setWords(k).length, "word"), artIcon(k), current === k, () => pickTopic(null, k), peek(setWords(k)))))));
+    h("div", { class: "ttiles" }, sets.map(([k, label]) => card(label, plural(setWords(k).length, "word"), artIcon(k), current === k, () => pickTopic(null, k))))));
   const trails = model.trailsFor(p);
   if (trails.length) page.append(h("section", { class: "sec" }, h("h2", {}, "Side trails"), h("p", {}, "Themed sets. You can also walk each one as a short journey."),
-    h("div", { class: "tcards" }, trails.map((t) => { const ws = model.trailWords(t, p); return card(t.name, plural(ws.length, "word"), trailArt(t.key), current === t.key, () => pickTopic(null, t.key), peek(ws)); }))));
+    h("div", { class: "ttiles" }, trails.map((t) => card(t.name, plural(model.trailWords(t, p).length, "word"), trailArt(t.key), current === t.key, () => pickTopic(null, t.key))))));
   const topics = Object.entries(counts).filter(([, n]) => n >= 4).sort((a, b) => a[0].localeCompare(b[0]));
   page.append(h("section", { class: "sec" }, h("h2", {}, "By topic"),
-    h("div", { class: "tcards" }, topics.map(([t, n]) => card(t, plural(n, "word"), topicArt(t), current === t, () => pickTopic(t), peek(model.MAIN.filter((w) => w.t === t && allowed.includes(w.l))))))));
+    h("div", { class: "ttiles" }, topics.map(([t, n]) => card(t, plural(n, "word"), topicArt(t), current === t, () => pickTopic(t))))));
 });

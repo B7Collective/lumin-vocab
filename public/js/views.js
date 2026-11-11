@@ -8,7 +8,7 @@ import * as sync from "./sync.js";
 import * as srs from "./srs.js";
 import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
-import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
+import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, voices, ACCENTS, hasNaturalVoice, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
 import { canScan, scanCode } from "./scan.js";
 import { SCENES, SCENE_GROUPS, sceneUrl, wallpaperUrl, topicArt, keeperArt } from "./art.js";
@@ -59,7 +59,35 @@ async function pinPrompt(title, confirm, onOk) {
 }
 const section = (title, ic, color, ...kids) => h("section", { class: "section" }, h("h2", { class: "sec-title" }, title), ...kids);
 // Small paper illustration used in chips and choices
-const thumb = (src, size = 26) => h("img", { class: "thumb", src, alt: "", width: size, height: size, loading: "lazy" });
+// Topic picking: one tidy grid of picture tiles, used in setup and (inside a sheet) in Settings
+function topicPicker(selected, onchange) {
+  let cur = [...selected];
+  return h("div", { class: "ttiles pick", role: "group", "aria-label": "Topics" }, model.TOPICS.filter((t) => t !== "My words").map((t) =>
+    tile({ label: t, src: topicArt(t), on: cur.includes(t), onclick: (e) => { cur = cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]; e.currentTarget.setAttribute("aria-pressed", String(cur.includes(t))); haptic(); onchange(cur); } })));
+}
+const topicSummary = (ts) => !ts.length ? "None yet, so you get a mix of everything" : ts.length <= 3 ? ts.join(", ") : `${ts.slice(0, 2).join(", ")} and ${ts.length - 2} more`;
+function favTopicsField(p, save) {
+  const summary = h("small", {}, topicSummary(p.topics || []));
+  const open = () => sheet("Favorite topics", (b) => {
+    b.append(h("p", { class: "muted sheet-lede" }, "You'll see more words from these. Your difficulty still decides how hard."),
+      topicPicker(p.topics || [], (next) => { save({ topics: next }); summary.textContent = topicSummary(next); }),
+      h("div", { class: "actions sheet-foot" }, h("button", { class: "btn primary", onclick: () => closeSheet() }, "Done")));
+  });
+  return h("div", { class: "field rowfield" }, h("div", { class: "rowtxt" }, h("span", { class: "flabel" }, "Favorite topics"), summary),
+    h("button", { class: "btn small", onclick: open }, "Choose"));
+}
+function voiceField(p, save) {
+  const tip = h("small", {});
+  const os = app.device.os, apple = os === "macos" || os === "ios" || os === "ipados";
+  const where = os === "macos" ? "System Settings, Accessibility, Spoken Content, System voice, Manage Voices" : "Settings, Accessibility, Spoken Content, Voices, English";
+  const note = (a) => { const want = a === "gb" ? "Jamie or Serena (Premium), under English (UK)" : "Ava or Zoe (Premium), under English (US)";
+    tip.textContent = hasNaturalVoice(a) ? "Using the most natural voice on this device." : apple ? `For a far more natural voice, add ${want}: ${where}. Then reopen Lumin.` : "Lumin uses the most natural voice this device has."; };
+  note(p.accent || "us");
+  if (canSpeak()) speechSynthesis.addEventListener("voiceschanged", () => note(model.profile(p.id)?.accent || "us"), { once: true });
+  return h("div", { class: "field" }, h("span", { class: "flabel" }, "Voice"),
+    h("div", { class: "chips", role: "group", "aria-label": "Voice" }, ACCENTS.map(([v, l]) => h("button", { class: "chip", "aria-pressed": String((p.accent || "us") === v),
+      onclick: (e) => { save({ accent: v }); [...e.currentTarget.parentNode.children].forEach((c) => c.setAttribute("aria-pressed", String(c === e.currentTarget))); note(v); speak("Luminous", { ...p, accent: v }); } }, l))), tip);
+}
 const ROLE_ART = { adult: "character", teen: "talk", kid: "animals" };
 const ROLE_LEVEL = { kid: 0, teen: 2, adult: 4 };
 
@@ -288,7 +316,7 @@ route("setup", (main) => {
     } else {
       const kid = s.role === "kid";
       page.append(head(3, kid ? `What does ${s.name.trim()} like?` : "What are you into?", "Pick any topics to see more of them. Or skip, and you'll get a mix."),
-        h("div", { class: "chips" }, model.TOPICS.filter(t => t !== "My words").map((t) => h("button", { class: "chip", "aria-pressed": String(s.topics.includes(t)), onclick: (e) => { s.topics = s.topics.includes(t) ? s.topics.filter(x => x !== t) : [...s.topics, t]; e.currentTarget.setAttribute("aria-pressed", String(s.topics.includes(t))); } }, thumb(topicArt(t)), t))),
+        topicPicker(s.topics, (next) => { s.topics = next; }),
         kid && canSpeak() ? h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, "Read new words aloud"), h("small", {}, "Great for early readers")), h("input", { type: "checkbox", checked: s.readAloud, onchange: (e) => { s.readAloud = e.target.checked; } })) : null,
         h("div", { class: "actions between" }, h("button", { class: "btn quiet", onclick: () => { s.step = 2; draw(); } }, "Back"),
           h("button", { class: "btn primary", onclick: () => {
@@ -524,9 +552,7 @@ route("settings", (main) => {
     const vs = voices();
     soundSec.querySelector(".panel").append(
       sw("Read words aloud", kid ? "Hear each new word and review question" : "Hear each new word as it appears", !!p.readAloud, (v) => save({ readAloud: v })),
-      lockedKid || !vs.length ? null : h("div", { class: "field" }, h("label", { for: "set-voice" }, "Voice"),
-        h("select", { id: "set-voice", onchange: (e) => { save({ voice: e.target.value }); speak("luminous", p); } }, h("option", { value: "" }, "Automatic"), vs.map(v => h("option", { value: v.name, selected: p.voice === v.name }, `${v.name} (${v.lang})`))),
-        h("small", {}, `Voices come from this ${LABELS.os[app.device.os]}, so they can differ between devices. Automatic picks the most natural one it has.${app.device.os === "macos" ? " For a much more natural voice, add a Premium voice such as Ava or Zoe: System Settings, Accessibility, Spoken Content, System voice, Manage Voices. Then reopen Lumin." : (app.device.os === "ios" || app.device.os === "ipados") ? " For a much more natural voice, add a Premium voice such as Ava: Settings, Accessibility, Spoken Content, Voices, English. Then reopen Lumin." : ""}`)),
+      lockedKid || !vs.length ? null : voiceField(p, save),
       lockedKid ? null : h("div", { class: "field" }, h("label", { for: "set-rate" }, "Speaking speed"), h("input", { type: "range", id: "set-rate", min: "0.6", max: "1.2", step: "0.05", value: String(p.rate || 0.9), onchange: (e) => { save({ rate: parseFloat(e.target.value) }); speak("luminous", p); } })),
       h("button", { class: "btn small quiet start", onclick: () => speak("Lumin Vocab. Luminous.", p) }, icon("speak"), "Test"));
   }
@@ -539,7 +565,7 @@ route("settings", (main) => {
   // Learning (first for teens and adults, after the fun stuff for kids)
   const learnSec = sec("Learning",
     h("div", { class: "field" }, h("span", { class: "flabel" }, "Difficulty"), levelSlider(p.level, (i) => save({ level: i })), h("small", {}, "Each level keeps its own Journey progress, so you can switch and come back.")),
-    h("div", { class: "field" }, h("span", { class: "flabel" }, "Favorite topics"), h("div", { class: "chips" }, model.TOPICS.map(t => h("button", { class: "chip", "aria-pressed": String((p.topics || []).includes(t)), onclick: (e) => { const cur = model.profile(p.id).topics || []; const next = cur.includes(t) ? cur.filter(x => x !== t) : [...cur, t]; save({ topics: next }); e.currentTarget.setAttribute("aria-pressed", String(next.includes(t))); } }, thumb(topicArt(t)), t)))),
+    favTopicsField(p, save),
     seg("Words per review", [[10, "10"], [20, "20"], [30, "30"]], p.reviewSize || 20, (v) => save({ reviewSize: v })),
     h("a", { class: "linkbtn start", href: "#/practice" }, "Not sure? Take the level check in Practice"));
   if (kid) page.append(learnSec); else page.insertBefore(learnSec, page.children[2]);

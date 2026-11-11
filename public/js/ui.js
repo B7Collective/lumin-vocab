@@ -116,29 +116,46 @@ export const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matc
 export function haptic(pattern = 8) { try { if (navigator.vibrate && !reduced()) navigator.vibrate(pattern); } catch {} }
 
 export const canSpeak = () => typeof speechSynthesis !== "undefined" && typeof SpeechSynthesisUtterance !== "undefined";
-// Devices list their voices in no useful order, and Macs include joke and old robot voices (Albert, Zarvox,
-// Fred and friends). Hide those and rank the natural ones first, so "Automatic" picks the best voice the device has.
+// Two voices only: American and British. Each device has its own voices, so Lumin picks the most natural one it can
+// find for the accent you choose, and never the joke or old robot voices some devices include (Albert, Zarvox, Fred).
+export const ACCENTS = [["us", "American"], ["gb", "British"]];
 const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|kathy|ralph|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|deranged|hysterical|pipe organ)\b/i;
 const NATURAL = /(premium|enhanced|natural|neural|online)/i;
-const GOOD = /^(google us english|ava|zoe|evan|nathan|noelle|allison|susan|samantha|tom|joelle|aria|jenny|guy|ana|michelle|christopher|eric|steffan|emma|andrew|brian|english united states)\b/i;
-const rank = (v) => (NATURAL.test(v.name) ? 100 : 0) + (GOOD.test(v.name.replace(/^microsoft\s+/i, "")) ? 40 : 0) + (/en[-_]US/i.test(v.lang) ? 20 : 0) + (v.localService ? 2 : 0);
-export function voices() {
-  if (!canSpeak()) return [];
-  return speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang) && !NOVELTY.test(v.name)).sort((a, b) => rank(b) - rank(a) || a.name.localeCompare(b.name));
+const GOOD = {
+  us: /^(google us english|ava|zoe|evan|nathan|noelle|allison|susan|samantha|tom|aria|jenny|guy|ana|michelle|christopher|eric|emma|andrew|brian|english united states)\b/i,
+  gb: /^(google uk english|jamie|serena|kate|oliver|stephanie|daniel|sonia|ryan|libby|maisie|thomas|english united kingdom)\b/i,
+};
+const LANG = { us: /en[-_]US/i, gb: /en[-_]GB/i };
+const usable = () => (canSpeak() ? speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang) && !NOVELTY.test(v.name)) : []);
+const rank = (v, a) => (LANG[a].test(v.lang) ? 1000 : 0) + (NATURAL.test(v.name) ? 100 : 0) + (GOOD[a].test(v.name.replace(/^microsoft\s+/i, "")) ? 40 : 0) + (v.localService ? 2 : 0);
+export function voiceFor(accent = "us") {
+  const a = LANG[accent] ? accent : "us";
+  return usable().sort((x, y) => rank(y, a) - rank(x, a))[0] || null;
 }
+// True when the device has a clearly natural voice for that accent (used to suggest adding one)
+export const hasNaturalVoice = (accent = "us") => { const v = voiceFor(accent); return !!v && LANG[accent].test(v.lang) && NATURAL.test(v.name); };
+export function voices() { return usable(); }
 export function speak(text, p) {
   if (!canSpeak() || !text) return false;
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    const vs = voices();
-    const pick = (p && p.voice && vs.find(v => v.name === p.voice)) || vs[0];
+    const accent = (p && p.accent) || "us";
+    const pick = voiceFor(accent);
     if (pick) u.voice = pick;
-    u.lang = (pick && pick.lang) || "en-US";
+    u.lang = (pick && pick.lang) || (accent === "gb" ? "en-GB" : "en-US");
     u.rate = (p && p.rate) || 0.9;
     speechSynthesis.speak(u);
     return true;
   } catch { return false; }
+}
+
+// A picture tile for topics, trails and collections: art on top, name below, all the same size in a tidy grid.
+export function tile({ label, sub, src, on = false, onclick, note }) {
+  const img = h("img", { class: "art", src, alt: "", width: 72, height: 72, loading: "lazy", decoding: "async" });
+  return h("button", { class: "ttile", type: "button", "aria-pressed": String(on), onclick },
+    h("span", { class: "tart" }, img, h("span", { class: "tcheck", "aria-hidden": "true" }, icon("check", 14))),
+    h("span", { class: "tname" }, label), sub ? h("span", { class: "tsub" }, sub) : null, note ? h("span", { class: "sr" }, note) : null);
 }
 
 export async function share(word) {
