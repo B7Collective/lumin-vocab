@@ -2,7 +2,7 @@
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
 import * as model from "./model.js";
 import { app, render } from "./app.js";
-import { h, icon, toast, sheet, closeSheet, ask, speak, canSpeak, share, plural } from "./ui.js";
+import { h, icon, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, share, plural } from "./ui.js";
 import { play, buzz } from "./sound.js";
 
 export const POS_SHORT = { noun: "n.", verb: "v.", adjective: "adj.", adverb: "adv.", phrase: "phr." };
@@ -60,6 +60,8 @@ export function details(wordText) {
     const where = w.custom ? "Your own word" : `${LEVEL(w.l).name}, ${w.t}`;
     const trails = (w.x || []).map((k) => model.trail(k)).filter(Boolean);
     const saved = c && c.st === "learning";
+    // only the person who added a word can change it
+    const own = w.custom && model.customWords(p.id).find((x) => x.w === w.w);
     b.append(
       h("header", { class: "ws-hero" },
         h("p", { class: "ws-kicker" }, h("span", { class: "ws-pos" }, w.p), h("span", { class: "ws-where" }, where)),
@@ -82,7 +84,11 @@ export function details(wordText) {
         h("button", { class: "ws-act", onclick: () => listPicker(w.w) }, icon("folder"), h("span", {}, "Add to list")),
         h("button", { class: "ws-act", onclick: () => share(w) }, icon("share"), h("span", {}, "Share")),
         c && c.st === "known" ? null : h("button", { class: "ws-act", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), h("span", {}, "I know it")))),
-      h("p", { class: "ws-src muted small" }, w.custom ? "Added by you." : "Written for Lumin Vocab. Word family from Open English WordNet (CC BY 4.0). ", w.custom ? null : h("a", { href: "#/about", onclick: () => closeSheet() }, "Credits")));
+      own ? h("div", { class: "ws-own" }, h("p", { class: "ws-src muted small" }, "Added by you."),
+        h("div", { class: "ws-own-acts" },
+          h("button", { class: "btn quiet small", onclick: () => addWord("", own.id) }, icon("edit", 18), "Edit"),
+          h("button", { class: "btn quiet small danger", onclick: () => removeOwn(own) }, icon("trash", 18), "Delete"))) : null,
+      w.custom ? (own ? null : h("p", { class: "ws-src muted small" }, "Added by someone in your family.")) : h("p", { class: "ws-src muted small" }, "Written for Lumin Vocab. Word family from Open English WordNet (CC BY 4.0). ", w.custom ? null : h("a", { href: "#/about", onclick: () => closeSheet() }, "Credits")));
   });
   // the big word sits in the page, so the sheet's own title stays out of the way
   const head = body && body.querySelector(".sheet-head h2"); if (head) head.classList.add("sr");
@@ -111,20 +117,37 @@ export function listPicker(word) {
   });
 }
 
-export function addWord(prefill = "") {
-  const p = app.profile;
-  sheet("Add your own word", (b) => {
-    const w = h("input", { type: "text", id: "cw-w", maxlength: 40, autocomplete: "off", autocapitalize: "none", value: prefill });
+// Ask before removing your own word, since its progress goes with it
+async function removeOwn(w) {
+  const c = model.card(app.profile.id, w.w), sure = await confirmBox(`Delete "${w.w}"?`,
+    "It leaves your words, your practice and your lists, on every device you use." + (c && c.st === "learning" ? " Its practice progress goes too." : ""), "Delete", true);
+  if (!sure) return;
+  model.removeCustom(w.id); toast(`Deleted "${w.w}"`); render({ refresh: true });
+}
+
+// Add a word of your own, or change one you added (editId)
+export function addWord(prefill = "", editId = null) {
+  const p = app.profile, mine = editId ? model.customWord(editId) : null;
+  if (editId && !mine) return;
+  sheet(mine ? "Edit your word" : "Add your own word", (b) => {
+    const w = h("input", { type: "text", id: "cw-w", maxlength: 40, autocomplete: "off", autocapitalize: "none", value: mine ? mine.w : prefill });
     const pos = h("select", { id: "cw-p" }, ["noun", "verb", "adjective", "adverb", "phrase"].map((x) => h("option", { value: x }, x)));
     const d = h("textarea", { id: "cw-d", maxlength: 240, rows: 3 });
     const e = h("textarea", { id: "cw-e", maxlength: 240, rows: 2 });
     const note = h("small", {});
-    const fill = () => { const hit = model.BY.get(w.value.trim().toLowerCase()); if (hit) { if (!d.value) d.value = hit.d; if (!e.value) e.value = hit.e || ""; pos.value = ["noun", "verb", "adjective", "adverb"].includes(hit.p) ? hit.p : "phrase"; note.textContent = "Filled in from Lumin Vocab. Edit anything you like."; } };
+    if (mine) { pos.value = mine.p || "noun"; d.value = mine.d || ""; e.value = mine.e || ""; }
+    const fill = () => { if (mine) return; const hit = model.BY.get(w.value.trim().toLowerCase()); if (hit) { if (!d.value) d.value = hit.d; if (!e.value) e.value = hit.e || ""; pos.value = ["noun", "verb", "adjective", "adverb"].includes(hit.p) ? hit.p : "phrase"; note.textContent = "Filled in from Lumin Vocab. Edit anything you like."; } };
     w.addEventListener("change", fill); w.addEventListener("blur", fill);
     b.append(h("form", { class: "stack loose", onsubmit: (ev) => {
       ev.preventDefault();
       const word = w.value.trim();
       if (!word || !d.value.trim()) { toast("Add the word and what it means"); return; }
+      if (mine) {
+        const clash = word !== mine.w && (model.BY.get(word.toLowerCase()) || model.customWords(p.id).some((x) => x.w === word));
+        if (clash) { toast(`"${word}" is already in your words`); return; }
+        model.editCustom(mine.id, { w: word, p: pos.value, d: d.value.trim(), e: e.value.trim() });
+        toast("Saved your changes"); closeSheet(); render({ refresh: true }); return;
+      }
       if (model.BY.get(word.toLowerCase())) { model.learn(p.id, word.toLowerCase()); toast(`"${word}" is already in Lumin Vocab. Saved to practice.`); closeSheet(); render({ refresh: true }); return; }
       model.addCustom(p.id, { w: word, p: pos.value, d: d.value.trim(), e: e.value.trim() });
       toast(`Added "${word}"`); closeSheet(); render({ refresh: true });
@@ -133,9 +156,9 @@ export function addWord(prefill = "") {
       h("div", { class: "field" }, h("label", { for: "cw-p" }, "Kind of word"), pos),
       h("div", { class: "field" }, h("label", { for: "cw-d" }, "What it means"), d),
       h("div", { class: "field" }, h("label", { for: "cw-e" }, "Example sentence (optional)"), e),
-      h("div", { class: "actions" }, h("button", { class: "btn primary", type: "submit" }, "Add word"))));
+      h("div", { class: "actions" }, h("button", { class: "btn primary", type: "submit" }, mine ? "Save changes" : "Add word"))));
     if (prefill) fill();
-    setTimeout(() => (prefill ? d : w).focus(), 60);
+    setTimeout(() => (prefill || mine ? d : w).focus(), 60);
   });
 }
 

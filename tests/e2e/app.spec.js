@@ -504,3 +504,38 @@ test("meeting words can't be failed, and a miss gets a second chance", async ({ 
   expect(once).toEqual([1, 1]);
   expect(errors).toEqual([]);
 });
+
+test("your own words can be changed and deleted, with their progress and lists", async ({ page }) => {
+  const errors = watchErrors(page);
+  await onboard(page);
+  await page.goto("/#/library/mine");
+  await page.getByRole("button", { name: "Add a word" }).click();
+  await page.getByLabel("Word", { exact: true }).fill("snickerdoodle");
+  await page.getByLabel("What it means").fill("A cinnamon sugar cookie");
+  await page.getByRole("button", { name: "Add word" }).click();
+  await page.getByRole("button", { name: "snickerdoodle", exact: true }).click();
+  // put it in a list, then change its spelling and meaning
+  await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; m.toggleInCollection(m.newCollection(p.id, "Baking"), "snickerdoodle"); });
+  await page.getByRole("button", { name: "Edit" }).click();
+  await expect(page.getByLabel("What it means")).toHaveValue("A cinnamon sugar cookie");
+  await page.getByLabel("Word", { exact: true }).fill("snickerdoodles");
+  await page.getByLabel("What it means").fill("Soft cinnamon sugar cookies");
+  await page.getByRole("button", { name: "Save changes" }).click();
+  await expect(page.getByRole("button", { name: "snickerdoodles", exact: true })).toBeVisible();
+  const after = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0];
+    return { d: m.lookup("snickerdoodles").d, old: !!m.lookup("snickerdoodle"), card: (m.card(p.id, "snickerdoodles") || {}).st, oldCard: !!m.card(p.id, "snickerdoodle"), list: m.collections(p.id)[0].words }; });
+  expect(after).toEqual({ d: "Soft cinnamon sugar cookies", old: false, card: "learning", oldCard: false, list: ["snickerdoodles"] });
+  // delete it: asked first, then gone from words, practice and lists
+  await page.getByRole("button", { name: "snickerdoodles", exact: true }).click();
+  await page.getByRole("button", { name: "Delete" }).click();
+  await page.locator(".sheet").getByRole("button", { name: "Delete" }).click();
+  await expect(page.getByRole("button", { name: "snickerdoodles", exact: true })).toHaveCount(0);
+  const gone = await page.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0];
+    return { word: !!m.lookup("snickerdoodles"), card: !!m.card(p.id, "snickerdoodles"), list: m.collections(p.id)[0].words }; });
+  expect(gone).toEqual({ word: false, card: false, list: [] });
+  // words that come with the app have no Edit or Delete
+  await page.goto("/#/words");
+  await page.getByRole("button", { name: "More about this word" }).first().click();
+  await expect(page.locator(".sheet .ws-own")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});

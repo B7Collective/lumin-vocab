@@ -44,7 +44,7 @@ export async function loadWords() {
 }
 export function lookup(word) {
   const custom = store.all("custom").find(c => c.w === word);
-  return BY.get(word) || (custom && { w: custom.w, p: custom.p || "word", d: custom.d, e: custom.e || "", l: 3, t: "My words", f: [], m: [], s: "", custom: true });
+  return BY.get(word) || (custom && { w: custom.w, p: custom.p || "word", d: custom.d, e: custom.e || "", l: 3, t: "My words", f: [], m: [], s: "", custom: true, id: custom.id });
 }
 
 // ---- Profiles ------------------------------------------------------------
@@ -197,6 +197,23 @@ export function addCustom(pid, fields) {
   const id = store.uuid();
   store.put("custom", "cw:" + id, { id, pid, ...fields, created: Date.now() });
   learn(pid, fields.w);
+}
+export const customWord = (id) => store.get("cw:" + id);
+// Change your own word. If the spelling changes, its progress and its place in your lists come with it.
+export function editCustom(id, fields) {
+  const cur = customWord(id); if (!cur) return;
+  store.put("custom", "cw:" + id, { ...cur, ...fields, edited: Date.now() });
+  if (fields.w && fields.w !== cur.w) {
+    const c = card(cur.pid, cur.w);
+    if (c) { store.put("card", cid(cur.pid, fields.w), { ...c, w: fields.w }); store.remove(cid(cur.pid, cur.w)); }
+    for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) saveCollection({ ...col, words: col.words.map((x) => (x === cur.w ? fields.w : x)) });
+  }
+}
+// Remove your own word, with its progress and its place in your lists
+export function removeCustom(id) {
+  const cur = customWord(id); if (!cur) return;
+  store.remove("cw:" + id); store.remove(cid(cur.pid, cur.w));
+  for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) saveCollection({ ...col, words: col.words.filter((x) => x !== cur.w) });
 }
 
 // ---- Activity and streaks (kept on the profile, so they sync) --------------------
