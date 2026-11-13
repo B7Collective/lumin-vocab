@@ -46,4 +46,7 @@ export function glide(nav, active) {
     ind.style.transform = `translateX(${a.offsetLeft}px)`;
   };
   requestAnimationFrame(place);
+  // a bar that was hidden (the top bar on an upright phone) has no size yet: place the highlight again when it appears
+  nav._place = place;
+  if (!nav._watch && "ResizeObserver" in window) { nav._watch = new ResizeObserver(() => nav._place && nav._place()); nav._watch.observe(nav); }
 }

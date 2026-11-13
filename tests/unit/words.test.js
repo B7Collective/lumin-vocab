@@ -49,3 +49,9 @@ test("side trail progress belongs to a level", () => {
   assert.equal(model.journeyState({ ...p, level: 3 }, "space").ch, 0);
   assert.equal(model.journeyState(p, "decades").ch, 1, "progress from before still shows");
 });
+
+import { artIndex } from "../../tools/art-index.mjs";
+test("the offline picture list matches the art folders (run node tools/art-index.mjs after adding art)", () => {
+  const listed = JSON.parse(readFileSync(new URL("../../public/art/index.json", import.meta.url)));
+  assert.deepEqual(listed, artIndex());
+});

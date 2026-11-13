@@ -1,6 +1,6 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v3.6.2";
+const VERSION = "lumin-v3.7.0";
 // Word audio lives in its own cache so it survives app updates (each clip only changes if the word does)
 const AUDIO = "lumin-audio-v1";
 // Pictures live in their own cache too, so an update never leaves someone offline without their scenes. They're
@@ -20,6 +20,13 @@ self.addEventListener("install", (e) => {
 });
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== VERSION && k !== AUDIO && k !== ART).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
+});
+// The app asks for the small pictures to be kept once it has settled, so screens never opened still have their art offline
+self.addEventListener("message", (e) => {
+  if (e.data !== "warm-art") return;
+  e.waitUntil(Promise.all([caches.open(ART), fetch("/art/index.json").then((r) => r.json())]).then(async ([c, list]) => {
+    for (const u of list) { if (!(await c.match(u))) { try { const r = await fetch(u); if (r.ok) await c.put(u, r); } catch { return; } } }
+  }).catch(() => {}));
 });
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);

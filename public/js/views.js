@@ -314,7 +314,9 @@ route("setup", (main) => {
         topicPicker(s.topics, (next) => { s.topics = next; }),
         kid && canSpeak() ? h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, "Read new words aloud"), h("small", {}, "Great for early readers")), h("input", { type: "checkbox", checked: s.readAloud, onchange: (e) => { s.readAloud = e.target.checked; } })) : null,
         h("div", { class: "actions between" }, h("button", { class: "btn quiet", onclick: () => { s.step = 2; draw(); } }, "Back"),
-          h("button", { class: "btn primary", onclick: () => {
+          h("button", { class: "btn primary", onclick: (ev) => {
+            if (ev.currentTarget.disabled) return;
+            ev.currentTarget.disabled = true; // a double tap makes one profile, not two
             const p = model.newProfile({ name: s.name.trim().slice(0, 24), role: s.role, level: s.level, topics: s.topics, goal: s.goal, color: s.color,
               theme: kid ? "sunny" : "morning", readAloud: kid && s.readAloud, spelling: !kid, reviewSize: kid ? 10 : 20 });
             selectProfile(p.id);
@@ -450,9 +452,13 @@ function editProfile(id) {
           closeSheet(); render();
         } }, "Save"),
         others.length ? h("button", { class: "btn danger", onclick: async () => {
-          if (!(await confirmBox(`Remove ${p.name}?`, "Their words and progress will be deleted on every synced device. This can't be undone, except from a backup file.", "Remove", true))) return;
-          if (p.manager && !others.some(o => o.manager)) model.saveProfile({ ...others[0], manager: true });
-          model.removeProfile(id); if (app.pid === id) app.pid = null; render();
+          // Someone has to manage the family. A grown-up takes over first; a kid only if no grown-up is left, and you're told.
+          const heir = p.manager && !others.some(o => o.manager) ? (others.find((o) => !model.isKid(o)) || others[0]) : null;
+          const note = heir && model.isKid(heir) ? ` ${heir.name} will become the family's parent, with the family settings and PIN.` : "";
+          if (!(await confirmBox(`Remove ${p.name}?`, "Their words and progress will be deleted on every synced device. This can't be undone, except from a backup file." + note, "Remove", true))) return;
+          if (heir) model.saveProfile({ ...model.profile(heir.id), manager: true });
+          model.removeProfile(id);
+          if (app.pid === id) { app.pid = null; go("/who"); } else render();
         } }, "Remove profile") : null));
   });
 }

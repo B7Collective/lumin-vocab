@@ -134,7 +134,7 @@ export function addWord(prefill = "", editId = null) {
     const pos = h("select", { id: "cw-p" }, ["noun", "verb", "adjective", "adverb", "phrase"].map((x) => h("option", { value: x }, x)));
     const d = h("textarea", { id: "cw-d", maxlength: 240, rows: 3 });
     const e = h("textarea", { id: "cw-e", maxlength: 240, rows: 2 });
-    const note = h("small", {});
+    const note = h("small", {}, "Up to 40 letters.");
     if (mine) { pos.value = mine.p || "noun"; d.value = mine.d || ""; e.value = mine.e || ""; }
     const fill = () => { if (mine) return; const hit = model.BY.get(w.value.trim().toLowerCase()); if (hit) { if (!d.value) d.value = hit.d; if (!e.value) e.value = hit.e || ""; pos.value = ["noun", "verb", "adjective", "adverb"].includes(hit.p) ? hit.p : "phrase"; note.textContent = "Filled in from Lumin Vocab. Edit anything you like."; } };
     w.addEventListener("change", fill); w.addEventListener("blur", fill);

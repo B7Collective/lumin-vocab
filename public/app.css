@@ -1358,6 +1358,10 @@ textarea.mine:focus { outline: none; border-color: var(--accent); box-shadow: 0 
 /* 3.4: every game fits one phone screen. Feedback and buttons stick to the bottom edge. */
 .pfoot { position: sticky; bottom: 0; z-index: 3; margin-inline: calc(-1 * var(--gutter)); padding: var(--s3) var(--gutter) calc(var(--s3) + var(--safe-bottom)); margin-bottom: calc(-1 * (var(--s5) + var(--safe-bottom))); }
 .pfoot:empty { padding: 0; }
+/* the sticky footer must never cover the end of the card: leave room to scroll it into view */
+.play .qcard { scroll-margin-bottom: 120px; }
+.play > .stack { padding-bottom: var(--s3); }
+@media (orientation: landscape) and (max-height: 500px) { .play > .stack { padding-bottom: 96px; } }
 .pfoot:has(.verdict) { background: color-mix(in srgb, var(--bg) 86%, transparent); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2); border-radius: 22px 22px 0 0; box-shadow: 0 -8px 24px rgba(24,33,43,.10); animation: slideUpIn .35s var(--spring) both; }
 .wsnow { display: none; width: 100%; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: var(--s2); background: var(--card); border-radius: var(--r-m); box-shadow: 0 2px 0 var(--lip); padding: var(--s2); min-height: 76px; }
 .wsnowtext { display: flex; flex-direction: column; gap: 2px; text-align: center; }

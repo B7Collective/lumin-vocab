@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "3.6.2";
+export const VERSION = "3.7.0";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -162,6 +162,8 @@ async function boot() {
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "127.0.0.1")) {
     const hadController = !!navigator.serviceWorker.controller;
     navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(() => {});
+    // once the app has settled, keep the small pictures on the device so every screen has its art offline
+    navigator.serviceWorker.ready.then((reg) => setTimeout(() => { try { reg.active && reg.active.postMessage("warm-art"); } catch {} }, 8000)).catch(() => {});
     // A new version took over: offer a quick reload so every screen uses it
     navigator.serviceWorker.addEventListener("controllerchange", () => {
       if (!hadController) return;

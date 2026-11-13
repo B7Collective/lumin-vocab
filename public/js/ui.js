@@ -60,6 +60,11 @@ export function toast(msg, action) {
 }
 
 let sheetClose = null;
+// A second tap meant for a sheet's button can land on the tab bar behind it once the sheet closes; that tap is dropped
+let sheetClosedAt = 0;
+document.addEventListener("click", (e) => {
+  if (performance.now() - sheetClosedAt < 350 && e.target.closest && e.target.closest(".bottomnav, .topnav")) { e.preventDefault(); e.stopPropagation(); }
+}, true);
 export function sheet(title, build, { onClose } = {}) {
   closeSheet();
   const layer = document.getElementById("layer");
@@ -89,7 +94,7 @@ export function sheet(title, build, { onClose } = {}) {
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   };
   addEventListener("keydown", keyer);
-  sheetClose = () => { scrim.remove(); body.remove(); removeEventListener("keydown", keyer); sheetClose = null; onClose && onClose(); prevFocus && prevFocus.focus && prevFocus.focus(); };
+  sheetClose = () => { sheetClosedAt = performance.now(); scrim.remove(); body.remove(); removeEventListener("keydown", keyer); sheetClose = null; onClose && onClose(); prevFocus && prevFocus.focus && prevFocus.focus(); };
   setTimeout(() => close.focus(), 30);
   return body;
 }

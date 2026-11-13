@@ -293,14 +293,14 @@ export function editCustom(id, fields) {
   if (fields.w && fields.w !== cur.w) {
     const c = card(cur.pid, cur.w);
     if (c) { store.put("card", cid(cur.pid, fields.w), { ...c, w: fields.w }); store.remove(cid(cur.pid, cur.w)); }
-    for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) saveCollection({ ...col, words: col.words.map((x) => (x === cur.w ? fields.w : x)) });
+    for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) { toggleInCollection(col, cur.w); if (!col.words.includes(fields.w)) toggleInCollection(store.get("col:" + col.id), fields.w); }
   }
 }
 // Remove your own word, with its progress and its place in your lists
 export function removeCustom(id) {
   const cur = customWord(id); if (!cur) return;
   store.remove("cw:" + id); store.remove(cid(cur.pid, cur.w));
-  for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) saveCollection({ ...col, words: col.words.filter((x) => x !== cur.w) });
+  for (const col of collections(cur.pid)) if (col.words.includes(cur.w)) toggleInCollection(col, cur.w);
 }
 
 // ---- Activity and streaks (kept on the profile, so they sync) --------------------

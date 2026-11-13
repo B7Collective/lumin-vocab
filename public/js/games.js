@@ -102,7 +102,11 @@ let session = null;
 
 // Start a session and open the Play screen.
 // opts: { title, words, kind ("mixed" or one kind), mode, art, back, grade (default true), onFinish(result) }
+let lastStart = 0;
 export function start(opts) {
+  // a double tap on a game would start it twice, and the second start throws the first away
+  if (Date.now() - lastStart < 800) return;
+  lastStart = Date.now();
   session = { kind: "mixed", mode: "normal", grade: true, study: false, retry: false, noKinds: null, back: "/practice", art: "shuffle", ...opts };
   go("/play");
 }
@@ -134,6 +138,17 @@ route("play", (main) => {
   const body = h("div", { class: "stack loose", style: { "--gap": "var(--s5)", flex: "1" } });
   const foot = h("div", { class: "pfoot" });
   page.append(hud, body, foot);
+  // The back button in the middle of a round stops it the way the X does (what you answered counts),
+  // instead of leaving and throwing the round away
+  history.pushState({ lumin: "game" }, "", location.href);
+  const onBack = () => {
+    // moving to another screen (a new address) also fires this; only a step back to this same game counts
+    removeEventListener("popstate", onBack);
+    if (!document.body.contains(page) || location.hash !== "#/play") return;
+    if (done) { history.back(); return; } // the results are showing: back simply leaves
+    finish(true);
+  };
+  addEventListener("popstate", onBack);
 
   let total = endless ? null : pool.length;
   const firstTotal = total;
@@ -180,8 +195,10 @@ route("play", (main) => {
     const card = h("div", { class: "qcard" + (again ? " retry" : "") }, h("span", { class: "qkind" }, label));
     body.replaceChildren(card);
 
+    let answeredQ = false;
     const answer = (ok, opts2 = {}) => {
-      if (done) return;
+      if (done || answeredQ) return; // a double tap answers once
+      answeredQ = true;
       const ms = Date.now() - asked, quiet = q.kind === "flash" || q.kind === "useit";
       results.push({ w: w.w, ok, retry: again });
       if (!again) { if (ok) right++; else wrongs++; }
@@ -202,7 +219,8 @@ route("play", (main) => {
         foot.replaceChildren(verdict(true, w, q)); reveal();
         setTimeout(() => out ? finish() : ask(), fast ? 650 : 900);
       } else {
-        const go2 = h("button", { class: "btn wide vgo", onclick: () => out ? finish() : ask() }, out ? "See results" : "Continue");
+        let went = false;
+        const go2 = h("button", { class: "btn wide vgo", onclick: () => { if (went) return; went = true; out ? finish() : ask(); } }, out ? "See results" : "Continue");
         foot.replaceChildren(verdict(ok, w, q), go2); reveal();
         setTimeout(() => go2.focus(), 60);
       }

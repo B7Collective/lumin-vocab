@@ -574,3 +574,32 @@ test("a device with an old copy can't wipe out Journey progress made on another"
   expect(await road(b)).toEqual({ ch: 3, theme: "dusk" });
   expect(errors.filter((e) => !/Failed to fetch|NetworkError|ERR_INTERNET_DISCONNECTED/.test(e))).toEqual([]);
 });
+
+test("double taps count once, and the back button stops a game instead of losing it", async ({ page }, info) => {
+  test.skip(info.project.name !== "desktop" && info.project.name !== "iphone", "a phone and a computer are enough");
+  const errors = watchErrors(page);
+  // a double tap on the last setup button makes one profile
+  await page.goto("/");
+  await page.getByRole("link", { name: "Get your first word" }).first().click();
+  await page.getByRole("button", { name: /An adult/ }).click();
+  await page.getByLabel("Name").fill("Sam");
+  await page.getByRole("button", { name: "Continue" }).click();
+  await page.getByRole("button", { name: "Continue" }).click();
+  await page.getByRole("button", { name: "Start learning" }).dblclick();
+  await expect(page.locator(".words .wword")).toBeVisible();
+  expect(await page.evaluate(async () => (await import("/js/model.js")).profiles().length)).toBe(1);
+  // a double tap on a game opens it
+  await page.goto("/#/practice");
+  await page.getByRole("button", { name: /Fill the gap/ }).dblclick();
+  await expect(page.locator(".qkind").first()).toBeVisible();
+  await page.waitForTimeout(900);
+  await expect(page.locator(".play")).toBeVisible();
+  // answer one, then press back: the round stops and shows what was done
+  await answerWrong(page);
+  await page.goBack();
+  await expect(page.locator(".endcard h1")).toHaveText("Good practice");
+  // and back again leaves the game
+  await page.goBack();
+  await expect(page.locator(".play")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
