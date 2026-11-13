@@ -10,6 +10,7 @@ import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
 import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, ACCENTS, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
+import { tapDecor } from "./decorfx.js";
 import { canScan, scanCode } from "./scan.js";
 import { SCENES, SCENE_GROUPS, sceneUrl, sceneBig, sceneFx, wallpaperUrl, topicArt, keeperArt } from "./art.js";
 import { play } from "./sound.js";
@@ -136,8 +137,8 @@ const SAMPLES = [
   { w: "gentle", p: "adj.", i: "JEHN-tuhl", d: "Soft and careful, not rough", scene: "lavender", x: 54 },
   { w: "majestic", p: "adj.", i: "muh-JEH-stihk", d: "Grand and beautiful in a powerful way", scene: "aurora", x: 50 },
   { w: "ambiguous", p: "adj.", i: "/æmˈbɪɡjuəs/", d: "Having more than one possible meaning; unclear", scene: "forest", x: 50 },
-  { w: "meticulous", p: "adj.", i: "/məˈtɪkjələs/", d: "Showing great attention to detail; very careful", scene: "attic", x: 46 },
-  { w: "fortuitous", p: "adj.", i: "/fɔrˈtuɪtəs/", d: "Happening by lucky chance", scene: "harbor", x: 52 },
+  { w: "meticulous", p: "adj.", i: "/məˈtɪkjələs/", d: "Showing great attention to detail; very careful", scene: "moonpagoda", x: 49 },
+  { w: "fortuitous", p: "adj.", i: "/fɔrˈtuɪtəs/", d: "Happening by lucky chance", scene: "greatwave", x: 50 },
   { w: "ineffable", p: "adj.", i: "/ɪˈnɛfəbəl/", d: "Too great or extreme to be expressed in words", scene: "library", x: 56 },
 ];
 route("welcome", (main) => {
@@ -167,9 +168,11 @@ route("welcome", (main) => {
         h("p", { class: "wfree" }, icon("check", 18), "100% free. No ads, no tracking, no accounts."))),
     h("section", { class: "wsec", "aria-labelledby": "w-how" }, h("h2", { id: "w-how" }, "Made for the whole family"),
       h("div", { class: "wfeat" },
-        feat("/art/icons/flashcards.webp", "One word at a time", "Swipe through words in a calm, beautiful space. Tap to hear them said."),
-        feat("/art/icons/review.webp", "Practice that sticks", "Words come back just before you'd forget them, as quick games."),
-        feat("/art/icons/society.webp", "A profile for everyone", "Six levels from first words to philosophy, each person at their own, synced privately."))),
+        feat("/art/icons/flashcards.webp", "One word at a time", "Swipe through words in a calm, beautiful space. Every word is spoken by a recorded voice, American or British."),
+        feat("/art/icons/review.webp", "Practice that sticks", "Words come back just before you'd forget them, as quick games. Miss one, and it gets a second chance."),
+        feat("/art/icons/society.webp", "A profile for everyone", "Six levels from first words to philosophy. Everyone keeps their own progress, synced privately between your devices."),
+        feat("/art/icons/mywords.webp", "Your own words too", "Met a word in a book or in class? Add it, change it any time, and it joins your practice."))),
+    welcomeGames(),
     welcomeRoad(),
     welcomeTrails(),
     welcomeScenes(),
@@ -196,12 +199,13 @@ function welcomeRoad() {
   const map = h("div", { class: "wmap land", "aria-hidden": "true" },
     ["heather", "ferns", "sand"].map((g, k) => h("div", { class: `ground g${k}`, style: { "--ground": `url(/art/ground/${g}.webp)` } })),
     svg,
-    ROAD_DECOR.map(([n, x, y, sz], k) => h("i", { class: "dc wdc" + (n === "roses" ? " sway" : n === "stumplantern" ? " glow" : n === "rowboat" ? " bob" : ""), style: { ...pos(x, y), "--sz": sz + "px", "--i": k } }, h("img", { src: `/art/decor/${n}.webp`, alt: "", width: sz, height: sz, loading: "lazy", decoding: "async" }))),
+    ROAD_DECOR.map(([n, x, y, sz], k) => h("button", { type: "button", tabindex: "-1", onclick: (e) => tapDecor(e.currentTarget, n), class: "dc wdc" + (n === "roses" ? " sway" : n === "stumplantern" ? " glow" : n === "rowboat" ? " bob" : ""), style: { ...pos(x, y), "--sz": sz + "px", "--i": k } }, h("img", { src: `/art/decor/${n}.webp`, alt: "", width: sz, height: sz, loading: "lazy", decoding: "async" }))),
     ROAD_STOPS.map(([k, name, x, y], i) => h("div", { class: "wstop", style: { ...pos(x, y), "--i": i } }, h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 88, height: 88, loading: "lazy", decoding: "async" }), h("span", {}, name))));
   return h("section", { class: "wsec wroad", "aria-labelledby": "w-road" },
     h("div", { class: "wroadtext" }, h("h2", { id: "w-road" }, "The Lantern Road"),
       h("p", { class: "lead" }, "A journey through twelve regions, from lavender fields to lighthouse cliffs. Each has its own ground, its own weather and its own keeper."),
       h("p", {}, "One stop a day: meet six words, play with them, then answer the keeper's riddle to reach the next landmark. Every word you learn adds a light to your lantern, and every stop you pass leaves a stamp in your passport."),
+      h("p", { class: "muted" }, "Tap the things along the road. Lanterns glow, bees buzz, flowers drop their petals. Try it on the map."),
       h("div", { class: "wkeepers" }, ["hare", "mouse", "tortoise", "bear", "moth"].map((k) => h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 52, height: 52, loading: "lazy" })), h("span", { class: "muted" }, "and more keepers along the way"))),
     map);
 }
@@ -211,12 +215,21 @@ function welcomeTrails() {
     h("p", { class: "lead wlead" }, "Nineteen themed walks you can take any time, alongside the main road. No waiting, any order."),
     h("ul", { class: "wtrailgrid" }, WELCOME_TRAILS.map(([k, name, src], i) => h("li", { style: { "--i": i } }, h("img", { src: src || `/art/trails/${k}.webp`, alt: "", width: 120, height: 120, loading: "lazy" }), h("span", {}, name)))));
 }
+// Every game, named, so a family can see what practice looks like before they start
+const WELCOME_GAMES = ["Flash cards", "What it means", "Fill the gap", "Spelling", "Unscramble", "True or false", "Find its twin", "Spot the right use", "Listen closely",
+  "Match the pairs", "Word hunt", "Light the letters", "Build the sentence", "Make it yours", "Read the clues", "Odd one out", "Opposites", "Hear and spell", "Game shuffle"];
+function welcomeGames() {
+  return h("section", { class: "wsec wgames", "aria-labelledby": "w-games" },
+    h("h2", { id: "w-games" }, "Nineteen ways to play"),
+    h("p", { class: "lead wlead" }, "Practice is a set of short games, and every Journey stop mixes them differently. Kids get the gentler ones."),
+    h("ul", { class: "wgamelist" }, WELCOME_GAMES.map((g, i) => h("li", { style: { "--i": i } }, g))));
+}
 function welcomeScenes() {
-  const cards = [["village", 50, -9], ["aurora", 50, 0], ["lavender", 54, 8]];
+  const cards = [["village", 50, -9], ["greatwave", 50, 0], ["lavender", 54, 8]];
   return h("section", { class: "wsec wscenes", "aria-labelledby": "w-scenes" },
     h("div", { class: "wpostcards", "aria-hidden": "true" }, cards.map(([sc, x, r], i) => h("div", { class: "wpost", style: { "--r": r + "deg", "--i": i } }, h("img", { src: sceneUrl(sc), alt: "", width: 320, height: 180, loading: "lazy", decoding: "async", style: { objectPosition: `${x}% 50%` } })))),
     h("div", { class: "wscenetext" }, h("h2", { id: "w-scenes" }, "Scenes worth keeping"),
-      h("p", { class: "lead" }, "Twenty-four scenes sit behind your words: harbors, libraries, snowy villages, northern lights and layered paper landscapes. Pick a favorite, or let them shuffle."),
+      h("p", { class: "lead" }, "Twenty-four scenes sit behind your words: harbors, libraries, snowy villages, northern lights and layered paper landscapes, sharp on any screen. Pick a favorite, or let them shuffle."),
       h("p", { class: "muted" }, "Like one? Save it to your phone as a wallpaper, straight from Settings.")));
 }
 
