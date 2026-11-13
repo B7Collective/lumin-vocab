@@ -95,7 +95,7 @@ export function current() {
   const mm = (q) => typeof matchMedia === "function" && matchMedia(q).matches;
   return detect({
     ua: nav.userAgent, platform: nav.platform, maxTouchPoints: nav.maxTouchPoints,
-    standalone: nav.standalone === true, displayStandalone: mm("(display-mode: standalone)") || mm("(display-mode: window-controls-overlay)"),
+    standalone: nav.standalone === true, displayStandalone: mm("(display-mode: standalone)") || mm("(display-mode: fullscreen)") || mm("(display-mode: window-controls-overlay)"),
     width: typeof innerWidth === "number" ? innerWidth : 1024, height: typeof innerHeight === "number" ? innerHeight : 768,
     coarse: mm("(pointer: coarse)"), hover: mm("(hover: hover)"), brave: !!nav.brave,
   });

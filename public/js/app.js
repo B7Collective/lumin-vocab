@@ -8,7 +8,7 @@ import { h, icon, avatar, closeSheet, toast } from "./ui.js";
 import * as sound from "./sound.js";
 import * as motion from "./motion.js";
 
-export const VERSION = "3.7.1";
+export const VERSION = "3.7.2";
 export const app = {
   device: device.current(),
   installPrompt: null,
@@ -162,6 +162,7 @@ async function boot() {
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "127.0.0.1")) {
     const hadController = !!navigator.serviceWorker.controller;
     navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(() => {});
+    fillScreen();
     // once the app has settled, keep the small pictures on the device so every screen has its art offline
     navigator.serviceWorker.ready.then((reg) => setTimeout(() => { try { reg.active && reg.active.postMessage("warm-art"); } catch {} }, 8000)).catch(() => {});
     // A new version took over: offer a quick reload so every screen uses it
@@ -180,3 +181,17 @@ boot().catch((e) => {
   document.getElementById("main").replaceChildren(h("div", { class: "page narrow" }, h("h1", {}, "Something went wrong"),
     h("p", { class: "lead" }, "Lumin Vocab couldn't start. Reloading usually fixes it."), h("button", { class: "btn primary", onclick: () => location.reload() }, "Reload")));
 });
+
+// The installed app fills the whole screen. Android and most computers do this from the manifest ("fullscreen").
+// Where the app still opened in a window with the system bars showing, the first tap asks for full screen
+// (browsers only allow it after a tap). Leaving full screen (Esc or a swipe) is respected for the rest of the visit.
+// iPhones don't allow hiding the status bar for web apps, so nothing is tried there.
+function fillScreen() {
+  const mm = (q) => { try { return matchMedia(q).matches; } catch { return false; } };
+  const installed = mm("(display-mode: standalone)") || mm("(display-mode: minimal-ui)");
+  const el = document.documentElement;
+  if (!installed || !el.requestFullscreen || /iPhone|iPod/.test(navigator.userAgent)) return;
+  addEventListener("pointerup", () => {
+    if (!document.fullscreenElement) el.requestFullscreen({ navigationUI: "hide" }).catch(() => {});
+  }, { once: true, capture: true });
+}

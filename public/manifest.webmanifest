@@ -5,8 +5,9 @@
   "description": "A bigger vocabulary, one beautiful word at a time, for the whole family. Free, private, and open source. Made by B7 Collective.",
   "start_url": "/?source=app",
   "scope": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "display_override": [
+    "fullscreen",
     "standalone",
     "minimal-ui"
   ],
