@@ -539,3 +539,38 @@ test("your own words can be changed and deleted, with their progress and lists",
   await expect(page.locator(".sheet .ws-own")).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+
+test("a device with an old copy can't wipe out Journey progress made on another", async ({ browser }, info) => {
+  test.skip(info.project.name !== "desktop", "one run is enough");
+  const ctxB = await browser.newContext();
+  const a = await (await browser.newContext()).newPage(), b = await ctxB.newPage();
+  const errors = [...watchErrors(a), ...watchErrors(b)];
+  await onboard(a, { name: "Robin", role: "A kid" });
+  await a.goto("/#/family");
+  await a.getByRole("button", { name: "Turn on sync" }).click();
+  await expect(a.locator(".status")).toContainText("Synced", { timeout: 20000 });
+  await a.getByRole("button", { name: "Add a device" }).click();
+  const code = (await a.locator(".code").textContent()).trim();
+  await b.goto("/#join=" + code.replace(/ /g, "-"));
+  await b.getByRole("button", { name: "Join" }).click();
+  await expect(b.getByRole("button", { name: /Robin/ })).toBeVisible({ timeout: 30000 });
+  await b.getByRole("button", { name: /Robin/ }).click();
+  await expect(b.locator(".words .wword")).toBeVisible();
+  const road = (pg) => pg.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return { ch: m.journeyState(p).ch, theme: p.theme }; });
+  const syncNow = (pg) => pg.evaluate(async () => { const s = await import("/js/sync.js"); await s.syncNow(); await s.syncNow(); });
+  // B goes offline holding the starting copy; A walks three chapters down the road
+  await ctxB.setOffline(true);
+  await a.evaluate(async () => {
+    const m = await import("/js/model.js"); const p = m.profiles()[0];
+    for (let ch = 0; ch < 3; ch++) { const steps = m.stepsFor(m.chapterWords(p.level)[ch]); for (let s = 0; s < steps.length; s++) m.advanceJourney(p.id, ch, s, 3); }
+  });
+  await syncNow(a);
+  expect((await road(a)).ch).toBe(3);
+  // B, still on its old copy, changes a setting (a later write than A's progress), then comes back online
+  await b.evaluate(async () => { const m = await import("/js/model.js"); const p = m.profiles()[0]; m.saveProfile({ ...m.profile(p.id), theme: "dusk" }); });
+  await ctxB.setOffline(false);
+  await syncNow(b); await syncNow(a); await syncNow(b);
+  expect(await road(a)).toEqual({ ch: 3, theme: "dusk" });
+  expect(await road(b)).toEqual({ ch: 3, theme: "dusk" });
+  expect(errors.filter((e) => !/Failed to fetch|NetworkError|ERR_INTERNET_DISCONNECTED/.test(e))).toEqual([]);
+});

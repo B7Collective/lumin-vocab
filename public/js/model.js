@@ -50,7 +50,49 @@ export function lookup(word) {
 // ---- Profiles ------------------------------------------------------------
 export const profiles = () => store.all("profile").sort((a, b) => a.created - b.created);
 export const profile = (id) => store.get("profile:" + id);
-export function saveProfile(p) { return store.put("profile", "profile:" + p.id, p); }
+// Each saved field remembers when it last changed (_t), so two devices' copies of a profile can be combined field
+// by field instead of one copy replacing the other whole.
+export function saveProfile(p) {
+  const cur = profile(p.id) || {}, t = { ...(cur._t || {}), ...(p._t || {}) }, now = Date.now();
+  for (const k of Object.keys(p)) if (k !== "_t" && JSON.stringify(p[k]) !== JSON.stringify(cur[k])) t[k] = now;
+  return store.put("profile", "profile:" + p.id, { ...p, _t: t });
+}
+// Progress only moves forward: of two copies of a road, keep the one further along, with the best stars from both
+const pos = (r) => (r.ch || 0) * 1000 + (r.step || 0);
+function mergeRoad(a, b) {
+  if (!a || !b) return a || b;
+  const rest = ({ stars, log, started, ...r }) => r; // what decides between equal positions (stars and logs are combined)
+  const win = pos(a) !== pos(b) ? (pos(a) > pos(b) ? a : b) : (store.canon(rest(a)) >= store.canon(rest(b)) ? a : b);
+  const stars = { ...(a.stars || {}) };
+  for (const [k, v] of Object.entries(b.stars || {})) stars[k] = Math.max(v, stars[k] || 0);
+  const log = new Map();
+  for (const x of [...(a.log || []), ...(b.log || [])]) { const o = log.get(x.ch); if (!o || x.at < o.at) log.set(x.ch, x); }
+  const started = Math.min(a.started || Infinity, b.started || Infinity);
+  return { ...win, stars, log: [...log.values()].sort((x, y) => x.ch - y.ch), ...(started < Infinity ? { started } : {}) };
+}
+function mergeRoads(a = {}, b = {}) {
+  const out = {};
+  for (const k of new Set([...Object.keys(a || {}), ...Object.keys(b || {})])) out[k] = mergeRoad((a || {})[k], (b || {})[k]);
+  return out;
+}
+// Combine two copies of a profile: settings by whichever changed last, roads by furthest progress, active days together
+export function mergeProfile(a, b, ua = 0, ub = 0) {
+  const ta = a._t || {}, tb = b._t || {}, out = {}, t = {};
+  for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {
+    if (k === "_t") continue;
+    if (k === "journey" || k === "trails") { if (a[k] || b[k]) out[k] = mergeRoads(a[k], b[k]); }
+    else if (k === "days") out.days = [...new Set([...(a.days || []), ...(b.days || [])])].sort().slice(-400);
+    else {
+      const da = ta[k] || 0, db = tb[k] || 0;
+      const useA = da !== db ? da > db : ua !== ub ? ua > ub : store.canon(a[k]) >= store.canon(b[k]);
+      const v = useA ? a[k] : b[k]; if (v !== undefined) out[k] = v;
+    }
+    const m = Math.max(ta[k] || 0, tb[k] || 0); if (m) t[k] = m;
+  }
+  out._t = t;
+  return out;
+}
+store.setMerger("profile", mergeProfile);
 export function newProfile(fields) {
   const existing = profiles();
   const p = {

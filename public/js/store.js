@@ -67,9 +67,29 @@ export function remove(id) {
   write(rec); notify("local", rec);
 }
 
-// Apply a record that came from another device. Last writer wins; ties break on device id.
+// Some record types know how to combine two copies (a profile keeps the furthest Journey progress from both),
+// so a device that writes from an out-of-date copy can never wipe out what another device saved.
+const mergers = new Map();
+export const setMerger = (type, fn) => mergers.set(type, fn);
+// The same data written in any key order gives the same text, so two devices agree on whether copies match
+export const canon = (x) => x === undefined ? "" : JSON.stringify(x, (k, v) => v && typeof v === "object" && !Array.isArray(v) ? Object.fromEntries(Object.keys(v).sort().map((key) => [key, v[key]])) : v);
+const same = (a, b) => canon(a) === canon(b);
+
+// Apply a record that came from another device. Last writer wins (ties break on device id), unless the type merges.
 export function applyRemote(rec) {
-  const cur = cache.get(rec.id);
+  const cur = cache.get(rec.id), merge = mergers.get(rec.type);
+  if (cur && merge && !cur.del && !rec.del && cur.data && rec.data) {
+    lastU = Math.max(lastU, rec.u);
+    const merged = merge(cur.data, rec.data, cur.u, rec.u);
+    if (same(merged, rec.data)) {
+      if (same(merged, cur.data) && cur.u >= rec.u) return false; // nothing new
+      const next = { ...rec, dirty: 0 }; write(next); notify("remote", next); return true;
+    }
+    if (same(merged, cur.data) && cur.dirty) return false; // ours already holds everything and is on its way up
+    // Both copies had something the other lacked: keep the combination and send it back up
+    const next = { ...cur, data: merged, u: tick(), dev: deviceId, del: 0, dirty: 1 };
+    write(next); notify("remote", next); return true;
+  }
   if (cur && (cur.u > rec.u || (cur.u === rec.u && (cur.dev || "") >= (rec.dev || "")))) return false;
   const next = { ...rec, dirty: 0 };
   lastU = Math.max(lastU, rec.u);
