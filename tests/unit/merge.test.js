@@ -49,3 +49,52 @@ test("a stale write from another device heals when it arrives", () => {
   // when the combined copy comes back to the other device, nothing more needs to be sent
   assert.equal(store.applyRemote({ ...rec, dev: "server-echo" }), false);
 });
+
+import { mergeList, mergeCard, streak, tomorrowKey } from "../../public/js/model.js";
+
+test("a device whose clock runs behind still wins with a newer change", () => {
+  saveProfile({ id: "clock", theme: "night", _t: { theme: Date.now() + 3600000 } }); // set by a device an hour ahead
+  saveProfile({ ...profile("clock"), theme: "garden" });
+  const t = profile("clock")._t.theme;
+  assert.ok(t > Date.now() + 3600000, "the new stamp is past the fast clock's");
+  const fast = { id: "clock", theme: "night", _t: { theme: Date.now() + 3600000 } };
+  assert.equal(mergeProfile(fast, profile("clock"), 1, 2).theme, "garden");
+});
+
+test("lists keep words added on one device and removals made on another", () => {
+  const base = { id: "L", name: "Trip", words: ["a", "b"], _w: { a: [10, 0], b: [11, 0] } };
+  const phone = { ...base, words: ["a", "b", "c"], _w: { ...base._w, c: [20, 0] } };       // added c
+  const tablet = { ...base, words: ["b"], _w: { ...base._w, a: [10, 25] } };              // removed a
+  const m = mergeList(phone, tablet, 1, 2);
+  assert.deepEqual(m.words, ["b", "c"]);
+  assert.equal(store.canon(mergeList(tablet, phone, 2, 1)), store.canon(m));
+  // a list saved before marks existed still combines
+  assert.deepEqual(mergeList({ id: "L", words: ["x"] }, { id: "L", words: ["y"] }, 1, 2).words.sort(), ["x", "y"]);
+});
+
+test("a card keeps the newer review schedule even when an older copy is written later", () => {
+  const reviewed = { pid: "k", w: "brave", st: "learning", srs: { due: 99, reps: 4 }, fav: false, _t: { srs: 500, st: 100 } };
+  const staleFav = { pid: "k", w: "brave", st: "learning", srs: { due: 1, reps: 1 }, fav: true, _t: { srs: 100, st: 100, fav: 600 } };
+  const m = mergeCard(reviewed, staleFav, 1, 2);
+  assert.deepEqual(m.srs, { due: 99, reps: 4 }); assert.equal(m.fav, true);
+});
+
+test("a removed profile can't come back from an old copy, but a backup restore brings it back", () => {
+  saveProfile({ id: "gone", level: 1 });
+  store.remove("profile:gone");
+  const dead = store.raw().find((r) => r.id === "profile:gone");
+  assert.equal(store.applyRemote({ id: "profile:gone", type: "profile", u: dead.u + 50, dev: "old", del: 0, data: { id: "gone", level: 1 } }), false);
+  assert.equal(profile("gone"), undefined);
+  const n = store.importAll({ app: "lumin-vocab", version: 1, records: [{ id: "profile:gone", type: "profile", u: 5, dev: "x", del: 0, data: { id: "gone", level: 1 } }] });
+  assert.equal(n, 1); assert.equal(profile("gone").level, 1);
+  const back = store.raw().find((r) => r.id === "profile:gone");
+  assert.ok(back.data.revived > dead.u, "other devices accept the restore");
+});
+
+test("streaks and the next stop count calendar days, even across daylight saving", () => {
+  // Mar 8, 2026 is the spring-forward day in the US
+  const p = { days: ["2026-03-07", "2026-03-09"] };
+  assert.equal(streak(p, new Date(2026, 2, 9, 0, 30)), 1);
+  assert.equal(tomorrowKey(new Date(2026, 2, 7, 23, 30)), "2026-03-08");
+  assert.equal(tomorrowKey(new Date(2026, 10, 1, 23, 30)), "2026-11-02");
+});

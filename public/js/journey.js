@@ -23,15 +23,16 @@ export function chapterInfo(p, ch, trailKey) {
   if (!c) return { words: [], count: chapters.length, steps: model.stepsFor(null, trailKey) };
   if (trailKey) {
     const t = model.trail(trailKey);
-    return { words: c.words, img: null, name: `Marker ${ch + 1}`, line: t.blurb, count: chapters.length, steps: model.stepsFor(c, trailKey), trail: t };
+    return { words: c.words, img: null, name: `Marker ${ch + 1}`, line: t.blurb, count: chapters.length, steps: model.stepsFor(c, trailKey, model.kidRoad(p, c)), trail: t };
   }
   const [img, name, line] = c.landmark;
   const lap = c.lookout ? 0 : Math.floor((chapters.slice(0, ch + 1).filter((x) => !x.lookout).length - 1) / model.LANDMARKS.length);
-  return { words: c.words, lookout: c.lookout, img, name: lap ? `${name}, part ${lap + 1}` : name, line, count: chapters.length, steps: model.stepsFor(c) };
+  return { words: c.words, lookout: c.lookout, img, name: lap ? `${name}, part ${lap + 1}` : name, line, count: chapters.length, steps: model.stepsFor(c, undefined, model.kidRoad(p, c)) };
 }
 // Words from the road behind you, mixed into each keeper's riddle so earlier chapters keep mattering
 function lookBack(p, ch, n) {
-  const before = model.chapterWords(p.level).slice(Math.max(0, ch - 6), ch).flatMap((c) => c.words);
+  // campfires repeat earlier words, so each word is offered once
+  const before = [...new Map(model.chapterWords(p.level).slice(Math.max(0, ch - 6), ch).flatMap((c) => c.words).map((w) => [w.w, w])).values()];
   return before.sort(() => Math.random() - 0.5).slice(0, n);
 }
 const lights = (p) => { const chs = model.chapterWords(p.level); return model.journeyState(p).log.reduce((n, e) => n + (chs[e.ch] && !chs[e.ch].lookout ? chs[e.ch].words.length : 0), 0); };
@@ -41,7 +42,7 @@ function runStep(p, ch, stepIdx, trailKey) {
   const info = chapterInfo(p, ch, trailKey), step = info.steps[stepIdx], kid = model.isKid(p);
   let words = [...info.words].sort(() => Math.random() - 0.5);
   const riddle = step.key === "test";
-  if (riddle && !info.lookout && !trailKey) words = words.concat(lookBack(p, ch, kid ? 2 : 4)).sort(() => Math.random() - 0.5);
+  if (riddle && !info.lookout && !trailKey) words = words.concat(lookBack(p, ch, kid ? 2 : 4).filter((w) => !words.some((x) => x.w === w.w))).sort(() => Math.random() - 0.5);
   // A word passes the riddle if you get it right, first time or on its second chance
   const need = riddle ? Math.ceil(words.length * (kid ? 0.75 : 0.8)) : 0;
   const keeper = trailKey ? "trail marker" : model.regionOf(ch)[2];
@@ -59,9 +60,10 @@ function runStep(p, ch, stepIdx, trailKey) {
       if (riddle && r.passed < need) return;
       // stars come from first tries; meeting the words and writing your own sentences always earn all three
       const stars = study || step.key === "useit" ? 3 : r.acc === 100 ? 3 : r.acc >= 80 ? 2 : 1;
+      if (!model.profile(p.id)) return; // the profile was removed on another device during the game
       const before = model.journeyState(model.profile(p.id), trailKey);
       const after = model.advanceJourney(p.id, ch, stepIdx, stars, trailKey);
-      if (after.ch > before.ch) { try { sessionStorage.setItem(UNLOCK_KEY, (trailKey || "") + ":" + after.ch); } catch {} }
+      if (after && after.ch > before.ch) { try { sessionStorage.setItem(UNLOCK_KEY, (trailKey || "") + ":" + after.ch); } catch {} }
     },
   });
 }
@@ -78,11 +80,11 @@ function justUnlocked(trailKey, ch) { try { const v = sessionStorage.getItem(UNL
 function regionBanner(p, ch, total) {
   const [scene, name, keeper, greeting, pic] = model.regionOf(ch), sc = SCENES.find((s) => s.id === scene) || SCENES[0];
   const regions = Math.ceil(total / model.REGION_SIZE), r = Math.floor(ch / model.REGION_SIZE);
-  const inRegion = (ch % model.REGION_SIZE) + 1;
+  const inRegion = (ch % model.REGION_SIZE) + 1, lap = Math.floor(r / model.REGIONS.length);
   return h("div", { class: "jregion" }, h("img", { src: sceneUrl(scene), alt: "", style: { objectPosition: `${sc.x}% 55%` }, decoding: "async" }),
     h("div", { class: "fireflies", "aria-hidden": "true" }, Array.from({ length: 9 }, (_, k) => h("i", { style: { "--x": `${6 + ((k * 41) % 88)}%`, "--y": `${18 + ((k * 23) % 60)}%`, "--d": `${5 + (k % 4)}s`, "--delay": `${-k * 0.9}s` } }))),
-    h("div", { class: "jregion-text" }, h("span", {}, `Region ${r + 1} of ${regions}`), h("strong", {}, name),
-      h("p", { class: "keeper" }, inRegion === 1 ? greeting : `Keeper: ${keeper}`),
+    h("div", { class: "jregion-text" }, h("span", {}, `Region ${r + 1} of ${regions}`), h("strong", {}, lap ? `${name}, part ${lap + 1}` : name),
+      h("p", { class: "keeper" }, inRegion === 1 ? (lap ? `Welcome back to ${name}. The road runs on, and new words wait further along it.` : greeting) : `Keeper: ${keeper}`),
       h("span", { class: "jregion-steps", "aria-label": `Stop ${inRegion} of ${model.REGION_SIZE} in this region` }, Array.from({ length: model.REGION_SIZE }, (_, k) => h("i", { class: k < inRegion - 1 ? "on" : k === inRegion - 1 ? "here" : "" })))),
     h("img", { class: "keeperpic" + (pic ? "" : " standin"), src: keeperSrc(model.regionOf(ch)), alt: "", width: 112, height: 112 }));
 }
@@ -290,12 +292,14 @@ route("journey", (main, args) => {
   if (args[0] === "trail" && args[1]) return trailPage(main, args[1]);
   const p = app.profile, st = model.journeyState(p), level = model.LEVELS[p.level];
   const info = chapterInfo(p, st.ch);
+  st.step = Math.min(st.step, Math.max(0, info.steps.length - 1)); // a stop can now have fewer steps than when it began
   const page = h("div", { class: "journey" });
   main.append(page);
   if (!info.words.length) {
     page.append(h("div", { class: "jtop" }, art(landmark("castle"), "", 200), h("h1", {}, "You walked the whole road"),
-      h("p", { class: "lead" }, `All ${info.count} stops of ${level.name}, over ${plural(model.journeyDays(st), "day")}. Your lantern is full. Keep your words fresh in Practice, try a side trail, or start the next level's road from You.`),
+      h("p", { class: "lead" }, `All ${info.count} stops of ${level.name}, over ${plural(model.journeyDays(st), "day")}. Your lantern is full. Keep your words fresh in Practice, try a side trail` + (p.level < model.LEVELS.length - 1 ? ", or start the next level's road from You." : ". This is the last road there is, and you walked all of it.")),
       h("div", { class: "actions center-x" }, h("a", { class: "btn primary", href: "#/practice" }, "Practice"), h("button", { class: "btn", onclick: () => passport(p) }, "Your passport"))), trailCards(p));
+    if (justUnlocked("", st.ch) && st.ch > 0) celebrate(p, st.ch - 1); // the last landmark still gets its moment
     return;
   }
   const unlocked = justUnlocked("", st.ch);
@@ -338,6 +342,7 @@ function trailPage(main, key) {
   const p = app.profile, t = model.trail(key);
   if (!t || !model.trailsFor(p).some((x) => x.key === key)) { go("/journey"); return; }
   const st = model.journeyState(p, key), info = chapterInfo(p, st.ch, key);
+  st.step = Math.min(st.step, Math.max(0, info.steps.length - 1));
   const page = h("div", { class: "journey" });
   main.append(page);
   page.append(h("a", { class: "back", href: "#/journey" }, icon("left"), "The road"),

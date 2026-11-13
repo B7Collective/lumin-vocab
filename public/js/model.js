@@ -42,9 +42,17 @@ export async function loadWords() {
   chapterCache.clear();
   return WORDS;
 }
+// The person using the app right now (set by app.js), so their own words come first
+let activePid = null;
+export const setActive = (pid) => { activePid = pid; };
+const asWord = (c) => { const owner = profile(c.pid);
+  return { w: c.w, p: c.p || "word", d: c.d, e: c.e || "", l: owner && owner.level != null ? owner.level : 3, t: "My words", f: [], m: [], s: "", custom: true, id: c.id, pid: c.pid }; };
 export function lookup(word) {
-  const custom = store.all("custom").find(c => c.w === word);
-  return BY.get(word) || (custom && { w: custom.w, p: custom.p || "word", d: custom.d, e: custom.e || "", l: 3, t: "My words", f: [], m: [], s: "", custom: true, id: custom.id });
+  const mine = activePid && store.all("custom").find((c) => c.w === word && c.pid === activePid);
+  if (mine) return asWord(mine); // your own word, in your own words (even if the bank has it at another level)
+  if (BY.get(word)) return BY.get(word);
+  const custom = store.all("custom").find((c) => c.w === word);
+  return custom ? asWord(custom) : undefined;
 }
 
 // ---- Profiles ------------------------------------------------------------
@@ -52,11 +60,15 @@ export const profiles = () => store.all("profile").sort((a, b) => a.created - b.
 export const profile = (id) => store.get("profile:" + id);
 // Each saved field remembers when it last changed (_t), so two devices' copies of a profile can be combined field
 // by field instead of one copy replacing the other whole.
-export function saveProfile(p) {
-  const cur = profile(p.id) || {}, t = { ...(cur._t || {}), ...(p._t || {}) }, now = Date.now();
-  for (const k of Object.keys(p)) if (k !== "_t" && JSON.stringify(p[k]) !== JSON.stringify(cur[k])) t[k] = now;
-  return store.put("profile", "profile:" + p.id, { ...p, _t: t });
+// Stamp the fields that changed since the copy on this device. The stamp is a counter that only moves forward:
+// if another device's clock ran ahead, our next change still counts as newer.
+function stamped(cur, next) {
+  cur = cur || {};
+  const t = { ...(cur._t || {}), ...(next._t || {}) }, now = Math.max(Date.now(), ...Object.values(t).map((x) => x + 1));
+  for (const k of Object.keys(next)) if (k !== "_t" && k !== "_w" && JSON.stringify(next[k]) !== JSON.stringify(cur[k])) t[k] = now;
+  return { ...next, _t: t };
 }
+export function saveProfile(p) { return store.put("profile", "profile:" + p.id, stamped(profile(p.id), p)); }
 // Progress only moves forward: of two copies of a road, keep the one further along, with the best stars from both
 const pos = (r) => (r.ch || 0) * 1000 + (r.step || 0);
 function mergeRoad(a, b) {
@@ -75,13 +87,13 @@ function mergeRoads(a = {}, b = {}) {
   for (const k of new Set([...Object.keys(a || {}), ...Object.keys(b || {})])) out[k] = mergeRoad((a || {})[k], (b || {})[k]);
   return out;
 }
-// Combine two copies of a profile: settings by whichever changed last, roads by furthest progress, active days together
-export function mergeProfile(a, b, ua = 0, ub = 0) {
+// Combine two copies field by field: each field follows whichever device changed it last. Some fields have their
+// own rule (special): roads keep the furthest progress, active days and list words are combined.
+function mergeFields(a, b, ua, ub, special = {}) {
   const ta = a._t || {}, tb = b._t || {}, out = {}, t = {};
   for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {
     if (k === "_t") continue;
-    if (k === "journey" || k === "trails") { if (a[k] || b[k]) out[k] = mergeRoads(a[k], b[k]); }
-    else if (k === "days") out.days = [...new Set([...(a.days || []), ...(b.days || [])])].sort().slice(-400);
+    if (special[k]) { const v = special[k](a, b); if (v !== undefined) out[k] = v; }
     else {
       const da = ta[k] || 0, db = tb[k] || 0;
       const useA = da !== db ? da > db : ua !== ub ? ua > ub : store.canon(a[k]) >= store.canon(b[k]);
@@ -92,7 +104,33 @@ export function mergeProfile(a, b, ua = 0, ub = 0) {
   out._t = t;
   return out;
 }
+// A profile: settings by whichever changed last, roads by furthest progress, active days together
+const PROFILE_RULES = {
+  journey: (a, b) => (a.journey || b.journey ? mergeRoads(a.journey, b.journey) : undefined),
+  trails: (a, b) => (a.trails || b.trails ? mergeRoads(a.trails, b.trails) : undefined),
+  days: (a, b) => [...new Set([...(a.days || []), ...(b.days || [])])].sort().slice(-400),
+};
+export const mergeProfile = (a, b, ua = 0, ub = 0) => mergeFields(a, b, ua, ub, PROFILE_RULES);
+// A list: each word remembers when it was last added and removed (_w), so additions on one device and removals on
+// another both survive. Lists saved before that combine their words.
+function listWords(a, b) {
+  const w = {};
+  for (const src of [a, b]) {
+    const marks = src._w || Object.fromEntries((src.words || []).map((x, i) => [x, [i + 1, 0]]));
+    for (const [x, [add, del]] of Object.entries(marks)) { const o = w[x] || [0, 0]; w[x] = [Math.max(o[0], add), Math.max(o[1], del)]; }
+  }
+  return w;
+}
+const LIST_RULES = {
+  words: (a, b) => Object.entries(listWords(a, b)).filter(([, [add, del]]) => add > del).sort((x, y) => x[1][0] - y[1][0] || (x[0] < y[0] ? -1 : 1)).map(([x]) => x),
+  _w: (a, b) => listWords(a, b),
+};
+export const mergeList = (a, b, ua = 0, ub = 0) => mergeFields(a, b, ua, ub, LIST_RULES);
+// A word card: each part (review schedule, favorite, status) follows whichever device changed it last
+export const mergeCard = (a, b, ua = 0, ub = 0) => mergeFields(a, b, ua, ub);
 store.setMerger("profile", mergeProfile);
+store.setMerger("collection", mergeList);
+store.setMerger("card", mergeCard);
 export function newProfile(fields) {
   const existing = profiles();
   const p = {
@@ -144,8 +182,8 @@ const cid = (pid, w) => `card:${pid}:${w}`;
 export const card = (pid, w) => store.get(cid(pid, w));
 export const cards = (pid) => store.all("card").filter(c => c.pid === pid);
 export function setCard(pid, w, patch) {
-  const cur = card(pid, w) || { pid, w, st: "seen", fav: false, srs: null, seenAt: Date.now() };
-  return store.put("card", cid(pid, w), { ...cur, ...patch });
+  const prev = card(pid, w), cur = prev || { pid, w, st: "seen", fav: false, srs: null, seenAt: Date.now() };
+  return store.put("card", cid(pid, w), stamped(prev, { ...cur, ...patch }));
 }
 export function restoreCard(pid, w, prev) { if (prev) store.put("card", cid(pid, w), prev); else store.remove(cid(pid, w)); }
 export function learn(pid, w) { const c = card(pid, w); return setCard(pid, w, { st: "learning", actAt: Date.now(), srs: c && c.srs ? c.srs : { ...srs.newState(), due: Date.now() + 10 * 60000 } }); }
@@ -228,11 +266,18 @@ export function queue(p) {
 
 // ---- Collections and custom words ----------------------------------------
 export const collections = (pid) => store.all("collection").filter(c => c.pid === pid || c.shared).sort((a, b) => a.created - b.created);
-export function saveCollection(c) { return store.put("collection", "col:" + c.id, c); }
+export function saveCollection(c) {
+  const cur = store.get("col:" + c.id), base = cur || c;
+  // the words keep their own add and remove marks (combined with what this device already has), not one stamp
+  return store.put("collection", "col:" + c.id, { ...stamped(cur, { ...c, words: base.words }), words: LIST_RULES.words(base, c), _w: listWords(base, c) });
+}
 export function newCollection(pid, name, shared = false) { return saveCollection({ id: store.uuid(), pid, name, words: [], shared, created: Date.now() }); }
 export function toggleInCollection(col, w) {
-  const words = col.words.includes(w) ? col.words.filter(x => x !== w) : [...col.words, w];
-  return saveCollection({ ...col, words });
+  const fresh = store.get("col:" + col.id) || col; if (!fresh.words) return fresh; // removed on another device
+  const has = fresh.words.includes(w), marks = { ...(fresh._w || listWords(fresh, fresh)) }, now = Date.now(), o = marks[w] || [0, 0];
+  const stamp = Math.max(now, o[0] + 1, o[1] + 1);
+  marks[w] = has ? [o[0], stamp] : [stamp, o[1]];
+  return saveCollection({ ...fresh, words: has ? fresh.words.filter((x) => x !== w) : [...fresh.words, w], _w: marks });
 }
 export const customWords = (pid) => store.all("custom").filter(c => c.pid === pid);
 export function addCustom(pid, fields) {
@@ -266,13 +311,16 @@ export function markActive(pid) {
   if (days[days.length - 1] === today) return;
   saveProfile({ ...p, days: [...days.filter((d) => d !== today), today].slice(-400) });
 }
-export function streak(p) {
+// Step whole calendar days (not 24-hour jumps), so daylight saving changes never skip or repeat a day
+const dayBefore = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate() - 1, 12);
+export function streak(p, now = new Date()) {
   const set = new Set((p && p.days) || []);
-  let n = 0, t = Date.now();
-  if (!set.has(dayKey(t))) t -= 86400000; // a streak stays alive until the end of today
-  while (set.has(dayKey(t))) { n++; t -= 86400000; }
+  let n = 0, d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
+  if (!set.has(dayKey(d.getTime()))) d = dayBefore(d); // a streak stays alive until the end of today
+  while (set.has(dayKey(d.getTime()))) { n++; d = dayBefore(d); }
   return n;
 }
+export const tomorrowKey = (now = new Date()) => dayKey(new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 12).getTime());
 // The current week, Sunday first: [{ label, active, today }]
 export function week(p) {
   const set = new Set((p && p.days) || []), now = new Date(), start = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay());
@@ -372,6 +420,10 @@ export function chapterWords(level) {
       since = [];
     }
   }
+  // a last stop of only a word or two joins the stop before it
+  // (or the stop before the campfire, which then closes the road)
+  const last = chapters[chapters.length - 1], prev = [...chapters].reverse().find((c, k) => k > 0 && !c.lookout);
+  if (last && prev && !last.lookout && last.words.length < 3) { chapters.pop(); prev.words = [...prev.words, ...last.words]; }
   chapterCache.set(level, chapters);
   return chapters;
 }
@@ -426,6 +478,7 @@ function variedSteps(chapter, kid) {
 function seededOrder(list, key) { const rnd = seeded(key); return list.map((x) => [rnd(), x]).sort((a, b) => a[0] - b[0]).map((x) => x[1]); }
 const stepCache = new WeakMap(), kidStepCache = new WeakMap();
 const KID_LOOKOUT = [{ key: "incontext", name: "Campfire stories", icon: "review", line: "What does each word mean in the story?" }, ...LOOKOUT_STEPS.slice(1)];
+export const kidRoad = (p, chapter) => isKid(p) || (!!chapter && chapter.words.every((w) => w.l <= 1));
 export function stepsFor(chapter, trailKey, kid = chapter ? chapter.words.every((w) => w.l <= 1) : false) {
   if (trailKey === "spelling") return SPELL_STEPS;
   if (trailKey === "mixups") return MIXUP_STEPS;
@@ -461,34 +514,41 @@ export function trailChapters(key, p) {
   const ws = trailWords(t, p);
   // mix-ups stay in pairs; others stay in the order they were written
   const size = key === "mixups" ? 4 : CHAPTER_SIZE, out = [];
-  for (let i = 0; i < ws.length; i += size) { const words = ws.slice(i, i + size); if (words.length >= 2) out.push({ words, lookout: false, landmark: null, idx: out.length }); }
+  for (let i = 0; i < ws.length; i += size) out.push({ words: ws.slice(i, i + size), lookout: false, landmark: null, idx: out.length });
   if (out.length > 1 && out[out.length - 1].words.length < 3) { const last = out.pop(); out[out.length - 1].words.push(...last.words); }
   return out;
 }
 
+// Side-trail progress is kept per level, since a trail's words change with the level. Progress saved before that
+// (under the trail's name alone) carries over to the first level that walks that trail again.
+export const trailId = (p, key) => p.level + ":" + key;
 export function journeyState(p, trailKey) {
-  const src = trailKey ? (p.trails && p.trails[trailKey]) : (p.journey && p.journey[p.level]);
+  const trails = (p && p.trails) || {};
+  const legacy = () => (Object.keys(trails).some((k) => k.endsWith(":" + trailKey)) ? null : trails[trailKey]);
+  const src = trailKey ? (trails[trailId(p, trailKey)] || legacy()) : (p.journey && p.journey[p.level]);
   return { ch: 0, step: 0, stars: {}, log: [], openOn: null, ...(src || {}) };
 }
 // The next main-road chapter opens the day after you finish one. Trails never wait.
 export const journeyOpen = (st, trailKey) => trailKey || !st.openOn || dayKey() >= st.openOn;
 export const journeyDays = (st) => new Set((st.log || []).map((x) => dayKey(x.at)).concat(st.started ? [dayKey(st.started)] : [])).size;
 export function advanceJourney(pid, ch, step, stars, trailKey) {
-  const p = profile(pid); const cur = journeyState(p, trailKey);
+  const p = profile(pid); if (!p) return null; // the profile was removed on another device mid-game
+  const cur = journeyState(p, trailKey);
   const next = { ...cur, stars: { ...(cur.stars || {}) }, log: [...(cur.log || [])], started: cur.started || Date.now() };
   if (stars != null) next.stars[`${ch}.${step}`] = Math.max(stars, next.stars[`${ch}.${step}`] || 0);
   const chapters = trailKey ? trailChapters(trailKey, p) : chapterWords(p.level);
-  const steps = stepsFor(chapters[ch], trailKey);
+  const steps = stepsFor(chapters[ch], trailKey, kidRoad(p, chapters[ch]));
+  cur.step = Math.min(cur.step, steps.length - 1); // a stop can have fewer steps than when it was started
   if (ch === cur.ch && step === cur.step) {
     if (step + 1 < steps.length) next.step = step + 1;
     else {
       const all = steps.map((_, k) => next.stars[`${ch}.${k}`] || 1);
       next.log.push({ ch, at: Date.now(), stars: Math.round(all.reduce((a, b) => a + b, 0) / all.length) });
       next.ch = ch + 1; next.step = 0;
-      if (!trailKey) next.openOn = dayKey(Date.now() + 86400000);
+      if (!trailKey) next.openOn = tomorrowKey();
     }
   }
-  if (trailKey) saveProfile({ ...p, trails: { ...(p.trails || {}), [trailKey]: next } });
+  if (trailKey) saveProfile({ ...p, trails: { ...(p.trails || {}), [trailId(p, trailKey)]: next } });
   else saveProfile({ ...p, journey: { ...(p.journey || {}), [p.level]: next } });
   return next;
 }
@@ -498,8 +558,9 @@ const shuffled = (a) => a.map((x) => [Math.random(), x]).sort((x, y) => x[0] - y
 const pickOne = (a) => a[Math.floor(Math.random() * a.length)];
 export function distractors(word, n, field) {
   const lv = word.l == null ? 3 : word.l;
-  let same = WORDS.filter((x) => x.w !== word.w && x.l === lv && x[field] && x[field] !== word[field] && x.cf !== word.w && word.cf !== x.w);
-  if (same.length < n) same = same.concat(WORDS.filter((x) => x.w !== word.w && Math.abs(x.l - lv) === 1 && x[field] && x[field] !== word[field]));
+  const twin = (x) => x.d === word.d || (word.m || []).includes(x.w) || (x.m || []).includes(word.w);
+  let same = WORDS.filter((x) => x.w !== word.w && x.l === lv && x[field] && x[field] !== word[field] && x.cf !== word.w && word.cf !== x.w && !twin(x));
+  if (same.length < n) same = same.concat(WORDS.filter((x) => x.w !== word.w && Math.abs(x.l - lv) === 1 && x[field] && x[field] !== word[field] && !twin(x)));
   const pos = same.filter((x) => x.p === word.p);
   const pool = pos.length >= n * 3 ? pos : same;
   const out = new Set();
@@ -569,10 +630,10 @@ export const sentenceTiles = (text) => text.trim().split(/\s+/);
 export function canAsk(word, kind, kid) {
   const letters = /^[a-z]+$/i.test(word.w);
   switch (kind) {
-    case "gap": return !!gapSentence(word);
+    case "gap": return sentences(word).length > 0; // checking must not use up a sentence
     case "usage": return sentences(word).length > 0 && !kid;
     case "synonym": return !!synonymFor(word);
-    case "mixup": return !!word.cf && !!BY.get(word.cf) && !!gapSentence(word);
+    case "mixup": return !!word.cf && !!BY.get(word.cf) && sentences(word).length > 0;
     case "spell": return letters && !kid;
     case "unscramble": return letters && word.w.length <= 12;
     case "listen": return true;

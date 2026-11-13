@@ -77,7 +77,17 @@ export function sheet(title, build, { onClose } = {}) {
   const end = (e) => { if (sy == null) return; const dy = e.clientY - sy; sy = null; body.classList.remove("dragging"); body.classList.add("release");
     if (dy > 110) { body.style.transform = "translateY(100%)"; setTimeout(() => closeSheet(), 200); } else body.style.transform = ""; };
   body.addEventListener("pointerup", end); body.addEventListener("pointercancel", end);
-  const keyer = (e) => { if (e.key === "Escape") closeSheet(); };
+  // Escape closes; Tab stays inside the sheet, since the page behind it is covered
+  const keyer = (e) => {
+    if (e.key === "Escape") { closeSheet(); return; }
+    if (e.key !== "Tab") return;
+    const items = [...body.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])')].filter((x) => x.offsetParent !== null);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (!body.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  };
   addEventListener("keydown", keyer);
   sheetClose = () => { scrim.remove(); body.remove(); removeEventListener("keydown", keyer); sheetClose = null; onClose && onClose(); prevFocus && prevFocus.focus && prevFocus.focus(); };
   setTimeout(() => close.focus(), 30);

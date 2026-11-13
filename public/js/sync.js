@@ -86,6 +86,8 @@ export async function init(apiBase = "") {
 let syncBase = "";
 
 export async function enable(code) {
+  // let a sync that's already running (maybe for another family) finish first, so it can't write its place back after ours
+  if (running) { state.enabled = false; await running.catch(() => {}); }
   await store.setMeta("familyCode", normalizeCode(code));
   await store.setMeta("cursor", 0);
   keys = await deriveKeys(code);
@@ -116,6 +118,7 @@ export async function syncNow() {
     try {
       let cursor = (await store.getMeta("cursor")) || 0;
       for (let round = 0; round < 20; round++) {
+        if (!state.enabled) break; // joining another family stops this run
         const dirty = store.dirty().slice(0, 200);
         const changes = [], uById = {}, oidToId = {};
         for (const r of dirty) {
@@ -141,6 +144,7 @@ export async function syncNow() {
           catch { /* not decryptable with this code: ignore */ }
         }
         cursor = body.seq || cursor;
+        if (!state.enabled) break;
         await store.setMeta("cursor", cursor);
         if (!body.more && store.dirty().length === 0) break;
       }

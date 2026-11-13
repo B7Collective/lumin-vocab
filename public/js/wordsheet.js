@@ -110,7 +110,7 @@ export function listPicker(word) {
       const cols = model.collections(p.id);
       if (!cols.length) list.append(h("p", { class: "muted", style: { padding: "var(--s4) 0" } }, "No lists yet. Make one for a book, a trip or a test."));
       for (const col of cols) list.append(h("label", { class: "switch" }, h("span", { class: "txt" }, h("strong", {}, col.name), h("small", {}, plural(col.words.length, "word") + (col.shared ? ", shared with family" : ""))),
-        h("input", { type: "checkbox", checked: col.words.includes(word), onchange: () => model.toggleInCollection(model.collections(p.id).find((x) => x.id === col.id), word) })));
+        h("input", { type: "checkbox", checked: col.words.includes(word), onchange: () => { const fresh = model.collections(p.id).find((x) => x.id === col.id); if (fresh) model.toggleInCollection(fresh, word); else { toast("That list was removed on another device"); draw(); } } })));
     };
     draw();
     b.append(list, h("button", { class: "btn quiet start", onclick: async () => { const name = await ask("New list", { label: "Name", confirm: "Create", maxlength: 40 }); if (name && name.trim()) { const col = model.newCollection(p.id, name.trim()); model.toggleInCollection(col, word); toast(`Added to ${col.name}`); } } }, icon("plus"), "New list"));
@@ -143,12 +143,16 @@ export function addWord(prefill = "", editId = null) {
       const word = w.value.trim();
       if (!word || !d.value.trim()) { toast("Add the word and what it means"); return; }
       if (mine) {
-        const clash = word !== mine.w && (model.BY.get(word.toLowerCase()) || model.customWords(p.id).some((x) => x.w === word));
+        const bank = model.BY.get(word.toLowerCase());
+        const clash = word !== mine.w && ((bank && model.atLevel(p, bank)) || model.customWords(p.id).some((x) => x.w === word));
         if (clash) { toast(`"${word}" is already in your words`); return; }
         model.editCustom(mine.id, { w: word, p: pos.value, d: d.value.trim(), e: e.value.trim() });
         toast("Saved your changes"); closeSheet(); render({ refresh: true }); return;
       }
-      if (model.BY.get(word.toLowerCase())) { model.learn(p.id, word.toLowerCase()); toast(`"${word}" is already in Lumin Vocab. Saved to practice.`); closeSheet(); render({ refresh: true }); return; }
+      // A word already at your level is simply saved. One from another level becomes your own word, so it really comes back.
+      const bank = model.BY.get(word.toLowerCase());
+      if (bank && model.atLevel(p, bank)) { model.learn(p.id, bank.w); toast(`"${word}" is already in Lumin Vocab. Saved to practice.`); closeSheet(); render({ refresh: true }); return; }
+      if (model.customWords(p.id).some((x) => x.w.toLowerCase() === word.toLowerCase())) { toast(`"${word}" is already in your words`); return; }
       model.addCustom(p.id, { w: word, p: pos.value, d: d.value.trim(), e: e.value.trim() });
       toast(`Added "${word}"`); closeSheet(); render({ refresh: true });
     } },

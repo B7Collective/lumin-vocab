@@ -91,11 +91,16 @@ export async function handleSync(request, env) {
     const ids = [...latest.keys()], old = new Map();
     for (let i = 0; i < ids.length; i += IN_CHUNK) {
       const chunk = ids.slice(i, i + IN_CHUNK);
-      const { results } = await db.prepare(`SELECT id, length(c) AS len FROM records WHERE fam = ?1 AND id IN (${chunk.map((_, j) => "?" + (j + 2)).join(",")})`).bind(fam, ...chunk).all();
-      for (const r of results) old.set(r.id, r.len);
+      const { results } = await db.prepare(`SELECT id, u, c, length(c) AS len FROM records WHERE fam = ?1 AND id IN (${chunk.map((_, j) => "?" + (j + 2)).join(",")})`).bind(fam, ...chunk).all();
+      for (const r of results) old.set(r.id, r);
     }
+    // Only changes the server will actually keep (newer than what it has) count toward the family's storage
     let added = 0, delta = 0;
-    for (const [id, c] of latest) { if (!old.has(id)) added++; delta += c.c.length - (old.get(id) || 0); }
+    for (const [id, c] of latest) {
+      const o = old.get(id);
+      if (!o) { added++; delta += c.c.length; continue; }
+      if (c.u > o.u || (c.u === o.u && c.c > o.c)) delta += c.c.length - o.len;
+    }
     const usage = await db.prepare("SELECT n, bytes FROM families WHERE fam = ?1").bind(fam).first();
     if (usage.n + added > MAX_RECORDS || usage.bytes + delta > MAX_FAMILY_BYTES) return json({ error: "family storage is full" }, 507);
     const stmts = [];

@@ -1,0 +1,48 @@
+import { chromium, devices, BASE, SHOT, watch, onboard, word, overflow } from "./.focus-lib.mjs";
+const log = [];
+const browser = await chromium.launch({ executablePath: "/usr/bin/google-chrome" });
+const ctx = await browser.newContext({ ...devices["Pixel 7"] });
+const page = await ctx.newPage(); watch(page, "teen", log);
+const step = async (n, f) => { try { await f(); log.push(`ok ${n}`); } catch (e) { log.push(`FAIL ${n}: ${e.message.split("\n")[0]}`); await page.screenshot({ path: SHOT + `p3-${n.replace(/\W+/g,"_")}.png` }).catch(()=>{}); } };
+await step("onboard", () => onboard(page, { name: "Zara", role: "A teen" }));
+const swipe = async (dy) => { const box = await page.locator(".words").boundingBox(); const x = box.x + box.width / 2, y = box.y + box.height * 0.45;
+  await page.locator(".words").dispatchEvent("pointerdown", { pointerType: "touch", clientX: x, clientY: y, isPrimary: true, pointerId: 1 });
+  for (let k = 1; k <= 5; k++) await page.locator(".words").dispatchEvent("pointermove", { pointerType: "touch", clientX: x, clientY: y + dy * k / 5, isPrimary: true, pointerId: 1 });
+  await page.locator(".words").dispatchEvent("pointerup", { pointerType: "touch", clientX: x, clientY: y + dy, isPrimary: true, pointerId: 1 }); };
+const saved = [];
+await step("swipe and save", async () => { for (let i = 0; i < 6; i++) { const w = await word(page); if (i % 2 === 0) { await page.locator(".wslide .save").first().tap(); saved.push(w); } await swipe(-220); await page.waitForTimeout(700); const w2 = await word(page); if (w2 === w) log.push(`swipe ${i} didn't advance (${w})`); } 
+  // fast swipes
+  const before = await word(page); for (let i = 0; i < 4; i++) await swipe(-220); await page.waitForTimeout(900); log.push(`4 fast swipes: ${before} -> ${await word(page)}`);
+  await swipe(220); await page.waitForTimeout(700); log.push("swipe back -> " + await word(page));
+  // double tap save
+  const w = await word(page); await page.locator(".wslide .save").first().dblclick(); await page.waitForTimeout(500); const st = await page.evaluate(async (w) => { const m = await import("/js/model.js"); const p = m.profiles()[0]; return m.card(p.id, w)?.st; }, w); log.push(`double tap save on ${w}: state ${st}`);
+  log.push("saved " + saved.join(",")); });
+await step("library saved", async () => { await page.goto(BASE + "/#/library/saved"); await page.waitForTimeout(500); const ws = await page.locator(".wcard .w").allTextContents(); log.push("library saved shows " + ws.join(",")); log.push("overflow lib " + await overflow(page)); });
+const LONG = "supercalifragilisticexpialidocious-and-then-some-more-letters-too";
+const odd = "café 🦄 l'été";
+await step("add odd word", async () => { await page.goto(BASE + "/#/library/mine"); await page.waitForTimeout(400); await page.getByRole("button", { name: "Add a word" }).tap();
+  await page.locator("#cw-w").fill(odd); await page.locator("#cw-d").fill("A " + "very ".repeat(60) + "long meaning with émojis 🎉 and <b>tags</b> & \"quotes\"");
+  await page.locator("#cw-e").fill("I went to the café 🦄 l'été with friends.");
+  await page.getByRole("button", { name: "Add word" }).dblclick(); await page.waitForTimeout(700);
+  const n = await page.evaluate(async () => (await import("/js/model.js")).customWords((await import("/js/model.js")).profiles()[0].id).length); log.push("custom words after double tap Add: " + n);
+  await page.screenshot({ path: SHOT + "p3-mine.png", fullPage: true }); log.push("overflow mine " + await overflow(page)); });
+await step("add long word", async () => { await page.getByRole("button", { name: "Add a word" }).tap(); await page.locator("#cw-w").fill(LONG); log.push("long word input value length " + (await page.locator("#cw-w").inputValue()).length);
+  await page.locator("#cw-d").fill("x"); await page.getByRole("button", { name: "Add word" }).tap(); await page.waitForTimeout(600); log.push("overflow after long " + await overflow(page)); await page.screenshot({ path: SHOT + "p3-long.png", fullPage: true }); });
+await step("open odd word details", async () => { await page.locator(".wcard", { hasText: "café" }).first().locator(".w").tap(); await page.waitForTimeout(600); log.push("dialog " + await page.getByRole("dialog").count()); await page.screenshot({ path: SHOT + "p3-oddsheet.png" });
+  const dlg = page.getByRole("dialog"); log.push("dialog buttons: " + (await dlg.getByRole("button").allTextContents()).map(s=>s.trim()).filter(Boolean).join(" | ")); });
+await step("edit odd word", async () => { const dlg = page.getByRole("dialog"); await dlg.getByRole("button", { name: /Edit/ }).first().tap(); await page.waitForTimeout(400); await page.locator("#cw-w").fill("naïve 👀"); await page.getByRole("button", { name: "Save changes" }).tap(); await page.waitForTimeout(600);
+  log.push("mine now: " + (await page.locator(".wcard .w").allTextContents()).join(" ; ")); });
+await step("add to list", async () => { await page.getByRole("button", { name: /Add naïve 👀 to a list/ }).tap(); await page.waitForTimeout(400); await page.getByRole("button", { name: "New list" }).tap(); await page.waitForTimeout(300);
+  await page.getByLabel("Name").fill("Spanish & French 🇫🇷 words that are really quite long to type out"); await page.getByRole("button", { name: "Create" }).tap(); await page.waitForTimeout(600);
+  await page.screenshot({ path: SHOT + "p3-list.png" });
+  log.push("toast " + await page.locator(".toast").last().textContent().catch(()=>"-")); await page.keyboard.press("Escape");
+  await page.goto(BASE + "/#/library/lists"); await page.waitForTimeout(400); await page.screenshot({ path: SHOT + "p3-lists.png", fullPage: true }); log.push("overflow lists " + await overflow(page));
+  await page.locator("main a, main button", { hasText: "Spanish" }).first().tap(); await page.waitForTimeout(500); log.push("list words: " + (await page.locator(".wcard .w").allTextContents()).join(",")); await page.screenshot({ path: SHOT + "p3-listview.png", fullPage: true }); });
+await step("use custom word in practice", async () => { await page.goto(BASE + "/#/practice"); await page.getByRole("button", { name: /Flash cards/ }).tap(); await page.waitForTimeout(800); await page.screenshot({ path: SHOT + "p3-flash.png" }); });
+await step("delete odd word", async () => { await page.goto(BASE + "/#/library/mine"); await page.waitForTimeout(400); await page.locator(".wcard", { hasText: "naïve" }).first().locator(".w").tap(); await page.waitForTimeout(500);
+  await page.getByRole("dialog").getByRole("button", { name: /Delete/ }).first().tap(); await page.waitForTimeout(300); await page.getByRole("button", { name: "Delete", exact: true }).tap(); await page.waitForTimeout(600);
+  log.push("mine after delete: " + (await page.locator(".wcard .w").allTextContents()).join(" ; "));
+  await page.goto(BASE + "/#/library/lists"); await page.locator("main a, main button", { hasText: "Spanish" }).first().tap(); await page.waitForTimeout(500); log.push("list after delete: " + (await page.locator(".wcard .w").allTextContents()).join(",") + " | " + (await page.locator("main").textContent()).slice(0, 200).replace(/\s+/g, " "));
+  const col = await page.evaluate(async () => (await import("/js/model.js")).collections((await import("/js/model.js")).profiles()[0].id).map(c => c.words)); log.push("collection data " + JSON.stringify(col)); });
+console.log(log.join("\n"));
+await browser.close();

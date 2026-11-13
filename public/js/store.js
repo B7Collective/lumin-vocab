@@ -78,6 +78,13 @@ const same = (a, b) => canon(a) === canon(b);
 // Apply a record that came from another device. Last writer wins (ties break on device id), unless the type merges.
 export function applyRemote(rec) {
   const cur = cache.get(rec.id), merge = mergers.get(rec.type);
+  // A removed profile stays removed: a device that missed the removal can't bring it back half empty by saving its
+  // old copy. Only a restore from a backup (which marks the profile as revived after the removal) brings it back.
+  if (cur && cur.del && cur.type === "profile" && !rec.del && !(rec.data && rec.data.revived > cur.u)) {
+    lastU = Math.max(lastU, rec.u);
+    if (rec.u >= cur.u) { const next = { ...cur, u: tick(), dev: deviceId, dirty: 1 }; write(next); }
+    return false;
+  }
   if (cur && merge && !cur.del && !rec.del && cur.data && rec.data) {
     lastU = Math.max(lastU, rec.u);
     const merged = merge(cur.data, rec.data, cur.u, rec.u);
@@ -119,6 +126,12 @@ export function importAll(obj) {
     if (!r.del && (!r.data || typeof r.data !== "object" || Array.isArray(r.data))) continue;
     // A timestamp from the future would win every later edit, so cap it at now
     const rec = { id: r.id, type: r.type, data: r.data, u: Math.min(r.u, now), dev: typeof r.dev === "string" ? r.dev.slice(0, 64) : "", del: r.del ? 1 : 0 };
+    // Restoring brings back what was removed since the backup (a removed profile, its words and lists)
+    const cur = cache.get(rec.id);
+    if (cur && cur.del && !rec.del) {
+      const u = tick();
+      write({ ...rec, data: rec.type === "profile" ? { ...rec.data, revived: u } : rec.data, u, dev: deviceId, del: 0, dirty: 1 }); n++; continue;
+    }
     if (applyRemote(rec)) { const c = cache.get(rec.id); c.dirty = 1; write(c); n++; }
   }
   return n;

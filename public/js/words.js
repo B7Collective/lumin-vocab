@@ -146,10 +146,13 @@ route("words", (main) => {
     else if (w && k === "p") speak(w.w, p);
   };
   addEventListener("keydown", keys);
-  document.addEventListener("lumin-known", () => { if (document.body.contains(root)) next(); });
+  // These listeners go away with the screen, so visits don't pile them up
+  const onKnown = () => { if (!document.body.contains(root)) { document.removeEventListener("lumin-known", onKnown); return; } next(); };
+  document.addEventListener("lumin-known", onKnown);
   // Progress from another device: refresh the streak chip, and drop words handled there from what's coming
-  document.addEventListener("lumin-remote", () => {
-    if (!document.body.contains(root)) return;
+  const onRemote = () => {
+    if (!document.body.contains(root)) { document.removeEventListener("lumin-remote", onRemote); return; }
     const nn = model.streak(app.profile); hud.firstChild.lastChild.textContent = String(nn);
-  });
+  };
+  document.addEventListener("lumin-remote", onRemote);
 });

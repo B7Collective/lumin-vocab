@@ -12,7 +12,9 @@ export const VERSION = "3.6.2";
 export const app = {
   device: device.current(),
   installPrompt: null,
-  pid: null,
+  _pid: null,
+  get pid() { return this._pid; },
+  set pid(v) { this._pid = v; model.setActive(v); },
   get profile() { return this.pid ? model.profile(this.pid) : null; },
   unlocked: false, // grown-up settings unlocked for this visit
 };
@@ -77,7 +79,7 @@ export function render(opts) {
   let [name, ...rest] = path.split("/");
   const hasProfiles = model.profiles().length > 0;
   if (!hasProfiles && !["setup", "join", "install", "about"].includes(name)) name = "welcome";
-  else if (hasProfiles && (!app.profile && !["who", "setup", "join", "install", "about"].includes(name))) name = "who";
+  else if (hasProfiles && (!app.profile && !["who", "setup", "join", "install", "about", "family"].includes(name))) name = "who";
   else if (!name) name = "words";
   name = ({ feed: "words", review: "practice", saved: "library", categories: "topics" })[name] || name; // addresses from version 1
   if (!ROUTES[name]) name = hasProfiles ? "words" : "welcome";
@@ -166,7 +168,8 @@ async function boot() {
       toast("Lumin Vocab was updated", { label: "Reload", fn: () => location.reload() });
       // Phones keep an installed app open for days, so also reload by itself the next time it is put away,
       // unless a game is in progress (that would lose the round)
-      document.addEventListener("visibilitychange", () => { if (document.hidden && !location.hash.startsWith("#/play")) location.reload(); });
+      // (and never while a sheet is open, like an unsaved word being typed)
+      document.addEventListener("visibilitychange", () => { if (document.hidden && !location.hash.startsWith("#/play") && !document.querySelector("#layer .sheet")) location.reload(); });
     });
   }
 }
