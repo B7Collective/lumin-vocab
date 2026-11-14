@@ -652,9 +652,9 @@ route("settings", (main, args = []) => {
 
   page.append(sec("About",
     h("p", {}, `Lumin Vocab ${VERSION}. Free and open source under the AGPL-3.0 license. Made by `, h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), "."),
-    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))),
-    h("div", { class: "panel" }, h("p", {}, h("strong", {}, "Lumin Lookup"), ": our free dictionary and thesaurus, with the same look and the same family code. Every word, its synonyms and where it came from."),
-      h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: LOOKUP, rel: "noopener" }, "Open Lumin Lookup")))));
+    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code")),
+    h("p", {}, h("strong", {}, "Lumin Lookup"), ": our free dictionary and thesaurus, with the same look and the same family code. Every word, its synonyms and where it came from."),
+    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: LOOKUP, rel: "noopener" }, "Open Lumin Lookup"))));
   settingsTabs(page, TABS, args[0]);
   page.append(footer());
 });

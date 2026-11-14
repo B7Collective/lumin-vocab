@@ -1,6 +1,6 @@
 // Lumin Vocab service worker: offline app shell and word list.
 // Copyright (C) 2026 B7 Collective LLC. Licensed under AGPL-3.0-only.
-const VERSION = "lumin-v3.8.0";
+const VERSION = "lumin-v3.8.1";
 // Word audio lives in its own cache so it survives app updates (each clip only changes if the word does)
 const AUDIO = "lumin-audio-v1";
 // Pictures live in their own cache too, so an update never leaves someone offline without their scenes. They're
