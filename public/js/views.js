@@ -22,6 +22,7 @@ import "./library.js";
 import "./you.js";
 
 const SITE = "https://lumin.b7collective.com";
+export const LOOKUP = "https://lookup.b7collective.com"; // Lumin Lookup, the sister dictionary and thesaurus
 const SOURCE = "https://github.com/B7Collective/lumin-vocab";
 const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[4];
 const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1, 5, 3]; // used by the word check
@@ -29,7 +30,7 @@ const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1,
 function footer({ short = false } = {}) {
   return h("footer", { class: "footer" }, short ? null : h("p", {}, "100% free. No ads, no tracking, no accounts."),
     h("nav", { "aria-label": "About Lumin Vocab" },
-      h("a", { href: "https://b7collective.com", rel: "noopener" }, "Made by B7 Collective"), h("a", { href: "/privacy.html" }, "Privacy"),
+      h("a", { href: "https://b7collective.com", rel: "noopener" }, "Made by B7 Collective"), h("a", { href: LOOKUP, rel: "noopener" }, "Lumin Lookup dictionary"), h("a", { href: "/privacy.html" }, "Privacy"),
       h("a", { href: "#/about" }, "Credits"), h("a", { href: SOURCE, rel: "noopener" }, "Source code")));
 }
 function qr(text) {
@@ -651,7 +652,9 @@ route("settings", (main, args = []) => {
 
   page.append(sec("About",
     h("p", {}, `Lumin Vocab ${VERSION}. Free and open source under the AGPL-3.0 license. Made by `, h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), "."),
-    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))));
+    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code"))),
+    h("div", { class: "panel" }, h("p", {}, h("strong", {}, "Lumin Lookup"), ": our free dictionary and thesaurus, with the same look and the same family code. Every word, its synonyms and where it came from."),
+      h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: LOOKUP, rel: "noopener" }, "Open Lumin Lookup")))));
   settingsTabs(page, TABS, args[0]);
   page.append(footer());
 });

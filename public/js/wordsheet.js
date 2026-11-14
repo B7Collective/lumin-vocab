@@ -83,6 +83,7 @@ export function details(wordText) {
         h("div", { class: "ws-more" },
         h("button", { class: "ws-act", onclick: () => listPicker(w.w) }, icon("folder"), h("span", {}, "Add to list")),
         h("button", { class: "ws-act", onclick: () => share(w) }, icon("share"), h("span", {}, "Share")),
+        w.custom ? null : h("a", { class: "ws-act", href: `https://lookup.b7collective.com/#/word/${encodeURIComponent(w.w)}`, rel: "noopener" }, icon("search"), h("span", {}, "Full entry")),
         c && c.st === "known" ? null : h("button", { class: "ws-act", onclick: () => { model.know(p.id, w.w); toast("Got it. We won't show it again."); closeSheet(); document.dispatchEvent(new CustomEvent("lumin-known", { detail: w.w })); } }, icon("check"), h("span", {}, "I know it")))),
       own ? h("div", { class: "ws-own" }, h("p", { class: "ws-src muted small" }, "Added by you."),
         h("div", { class: "ws-own-acts" },

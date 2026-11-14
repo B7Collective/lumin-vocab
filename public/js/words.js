@@ -8,6 +8,13 @@ import { sayPill, details, toggleFav, toggleSave, POS_SHORT } from "./wordsheet.
 
 const HINT_KEY = "lumin-swipe-hint";
 
+// A link to one word (#/word/serendipity, used by Lumin Lookup) opens the Words screen with that word's card
+route("word", (main, args = []) => {
+  const w = model.lookup(args[0] || "");
+  location.replace("#/words");
+  if (w) setTimeout(() => details(w.w), 350);
+});
+
 route("words", (main) => {
   const p = app.profile;
   let queue = model.queue(p), idx = 0, busy = false;
