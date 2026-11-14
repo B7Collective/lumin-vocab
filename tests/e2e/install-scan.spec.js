@@ -24,7 +24,7 @@ test("home screen icons load for every phone", async ({ request }, info) => {
   expect(html).toContain('rel="apple-touch-icon" sizes="180x180" href="/icons/app-apple-180.png"');
 });
 
-test("the landing page offers to install the app", async ({ page }, info) => {
+test("the start screen offers to install the app", async ({ page }, info) => {
   await page.goto("/");
   const btn = page.locator("#getapp");
   await expect(btn).toBeVisible();
@@ -36,7 +36,9 @@ test("the landing page offers to install the app", async ({ page }, info) => {
   if (["iphone", "ipad"].includes(info.project.name)) await expect(sheet).toContainText("Add to Home Screen");
   else await expect(sheet.locator(".steps li").first()).toBeVisible();
   await page.keyboard.press("Escape");
-  await expect(page.locator(".wclose").getByRole("button", { name: "Install the app" })).toBeVisible();
+  // The main site's Install the app link opens the install guide directly
+  await page.goto("/#/install");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(/Install Lumin Vocab|You're using the app/);
 });
 
 test("QR codes are drawn, not blank", async ({ page }, info) => {

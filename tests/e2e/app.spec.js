@@ -111,6 +111,9 @@ test("first run: the word screen, heart, save, details and library", async ({ pa
   await expect(page.locator(".wcard .w", { hasText: first })).toBeVisible();
   await page.goto("/#/library/saved");
   await expect(page.locator(".wcard .w", { hasText: first })).toBeVisible();
+  await page.goto("/#/library");
+  await expect(page.locator(".lookupcard")).toHaveAttribute("href", "https://lookup.b7collective.com");
+  await expect(page.locator(".lookupcard img")).toHaveJSProperty("complete", true);
   await page.goto("/#/you");
   await expect(page.locator(".stat", { hasText: "Learning" }).locator("b")).toHaveText("1");
   await expect(page.locator(".streak .n")).toHaveText("1");

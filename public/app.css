@@ -609,39 +609,19 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
 
 /* ---- Welcome -------------------------------------------------------------------- */
 .app[data-route="welcome"] .topbar { position: absolute; left: 0; right: 0; top: 0; max-width: none; padding-top: calc(var(--s3) + var(--safe-top)); }
-.app[data-route="welcome"] .brand { color: #fff; }
-.whero { position: relative; min-height: min(100dvh, 920px); display: flex; align-items: center; justify-content: center; overflow: hidden; color: #fff; text-align: center; }
-.whero .wbg { animation-duration: 40s; }
-.whero .inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: var(--s4); padding: calc(96px + var(--safe-top)) var(--gutter) var(--s7); max-width: 760px; }
-.whero h1 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: calc(clamp(34px, 6.4vw, 64px) * var(--scale)); line-height: 1.08; text-wrap: balance; text-shadow: 0 2px 30px rgba(0,0,0,.4); }
-.whero .lead { color: rgba(255,255,255,.86); text-align: center; }
-.wsample { display: flex; flex-direction: column; align-items: center; gap: var(--s2); margin: var(--s4) 0 var(--s2); min-height: 256px; justify-content: center; }
-.wsample .wword { font-size: calc(clamp(46px, 11vw, 88px) * var(--scale)); }
-.wsample .wdef { font-size: calc(clamp(17px, 4vw, 21px) * var(--scale)); }
-.wsample.out { opacity: 0; transform: translateY(-8px); transition: opacity .35s var(--ease), transform .35s var(--ease); }
+/* the start screen carries the mark and the name itself, so the bar keeps only Install */
+.app[data-route="welcome"] .brand { display: none; }
+.app[data-route="welcome"] .topbar .getapp { margin-left: auto; }
+/* The start screen: one scene, the name, and the way in. The full introduction is on b7collective.com/lumin-vocab. */
+.starthero { position: relative; min-height: 100dvh; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #fff; text-align: center; }
+.starthero .wbg { animation-duration: 40s; }
+.starthero .inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: var(--s4); padding: calc(96px + var(--safe-top)) var(--gutter) calc(var(--s7) + var(--safe-bottom)); max-width: 640px; }
+.startmark { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 10px 30px -10px rgba(0,0,0,.55); }
+.starthero h1 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: calc(clamp(34px, 10vw, 68px) * var(--scale)); line-height: 1.05; text-wrap: balance; text-shadow: 0 2px 30px rgba(0,0,0,.4); }
+.startline { margin: 0 0 var(--s4); max-width: 26ch; font-family: var(--serif); font-size: calc(clamp(19px, 4.6vw, 24px) * var(--scale)); line-height: 1.35; color: rgba(255,255,255,.9); text-wrap: balance; text-shadow: 0 1px 16px rgba(0,0,0,.45); }
 .wcta { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s3) var(--s4); align-items: center; }
 .wcta .textlink { color: #fff; font-weight: 700; }
-.wfree { display: inline-flex; gap: var(--s2); align-items: center; color: rgba(255,255,255,.85); font-size: var(--t-s); }
-.wfree .icon { width: 18px; height: 18px; color: var(--accent); }
-.wsec { width: 100%; max-width: calc(var(--wide) + 2 * var(--gutter)); margin: 0 auto; padding: var(--s8) var(--gutter); display: flex; flex-direction: column; gap: var(--s6); }
-.wsec > h2 { margin: 0; text-align: center; font-family: var(--serif); font-weight: 400; font-size: var(--t-2xl); }
-.wfeat { display: grid; gap: var(--s5); grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); }
-.wfeat article { display: flex; flex-direction: column; gap: var(--s3); text-align: center; align-items: center; }
-.wfeat .art { width: 150px; border-radius: 50%; box-shadow: var(--shadow-lift); }
-.wfeat h3 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: var(--t-xl); }
-.wfeat p { color: var(--muted); max-width: 30ch; }
-@media (min-width: 1100px) { .wfeat { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-/* Nineteen ways to play: the game names as a loose, wrapping shelf of pills */
-.wgamelist { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s2) var(--s2); max-width: 760px; }
-.wgamelist li { padding: 10px 18px; border-radius: var(--r-pill); background: var(--card); box-shadow: inset 0 0 0 1px var(--line), 0 2px 0 var(--lip); font-weight: 700; font-size: var(--t-s); }
-.wgamelist li:nth-child(3n+1) { background: var(--soft); }
-/* the landing page's little road answers taps like the real one */
-.wmap .dc.wdc { pointer-events: auto; }
-.wclose { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--s4); padding-bottom: var(--s5); }
-.wclose h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: var(--t-2xl); }
-.wpromises { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s3) var(--s5); }
-.wpromises li { display: inline-flex; gap: var(--s2); align-items: center; font-weight: 700; white-space: nowrap; }
-.wpromises .icon { color: var(--good); }
+.starthero .startabout { margin-top: var(--s2); color: rgba(255,255,255,.82); font-size: var(--t-s); }
 
 /* ======================================================================================
    Motion. Everything you touch answers you; screens arrive in a short stagger; nothing loops
@@ -1064,50 +1044,6 @@ body:has(#app[data-route="words"]) .ambient, body:has(#app[data-route="welcome"]
 .land .jland { width: min(330px, 92%); }
 .land .jland img { width: min(220px, 68%); }
 
-/* ---- 3.1: landing page showcases ------------------------------------------------------------ */
-.wroad { display: grid; gap: var(--s6); align-items: center; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 820px) { .wroad { grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: var(--s8); } }
-.wroadtext { display: flex; flex-direction: column; gap: var(--s4); }
-.wroadtext h2, .wscenetext h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: var(--t-2xl); line-height: 1.1; }
-.wroadtext p:not(.lead) { margin: 0; color: var(--muted); max-width: var(--measure); }
-.wkeepers { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s2); }
-.wkeepers img { width: 52px; height: 52px; border-radius: 50%; background: var(--tile); box-shadow: 0 0 0 3px var(--card), var(--shadow); margin-right: -14px; }
-.wkeepers .muted { margin-left: 22px; font-size: var(--t-s); }
-.wmap { position: relative; height: 540px; border-radius: var(--r-l); overflow: hidden; isolation: isolate; background: var(--card); box-shadow: var(--shadow-lift); }
-.wmap > .ground { opacity: .5; filter: saturate(.65) contrast(.9); background-size: 200px 200px; -webkit-mask-image: none; mask-image: none; }
-.wmap > .ground.g0 { bottom: 58%; -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
-.wmap > .ground.g1 { top: 30%; bottom: 26%; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); }
-.wmap > .ground.g2 { top: 66%; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%); mask-image: linear-gradient(to bottom, transparent, #000 30%); }
-[data-theme="dark"] .wmap > .ground { opacity: .3; filter: saturate(.5) brightness(.8); }
-.wroadline { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.wroadline path { fill: none; stroke-linecap: round; }
-.wroadline .roadedge { stroke: var(--road-edge); stroke-width: 54px; }
-.wroadline .road { stroke: var(--road); stroke-width: 46px; }
-.wroadline .dots { stroke: var(--accent); stroke-width: 5px; stroke-dasharray: 2 14; opacity: .8; }
-.wmap .wdc { width: var(--sz); height: var(--sz); translate: -50% -50%; }
-@media (max-width: 459px) { .wmap .wdc { width: calc(var(--sz) * .8); height: calc(var(--sz) * .8); } }
-.wstop { position: absolute; z-index: 1; translate: -50% -50%; display: flex; flex-direction: column; align-items: center; gap: 6px; animation: decorIn .7s var(--spring) both; animation-delay: calc(var(--i) * 160ms + 200ms); }
-.wstop img { width: 88px; height: 88px; border-radius: 50%; background: var(--tile); box-shadow: 0 0 0 5px var(--card), 0 6px 0 4px var(--lip), 0 20px 26px -14px rgba(24, 33, 43, .6); }
-.wstop span { font-size: var(--t-s); font-weight: 700; white-space: nowrap; background: color-mix(in srgb, var(--card) 92%, transparent); padding: 3px 10px; border-radius: 999px; box-shadow: 0 1px 0 var(--lip); }
-.wtrails { align-items: center; }
-.wtrails > h2 { margin-bottom: calc(var(--s3) * -1); }
-.wlead { text-align: center; }
-.wtrailgrid { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; gap: var(--s5) var(--s4); grid-template-columns: repeat(3, minmax(0, 1fr)); }
-@media (min-width: 820px) { .wtrailgrid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
-.wtrailgrid li { display: flex; flex-direction: column; align-items: center; gap: var(--s2); text-align: center; font-weight: 700; font-size: var(--t-s); line-height: 1.25; }
-.wtrailgrid img { width: min(120px, 100%); height: auto; aspect-ratio: 1; border-radius: 50%; background: var(--tile); box-shadow: var(--shadow-lift); transition: transform var(--d2) var(--spring); }
-.wtrailgrid li:nth-child(odd) img { rotate: -3deg; }
-.wtrailgrid li:nth-child(even) img { rotate: 2deg; }
-.wscenes { display: grid; gap: var(--s7); align-items: center; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 820px) { .wscenes { grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: var(--s8); } }
-.wscenetext { display: flex; flex-direction: column; gap: var(--s4); }
-.wscenetext .muted { margin: 0; }
-.wpostcards { position: relative; height: clamp(210px, 52vw, 300px); }
-.wpost { position: absolute; left: 50%; top: 50%; width: min(68%, 340px); aspect-ratio: 16 / 10; translate: -50% -50%; rotate: var(--r); padding: 8px 8px 22px; background: #FBFAF7; border-radius: 6px; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset, 0 18px 30px -16px rgba(24, 33, 43, .55); }
-.wpost:nth-child(1) { margin-left: -12%; margin-top: -4%; }
-.wpost:nth-child(3) { margin-left: 12%; margin-top: 5%; }
-.wpost img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
-[data-theme="dark"] .wpost { background: #E9E4DA; }
 .roadcard.land { position: relative; overflow: hidden; isolation: isolate; }
 .roadcard.land > .ground { opacity: .3; filter: saturate(.6); background-size: 180px 180px; -webkit-mask-image: linear-gradient(to left, #000, transparent 65%); mask-image: linear-gradient(to left, #000, transparent 65%); }
 [data-theme="dark"] .roadcard.land > .ground { opacity: .3; }
@@ -1497,3 +1433,13 @@ textarea.mine:focus { outline: none; border-color: var(--accent); box-shadow: 0 
 .land .dc .flake { width: 5px; height: 5px; border-radius: 50%; background: #fff; box-shadow: 0 0 3px rgba(255, 255, 255, .9), 0 0 0 .5px rgba(120, 140, 160, .35); }
 .land .dc .bee { width: 9px; height: 7px; border-radius: 50%; background: repeating-linear-gradient(90deg, #F2B544 0 2px, #2B2118 2px 4px); box-shadow: -2px -3px 0 -1px rgba(255, 255, 255, .9), 1px -3px 0 -1px rgba(255, 255, 255, .9); }
 .land .dc .paper { width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 1px 1px rgba(0, 0, 0, .15); }
+
+/* Library: Lumin Lookup, our sister dictionary and thesaurus */
+.lookupcard { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: var(--s4); align-items: center; margin-top: var(--s6); padding: var(--s4) var(--s5) var(--s4) var(--s4); background: var(--card); border-radius: var(--r-l); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; max-width: var(--page); -webkit-tap-highlight-color: transparent; transition: transform var(--d2) var(--spring), box-shadow var(--d2) var(--ease); }
+.lookupcard img { width: 56px; height: 56px; border-radius: 14px; }
+.lookupcard > span:not(.chev) { display: flex; flex-direction: column; gap: var(--s1); }
+.lookupcard strong { font-family: var(--serif); font-weight: 400; font-size: var(--t-l); line-height: 1.25; }
+.lookupcard small { color: var(--muted); font-size: var(--t-s); line-height: 1.45; text-wrap: pretty; }
+.lookupcard .chev { color: var(--muted); }
+.lookupcard:active { transform: scale(.985); }
+@media (hover: hover) { .lookupcard:hover { box-shadow: var(--shadow-lift); transform: translateY(-2px); } }

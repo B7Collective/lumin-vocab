@@ -8,6 +8,7 @@ import { art, icon as artIcon, topicArt, trailArt } from "./art.js";
 import { wordCard, addWord } from "./wordsheet.js";
 import { start } from "./games.js";
 
+const LOOKUP = "https://lookup.b7collective.com"; // Lumin Lookup, the sister dictionary and thesaurus
 const SHELVES = [
   { key: "favorites", name: "Favorites", art: "favorites", empty: "Tap the heart on any word to keep it here." },
   { key: "saved", name: "Saved", art: "review", empty: "Tap the bookmark on any word to save it. Saved words come back in Practice." },
@@ -36,7 +37,13 @@ route("library", (main, args) => {
         const n = s.key === "lists" ? model.collections(p.id).length : shelfWords(p, s.key).length;
         return h("a", { class: "gcard", href: `#/library/${s.key}` }, art(artIcon(s.art), "", 240), h("strong", {}, s.name), h("small", {}, s.key === "lists" ? plural(n, "list") : plural(n, "word")));
       })),
-      h("a", { class: "btn start", href: "#/topics" }, icon("grid"), "Browse topics"));
+      h("a", { class: "btn start", href: "#/topics" }, icon("grid"), "Browse topics"),
+      // Our sister app, for any word at all: a word's full entry is one tap from every word sheet too
+      h("a", { class: "lookupcard", href: LOOKUP, rel: "noopener" },
+        h("img", { src: "/icons/lumin-lookup.png", alt: "", width: 56, height: 56, loading: "lazy" }),
+        h("span", {}, h("strong", {}, "Lumin Lookup"),
+          h("small", {}, "Our free dictionary and thesaurus: about 225,000 entries, synonyms sorted by meaning, and where each word came from, drawn as a journey. Can't think of a word? Describe it. Your family code works there too.")),
+        h("span", { class: "chev" }, icon("right"))));
     return;
   }
 

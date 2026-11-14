@@ -10,7 +10,6 @@ import { LABELS } from "./device.js";
 import { app, route, go, render, selectProfile, applyLook, VERSION } from "./app.js";
 import { h, icon, avatar, toast, sheet, closeSheet, ask, confirmBox, speak, canSpeak, ACCENTS, tile, share, relTime, untilText, download, topicChip, topicIcon, tint, badge, haptic, reduced, meta, plural, fitWord } from "./ui.js";
 import qrcode from "./vendor/qrcode.mjs";
-import { tapDecor } from "./decorfx.js";
 import { canScan, scanCode } from "./scan.js";
 import { SCENES, SCENE_GROUPS, sceneUrl, sceneBig, sceneFx, wallpaperUrl, topicArt, keeperArt } from "./art.js";
 import { play } from "./sound.js";
@@ -23,6 +22,7 @@ import "./you.js";
 
 const SITE = "https://lumin.b7collective.com";
 export const LOOKUP = "https://lookup.b7collective.com"; // Lumin Lookup, the sister dictionary and thesaurus
+export const ABOUT = "https://b7collective.com/lumin-vocab"; // the full introduction to the app, on the main site
 const SOURCE = "https://github.com/B7Collective/lumin-vocab";
 const LEVEL = (l) => model.LEVELS[l] || model.LEVELS[4];
 const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1, 5, 3]; // used by the word check
@@ -30,7 +30,7 @@ const LEVEL_ICON = ["sprout", "t-nature", "t-mind", "star"], LEVEL_TINT = [6, 1,
 function footer({ short = false } = {}) {
   return h("footer", { class: "footer" }, short ? null : h("p", {}, "100% free. No ads, no tracking, no accounts."),
     h("nav", { "aria-label": "About Lumin Vocab" },
-      h("a", { href: "https://b7collective.com", rel: "noopener" }, "Made by B7 Collective"), h("a", { href: LOOKUP, rel: "noopener" }, "Lumin Lookup dictionary"), h("a", { href: "/privacy.html" }, "Privacy"),
+      h("a", { href: ABOUT, rel: "noopener" }, "About Lumin Vocab"), h("a", { href: "https://b7collective.com", rel: "noopener" }, "Made by B7 Collective"), h("a", { href: LOOKUP, rel: "noopener" }, "Lumin Lookup dictionary"), h("a", { href: "/privacy.html" }, "Privacy"),
       h("a", { href: "#/about" }, "Credits"), h("a", { href: SOURCE, rel: "noopener" }, "Source code")));
 }
 function qr(text) {
@@ -131,108 +131,22 @@ const backup = () => download(`lumin-vocab-backup-${new Date().toISOString().sli
 const swatches = (selected, onpick) => h("div", { class: "chips", role: "group", "aria-label": "Color" }, model.COLORS.map((c, i) =>
   h("button", { class: "swatch", "aria-label": `Color ${i + 1}`, "aria-pressed": String(selected === i), style: { background: c.bg, color: c.fg }, onclick: () => onpick(i) }, selected === i ? icon("check", 20) : null)));
 
-// ---- Welcome -------------------------------------------------------------
-// A window onto a scene, with a word from each level arriving the way it does in the app.
-// Draws before the word list loads, so these samples are copied from it.
-const SAMPLES = [
-  { w: "gentle", p: "adj.", i: "JEHN-tuhl", d: "Soft and careful, not rough", scene: "lavender", x: 54 },
-  { w: "majestic", p: "adj.", i: "muh-JEH-stihk", d: "Grand and beautiful in a powerful way", scene: "aurora", x: 50 },
-  { w: "ambiguous", p: "adj.", i: "/æmˈbɪɡjuəs/", d: "Having more than one possible meaning; unclear", scene: "forest", x: 50 },
-  { w: "meticulous", p: "adj.", i: "/məˈtɪkjələs/", d: "Showing great attention to detail; very careful", scene: "moonpagoda", x: 49 },
-  { w: "fortuitous", p: "adj.", i: "/fɔrˈtuɪtəs/", d: "Happening by lucky chance", scene: "greatwave", x: 50 },
-  { w: "ineffable", p: "adj.", i: "/ɪˈnɛfəbəl/", d: "Too great or extreme to be expressed in words", scene: "library", x: 56 },
-];
+// ---- Start ---------------------------------------------------------------
+// The first screen a new visitor sees: one scene, the name, and the way in. The full introduction
+// (the Lantern Road, the games, the scenes) lives on b7collective.com/lumin-vocab.
 route("welcome", (main) => {
-  let cur = 0, timer = null;
-  const bgs = SAMPLES.map((x, k) => h("img", { class: "wbg", src: k ? null : sceneBig(x.scene), "data-src": sceneBig(x.scene), alt: "", style: { "--fx": sceneFx(x) + "%", opacity: k ? "0" : "1", transition: "opacity 1.2s var(--ease)" }, decoding: "async", fetchpriority: k ? "low" : "high" }));
-  // The other scenes load once the first is on screen, so the page appears quickly
-  addEventListener("load", () => setTimeout(() => bgs.forEach((b) => { if (!b.src) b.src = b.dataset.src; }), 600), { once: true });
-  if (document.readyState === "complete") setTimeout(() => bgs.forEach((b) => { if (!b.src) b.src = b.dataset.src; }), 600);
-  const sample = h("div", { class: "wsample", "aria-live": "polite" });
-  const show = (k) => {
-    const x = SAMPLES[k]; cur = k;
-    bgs.forEach((b, j) => { b.style.opacity = j === k ? "1" : "0"; });
-    const word = h("div", { class: "wword", lang: "en" }, [...x.w].map((ch, i) => h("span", { class: "ch", style: { "--i": i } }, ch)));
-    const L = model.LEVELS[k];
-    sample.replaceChildren(h("span", { class: "wpos" }, `${L.name}, for ${model.GROUPS[L.group].name.toLowerCase()}`), word, h("span", { class: "wipa glass" }, x.i), h("p", { class: "wdef" }, `(${x.p}) ${x.d}`));
-    sample.classList.remove("out");
-    requestAnimationFrame(() => fitWord(word));
-  };
-  const tick = () => { if (!document.body.contains(sample)) { clearInterval(timer); return; } sample.classList.add("out"); setTimeout(() => show((cur + 1) % SAMPLES.length), 360); };
-  const feat = (src, title, text) => h("article", {}, h("img", { class: "art", src, alt: "", width: 150, height: 150, loading: "lazy" }), h("h3", {}, title), h("p", {}, text));
-  main.append(h("div", { class: "welcome" },
-    h("section", { class: "whero" }, ...bgs, h("div", { class: "wshade" }),
+  main.append(h("div", { class: "startpage" },
+    h("section", { class: "starthero" },
+      h("img", { class: "wbg", src: sceneBig("lavender"), alt: "", style: { "--fx": sceneFx({ x: 54 }) + "%" }, decoding: "async", fetchpriority: "high" }),
+      h("div", { class: "wshade" }),
       h("div", { class: "inner" },
-        h("h1", {}, "A bigger vocabulary, one beautiful word at a time."),
-        sample,
+        h("img", { class: "startmark", src: "/icons/logo.svg", alt: "", width: 72, height: 72 }),
+        h("h1", {}, "Lumin Vocab"),
+        h("p", { class: "startline" }, "A bigger vocabulary, one beautiful word at a time."),
         h("div", { class: "wcta" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"), h("a", { class: "textlink", href: "#/join" }, "I have a family code")),
-        h("p", { class: "wfree" }, icon("check", 18), "100% free. No ads, no tracking, no accounts."))),
-    h("section", { class: "wsec", "aria-labelledby": "w-how" }, h("h2", { id: "w-how" }, "Made for the whole family"),
-      h("div", { class: "wfeat" },
-        feat("/art/icons/flashcards.webp", "One word at a time", "Swipe through words in a calm, beautiful space. Every word is spoken by a recorded voice, American or British."),
-        feat("/art/icons/review.webp", "Practice that sticks", "Words come back just before you'd forget them, as quick games. Miss one, and it gets a second chance."),
-        feat("/art/icons/society.webp", "A profile for everyone", "Six levels from first words to philosophy. Everyone keeps their own progress, synced privately between your devices."),
-        feat("/art/icons/mywords.webp", "Your own words too", "Met a word in a book or in class? Add it, change it any time, and it joins your practice."))),
-    welcomeGames(),
-    welcomeRoad(),
-    welcomeTrails(),
-    welcomeScenes(),
-    h("section", { class: "wsec wclose" },
-      h("h2", {}, "Free for everyone at home"),
-      h("ul", { class: "wpromises" }, [["shield", "No ads or tracking"], ["lock", "No accounts"], ["phone", "Works offline"], ["code", "Open source"]].map(([ic, t]) => h("li", {}, icon(ic, 20), t))),
-      h("div", { class: "wcta" }, h("a", { class: "btn primary", href: "#/setup" }, "Get your first word"),
-        canInstall() ? h("button", { class: "btn", onclick: () => installFlow() }, icon("down"), "Install the app") : null)),
+        h("a", { class: "textlink startabout", href: ABOUT, rel: "noopener" }, "About Lumin Vocab"))),
     footer({ short: true })));
-  show(0);
-  if (!reduced()) timer = setInterval(tick, 4200);
-  addEventListener("hashchange", () => clearInterval(timer), { once: true });
 });
-
-// The Lantern Road in miniature: three regions' ground, the road winding through, and the keepers waiting at each stop
-const ROAD_STOPS = [["fox", "The Lavender Fields", 28, 17], ["owl", "The Misty Forest", 70, 49], ["gull", "The Quiet Harbor", 32, 81]];
-const ROAD_DECOR = [["roses", 80, 9, 70], ["beehive", 86, 27, 70], ["mossrock", 14, 42, 72], ["mushrooms", 28, 57, 56], ["stumplantern", 88, 64, 70], ["rowboat", 76, 86, 96], ["shells", 10, 95, 52]];
-function welcomeRoad() {
-  const svg = h("svg", { class: "wroadline", viewBox: "0 0 100 100", preserveAspectRatio: "none", "aria-hidden": "true" });
-  const pts = [[50, -6], ...ROAD_STOPS.map((s) => [s[2], s[3]]), [56, 106]];
-  const d = pts.map((pt, k) => k ? `Q ${pts[k - 1][0]} ${(pts[k - 1][1] + pt[1]) / 2} ${(pts[k - 1][0] + pt[0]) / 2} ${(pts[k - 1][1] + pt[1]) / 2} T ${pt[0]} ${pt[1]}` : `M ${pt[0]} ${pt[1]}`).join(" ");
-  for (const cls of ["roadedge", "road", "dots"]) svg.append(h("path", { class: cls, d, "vector-effect": "non-scaling-stroke" }));
-  const pos = (x, y) => ({ left: x + "%", top: y + "%" });
-  const map = h("div", { class: "wmap land", "aria-hidden": "true" },
-    ["heather", "ferns", "sand"].map((g, k) => h("div", { class: `ground g${k}`, style: { "--ground": `url(/art/ground/${g}.webp)` } })),
-    svg,
-    ROAD_DECOR.map(([n, x, y, sz], k) => h("button", { type: "button", tabindex: "-1", onclick: (e) => tapDecor(e.currentTarget, n), class: "dc wdc" + (n === "roses" ? " sway" : n === "stumplantern" ? " glow" : n === "rowboat" ? " bob" : ""), style: { ...pos(x, y), "--sz": sz + "px", "--i": k } }, h("img", { src: `/art/decor/${n}.webp`, alt: "", width: sz, height: sz, loading: "lazy", decoding: "async" }))),
-    ROAD_STOPS.map(([k, name, x, y], i) => h("div", { class: "wstop", style: { ...pos(x, y), "--i": i } }, h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 88, height: 88, loading: "lazy", decoding: "async" }), h("span", {}, name))));
-  return h("section", { class: "wsec wroad", "aria-labelledby": "w-road" },
-    h("div", { class: "wroadtext" }, h("h2", { id: "w-road" }, "The Lantern Road"),
-      h("p", { class: "lead" }, "A journey through twelve regions, from lavender fields to lighthouse cliffs. Each has its own ground, its own weather and its own keeper."),
-      h("p", {}, "One stop a day: meet six words, play with them, then answer the keeper's riddle to reach the next landmark. Every word you learn adds a light to your lantern, and every stop you pass leaves a stamp in your passport."),
-      h("p", { class: "muted" }, "Tap the things along the road. Lanterns glow, bees buzz, flowers drop their petals. Try it on the map."),
-      h("div", { class: "wkeepers" }, ["hare", "mouse", "tortoise", "bear", "moth"].map((k) => h("img", { src: `/art/keepers/${k}.webp`, alt: "", width: 52, height: 52, loading: "lazy" })), h("span", { class: "muted" }, "and more keepers along the way"))),
-    map);
-}
-const WELCOME_TRAILS = [["spelling", "Often Misspelled", "/art/icons/spelling.webp"], ["decades", "Slang Through the Decades"], ["myths", "Words from Myths"], ["kitchen", "In the Kitchen"], ["space", "Space and Stars"], ["sounds", "Sounds Like It Means"]];
-function welcomeTrails() {
-  return h("section", { class: "wsec wtrails", "aria-labelledby": "w-trails" }, h("h2", { id: "w-trails" }, "Side trails"),
-    h("p", { class: "lead wlead" }, "Nineteen themed walks you can take any time, alongside the main road. No waiting, any order."),
-    h("ul", { class: "wtrailgrid" }, WELCOME_TRAILS.map(([k, name, src], i) => h("li", { style: { "--i": i } }, h("img", { src: src || `/art/trails/${k}.webp`, alt: "", width: 120, height: 120, loading: "lazy" }), h("span", {}, name)))));
-}
-// Every game, named, so a family can see what practice looks like before they start
-const WELCOME_GAMES = ["Flash cards", "What it means", "Fill the gap", "Spelling", "Unscramble", "True or false", "Find its twin", "Spot the right use", "Listen closely",
-  "Match the pairs", "Word hunt", "Light the letters", "Build the sentence", "Make it yours", "Read the clues", "Odd one out", "Opposites", "Hear and spell", "Game shuffle"];
-function welcomeGames() {
-  return h("section", { class: "wsec wgames", "aria-labelledby": "w-games" },
-    h("h2", { id: "w-games" }, "Nineteen ways to play"),
-    h("p", { class: "lead wlead" }, "Practice is a set of short games, and every Journey stop mixes them differently. Kids get the gentler ones."),
-    h("ul", { class: "wgamelist" }, WELCOME_GAMES.map((g, i) => h("li", { style: { "--i": i } }, g))));
-}
-function welcomeScenes() {
-  const cards = [["village", 50, -9], ["greatwave", 50, 0], ["lavender", 54, 8]];
-  return h("section", { class: "wsec wscenes", "aria-labelledby": "w-scenes" },
-    h("div", { class: "wpostcards", "aria-hidden": "true" }, cards.map(([sc, x, r], i) => h("div", { class: "wpost", style: { "--r": r + "deg", "--i": i } }, h("img", { src: sceneUrl(sc), alt: "", width: 320, height: 180, loading: "lazy", decoding: "async", style: { objectPosition: `${x}% 50%` } })))),
-    h("div", { class: "wscenetext" }, h("h2", { id: "w-scenes" }, "Scenes worth keeping"),
-      h("p", { class: "lead" }, "Twenty-four scenes sit behind your words: harbors, libraries, snowy villages, northern lights and layered paper landscapes, sharp on any screen. Pick a favorite, or let them shuffle."),
-      h("p", { class: "muted" }, "Like one? Save it to your phone as a wallpaper, straight from Settings.")));
-}
 
 // ---- Join a family ---------------------------------------------------------
 route("join", (main) => {
@@ -652,7 +566,7 @@ route("settings", (main, args = []) => {
 
   page.append(sec("About",
     h("p", {}, `Lumin Vocab ${VERSION}. Free and open source under the AGPL-3.0 license. Made by `, h("a", { href: "https://b7collective.com", rel: "noopener" }, "B7 Collective"), "."),
-    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code")),
+    h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: ABOUT, rel: "noopener" }, "About Lumin Vocab"), h("a", { class: "btn small quiet", href: "#/about" }, "Credits and licenses"), h("a", { class: "btn small quiet", href: SOURCE, rel: "noopener" }, "Source code")),
     h("p", {}, h("strong", {}, "Lumin Lookup"), ": our free dictionary and thesaurus, with the same look and the same family code. Every word, its synonyms and where it came from."),
     h("div", { class: "actions" }, h("a", { class: "btn small quiet", href: LOOKUP, rel: "noopener" }, "Open Lumin Lookup"))));
   settingsTabs(page, TABS, args[0]);

@@ -17,7 +17,7 @@ Live at **[lumin.b7collective.com](https://lumin.b7collective.com)**. Made by [B
 - **Library and You.** Favorites, lists, history and your own words; a streak, the week at a glance and progress stats.
 - **Family profiles.** Everyone gets their own level, words and settings. Kids get simple respellings instead of IPA, gentler words and read aloud. An optional family PIN keeps grown-up settings and parent profiles locked.
 - **Private family sync.** Add phones, tablets and computers by scanning a QR code inside the app or typing a six-word family code. Everything is encrypted on the device before upload, so the server only ever stores ciphertext.
-- **Installs like an app** on iPhone, iPad, Android, Windows, Mac, Linux and ChromeOS, straight from the landing page. Works offline.
+- **Installs like an app** on iPhone, iPad, Android, Windows, Mac, Linux and ChromeOS, straight from the start screen. Works offline.
 - No ads, no trackers, no accounts, no third-party scripts.
 
 ## How it's built
@@ -48,7 +48,7 @@ Each change is sent about a second after it's made, and right away when the app 
 
 ### Installing and adding devices
 
-The landing page has an Install button. Where the browser has its own install dialog (Chrome, Edge, Brave, Android) one tap opens it; elsewhere (iPhone, iPad, Safari on Mac) it shows the exact steps for that device. To add a device to a family, its Join screen can scan the code shown under Family, Add a device. Scanning happens inside the app on purpose: on iPhone, an app added to the Home Screen keeps its data apart from Safari, so a code scanned with the Camera app would join Safari instead of the installed app. The camera is on only while the scanner is open, and frames are read on the device and never stored or sent.
+The start screen has an Install button. The full introduction to the app is on the main site, at https://b7collective.com/lumin-vocab. Where the browser has its own install dialog (Chrome, Edge, Brave, Android) one tap opens it; elsewhere (iPhone, iPad, Safari on Mac) it shows the exact steps for that device. To add a device to a family, its Join screen can scan the code shown under Family, Add a device. Scanning happens inside the app on purpose: on iPhone, an app added to the Home Screen keeps its data apart from Safari, so a code scanned with the Camera app would join Safari instead of the installed app. The camera is on only while the scanner is open, and frames are read on the device and never stored or sent.
 
 ### Sync and privacy design
 

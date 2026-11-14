@@ -107,13 +107,14 @@ test("a custom word with symbols works in games", async ({ page }) => {
   expect(errors).toEqual([]);
 });
 
-test("welcome shows a sample word and starts setup", async ({ page }) => {
-  await page.emulateMedia({ reducedMotion: "reduce" });
+test("the start screen offers setup, a family code and the full introduction", async ({ page }) => {
   await page.goto("/#/welcome");
-  await expect(page.locator(".wsample .wword")).toHaveText("gentle");
-  // With reduced motion the sample never changes on its own
-  await page.waitForTimeout(4600);
-  await expect(page.locator(".wsample .wword")).toHaveText("gentle");
-  await page.getByRole("link", { name: "Get your first word" }).first().click();
+  await expect(page.getByRole("heading", { level: 1, name: "Lumin Vocab" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "About Lumin Vocab" }).first()).toHaveAttribute("href", "https://b7collective.com/lumin-vocab");
+  await expect(page.locator("footer").getByRole("link", { name: "About Lumin Vocab" })).toHaveAttribute("href", "https://b7collective.com/lumin-vocab");
+  await page.getByRole("link", { name: "I have a family code" }).click();
+  await expect(page.getByRole("heading", { name: "Join your family" })).toBeVisible();
+  await page.getByRole("link", { name: "Back" }).click();
+  await page.getByRole("link", { name: "Get your first word" }).click();
   await expect(page.getByRole("heading", { name: /set up your profile/ })).toBeVisible();
 });
